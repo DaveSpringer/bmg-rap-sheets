@@ -47,7 +47,8 @@ const ACTION_HANDLERS = {
     }
     return Object.assign({}, state, {
       crewName: action.crewName,
-      availableCharacters : state.allCharacters.filter(charFilter)
+      availableCharacters : state.allCharacters.filter(charFilter),
+      characters : []
     })
   },
   [SELECT_CHARACTER]: (state, action) => {
