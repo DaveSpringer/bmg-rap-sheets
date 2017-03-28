@@ -9,10 +9,10 @@ export const LOAD_RESOURCES = 'LOAD_RESOURCES'
 /* The SELECT_CREW reducer is used to do choose which crew the user currently
    has selected. This can be destructive as if there is a current crew
    selected with characters selected inside of it, they will be wiped out. */
-export function selectCrew (selectedCrewName = 'default') {
+export function selectCrew (selectedCrew = 'default') {
   return {
     type: SELECT_CREW,
-    crewName: selectedCrewName
+    crew: selectedCrew
   }
 }
 
@@ -37,16 +37,49 @@ export const actions = {
   loadResources
 }
 
+
 // Action Handlers
 const ACTION_HANDLERS = {
   [SELECT_CREW] : (state, action) => {
+    let charFilter = (character) => {
+      console.log(`Char in crew ${action.crew.id} = ${character.crews}? ${character.crews.includes(action.crew.id)}`)
+      return character.crews.includes(action.crew.id) || (character.crews.includes('*') && !character.hates.includes(action.crew.id))
+    }
     return Object.assign({}, state, {
-      crewName: action.crewName
+      crewName: action.crewName,
+      availableCharacters : state.allCharacters.filter(charFilter)
     })
   },
   [SELECT_CHARACTER]: (state, action) => {
+    let charFinder = (character) => ( character.name === action.characterName )
+
+    let char = state.characters.find(charFinder)
+    let newCharacters = state.characters
+    let newAvailChars = state.availableCharacters
+    let index = undefined
+    if (char !== undefined) {
+      // This is the case where the current character is in the selected
+      // characters.
+      index = state.characters.indexOf(char)
+
+      newCharacters = [...state.characters.slice(0, index), ...state.characters.slice(index + 1)]
+      newAvailChars = [...state.availableCharacters, char]
+    } else {
+      char = state.availableCharacters.find(charFinder)
+      index = state.availableCharacters.indexOf(char)
+
+      newCharacters = [...state.characters, char]
+      newAvailChars = [...state.availableCharacters.slice(0, index), ...state.availableCharacters.slice(index + 1)]
+    }
+    let newRep = newCharacters.reduce((repSum, character) => repSum + character.reputation, 0)
+    let newFunding = newCharacters.reduce((fundSum, character) => fundSum + character.funding, 0)
+    console.log(JSON.stringify(newCharacters))
+    console.log(JSON.stringify(newAvailChars))
     return Object.assign({}, state, {
-      characterName: action.characterName
+      characters : newCharacters,
+      availableCharacters : newAvailChars,
+      reputation : newRep,
+      funding : newFunding
     })
   },
   [LOAD_RESOURCES] : (state, action) => {
@@ -60,8 +93,11 @@ const ACTION_HANDLERS = {
       {"name":"Martial Artist","phase":"Execute the plan","cost":"","rule":"This [Character] ignores [Outnumbered].","grants":[]},
       {"name":"Reinforced Gloves","phase":"Execute the plan","cost":"","rule":"This [Character]'s [Unarmed Attacks] produce 2 [Stun Damage].","grants":[]},
       {"name":"Sustained Defenses","phase":"Execute the plan","cost":"","rule":"This [Character] receives 3 [Defense Dice] for every 2 [DC] spend [Defending] an [Attack].","grants":[]}],
-      allCrews : [{"name":"Batman"},{"name":"Green Arrow"},{"name":"Joker"},{"name":"Suicide Squad"}],
-      allCharacters : [{"name":"Batman (Ben Afleck)","cost":125,"crews":["Batman"],"traits":["Bat-Armor MK 1","Bat Cape","Batclaw","Close Combat Master","Detective","Martial Artist","Reinforced Gloves","Sustained Defenses"]}]
+      allCrews : [{"name":"Batman","id":"bt"},{"name":"Green Arrow","id":"ga"},{"name":"Law Force","id":"lf"},{"name":"Joker","id":"jk"},{"name":"Penguin","id":"pn"},
+      {"name":"League of Shadows","id":"ls"},{"name":"Bane","id":"bn"},{"name":"Poison Ivy","id":"pi"},{"name":"Court of Owls","id":"co"},{"name":"Mr. Freeze","id":"mf"},
+      {"name":"Organized Crime","id":"oc"},{"name":"Two Face","id":"tf"},{"name":"Black Mask","id":"bm"},{"name":"Watchmen","id":"wm"},{"name":"Riddler","id":"rd"},
+      {"name":"Scarecrow","id":"sc"},{"name":"Wonderland Gang","id":"wg"},{"name":"LexCorp","id":"lc"},{"name":"Gorilla Grodd","id":"gg"},{"name":"Suicide Squad","id":"ss"}],
+      allCharacters : [{"name":"Bruce Wayne","alias":"Batman (Ben Affleck)","rank":"Leader","reputation":125,"funding":0,"crews":["bt"],"traits":["Bat-Armor MK 1","Bat Cape","Batclaw","Close Combat Master","Detective","Martial Artist","Reinforced Gloves","Sustained Defenses"]},{"name":"Selina Kyle","alias":"Catwoman","rank":"Free Agent","reputation":66,"funding":0,"crews":["*"],"hates":["lf","jk"],"traits":["Total Vision","Climbing Claws","Sneak Attack","Acrobat","Thief","Primary Target (Loot)","Retractable Claws"]}]
     })
   },
 }
@@ -72,7 +108,9 @@ const initialState = {
   availableCharacters: [],
   allCharacters: [],
   allTraits: [],
-  allCrews: []
+  allCrews: [],
+  reputation: 0,
+  funding: 0
 }
 export default function builderReducer (state = initialState, action) {
   const handler = ACTION_HANDLERS[action.type]

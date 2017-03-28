@@ -9,6 +9,10 @@ const mapDispatchToProps = {
   loadResources
 }
 
-const mapStateToProps = (state) => ({ crew : state })
+const mapStateToProps = (state) => ({
+  crew : state.builder,
+  reputation : state.reputation,
+  funding : state.funding
+})
 
 export default connect(mapStateToProps, mapDispatchToProps)(Builder)
