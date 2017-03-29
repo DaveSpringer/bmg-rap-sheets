@@ -30,8 +30,8 @@ class Builder extends React.Component {
       <h2>Select Characters</h2>
       <div>
         {availableCharacters.map(character =>
-          <div key={character.name}
-            onClick={this.props.selectCharacter.bind(undefined, character.name)}>
+          <div key={character.alias}
+            onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
               {character.name} - {character.alias}
           </div>
         )}
@@ -40,15 +40,15 @@ class Builder extends React.Component {
       <p>Reputation: {this.props.crew.reputation} - Funding: ${this.props.crew.funding}</p>
       <div>
         {this.props.crew.characters.map(character =>
-          <div key={character.name}
-            onClick={this.props.selectCharacter.bind(undefined, character.name)}>
+          <div key={character.alias}
+            onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
               {character.name} - {character.alias}: {character.reputation}, ${character.funding}
           </div>
         )}
       </div>
       <h2>Rap Sheets</h2>
       {this.props.crew.characters.map(character =>
-        <RapSheet key={character.name} character={character} />
+        <RapSheet key={character.alias} character={character} />
       )}
     </div>
   )}

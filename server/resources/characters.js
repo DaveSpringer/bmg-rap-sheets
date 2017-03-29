@@ -1,5 +1,13 @@
 const characters = [{
       name: 'Bruce Wayne',
+      alias: 'Batman (Arkham Knight)',
+      rank: 'Leader',
+      reputation: 150,
+      funding: 0,
+      crews: [ 'bt' ],
+      traits: [ 'Bat-Armor MK III', 'Bat Cape', 'Batclaw', 'Detective', 'Martial Artist', 'Reinforced Gloves', 'Night Vision', 'Explosive Gel', 'Master Fighter', 'Teamwork/1 (All)' ]
+    }, {
+      name: 'Bruce Wayne',
       alias: 'Batman (Ben Affleck)',
       rank: 'Leader',
       reputation: 125,
