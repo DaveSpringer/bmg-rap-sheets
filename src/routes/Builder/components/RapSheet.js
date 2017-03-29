@@ -1,4 +1,5 @@
 import React from 'react'
+import RapSheetTrait from './RapSheetTrait'
 
 class RapSheet extends React.Component {
   constructor() {
@@ -6,19 +7,13 @@ class RapSheet extends React.Component {
   }
 
   render() {
-    debugger
     return (
       <div>
         Name: {this.props.character.name}
         Alias: {this.props.character.alias}
         <div>
           {this.props.character.traitText.map(trait =>
-            <div key={trait.name}>
-              <div>{trait.name}</div>
-              <div>{trait.rule}</div>
-              <div>{trait.phase}</div>
-              <div>{trait.cost}</div>
-            </div>
+            <RapSheetTrait key={trait.name} trait={trait} />
           )}
         </div>
       </div>

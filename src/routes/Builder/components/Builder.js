@@ -18,34 +18,34 @@ class Builder extends React.Component {
     return (
     <div>
       <h2>Select Crew</h2>
-      <ul>
+      <div>
         {allCrews.map(crew =>
-          <li key={crew.name}
+          <div key={crew.name}
             onClick={this.props.selectCrew.bind(undefined, crew)}>
               {crew.name}
-          </li>
+          </div>
         )}
-      </ul>
+      </div>
       <h4>{this.props.crew.crewName}</h4>
       <h2>Select Characters</h2>
-      <ul>
+      <div>
         {availableCharacters.map(character =>
-          <li key={character.name}
+          <div key={character.name}
             onClick={this.props.selectCharacter.bind(undefined, character.name)}>
               {character.name} - {character.alias}
-          </li>
+          </div>
         )}
-      </ul>
+      </div>
       <h2>Current Crew</h2>
       <p>Reputation: {this.props.crew.reputation} - Funding: ${this.props.crew.funding}</p>
-      <ul>
+      <div>
         {this.props.crew.characters.map(character =>
-          <li key={character.name}
+          <div key={character.name}
             onClick={this.props.selectCharacter.bind(undefined, character.name)}>
               {character.name} - {character.alias}: {character.reputation}, ${character.funding}
-          </li>
+          </div>
         )}
-      </ul>
+      </div>
       <h2>Rap Sheets</h2>
       {this.props.crew.characters.map(character =>
         <RapSheet key={character.name} character={character} />
