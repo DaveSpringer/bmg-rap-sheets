@@ -1,4 +1,5 @@
 import React from 'react'
+import RapSheet from './RapSheet'
 
 class Builder extends React.Component {
   constructor() {
@@ -41,10 +42,14 @@ class Builder extends React.Component {
         {this.props.crew.characters.map(character =>
           <li key={character.name}
             onClick={this.props.selectCharacter.bind(undefined, character.name)}>
-              {character.name} - {character.alias}
+              {character.name} - {character.alias}: {character.reputation}, ${character.funding}
           </li>
         )}
       </ul>
+      <h2>Rap Sheets</h2>
+      {this.props.crew.characters.map(character =>
+        <RapSheet key={character.name} character={character} />
+      )}
     </div>
   )}
 }
