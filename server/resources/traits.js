@@ -125,10 +125,11 @@ const traits = [
     grants: [],
     page: "B.71"
   }, {
-    name: "Primary Target (Loot)",
+    name: "Primary Target",
+    nameFunc: 'Primary Target: -target-',
     phase: "D.After Placement",
     cost: "",
-    rule: "Before starting the game, choose 1 [Loot] [Objective]. At the end of each [Round] this [Character] controls that [Objective], gain 1 additional [VP].",
+    rule: "Before starting the game, choose 1 [-target-] [Objective]. At the end of each [Round] this [Character] controls that [Objective], gain 1 additional [VP].",
     grants: [],
     page: "B.63"
   }, {
@@ -153,12 +154,56 @@ const traits = [
     grants: [],
     page: "B.59"
   }, {
-    name: "Teamwork/1 (All)",
+    name: "Teamwork",
+    nameFunc : "Teamwork/-counter- -target-",
     phase: "Execute the plan",
     cost: "",
-    rule: "During another [Character]'s turn, they may spend 1 [Action Counters] of this [Character]'s as long as they are within 10cm.",
+    rule: "During -target- [Character]'s turn, they may spend -counter- [Action Counters] of this [Character]'s as long as they are within 10cm.",
     grants: [],
     page: "?"
+  }, {
+    name: "Elite Boss",
+    nameFunc: "Elite Boss: (-type-)",
+    phase: "Crew Building",
+    cost: "",
+    rule: 'Your crew may contain any number of [Elite]: -type-',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Air Support',
+    phase: 'Execute the plan',
+    cost: '3SC',
+    rule: 'Place a 10cm [Explosion Template] in the [Play Area]. [Target]s within the [Template] are [Illuminated].',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Arrest',
+    phase: 'Execute the plan',
+    cost: '1SC+1MC',
+    rule: 'Remove a [K.O.] [Character] in [Contact] as a [Casualty].',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Kevlar Vest',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'Reduce [Damage Markers] recieved by 1 to a minimum of 1.',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Take Cover!!',
+    phase: 'Execute the plan',
+    cost: '1SC',
+    rule: 'Once per [Turn], [Henchmen] within 10cm of this [Character] assign 1 [DC].',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Veteran',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'When this [Character] is [Activated], they may reassign 2 [Action Counters].',
+    grants: [],
+    page: '?'
   }
 ]
 console.log(JSON.stringify(traits))

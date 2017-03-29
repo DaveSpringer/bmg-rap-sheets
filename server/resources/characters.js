@@ -5,7 +5,7 @@ const characters = [{
       reputation: 150,
       funding: 0,
       crews: [ 'bt' ],
-      traits: [ 'Bat-Armor MK III', 'Bat Cape', 'Batclaw', 'Detective', 'Martial Artist', 'Reinforced Gloves', 'Night Vision', 'Explosive Gel', 'Master Fighter', 'Teamwork/1 (All)' ]
+      traits: [ 'Bat-Armor MK III', 'Bat Cape', 'Batclaw', 'Detective', 'Martial Artist', 'Reinforced Gloves', 'Night Vision', 'Explosive Gel', 'Master Fighter', { name: 'Teamwork', counter:'1', target:'ALL'} ]
     }, {
       name: 'Bruce Wayne',
       alias: 'Batman (Ben Affleck)',
@@ -22,7 +22,7 @@ const characters = [{
       funding: 0,
       crews: [ '*' ],
       hates: [ 'lf', 'jk' ],
-      traits: [ 'Total Vision', 'Climbing Claws', 'Sneak Attack', 'Acrobat', 'Thief', 'Primary Target (Loot)', 'Retractable Claws' ]
+      traits: [ 'Total Vision', 'Climbing Claws', 'Sneak Attack', 'Acrobat', 'Thief', {name: 'Primary Target', target: 'Loot' }, 'Retractable Claws' ]
     }, {
       name: 'James W. Gordon',
       alias: 'Gordon',
