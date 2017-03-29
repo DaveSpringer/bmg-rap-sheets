@@ -23,6 +23,14 @@ const characters = [{
       crews: [ '*' ],
       hates: [ 'lf', 'jk' ],
       traits: [ 'Total Vision', 'Climbing Claws', 'Sneak Attack', 'Acrobat', 'Thief', 'Primary Target (Loot)', 'Retractable Claws' ]
+    }, {
+      name: 'James W. Gordon',
+      alias: 'Gordon',
+      rank: [{ crew: 'bt', rank: 'Sidekick' }, { crew: 'lf', rank: 'Leader' }],
+      reputation: 70,
+      funding: 200,
+      crews: [ 'bt', 'lf' ],
+      traits: [ 'Air Support', 'Arrest', 'Detective', { name: 'Elite Boss', type: 'S.W.A.T.' }, 'Kevlar Vest', 'Take Cover!!', 'Veteran' ]
     }]
 
 console.log(JSON.stringify(characters))

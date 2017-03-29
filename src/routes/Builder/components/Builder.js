@@ -32,7 +32,7 @@ class Builder extends React.Component {
         {availableCharacters.map(character =>
           <div key={character.alias}
             onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
-              {character.name} - {character.alias}
+              {character.name} - {character.alias} - {character.rank}
           </div>
         )}
       </div>

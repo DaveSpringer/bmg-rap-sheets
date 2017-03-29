@@ -41,12 +41,22 @@ export const actions = {
 // Action Handlers
 const ACTION_HANDLERS = {
   [SELECT_CREW] : (state, action) => {
-    let charFilter = (character) => {
-      return character.crews.includes(action.crew.id) || (character.crews.includes('*') && !character.hates.includes(action.crew.id))
+    let charFilter = (characters, character)=> {
+      if (character.crews.includes(action.crew.id) || (character.crews.includes('*') && !character.hates.includes(action.crew.id))) {
+        if (typeof(character.rank) === 'object') {
+          characters.concat(
+            Object.assign({}, character, {
+              rank : character.rank[action.crewName]
+            })
+          )
+        } else {
+          characters.concat(character)
+        }
+      }
     }
     return Object.assign({}, state, {
       crewName: action.crewName,
-      availableCharacters : state.allCharacters.filter(charFilter),
+      availableCharacters : state.allCharacters.reduce(charFilter, []),
       characters : [],
       hiddenCharacters : [],
       reputation: 0,
@@ -97,7 +107,7 @@ const ACTION_HANDLERS = {
     {"name":"League of Shadows","id":"ls"},{"name":"Bane","id":"bn"},{"name":"Poison Ivy","id":"pi"},{"name":"Court of Owls","id":"co"},{"name":"Mr. Freeze","id":"mf"},
     {"name":"Organized Crime","id":"oc"},{"name":"Two Face","id":"tf"},{"name":"Black Mask","id":"bm"},{"name":"Watchmen","id":"wm"},{"name":"Riddler","id":"rd"},
     {"name":"Scarecrow","id":"sc"},{"name":"Wonderland Gang","id":"wg"},{"name":"LexCorp","id":"lc"},{"name":"Gorilla Grodd","id":"gg"},{"name":"Suicide Squad","id":"ss"}]
-    let loadedCharacters = [{"name":"Bruce Wayne","alias":"Batman (Arkham Knight)","rank":"Leader","reputation":150,"funding":0,"crews":["bt"],"traits":["Bat-Armor MK III","Bat Cape","Batclaw","Detective","Martial Artist","Reinforced Gloves","Night Vision","Explosive Gel","Master Fighter","Teamwork/1 (All)"]},{"name":"Bruce Wayne","alias":"Batman (Ben Affleck)","rank":"Leader","reputation":125,"funding":0,"crews":["bt"],"traits":["Bat-Armor MK 1","Bat Cape","Batclaw","Close Combat Master","Detective","Martial Artist","Reinforced Gloves","Sustained Defenses"]},{"name":"Selina Kyle","alias":"Catwoman","rank":"Free Agent","reputation":66,"funding":0,"crews":["*"],"hates":["lf","jk"],"traits":["Total Vision","Climbing Claws","Sneak Attack","Acrobat","Thief","Primary Target (Loot)","Retractable Claws"]}]
+    let loadedCharacters = [{"name":"Bruce Wayne","alias":"Batman (Arkham Knight)","rank":"Leader","reputation":150,"funding":0,"crews":["bt"],"traits":["Bat-Armor MK III","Bat Cape","Batclaw","Detective","Martial Artist","Reinforced Gloves","Night Vision","Explosive Gel","Master Fighter","Teamwork/1 (All)"]},{"name":"Bruce Wayne","alias":"Batman (Ben Affleck)","rank":"Leader","reputation":125,"funding":0,"crews":["bt"],"traits":["Bat-Armor MK 1","Bat Cape","Batclaw","Close Combat Master","Detective","Martial Artist","Reinforced Gloves","Sustained Defenses"]},{"name":"Selina Kyle","alias":"Catwoman","rank":"Free Agent","reputation":66,"funding":0,"crews":["*"],"hates":["lf","jk"],"traits":["Total Vision","Climbing Claws","Sneak Attack","Acrobat","Thief","Primary Target (Loot)","Retractable Claws"]},{"name":"James W. Gordon","alias":"Gordon","rank":[{"crew":"bt","rank":"Sidekick"},{"crew":"lf","rank":"Leader"}],"reputation":70,"funding":200,"crews":["bt","lf"],"traits":["Air Support","Arrest","Detective",{"name":"Elite Boss","type":"S.W.A.T."},"Kevlar Vest","Take Cover!!","Veteran"]}]
     //Now... Add all traits to each character... Ooph...
     // TODO: Optimize the %@#$^ out of this in the future.
     let findTrait = (traitName) => {
