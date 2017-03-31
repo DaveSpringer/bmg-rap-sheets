@@ -1,5 +1,6 @@
 import React from 'react'
 import RapSheet from './RapSheet'
+import './Builder.scss'
 
 class Builder extends React.Component {
   constructor() {
@@ -38,6 +39,7 @@ class Builder extends React.Component {
       </div>
       <h2>Current Crew</h2>
       <p>Reputation: {this.props.crew.reputation} - Funding: ${this.props.crew.funding}</p>
+      <div>Leaders: {this.props.crew.leaders} - Sidekicks: {this.props.crew.sidekicks} - Free Agents: {this.props.crew.freeAgents}</div>
       <div>
         {this.props.crew.characters.map(character =>
           <div key={character.alias}

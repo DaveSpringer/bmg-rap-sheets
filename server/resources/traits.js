@@ -204,6 +204,28 @@ const traits = [
     rule: 'When this [Character] is [Activated], they may reassign 2 [Action Counters].',
     grants: [],
     page: '?'
+  }, {
+    name : 'Informer',
+    phase: 'Raise the plan',
+    cost: '',
+    rule: 'As long as this [Character] is [Active], you gain 1 additional [Pass].',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Sealth',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'As long as this [Character] is [Active], you gain 1 additional [Pass].',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Combo with',
+    nameFunc : 'Combi with: -weapon-',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'When attacking with -weapon-, gain 1 extra [Attack Dice] for every 2 [AC] spent.',
+    grants: [],
+    page: '?'
   }
 ]
 console.log(JSON.stringify(traits))

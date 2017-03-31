@@ -31,6 +31,14 @@ const characters = [{
       funding: 200,
       crews: [ 'bt', 'lf' ],
       traits: [ 'Air Support', 'Arrest', 'Detective', { name: 'Elite Boss', type: 'S.W.A.T.' }, 'Kevlar Vest', 'Take Cover!!', 'Veteran' ]
+    }, {
+      name: 'Barbara Gordon',
+      alias: 'Batgirl',
+      rank: 'Sidekick',
+      reputation: 59,
+      funding: 0,
+      crews: [ 'bt', 'lf' ],
+      traits: [ 'Batclaw', 'Martial Artist', 'Informer', 'Bat Cape', 'Stealth', 'Sneak Attack', { name: 'Combo with', weapon: 'Unarmed' }]
     }]
 
 console.log(JSON.stringify(characters))
