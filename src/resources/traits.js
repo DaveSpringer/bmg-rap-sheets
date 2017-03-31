@@ -1,4 +1,4 @@
-const traits = [
+export const allTraits = [
   {
     name: "Bat-Armor MK 1",
     phase: "Execute the plan",
@@ -228,4 +228,5 @@ const traits = [
     page: '?'
   }
 ]
-console.log(JSON.stringify(traits))
+
+// console.log(JSON.stringify(allTraits))

@@ -1,4 +1,4 @@
-const characters = [{
+export const loadedCharacters = [{
       name: 'Bruce Wayne',
       alias: 'Batman (Arkham Knight)',
       rank: 'Leader',
@@ -39,6 +39,14 @@ const characters = [{
       funding: 0,
       crews: [ 'bt', 'lf' ],
       traits: [ 'Batclaw', 'Martial Artist', 'Informer', 'Bat Cape', 'Stealth', 'Sneak Attack', { name: 'Combo with', weapon: 'Unarmed' }]
+    }, {
+      name: 'Richard Grayson',
+      alias: 'Nightwing',
+      rank: 'Sidekick',
+      reputation: 85,
+      funding: 0,
+      crews: [ 'bt' ],
+      traits: [ 'Charismatic', { name : 'Combo with', weapon: 'Electric Baton' }, 'Explosive Gel', 'Acrobat', 'Batclaw', 'Sneak Attack' ]
     }]
 
-console.log(JSON.stringify(characters))
+// console.log(JSON.stringify(loadedCharacters))

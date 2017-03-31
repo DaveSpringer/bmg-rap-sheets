@@ -1,4 +1,4 @@
-const crews = [
+export const allCrews = [
   {
     name : 'Batman',
     id : 'bt'
@@ -81,4 +81,4 @@ const crews = [
   }
 ]
 
-console.log(JSON.stringify(crews))
+// console.log(JSON.stringify(allCrews))
