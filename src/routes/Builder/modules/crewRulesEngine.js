@@ -33,7 +33,13 @@ const removeCharacter = (state, action, char) => {
     return repopCharacters
   }, [])
   let newAvailChars = [...state.availableCharacters, char, ...hiddenCharactersToAdd]
-  let hiddenCharacters = state.hiddenCharacters.filter((character) => (character.name !== char.name))
+  let hiddenCharacters = state.hiddenCharacters.reduce((characters, character) => {
+    if (hiddenCharactersToAdd.find((findChar) => character.alias === findChar.alias) === undefined) {
+      return characters.push(character)
+    } else {
+      return characters
+    }
+  }, [])
   return createFinalState(state, newCharacters, newAvailChars, hiddenCharacters, leaders, sidekicks, freeAgents)
 }
 

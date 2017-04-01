@@ -90,14 +90,19 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(selectBatmanAgainResult.availableCharacters.reduce(countLeaders, 0)).to.equal(selectBatmanCrew.availableCharacters.reduce(countLeaders, 0))
         expect(countCharacters(selectBatmanAgainResult)).to.equal(countCharacters(selectBatmanResult))
       })
+        let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('Batgirl'))
+
+      it('Should handle adding a Sidekick after a Leader', () => {
+        expect(countCharacters(addSidekickResult)).to.equal(countCharacters(selectBatmanResult))
+      })
 
       it('Should handle adding Sidekick, then selecting Batman.', () => {
-        let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('Batgirl'))
         let deselectBatmanResult = characterSelected(addSidekickResult, selectCharacter('Batman (Ben Affleck)'))
 
         expect(countCharacters(deselectBatmanResult)).to.equal(countCharacters(addSidekickResult))
         expect(deselectBatmanResult.hiddenCharacters.length).to.equal(0)
       })
+
     })
 
     describe('(Sub-Function) Adding Sidekick', () => {
