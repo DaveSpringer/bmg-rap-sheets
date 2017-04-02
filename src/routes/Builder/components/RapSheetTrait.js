@@ -1,4 +1,5 @@
 import React from 'react'
+import './RapSheetTrait.scss'
 
 class RapSheet extends React.Component {
   constructor() {
@@ -7,11 +8,15 @@ class RapSheet extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>{this.props.trait.name}</div>
-        <div>{this.props.trait.rule}</div>
-        <div>{this.props.trait.phase}</div>
-        <div>{this.props.trait.cost}</div>
+      <div className='rapSheetTrait'>
+        <div className='traitHeader'>
+          <div className='traitName'>
+            {this.props.trait.name} {this.props.trait.cost}
+          </div>
+          <div className='traitPhase'>{this.props.trait.phase}</div>
+        </div>
+        <div className='traitRule'>{this.props.trait.rule}</div>
+        <div className='pageNo'>{this.props.trait.page}</div>
       </div>
     )
   }

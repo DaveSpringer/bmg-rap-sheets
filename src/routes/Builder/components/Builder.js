@@ -18,40 +18,51 @@ class Builder extends React.Component {
     let availableCharacters = this.props.crew.availableCharacters
     return (
     <div>
-      <h2>Select Crew</h2>
-      <div>
-        {allCrews.map(crew =>
-          <div key={crew.name}
-            onClick={this.props.selectCrew.bind(undefined, crew)}>
-              {crew.name}
-          </div>
-        )}
+      <div className='crews hidden-print'>
+        <h2>Select Crew</h2>
+
+        <div>
+          {allCrews.map(crew =>
+            <div key={crew.name}
+              onClick={this.props.selectCrew.bind(undefined, crew)}>
+                {crew.name}
+            </div>
+          )}
+        </div>
+        <h4>{this.props.crew.crewName}</h4>
+        <div>
       </div>
-      <h4>{this.props.crew.crewName}</h4>
-      <h2>Select Characters</h2>
-      <div>
-        {availableCharacters.map(character =>
-          <div key={character.alias}
-            onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
-              {character.name} - {character.alias} - {character.rank}
-          </div>
-        )}
+      <div className='characters hidden-print'>
+        <h2>Select Characters</h2>
+        <div>
+          {availableCharacters.map(character =>
+            <div key={character.alias}
+              onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
+                {character.name} - {character.alias} - {character.rank}
+            </div>
+          )}
+        </div>
       </div>
-      <h2>Current Crew</h2>
-      <p>Reputation: {this.props.crew.reputation} - Funding: ${this.props.crew.funding}</p>
-      <div>Leaders: {this.props.crew.leaders} - Sidekicks: {this.props.crew.sidekicks} - Free Agents: {this.props.crew.freeAgents}</div>
-      <div>
-        {this.props.crew.characters.map(character =>
-          <div key={character.alias}
-            onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
-              {character.name} - {character.alias}: {character.reputation}, ${character.funding}
+      <div className='crewStats hidden-print'>
+        <h2>Current Crew</h2>
+        <p>Reputation: {this.props.crew.reputation} - Funding: ${this.props.crew.funding}</p>
+        <div>Leaders: {this.props.crew.leaders} - Sidekicks: {this.props.crew.sidekicks} - Free Agents: {this.props.crew.freeAgents}</div>
+          <div>
+            {this.props.crew.characters.map(character =>
+              <div key={character.alias}
+                onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
+                  {character.name} - {character.alias}: {character.reputation}, ${character.funding}
+              </div>
+            )}
           </div>
-        )}
+        </div>
       </div>
-      <h2>Rap Sheets</h2>
-      {this.props.crew.characters.map(character =>
-        <RapSheet key={character.alias} character={character} />
-      )}
+      <div>
+        <h2>Rap Sheets</h2>
+          {this.props.crew.characters.map(character =>
+            <RapSheet key={character.alias} character={character} />
+          )}
+      </div>
     </div>
   )}
 }

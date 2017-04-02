@@ -3,7 +3,7 @@ import { IndexLink, Link } from 'react-router'
 import './Header.scss'
 
 export const Header = () => (
-  <div>
+  <div className='hidden-print'>
     <h1>Batman Miniature Game Rap Sheet Builder</h1>
     <IndexLink to='/' activeClassName='route--active'>
       Home

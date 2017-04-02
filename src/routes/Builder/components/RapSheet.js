@@ -1,5 +1,6 @@
 import React from 'react'
 import RapSheetTrait from './RapSheetTrait'
+import './RapSheet.scss'
 
 class RapSheet extends React.Component {
   constructor() {
@@ -9,12 +10,33 @@ class RapSheet extends React.Component {
   render() {
     return (
       <div>
-        Name: {this.props.character.name}
-        Alias: {this.props.character.alias}
-        <div>
-          {this.props.character.traitText.map(trait =>
-            <RapSheetTrait key={trait.name} trait={trait} />
-          )}
+        <div className='rapSheet hidden-print'>
+          <div className='nameDiv'>
+            Name: {this.props.character.name}
+          </div><div className='aliasDiv'>
+          Alias: {this.props.character.alias}
+          </div>
+          <div className='traitArea'>
+            <div>
+              {this.props.character.traitText.map(trait =>
+                <RapSheetTrait key={trait.name} trait={trait} />
+              )}
+            </div>
+          </div>
+        </div>
+        <div className='rapSheet visible-print-block printRapSheet'>
+          <div className='nameDiv'>
+            Name: {this.props.character.name}
+          </div><div className='aliasDiv'>
+          Alias: {this.props.character.alias}
+          </div>
+          <div className='traitArea'>
+            <div>
+              {this.props.character.traitText.map(trait =>
+                <RapSheetTrait key={trait.name} trait={trait} />
+              )}
+            </div>
+          </div>
         </div>
       </div>
     )
