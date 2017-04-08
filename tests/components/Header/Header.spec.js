@@ -11,34 +11,9 @@ describe('(Component) Header', () => {
   })
 
   it('Renders a welcome message', () => {
-    const welcome = _wrapper.find('h1')
+    const welcome = _wrapper.find('.welcome-message')
     expect(welcome).to.exist
     expect(welcome.text()).to.match(/Batman Miniature Game Rap Sheet Builder/)
   })
 
-  describe('Navigation links...', () => {
-    it('Should render a Link to Home route', () => {
-      expect(_wrapper.contains(
-        <IndexLink activeClassName='route--active' to='/'>
-          Home
-        </IndexLink>
-      )).to.be.true
-    })
-
-    it('Should render a Link to Counter route', () => {
-      expect(_wrapper.contains(
-        <Link activeClassName='route--active' to='/counter'>
-          Counter
-        </Link>
-      )).to.be.true
-    })
-
-    it('Should render a Link to Builder route', () => {
-      expect(_wrapper.contains(
-        <Link activeClassName='route--active' to='/builder'>
-          Builder
-        </Link>
-      )).to.be.true
-    })
-  })
 })

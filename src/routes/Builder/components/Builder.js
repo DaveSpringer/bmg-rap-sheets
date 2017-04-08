@@ -32,7 +32,7 @@ class Builder extends React.Component {
           {availableCharacters.map(character =>
             <div key={character.alias}
               onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
-                {character.name} - {character.alias} - {character.rank}
+                {character.alias} - {character.name} - {character.rank}: {character.reputation}, ${character.funding}
             </div>
           )}
         </div>
@@ -45,7 +45,7 @@ class Builder extends React.Component {
             {this.props.crew.characters.map(character =>
               <div key={character.alias}
                 onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
-                  {character.name} - {character.alias}: {character.reputation}, ${character.funding}
+                  {character.alias} - {character.name}: {character.reputation}, ${character.funding}
               </div>
             )}
           </div>

@@ -19,3 +19,9 @@ body {
 *:after {
   box-sizing: inherit;
 }
+
+// Overwrite bootstrap container padding to eliminate
+// whitespace on the side.
+.container {
+  padding: 0px;
+}

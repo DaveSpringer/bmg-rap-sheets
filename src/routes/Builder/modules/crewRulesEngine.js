@@ -29,7 +29,6 @@ const removeCharacter = (state, action, char) => {
     if (sameName || repopLeader || repopSidekick) {
       repopCharacters.push(character)
     }
-    debugger
     return repopCharacters
   }, [])
   let newAvailChars = [...state.availableCharacters, char, ...hiddenCharactersToAdd]
@@ -94,6 +93,38 @@ const createFinalState = (
     sidekicks,
     freeAgents
   ) => {
+    newAvailChars.sort((a, b) => {
+      switch(a.rank) {
+        case 'Leader':
+          if (b.rank === 'Leader') {
+            return a.alias.localeCompare(b.alias)
+          } else {
+            return -1
+          }
+        case 'Sidekick':
+          if (b.rank === 'Leader') {
+            return 1
+          } else if (b.rank === 'Sidekick') {
+            return a.alias.localeCompare(b.alias)
+          } else {
+            return -1
+          }
+        case 'Free Agent':
+          if (b.rank === 'Leader' || b.rank === 'Sidekick') {
+            return 1
+          } else if (b.rank === 'Free Agent') {
+            return a.alias.localeCompare(b.alias)
+          } else {
+            return -1
+          }
+        case 'Henchman':
+          if (b.rank === 'Henchman') {
+            return a.alias.localeCompare(b.alias)
+          } else {
+            return 1
+          }
+      }
+    })
   let newRep = newCharacters.reduce((repSum, character) => repSum + character.reputation, 0)
   let newFunding = newCharacters.reduce((fundSum, character) => fundSum + character.funding, 0)
   return Object.assign({}, state, {
