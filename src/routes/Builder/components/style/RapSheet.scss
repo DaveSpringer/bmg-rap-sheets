@@ -24,7 +24,7 @@
   That should be all to get it rolling.*/
 @font-face {
   font-family: 'CarbonType';
-  src: url('../../../resources/fonts/carbontype_regular_macroman/carbontype-webfont.woff')
+  src: url('../../../../resources/fonts/carbontype_regular_macroman/carbontype-webfont.woff')
 }
 
 .nameDiv {
@@ -38,6 +38,10 @@
 .printRapSheet {
   width: 8cm !important;
   height: 10cm !important;
+  max-width: 8cm !important;
+  max-height: 10cm !important;
+  min-height: 10cm !important;
+  min-width: 8cm !important;
   font-size: 40%;
   overflow: hidden;
   float: left;

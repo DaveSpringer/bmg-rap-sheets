@@ -1,5 +1,5 @@
 import React from 'react'
-import './SelectHeader.scss'
+import './style/SelectHeader.scss'
 
 class SelectHeader extends React.Component {
   constructor() {
@@ -17,7 +17,7 @@ class SelectHeader extends React.Component {
 
   render() {
     return (
-      <div className='selectHeader'>
+      <div className='selectHeader hidden-print'>
         <select id='crewSelect' value={this.state.value} onChange={this.handleChange}>
           <option key='default' value='{name:"default", id:""}'>default</option>
           {this.props.allCrews.map(crew =>

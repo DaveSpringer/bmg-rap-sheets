@@ -1,7 +1,8 @@
 import React from 'react'
 import RapSheet from './RapSheet'
 import SelectHeader from './SelectHeader'
-import './Builder.scss'
+import Character from './Character'
+import './style/Builder.scss'
 
 class Builder extends React.Component {
   constructor() {
@@ -18,7 +19,7 @@ class Builder extends React.Component {
     let allCrews = this.props.crew.allCrews
     let availableCharacters = this.props.crew.availableCharacters
     return (
-    <div>
+    <div className='body-builder'>
       <SelectHeader
         selectCrew={this.props.selectCrew}
         allCrews={this.props.crew.allCrews}
@@ -28,34 +29,44 @@ class Builder extends React.Component {
 
       <div className='characters hidden-print'>
         <h2>Select Characters</h2>
-        <div>
+        <div id='available-characters' className='character-area'>
           {availableCharacters.map(character =>
-            <div key={character.alias}
-              onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
-                {character.alias} - {character.name} - {character.rank}: {character.reputation}, ${character.funding}
-            </div>
+            <Character key={character.alias}
+              character={character}
+              selectCharacter={this.props.selectCharacter} />
           )}
         </div>
+        <div className='clear-left' ></div>
       </div>
       <div className='crewStats hidden-print'>
         <h2>Current Crew</h2>
         <p>Reputation: {this.props.crew.reputation} - Funding: ${this.props.crew.funding}</p>
         <div>Leaders: {this.props.crew.leaders} - Sidekicks: {this.props.crew.sidekicks} - Free Agents: {this.props.crew.freeAgents}</div>
-          <div>
+          <div id='selected-characters' className='character-area'>
             {this.props.crew.characters.map(character =>
-              <div key={character.alias}
-                onClick={this.props.selectCharacter.bind(undefined, character.alias)}>
-                  {character.alias} - {character.name}: {character.reputation}, ${character.funding}
-              </div>
+              <Character key={character.alias}
+                character={character}
+                selectCharacter={this.props.selectCharacter} />
             )}
           </div>
         </div>
       </div>
-      <div className='rapSheets'>
+      <div className='rapSheets clear-left'>
         <h2>Rap Sheets</h2>
           {this.props.crew.characters.map(character =>
             <RapSheet key={character.alias} character={character} />
           )}
+      </div>
+      <div id='rap-sheet-footer' className='hidden-print'>
+        <p>
+        &copy; TM &copy; DC Comics. WB SHIELD: TM; Warner Bros. Entertainment. Inc. (s17). Copyright © 2017 DC Comics. All characters, their distinctive likenesses and related elements featured in this publication are trademarks of DC Comics. Their stories, characters and incidents featured in this publication are entirely fictional.
+        </p>
+        <p>
+        Batman Miniature Game &copy;2008-2017 KNIGHT MODELS - All Rights Reserved.
+        </p>
+        <p>
+        RapSheet Builder &copy;2017 David Springer
+        </p>
       </div>
     </div>
   )}

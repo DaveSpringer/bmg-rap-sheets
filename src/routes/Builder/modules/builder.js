@@ -1,5 +1,6 @@
 import characterSelected from './crewRulesEngine'
 import loadAllResources from './loadResources'
+import { sortCharacters } from './common'
 
 // Constants
 export const SELECT_CREW_UNCONFIRMED = 'SELECT_CREW_UNCONFIRMED'
@@ -61,9 +62,11 @@ const ACTION_HANDLERS = {
       }
       return characters
     }
+    let resultAvail = state.allCharacters.reduce(charFilter, [])
+    resultAvail.sort(sortCharacters)
     return Object.assign({}, state, {
       crewName: crewName,
-      availableCharacters : state.allCharacters.reduce(charFilter, []),
+      availableCharacters : resultAvail,
       characters : [],
       hiddenCharacters : [],
       reputation: 0,

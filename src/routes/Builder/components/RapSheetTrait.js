@@ -1,5 +1,5 @@
 import React from 'react'
-import './RapSheetTrait.scss'
+import './style/RapSheetTrait.scss'
 
 class RapSheet extends React.Component {
   constructor() {
