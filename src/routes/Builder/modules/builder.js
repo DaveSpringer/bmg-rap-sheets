@@ -46,6 +46,7 @@ export const actions = {
 const ACTION_HANDLERS = {
   [SELECT_CREW] : (state, action) => {
     let crewName = action.crew.name
+    console.log('Changing crew to: ' + crewName)
     let charFilter = (characters, character) => {
       if (character.crews.includes(action.crew.id) || (character.crews.includes('*') && !character.hates.includes(action.crew.id))) {
         if (typeof(character.rank) === 'object') {

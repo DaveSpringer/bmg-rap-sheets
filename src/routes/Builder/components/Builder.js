@@ -1,5 +1,6 @@
 import React from 'react'
 import RapSheet from './RapSheet'
+import SelectHeader from './SelectHeader'
 import './Builder.scss'
 
 class Builder extends React.Component {
@@ -18,20 +19,13 @@ class Builder extends React.Component {
     let availableCharacters = this.props.crew.availableCharacters
     return (
     <div>
-      <div className='crews hidden-print'>
-        <h2>Select Crew</h2>
+      <SelectHeader
+        selectCrew={this.props.selectCrew}
+        allCrews={this.props.crew.allCrews}
+        reputation={this.props.crew.reputation}
+        funding={this.props.crew.funding} ></SelectHeader>
+      <div className='whatsthisquestionmark'>
 
-        <div>
-          {allCrews.map(crew =>
-            <div key={crew.name}
-              onClick={this.props.selectCrew.bind(undefined, crew)}>
-                {crew.name}
-            </div>
-          )}
-        </div>
-        <h4>{this.props.crew.crewName}</h4>
-        <div>
-      </div>
       <div className='characters hidden-print'>
         <h2>Select Characters</h2>
         <div>
@@ -57,7 +51,7 @@ class Builder extends React.Component {
           </div>
         </div>
       </div>
-      <div>
+      <div className='rapSheets'>
         <h2>Rap Sheets</h2>
           {this.props.crew.characters.map(character =>
             <RapSheet key={character.alias} character={character} />
