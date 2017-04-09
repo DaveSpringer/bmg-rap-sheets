@@ -6,32 +6,35 @@ export const allTraits = [
     rule: "Each time this [Character] receives a [Hit], after [Block]s, [Ping]s, and [Dodge]s; roll a die. On a result of 5+, discard the [Hit].",
     grants: [],
     page: "B.55"
-  },
-  {
+  }, {
     name: "Bat-Armor MK III",
     phase: "Execute the plan",
     cost: "",
     rule: "Each time this [Character] receives a [Hit], after [Block]s, [Ping]s, and [Dodge]s; roll a die. On a result of 5+, discard the [Hit]. If this [Character] makes a Special Attack: Sneak Attack, they may assign Melee [Hit]s to targets up to 3cm away.  All of these [Hit]s are considered Sneak Attacks.",
     grants: [],
-    page: "G.26"
-  },
-  {
+    page: "F.26"
+  }, {
     name: "Bat Cape",
     phase: "Execute the plan",
     cost: "1SC Passive",
     rule: "When this [Character] [Falls], they may spend 1 [SC] to avoid being [Knocked Down] and taking [Falling Damage].",
     grants: [],
     page: "B.55"
-  },
-  {
+  }, {
     name: "Batclaw",
     phase: "Execute the plan",
     cost: "1SC+1MC",
     rule: "Spend [1SC+1MC] to make a [Batclaw] movement. [See BMG pg 56]",
     grants: [],
     page: "B.56"
-  },
-  {
+  }, {
+    name: "Hook Arrow",
+    phase: "Execute the plan",
+    cost: "1SC+1MC",
+    rule: "Spend [1SC+1MC] to make a [Batclaw] movement. [See BMG pg 56]",
+    grants: [],
+    page: "B.56"
+  }, {
     name: "Close Combat Master",
     phase: "Execute the plan",
     cost: "",
@@ -127,7 +130,7 @@ export const allTraits = [
   }, {
     name: "Primary Target",
     nameFunc: 'Primary Target: -target-',
-    phase: "D.After Placement",
+    phase: "D.After Placement/VP Count",
     cost: "",
     rule: "Before starting the game, choose 1 [-target-] [Objective]. At the end of each [Round] this [Character] controls that [Objective], gain 1 additional [VP].",
     grants: [],
@@ -160,7 +163,7 @@ export const allTraits = [
     cost: "",
     rule: "During -target- [Character]'s turn, they may spend -counter- [Action Counters] of this [Character]'s as long as they are within 10cm.",
     grants: [],
-    page: "G.44"
+    page: "F.44"
   }, {
     name: "Elite Boss",
     nameFunc: "Elite Boss: (-type-)",
@@ -261,14 +264,14 @@ export const allTraits = [
     cost: '',
     rule: 'This model can reroll [Lets Go!] rolls.',
     grants: [],
-    page: 'G.42'
+    page: 'F.42'
   }, {
     name : 'Tracking',
     phase: 'VP and Casualty',
     cost: '2SC',
     rule: 'At the end of the [VP and Casualty] phase, this [Character] can move up to 2D6 cm.',
     grants: [],
-    page: 'G.44'
+    page: 'F.44'
   }, {
     name : 'Street Guy',
     phase: 'Execute the plan',
@@ -283,7 +286,247 @@ export const allTraits = [
     cost: '',
     rule: 'Your [Crew] may only include 1 [Elite] of each type.',
     grants: [],
-    page: 'B.59',
+    page: 'B.59'
+  }, {
+    name : 'Speedster',
+    nameFunc: 'Speedster/-tokens-',
+    phase: 'Speed Force',
+    cost: '',
+    rule: 'This [Character] may take up to -tokens- Speed Force Tokens.',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Counterattack',
+    phase: 'Execute the plan',
+    cost: '1SC Passive',
+    rule: 'The first time this [Character] [Block]s any [Attack], they may spend 1 [SC] to immediately make one [Strike] against the [Attacker].',
+    grants: [],
+    page: 'B.58'
+  }, {
+    name : 'Good Aim',
+    phase: 'Execute the plan',
+    cost: '1SC',
+    rule: 'Spend 1 [SC]. This [Character] may [Move] and [Fire] a [Weapon] with the [Aim] rule.',
+    grants: [],
+    page: 'B.59'
+  }, {
+    name : 'Multifire',
+    phase: 'Execute the plan',
+    cost: '1SC',
+    rule: 'Spend 1 [SC]. This [Character] gains +1 to the [Rate of Fire] on its [Weapon]s.',
+    grants: [],
+    page: '?',
+  }, {
+    name : 'Shooter',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] ignores the first [Obstacle], [Protective Item], and [Vehicle] for [Ping!] rolls.',
+    grants: [],
+    page: 'B.65',
+  }, {
+    name : 'Scheming',
+    nameFunc: 'Scheming/-count-',
+    phase: 'Raise the plan',
+    cost: '',
+    rule: 'If this [Character]\'s [Crew] is the first to [Raise the Plan], -count- [Character]s may be nominated to [Raise the Plan] after the opponent. Otherwise, you may reduce your [Opponent]s nominated [Characters] by -count-.',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Stealth',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'If this [Character] is more than 20cm from an [Enemy], this [Character] cannot be [Seen]. Other rules override this effect (i.e. [Illumination], [Total Vision], etc).',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Master Marksman',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] may reroll [To Hit Rolls] on [Ranged Attacks]',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Scientific',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] may assign 4 [SC]. This [Character] is worth 1 additional [VP] if removed as a [Casualty].',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Fast',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] may reroll [MC] used to [Move].',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Moral Compass',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'While this [Character] is in your [Crew], no [Character] may use [Coup de Grace]',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Speed Force Master',
+    phase: 'Speed Force',
+    cost: '',
+    rule: 'This [Character] may use up to 2 [Speed Force Powers] in a [Turn].',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Bodyguard',
+    phase: 'Execute the plan',
+    cost: '1 SC Passive',
+    rule: 'If a [Leader] or [Sidekick] within 5cm receives any number of [Hits], this [Character] may receive the [Hit] instead.',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Lantern',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'If not in [Contact] with an [Enemy] [Character], everything within 5cm of this [Character] is [Illuminated].',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Undercover',
+    phase: 'C.Crew Deployment',
+    cost: '',
+    rule: 'This [Character] can deploy up to 20cm outside the [Deployment Area] after [Phase D: Objectives].',
+    grants: [],
+    page: '?'
+  }, {
+    name : 'Psychologist',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] automatically solves [Riddle Objectives] for 1 VP, removing the [Riddle Objective] from the [Game]. Gain: [Psychoanalysis]',
+    grants: [ 'Psychoanalysis' ],
+    page: '?'
+  }, {
+    name : 'Psychoanalysis',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'This [Character] may spend 1SC to cancel all [Mental Disorder] special rules of any [Characters] [Seen] within 20cm',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Psycho',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character]\'s [Willpower] is never reduced. This does not affect [Action Counters] lost from [Damage].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Gas Mask',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: '[Gas] [Damage] and [Traits] are ignored.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Charismatic',
+    phase: '0.Crew Building',
+    cost: '',
+    rule: '[Crew]s that include this [Character] may have 1 [Free Agent] per every 100 [Reputation Points].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Mobster',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'When [Attacking] a [Character] who is [Outnumbered], this [Character] gets an extra [Strike] against the [Target]. This [Attack] does not require any [AC].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Kaos Agent',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'At the beginning of the [Game], remove 1 [Opponent]\'s [Take the Lead] marker. [Game]s may now end before the [Scenario]\'s [Round Limit]. All [Henchmen] reveive the [Trickster] [Trait].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Follow Me!',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'Once per [Turn], assign 1 [MC] to [Friendly] [Henchmen] within 10cm.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Survivor',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'When you would [Remove] this [Character] as a [Casualty], roll a die. On a 5+, this [Character] discards 1 [Damage], and remains in the [Playing Area] [Knocked Down].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Confusion',
+    phase: 'Execute the plan',
+    cost: '2 SC',
+    rule: 'Once per [Turn], [Target] a [Seen] [Enemy Character] within 20cm. Recude the [Target]\'s [Attack] and [Defense] by 1 and they cannot use [SC]. These effects last until the end of the [Round].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Combat Flip',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'Once per [Turn], you may remove this [Character] from [Base to Base] contact with an [Enemy]. Place this [Character] within 5cm of the original [Enemy].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Goad',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'Target 1 [Seen] [Enemy Character] within 20cm. The [Target] must make a [Willpower Roll]. If the [Target] fails, move the [Target] 5cm. You cannot force the [Target] to [Fall] or spend [Action Counters].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Suicide Squad member',
+    phase: 'Build your crew',
+    cost: '1 SC',
+    rule: 'This [Character] may be part of the [Suicide Squad] team. See Flash pg. 68.',
+    grants: [ ],
+    page: 'F.68'
+  }, {
+    name : 'Hardened',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'The first [Blood Damage Marker] this [Character] receives each [Round] becomes a [Stun Damage Marker] instead.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Paranoid (Mental Disorder)',
+    phase: 'Raise the plan',
+    cost: '',
+    rule: 'During [Raise the Plan], if this [Character] has 1 [Damage], they gain 1 free [DC]. This [DC] counts toward the total [DC] for that [Character].',
+    grants: [ ],
+    page: 'B.63'
+  }, {
+    name : 'Dirty Fighter',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character]\'s [Ranged Weapons] have the [Weapon Trait]: [Light]',
+    grants: [ ],
+    page: 'B.59'
+  }, {
+    name : 'Desensitized',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'If this [Character] takes damage, it does not reduce the number of [Action Counter]s generated.',
+    grants: [ ],
+    page: 'B.58'
+  }, {
+    name : 'Expert Marksman',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: '[Target]s of this [Character]\'s [Ranged Attacks] have a -1 [Penalty] to [Ping! Rolls].',
+    grants: [ ],
+    page: 'B.59'
+  }, {
+    name : 'Kill Them!',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'All other [Friendly] [Henchmen] within 10cm of this [Character] gain 1 [AC]. This [AC] may take the number of [Action Counters] above a [Henchman]\'s normal maximum. This [Trait] may only be used once per [Round].',
+    grants: [ ],
+    page: 'B.59'
   }
 ]
 

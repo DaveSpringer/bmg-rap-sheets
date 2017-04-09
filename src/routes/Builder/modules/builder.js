@@ -53,7 +53,7 @@ const ACTION_HANDLERS = {
         if (typeof(character.rank) === 'object') {
           characters.push(
             Object.assign({}, character, {
-              rank : character.rank.find((rank) => (rank.crew === action.crew.id)).rank
+              rank : character.rank.find((rank) => (rank.crew === action.crew.id || rank.crew === '*')).rank
             })
           )
         } else {

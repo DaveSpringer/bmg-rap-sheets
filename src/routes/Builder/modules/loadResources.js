@@ -21,7 +21,7 @@ const findTrait = (populatedTraits, traitName) => {
     // TODO -coudl this be breaking the tests?
     keys.shift()
     let replaceTrait = allTraits.find((trait) => (trait != null && trait.name === traitName.name))
-    let replaceAllInKey = (result, key) => result.replace(`-${key}-`, traitName[key])
+    let replaceAllInKey = (result, key) => result.replace(new RegExp(`-${key}-`, 'g'), traitName[key])
     foundTrait = {
       name : keys.reduce(replaceAllInKey, replaceTrait.nameFunc),
       phase : replaceTrait.phase,

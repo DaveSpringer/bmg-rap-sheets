@@ -111,6 +111,56 @@ describe('(Redux Module) Builder', () => {
       expect(revertState.sidekicks).to.equal(0)
       expect(revertState.freeAgents).to.equal(0)
     })
+
+    it('Should handle selecting Joker crew.', () => {
+      let jokerPopulated = builderReducer(loadedState, selectCrew({ id: 'jk', name: 'Joker' }))
+      expect(jokerPopulated).to.be.an('object')
+      expect(jokerPopulated.crewName).to.equal('Joker')
+      expect(jokerPopulated.availableCharacters.length).to.be.above(1)
+      expect(jokerPopulated.characters.length).to.equal(0)
+      expect(jokerPopulated.hiddenCharacters.length).to.equal(0)
+      expect(jokerPopulated.reputation).to.equal(0)
+      expect(jokerPopulated.funding).to.equal(0)
+      expect(jokerPopulated.leaders).to.equal(0)
+      expect(jokerPopulated.sidekicks).to.equal(0)
+      expect(jokerPopulated.freeAgents).to.equal(0)
+    })
+
+    let scarecrowPopulated = builderReducer(loadedState, selectCrew({ id: 'sc', name: 'Scarecrow' }))
+    it('Should handle selecting Scarecrow crew.', () => {
+      expect(scarecrowPopulated).to.be.an('object')
+      expect(scarecrowPopulated.crewName).to.equal('Scarecrow')
+      expect(scarecrowPopulated.availableCharacters.length).to.be.above(1)
+      expect(scarecrowPopulated.characters.length).to.equal(0)
+      expect(scarecrowPopulated.hiddenCharacters.length).to.equal(0)
+      expect(scarecrowPopulated.reputation).to.equal(0)
+      expect(scarecrowPopulated.funding).to.equal(0)
+      expect(scarecrowPopulated.leaders).to.equal(0)
+      expect(scarecrowPopulated.sidekicks).to.equal(0)
+      expect(scarecrowPopulated.freeAgents).to.equal(0)
+    })
+
+    it('Should have Deathstroke as a Sidekick in a Scarecrow crew.', () => {
+      let deathstroke = scarecrowPopulated.availableCharacters.find((character) => character.alias === 'Deathstroke Origin')
+      expect(deathstroke).to.be.an('object')
+      expect(deathstroke.rank).to.equal('Sidekick')
+    })
+
+    it('All Traits should be populated correctly.', () => {
+      let crews = loadedState.allCrews
+      let populatedCrew
+      let crewsReduced = crews.forEach((crew) => {
+        populatedCrew = builderReducer(loadedState, selectCrew(crew))
+        populatedCrew.availableCharacters.forEach((character) => {
+          character.traitText.forEach((trait) => {
+            if (trait.rule === 'Unknown') {
+              console.log('Trait ' + trait.name + ' is not properly populated on character ' + character.alias + '. Check resources/traits.js.')
+            }
+            expect(trait.rule).to.not.equal('Unknown')
+          })
+        })
+      })
+    })
   })
 
   describe('(ActionCreator) selectCharacter', () => {

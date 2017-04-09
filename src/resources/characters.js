@@ -159,6 +159,105 @@ export const loadedCharacters = [{
       funding: 0,
       crews: [ 'jk' ],
       traits: [ { name: 'Elite', type: 'Cosplayers'}, 'Desensitized' ]
+    }, {
+      name: 'Oliver Queen',
+      alias: 'Arrow',
+      rank: 'Leader',
+      reputation: 125,
+      funding: 0,
+      crews: [ 'ga' ],
+      traits: [ 'Acrobat', 'Counterattack', 'Good Aim', 'Hook Arrow', 'Multifire', 'Shooter', 'Stealth', 'Master Marksman' ]
+    }, {
+      name: 'Barry Allen',
+      alias: 'The Flash (TV Show)',
+      rank: 'Sidekick',
+      reputation: 100,
+      funding: 0,
+      crews: [ 'ga' ],
+      traits: [ 'Detective', 'Scientific', 'Fast', 'Dodge', 'Moral Compass', 'Speed Force Master', { name: 'Speedster', tokens: 5 } ]
+    }, {
+      name: 'John Diggle',
+      alias: 'Spartan',
+      rank: 'Henchman',
+      reputation: 60,
+      funding: 350,
+      crews: [ 'ga' ],
+      traits: [ 'Bodyguard', 'Kevlar Vest', 'Lantern', 'Master Marksman', { name: 'Scheming', count: 2 } ]
+    }, {
+      name: 'Jonathan Crane',
+      alias: 'Scarecrow (Arkham Knight)',
+      rank: 'Leader',
+      reputation: 80,
+      funding: 0,
+      crews: [ 'sc' ],
+      traits: [ 'Undercover', { name: 'Scheming', count: 2 }, 'Psychologist', 'Psycho', 'Gas Mask' ]
+    }, {
+      name: 'Slade Wilson',
+      alias: 'Deathstroke Origin',
+      rank: [{ crew: 'sc', rank: 'Sidekick' }, { crew: '*', rank: 'Free Agent' }],
+      reputation: 145,
+      funding: 250,
+      crews: [ '*' ],
+      hates: [ 'bt', 'ga', 'lf' ],
+      traits: [ 'Acrobat', 'Undercover', 'Stealth', { name: 'Combo with', weapon: 'Reinforced Bo' }, 'Martial Artist', 'Counterattack' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Militia Commander 1',
+      rank: 'Henchman',
+      reputation: 33,
+      funding: 300,
+      crews: [ 'sc' ],
+      traits: [ 'Expert Marksman', 'Kill Them!', 'Veteran' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Militia 4',
+      rank: 'Henchman',
+      reputation: 29,
+      funding: 500,
+      crews: [ 'sc' ],
+      traits: [ 'Good Aim', 'Veteran' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Militia 1',
+      rank: 'Henchman',
+      reputation: 22,
+      funding: 350,
+      crews: [ 'sc' ],
+      traits: [ 'Veteran', 'Shooter' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Militia Medic',
+      rank: 'Henchman',
+      reputation: 21,
+      funding: 0,
+      crews: [ 'sc' ],
+      traits: [ 'Veteran' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Militia 2',
+      rank: 'Henchman',
+      reputation: 15,
+      funding: 0,
+      crews: [ 'sc' ],
+      traits: [ 'Veteran' ]
+    }, {
+      name: 'Floyd Lawton',
+      alias: 'Deadshot',
+      rank: 'Free Agent',
+      reputation: 96,
+      funding: 400,
+      crews: [ '*' ],
+      hates: [ 'bt', 'ga', 'lf' ],
+      traits: [ 'Kevlar Vest', 'Leadership', 'Ranged Master', 'Shooter', 'Suicide Squad member' ]
+    }, {
+      name: 'Waylon Jones',
+      alias: 'Killer Croc',
+      rank: 'Free Agent',
+      reputation: 64,
+      funding: 0,
+      crews: [ '*' ],
+      hates: [ 'bt', 'ga', 'lf' ],
+      traits: [ 'Amphibious', 'Claws', 'Ferocious', 'Tough Skin', 'Suicide Squad member' ]
     }
   ]
 
