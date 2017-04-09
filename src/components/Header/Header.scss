@@ -4,10 +4,15 @@
 }
 
 .app-header {
-  width: 100%;
+  width: inherit;
   position: fixed;
   max-height: 30px;
   height: 30px;
   background-color: black;
   color: white;
+  z-index: 2;
+}
+
+@media (max-width: 749px) {
+  .app-header { width: 100%; }
 }
