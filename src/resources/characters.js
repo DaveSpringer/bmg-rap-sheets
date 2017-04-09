@@ -258,6 +258,41 @@ export const loadedCharacters = [{
       crews: [ '*' ],
       hates: [ 'bt', 'ga', 'lf' ],
       traits: [ 'Amphibious', 'Claws', 'Ferocious', 'Tough Skin', 'Suicide Squad member' ]
+    }, {
+      name: 'Chato Santana',
+      alias: 'Diablo',
+      rank: 'Free Agent',
+      reputation: 50,
+      funding: 200,
+      crews: [ '*' ],
+      hates: [ 'bt', 'ga', 'lf' ],
+      traits: [ 'Criminal', 'Dirty Fighter', 'Flaming Wave', 'Lantern', 'Magic Tattoos', 'Self-Discipline', 'Suicide Squad member', 'Supernatural' ]
+    }, {
+      name: 'George "Digger" Harkness',
+      alias: 'Captain Boomerang',
+      rank: 'Free Agent',
+      reputation: 48,
+      funding: 200,
+      crews: [ '*' ],
+      hates: [ 'bt', 'ga', 'lf' ],
+      traits: [ 'Elusive', 'Master Marksman', 'Ricochet', { name: 'Primary Target', target: 'Loot' }, 'Suicide Squad member' ]
+    }, {
+      name: 'Christopher Weiss',
+      alias: 'Slipknot',
+      rank: 'Free Agent',
+      reputation: 42,
+      funding: 200,
+      crews: [ '*' ],
+      hates: [ 'bt', 'ga', 'lf', 'ls' ],
+      traits: [ 'Arrest', 'Grapple Gun', 'Bulletproof Vest', 'Suicide Squad member' ]
+    }, {
+      name: 'Tatsu Yamashiro',
+      alias: 'Katana',
+      rank: 'Free Agent',
+      reputation: 50,
+      funding: 0,
+      crews: [ 'lf' ],
+      traits: [ 'Acrobat', 'Bodyguard', 'Martial Artist', 'Suicide Squad member', 'Weapon Master' ]
     }
   ]
 

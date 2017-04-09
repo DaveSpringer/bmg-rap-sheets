@@ -28,6 +28,13 @@ export const allTraits = [
     grants: [],
     page: "B.56"
   }, {
+    name: "Grapple Gun",
+    phase: "Execute the plan",
+    cost: "1SC+1MC",
+    rule: "Spend [1SC+1MC] to make a [Batclaw] movement. [See BMG pg 56]",
+    grants: [],
+    page: "B.56"
+  }, {
     name: "Hook Arrow",
     phase: "Execute the plan",
     cost: "1SC+1MC",
@@ -527,6 +534,106 @@ export const allTraits = [
     rule: 'All other [Friendly] [Henchmen] within 10cm of this [Character] gain 1 [AC]. This [AC] may take the number of [Action Counters] above a [Henchman]\'s normal maximum. This [Trait] may only be used once per [Round].',
     grants: [ ],
     page: 'B.59'
+  }, {
+    name : 'Leadership',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'All [Friendly Character]s within 20cm of this [Character] may reroll failed [Willpower Roll]s.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Ranged Master',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] receives +1 on [Ranged] [To Hit Roll]s.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Amphibious',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] does not spend [MC] to [Move] through [Difficult Ground]: [Water]',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Claws',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character]\'s [Unarmed Attacks] produce [Blood] + [Stun] [Damage].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Ferocious',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] may [Close Combat Push] without spending [SC].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Tough Skin',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'Subtract 1 from [Damage Roll]s made against this [Character].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Criminal',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'Once per [Game], if this [Character] causes an [Enemy Character] to become [K.O.] or a [Casualty], gain +1 [Willpower].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Flaming Wave',
+    phase: 'Execute the plan',
+    cost: '3 SC',
+    rule: 'This [Character] may make a Flaming Wave [Special Attack]. See Flash and Arrow pg.35',
+    grants: [ ],
+    page: 'F.35'
+  }, {
+    name : 'Magic Tattoos',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] is immunte to [Steal] and [Fire] effects.',
+    grants: [ ],
+    page: 'F.39'
+  }, {
+    name : 'Self-Discipline',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] may not be controlled by an [Opponent].',
+    grants: [ ],
+    page: 'F.42'
+  }, {
+    name : 'Supernatural',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: '[Attacks] made by this [Character] have the [Magic] [Weapon Trait].',
+    grants: [ ],
+    page: 'F.44'
+  }, {
+    name : 'Elusive',
+    phase: 'Execute the plan',
+    cost: '1 MC Passive',
+    rule: 'Once per [Round], this [Character] may spend 1 [MC] to get +1 to [Defense] against [Ranged Attack]s until the end of the [Round].',
+    grants: [ ],
+    page: 'B.59',
+    concern: true
+  }, {
+    name : 'Ricochet',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'Once per [Round], after this [Character] [Hits] with a [Ranged Attack], they may make an additional [Ranged Attack] with the same weapon. The new [Target] must have [Line of Sight] and be within 5cm of the original [Target].',
+    grants: [ ],
+    page: 'F.42',
+    concern: true
+  }, {
+    name : 'Weapon Master',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] receives +1 on melee [To Hit Rolls] when they are not [Unarmed].',
+    grants: [ ],
+    page: '?'
   }
 ]
 
