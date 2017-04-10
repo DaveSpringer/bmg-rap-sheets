@@ -22,6 +22,8 @@ let defaultState = {
   freeAgents: 0
 }
 
+let filterCharacterAlias = (alias) => (character) => character.alias === alias
+
 describe('(Redux Module) Builder', () => {
   it('Should export a constant SELECT_CREW', () => {
     expect(SELECT_CREW).to.equal('SELECT_CREW')
@@ -159,6 +161,35 @@ describe('(Redux Module) Builder', () => {
             expect(trait.rule).to.not.equal('Unknown')
           })
         })
+      })
+    })
+
+    let suicideSquadCrew = loadedState.allCrews.find((crew) => crew.id === 'ss')
+    let suicideSquadPopped = builderReducer(loadedState, selectCrew(suicideSquadCrew))
+    it('Should handle selecting Suicide Squad.', () => {
+      expect(suicideSquadPopped).to.be.an('object')
+      expect(suicideSquadPopped.crewName).to.equal('Suicide Squad')
+      expect(suicideSquadPopped.availableCharacters.length).to.be.above(1)
+      expect(suicideSquadPopped.characters.length).to.equal(0)
+      expect(suicideSquadPopped.hiddenCharacters.length).to.equal(0)
+      expect(suicideSquadPopped.reputation).to.equal(0)
+      expect(suicideSquadPopped.funding).to.equal(0)
+      expect(suicideSquadPopped.leaders).to.equal(0)
+      expect(suicideSquadPopped.sidekicks).to.equal(0)
+      expect(suicideSquadPopped.freeAgents).to.equal(0)
+    })
+
+    it('Suicide Squad should have Free Agents that are not generically available.', () => {
+      expect(suicideSquadPopped).to.be.an('object')
+      console.log('Here it is: ' + JSON.stringify(suicideSquadPopped.availableCharacters.filter(filterCharacterAlias('Harley Quinn'))))
+      expect(suicideSquadPopped.availableCharacters.filter(filterCharacterAlias('Katana')).length).to.be.above(0)
+    })
+
+    it('Should have Ranks populated on all available characters in the Suicide Squad.', () => {
+      expect(suicideSquadPopped).to.be.an('object')
+      expect(suicideSquadPopped.availableCharacters.length).to.be.above(1)
+      suicideSquadPopped.availableCharacters.forEach((character) => {
+        expect(character.rank).to.be.a('string')
       })
     })
   })

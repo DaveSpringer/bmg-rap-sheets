@@ -113,7 +113,7 @@ export const loadedCharacters = [{
       traits: [ 'Mobster', { name: 'Elite Boss', type: 'Cosplayers'}, 'Kaos Agent', 'Follow Me!', 'Psycho', 'Survivor', { name: 'True Love', love: 'Harley Quinn'} ]
     }, {
       name: 'Dr. Harleen Frances Quinzel',
-      alias: 'Harley Quinn',
+      alias: 'Harley Quinn (Suicide Squad)',
       rank: 'Sidekick',
       reputation: 90,
       funding: 300,
@@ -242,7 +242,7 @@ export const loadedCharacters = [{
       traits: [ 'Veteran' ]
     }, {
       name: 'Floyd Lawton',
-      alias: 'Deadshot',
+      alias: 'Deadshot (Suicide Squad)',
       rank: 'Free Agent',
       reputation: 96,
       funding: 400,
@@ -251,7 +251,7 @@ export const loadedCharacters = [{
       traits: [ 'Kevlar Vest', 'Leadership', 'Ranged Master', 'Shooter', 'Suicide Squad member' ]
     }, {
       name: 'Waylon Jones',
-      alias: 'Killer Croc',
+      alias: 'Killer Croc (Suicide Squad)',
       rank: 'Free Agent',
       reputation: 64,
       funding: 0,
@@ -260,7 +260,7 @@ export const loadedCharacters = [{
       traits: [ 'Amphibious', 'Claws', 'Ferocious', 'Tough Skin', 'Suicide Squad member' ]
     }, {
       name: 'Chato Santana',
-      alias: 'Diablo',
+      alias: 'Diablo (Suicide Squad)',
       rank: 'Free Agent',
       reputation: 50,
       funding: 200,
@@ -269,7 +269,7 @@ export const loadedCharacters = [{
       traits: [ 'Criminal', 'Dirty Fighter', 'Flaming Wave', 'Lantern', 'Magic Tattoos', 'Self-Discipline', 'Suicide Squad member', 'Supernatural' ]
     }, {
       name: 'George "Digger" Harkness',
-      alias: 'Captain Boomerang',
+      alias: 'Captain Boomerang (Suicide Squad)',
       rank: 'Free Agent',
       reputation: 48,
       funding: 200,
@@ -278,7 +278,7 @@ export const loadedCharacters = [{
       traits: [ 'Elusive', 'Master Marksman', 'Ricochet', { name: 'Primary Target', target: 'Loot' }, 'Suicide Squad member' ]
     }, {
       name: 'Christopher Weiss',
-      alias: 'Slipknot',
+      alias: 'Slipknot (Suicide Squad)',
       rank: 'Free Agent',
       reputation: 42,
       funding: 200,
@@ -287,7 +287,7 @@ export const loadedCharacters = [{
       traits: [ 'Arrest', 'Grapple Gun', 'Bulletproof Vest', 'Suicide Squad member' ]
     }, {
       name: 'Tatsu Yamashiro',
-      alias: 'Katana',
+      alias: 'Katana (Suicide Squad)',
       rank: 'Free Agent',
       reputation: 50,
       funding: 0,

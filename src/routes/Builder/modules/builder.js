@@ -62,7 +62,26 @@ const ACTION_HANDLERS = {
       }
       return characters
     }
-    let resultAvail = state.allCharacters.reduce(charFilter, [])
+    let resultAvail
+    if (action.crew.roster === undefined) {
+      resultAvail = state.allCharacters.reduce(charFilter, [])
+    } else {
+      console.log('Found a roster crew to populate: ' + JSON.stringify(action.crew))
+      let allCharacters = state.allCharacters
+      resultAvail = action.crew.roster.reduce((characters, rosterEntry) => {
+        let characterMatches = allCharacters.filter((character) => character.alias.indexOf(rosterEntry.name) !== -1)
+        if (characterMatches.length > 0) {
+          let rankedMatches = characterMatches.map((character) => {
+            return Object.assign({}, character, {
+              rank: (rosterEntry.boss === 'always' ? 'Boss' : (rosterEntry.boss === 'yes' ? 'Optional' : 'No'))
+            })
+          })
+          return characters.concat(rankedMatches)
+        } else {
+          return characters
+        }
+      }, [])
+    }
     resultAvail.sort(sortCharacters)
     return Object.assign({}, state, {
       crewName: crewName,

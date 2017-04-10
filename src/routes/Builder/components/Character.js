@@ -7,7 +7,7 @@ class Character extends React.Component {
   }
 
   render() {
-    let characterClass = this.props.character.rank.toLowerCase().replace(" ", "-")
+    let characterClass = this.props.character.rank.toLowerCase().replace(" ", "-") + "-rank"
     return (
       <div className={'character-box ' + characterClass}
             onClick={this.props.selectCharacter.bind(undefined, this.props.character.alias)}>

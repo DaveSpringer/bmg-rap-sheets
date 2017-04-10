@@ -28,5 +28,25 @@ export const sortCharacters = (a, b) => {
     } else {
       return 1
     }
+    case 'Boss':
+    if (b.rank === 'Boss') {
+      return b.reputation - a.reputation
+    } else {
+      return -1
+    }
+    case 'Optional':
+    if (b.rank === 'Boss') {
+      return 1
+    } else if (b.rank === 'Optional') {
+      return b.reputation - a.reputation
+    } else {
+      return -1
+    }
+    case 'No':
+    if (b.rank !== 'No') {
+      return 1
+    } else {
+      return b.reputation - a.reputation
+    }
   }
 }
