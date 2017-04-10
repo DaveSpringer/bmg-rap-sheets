@@ -182,7 +182,7 @@ describe('(Redux Module) Builder', () => {
     it('Suicide Squad should have Free Agents that are not generically available.', () => {
       expect(suicideSquadPopped).to.be.an('object')
       console.log('Here it is: ' + JSON.stringify(suicideSquadPopped.availableCharacters.filter(filterCharacterAlias('Harley Quinn'))))
-      expect(suicideSquadPopped.availableCharacters.filter(filterCharacterAlias('Katana')).length).to.be.above(0)
+      expect(suicideSquadPopped.availableCharacters.filter(filterCharacterAlias('Katana (Suicide Squad)')).length).to.be.above(0)
     })
 
     it('Should have Ranks populated on all available characters in the Suicide Squad.', () => {

@@ -47,7 +47,6 @@ export const actions = {
 const ACTION_HANDLERS = {
   [SELECT_CREW] : (state, action) => {
     let crewName = action.crew.name
-    console.log('Changing crew to: ' + crewName)
     let charFilter = (characters, character) => {
       if (character.crews.includes(action.crew.id) || (character.crews.includes('*') && !character.hates.includes(action.crew.id))) {
         if (typeof(character.rank) === 'object') {
@@ -66,7 +65,6 @@ const ACTION_HANDLERS = {
     if (action.crew.roster === undefined) {
       resultAvail = state.allCharacters.reduce(charFilter, [])
     } else {
-      console.log('Found a roster crew to populate: ' + JSON.stringify(action.crew))
       let allCharacters = state.allCharacters
       resultAvail = action.crew.roster.reduce((characters, rosterEntry) => {
         let characterMatches = allCharacters.filter((character) => character.alias.indexOf(rosterEntry.name) !== -1)
