@@ -21,6 +21,13 @@ export const allTraits = [
     grants: [],
     page: "B.55"
   }, {
+    name: "Climbing Rope",
+    phase: "Execute the plan",
+    cost: "1SC Passive",
+    rule: "Duplicate of [Bat Cape]. When this [Character] [Falls], they may spend 1 [SC] to avoid being [Knocked Down] and taking [Falling Damage].",
+    grants: [],
+    page: "B.55"
+  }, {
     name: "Batclaw",
     phase: "Execute the plan",
     cost: "1SC+1MC",
@@ -634,6 +641,151 @@ export const allTraits = [
     rule: 'This [Character] receives +1 on melee [To Hit Rolls] when they are not [Unarmed].',
     grants: [ ],
     page: '?'
+  }, {
+    name : 'Venom Dose',
+    nameFunc : '-count- Venom Dose',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'Once per [Round] during the [Raise the Plan] phase, this [Character] may consume 1 of -count- Venom Dose(s) to gain +1 [Strength] and can reroll [Unarmed Damage Rolls].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Weapon Master With',
+    nameFunc : 'Weapon Master: -weapon-',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] receives +1 on melee [To Hit Rolls] when [Attacking] with -weapon-.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Vulnerability',
+    nameFunc : 'Vulnerability to -element-',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] receives 2 [Blood Damage] for every [-element- Marker].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Lethal Blow',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'If this [Character] causes [Damage] to a [Target], that [Target] also suffers a [Stun] [Effect].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Large',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: '[Base Movement Distance] is 12cm. This [Character] may [Run] over [Small Obstacles], is damaged at 10cm when falling, cannot be [Pushed] or [Grabbed] unlesss the [Attacker] has the [Large] trait, and suffers -1 on [Ping!] tests.',
+    grants: [ 'Resilient', 'Charge' ],
+    page: '?'
+  }, {
+    name : 'Resilient',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] may reroll [Endurance Rolls].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Charge',
+    phase: 'Execute the plan',
+    cost: '1 MC + 1 SC',
+    rule: 'When using this [Special Attack]; this [Character] must move in a straight line. While performing this move this [Character] can [Strike] (or [Push] without spending [SC]) any [Character]s in their path, displacing them just enough to pass. At the end of the [Movement], this [Character] can attack normally.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Sturdy',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] loses 1 [AC] for every 3 [Damage] instead of 2.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Ice Flash',
+    phase: 'Execute the plan',
+    cost: '3 SC',
+    rule: 'Select a [Target] within 20cm and [Line of Sight]. The [Target] receives the [Cooled] [Effect]. This [Trait] may only be used once per [Round].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Light Armor',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: '[Damage Roll]s against this [Character] suffer a -1 penalty.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Safe Hands',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] is immune to the [Steal] [Effect].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Strategist',
+    phase: 'Strategies',
+    cost: '',
+    rule: 'This [Character]\'s [Crew] gets 1 additional [Strategy Point].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Mastermind',
+    phase: 'E, Execute the plan',
+    cost: '',
+    rule: 'Add 1 additional [Take the Lead] counter for your [Crew]. This [Character] can roll twice when solving [Riddles].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Order',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'Once per [Turn], [Seen] [Friendly] [Character] may reallocate up to 2 [Action Counter]s.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Escape Artist',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] ignores [Special Attack]: [Grab].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Runaway',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] is [Immune] to the [Arrest] [Trait].',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Hockey Gear',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] ignores the [Weapon Trait]: [Sharp]',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Bluff',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'Once per [Round], reduce the [Attack Skill] of a [Seen] [Character] within 10cm by 1. This is not cumulative.',
+    grants: [ ],
+    page: '?'
+  }, {
+    name : 'Rapid Fire',
+    phase: 'Execute the plan',
+    cost: '1 SC',
+    rule: 'Once per [Round], when this [Character] uses a [Ranged Weapon], gain +1 [Rate of Fire] even if this [Character] moves.',
+    grants: [ ],
+    page: '?',
+    concern: true
+  }, {
+    name : 'Tireless',
+    phase: 'Execute the plan',
+    cost: '',
+    rule: 'This [Character] may [Run] by spending only 1 [SC]',
+    grants: [ ],
+    page: '?',
+    concern: true
   }
 ]
 

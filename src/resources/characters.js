@@ -293,6 +293,152 @@ export const loadedCharacters = [{
       funding: 0,
       crews: [ 'lf' ],
       traits: [ 'Acrobat', 'Bodyguard', 'Martial Artist', 'Suicide Squad member', 'Weapon Master' ]
+    }, {
+      name: 'Agent Ron',
+      alias: 'None',
+      rank: 'Henchman',
+      reputation: 25,
+      funding: 300,
+      crews: [ 'bt' ],
+      traits: [ 'Arrest', 'Street Guy' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Gotham Policeman',
+      rank: 'Henchman',
+      reputation: 16,
+      funding: 0,
+      crews: [ 'bt' ],
+      traits: [ 'Arrest', 'Lantern' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Bane Origin',
+      rank: 'Leader',
+      reputation: 93,
+      funding: 0,
+      crews: [ 'bn' ],
+      traits: [ 'Lethal Blow', 'Large', 'Reinforced Gloves', { name: 'Venom Dose', count: '2' }, 'Master Fighter', { name: 'Scheming', count: 2 }, 'Sturdy' ]
+    }, {
+      name: 'Angel Vallelunga',
+      alias: 'Bird',
+      rank: 'Sidekick',
+      reputation: 60,
+      funding: 100,
+      crews: [ 'bn' ],
+      traits: [ 'Bulletproof Vest', 'Climbing Rope', { name: 'Elite Boss', type: 'Soldier of Fortune' }, 'Self-Discipline', 'Veteran', { name: 'Weapon Master With', weapon: 'Combat Machete' }, 'Sturdy' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Dallas',
+      rank: 'Henchman',
+      reputation: 35,
+      funding: 600,
+      crews: [ 'bn', 'ls' ],
+      traits: [ 'Bulletproof Vest', 'Veteran' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Smash',
+      rank: 'Henchman',
+      reputation: 30,
+      funding: 0,
+      crews: [ 'bn', 'ls' ],
+      traits: [ 'Bulletproof Vest', 'Veteran' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Mc Gregor',
+      rank: 'Henchman',
+      reputation: 30,
+      funding: 0,
+      crews: [ 'bn', 'ls' ],
+      traits: [ 'Bulletproof Vest', 'Veteran', { name: 'Weapon Master With', weapon: 'Machete'} ]
+    }, {
+      name: 'Victor Fries',
+      alias: 'Mr. Freeze (Arkham Knight)',
+      rank: 'Leader',
+      reputation: 80,
+      funding: 0,
+      crews: [ 'mf' ],
+      traits: [ 'Desensitized', 'Ice Flash', 'Light Armor', 'Safe Hands', { name: 'Scheming', count: 3 }, 'Scientific', 'Self-Discipline', { name: 'Vulnerability', element: 'Fire' } ]
+    }, {
+      name: 'Leonard Snart',
+      alias: 'Captain Cold',
+      rank: [{ crew: 'mf', rank: 'Sidekick' }, { crew: '*', rank: 'Free Agent' }],
+      reputation: 72,
+      funding: 400,
+      crews: [ 'mf' ],
+      hates: [ 'bt', 'ga', 'lf', 'jk', 'ls' ],
+      traits: [ 'Strategist', 'Leadership', 'Mastermind', 'Order', 'Ranged Master', { name: 'Teamwork', counter: 1, target: 'Heatwave' } ]
+    }, {
+      name: 'Mick Rory',
+      alias: 'Heat Wave',
+      rank: 'Free Agent',
+      reputation: 65,
+      funding: 300,
+      crews: [ '*' ],
+      hates: [ 'bt', 'ga', 'lf', 'jk', 'ls' ],
+      traits: [ 'Criminal', 'Escape Artist', 'Reinforced Gloves', 'Runaway', 'Sturdy', { name: 'Teamwork', counter: 2, target: 'Captain Cold' } ]
+    }, {
+      name: 'Unknown',
+      alias: 'Snowy 5',
+      rank: 'Henchman',
+      reputation: 28,
+      funding: 0,
+      crews: [ 'mf' ],
+      traits: [ 'Hockey Gear', 'Bluff', 'Order' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Snowy 4',
+      rank: 'Henchman',
+      reputation: 24,
+      funding: 300,
+      crews: [ 'mf' ],
+      traits: [ 'Hockey Gear' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Snowy 3',
+      rank: 'Henchman',
+      reputation: 24,
+      funding: 0,
+      crews: [ 'mf' ],
+      traits: [ 'Hockey Gear', 'Radio', { name: 'Combo with', weapon: 'Hockey Stick' } ]
+    }, {
+      name: 'Unknown',
+      alias: 'Snowy 2',
+      rank: 'Henchman',
+      reputation: 23,
+      funding: 400,
+      crews: [ 'mf' ],
+      traits: [ 'Hockey Gear' ]
+    }, {
+      name: 'Unknown',
+      alias: 'Snowy 1',
+      rank: 'Henchman',
+      reputation: 23,
+      funding: 300,
+      crews: [ 'mf' ],
+      traits: [ 'Hockey Gear' ]
+    }, {
+      name: 'Sullivan',
+      alias: 'Clover',
+      rank: 'Henchman',
+      reputation: 30,
+      funding: 300,
+      crews: [ 'bn' ],
+      traits: [ 'Bulletproof Vest', 'Veteran', 'Rapid Fire' ]
+    }, {
+      name: 'Diaz',
+      alias: 'Cuchillo',
+      rank: 'Henchman',
+      reputation: 27,
+      funding: 0,
+      crews: [ 'bn' ],
+      traits: [ 'Bulletproof Vest', 'Sneak Attack', 'Stealth', 'Tireless', 'Veteran' ]
+    }, {
+      name: 'Ike',
+      alias: 'Schoolboy',
+      rank: 'Henchman',
+      reputation: 33,
+      funding: 500,
+      crews: [ 'bn' ],
+      traits: [ { name: 'Elite', type: 'Soldier of Fortune' }, 'Gas Mask', 'Veteran' ]
     }
   ]
 
