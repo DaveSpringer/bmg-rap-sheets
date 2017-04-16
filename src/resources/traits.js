@@ -237,7 +237,7 @@ export const allTraits = [
     page: 'B.65'
   }, {
     name : 'Combo with',
-    nameFunc : 'Combi with: -weapon-',
+    nameFunc : 'Combo with: -weapon-',
     phase: 'Execute the plan',
     cost: '',
     rule: 'When attacking with -weapon-, gain 1 extra [Attack Dice] for every 2 [AC] spent.',

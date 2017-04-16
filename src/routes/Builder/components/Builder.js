@@ -31,7 +31,7 @@ class Builder extends React.Component {
         <h2>Select Characters</h2>
         <div id='available-characters' className='character-area'>
           {availableCharacters.map(character =>
-            <Character key={character.alias}
+            <Character key={character.alias + '-' + character.name}
               character={character}
               selectCharacter={this.props.selectCharacter} />
           )}

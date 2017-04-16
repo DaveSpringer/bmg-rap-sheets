@@ -74,15 +74,28 @@ let data = fs.readFileSync('./resources/bmg-crew-gen-0_8_4_5.csv', 'utf8')
 let inputChars = data.split('\n')
 inputChars = inputChars.slice(2, inputChars.length + 1)
 
+let cleanupTrait = function(trait) {
+  let resultTrait = trait
+  if (trait.lastIndexOf('C)') !== -1 || trait.lastIndexOf('/P)') !== -1) {
+    resultTrait = trait.split(' (')[0]
+  }
+  if (resultTrait.toUpperCase().indexOf('PRIMARY TARGET') !== -1) {
+    console.log('Found a character with Primary Target: ' + trait)
+  } else if (resultTrait.toUpperCase().indexOf('TEAMWORK') !== -1) {
+    console.log('Found a character with functional trait: ' + trait)
+  } else if (resultTrait.toUpperCase().indexOf('ELITE BOSS') !== -1) {
+    console.log('Found a character with functional trait: ' + trait)
+  } else if (resultTrait.toUpperCase().indexOf('COMBO WITH') !== -1) {
+    console.log('Found a character with functional trait: ' + trait)
+  }
+  return resultTrait
+}
+
 let parseTraits = function( t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12 ) {
   let traitArray = [ t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12 ]
   return traitArray.reduce(function(newTraits, trait) {
     if (trait !== undefined && trait !== '-' && trait.length > 0) {
-      if (trait.lastIndexOf('C)') !== -1 || trait.lastIndexOf('/P)') !== -1) {
-        newTraits.push(trait.split(' (')[0])
-      } else {
-        newTraits.push(trait)
-      }
+      newTraits.push(cleanupTrait(trait))
     }
     return newTraits
   }, [])
@@ -126,31 +139,13 @@ let parseCrews = function(crewsString) {
   }, [])
 }
 
-let charColumns, name, alias
-let reduceInputChars = function(newChars, char) {
-  charColumns = char.split(',')
-  if (charColumns[NAME_COL].length === 0 && charColumns[ALIAS_COL].length === 0) {
-    console.log("Found a row to skip: " + char)
-    return newChars
-  }
-  if (characterAliases.includes(`${charColumns[ALIAS_COL]}`.toUpperCase())) {
-    console.log("Character " + charColumns[ALIAS_COL] + "-" + charColumns[NAME_COL] + " already exists. Skipping.")
-    return newChars
-  }
-  if (nameToRepMap[charColumns[NAME_COL].toUpperCase()] !== undefined) {
-    let candidateReps = nameToRepMap[charColumns[NAME_COL].toUpperCase()]
-    if (candidateReps.includes(charColumns[REP_COL])) {
-      console.log("Character " + charColumns[ALIAS_COL] + "-" + charColumns[NAME_COL] + " seems to already exist due to name and rep match. Skipping.")
-      return newChars
-    }
-  }
-  try {
-    newChars.push({
+let populateChar = function(charColumns) {
+  return {
       name: charColumns[NAME_COL],
       alias: charColumns[ALIAS_COL],
       rank: charColumns[RANK_COL],
-      reputation: charColumns[REP_COL],
-      funding: charColumns[FUNDING_COL],
+      reputation: parseInt(charColumns[REP_COL]),
+      funding: parseInt(charColumns[FUNDING_COL]),
       crews: parseCrews(charColumns[CREW_COL]),
       hates: parseCrews(charColumns[HATES_COL]),
       traits: parseTraits(charColumns[TRAIT_1_COL],
@@ -164,8 +159,39 @@ let reduceInputChars = function(newChars, char) {
                           charColumns[TRAIT_9_COL],
                           charColumns[TRAIT_10_COL],
                           charColumns[TRAIT_11_COL],
-                          charColumns[TRAIT_12_COL])
-    })
+                          charColumns[TRAIT_12_COL]),
+      wp: parseInt(charColumns[WILLPOWER_COL]),
+      str: parseInt(charColumns[STRENGTH_COL]),
+      mov: parseInt(charColumns[MOVEMENT_COL]),
+      att: parseInt(charColumns[ATTACK_COL]),
+      def: parseInt(charColumns[DEFENSE_COL]),
+      end: parseInt(charColumns[ENDURANCE_COL]),
+      spc: parseInt(charColumns[SPECIAL_COL])
+    }
+}
+
+let charColumns, name, alias, skippedChars = []
+let reduceInputChars = function(newChars, char) {
+  charColumns = char.split(',')
+  if (charColumns[NAME_COL].length === 0 && charColumns[ALIAS_COL].length === 0) {
+    console.log("Found a row to skip: " + char)
+    return newChars
+  }
+  if (characterAliases.includes(`${charColumns[ALIAS_COL]}`.toUpperCase())) {
+    console.log("Character " + charColumns[ALIAS_COL] + "-" + charColumns[NAME_COL] + " already exists. Skipping.")
+    skippedChars.push(populateChar(charColumns))
+    return newChars
+  }
+  if (nameToRepMap[charColumns[NAME_COL].toUpperCase()] !== undefined) {
+    let candidateReps = nameToRepMap[charColumns[NAME_COL].toUpperCase()]
+    if (candidateReps.includes(charColumns[REP_COL])) {
+      console.log("Character " + charColumns[ALIAS_COL] + "-" + charColumns[NAME_COL] + " seems to already exist due to name and rep match. Skipping.")
+      skippedChars.push(populateChar(charColumns))
+      return newChars
+    }
+  }
+  try {
+    newChars.push(populateChar(charColumns))
   } catch (err) {
     console.log(err)
     console.log('Skipping character ' + charColumns[NAME_COL] + '-' + charColumns[ALIAS_COL] + ' due to error.')
@@ -177,5 +203,11 @@ let outputChars = inputChars.reduce(reduceInputChars, [])
 var outputJson = JSON.stringify(outputChars, null, '  ')
 
 fs.writeFile('new-characters.json', outputJson, 'utf8');
+
+console.log('\n\n******* beginning cleanup of current chars *******\n\n')
+
+let cleanupOldChars = loadedCharacters.loadedCharacters.reduce(function(chars, char) {
+
+}, [])
 
 // console.log(JSON.stringify(outputChars, null, 1))
