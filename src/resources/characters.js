@@ -442,7 +442,7 @@ export const loadedCharacters = [{
 }, {
   name: 'Eobard Thawne',
   alias: 'Reverse Flash (TV Show)',
-  rank: ['Free Agent'],
+  rank: 'Free Agent',
   reputation: 110,
   funding: 0,
   crews: ['*'],
@@ -562,47 +562,16 @@ export const loadedCharacters = [{
   rank: "Leader",
   reputation: "150",
   funding: "0",
-  crews: [
-    "bn"
-  ],
+  crews: [ "bn" ],
   hates: [],
-  traits: [
-    "Titan Addict",
-    "Titan Dose x2",
-    "Primary Target: Titan",
-    "Scheming/1",
-    "Master Fighter",
-    "Desensitized",
-    "Large"
-  ]
-}, {
-  name: "Unknown",
-  alias: "Bane (AO)",
-  rank: "Leader",
-  reputation: "93",
-  funding: "0",
-  crews: [
-    "bn"
-  ],
-  hates: [],
-  traits: [
-    "Large",
-    "Lethal Blow",
-    "2 Venom Dose",
-    "Master Fighter",
-    "Scheming/2",
-    "Sturdy"
-  ]
+  traits: [ "Titan Addict", "Titan Dose x2", "Primary Target: Titan", "Scheming/1", "Master Fighter", "Desensitized", "Large" ]
 }, {
   name: "Unknown",
   alias: "Bane (DKR Movie)",
-  rank: "Leader(Bane)/Sidekick(LoS)",
+  rank: [{ crew: 'bn', rank: 'Leader' }, { crew: 'ls', rank: 'Sidekick' }],
   reputation: "96",
   funding: "0",
-  crews: [
-    "bn",
-    "ls"
-  ],
+  crews: [ "bn", "ls" ],
   hates: [],
   traits: [
     "Combo: Unarmed",
@@ -924,9 +893,7 @@ export const loadedCharacters = [{
   rank: "Henchman",
   reputation: "13",
   funding: "0",
-  crews: [
-    "pn"
-  ],
+  crews: [ "pn" ],
   hates: [],
   traits: [
     "Mobster"
@@ -1238,12 +1205,7 @@ export const loadedCharacters = [{
   reputation: "116",
   funding: "0",
   crews: ['*'],
-  hates: [
-    "bt",
-    "lf",
-    "ga",
-    "bn"
-  ],
+  hates: [ "bt", "lf", "ga", "bn" ],
   traits: [
     "Claybody",
     "Regeneration",
@@ -1313,7 +1275,7 @@ export const loadedCharacters = [{
 }, {
   name: "Gillian B. Loeb",
   alias: "Commissioner Loeb",
-  rank: "\"Leader (LAW) / Sidekick (Black Mask",
+  rank: [{ crew: 'lf', rank: 'Leader'}, { crew: 'bm', rank: 'Sidekick' }],
   reputation: "",
   funding: "",
   crews: [
@@ -1336,9 +1298,7 @@ export const loadedCharacters = [{
   rank: "Henchman",
   reputation: "35",
   funding: "200",
-  crews: [
-    "pn"
-  ],
+  crews: [ "pn" ],
   hates: [],
   traits: [
     "Power Strike",
@@ -1574,9 +1534,7 @@ export const loadedCharacters = [{
   rank: "Leader",
   reputation: "111",
   funding: "0",
-  crews: [
-    "pn"
-  ],
+  crews: [ "pn" ],
   hates: [],
   traits: [
     "Dirty Money",
@@ -2185,9 +2143,7 @@ export const loadedCharacters = [{
   rank: "Henchman",
   reputation: "25",
   funding: "200",
-  crews: [
-    "pn"
-  ],
+  crews: [ "pn" ],
   hates: [],
   traits: [
     "Criminal",
@@ -2399,7 +2355,7 @@ export const loadedCharacters = [{
 }, {
   name: "Louise Lincoln",
   alias: "Killer Frost",
-  rank: "Free Agent / Sidekick",
+  rank: [{ crew: 'mf', rank: 'Sidekick'}, { crew: '*', rank: 'Free Agent' }],
   reputation: "70",
   funding: "150",
   crews: ['*'],
@@ -2482,21 +2438,9 @@ export const loadedCharacters = [{
   rank: "Sidekick",
   reputation: "53",
   funding: "400",
-  crews: [
-    "lf",
-    "oc",
-    "bm",
-    "tf"
-  ],
+  crews: [ "lf", "oc", "bm", "tf" ],
   hates: [],
-  traits: [
-    "Arrest",
-    "Lantern",
-    "Corrupt",
-    "Bulletproof Vest",
-    "Undercover",
-    "Veteran"
-  ]
+  traits: [ "Arrest", "Lantern", "Corrupt", "Bulletproof Vest", "Undercover", "Veteran" ]
 }, {
   name: "Unknown",
   alias: "Little Spark",
@@ -2504,11 +2448,7 @@ export const loadedCharacters = [{
   reputation: "40",
   funding: "100",
   crews: ['*'],
-  hates: [
-    "bt",
-    "lf",
-    "ga"
-  ],
+  hates: [ "bt", "lf", "ga" ],
   traits: [
     "Catcher Gear",
     "Electric Storm",
@@ -2608,23 +2548,6 @@ export const loadedCharacters = [{
   ]
 }, {
   name: "Unknown",
-  alias: "McGregor",
-  rank: "Henchman",
-  reputation: "27",
-  funding: "0",
-  crews: [
-    "bn",
-    "ls"
-  ],
-  hates: [],
-  traits: [
-    "Mercenary",
-    "Veteran",
-    "Bulletproof Vest",
-    "Weapon Master: Machete"
-  ]
-}, {
-  name: "Unknown",
   alias: "Mesh",
   rank: "Henchman",
   reputation: "22",
@@ -2642,9 +2565,7 @@ export const loadedCharacters = [{
   rank: "Henchman",
   reputation: "40",
   funding: "0",
-  crews: [
-    "sc"
-  ],
+  crews: [ "sc" ],
   hates: [],
   traits: [
     "Gas Mask",
@@ -2677,10 +2598,7 @@ export const loadedCharacters = [{
   rank: "Henchman",
   reputation: "30",
   funding: "0",
-  crews: [
-    "bn",
-    "ls"
-  ],
+  crews: [ "bn", "ls" ],
   hates: [],
   traits: [
     "Mercenary",
@@ -2937,9 +2855,7 @@ export const loadedCharacters = [{
   rank: "Leader",
   reputation: "75",
   funding: "0",
-  crews: [
-    "pn"
-  ],
+  crews: [ "pn" ],
   hates: [],
   traits: [
     "Lord of Business",
@@ -2956,9 +2872,7 @@ export const loadedCharacters = [{
   rank: "Leader",
   reputation: "77",
   funding: "0",
-  crews: [
-    "pn"
-  ],
+  crews: [ "pn" ],
   hates: [],
   traits: [
     "Lord of Business",
@@ -2974,12 +2888,10 @@ export const loadedCharacters = [{
 }, {
   name: "Oswald Chesterfield Cobblepot",
   alias: "Penguin (Gotham)",
-  rank: "Leader (Penguin) / Sidekick (OC)",
+  rank: [{ crew: 'pn', rank: 'Leader' }, { crew: 'oc', rank: 'Sidekick' }],
   reputation: "70",
   funding: "0",
-  crews: [
-    "pn"
-  ],
+  crews: [ "pn" ],
   hates: [],
   traits: [
     "Boss's Orders",
@@ -4030,10 +3942,7 @@ export const loadedCharacters = [{
   rank: "Henchman",
   reputation: "31",
   funding: "250",
-  crews: [
-    "bn",
-    "ls"
-  ],
+  crews: [ "bn", "ls" ],
   hates: [],
   traits: [
     "Mercenary",
@@ -4134,9 +4043,7 @@ export const loadedCharacters = [{
   rank: "Henchman",
   reputation: "43",
   funding: "600",
-  crews: [
-    "bn"
-  ],
+  crews: [ "bn" ],
   hates: [],
   traits: [
     "Veteran",
@@ -4276,9 +4183,7 @@ export const loadedCharacters = [{
   rank: "Henchman",
   reputation: "57",
   funding: "0",
-  crews: [
-    "bn"
-  ],
+  crews: [ "bn" ],
   hates: [],
   traits: [
     "Bodyguard",
@@ -4330,10 +4235,7 @@ export const loadedCharacters = [{
   rank: "Free Agent",
   reputation: "55",
   funding: "0",
-  crews: [
-    "wg",
-    "bn"
-  ],
+  crews: [ "wg", "bn" ],
   hates: [],
   traits: [
     "Acrobat",
