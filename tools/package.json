@@ -7,7 +7,9 @@
     "transform-es2015-modules-commonjs": "^6.0.0"
   },
   "scripts": {
-    "build": "babel --plugins transform-es2015-modules-commonjs ../src/resources/characters.js -o characters.js"
+    "build": "babel --plugins transform-es2015-modules-commonjs ../src/resources/characters.js -o characters.js",
+    "run": "node bmg-crew-generator-translator.js",
+    "deploy": "cp targets/final-characters.js ../src/resources/characters.js"
   },
   "dependencies": {
     "babel-cli": "^6.24.1"

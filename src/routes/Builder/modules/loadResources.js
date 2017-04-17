@@ -10,7 +10,7 @@ const findTrait = (populatedTraits, traitName) => {
     page : 'Unknown',
     cost : ''
   }
-  if (typeof(traitName) === "string") {
+  if (typeof traitName === 'string') {
     let retrievedTrait = allTraits.find((trait) => (trait !== null && trait.name === traitName))
 
     if (retrievedTrait !== undefined) {
@@ -47,14 +47,14 @@ const populateTraits = (characters, character) => {
 }
 
 let loadAllResources = (state, action) => {
-  //Now... Add all traits to each character... Ooph...
+  // Now... Add all traits to each character... Ooph...
   // TODO: Optimize the %@#$^ out of this in the future.
 
   let allCharacters = loadedCharacters.reduce(populateTraits, [])
   return Object.assign({}, state, {
     allTraits : allTraits,
     allCrews : allCrews,
-    allCharacters : loadedCharacters
+    allCharacters : allCharacters
   })
 }
 

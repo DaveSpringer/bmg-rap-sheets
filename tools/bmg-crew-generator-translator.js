@@ -81,6 +81,9 @@ let cleanupTrait = function(trait) {
   if (trait.lastIndexOf('C)') !== -1 || trait.lastIndexOf('/P)') !== -1) {
     resultTrait = trait.split(' (')[0]
   }
+  if (trait.lastIndexOf('Armour') !== -1) {
+    resultTrait = trait.replace('Armour', 'Armor')
+  }
   if (resultTrait.toUpperCase().indexOf('PRIMARY TARGET') !== -1) {
     console.log('Found a character with Primary Target: ' + trait)
     let splitTrait = resultTrait.split(': ')
@@ -162,6 +165,18 @@ let cleanupTrait = function(trait) {
       count: parseInt(splitTrait[1])
     }
     console.log('Resulting trait: ' + JSON.stringify(resultTrait))
+  } else if (trait.indexOf('Hook Arrow') !== -1) {
+    resultTrait = 'Hook Arrow'
+  } else if (trait.toUpperCase().indexOf('ARM') !== -1 && trait.indexOf('Bat') !== -1) {
+    console.log('Checking out Bat Armor' + trait)
+    let splitTrait = trait.split('MK')
+    if (trait.indexOf('Mk') !== -1) {
+      splitTrait = trait.split('Mk')
+    } else {
+      splitTrait = trait.split('MK')
+    }
+    let mark = splitTrait[1].trim()
+    resultTrait = 'Bat-Armor MK ' + mark
   }
   return resultTrait
 }
@@ -176,42 +191,87 @@ let parseTraits = function( t1, t2, t3, t4, t5, t6, t7, t8, t9, t10, t11, t12 ) 
   }, [])
 }
 
-let parseCrews = function(crewsString) {
-  let splitCrews = crewsString.split(' / ')
-  return splitCrews.reduce(function(crews, crew) {
+let parseCrew = function(crew) {
+    let resultCrew
     switch (crew.trim()) {
-      case 'Batman': crews.push('bt'); break;
+      case 'Batman': resultCrew = 'bt'; break;
+      case 'LAW':
       case 'Law Forces':
-      case 'LAW Forces': crews.push('lf'); break;
+      case 'LAW Forces': resultCrew = 'lf'; break;
       case 'Green Arrrow':
-      case 'Green Arrow': crews.push('ga'); break;
+      case 'Green Arrow': resultCrew = 'ga'; break;
       case 'Joker & Harley':
-      case 'Joker': crews.push('jk'); break;
-      case 'Bane': crews.push('bn'); break;
-      case 'Black Mask': crews.push('bm'); break;
+      case 'Joker': resultCrew = 'jk'; break;
+      case 'Bane': resultCrew = 'bn'; break;
+      case 'Black Mask': resultCrew = 'bm'; break;
       case 'League of Shadow':
-      case 'LoS': crews.push('ls'); break;
-      case 'The Court of Owls': crews.push('co'); break;
-      case 'Scarecrow': crews.push('sc'); break;
-      case 'Penguin': crews.push('pn'); break;
+      case 'LoS': resultCrew = 'ls'; break;
+      case 'The Court of Owls': resultCrew = 'co'; break;
+      case 'Scarecrow': resultCrew = 'sc'; break;
+      case 'Penguin': resultCrew = 'pn'; break;
       case 'Two-Face':
-      case 'Two Face': crews.push('tf'); break;
-      case 'Poison Ivy': crews.push('pi'); break;
-      case 'Riddler': crews.push('rd'); break;
-      case 'Watchmen': crews.push('wm'); break;
-      case 'Wonderland Gang': crews.push('wg'); break;
-      case 'Mr. Freeze': crews.push('mf'); break;
+      case 'Two Face': resultCrew = 'tf'; break;
+      case 'Poison Ivy': resultCrew = 'pi'; break;
+      case 'Riddler': resultCrew = 'rd'; break;
+      case 'Watchmen': resultCrew = 'wm'; break;
+      case 'Wonderland Gang': resultCrew = 'wg'; break;
+      case 'Mr. Freeze': resultCrew = 'mf'; break;
       case 'OC':
       case 'Organised Crime':
-      case 'Organized Crime': crews.push('oc'); break;
-      case 'Unknown':
-      case '':
-        break;
+      case 'Organized Crime': resultCrew = 'oc'; break;
+      case 'Unknown': resultCrew = '*'; break;
+      case '': break;
       default:
         throw 'Unexpected crew ' + crew
     }
+    return resultCrew
+}
+
+let parseCrews = function(crewsString) {
+  let splitCrews = crewsString.split(' / ')
+  return splitCrews.reduce(function(crews, crew) {
+    let parsedCrew = parseCrew(crew)
+    if (parsedCrew !== undefined) {
+      crews.push(parseCrew(crew))
+    }
     return crews
   }, [])
+}
+
+let parseRank = function(rank) {
+  let resultRank = rank
+  if (rank.indexOf('/') !== -1 && rank.indexOf('Vehicle') === -1) {
+    console.log('Looking into split rank: ' + rank)
+    let splitRank = rank.split('/')
+    let factionRanks
+    resultRank = splitRank.reduce(function(finalRank, curRank) {
+      console.log('Current rank: ' + curRank)
+      if (curRank.indexOf('(') === -1) {
+        if (curRank.indexOf('Free Agent') !== -1) {
+          finalRank.push({
+            crew: '*',
+            rank: 'Free Agent'
+          })
+        } else {
+          throw 'Found a character lacking a crew associated with their selectable rank. Please check CSV for: ' + curRank
+        }
+      } else {
+        factionRanks = curRank.split('(')
+        let crewString = factionRanks[1].trim()
+        let closePeren = (crewString.indexOf(')') === -1 ? crewString.length : crewString.indexOf(')'))
+        crewString = crewString.substring(0, closePeren)
+        finalRank.push({
+          crew: parseCrew(crewString),
+          rank: factionRanks[0].trim()
+        })
+      }
+      return finalRank
+    }, [])
+  }
+  if (resultRank === 'Minion') {
+    resultRank = 'Henchman'
+  }
+  return resultRank
 }
 
 let populateChar = function(charColumns) {
@@ -237,7 +297,7 @@ let populateChar = function(charColumns) {
   return {
       name: charColumns[NAME_COL],
       alias: charColumns[ALIAS_COL],
-      rank: charColumns[RANK_COL],
+      rank: parseRank(charColumns[RANK_COL]),
       reputation: parseInt(charColumns[REP_COL]),
       funding: parseInt(charColumns[FUNDING_COL]),
       crews: parseCrews(charColumns[CREW_COL]),
@@ -256,7 +316,7 @@ let populateChar = function(charColumns) {
 let charColumns, name, alias, skippedChars = []
 let reduceInputChars = function(newChars, char) {
   charColumns = char.split(',')
-  if (charColumns[NAME_COL].length === 0 && charColumns[ALIAS_COL].length === 0) {
+  if (charColumns[NAME_COL] === undefined || (charColumns[NAME_COL].length === 0 && charColumns[ALIAS_COL].length === 0)) {
     // console.log("Found a row to skip: " + char)
     return newChars
   }
@@ -285,16 +345,14 @@ let outputChars = inputChars.reduce(reduceInputChars, [])
 
 var outputJson = JSON.stringify(outputChars, null, '  ')
 
-fs.writeFile('new-characters.json', outputJson, 'utf8');
+fs.writeFile('targets/new-characters.json', outputJson, 'utf8');
 
-var skippedJson = JSON.stringify(skippedChars, null, 1)
+var skippedJson = 'export const loadedCharacters = ' + JSON.stringify(skippedChars, null, 1)
 
-fs.writeFile('skipped-characters.json', skippedJson, 'utf8')
+fs.writeFile('targets/skipped-characters.js', skippedJson, 'utf8')
 
-console.log('\n\n******* beginning cleanup of current chars *******\n\n')
-
-let cleanupOldChars = loadedCharacters.loadedCharacters.reduce(function(chars, char) {
-
-}, [])
-
+let finalChars = outputChars.concat(skippedChars)
+let re = /"/g
+let finalJson = 'export const loadedCharacters = ' + JSON.stringify(finalChars, null, 2).replace(/'/g, '\\\'').replace(re, "'")
+fs.writeFile('targets/final-characters.js', finalJson, 'utf8')
 // console.log(JSON.stringify(outputChars, null, 1))
