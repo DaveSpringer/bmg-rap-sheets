@@ -6,6 +6,8 @@ let NAME_COL = 2,
   CREW_COL = 5,
   AFFINITY_COL = 6,
   HATES_COL = 8,
+  ELITE_COL = 10,
+  ELITE_BOSS_COL = 11,
   REP_COL = 14,
   FUNDING_COL = 15,
   WILLPOWER_COL = 16,
@@ -81,12 +83,85 @@ let cleanupTrait = function(trait) {
   }
   if (resultTrait.toUpperCase().indexOf('PRIMARY TARGET') !== -1) {
     console.log('Found a character with Primary Target: ' + trait)
+    let splitTrait = resultTrait.split(': ')
+    resultTrait = {
+      name: splitTrait[0],
+      target: splitTrait[1]
+    }
+    console.log('Resulting trait: ' + JSON.stringify(resultTrait))
   } else if (resultTrait.toUpperCase().indexOf('TEAMWORK') !== -1) {
     console.log('Found a character with functional trait: ' + trait)
-  } else if (resultTrait.toUpperCase().indexOf('ELITE BOSS') !== -1) {
+    let splitTrait
+    let firstTrait
+    if (resultTrait.lastIndexOf(': ') !== -1) {
+      splitTrait = resultTrait.split(': ')
+      firstSplit = splitTrait[0].split(' ')
+    } else {
+      splitTrait = resultTrait.split(' ')
+      firstSplit = splitTrait[0].split('/')
+    }
+    resultTrait = {
+      name: firstSplit[0],
+      counter: firstSplit[1],
+      target: splitTrait[1]
+    }
+    console.log('Resulting trait: ' + JSON.stringify(resultTrait))
+  } else if (resultTrait.toUpperCase().indexOf('COMBO') !== -1) {
+    let splitTrait = resultTrait.split(': ')
+    resultTrait = {
+      name: 'Combo with',
+      weapon: splitTrait[1]
+    }
+    console.log('Resulting trait: ' + JSON.stringify(resultTrait))
+  } else if (resultTrait.toUpperCase().indexOf('SPEEDSTER') !== -1) {
     console.log('Found a character with functional trait: ' + trait)
-  } else if (resultTrait.toUpperCase().indexOf('COMBO WITH') !== -1) {
+    let splitTrait
+    if (resultTrait.indexOf(' ') !== -1) {
+      splitTrait = resultTrait.split(' ')
+    } else {
+      splitTrait = resultTrait.split('/')
+    }
+    resultTrait = {
+      name: 'Speedster',
+      tokens: parseInt(splitTrait[1])
+    }
+    console.log('Resulting trait: ' + JSON.stringify(resultTrait))
+  } else if (resultTrait.toUpperCase().indexOf('VENOM DOSE') !== -1) {
     console.log('Found a character with functional trait: ' + trait)
+  } else if (resultTrait.toUpperCase().indexOf('WEAPON MASTER') !== -1) {
+    console.log('Found a character with functional trait: ' + trait)
+    if (trait.indexOf(': ') !== -1) {
+      let splitTrait = trait.split(': ')
+      resultTrait = {
+        name: 'Weapon Master With',
+        weapon: splitTrait[1]
+      }
+    }
+    console.log('Resulting trait: ' + JSON.stringify(resultTrait))
+  } else if (resultTrait.toUpperCase().indexOf('VULNERABILITY') !== -1) {
+    console.log('Found a character with functional trait: ' + trait)
+    let splitTrait = trait.split(' ')
+    resultTrait = {
+      name: 'Vulnerability',
+      element: splitTrait[2]
+    }
+    console.log('Resulting trait: ' + JSON.stringify(resultTrait))
+  } else if (resultTrait.toUpperCase().indexOf('TRUE LOVE') !== -1) {
+    console.log('Found a character with functional trait: ' + trait)
+    let splitTrait = trait.split(': ')
+    resultTrait = {
+      name: 'True Love',
+      love: splitTrait[1]
+    }
+    console.log('Resulting trait: ' + JSON.stringify(resultTrait))
+  } else if (resultTrait.toUpperCase().indexOf('SCHEMING') !== -1) {
+    console.log('*Found a character with functional trait: ' + trait)
+    let splitTrait = trait.split('/')
+    resultTrait = {
+      name: 'Scheming',
+      count: parseInt(splitTrait[1])
+    }
+    console.log('Resulting trait: ' + JSON.stringify(resultTrait))
   }
   return resultTrait
 }
@@ -140,6 +215,25 @@ let parseCrews = function(crewsString) {
 }
 
 let populateChar = function(charColumns) {
+  let traits = parseTraits(charColumns[TRAIT_1_COL],
+                           charColumns[TRAIT_2_COL],
+                           charColumns[TRAIT_3_COL],
+                           charColumns[TRAIT_4_COL],
+                           charColumns[TRAIT_5_COL],
+                           charColumns[TRAIT_6_COL],
+                           charColumns[TRAIT_7_COL],
+                           charColumns[TRAIT_8_COL],
+                           charColumns[TRAIT_9_COL],
+                           charColumns[TRAIT_10_COL],
+                           charColumns[TRAIT_11_COL],
+                           charColumns[TRAIT_12_COL])
+  if (charColumns[ELITE_COL].length > 0) {
+    traits.push({ name: 'Elite', type: charColumns[ELITE_COL]})
+  }
+  if (charColumns[ELITE_BOSS_COL].length > 0) {
+    traits.push({ name: 'Elite Boss', type: charColumns[ELITE_COL]})
+  }
+
   return {
       name: charColumns[NAME_COL],
       alias: charColumns[ALIAS_COL],
@@ -148,18 +242,7 @@ let populateChar = function(charColumns) {
       funding: parseInt(charColumns[FUNDING_COL]),
       crews: parseCrews(charColumns[CREW_COL]),
       hates: parseCrews(charColumns[HATES_COL]),
-      traits: parseTraits(charColumns[TRAIT_1_COL],
-                          charColumns[TRAIT_2_COL],
-                          charColumns[TRAIT_3_COL],
-                          charColumns[TRAIT_4_COL],
-                          charColumns[TRAIT_5_COL],
-                          charColumns[TRAIT_6_COL],
-                          charColumns[TRAIT_7_COL],
-                          charColumns[TRAIT_8_COL],
-                          charColumns[TRAIT_9_COL],
-                          charColumns[TRAIT_10_COL],
-                          charColumns[TRAIT_11_COL],
-                          charColumns[TRAIT_12_COL]),
+      traits: traits,
       wp: parseInt(charColumns[WILLPOWER_COL]),
       str: parseInt(charColumns[STRENGTH_COL]),
       mov: parseInt(charColumns[MOVEMENT_COL]),
@@ -174,18 +257,18 @@ let charColumns, name, alias, skippedChars = []
 let reduceInputChars = function(newChars, char) {
   charColumns = char.split(',')
   if (charColumns[NAME_COL].length === 0 && charColumns[ALIAS_COL].length === 0) {
-    console.log("Found a row to skip: " + char)
+    // console.log("Found a row to skip: " + char)
     return newChars
   }
   if (characterAliases.includes(`${charColumns[ALIAS_COL]}`.toUpperCase())) {
-    console.log("Character " + charColumns[ALIAS_COL] + "-" + charColumns[NAME_COL] + " already exists. Skipping.")
+    // console.log("Character " + charColumns[ALIAS_COL] + "-" + charColumns[NAME_COL] + " already exists. Skipping.")
     skippedChars.push(populateChar(charColumns))
     return newChars
   }
   if (nameToRepMap[charColumns[NAME_COL].toUpperCase()] !== undefined) {
     let candidateReps = nameToRepMap[charColumns[NAME_COL].toUpperCase()]
     if (candidateReps.includes(charColumns[REP_COL])) {
-      console.log("Character " + charColumns[ALIAS_COL] + "-" + charColumns[NAME_COL] + " seems to already exist due to name and rep match. Skipping.")
+      // console.log("Character " + charColumns[ALIAS_COL] + "-" + charColumns[NAME_COL] + " seems to already exist due to name and rep match. Skipping.")
       skippedChars.push(populateChar(charColumns))
       return newChars
     }
@@ -194,7 +277,7 @@ let reduceInputChars = function(newChars, char) {
     newChars.push(populateChar(charColumns))
   } catch (err) {
     console.log(err)
-    console.log('Skipping character ' + charColumns[NAME_COL] + '-' + charColumns[ALIAS_COL] + ' due to error.')
+    // console.log('Skipping character ' + charColumns[NAME_COL] + '-' + charColumns[ALIAS_COL] + ' due to error.')
   }
   return newChars
 }
@@ -203,6 +286,10 @@ let outputChars = inputChars.reduce(reduceInputChars, [])
 var outputJson = JSON.stringify(outputChars, null, '  ')
 
 fs.writeFile('new-characters.json', outputJson, 'utf8');
+
+var skippedJson = JSON.stringify(skippedChars, null, 1)
+
+fs.writeFile('skipped-characters.json', skippedJson, 'utf8')
 
 console.log('\n\n******* beginning cleanup of current chars *******\n\n')
 

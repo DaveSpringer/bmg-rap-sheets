@@ -15,4 +15,5 @@ tools/lib
 tools/node_modules
 tools/resources/*
 tools/new-characters.json
+tools/skipped-characters.json
 tools/src
