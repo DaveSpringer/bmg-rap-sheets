@@ -1572,12 +1572,12 @@ export const loadedCharacters = [
     'alias': 'Captain Cold (CW)',
     'rank': [
       {
-        'crew': '*',
-        'rank': 'Free Agent'
-      },
-      {
         'crew': 'mf',
         'rank': 'Sidekick'
+      },
+      {
+        'crew': '*',
+        'rank': 'Free Agent'
       }
     ],
     'reputation': 72,
@@ -2261,12 +2261,12 @@ export const loadedCharacters = [
     'alias': 'Deathstroke (AO)',
     'rank': [
       {
-        'crew': '*',
-        'rank': 'Free Agent'
-      },
-      {
         'crew': 'sc',
         'rank': 'Sidekick'
+      },
+      {
+        'crew': '*',
+        'rank': 'Free Agent'
       }
     ],
     'reputation': 145,
@@ -4070,12 +4070,12 @@ export const loadedCharacters = [
     'alias': 'Killer Frost',
     'rank': [
       {
-        'crew': '*',
-        'rank': 'Free Agent'
-      },
-      {
         'crew': 'mf',
         'rank': 'Sidekick'
+      },
+      {
+        'crew': '*',
+        'rank': 'Free Agent'
       }
     ],
     'reputation': 70,
@@ -4887,7 +4887,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Arcobat',
+      'Acrobat',
       'Charismatic',
       {
         'name': 'Combo with',

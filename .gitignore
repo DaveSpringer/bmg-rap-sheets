@@ -16,3 +16,5 @@ tools/node_modules
 tools/resources/*
 tools/src
 tools/targets/*
+tools/trait-cleanup/build
+tools/trait-cleanup/targets

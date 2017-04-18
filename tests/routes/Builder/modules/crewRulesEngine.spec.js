@@ -23,7 +23,7 @@ const defaultState = {
 
 const loadedState = builderReducer(defaultState, loadResources())
 const selectBatmanCrew = builderReducer(loadedState, selectCrew({name: 'Batman', id: 'bt'}))
-const selectBatmanResult = characterSelected(selectBatmanCrew, selectCharacter('Batman (Ben Affleck)'))
+const selectBatmanResult = characterSelected(selectBatmanCrew, selectCharacter('Batman (Batfleck)'))
 const countCharacters = (stateResult) => stateResult.availableCharacters.length + stateResult.characters.length + stateResult.hiddenCharacters.length
 // I couldn't get currying to work here. Still uncertain as to why...
 const countType = (rankType) => { (count, character) => { if (character.rank === rankType) { return count + 1 } else { return count } } }
@@ -79,8 +79,7 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
       })
 
       it('Should handle selecting Batman again.', () => {
-        let selectBatmanAgainResult = characterSelected(selectBatmanResult, selectCharacter('Batman (Ben Affleck)'))
-
+        let selectBatmanAgainResult = characterSelected(selectBatmanResult, selectCharacter('Batman (Batfleck)'))
         expect(selectBatmanAgainResult.leaders).to.equal(selectBatmanCrew.leaders)
         expect(selectBatmanAgainResult.sidekicks).to.equal(selectBatmanCrew.sidekicks)
         expect(selectBatmanAgainResult.freeAgents).to.equal(selectBatmanCrew.freeAgents)
@@ -97,8 +96,7 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
       })
 
       it('Should handle adding Sidekick, then selecting Batman.', () => {
-        let deselectBatmanResult = characterSelected(addSidekickResult, selectCharacter('Batman (Ben Affleck)'))
-
+        let deselectBatmanResult = characterSelected(addSidekickResult, selectCharacter('Batman (Batfleck)'))
         expect(countCharacters(deselectBatmanResult)).to.equal(countCharacters(addSidekickResult))
         expect(deselectBatmanResult.hiddenCharacters.length).to.equal(0)
       })
@@ -106,11 +104,11 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
     })
 
     describe('(Sub-Function) Adding Sidekick', () => {
-      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('Batgirl'))
-      let firstSidekickResult = characterSelected(selectBatmanCrew, selectCharacter('Batgirl'))
+      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('Batgirl (Comic)'))
+      let firstSidekickResult = characterSelected(selectBatmanCrew, selectCharacter('Batgirl (Comic)'))
       let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter('Gordon'))
-      let removeFirstSidekick = characterSelected(secondSidekickResult, selectCharacter('Batgirl'))
-      let removeSecondSidekick = characterSelected(secondSidekickResult, selectCharacter('Batgirl'))
+      let removeFirstSidekick = characterSelected(secondSidekickResult, selectCharacter('Batgirl (Comic)'))
+      let removeSecondSidekick = characterSelected(secondSidekickResult, selectCharacter('Batgirl (Comic)'))
       let startingSidekicks = selectBatmanCrew.availableCharacters.reduce(countSidekicks, 0)
 
       it('Should be able to add a Sidekick', () => {

@@ -2,7 +2,6 @@ import { sortCharacters } from './common'
 
 const dumbCharFinder = (charArray, charAlias) => {
   for (var i = 0; i < charArray.length; i++) {
-    console.log(`Checking ${charArray[i].alias} vs ${charAlias}`)
     if (charArray[i].alias !== undefined && charArray[i].alias === charAlias) {
       return charArray[i]
     }
@@ -72,10 +71,10 @@ const addCharacter = (state, action) => {
   let newCharacters = [...state.characters, char]
   // TODO: Determine if this is changing the state tree...
   let newAvailChars = state.availableCharacters.reduce((newAvailCharacters, character) => {
-    let sameName = character.name === char.name && character.alias === char.alias
+    let sameName = character.name === char.name && character.alias !== char.alias
     let leaderHide = char.rank === 'Leader' && (character.rank === 'Leader' || (character.rank === 'Sidekick' && sidekicks === 1))
     let sidekickHide = char.rank === 'Sidekick' && ((character.rank === 'Sidekick' && leaders + sidekicks === 2 || (character.rank === 'Leader' && sidekicks === 2)))
-    if (!sameName && !leaderHide && !sidekickHide) {
+    if (character.alias !== char.alias && !sameName && !leaderHide && !sidekickHide) {
       newAvailCharacters.push(character)
     }
     return newAvailCharacters

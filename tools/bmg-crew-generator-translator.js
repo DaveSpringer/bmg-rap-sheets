@@ -267,6 +267,11 @@ let parseRank = function(rank) {
       }
       return finalRank
     }, [])
+    resultRank = resultRank.sort(function(a, b) {
+      if (a.rank === 'Free Agent') {
+        return 1
+      }
+    })
   }
   if (resultRank === 'Minion') {
     resultRank = 'Henchman'

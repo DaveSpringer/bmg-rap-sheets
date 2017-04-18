@@ -143,7 +143,7 @@ describe('(Redux Module) Builder', () => {
     })
 
     it('Should have Deathstroke as a Sidekick in a Scarecrow crew.', () => {
-      let deathstroke = scarecrowPopulated.availableCharacters.find((character) => character.alias === 'Deathstroke Origin')
+      let deathstroke = scarecrowPopulated.availableCharacters.find((character) => character.alias === 'Deathstroke (AO)')
       expect(deathstroke).to.be.an('object')
       expect(deathstroke.rank).to.equal('Sidekick')
     })

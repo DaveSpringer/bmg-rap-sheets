@@ -1,0 +1,17 @@
+{
+  "name": "my-module",
+  "version": "1.0.0",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "transform-es2015-modules-commonjs": "^6.0.0"
+  },
+  "scripts": {
+    "build": "babel --plugins transform-es2015-modules-commonjs ../../src/resources/traits.js -o ./build/traits.js",
+    "run": "node trait-cleanup.js",
+    "deploy": "cp targets/result-traits.js ../../src/resources/traits.js"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1"
+  }
+}
