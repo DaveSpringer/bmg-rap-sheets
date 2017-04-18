@@ -329,14 +329,14 @@ export const allTraits = [
     cost: '1SC',
     rule: 'Spend 1 [SC]. This [Character] gains +1 to the [Rate of Fire] on its [Weapon]s.',
     grants: [],
-    page: '?',
+    page: '?'
   }, {
     name : 'Shooter',
     phase: 'Execute the plan',
     cost: '',
     rule: 'This [Character] ignores the first [Obstacle], [Protective Item], and [Vehicle] for [Ping!] rolls.',
     grants: [],
-    page: 'B.65',
+    page: 'B.65'
   }, {
     name : 'Scheming',
     nameFunc: 'Scheming/-count-',

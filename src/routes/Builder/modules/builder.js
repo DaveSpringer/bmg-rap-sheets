@@ -23,7 +23,7 @@ export function selectCrew (selectedCrew = 'default') {
 /* The SELECT_CHARACTER reducer is used to add or remove a character from the
 currently built band. */
 export function selectCharacter (characterAlias = 'default') {
-  console.log("Selected character: " + characterAlias)
+  console.log('Selected character: ' + characterAlias)
   return {
     type: SELECT_CHARACTER,
     characterAlias: characterAlias
@@ -42,14 +42,14 @@ export const actions = {
   loadResources
 }
 
-
 // Action Handlers
 const ACTION_HANDLERS = {
   [SELECT_CREW] : (state, action) => {
     let crewName = action.crew.name
     let charFilter = (characters, character) => {
-      if (character.crews.includes(action.crew.id) || (character.crews.includes('*') && !character.hates.includes(action.crew.id))) {
-        if (typeof(character.rank) === 'object') {
+      if (character.crews.includes(action.crew.id) ||
+      (character.crews.includes('*') && !character.hates.includes(action.crew.id))) {
+        if (typeof (character.rank) === 'object') {
           characters.push(
             Object.assign({}, character, {
               rank : character.rank.find((rank) => (rank.crew === action.crew.id || rank.crew === '*')).rank

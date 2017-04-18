@@ -13,7 +13,9 @@ const removeCharacter = (state, action, char) => {
   // This is the case where the current character is in the selected
   // characters.
   let index = state.characters.indexOf(char)
-  let leaders = state.leaders, sidekicks = state.sidekicks, freeAgents = state.freeAgents
+  let leaders = state.leaders
+  let sidekicks = state.sidekicks
+  let freeAgents = state.freeAgents
 
   if (char.rank === 'Leader') {
     leaders = state.leaders - 1
@@ -26,8 +28,12 @@ const removeCharacter = (state, action, char) => {
   let newCharacters = [...state.characters.slice(0, index), ...state.characters.slice(index + 1)]
   let hiddenCharactersToAdd = state.hiddenCharacters.reduce((repopCharacters, character) => {
     let sameName = character.name === char.name
-    let repopLeader = char.rank === 'Leader' && (character.rank === 'Leader' || (character.rank === 'Sidekick' && sidekicks === 1))
-    let repopSidekick = char.rank === 'Sidekick' && (character.rank === 'Sidekick' || (sidekicks === 1 && character.rank === 'Leader'))
+    let repopLeader = char.rank === 'Leader' &&
+      (character.rank === 'Leader' ||
+        (character.rank === 'Sidekick' && sidekicks === 1))
+    let repopSidekick = char.rank === 'Sidekick' &&
+      (character.rank === 'Sidekick' ||
+        (sidekicks === 1 && character.rank === 'Leader'))
     if (sameName || repopLeader || repopSidekick) {
       repopCharacters.push(character)
     }
@@ -47,12 +53,13 @@ const removeCharacter = (state, action, char) => {
 const addCharacter = (state, action) => {
   let char = dumbCharFinder(state.availableCharacters, action.characterAlias)
   if (char === undefined) {
-    console.log("Failed to find the provided character: " + action.characterAlias)
-    return state;
+    console.log('Failed to find the provided character: ' + action.characterAlias)
+    return state
   }
 
-  let index = state.availableCharacters.indexOf(char)
-  let leaders = state.leaders, sidekicks = state.sidekicks, freeAgents = state.freeAgents
+  let leaders = state.leaders
+  let sidekicks = state.sidekicks
+  let freeAgents = state.freeAgents
 
   if (char.rank === 'Leader') {
     leaders = state.leaders + 1
@@ -67,7 +74,7 @@ const addCharacter = (state, action) => {
   let newAvailChars = state.availableCharacters.reduce((newAvailCharacters, character) => {
     let sameName = character.name === char.name && character.alias === char.alias
     let leaderHide = char.rank === 'Leader' && (character.rank === 'Leader' || (character.rank === 'Sidekick' && sidekicks === 1))
-    let sidekickHide = char.rank === 'Sidekick' && ((character.rank === 'Sidekick' && leaders + sidekicks === 2 || (character.rank === 'Leader' && sidekicks == 2)))
+    let sidekickHide = char.rank === 'Sidekick' && ((character.rank === 'Sidekick' && leaders + sidekicks === 2 || (character.rank === 'Leader' && sidekicks === 2)))
     if (!sameName && !leaderHide && !sidekickHide) {
       newAvailCharacters.push(character)
     }
@@ -76,7 +83,7 @@ const addCharacter = (state, action) => {
   let charactersToHide = state.availableCharacters.reduce((hidingCharacters, character) => {
     let sameName = character.name === char.name && character.alias !== char.alias
     let leaderHide = char.rank === 'Leader' && (character.rank === 'Leader' || (character.rank === 'Sidekick' && sidekicks === 1))
-    let sidekickHide = char.rank === 'Sidekick' && ((character.rank === 'Sidekick' && leaders + sidekicks === 2) || (character.rank === 'Leader' && sidekicks == 2))
+    let sidekickHide = char.rank === 'Sidekick' && ((character.rank === 'Sidekick' && leaders + sidekicks === 2) || (character.rank === 'Leader' && sidekicks === 2))
     if (character.alias !== char.alias && (sameName || leaderHide || sidekickHide)) {
       hidingCharacters.push(character)
     }
@@ -112,18 +119,6 @@ const createFinalState = (
 }
 
 const characterSelected = (state, action) => {
-  let newCharacters = state.characters
-  let newAvailChars = state.availableCharacters
-  let index = undefined
-  let hiddenCharacters = []
-  let leaders = state.leaders;
-  let sidekicks = state.sidekicks;
-  let freeAgents = state.freeAgents;
-
-  const charFinder = (character) => {
-    return character !== undefined && action !== undefined && character.alias === action.characterAlias
-  }
-
   let char = dumbCharFinder(state.characters, action.characterAlias)
 
   if (char !== undefined) {
@@ -132,9 +127,6 @@ const characterSelected = (state, action) => {
     // The selected character is in the available characters.
     return addCharacter(state, action)
   }
-  return state
 }
-
-
 
 export default characterSelected

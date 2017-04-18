@@ -1,5 +1,4 @@
 import React from 'react'
-import { IndexLink, Link } from 'react-router'
 import './Header.scss'
 
 /* This will eventually be a hamburgered, dynamic header for various

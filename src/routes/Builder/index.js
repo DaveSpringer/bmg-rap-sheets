@@ -11,7 +11,6 @@ export default (store) => ({
           dependencies for bundling   */
       const Builder = require('./containers/BuilderContainer').default
       const reducer = require('./modules/builder').default
-      const crewRulesEngine = require('./modules/crewRulesEngine').default
 
       /*  Add the reducer to the store on key 'builder'  */
       injectReducer(store, { key: 'builder', reducer })
@@ -20,6 +19,6 @@ export default (store) => ({
       cb(null, Builder)
 
     /* Webpack named bundle   */
-  }, 'builder')
+    }, 'builder')
   }
 })

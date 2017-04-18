@@ -2,20 +2,20 @@ import React from 'react'
 import './style/SelectHeader.scss'
 
 class SelectHeader extends React.Component {
-  constructor() {
+  constructor () {
     super()
-    this.state={value: {name:'default', id:''}}
+    this.state = { value: { name:'default', id:'' } }
 
-    this.handleChange = this.handleChange.bind(this);
+    this.handleChange = this.handleChange.bind(this)
   }
 
-  handleChange(event) {
-    let newVal=JSON.parse(event.target.value)
-    this.state=newVal
+  handleChange (event) {
+    let newVal = JSON.parse(event.target.value)
+    this.state = newVal
     this.props.selectCrew(newVal)
   }
 
-  render() {
+  render () {
     return (
       <div className='container selectHeader hidden-print'>
         <select id='crewSelect' value={this.state.value} onChange={this.handleChange}>

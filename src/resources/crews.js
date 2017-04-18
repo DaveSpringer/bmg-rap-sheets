@@ -13,7 +13,7 @@ export const allCrews = [
     id : 'jk'
   }, {
     name : 'Penguin',
-    id : 'pn',
+    id : 'pn'
   }, {
     name : 'League of Shadows',
     id : 'ls'
@@ -22,7 +22,7 @@ export const allCrews = [
     id : 'bn'
   }, {
     name : 'Poison Ivy',
-    id : 'pi',
+    id : 'pi'
   }, {
     name : 'Court of Owls',
     id : 'co'
@@ -52,7 +52,7 @@ export const allCrews = [
     id : 'wg'
   }, {
     name : 'LexCorp',
-    id : 'lc',
+    id : 'lc'
   }, {
     name : 'Gorilla Grodd',
     id : 'gg'
@@ -249,7 +249,7 @@ export const allCrews = [
       boss: 'yes'
     }, {
       name: 'Black Alice',
-      boss: 'no',
+      boss: 'no'
     }, {
       name: 'Chesire',
       boss: 'no'

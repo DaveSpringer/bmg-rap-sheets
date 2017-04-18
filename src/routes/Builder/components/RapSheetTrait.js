@@ -2,11 +2,7 @@ import React from 'react'
 import './style/RapSheetTrait.scss'
 
 class RapSheet extends React.Component {
-  constructor() {
-    super()
-  }
-
-  render() {
+  render () {
     return (
       <div className='rapSheetTrait'>
         <div className='traitHeader'>

@@ -3,11 +3,7 @@ import RapSheetTrait from './RapSheetTrait'
 import './style/RapSheet.scss'
 
 class RapSheet extends React.Component {
-  constructor() {
-    super()
-  }
-
-  render() {
+  render () {
     return (
       <div>
         <div className='rapSheet hidden-print'>
