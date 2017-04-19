@@ -153,14 +153,19 @@ describe('(Redux Module) Builder', () => {
       let populatedCrew
       let crewsReduced = crews.forEach((crew) => {
         populatedCrew = builderReducer(loadedState, selectCrew(crew))
+        let failedTrait = false
+
         populatedCrew.availableCharacters.forEach((character) => {
           character.traitText.forEach((trait) => {
             if (trait.rule === 'Unknown') {
               console.log('Trait ' + trait.name + ' is not properly populated on character ' + character.alias + '. Check resources/traits.js.')
+              failedTrait = true
             }
-            expect(trait.rule).to.not.equal('Unknown')
+            // expect(trait.rule).to.not.equal('Unknown')
           })
         })
+
+        expect(failedTrait).to.equal(false)
       })
     })
 

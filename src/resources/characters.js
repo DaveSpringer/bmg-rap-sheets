@@ -1,96 +1,65 @@
 export const loadedCharacters = [
   {
-    'name': 'Unknown',
-    'alias': 'Bane (AO)',
-    'rank': 'Leader',
-    'reputation': 93,
-    'funding': 0,
+    'name': 'Alberto Falcone',
+    'alias': 'The Holiday Killer',
+    'rank': 'Sidekick',
+    'reputation': 60,
+    'funding': 350,
     'crews': [
-      'bn'
+      'oc'
     ],
     'hates': [],
     'traits': [
-      'Large',
-      'Lethal Blow',
-      '2 Venom Dose',
-      'Master Fighter',
       {
-        'name': 'Scheming',
-        'count': 2
+        'name': 'Assassin',
+        'points': null
       },
-      'Sturdy'
+      'Cruel',
+      'Stealth',
+      'Strategist',
+      'Hidden',
+      'The Holiday Killer'
     ],
-    'wp': 7,
-    'str': 3,
-    'mov': 3,
-    'att': 5,
+    'wp': 6,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
     'def': 3,
-    'end': 8,
+    'end': 6,
     'spc': 3
   },
   {
-    'name': 'Unknown',
-    'alias': 'McGregor',
-    'rank': 'Henchman',
-    'reputation': 27,
+    'name': 'Dr. Pamela Lillian Isley',
+    'alias': 'Poison Ivy (AC)',
+    'rank': 'Leader',
+    'reputation': 97,
     'funding': 0,
     'crews': [
-      'bn',
-      'ls'
+      'pi'
     ],
     'hates': [],
     'traits': [
-      'Mercenary',
-      'Veteran',
-      'Bulletproof Vest',
+      'Mortal Kiss',
+      'Chlorokinesis',
+      'Control Pheromones',
       {
-        'name': 'Weapon Master With',
-        'weapon': 'Machete'
+        'name': 'Immune to',
+        'element': 'Immunity'
+      },
+      'Scientific',
+      'Discourage',
+      {
+        'name': 'Elite Boss',
+        'type': ''
       }
     ],
-    'wp': 5,
+    'wp': 8,
     'str': 5,
     'mov': 3,
     'att': 3,
-    'def': 3,
-    'end': 5,
-    'spc': 3
-  },
-  {
-    'name': 'Richard Grayson',
-    'alias': 'Nightwing (AK)',
-    'rank': 'Sidekick',
-    'reputation': 95,
-    'funding': 0,
-    'crews': [
-      'bt'
-    ],
-    'hates': [],
-    'traits': [
-      'Acrobat',
-      'Charismatic',
-      {
-        'name': 'Combo with',
-        'weapon': 'Electric Batons'
-      },
-      'Batclaw',
-      'Electric Storm',
-      'Agile',
-      'Reflexes',
-      {
-        'name': 'Teamwork',
-        'counter': '1',
-        'target': 'All'
-      },
-      'Heir to the Cowl'
-    ],
-    'wp': 7,
-    'str': 4,
-    'mov': 4,
-    'att': 4,
     'def': 4,
-    'end': 7,
-    'spc': 3
+    'end': 8,
+    'spc': 4
   },
   {
     'name': 'Unknown',
@@ -391,8 +360,8 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Demential Laughter',
-      'Bloodthirsty (MD)',
+      'Demential Laugh',
+      'Bloodthirsty',
       'Fast',
       'Psycho'
     ],
@@ -439,7 +408,7 @@ export const loadedCharacters = [
     'traits': [
       'Devastating',
       'Acrobat',
-      'Bipolar (MD)',
+      'Bipolar',
       'Fast',
       'Kevlar Vest',
       'Night Vision'
@@ -466,7 +435,7 @@ export const loadedCharacters = [
       'pn'
     ],
     'traits': [
-      '360° Attack with',
+      '360 Attack',
       'Handyman',
       'Runaway',
       'Sturdy'
@@ -491,7 +460,10 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Titan Addict',
-      'Titan Dose x2',
+      {
+        'name': 'Titan Dose',
+        'count': 2
+      },
       {
         'name': 'Primary Target',
         'target': 'Titan'
@@ -510,6 +482,38 @@ export const loadedCharacters = [
     'att': 6,
     'def': 3,
     'end': 10,
+    'spc': 3
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Bane (AO)',
+    'rank': 'Leader',
+    'reputation': 93,
+    'funding': 0,
+    'crews': [
+      'bn'
+    ],
+    'hates': [],
+    'traits': [
+      'Large',
+      'Lethal Blow',
+      {
+        'name': 'Venom Dose',
+        'count': 2
+      },
+      'Master Fighter',
+      {
+        'name': 'Scheming',
+        'count': 2
+      },
+      'Sturdy'
+    ],
+    'wp': 7,
+    'str': 3,
+    'mov': 3,
+    'att': 5,
+    'def': 3,
+    'end': 8,
     'spc': 3
   },
   {
@@ -537,7 +541,7 @@ export const loadedCharacters = [
         'name': 'Combo with',
         'weapon': 'Unarmed'
       },
-      'Kill them!',
+      'Kill Them!',
       'Brutal',
       'Strategist',
       'Desensitized',
@@ -847,7 +851,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Bruce Wayne',
-    'alias': 'Batman (Frank Miller)',
+    'alias': 'Batman (TDKR)',
     'rank': 'Leader',
     'reputation': 109,
     'funding': 0,
@@ -900,33 +904,6 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
-  },
-  {
-    'name': 'None',
-    'alias': 'Batmobile (AK)',
-    'rank': 'Vehicle/Legend',
-    'reputation': 150,
-    'funding': 1500,
-    'crews': [
-      'bt'
-    ],
-    'hates': [],
-    'traits': [
-      'Combat Mode',
-      'Heavy Armor',
-      'Remote Driving',
-      'Non-Lethal Ammo',
-      'Shock Armor (1SC)',
-      'Lantern',
-      'Large'
-    ],
-    'wp': 6,
-    'str': 3,
-    'mov': 3,
-    'att': 4,
-    'def': 3,
-    'end': 12,
     'spc': 3
   },
   {
@@ -1000,7 +977,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Bulletproof Vest',
-      'Climbing Rope (Bat Cape)',
+      'Climbing Rope',
       'Self-Discipline',
       'Veteran',
       {
@@ -1066,8 +1043,7 @@ export const loadedCharacters = [
         'counter': '2',
         'target': 'Green Arrow'
       },
-      '\'Undercover',
-      '\'',
+      'Undercover',
       'Martial Artist'
     ],
     'wp': 5,
@@ -1095,7 +1071,7 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Tracking',
-      'Night vision',
+      'Night Vision',
       'Stealth',
       'Weapon Master',
       'Amphibious',
@@ -1260,7 +1236,7 @@ export const loadedCharacters = [
       'Bot',
       'Fly',
       'Funny Bomb',
-      'Save Hands'
+      'Safe Hands'
     ],
     'wp': 4,
     'str': 4,
@@ -1284,7 +1260,7 @@ export const loadedCharacters = [
       'Bot',
       'Fly',
       'Funny Bomb',
-      'Save Hands'
+      'Safe Hands'
     ],
     'wp': 4,
     'str': 4,
@@ -1307,7 +1283,7 @@ export const loadedCharacters = [
     'traits': [
       'Brutal',
       'Sturdy',
-      'Demential Laughter',
+      'Demential Laugh',
       'Criminal'
     ],
     'wp': 5,
@@ -1334,7 +1310,6 @@ export const loadedCharacters = [
       'Criminal',
       'Persuasive',
       'Street Guy',
-      '#N/A',
       {
         'name': 'Elite',
         'type': 'Gangster'
@@ -1359,8 +1334,8 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Plant Special Traits',
-      'Control Pheremones',
+      'Plant',
+      'Control Pheromones',
       'Poison Master',
       {
         'name': 'Elite',
@@ -1387,7 +1362,10 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Bot',
-      'Can you Solve this 4+'
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      }
     ],
     'wp': 4,
     'str': 4,
@@ -1409,7 +1387,10 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Bot',
-      'Can you Solve this 3+'
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      }
     ],
     'wp': 4,
     'str': 4,
@@ -1431,7 +1412,10 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Bot',
-      'Can you Solve this 5+'
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      }
     ],
     'wp': 4,
     'str': 4,
@@ -1486,7 +1470,10 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Adaptable',
-      'Assassin 5',
+      {
+        'name': 'Assassin',
+        'points': 5
+      },
       'Deadly Strike',
       'Handyman',
       'Self-Discipline',
@@ -1523,7 +1510,7 @@ export const loadedCharacters = [
       'Shooter',
       'Ricochet',
       'Dodge',
-      'Follow Me!!!'
+      'Follow Me!'
     ],
     'wp': 6,
     'str': 4,
@@ -1798,7 +1785,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Demential Laughter'
+      'Demential Laugh'
     ],
     'wp': 4,
     'str': 5,
@@ -1819,7 +1806,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Demential Laughter'
+      'Demential Laugh'
     ],
     'wp': 4,
     'str': 5,
@@ -1840,7 +1827,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Demential Laughter'
+      'Demential Laugh'
     ],
     'wp': 4,
     'str': 5,
@@ -1861,9 +1848,9 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Demential Laughter',
+      'Demential Laugh',
       'Shooter',
-      'Dirty Fighting',
+      'Dirty Fighter',
       'Psycho',
       'Hardened',
       'Veteran',
@@ -1903,7 +1890,7 @@ export const loadedCharacters = [
       'Arrest',
       'Detective',
       'Veteran',
-      'Take Over!!!',
+      'Take Cover!!',
       {
         'name': 'Elite Boss',
         'type': ''
@@ -1923,16 +1910,25 @@ export const loadedCharacters = [
     'rank': [
       {
         'crew': 'lf',
-        'rank': '\'Leader'
+        'rank': 'Leader'
       },
       {
         'crew': 'bm',
         'rank': 'Sidekick'
+      },
+      {
+        'crew': 'oc',
+        'rank': 'Sidekick'
+      },
+      {
+        'crew': 'tf',
+        'rank': 'Sidekick'
       }
     ],
-    'reputation': null,
-    'funding': null,
+    'reputation': 70,
+    'funding': 0,
     'crews': [
+      'lf',
       'oc'
     ],
     'hates': [],
@@ -1941,17 +1937,21 @@ export const loadedCharacters = [
       'Commissioner',
       'Corrupt',
       'Discourage',
-      'Kill Them',
+      'Kill Them!',
       'Mob',
       'Persuasive',
-      'Veteran'
+      'Veteran',
+      {
+        'name': 'Elite Boss',
+        'type': ''
+      }
     ],
-    'wp': 70,
-    'str': 0,
-    'mov': 7,
-    'att': 6,
-    'def': 1,
-    'end': 3,
+    'wp': 7,
+    'str': 6,
+    'mov': 1,
+    'att': 3,
+    'def': 3,
+    'end': 7,
     'spc': 3
   },
   {
@@ -1992,7 +1992,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Obsessive (MD)',
+      'Obsessive',
       'Hardened'
     ],
     'wp': 5,
@@ -2043,7 +2043,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Plant Special Traits',
+      'Plant',
       {
         'name': 'Elite',
         'type': 'Plants'
@@ -2184,8 +2184,11 @@ export const loadedCharacters = [
       'Dodge',
       'Obsessive',
       'Ranged Master',
-      'Outlaw Commander',
-      'Assassin/3'
+      'Outlaw Field Commander',
+      {
+        'name': 'Assassin',
+        'points': null
+      }
     ],
     'wp': 7,
     'str': 5,
@@ -2280,7 +2283,7 @@ export const loadedCharacters = [
       'ga'
     ],
     'traits': [
-      'Soul Armor (3SC)',
+      'Soul Armor',
       'Acrobat',
       'Undercover',
       'Stealth',
@@ -2311,7 +2314,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Gas Mask',
-      'Assault 3',
+      'Assault',
       'Criminal'
     ],
     'wp': 4,
@@ -2371,7 +2374,7 @@ export const loadedCharacters = [
       'Flaming Wave',
       'Lantern',
       'Suicide Squad Member',
-      'Magic Tatoos',
+      'Magic Tattoos',
       'Self-Discipline',
       'Supernatural',
       'Regrets'
@@ -2400,7 +2403,6 @@ export const loadedCharacters = [
       'Resilient',
       'Criminal',
       'Runaway',
-      '#N/A',
       {
         'name': 'Elite',
         'type': 'Gangster'
@@ -2537,7 +2539,7 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Climbing Claws',
-      'Obsessive (MD)',
+      'Obsessive',
       'Brutal'
     ],
     'wp': 4,
@@ -2563,7 +2565,7 @@ export const loadedCharacters = [
       'ga'
     ],
     'traits': [
-      'Paranoid (MD)',
+      'Paranoid',
       'Runaway'
     ],
     'wp': 4,
@@ -2590,7 +2592,7 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Devastating Blow',
-      'Bipolar (MD)',
+      'Bipolar',
       'Hardened'
     ],
     'wp': 5,
@@ -2617,7 +2619,7 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Shooter',
-      'Bloodthirsty (MD)',
+      'Bloodthirsty',
       'Mobster'
     ],
     'wp': 4,
@@ -2643,7 +2645,7 @@ export const loadedCharacters = [
       'ga'
     ],
     'traits': [
-      'Bloodthirsty (MD)',
+      'Bloodthirsty',
       'Stealth'
     ],
     'wp': 4,
@@ -2670,7 +2672,7 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Delirium',
-      'Aggressive Schizophrenia (MD)'
+      'Aggressive Schizophrenia'
     ],
     'wp': 4,
     'str': 4,
@@ -2697,7 +2699,7 @@ export const loadedCharacters = [
     'traits': [
       'Fly',
       'Hover',
-      'Pyromania (MD)',
+      'Pyromania',
       'Batcape',
       'Handyman',
       'Kevlar Vest'
@@ -2806,7 +2808,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Dirty Fighter',
-      'Anger Management (MD)',
+      'Anger Management',
       {
         'name': 'Elite',
         'type': 'Cosplayers'
@@ -3058,7 +3060,7 @@ export const loadedCharacters = [
     'traits': [
       'Acrobat',
       'Disarray',
-      'Follow Me!!!',
+      'Follow Me!',
       'Technique',
       {
         'name': 'True Love',
@@ -3116,7 +3118,7 @@ export const loadedCharacters = [
       'Confusion',
       'Combat Flip',
       'Goad',
-      'The Voices (MD)',
+      'The Voices',
       'Suicide Squad Member',
       {
         'name': 'True Love',
@@ -3143,7 +3145,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Acrobat',
-      '360° Attack with',
+      '360 Attack',
       'Discourage',
       'Distract',
       'Fast',
@@ -3176,7 +3178,7 @@ export const loadedCharacters = [
       'Confusion',
       'Combat Flip',
       'Goad',
-      'The Voices (MD)',
+      'The Voices',
       'Suicide Squad Member',
       {
         'name': 'True Love',
@@ -3205,7 +3207,7 @@ export const loadedCharacters = [
       'Acrobat',
       'Disarray',
       'Distract',
-      'Follow Me!!!'
+      'Follow Me!'
     ],
     'wp': 5,
     'str': 6,
@@ -3565,8 +3567,8 @@ export const loadedCharacters = [
     'name': 'Hugo Strange',
     'alias': 'Hugo Strange',
     'rank': 'Free Agent',
-    'reputation': null,
-    'funding': 44,
+    'reputation': 44,
+    'funding': 0,
     'crews': [
       'bm',
       'ls',
@@ -3576,22 +3578,18 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Arkham Asylum Dr',
-      'Subliminal Suggestion (2S)',
+      'Subliminal Suggestion',
       'Psychiatrist',
       'Persuasive',
-      'Psychologist',
-      {
-        'name': 'Elite',
-        'type': ' Selina Kyle\''
-      }
+      'Psychologist'
     ],
-    'wp': 0,
-    'str': 6,
-    'mov': 5,
+    'wp': 6,
+    'str': 5,
+    'mov': 2,
     'att': 2,
-    'def': 2,
-    'end': 3,
-    'spc': 6
+    'def': 3,
+    'end': 6,
+    'spc': 3
   },
   {
     'name': 'Helena Bertinelli',
@@ -3639,7 +3637,7 @@ export const loadedCharacters = [
       'Martial Artist',
       'Master Marksman',
       'Mastermind',
-      'Persuassive',
+      'Persuasive',
       {
         'name': 'Scheming',
         'count': 3
@@ -3688,7 +3686,7 @@ export const loadedCharacters = [
     'traits': [
       'Bodyguard',
       'Bot',
-      'Desesitized',
+      'Desensitized',
       'EMP'
     ],
     'wp': 6,
@@ -3875,57 +3873,26 @@ export const loadedCharacters = [
     'name': 'Duela Dent',
     'alias': 'Joker\'s Daughter',
     'rank': 'Sidekick',
-    'reputation': null,
-    'funding': 60,
+    'reputation': 60,
+    'funding': 100,
     'crews': [
       'jk'
     ],
     'hates': [],
     'traits': [
       'Acrobat',
-      'Daddy\'s Girrrl',
+      'Daddy\'s Grrrrl',
       'Cruel',
       'Discourage',
       'Psycho',
-      'Detective',
-      {
-        'name': 'Elite',
-        'type': ' Harley Quinn\''
-      }
+      'Detective'
     ],
-    'wp': 100,
-    'str': 6,
-    'mov': 5,
-    'att': 4,
+    'wp': 6,
+    'str': 5,
+    'mov': 4,
+    'att': 3,
     'def': 3,
-    'end': 3,
-    'spc': 6
-  },
-  {
-    'name': 'None',
-    'alias': 'Jokermobile Skin (AK)',
-    'rank': 'Vehicle/Legend',
-    'reputation': 150,
-    'funding': 1500,
-    'crews': [
-      'bt'
-    ],
-    'hates': [],
-    'traits': [
-      'Combat Mode',
-      'Laughing Gas',
-      'Hard Driving',
-      'Exclusive Driver',
-      'Large',
-      'Heavy Armor',
-      'Lantern'
-    ],
-    'wp': 5,
-    'str': 3,
-    'mov': 3,
-    'att': 4,
-    'def': 2,
-    'end': 10,
+    'end': 6,
     'spc': 3
   },
   {
@@ -4285,7 +4252,7 @@ export const loadedCharacters = [
       'Regeneration',
       'Immortal',
       'Brutal',
-      'Dirty Fighting',
+      'Dirty Fighter',
       'Master Fighter',
       'Power Strike',
       'Psycho',
@@ -4369,7 +4336,7 @@ export const loadedCharacters = [
       'Bot',
       'Fly',
       'Funny Bomb',
-      'Save Hands'
+      'Safe Hands'
     ],
     'wp': 4,
     'str': 4,
@@ -4390,7 +4357,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Catcher Gear)',
+      'Catcher Gear',
       'Psycho',
       'Elusive',
       'Hardened',
@@ -4405,6 +4372,34 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 6,
+    'spc': 3
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'McGregor',
+    'rank': 'Henchman',
+    'reputation': 27,
+    'funding': 0,
+    'crews': [
+      'bn',
+      'ls'
+    ],
+    'hates': [],
+    'traits': [
+      'Mercenary',
+      'Veteran',
+      'Bulletproof Vest',
+      {
+        'name': 'Weapon Master With',
+        'weapon': 'Machete'
+      }
+    ],
+    'wp': 5,
+    'str': 5,
+    'mov': 3,
+    'att': 3,
+    'def': 3,
+    'end': 5,
     'spc': 3
   },
   {
@@ -4440,7 +4435,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Shooter',
-      'Assault 3',
+      'Assault',
       'Veteran'
     ],
     'wp': 5,
@@ -4724,8 +4719,8 @@ export const loadedCharacters = [
     'traits': [
       'Desensitized',
       'Ice Flash',
-      'Light Armored',
-      'Save Hands',
+      'Light Armor',
+      'Safe Hands',
       {
         'name': 'Scheming',
         'count': 3
@@ -4811,7 +4806,7 @@ export const loadedCharacters = [
     'traits': [
       'Bodyguard',
       'Lethal Blow',
-      'One Armed',
+      'One-Armed',
       'Large',
       'Brutal',
       {
@@ -4848,8 +4843,7 @@ export const loadedCharacters = [
       },
       'Runaway',
       'Criminal',
-      'Informer',
-      '#N/A'
+      'Informer'
     ],
     'wp': 6,
     'str': 5,
@@ -4907,6 +4901,42 @@ export const loadedCharacters = [
     'wp': 6,
     'str': 4,
     'mov': 3,
+    'att': 4,
+    'def': 4,
+    'end': 7,
+    'spc': 3
+  },
+  {
+    'name': 'Richard Grayson',
+    'alias': 'Nightwing',
+    'rank': 'Sidekick',
+    'reputation': 95,
+    'funding': 0,
+    'crews': [
+      'bt'
+    ],
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Charismatic',
+      {
+        'name': 'Combo with',
+        'weapon': 'Electric Batons'
+      },
+      'Batclaw',
+      'Electric Storm',
+      'Agile',
+      'Reflexes',
+      {
+        'name': 'Teamwork',
+        'counter': '1',
+        'target': 'All'
+      },
+      'Heir to the Cowl'
+    ],
+    'wp': 7,
+    'str': 4,
+    'mov': 4,
     'att': 4,
     'def': 4,
     'end': 7,
@@ -4985,7 +5015,10 @@ export const loadedCharacters = [
       'Tireless',
       'Weakness: Cold',
       'Reanimated Owl',
-      'Assassin /2',
+      {
+        'name': 'Assassin',
+        'points': null
+      },
       'Brutal'
     ],
     'wp': 6,
@@ -5083,7 +5116,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Hardened',
-      'Paranoid (MD)',
+      'Paranoid',
       'Panda Costume',
       {
         'name': 'Elite',
@@ -5140,7 +5173,7 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Delirium',
-      'Paranoid (MD)',
+      'Paranoid',
       'Fast'
     ],
     'wp': 5,
@@ -5263,7 +5296,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Football Gear',
-      'Follow Me!!!',
+      'Follow Me!',
       {
         'name': 'Elite',
         'type': 'Penguin'
@@ -5288,10 +5321,10 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Hockey Gear (Biker Jacket)',
+      'Biker Jacket',
       'Large',
       'Mobster',
-      'Take Cover!',
+      'Take Cover!!',
       'Taunt'
     ],
     'wp': 5,
@@ -5313,7 +5346,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Plant Special Traits',
+      'Plant',
       {
         'name': 'Elite',
         'type': 'Plants'
@@ -5338,9 +5371,12 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Poison Immunity',
+      {
+        'name': 'Immune to',
+        'element': 'Immunity'
+      },
       'Acrobat',
-      'Control Pheremones',
+      'Control Pheromones',
       'Scientific',
       'Confusion',
       {
@@ -5509,7 +5545,7 @@ export const loadedCharacters = [
       'Self-Discipline',
       'Test Subjects',
       'Dollotrons',
-      'Surgical Madness (MD)'
+      'Surgical Madness'
     ],
     'wp': 6,
     'str': 5,
@@ -5765,7 +5801,7 @@ export const loadedCharacters = [
       'Immortal',
       'Veteran',
       'Undercover',
-      'Master Mind',
+      'Mastermind',
       'Martial Artist',
       'Grand Strategist',
       {
@@ -5792,11 +5828,14 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Deathly Strike: Sword',
+      {
+        'name': 'Deathly Strike with',
+        'weapon': 'Sword'
+      },
       'Sustained Defense',
       'Grand Strategist',
       'Martial Artist',
-      'Master Mind',
+      'Mastermind',
       'Immortal',
       'Order',
       'Persuasive',
@@ -5814,29 +5853,6 @@ export const loadedCharacters = [
     'spc': 3
   },
   {
-    'name': 'Rattler Drone',
-    'alias': 'None',
-    'rank': 'Vehicle',
-    'reputation': 60,
-    'funding': 900,
-    'crews': [
-      'sc'
-    ],
-    'hates': [],
-    'traits': [
-      'Medium Armored',
-      'Large',
-      '4x4 Off Road'
-    ],
-    'wp': 4,
-    'str': 3,
-    'mov': 2,
-    'att': 2,
-    'def': 3,
-    'end': 6,
-    'spc': 3
-  },
-  {
     'name': 'Rose Wilson',
     'alias': 'Ravager',
     'rank': 'Free Agent',
@@ -5851,7 +5867,7 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Power Dampening',
-      'Self Disipline',
+      'Self-Discipline',
       'Stealth',
       'Weapon Master',
       'Martial Artist'
@@ -5875,7 +5891,10 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Assassin/2',
+      {
+        'name': 'Assassin',
+        'points': null
+      },
       'Brutal',
       {
         'name': 'Combo with',
@@ -5909,7 +5928,7 @@ export const loadedCharacters = [
         'counter': '1',
         'target': '(All)'
       },
-      'Takedown',
+      'Take Cover!!',
       'Safe Hands',
       'Acrobat',
       'Batclaw',
@@ -6000,7 +6019,7 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Tachyon Device',
-      'I know what I‘m doing',
+      'I know what I\'m doing',
       {
         'name': 'Speedster',
         'tokens': 5
@@ -6063,14 +6082,17 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Bot Mechanic',
-      'Can you Solve this 2+',
-      'Objective? Puzzles everywhere',
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      },
+      'Objectives? Puzzles Everywhere!',
       'Confusion',
       'Distract',
       'Handyman',
       'Luck',
       'Mastermind',
-      'Puzzlemaster'
+      'Puzzle Master'
     ],
     'wp': 8,
     'str': 5,
@@ -6093,8 +6115,11 @@ export const loadedCharacters = [
     'traits': [
       'Bot Bomb',
       'Energy Field',
-      'Can you Solve this 4',
-      'Objective? Puzzles everywhere',
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      },
+      'Objectives? Puzzles Everywhere!',
       'Cybernetic',
       'Confusion',
       'Large',
@@ -6120,8 +6145,8 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      '360° Attack with',
-      'Catcher‘s Gear',
+      '360 Attack',
+      'Catcher Gear',
       'Unpredictable',
       {
         'name': 'Elite',
@@ -6152,7 +6177,7 @@ export const loadedCharacters = [
         'name': 'Combo with',
         'weapon': 'Bo'
       },
-      'Follow Me!!!',
+      'Follow Me!',
       'Searcher',
       'Detective'
     ],
@@ -6324,7 +6349,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Batclaw',
-      'Bloodthirsty (MD)',
+      'Bloodthirsty',
       'Detective',
       'Hidden',
       'Brutal',
@@ -6350,7 +6375,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Hardened',
-      'Follow Me!!!',
+      'Follow Me!',
       'Criminal'
     ],
     'wp': 5,
@@ -6477,8 +6502,8 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Death or Exile',
-      'Follow Me!!!',
+      'Death or Exile!',
+      'Follow Me!',
       'Hidden',
       'Psychologist'
     ],
@@ -6636,9 +6661,9 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      '360° Attack with',
+      '360 Attack',
       'Bodyguard',
-      'One Armed',
+      'One-Armed',
       'Brutal',
       'Large',
       {
@@ -6694,7 +6719,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Let’s Go',
+      'Let\'s Go!',
       'Brutal',
       'Psycho',
       'Persuasive'
@@ -6792,7 +6817,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Hokey Gear'
+      'Hockey Gear'
     ],
     'wp': 4,
     'str': 5,
@@ -6813,7 +6838,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Hokey Gear'
+      'Hockey Gear'
     ],
     'wp': 4,
     'str': 5,
@@ -6834,7 +6859,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Hokey Gear',
+      'Hockey Gear',
       {
         'name': 'Combo with',
         'weapon': 'Hockey Stick'
@@ -6860,7 +6885,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Hokey Gear'
+      'Hockey Gear'
     ],
     'wp': 4,
     'str': 5,
@@ -6881,7 +6906,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Hokey Gear',
+      'Hockey Gear',
       'Order',
       'Bluff'
     ],
@@ -6980,8 +7005,8 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Bluff',
-      'Counterattack',
-      'Follow Me!!!',
+      'Counter Attack',
+      'Follow Me!',
       'Hardened'
     ],
     'wp': 5,
@@ -7066,7 +7091,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Plant Special Traits',
+      'Plant',
       {
         'name': 'Elite',
         'type': 'Plants'
@@ -7124,7 +7149,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Hockey Gear (Biker Jacket)',
+      'Biker Jacket',
       'Mine',
       'Mobster'
     ],
@@ -7147,7 +7172,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Hockey Gear (Biker Jacket)',
+      'Biker Jacket',
       'Shooter',
       'Mobster'
     ],
@@ -7170,7 +7195,7 @@ export const loadedCharacters = [
     ],
     'hates': [],
     'traits': [
-      'Hockey Gear (Biker Jacket)',
+      'Biker Jacket',
       'Tireless',
       'Mobster'
     ],
@@ -7222,13 +7247,19 @@ export const loadedCharacters = [
       'Roots',
       'Green Travel',
       'Regeneration',
-      'Vulnerable to Fire',
+      {
+        'name': 'Vulnerability',
+        'element': 'Fire'
+      },
       'Scientific',
       'Tough Skin',
       'Supernatural',
       'Immortal',
       'Large',
-      'Natural Immunities',
+      {
+        'name': 'Immune to',
+        'element': 'Immunities'
+      },
       'Pollution Hate',
       {
         'name': 'Elite Boss',
@@ -7290,7 +7321,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Business Agent',
-      'Get\'em',
+      'Get \'Em!',
       'Acrobat',
       'Master Marksman',
       {
@@ -7348,8 +7379,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Close Combat Master',
-      'Criminial',
-      '#N/A'
+      'Criminal'
     ],
     'wp': 4,
     'str': 4,
@@ -7372,7 +7402,7 @@ export const loadedCharacters = [
     'traits': [
       'Street Guy',
       'Cyclops',
-      'OCD (MD)',
+      'OCD',
       {
         'name': 'Elite',
         'type': 'Cosplayers'
@@ -7432,7 +7462,7 @@ export const loadedCharacters = [
       'Riddler Bots',
       'Confusion',
       'Goad',
-      'Master Mind',
+      'Mastermind',
       'Puzzle Master'
     ],
     'wp': 8,
@@ -7480,7 +7510,7 @@ export const loadedCharacters = [
     'traits': [
       'Sturdy',
       'Stupid',
-      'Bloodthirsty (MD)',
+      'Bloodthirsty',
       'Large'
     ],
     'wp': 6,
@@ -7576,8 +7606,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Criminal',
-      'Tireless',
-      '#N/A'
+      'Tireless'
     ],
     'wp': 4,
     'str': 4,
@@ -7627,7 +7656,10 @@ export const loadedCharacters = [
       'Bodyguard',
       'Brutal',
       'Distract',
-      'Immun to Stunned Effect',
+      {
+        'name': 'Immune to',
+        'element': 'Stunned Effect'
+      },
       'Lazy Cousins'
     ],
     'wp': 5,
@@ -7682,9 +7714,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Judgement',
-      'Bipolar (MD)',
+      'Bipolar',
       'Master Marksman',
-      'Attorneys & Allegation',
+      'Attourney\'s Allegation',
       'Runaway',
       'Sturdy',
       {
@@ -7736,7 +7768,10 @@ export const loadedCharacters = [
       'Brutal',
       'Large',
       'Hardened',
-      'Titan Dose x2'
+      {
+        'name': 'Titan Dose',
+        'count': 2
+      }
     ],
     'wp': 6,
     'str': 4,
@@ -7761,7 +7796,6 @@ export const loadedCharacters = [
     'traits': [
       'Criminal',
       'Undercover',
-      '#N/A',
       {
         'name': 'Elite',
         'type': 'Gangster'
@@ -7790,7 +7824,7 @@ export const loadedCharacters = [
       'ga'
     ],
     'traits': [
-      'Death Marks',
+      'Deathmarks',
       'Devastating Blow',
       'Tension',
       'Fast',

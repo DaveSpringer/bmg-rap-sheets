@@ -11,7 +11,13 @@ const findTrait = (populatedTraits, traitName) => {
     cost : ''
   }
   if (typeof traitName === 'string') {
-    let retrievedTrait = allTraits.find((trait) => (trait !== null && trait.name === traitName))
+    let retrievedTrait
+    // Coward's Reward is a problematic trait. This is a hack. I wish I had a better solution.
+    if (traitName.indexOf("Coward") !== -1) {
+      retrievedTrait = allTraits.find((trait) => (trait !== null && trait.name === 'Coward\'s Reward'))
+    } else {
+      retrievedTrait = allTraits.find((trait) => (trait !== null && trait.name === traitName))
+    }
 
     if (retrievedTrait !== undefined) {
       foundTrait = retrievedTrait
