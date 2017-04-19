@@ -3408,7 +3408,10 @@ export const loadedCharacters = [
     'traits': [
       'Fly',
       'Hover',
-      'Immune Fire',
+      {
+        'name': 'Immune to',
+        'element': 'Fire'
+      },
       {
         'name': 'Teamwork',
         'counter': '2',
@@ -3441,7 +3444,10 @@ export const loadedCharacters = [
     'traits': [
       'Fly',
       'Hover',
-      'Immune Fire',
+      {
+        'name': 'Immune to',
+        'element': 'Fire'
+      },
       {
         'name': 'Teamwork',
         'counter': '2',
@@ -7088,7 +7094,10 @@ export const loadedCharacters = [
       'Fly',
       'Flying High',
       'Hover',
-      'Invunerability/2',
+      {
+        'name': 'Invulnerability',
+        'counter': '2'
+      },
       'Lantern',
       'Safe Hands',
       {
@@ -7647,7 +7656,10 @@ export const loadedCharacters = [
         'name': 'Scheming',
         'count': 1
       },
-      'Immune to Stun Effect',
+      {
+        'name': 'Immune to',
+        'element': 'Stun Effect'
+      },
       'Lazy Cousins'
     ],
     'wp': 5,

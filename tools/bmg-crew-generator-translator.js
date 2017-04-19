@@ -141,6 +141,27 @@ let cleanupTrait = function(trait) {
       }
     }
     console.log('Resulting trait: ' + JSON.stringify(resultTrait))
+  } else if (resultTrait.toUpperCase().indexOf('IMMUNE') !== -1) {
+    console.log('Found a character with functional trait: ' + trait)
+    let splitTrait
+    if (trait.indexOf(' to ') !== -1) {
+      splitTrait = trait.split(' to ')
+    } else {
+      splitTrait = trait.split(' ')
+    }
+    resultTrait = {
+      name: 'Immune to',
+      element: splitTrait[1]
+    }
+    console.log('Resulting trait: ' + JSON.stringify(resultTrait))
+  } else if (resultTrait.toUpperCase().indexOf('INVULNERABILITY') !== -1) {
+    console.log('Found a character with functional trait: ' + trait)
+    let splitTrait = trait.split('/')
+    resultTrait = {
+      name: 'Invulnerability',
+      counter: splitTrait[1]
+    }
+    console.log('Resulting trait: ' + JSON.stringify(resultTrait))
   } else if (resultTrait.toUpperCase().indexOf('VULNERABILITY') !== -1) {
     console.log('Found a character with functional trait: ' + trait)
     let splitTrait = trait.split(' ')
@@ -177,6 +198,18 @@ let cleanupTrait = function(trait) {
     }
     let mark = splitTrait[1].trim()
     resultTrait = 'Bat-Armor MK ' + mark
+  } else if (trait.indexOf('Bipolar') !== -1) {
+    resultTrait = 'Bipolar'
+  } else if (trait.indexOf('Paranoid') !== -1) {
+    resultTrait = 'Paranoid'
+  } else if (trait.indexOf('Pyromania') !== -1) {
+    resultTrait = 'Pyromania'
+  } else if (trait.indexOf('Obsessive') !== -1) {
+    resultTrait = 'Obsessive'
+  } else if (trait.indexOf('Aggressive Schizophrenia') !== -1) {
+    resultTrait = 'Aggressive Schizophrenia'
+  } else if (trait.indexOf('Blood') !== -1 && trait.toUpperCase().indexOf('THIRSTY') !== -1) {
+    resultTrait = 'Bloodthirsty'
   }
   return resultTrait
 }

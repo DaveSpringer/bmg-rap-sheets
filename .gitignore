@@ -13,7 +13,6 @@ src/resources/fonts/*
 tools/characters.js
 tools/lib
 tools/node_modules
-tools/resources/*
 tools/src
 tools/targets/*
 tools/trait-cleanup/build
