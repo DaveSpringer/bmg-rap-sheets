@@ -8,8 +8,6 @@ coverage
 
 .idea/
 
-src/resources/fonts/*
-
 tools/characters.js
 tools/lib
 tools/node_modules
