@@ -12,13 +12,15 @@
     "compile": "better-npm-run compile",
     "lint": "eslint bin build config server src",
     "lint:fix": "npm run lint -- --fix",
-    "start": "better-npm-run start",
+    "start": "better-npm-run start:prod",
+    "serve": "better-npm-run start",
     "dev": "better-npm-run dev",
     "test": "better-npm-run test",
     "test:dev": "npm run test -- --watch",
     "deploy": "better-npm-run deploy",
     "deploy:dev": "better-npm-run deploy:dev",
     "deploy:prod": "better-npm-run deploy:prod",
+    "postinstall": "npm run deploy:prod",
     "codecov": "cat coverage/*/lcov.info | codecov"
   },
   "betterScripts": {
@@ -59,6 +61,12 @@
       "command": "node bin/dev-server",
       "env": {
         "DEBUG": "app:*"
+      }
+    },
+    "start:prod": {
+      "command": "node bin/dev-server",
+      "env": {
+        "NODE_ENV": "production"
       }
     },
     "test": {
