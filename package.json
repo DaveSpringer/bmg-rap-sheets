@@ -64,7 +64,7 @@
       }
     },
     "start:prod": {
-      "command": "node bin/dev-server",
+      "command": "node bin/server",
       "env": {
         "NODE_ENV": "production"
       }
