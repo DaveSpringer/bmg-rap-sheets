@@ -336,6 +336,8 @@ let cleanupTrait = function(trait) {
     resultTrait = 'Puzzle Master'
   } else if (resultTrait.indexOf('Desesitized') !== -1) {
     resultTrait = 'Desensitized'
+  } else if (resultTrait.indexOf('Fear Master') !== -1) {
+    resultTrait = 'Fear Master'
   } else if (resultTrait.indexOf('Assault') !== -1) {
     resultTrait = 'Assault'
   } else if (resultTrait.indexOf('Counter') !== -1 && resultTrait.toUpperCase().indexOf('ATTACK') !== -1) {

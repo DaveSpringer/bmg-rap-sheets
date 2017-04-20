@@ -1,4 +1,4 @@
-export const allTraits =[
+export const allTraits = [
   {
     'name': '360 Attack',
     'phase': 'Execute the plan',
@@ -7,7 +7,7 @@ export const allTraits =[
     'grants': [ ],
     'page': '?',
     concern: true
-  },{
+  }, {
     'name': 'Acrobat',
     'phase': 'Execute the plan',
     'cost': '',
@@ -369,7 +369,7 @@ export const allTraits =[
     'grants': [ ],
     'page': '?'
   },
-{
+  {
     'name': 'Deathly Strike with',
     'nameFunc': 'Deathly Strike with -weapon-',
     'phase': 'Execute the plan',
@@ -514,14 +514,14 @@ export const allTraits =[
     'rule': '[Arrest] by spending only 1 [MC].',
     'grants': [ 'Arrest' ],
     'page': '?'
-  },{
+  }, {
     'name': 'Combat Flip',
     'phase': 'Execute the plan',
     'cost': '1 SC',
     'rule': 'Once per [Turn], this [Character] my be removed from [Base-to-Base] [Contact] with an [Enemy] [Character]. [Place] it anywhere within 5cm of the original [Enemy] [Character].',
     'grants': [ 'Arrest' ],
     'page': '?'
-  },{
+  }, {
     'name': 'Concealment',
     'phase': 'Execute the plan',
     'cost': '1 SC + 1 MC',
@@ -1016,6 +1016,14 @@ export const allTraits =[
     'page': 'NA'
   },
   {
+    'name': 'Fully Equipped',
+    'phase': 'Crew Building',
+    'cost': '',
+    'rule': 'See this [Character]\'s card.',
+    'grants': [],
+    'page': 'NA'
+  },
+  {
     'name': 'Gas Mask',
     'phase': 'Execute the plan',
     'cost': '',
@@ -1232,7 +1240,7 @@ export const allTraits =[
     'rule': 'Removing this [Character] as a [Casualty] grants no additional [VP].',
     'grants': [],
     'page': '?'
-  },{
+  }, {
     'name': 'Incorporeal',
     'phase': 'Execute the plan',
     'cost': '1 SC',
@@ -1868,7 +1876,7 @@ export const allTraits =[
     'rule': 'This [Character] ignores the first 3 [Damage] received. After taking 3 [Damage] the [Armor] is [Broken]. During the [Victory Point and Recovery State], this [Character] may use 2 [SC] to repair the armor. This armor is vulnerable to the [Fire] [Effect], taking 2 [Blood Damage] for each [Fire Marker].',
     'grants': [],
     'page': '?'
-  },{
+  }, {
     'name': 'Power Armor MKII',
     'phase': 'Execute the plan',
     'cost': '',
@@ -2673,6 +2681,14 @@ export const allTraits =[
     'page': '?'
   },
   {
+    'name': 'Vanish',
+    'phase': 'Execute the plan',
+    'cost': '1 MC + 2 SC',
+    'rule': 'See this [Character]\'s card.',
+    'grants': [],
+    'page': 'NA'
+  },
+  {
     'name': 'Watchmen',
     'phase': 'Crew Building',
     'cost': '',
@@ -2685,6 +2701,14 @@ export const allTraits =[
     'phase': 'Execute the plan',
     'cost': '',
     'rule': 'If this [Character] receives the [Cooled] or [Freeze] [Effect], they receive 1 [Blood Damage] as well.',
+    'grants': [],
+    'page': '?'
+  },
+  {
+    'name': 'Weak',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'This  [Character] loses 1 [Action Counter] for each [Damage Marker] accumulated',
     'grants': [],
     'page': '?'
   },

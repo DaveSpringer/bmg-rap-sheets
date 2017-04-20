@@ -1,67 +1,5 @@
 export const loadedCharacters = [
   {
-    'name': 'Alberto Falcone',
-    'alias': 'The Holiday Killer',
-    'rank': 'Sidekick',
-    'reputation': 60,
-    'funding': 350,
-    'crews': [
-      'oc'
-    ],
-    'hates': [],
-    'traits': [
-      {
-        'name': 'Assassin',
-        'points': null
-      },
-      'Cruel',
-      'Stealth',
-      'Strategist',
-      'Hidden',
-      'The Holiday Killer'
-    ],
-    'wp': 6,
-    'str': 5,
-    'mov': 2,
-    'att': 3,
-    'def': 3,
-    'end': 6,
-    'spc': 3
-  },
-  {
-    'name': 'Dr. Pamela Lillian Isley',
-    'alias': 'Poison Ivy (AC)',
-    'rank': 'Leader',
-    'reputation': 97,
-    'funding': 0,
-    'crews': [
-      'pi'
-    ],
-    'hates': [],
-    'traits': [
-      'Mortal Kiss',
-      'Chlorokinesis',
-      'Control Pheromones',
-      {
-        'name': 'Immune to',
-        'element': 'Immunity'
-      },
-      'Scientific',
-      'Discourage',
-      {
-        'name': 'Elite Boss',
-        'type': ''
-      }
-    ],
-    'wp': 8,
-    'str': 5,
-    'mov': 3,
-    'att': 3,
-    'def': 4,
-    'end': 8,
-    'spc': 4
-  },
-  {
     'name': 'Unknown',
     'alias': '404',
     'rank': 'Henchman',
@@ -3564,6 +3502,35 @@ export const loadedCharacters = [
     'spc': 3
   },
   {
+    'name': 'Alberto Falcone',
+    'alias': 'The Holiday Killer',
+    'rank': 'Sidekick',
+    'reputation': 60,
+    'funding': 350,
+    'crews': [
+      'oc'
+    ],
+    'hates': [],
+    'traits': [
+      {
+        'name': 'Assassin',
+        'points': null
+      },
+      'Cruel',
+      'Stealth',
+      'Strategist',
+      'Hidden',
+      'The Holiday Killer'
+    ],
+    'wp': 6,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 6,
+    'spc': 3
+  },
+  {
     'name': 'Hugo Strange',
     'alias': 'Hugo Strange',
     'rank': 'Free Agent',
@@ -5362,6 +5329,39 @@ export const loadedCharacters = [
   },
   {
     'name': 'Dr. Pamela Lillian Isley',
+    'alias': 'Poison Ivy (AC)',
+    'rank': 'Leader',
+    'reputation': 97,
+    'funding': 0,
+    'crews': [
+      'pi'
+    ],
+    'hates': [],
+    'traits': [
+      'Mortal Kiss',
+      'Chlorokinesis',
+      'Control Pheromones',
+      {
+        'name': 'Immune to',
+        'element': 'Immunity'
+      },
+      'Scientific',
+      'Discourage',
+      {
+        'name': 'Elite Boss',
+        'type': ''
+      }
+    ],
+    'wp': 8,
+    'str': 5,
+    'mov': 3,
+    'att': 3,
+    'def': 4,
+    'end': 8,
+    'spc': 4
+  },
+  {
+    'name': 'Dr. Pamela Lillian Isley',
     'alias': 'Poison Ivy (Comic)',
     'rank': 'Leader',
     'reputation': 83,
@@ -6472,7 +6472,7 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Gas Mask',
-      'The Fear Master',
+      'Fear Master',
       'Inspire Fear',
       'Psycho',
       'Undercover',
