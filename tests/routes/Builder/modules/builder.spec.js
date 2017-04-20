@@ -2,9 +2,11 @@ import {
   SELECT_CREW,
   SELECT_CHARACTER,
   LOAD_RESOURCES,
+  ADD_ALL_CHARACTERS,
   selectCrew,
   selectCharacter,
   loadResources,
+  addAllCharacters,
   default as builderReducer
 } from 'routes/Builder/modules/builder'
 
@@ -35,6 +37,10 @@ describe('(Redux Module) Builder', () => {
 
   it('Should export a constant LOAD_RESOURCES', () => {
     expect(LOAD_RESOURCES).to.equal('LOAD_RESOURCES')
+  })
+
+  it('Should export a constant ADD_ALL_CHARACTERS', () => {
+    expect(ADD_ALL_CHARACTERS).to.equal('ADD_ALL_CHARACTERS')
   })
 
   /* I have no idea why this isn't better... */
@@ -229,6 +235,33 @@ describe('(Redux Module) Builder', () => {
     it('Should be used to trigger a LOAD_RESOURCES event', () => {
       let resultState = builderReducer(defaultState, loadResources())
       expect(resultState).to.be.an('object')
+    })
+  })
+
+  describe('(ActionCreator) addAllCharacters', () => {
+    let loadedState = builderReducer(defaultState, loadResources())
+
+    it('Should be exported as a function.', () => {
+      expect(addAllCharacters).to.be.a('function')
+    })
+
+    it('Should return an action with type ADD_ALL_CHARACTERS', () => {
+      expect(addAllCharacters()).to.have.property('type', ADD_ALL_CHARACTERS)
+    })
+
+    it('Should be used to trigger an ADD_ALL_CHARACTERS event even with defaults.', () => {
+      let resultState = builderReducer(defaultState, addAllCharacters())
+      expect(resultState).to.be.an('object')
+    })
+
+    it('Should be able to populate from the current crew.', () => {
+      let suicideSquadCrew = loadedState.allCrews.find((crew) => crew.id === 'ss')
+      let suicideSquadPopped = builderReducer(loadedState, selectCrew(suicideSquadCrew))
+      let resultState = builderReducer(suicideSquadPopped, addAllCharacters())
+      expect(resultState).to.be.an('object')
+      expect(resultState.characters.length).to.not.equal(0)
+      expect(resultState.availableCharacters.length).to.equal(0)
+      expect(resultState.crewName).to.equal(suicideSquadCrew.name)
     })
   })
 })

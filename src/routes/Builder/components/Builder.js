@@ -18,9 +18,11 @@ class Builder extends React.Component {
       <div className='body-builder'>
         <SelectHeader
           selectCrew={this.props.selectCrew}
+          addAllCharacters={this.props.addAllCharacters}
           allCrews={this.props.crew.allCrews}
           reputation={this.props.crew.reputation}
-          funding={this.props.crew.funding} />
+          funding={this.props.crew.funding}
+          crewName={this.props.crew.crewName} />
         <div className='whatsthisquestionmark'>
 
           <div className='characters hidden-print'>
@@ -77,7 +79,8 @@ Builder.propTypes = {
   crew : React.PropTypes.object.isRequired,
   selectCrew : React.PropTypes.func.isRequired,
   selectCharacter : React.PropTypes.func.isRequired,
-  loadResources : React.PropTypes.func.isRequired
+  loadResources : React.PropTypes.func.isRequired,
+  addAllCharacters : React.PropTypes.func.isRequired
 }
 
 export default Builder

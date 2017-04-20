@@ -1669,7 +1669,7 @@ export const allTraits = [
     'name': 'Multifire',
     'phase': 'Execute the plan',
     'cost': '2 SC',
-    'rule': 'Spend 2 [SC]. This [Character] gains +1 to the [Rate of Fire] on its [Ranged Weapon]s. If this [Character] moves this [Turn], this bonus is lost.',
+    'rule': 'Spend 2 [SC]. This [Character] gains +2 to the [Rate of Fire] on its [Ranged Weapon]s. If this [Character] moves this [Turn], this bonus is lost.',
     'grants': [],
     'page': '?'
   },
