@@ -71,7 +71,7 @@ const addCharacter = (state, action) => {
   let newCharacters = [...state.characters, char]
   // TODO: Determine if this is changing the state tree...
   let newAvailChars = state.availableCharacters.reduce((newAvailCharacters, character) => {
-    let sameName = character.name === char.name && character.alias !== char.alias
+    let sameName = character.name !== 'Unknown' && character.name === char.name && character.alias !== char.alias
     let leaderHide = char.rank === 'Leader' && (character.rank === 'Leader' || (character.rank === 'Sidekick' && sidekicks === 1))
     let sidekickHide = char.rank === 'Sidekick' && ((character.rank === 'Sidekick' && leaders + sidekicks === 2 || (character.rank === 'Leader' && sidekicks === 2)))
     if (character.alias !== char.alias && !sameName && !leaderHide && !sidekickHide) {
@@ -80,7 +80,7 @@ const addCharacter = (state, action) => {
     return newAvailCharacters
   }, [])
   let charactersToHide = state.availableCharacters.reduce((hidingCharacters, character) => {
-    let sameName = character.name === char.name && character.alias !== char.alias
+    let sameName = character.name !== 'Unknown' && character.name === char.name && character.alias !== char.alias
     let leaderHide = char.rank === 'Leader' && (character.rank === 'Leader' || (character.rank === 'Sidekick' && sidekicks === 1))
     let sidekickHide = char.rank === 'Sidekick' && ((character.rank === 'Sidekick' && leaders + sidekicks === 2) || (character.rank === 'Leader' && sidekicks === 2))
     if (character.alias !== char.alias && (sameName || leaderHide || sidekickHide)) {
