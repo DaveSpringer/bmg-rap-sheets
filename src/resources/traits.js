@@ -3,10 +3,9 @@ export const allTraits = [
     'name': '360 Attack',
     'phase': 'Execute the plan',
     'cost': '1 SC + 1 AC',
-    'rule': 'Once per [Turn], this [Character] may [Attack], for free, all [Character]s in [Contact] with this [Character]. ',
+    'rule': 'Once per [Turn], this [Character] may make 1 [Strike] at all [Character]s in [Contact] with this [Character]. This [Character] may [Attack] normally before or after this [Special Attack].',
     'grants': [ ],
-    'page': '?',
-    concern: true
+    'page': 'B.70'
   }, {
     'name': 'Acrobat',
     'phase': 'Execute the plan',
@@ -31,7 +30,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] may use a [Titan], [Venom], or [Vertigo] dose belonging to a [Friendly] [Character] in [Base-to-Base] contact as if it were their own.',
     'grants': [],
-    'page': '?'
+    'page': 'F.26'
   },
   {
     'name': 'Agile',
@@ -39,7 +38,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'When this [Character] [Falls], make an [Agility Roll]. If successful, this [Character] takes no [Damage], and are not [Knocked Down].',
     'grants': [],
-    'page': '?'
+    'page': 'B.57'
   },
   {
     'name': 'Air Support',
@@ -71,7 +70,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] does not spend [MC] to [Move] through [Difficult Ground]: [Water]',
     'grants': [],
-    'page': '?'
+    'page': 'B.55'
   },
   {
     'name': 'Archie',
@@ -79,7 +78,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Do not [Deploy] Nite Owl during [Crew Deployment] of [Game Setup]. Instead, once per [Game] during [Raise the Plan], place Nite Owl anywhere on the [Play Area] not within a [Building].',
     'grants': [],
-    'page': '?'
+    'page': 'NA'
   },
   {
     'name': 'Arkham Asylum Dr',
@@ -104,7 +103,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] must have the highest [Reputation] in the [Crew].',
     'grants': [],
-    'page': '?'
+    'page': 'F.26'
   },
   {
     'name': 'Attourney\'s Allegation',
@@ -112,7 +111,7 @@ export const allTraits = [
     'cost': '2 SC',
     'rule': 'Once per [Game], every [Two Face] [Affiliated] [Henchman] located within 30cm of this [Character] [Assign]s two [Action Counters].',
     'grants': [],
-    'page': '?'
+    'page': 'NA'
   },
   {
     'name': 'Assassin',
@@ -121,7 +120,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'If this [Character] kills an [Enemy] [Boss], immediately gain an extra -points- [Victory Point]s.',
     'grants': [],
-    'page': '?'
+    'page': 'F.26'
   },
   {
     'name': 'Autorepair',
@@ -139,7 +138,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] cannot be in the same [Crew] as -character-.',
     'grants': [],
-    'page': '?'
+    'page': 'F.26'
   },
   {
     'name': 'Assistance',
@@ -173,7 +172,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Each time this [Character] receives a [Hit], after [Block]s, [Ping]s, and [Dodge]s; roll a die. On a result of 6+, discard the [Hit].',
     'grants': [],
-    'page': '?'
+    'page': 'B.55'
   },
   {
     'name': 'Bat-Armor MK III',
@@ -211,9 +210,9 @@ export const allTraits = [
     'name': 'Biker Jacket',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'This [Character] ignores the [Weapon Trait]: [Sharp]',
+    'rule': 'This [Character] ignores the [Weapon Trait]: [Sharp]. AKA: Hockey Gear',
     'grants': [],
-    'page': '?'
+    'page': 'B.60'
   },
   {
     'name': 'Bipolar',
@@ -221,7 +220,7 @@ export const allTraits = [
     'cost': 'Mental Disorder',
     'rule': 'During [Raise the Plan], roll a die or flip a coin. If the result is Even/Heads, this [Character] [Allocate]s one additional [Action Counter]. If the result is Odd/Tails, this [Character] loses one [Action Counter].',
     'grants': [],
-    'page': '?'
+    'page': 'B.56'
   },
   {
     'name': 'Bloodthirsty',
@@ -229,7 +228,7 @@ export const allTraits = [
     'cost': 'Mental Disorder',
     'rule': 'During [Raise the Plan] [Phase], if this character has at least one [Damage] of any kind, they [Allocate] 1 additional [AC].',
     'grants': [],
-    'page': '?'
+    'page': 'B.56'
   },
   {
     'name': 'Bluff',
@@ -237,7 +236,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Once per [Round], reduce the [Attack Skill] of a [Seen] [Character] within 10cm by 1. This is not cumulative.',
     'grants': [],
-    'page': '?'
+    'page': 'F.28'
   },
   {
     'name': 'Play nice!',
@@ -245,7 +244,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'All [Affiliated] [Henchmen] in this [Character]\'s [Crew] gain the [Bluff] [Trait].',
     'grants': [],
-    'page': '?'
+    'page': 'F.40'
   },
   {
     'name': 'Bodyguard',
@@ -253,7 +252,7 @@ export const allTraits = [
     'cost': '1 SC Passive',
     'rule': 'If a [Leader] or [Sidekick] within 5cm receives any number of [Hits], this [Character] may receive the [Hit] instead.',
     'grants': [],
-    'page': '?'
+    'page': 'B.56'
   },
   {
     'name': 'Bonebreaker',
@@ -269,7 +268,7 @@ export const allTraits = [
     'cost': '2 SC',
     'rule': 'Once per [Round], while within 20cm of this [Character], all [Friendly] [Affiliated] [Henchman] in this [Character]\'s [Crew] gain +1 to [Hit Roll]s in [Melee].',
     'grants': [],
-    'page': '?'
+    'page': 'F.28'
   },
   {
     'name': 'Bot',
@@ -277,7 +276,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] does not [Recover] [Stun Damage] or from [K.O.] during the [Victory and Recovery Stage]. [Firearm], [Mechanic], and [Beam] [Weapons] [Damage] this [Character] on a 4+. This [Character] cannot use [Doses]. This [Character] is [Immune] to [Enervating], [Hypnotize], [Poison], [Terror], and [Scared] [Effects].',
     'grants': [],
-    'page': '?'
+    'page': 'B.28'
   },
   {
     'name': 'Bot Bomb',
@@ -285,7 +284,7 @@ export const allTraits = [
     'cost': '2 SC',
     'rule': 'Once per [Round], this [Character] can choose a [Friendly] [Bot] to explode. Place an [Explosion Template] on the chosen [Bot]. Every [Character] touched by the [Template] takes a 2 [Blood Damage] hit on a 4+. Remove the [Target] [Bot] as a [Casualty].',
     'grants': [],
-    'page': '?'
+    'page': 'See File',
   },
   {
     'name': 'Bot Mechanic',
@@ -293,7 +292,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Once per [Round], [Target] [Seen] [Character] within 10cm with the [Bot] [Trait] has 3 [Damage] discarded.',
     'grants': [],
-    'page': '?'
+    'page': 'See File'
   },
   {
     'name': 'Boy Wonder',
@@ -309,7 +308,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] may reroll the [Collateral Die].',
     'grants': [],
-    'page': '?'
+    'page': 'B.58'
   },
   {
     'name': 'Bulletproof Vest',
@@ -334,7 +333,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Add $300 [Funding] to this [Character]\'s [Crew].',
     'grants': [],
-    'page': '?'
+    'page': 'F.28'
   },
   {
     'name': 'Can you Solve this?',
@@ -351,7 +350,7 @@ export const allTraits = [
     'cost': '2 SC',
     'rule': 'Place the [Spray Template] in [Contact] with this [Character]. All [Character]s affected by the [Canary Cry] must pass a [Willpower Roll] or receive the [Stun Effect] and 1 [Blood Damage]. This [Attack] has the [Sonic] special rule.',
     'grants': [],
-    'page': '?'
+    'page': 'See Card'
   },
   {
     'name': 'Cannibal',
@@ -359,7 +358,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'If this [Character] is in [Contact] with a [K.O.] [Character], make a [Willpower Roll]. If they fail, gain the [Devour] trait. This [Character] may do nothing else until they have used [Devour] on the [K.O.] [Character], but may act normally afterward.',
     'grants': [ 'Devour' ],
-    'page': '?'
+    'page': 'B.58'
   },
   {
     'name': 'Deadly Strike',
@@ -367,7 +366,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Add [CRT]: [Casualty] to this [Attack].',
     'grants': [ ],
-    'page': '?'
+    'page': 'B.70'
   },
   {
     'name': 'Deathly Strike with',
@@ -376,7 +375,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Add [CRT]: [Casualty] to this [Attack]s with -weapon-.',
     'grants': [ ],
-    'page': '?'
+    'page': 'B.70'
   },
   {
     'name': 'Devour',
@@ -384,7 +383,7 @@ export const allTraits = [
     'cost': '2 Action Counter',
     'rule': '[Character] in the [K.O.] state is [Removed] as a [Casualty].',
     'grants': [ ],
-    'page': '?'
+    'page': 'B.58 (See Cannibal)'
   },
   {
     'name': 'Charge',
@@ -392,7 +391,7 @@ export const allTraits = [
     'cost': '1 MC + 1 SC',
     'rule': 'When using this [Special Attack]; this [Character] must move in a straight line. While performing this move this [Character] can [Strike] (or [Push] without spending [SC]) any [Character]s in their path, displacing them just enough to pass. At the end of the [Movement], this [Character] can attack normally.',
     'grants': [],
-    'page': '?'
+    'page': 'B.70'
   },
   {
     'name': 'Catcher Gear',
@@ -400,7 +399,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] may ignore the [Weapon Trait]s [Heavy] and [Tough].',
     'grants': [],
-    'page': '?'
+    'page': 'B.58'
   },
   {
     'name': 'Chain of Command',
@@ -408,7 +407,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'If this [Crew]\'s [Boss] becomes a [Casualty], this model may gain the [Leader] [Rank].',
     'grants': [],
-    'page': '?'
+    'page': 'F.30'
   },
   {
     'name': 'Charismatic',
@@ -416,7 +415,7 @@ export const allTraits = [
     'cost': '',
     'rule': '[Crew]s that include this [Character] may have 1 [Free Agent] per every 100 [Reputation Points].',
     'grants': [],
-    'page': '?'
+    'page': 'B.58'
   },
   {
     'name': 'Charm',
@@ -432,7 +431,7 @@ export const allTraits = [
     'cost': '',
     'rule': '[Unarmed Attacks] of this [Character] deail 1 [Blood] and have [CRT]: [Cooled].',
     'grants': [],
-    'page': '?'
+    'page': 'F.30'
   },
   {
     'name': 'Chlorokinesis',
@@ -440,7 +439,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Once per [Round], [Target] a [Character] with the [Plant] [Trait] within 10cm of [Ivy]. Place [Ivy] within 10cm of the [Target] [Plant].',
     'grants': [],
-    'page': '?'
+    'page': 'See File'
   },
   {
     'name': 'Claybody',
@@ -448,7 +447,7 @@ export const allTraits = [
     'cost': '',
     'rule': '[Special Attack] [Charge] costs 1 [SC]. [Clayface] is [Immune] to the [Steal] [Effect].',
     'grants': [],
-    'page': '?'
+    'page': 'See File'
   },
   {
     'name': 'Claws',
@@ -456,7 +455,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character]\'s [Unarmed Attacks] produce [Blood] + [Stun] [Damage].',
     'grants': [],
-    'page': '?'
+    'page': 'B.58'
   },
   {
     'name': 'Climbing Shoes',
@@ -488,7 +487,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'When fighting [Unarmed], the [Character] may reroll any number of [To [Hit]] dice.',
     'grants': [],
-    'page': '?'
+    'page': 'F.30'
   },
   {
     'name': 'Combat Flip',
@@ -496,7 +495,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Once per [Turn], you may remove this [Character] from [Base to Base] contact with an [Enemy]. Place this [Character] within 5cm of the original [Enemy].',
     'grants': [],
-    'page': '?'
+    'page': 'F.30'
   },
   {
     'name': 'Combo with',
@@ -513,21 +512,14 @@ export const allTraits = [
     'cost': '1 MC',
     'rule': '[Arrest] by spending only 1 [MC].',
     'grants': [ 'Arrest' ],
-    'page': '?'
-  }, {
-    'name': 'Combat Flip',
-    'phase': 'Execute the plan',
-    'cost': '1 SC',
-    'rule': 'Once per [Turn], this [Character] my be removed from [Base-to-Base] [Contact] with an [Enemy] [Character]. [Place] it anywhere within 5cm of the original [Enemy] [Character].',
-    'grants': [ 'Arrest' ],
-    'page': '?'
+    'page': 'B.58'
   }, {
     'name': 'Concealment',
     'phase': 'Execute the plan',
     'cost': '1 SC + 1 MC',
     'rule': 'Until the end of the [Round], [Enemy] [Character]s my only see this [Character] if they are in [Base-to-Base] contact.',
     'grants': [],
-    'page': '?'
+    'page': 'F.30'
   },
   {
     'name': 'Confusion',
@@ -535,7 +527,7 @@ export const allTraits = [
     'cost': '2 SC',
     'rule': 'Once per [Turn], [Target] a [Seen] [Enemy Character] within 20cm. Recude the [Target]\'s [Attack] and [Defense] by 1 and they cannot use [SC]. These effects last until the end of the [Round].',
     'grants': [],
-    'page': '?'
+    'page': 'B.58'
   },
   {
     'name': 'Control Pheromones',
@@ -543,7 +535,7 @@ export const allTraits = [
     'cost': '3 SC',
     'rule': '[Target] a [Seen] [Enemy] [Character] within 10cm. The [Target] suffers the [Hypnotized] [Effect].',
     'grants': [],
-    'page': '?'
+    'page': 'B.58'
   },
   {
     'name': 'Corrupt',
@@ -551,7 +543,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Your [Crew] may [Recruit] up to 3 [Law Force] [Affiliated] [Henchmen].',
     'grants': [],
-    'page': '?'
+    'page': 'B.58'
   },
   {
     'name': 'Court of Owls Crew',
@@ -559,7 +551,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Crew] can only hire [Characters] with [Court of Owls] [Affiliation].',
     'grants': [],
-    'page': '?'
+    'page': 'B.50'
   },
   {
     'name': 'Coward\'s Reward',
@@ -584,7 +576,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Once per [Game], if this [Character] causes an [Enemy Character] to become [K.O.] or a [Casualty], gain +1 [Willpower].',
     'grants': [],
-    'page': '?'
+    'page': 'B.58'
   },
   {
     'name': 'Criminology',
@@ -697,7 +689,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'When [Attacking], gain +1 to [Damage Rolls], and [CRT: Blood].',
     'grants': [],
-    'page': '?'
+    'page': 'B.70'
   },
   {
     'name': 'Direct Connection to the Speed Force',
@@ -729,7 +721,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Once per [Turn], you may reallocate 2 [Action Counter]s of a [Seen] [Enemy] [Character].',
     'grants': [],
-    'page': '?'
+    'page': 'B.59'
   },
   {
     'name': 'Discourage',
@@ -737,7 +729,7 @@ export const allTraits = [
     'cost': '2 SC',
     'rule': 'Once per [Turn], reduce the [Willpower] of a [Seen] [Enemy] [Character] by 2. This [Effect] lasts until the end of the next [Raise the Plan] phase.',
     'grants': [],
-    'page': '?'
+    'page': 'B.59'
   },
   {
     'name': 'Disruptor',
@@ -754,7 +746,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Once per [Round], reduce the [Defense] of [Target] [Seen] [Enemy] [Character] within 10cm by 1, to a minimum of 1 until the end of the [Round]. This [Effect] does not stack.',
     'grants': [],
-    'page': '?'
+    'page': 'B.59'
   },
   {
     'name': 'Disturb',
@@ -909,7 +901,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] may reroll [MC] used to [Move].',
     'grants': [],
-    'page': '?'
+    'page': 'B.59'
   },
   {
     'name': 'Fear Master',
@@ -957,7 +949,7 @@ export const allTraits = [
     'cost': '1 MC',
     'rule': 'Once per [Game], [Illuminate] the entire [Play Area] until the end of the [Round].',
     'grants': [],
-    'page': '?'
+    'page': 'B.59'
   },
   {
     'name': 'Flaming Wave',
@@ -989,7 +981,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Once per [Turn], assign 1 [MC] to [Friendly] [Henchmen] within 10cm.',
     'grants': [],
-    'page': '?'
+    'page': 'B.59'
   },
   {
     'name': 'Football Gear',
@@ -997,7 +989,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] ignores the [Weapon Trait] [Heavy] and [Sharp].',
     'grants': [],
-    'page': '?'
+    'page': 'B.59'
   },
   {
     'name': 'Force Field',
@@ -1061,7 +1053,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character]\'s [Crew] gets 2 additional [Strategy Point].',
     'grants': [],
-    'page': '?'
+    'page': 'B.65',
   },
   {
     'name': 'Grand Strategist',
@@ -1069,7 +1061,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character]\'s [Crew] gets 2 additional [Strategy Point].',
     'grants': [],
-    'page': '?'
+    'page': 'B.65'
   },
   {
     'name': 'Grapple Gun',
@@ -1085,7 +1077,7 @@ export const allTraits = [
     'cost': '2 SC + 2 MC',
     'rule': 'Once per [Game], [Place] this [Character] up to 40cm away',
     'grants': [],
-    'page': '?'
+    'page': 'See File',
   },
   {
     'name': 'Greed',
@@ -1099,9 +1091,9 @@ export const allTraits = [
     'name': 'Grin Twins',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
-    'page': '?',
+    'page': 'See File.',
     concern: true
   },
   {
@@ -1110,7 +1102,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'This [Character] can spend 4 [AC] to [Attack] with 2 [Ranged Weapons] at once. Each [Attack] consumes an [Ammunition] from the [Weapon].',
     'grants': [],
-    'page': '?'
+    'page': 'B.59',
   },
   {
     'name': 'Hacking',
@@ -1142,7 +1134,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'The first [Blood Damage Marker] this [Character] receives each [Round] becomes a [Stun Damage Marker] instead.',
     'grants': [],
-    'page': '?'
+    'page': 'B.60',
   },
   {
     'name': 'Heavy Armor',
@@ -1183,7 +1175,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'This [Character] may be deployed at the end of [Phase D] anywhere in the [Play Area]. This [Character] must not be [Seen] by [Enemy] [Character]s, and outside 10cm from any [Objective]. If this is not possible, then [Deploy] this [Character] in a [Friendly Deployment Zone]. If an [Enemy] [Character] has [Total Vision], this [Character] must be deployed in a [Friendly Deployment Zone].',
     'grants': [],
-    'page': '?'
+    'page': 'B.60',
   },
   {
     'name': 'The Hidden Boss',
@@ -1207,7 +1199,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] ignores the [Weapon Trait]: [Sharp]',
     'grants': [],
-    'page': '?'
+    'page': 'B.60',
   },
   {
     'name': 'Hover',
@@ -1239,7 +1231,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Removing this [Character] as a [Casualty] grants no additional [VP].',
     'grants': [],
-    'page': '?'
+    'page': 'B.60',
   }, {
     'name': 'Incorporeal',
     'phase': 'Execute the plan',
@@ -1287,7 +1279,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Once per [Turn], [Henchmen] within 10cm [Assign] 1 [Action Counter].',
     'grants': [],
-    'page': '?'
+    'page': 'B.60'
   },
   {
     'name': 'Inspire Fear',
@@ -1336,7 +1328,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'When this [Character] [K.O.]s an [Enemy] [Character], flip a [Coin] or roll a [Die]. If the result is Heads/Even, remove the [K.O.] [Character] as a [Casualty]',
     'grants': [],
-    'page': '?'
+    'page': 'B.60'
   },
   {
     'name': 'Jump-up',
@@ -1360,7 +1352,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'At the beginning of the [Game], remove 1 [Opponent]\'s [Take the Lead] marker. [Game]s may now end before the [Scenario]\'s [Round Limit]. All [Henchmen] reveive the [Trickster] [Trait].',
     'grants': [],
-    'page': '?'
+    'page': 'B.60'
   },
   {
     'name': 'Kevlar Vest',
@@ -1384,7 +1376,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'If not in [Contact] with an [Enemy] [Character], everything within 5cm of this [Character] is [Illuminated].',
     'grants': [],
-    'page': '?'
+    'page': 'B.60'
   },
   {
     'name': 'Large',
@@ -1395,7 +1387,7 @@ export const allTraits = [
       'Resilient',
       'Charge'
     ],
-    'page': '?'
+    'page': 'B.60'
   },
   {
     'name': 'Laser Sight',
@@ -1403,7 +1395,7 @@ export const allTraits = [
     'cost': '1 MC',
     'rule': 'Target one [Seen] [Character]. The [Target] [Character] is [Illuminated] until the end of the [Round]. If the [Target] can no longer be [Seen], the target is no longer [Illuminated].',
     'grants': [],
-    'page': '?'
+    'page': 'B.62'
   },
   {
     'name': 'Lazy Cousins',
@@ -1427,7 +1419,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'If this [Character] causes [Damage] to a [Target], that [Target] also suffers a [Stun] [Effect].',
     'grants': [],
-    'page': '?'
+    'page': 'B.70'
   },
   {
     'name': 'Let\'s Go!',
@@ -1435,7 +1427,7 @@ export const allTraits = [
     'cost': '1 SC Passive',
     'rule': 'At the end of a [Friendly] [Henchman]\'s [Turn], a [Henchman] that has not yet had a [Turn] this [Round] may spend 1 [SC] to attempt to [Let\'s Go!]. [Roll] a [Die]. On a 4+, the [Henchman] that spent the [SC] may immediately take their [Turn]. If the roll is failed, no other [Henchman] may attempt to [Let\'s Go]. After this [Henchman]\'s [Turn], another friendly [Henchman] may attempt [Let\'s Go], but the difficulty is increased by one for each subsequent attempt.',
     'grants': [],
-    'page': '?'
+    'page': 'B.62'
   },
   {
     'name': 'Light Armor',
@@ -1451,7 +1443,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'If this [Character] is the [Boss] of the [Crew], the [Crew] has $500 more [Funding] to spend. The [Crew] may take an extra [Loot Objective] instead of another [Objective].',
     'grants': [],
-    'page': '?'
+    'page': 'B.62'
   },
   {
     'name': 'Lord of the Sewer',
@@ -1459,7 +1451,7 @@ export const allTraits = [
     'cost': '',
     'rule': '[Killer Croc] does not count toward the limit of [Characters] tha can be in the [Sewer]. [Killer Croc] can start the game inside the [Sewer], but must remain in the [Sewer] for one [Round]. [Killer Croc]\'s [Crew] generates 1 additional [Sewer Marker].',
     'grants': [],
-    'page': '?',
+    'page': 'B.62',
     concern: true
   },
   {
@@ -1468,7 +1460,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'This [Character] may spend 1 [SC] to [Reroll] any [Die] for any reason. This [Character] may also spend 1 [SC] per [Hit] to force an [Enemy] to [Reroll] successful [Hits] against this [Character].',
     'grants': [],
-    'page': '?'
+    'page': 'B.62'
   },
   {
     'name': 'Lunatic Laugh',
@@ -1533,7 +1525,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] may reroll [To Hit Rolls] on [Ranged Attacks]',
     'grants': [],
-    'page': '?'
+    'page': 'B.62'
   },
   {
     'name': 'Mastermind',
@@ -1541,7 +1533,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Add 1 additional [Take the Lead] counter for your [Crew]. This [Character] can roll twice when solving [Riddles].',
     'grants': [],
-    'page': '?'
+    'page': 'B.62'
   },
   {
     'name': 'Maximum Efficiency',
@@ -1573,7 +1565,7 @@ export const allTraits = [
     'cost': 'Mental Disorder',
     'rule': 'If this [Character] begins its [Activation] in [Contact], assign 1 [Action Counter] and [Attack] a [Character] in [Contact] or take 1 [Blood Damage] at the end of the [Turn].',
     'grants': [],
-    'page': '?'
+    'page': 'B.55'
   },
   {
     'name': 'Menace',
@@ -1630,7 +1622,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'All [Henchmen] of this [Character]\'s [Crew] get +1 to their [Let\'s Go!] rolls.',
     'grants': [],
-    'page': '?',
+    'page': 'B.62',
     concern: true
   },
   {
@@ -1639,7 +1631,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'When [Attacking] a [Character] who is [Outnumbered], this [Character] gets an extra [Strike] against the [Target]. This [Attack] does not require any [AC].',
     'grants': [],
-    'page': '?'
+    'page': 'B.62'
   },
   {
     'name': 'Moral Compass',
@@ -1727,7 +1719,7 @@ export const allTraits = [
     'cost': 'Mental Disorder',
     'rule': 'After this [Character] [Attacks] an [Enemy] [Character], they are unable to [Attack] any other [Target]s until that [Enemy] is [K.O.] or [Casualty]. This [Character] also gets +1 [Strength] against that [Enemy Character].',
     'grants': [],
-    'page': '?'
+    'page': 'B.62'
   },
   {
     'name': 'One-Armed',
@@ -1743,7 +1735,7 @@ export const allTraits = [
     'cost': '2 AC + 2 SC',
     'rule': 'Once per [Game], make a [Short Range] [Ranged Attack]. The [Target] is automatically [Hit] with a [Strength 2+], 3 [Blood Damage] and [CRT]: [Casualty].',
     'grants': [],
-    'page': '?'
+    'page': 'B.63'
   },
   {
     'name': 'Order',
@@ -1751,7 +1743,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Once per [Turn], [Seen] [Friendly] [Character] may reallocate up to 2 [Action Counter]s.',
     'grants': [],
-    'page': '?'
+    'page': 'B.63'
   },
   {
     'name': 'Military Tradition',
@@ -1811,7 +1803,7 @@ export const allTraits = [
     'cost': '1 SC + 1 AC',
     'rule': 'Target a [Seen] [Enemy] [Character] that has not taken a [Turn] this [Round]. [Target] must immediately take their [Turn].',
     'grants': [],
-    'page': '?'
+    'page': 'B.63'
   },
   {
     'name': 'Pickpocket',
@@ -1819,7 +1811,7 @@ export const allTraits = [
     'cost': '1 MC',
     'rule': 'If this [Character] uses [Manipulate] while in [Contact] with a [K.O.] [Character], they [Steal].',
     'grants': [],
-    'page': '?'
+    'page': 'B.63'
   },
   {
     'name': 'Plant',
@@ -1859,10 +1851,8 @@ export const allTraits = [
     'cost': '',
     'rule': 'To remove [Poison] [Effect] added by this [Character], the [Target] must roll 3 [Dice] and [Discard] the [Highest] [Die].',
     'grants': [],
-    'page': '?'
-  },
-
-  {
+    'page': 'B.63'
+  }, {
     'name': 'Pollution Hate',
     'phase': 'Execute the plan',
     'cost': '',
@@ -1875,7 +1865,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] ignores the first 3 [Damage] received. After taking 3 [Damage] the [Armor] is [Broken]. During the [Victory Point and Recovery State], this [Character] may use 2 [SC] to repair the armor. This armor is vulnerable to the [Fire] [Effect], taking 2 [Blood Damage] for each [Fire Marker].',
     'grants': [],
-    'page': '?'
+    'page': 'B.63'
   }, {
     'name': 'Power Armor MKII',
     'phase': 'Execute the plan',
@@ -1890,7 +1880,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'If this [Character] [Hit]s the [Target], the [Target] is [Knocked Down] automatically.',
     'grants': [],
-    'page': '?'
+    'page': 'B.70'
   },
   {
     'name': 'Power Dampening',
@@ -1914,7 +1904,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'This [Character] gets an additional +1 on the [To Hit Roll] and can reroll the [Collateral Die]. You must accept the second result.',
     'grants': [],
-    'page': '?'
+    'page': 'B.70'
   },
   {
     'name': 'Primary Target',
@@ -1939,7 +1929,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character]\'s [Willpower] is never reduced. This does not affect [Action Counters] lost from [Damage].',
     'grants': [],
-    'page': '?'
+    'page': 'B.63'
   },
   {
     'name': 'Psychiatrist',
@@ -1955,7 +1945,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'This [Character] may spend 1SC to cancel all [Mental Disorder] special rules of any [Characters] [Seen] within 20cm',
     'grants': [],
-    'page': '?'
+    'page': 'B.63'
   },
   {
     'name': 'Psychologist',
@@ -1965,7 +1955,7 @@ export const allTraits = [
     'grants': [
       'Psychoanalysis'
     ],
-    'page': '?'
+    'page': 'B.63'
   },
   {
     'name': 'Public Resources',
@@ -1981,7 +1971,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] always scores 3 [VP] when solving [Riddle Objective Marker]s. Enemy [Character]s cannot reroll [Riddle Objective Marker]s.',
     'grants': [],
-    'page': '?'
+    'page': 'B.63'
   },
   {
     'name': 'Pyromania',
@@ -2022,7 +2012,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'Once per [Round], when this [Character] uses a [Ranged Weapon], gain +1 [Rate of Fire] even if this [Character] moves.',
     'grants': [],
-    'page': '?',
+    'page': 'B.63',
     'concern': true
   },
   {
@@ -2039,7 +2029,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] may reroll [Agility Roll]s',
     'grants': [],
-    'page': '?'
+    'page': 'B.63',
   },
   {
     'name': 'Regeneration',
@@ -2103,7 +2093,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] may reroll [Endurance Rolls].',
     'grants': [],
-    'page': '?'
+    'page': 'B.64'
   },
   {
     'name': 'Retractable Claws',
@@ -2145,7 +2135,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] is [Immune] to the [Arrest] [Trait].',
     'grants': [],
-    'page': '?'
+    'page': 'B.63'
   },
   {
     'name': 'Safe Hands',
@@ -2170,7 +2160,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'If this [Character]\'s [Crew] is the first to [Raise the Plan], -count- [Character]s may be nominated to [Raise the Plan] after the opponent. Otherwise, you may reduce your [Opponent]s nominated [Characters] by -count-.',
     'grants': [],
-    'page': '?'
+    'page': 'B.65'
   },
   {
     'name': 'Scientific',
@@ -2178,7 +2168,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] may assign 4 [SC]. This [Character] is worth 1 additional [VP] if removed as a [Casualty].',
     'grants': [],
-    'page': '?'
+    'page': 'B.65'
   },
   {
     'name': 'Sealth',
@@ -2194,7 +2184,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Remote 1 [Strategy Point] from an [Opponent].',
     'grants': [],
-    'page': '?'
+    'page': 'B.65'
   },
   {
     'name': 'Self-Discipline',
@@ -2267,7 +2257,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'If this [Character] is more than 20cm from an [Enemy], this [Character] cannot be [Seen]. Other rules override this effect (i.e. [Illumination], [Total Vision], etc).',
     'grants': [],
-    'page': '?'
+    'page': 'B.65'
   },
   {
     'name': 'Stop!',
@@ -2275,7 +2265,7 @@ export const allTraits = [
     'cost': '1 SC Passive',
     'rule': 'When a [Seen] [Enemy] [Character] begins its [Turn], spend 1 [SC]. The [Target] cannot spend [MC] for the remainder of the [Round].',
     'grants': [],
-    'page': '?',
+    'page': 'B.65'
     concern: true
   },
   {
@@ -2284,7 +2274,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character]\'s [Crew] gets 1 additional [Strategy Point].',
     'grants': [],
-    'page': '?'
+    'page': 'B.65'
   },
   {
     'name': 'Street Guy',
@@ -2300,7 +2290,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] cannot [Manipulate].',
     'grants': [],
-    'page': '?'
+    'page': 'B.65'
   },
   {
     'name': 'Sturdy',
@@ -2308,7 +2298,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] loses 1 [AC] for every 3 [Damage] instead of 2.',
     'grants': [],
-    'page': '?'
+    'page': 'B.65'
   },
   {
     'name': 'Subliminal Suggestion',
@@ -2422,7 +2412,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] receives an additional +1 to his [Attack] and [Defence] values when he has at least 1 [Damage].',
     'grants': [],
-    'page': '?'
+    'page': 'B.65'
   },
   {
     'name': 'Technique',
@@ -2471,7 +2461,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] may [Run] by spending only 1 [SC]',
     'grants': [],
-    'page': '?',
+    'page': 'B.66',
     'concern': true
   },
   {
@@ -2480,7 +2470,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] can use a [Titan Dose] more than once per [Game], but no more than once per [Round]. If, at the beginning of this [Character]\'s [Turn], this [Character] can [See] a [Titan Container Objective], he must move all available movement in a straight line to the [Titan Container Objective]. This [Character] can resist this by spending 1 [Action Counter].',
     'grants': [],
-    'page': '?'
+    'page': 'B.65'
   },
   {
     'name': 'Titan Dose',
@@ -2489,7 +2479,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Once per [Round] during the [Raise the Plan] phase, this [Character] may consume 1 of -count- [Titan Dose](s) to gain +1 to all [Characteristics] during this [Round].',
     'grants': [],
-    'page': '?'
+    'page': 'B.66'
   },
   {
     'name': 'Total Vision',
@@ -2507,7 +2497,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Subtract 1 from [Damage Roll]s made against this [Character].',
     'grants': [],
-    'page': '?'
+    'page': 'B.66'
   },
   {
     'name': 'Target of the Bat',
@@ -2532,7 +2522,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'At the start of this [Character]\'s [Turn], they may reallocate all of their [Action Counters].',
     'grants': [],
-    'page': '?'
+    'page': 'B.66'
   },
   {
     'name': 'True Love',
@@ -2557,7 +2547,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] can deploy up to 20cm outside the [Deployment Area] after [Phase D: Objectives].',
     'grants': [],
-    'page': '?'
+    'page': 'B.66'
   },
   {
     'name': 'Unpredictable',
@@ -2565,7 +2555,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] can use any allocated [SC] for any [Trait], [Skill], or [Special Rule]. These [Counters] do not count against the maximum allowed for the [Characteristic] used.',
     'grants': [],
-    'page': '?',
+    'page': 'B.66'
     concern: true
   },
   {
@@ -2710,7 +2700,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This  [Character] loses 1 [Action Counter] for each [Damage Marker] accumulated',
     'grants': [],
-    'page': '?'
+    'page': 'B.66'
   },
   {
     'name': 'Weapon Master',
@@ -2718,7 +2708,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] receives +1 on melee [To Hit Rolls] when they are not [Unarmed].',
     'grants': [],
-    'page': '?'
+    'page': 'B.66'
   },
   {
     'name': 'Weapon Master With',
@@ -2727,6 +2717,6 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] receives +1 on melee [To Hit Rolls] when [Attacking] with -weapon-.',
     'grants': [],
-    'page': '?'
+    'page': 'B.66'
   }
 ]
