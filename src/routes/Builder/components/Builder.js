@@ -5,11 +5,19 @@ import Character from './Character'
 import './style/Builder.scss'
 
 class Builder extends React.Component {
+  constructor () {
+    super()
+    this.addAllCharactersClick = this.addAllCharactersClick.bind(this)
+  }
   componentWillMount () {
     // Load up the various files
     this.props.loadResources()
   }
   componentDidMount () {
+  }
+
+  addAllCharactersClick (event) {
+    this.props.addAllCharacters()
   }
 
   render () {
@@ -27,6 +35,7 @@ class Builder extends React.Component {
 
           <div className='characters hidden-print'>
             <h2>Select Characters</h2>
+            <button onClick={this.addAllCharactersClick}>Add All</button>
             <div id='available-characters' className='character-area'>
               {availableCharacters.map(character =>
                 <Character key={character.alias + '-' + character.name}
@@ -38,7 +47,6 @@ class Builder extends React.Component {
           </div>
           <div className='crewStats hidden-print'>
             <h2>Current Crew</h2>
-            <p>Reputation: {this.props.crew.reputation} - Funding: ${this.props.crew.funding}</p>
             <div>Leaders: {this.props.crew.leaders} - Sidekicks: {this.props.crew.sidekicks}
               &nbsp;- Free Agents: {this.props.crew.freeAgents}</div>
             <div id='selected-characters' className='character-area'>

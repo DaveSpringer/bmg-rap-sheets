@@ -11,7 +11,7 @@ export const allTraits = [
     'name': 'A Challenge for you',
     'phase': 'Objectives',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -77,7 +77,7 @@ export const allTraits = [
     'name': 'Anger Management',
     'phase': 'Execute the plan',
     'cost': 'Mental Disorder',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA'
   },
@@ -93,7 +93,7 @@ export const allTraits = [
     'name': 'Arkham Asylum Dr',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA',
     'concern': true
@@ -127,7 +127,7 @@ export const allTraits = [
     'name': 'Assault',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -135,7 +135,7 @@ export const allTraits = [
     'name': 'Assistance',
     'phase': 'Raise the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA',
     'concern': true
@@ -219,7 +219,7 @@ export const allTraits = [
     'name': 'Batpod',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA'
   },
@@ -307,7 +307,7 @@ export const allTraits = [
     'name': 'Boy Wonder',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA'
   },
@@ -323,7 +323,7 @@ export const allTraits = [
     'name': 'Bullet Time',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA',
     'concern': true
@@ -596,7 +596,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'If this [Character] makes a [Ranged Attack] at an [Enemy] more than 20cm away, his [Weapons] gain the [Imprecise] rule.',
     'grants': [],
-    'page': '?'
+    'page': 'SS.50'
   },
   {
     'name': 'Daddy\'s Grrrrl',
@@ -638,7 +638,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'Once per [Game], gain 1 [VP] if [Casualty] an [Enemy] [Character].',
     'grants': [],
-    'page': '?'
+    'page': 'See File'
   },
   {
     'name': 'Delirium',
@@ -734,7 +734,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'If this [Character] is the [Boss], hiw [Crew] gains $300 extra [Funding].',
     'grants': [],
-    'page': '?'
+    'page': 'SS.50'
   },
   {
     'name': 'Disarray',
@@ -756,7 +756,7 @@ export const allTraits = [
     'name': 'Disruptor',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA',
     'concern': true
@@ -822,7 +822,7 @@ export const allTraits = [
     'name': 'Electric Storm',
     'phase': 'Execute the plan',
     'cost': '3 SC + 1 AC',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA'
   },
@@ -939,7 +939,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'When using [Inspire Fear], all [Character]s within 10cm are affected as a [Gas] [Attack].',
     'grants': [],
-    'page': '?'
+    'page': 'See File'
   },
   {
     'name': 'Feint',
@@ -1033,7 +1033,7 @@ export const allTraits = [
     'name': 'Fully Equipped',
     'phase': 'Crew Building',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -1041,7 +1041,7 @@ export const allTraits = [
     'name': 'Funny Bomb',
     'phase': 'Execute the plan',
     'cost': '1 SC',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA'
   },
@@ -1107,7 +1107,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] may only [Control] [Loot Objective]s and [Safe Box Objective]s.',
     'grants': [],
-    'page': '?'
+    'page': 'SS.52'
   },
   {
     'name': 'Green Travel',
@@ -1138,7 +1138,7 @@ export const allTraits = [
     'name': 'Hacking',
     'phase': 'Execute the plan',
     'cost': '1 SC',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA'
   },
@@ -1178,7 +1178,7 @@ export const allTraits = [
     'name': 'Heir to the Cowl',
     'phase': 'Crew creation',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -1243,7 +1243,7 @@ export const allTraits = [
     'name': 'I know what I\'m doing',
     'phase': 'Speed Force',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -1268,7 +1268,7 @@ export const allTraits = [
     'nameFunc': 'Immune to -element-',
     'phase': 'Raise the plan',
     'cost': '',
-    'rule': 'This [Character] is [Immune] to the [Fire] [Effect]',
+    'rule': 'This [Character] is [Immune] to the -element- [Effect]',
     'grants': [],
     'page': '?'
   },
@@ -1318,7 +1318,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': '[Target] [Seen] [Enemy] [Character] within 20cm cannot make [Close Combat] [Attacks] unless they pass a [Willpower Roll].',
     'grants': [],
-    'page': '?'
+    'page': 'SS.53'
   },
   {
     'name': 'Invaluable',
@@ -1367,7 +1367,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character]\'s unarmed attacks gain: [CRIT]: 3 [Stun]',
     'grants': [],
-    'page': '?'
+    'page': 'See File'
   },
   {
     'name': 'Kaos Agent',
@@ -1426,7 +1426,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'The [Willpower] of this [Character] is reduced by 1 if there are no other [Lazy Cousin]s in [Play].',
     'grants': [],
-    'page': '?'
+    'page': 'See File'
   },
   {
     'name': 'Leadership',
@@ -1470,9 +1470,9 @@ export const allTraits = [
   },
   {
     'name': 'Lord of the Sewer',
-    'phase': '????',
+    'phase': 'Urban Furnature/Deployment',
     'cost': '',
-    'rule': '[Killer Croc] does not count toward the limit of [Characters] tha can be in the [Sewer]. [Killer Croc] can start the game inside the [Sewer], but must remain in the [Sewer] for one [Round]. [Killer Croc]\'s [Crew] generates 1 additional [Sewer Marker].',
+    'rule': '[Killer Croc] does not count toward the limit of [Characters] that can be in the [Sewer]. [Killer Croc] can start the game inside the [Sewer], but must remain in the [Sewer] for one [Round]. [Killer Croc]\'s [Crew] generates 1 additional [Sewer Marker].',
     'grants': [],
     'page': 'B.62',
     'concern': true
@@ -1515,7 +1515,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] causes a [Critical] on a [Collateral] of 4, 5, or 6.',
     'grants': [],
-    'page': '?',
+    'page': 'See Card',
     'concern': true
   },
   {
@@ -1586,7 +1586,7 @@ export const allTraits = [
     'name': 'Military Tradition',
     'phase': 'Execute the plan',
     'cost': '2 SC',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA',
     'concern': true
@@ -1646,7 +1646,7 @@ export const allTraits = [
     'cost': '1 SC',
     'rule': 'This [Character] gains the [Total Vision] [Trait] and [Remote Controlled] on its [Ranged Weapons] until the end of the [Round].',
     'grants': [],
-    'page': '?'
+    'page': 'SS.54'
   },
   {
     'name': 'Moral Compass',
@@ -1732,16 +1732,16 @@ export const allTraits = [
     'name': 'OCD',
     'phase': 'Execute the plan',
     'cost': 'Mental Disorder',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
-    'page': '?',
+    'page': 'SS.57',
     'concern': true
   },
   {
     'name': 'One of the Boys',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA',
     'concern': true
@@ -1760,7 +1760,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] has a -1 Penalty to [Defense Rolls].',
     'grants': [],
-    'page': '?'
+    'page': 'SS.57'
   },
   {
     'name': 'Order',
@@ -1774,7 +1774,7 @@ export const allTraits = [
     'name': 'Outlaw Field Commander',
     'phase': 'Execute the plan',
     'cost': '1 SC',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'F.40',
     'concern': true
@@ -1783,7 +1783,7 @@ export const allTraits = [
     'name': 'Panda Costume',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -1881,7 +1881,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] is immune to [CRT].',
     'grants': [],
-    'page': '?'
+    'page': 'See File'
   },
   {
     'name': 'Power Dampening',
@@ -1994,7 +1994,7 @@ export const allTraits = [
     'name': 'Quiz Master',
     'phase': 'Objectives',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -2012,7 +2012,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'TBD...',
     'grants': [],
-    'page': '?',
+    'page': 'SS.58',
     'concern': true
   },
   {
@@ -2060,7 +2060,7 @@ export const allTraits = [
     'name': 'Regrets',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -2110,7 +2110,7 @@ export const allTraits = [
     'name': 'Riddler Bots',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -2363,7 +2363,7 @@ export const allTraits = [
     'name': 'Tachyon Device',
     'phase': 'Speed Force',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -2430,7 +2430,7 @@ export const allTraits = [
     'name': 'Teen Titans Founder',
     'phase': 'Raise the plan/Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA'
   },
@@ -2455,7 +2455,7 @@ export const allTraits = [
     'name': 'The Dynamic Duo',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA',
     'concern': true
@@ -2472,7 +2472,7 @@ export const allTraits = [
     'name': 'The Holiday Killer',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -2496,7 +2496,7 @@ export const allTraits = [
     'name': 'The Sidekick',
     'phase': 'Crew Building',
     'cost': '',
-    'rule': 'See this [Character]\'s card',
+    'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA'
   },
@@ -2504,7 +2504,7 @@ export const allTraits = [
     'name': 'The Untouchable',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -2639,7 +2639,7 @@ export const allTraits = [
     'name': 'Vanish',
     'phase': 'Execute the plan',
     'cost': '1 MC + 2 SC',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   },
@@ -2666,7 +2666,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'TBD...',
     'grants': [],
-    'page': '?',
+    'page': 'SS.63',
     'concern': true
   },
   {
@@ -2684,7 +2684,7 @@ export const allTraits = [
     'cost': '',
     'rule': 'This [Character] can only be [Affiliated] with other [Character]s with the [Watchmen] [Rank].',
     'grants': [],
-    'page': '?'
+    'page': 'See File'
   },
   {
     'name': 'Weak',
@@ -2723,7 +2723,7 @@ export const allTraits = [
     'name': 'Wizard of Quiz',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'See this [Character]\'s card.',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
     'page': 'NA'
   }

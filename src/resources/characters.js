@@ -22,7 +22,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SPICE AND TWO-FACE THUGS'
   },
   {
     'name': 'Aaron Cash',
@@ -47,7 +48,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'AARON CASH AND QUICK RESPONSE TEAM'
   },
   {
     'name': 'Agent O\'Connell',
@@ -71,7 +73,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'GOTHAM POLICE SET II'
   },
   {
     'name': 'Agent Ron',
@@ -95,7 +98,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'GOTHAM POLICE SET I'
   },
   {
     'name': 'Alfred Pennyworth',
@@ -119,7 +123,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Promotional'
   },
   {
     'name': 'Michael Sommers',
@@ -148,7 +153,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COMMISSIONER GORDON & SWAT TEAM'
   },
   {
     'name': 'Unknown',
@@ -172,7 +178,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACK MASK\'S CREW'
   },
   {
     'name': 'Jason Todd',
@@ -204,7 +211,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ARKHAM KNIGHT'
   },
   {
     'name': 'Jason Todd',
@@ -232,7 +240,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Oliver Queen',
@@ -260,7 +269,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ARROW'
   },
   {
     'name': 'Roy Harper',
@@ -285,7 +295,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ARSENAL/SPEEDY'
   },
   {
     'name': 'Unknown',
@@ -309,7 +320,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS'
   },
   {
     'name': 'Unknown',
@@ -331,7 +343,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS SET I'
   },
   {
     'name': 'Michael Washington Lane',
@@ -357,7 +370,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'AZRAEL (ARKHAM KNIGHT)'
   },
   {
     'name': 'Classified',
@@ -384,7 +398,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Tournament Card (Prisoner 02)'
   },
   {
     'name': 'Unknown',
@@ -420,7 +435,8 @@ export const loadedCharacters = [
     'att': 6,
     'def': 3,
     'end': 10,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BANE'
   },
   {
     'name': 'Unknown',
@@ -452,7 +468,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 3,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BANE CREW'
   },
   {
     'name': 'Unknown',
@@ -495,7 +512,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BANE THE DARK KNIGHT RISES'
   },
   {
     'name': 'Bruce Wayne',
@@ -522,7 +540,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Suicide Squad-Set (Promo)'
   },
   {
     'name': 'Barbara Gordon',
@@ -553,7 +572,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATGIRL'
   },
   {
     'name': 'Barbara Gordon',
@@ -581,7 +601,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ANIMATED SERIES: BATGIRL'
   },
   {
     'name': 'Bruce Wayne',
@@ -607,7 +628,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATMAN (ADAM WEST)'
   },
   {
     'name': 'Bruce Wayne',
@@ -636,7 +658,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 5,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATMAN ARKHAM CITY'
   },
   {
     'name': 'Bruce Wayne',
@@ -671,7 +694,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 5,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATMAN ARKHAM KNIGHT'
   },
   {
     'name': 'Bruce Wayne',
@@ -699,7 +723,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 5,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATMAN ARKHAM ORIGINS'
   },
   {
     'name': 'Bruce Wayne',
@@ -728,7 +753,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 5,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATMAN & ROBIN (THE DYNAMIC DUO)'
   },
   {
     'name': 'Bruce Wayne',
@@ -760,7 +786,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 5,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATMAN THE DARK KNIGHT RISES'
   },
   {
     'name': 'Bruce Wayne',
@@ -785,7 +812,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ANIMATED SERIES: BATMAN'
   },
   {
     'name': 'Bruce Wayne',
@@ -817,7 +845,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATMAN (FRANK MILLER)'
   },
   {
     'name': 'Bruce Wayne',
@@ -842,7 +871,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATMAN ON BAT-POD'
   },
   {
     'name': 'Kathy Kane',
@@ -871,7 +901,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATWOMAN'
   },
   {
     'name': 'Benjamin Orchard',
@@ -901,7 +932,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE COURT OWLS'
   },
   {
     'name': 'Angel Vallelunga',
@@ -935,7 +967,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Dinah Drake Lance',
@@ -961,7 +994,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACK CANARY'
   },
   {
     'name': 'Dinah Drake Lance',
@@ -990,7 +1024,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACK CANARY (ANIMATED SERIES)'
   },
   {
     'name': 'David',
@@ -1023,7 +1058,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 4
+    'spc': 4,
+    'shop': 'BLACK MANTA'
   },
   {
     'name': 'Roman Sionis',
@@ -1053,7 +1089,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACK MASK\'S CREW'
   },
   {
     'name': 'Unknown',
@@ -1074,7 +1111,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN\'S CREW'
   },
   {
     'name': 'Unknown',
@@ -1095,7 +1133,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN\'S THUGS SET I'
   },
   {
     'name': 'Unknown',
@@ -1116,7 +1155,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN\'S THUGS SET I'
   },
   {
     'name': 'Unknown',
@@ -1137,7 +1177,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN\'S THUGS SET III'
   },
   {
     'name': 'Unknown',
@@ -1158,7 +1199,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'TWO-FACE\'S GANG SET II'
   },
   {
     'name': 'None',
@@ -1182,7 +1224,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 3,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER & ROBOTIC DOLLS'
   },
   {
     'name': 'None',
@@ -1206,7 +1249,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER & ROBOTIC DOLLS'
   },
   {
     'name': 'Unknown',
@@ -1230,7 +1274,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS'
   },
   {
     'name': 'Unknown',
@@ -1259,7 +1304,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACK MASK\'S CREW'
   },
   {
     'name': 'Borj',
@@ -1286,7 +1332,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Tournament Card (Creeper Plant)'
   },
   {
     'name': 'Bot Mk 1',
@@ -1311,7 +1358,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE RIDDLER AND BOT ARMY'
   },
   {
     'name': 'Bot Mk 2',
@@ -1336,7 +1384,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 3,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE RIDDLERS BOT ARMY SET 1'
   },
   {
     'name': 'Bot Mk 3',
@@ -1361,7 +1410,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE RIDDLERS BOT ARMY SET 1'
   },
   {
     'name': 'Classified',
@@ -1389,7 +1439,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COMMISSIONER GORDON & SWAT TEAM'
   },
   {
     'name': 'Julian Gregory Day',
@@ -1426,7 +1477,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'George „Digger“ Harkness',
@@ -1456,7 +1508,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'CAPTAIN BOOMERANG'
   },
   {
     'name': 'George „Digger“ Harkness',
@@ -1490,7 +1543,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Leonard Snart',
@@ -1535,7 +1589,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'CAPTAIN COLD'
   },
   {
     'name': 'Carmine Falcone',
@@ -1568,7 +1623,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Selina Kyle',
@@ -1600,7 +1656,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 5,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'CATWOMAN'
   },
   {
     'name': 'Selina Kyle',
@@ -1629,7 +1686,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 5,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'CATWOMAN MODERN AGE (MULTIVERSE)'
   },
   {
     'name': 'Selina Kyle',
@@ -1656,7 +1714,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 5,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ANIMATED SERIES: CATWOMAN'
   },
   {
     'name': 'Unknown',
@@ -1687,7 +1746,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'CLAYFACE'
   },
   {
     'name': 'Sullivan',
@@ -1710,7 +1770,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Unknown',
@@ -1731,7 +1792,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS SET III'
   },
   {
     'name': 'Unknown',
@@ -1752,7 +1814,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER CREW'
   },
   {
     'name': 'Unknown',
@@ -1773,7 +1836,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS SET II'
   },
   {
     'name': 'Edward Blake',
@@ -1800,7 +1864,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE COMEDIAN'
   },
   {
     'name': 'James W. Gordon',
@@ -1840,7 +1905,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COMMISSIONER GORDON & SWAT TEAM'
   },
   {
     'name': 'Gillian B. Loeb',
@@ -1890,7 +1956,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COMMISSIONER LOEB & GOTHAM POLICE'
   },
   {
     'name': 'Unknown',
@@ -1917,7 +1984,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN\'S THUGS SET III'
   },
   {
     'name': 'Unknown',
@@ -1939,7 +2007,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER CREW'
   },
   {
     'name': 'Unknown',
@@ -1968,7 +2037,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COPPERHEAD'
   },
   {
     'name': 'Creeper Plant',
@@ -1993,7 +2063,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'POISON IVY & PLANTS SLAVES'
   },
   {
     'name': 'Diaz',
@@ -2018,7 +2089,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Victor Stone',
@@ -2048,7 +2120,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'CYBORG'
   },
   {
     'name': 'Unknown',
@@ -2072,7 +2145,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BANE CREW'
   },
   {
     'name': 'Floyd Lawton',
@@ -2101,7 +2175,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'DEADSHOT'
   },
   {
     'name': 'Floyd Lawton',
@@ -2134,7 +2209,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'DEADSHOT CLASSIC COSTUME'
   },
   {
     'name': 'Floyd Lawton',
@@ -2164,7 +2240,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Slade Wilson',
@@ -2195,7 +2272,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'DEATHSTROKE BMG'
   },
   {
     'name': 'Slade Wilson',
@@ -2238,7 +2316,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 5,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'DEATHSTROKE ARKHAM ORIGINS'
   },
   {
     'name': 'Unknown',
@@ -2261,7 +2340,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SPICE AND TWO-FACE THUGS'
   },
   {
     'name': 'Classified',
@@ -2290,7 +2370,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COMMISSIONER GORDON & SWAT TEAM'
   },
   {
     'name': 'Chato Santana',
@@ -2323,7 +2404,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Unknown',
@@ -2352,7 +2434,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'MOBSTERS SET I'
   },
   {
     'name': 'Unknown',
@@ -2375,7 +2458,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 1,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Unknown',
@@ -2405,7 +2489,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Loeb pack'
   },
   {
     'name': 'Lester Buchinsky',
@@ -2430,7 +2515,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Ignatius Ogilvy',
@@ -2459,7 +2545,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 9,
     'end': null,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Mezz',
@@ -2486,7 +2573,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ARKHAM ASYLUM IMMATES'
   },
   {
     'name': 'Irwin',
@@ -2512,7 +2600,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HUGO STRANGE AND IMMATES'
   },
   {
     'name': 'Milo',
@@ -2539,7 +2628,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HUGO STRANGE AND IMMATES'
   },
   {
     'name': 'Meatman',
@@ -2566,7 +2656,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ARKHAM ASYLUM IMMATES'
   },
   {
     'name': 'Benton',
@@ -2592,7 +2683,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HUGO STRANGE AND IMMATES'
   },
   {
     'name': 'Unknown',
@@ -2618,7 +2710,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'VICTOR ZSASZ & ARKHAM LUNATICS'
   },
   {
     'name': 'Garfield Lynns',
@@ -2648,7 +2741,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'FIREFLY'
   },
   {
     'name': 'Barry Allen',
@@ -2678,7 +2772,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 5,
     'end': 7,
-    'spc': 4
+    'spc': 4,
+    'shop': 'FLASH NEW 52'
   },
   {
     'name': 'Barry Allen',
@@ -2708,7 +2803,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 5,
     'end': 6,
-    'spc': 4
+    'spc': 4,
+    'shop': 'FLASH TV SHOW'
   },
   {
     'name': 'Classified',
@@ -2732,7 +2828,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Loeb pack'
   },
   {
     'name': 'Unknown',
@@ -2758,7 +2855,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Unknown',
@@ -2779,7 +2877,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACK MASK\'S CREW'
   },
   {
     'name': 'Unknown',
@@ -2800,7 +2899,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACK MASK\'S THUGS SET 1'
   },
   {
     'name': 'Felix Harmon',
@@ -2826,7 +2926,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'GOTHAM BUTCHER'
   },
   {
     'name': 'Gotham Policeman',
@@ -2850,7 +2951,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'GOTHAM POLICE SET I'
   },
   {
     'name': 'Unknown',
@@ -2873,7 +2975,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'GOTHAM POLICE SET II'
   },
   {
     'name': 'Oliver Queen',
@@ -2903,7 +3006,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'GREEN ARROW BMG'
   },
   {
     'name': 'Oliver Queen',
@@ -2932,7 +3036,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ANIMATED SERIES: GREEN ARROW'
   },
   {
     'name': 'Oliver Queen',
@@ -2957,7 +3062,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'OLIVER QUEEN (FRANK MILLER)'
   },
   {
     'name': 'Unknown',
@@ -2983,7 +3089,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Dr. Harleen Frances Quinzel',
@@ -3011,7 +3118,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HARLEY QUINN CLASSIC COSTUME'
   },
   {
     'name': 'Dr. Harleen Frances Quinzel',
@@ -3038,7 +3146,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HARLEY QUINN (ARKHAM KNIGHT) CREW'
   },
   {
     'name': 'Dr. Harleen Frances Quinzel',
@@ -3069,7 +3178,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS (Promo)'
   },
   {
     'name': 'Dr. Harleen Frances Quinzel',
@@ -3098,7 +3208,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Dr. Harleen Frances Quinzel',
@@ -3129,7 +3240,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Dr. Harleen Frances Quinzel',
@@ -3153,7 +3265,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ANIMATED SERIES: HARLEY QUINN'
   },
   {
     'name': 'Punker',
@@ -3176,7 +3289,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HARLEY QUINN (ARKHAM KNIGHT) CREW'
   },
   {
     'name': 'Bragg',
@@ -3197,7 +3311,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HARLEY QUINN (ARKHAM KNIGHT) CREW'
   },
   {
     'name': 'Worker',
@@ -3218,7 +3333,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HARLEY QUINN (ARKHAM KNIGHT) CREW'
   },
   {
     'name': 'Unknown',
@@ -3239,7 +3355,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HARLEY QUINN THUGS SET 1'
   },
   {
     'name': 'Unknown',
@@ -3260,7 +3377,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HARLEY QUINN THUGS SET 1'
   },
   {
     'name': 'Chencho',
@@ -3286,7 +3404,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Lumberjack',
@@ -3307,7 +3426,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Harvey Bullock',
@@ -3332,7 +3452,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Tournament Card ()'
   },
   {
     'name': 'Kendra Saunders',
@@ -3368,7 +3489,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HAWKGIRL'
   },
   {
     'name': 'Carter Hall',
@@ -3405,7 +3527,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HAWKMAN'
   },
   {
     'name': 'Mick Rory',
@@ -3440,7 +3563,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HEATWAVE'
   },
   {
     'name': 'Unknown',
@@ -3468,7 +3592,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COURT OF OWLS CREW'
   },
   {
     'name': 'Classified',
@@ -3499,7 +3624,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACKGATE PRISONERS SET I'
   },
   {
     'name': 'Alberto Falcone',
@@ -3528,7 +3654,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Hugo Strange',
@@ -3556,7 +3683,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HUGO STRANGE AND IMMATES'
   },
   {
     'name': 'Helena Bertinelli',
@@ -3583,7 +3711,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HUNTRESS'
   },
   {
     'name': 'Thomas Elliot',
@@ -3616,7 +3745,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HUSH'
   },
   {
     'name': 'Unknown',
@@ -3638,7 +3768,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN\'S THUGS SET II'
   },
   {
     'name': 'Jhonny-6',
@@ -3662,7 +3793,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Tournament Card (Jhonny-Six)'
   },
   {
     'name': 'Unknown',
@@ -3688,7 +3820,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Promotional'
   },
   {
     'name': 'Unknown',
@@ -3723,7 +3856,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Unknown',
@@ -3753,7 +3887,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER (THE KILLING JOKE)'
   },
   {
     'name': 'Unknown',
@@ -3782,7 +3917,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER & ROBOTIC DOLLS'
   },
   {
     'name': 'Unknown',
@@ -3808,7 +3944,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER (HEATH LEDGER )'
   },
   {
     'name': 'Unknown',
@@ -3834,7 +3971,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 3,
     'end': 10,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER (TITAN FORM)'
   },
   {
     'name': 'Duela Dent',
@@ -3860,7 +3998,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'HARLEY QUINN ARKHAM CITY'
   },
   {
     'name': 'Tatsu Yamashiro',
@@ -3887,7 +4026,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'KATANA'
   },
   {
     'name': 'Tatsu Yamashiro',
@@ -3913,7 +4053,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Bart Allen',
@@ -3944,7 +4085,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'KID FLASH'
   },
   {
     'name': 'Waylon Jones',
@@ -3974,7 +4116,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 3,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'KILLER CROC'
   },
   {
     'name': 'Waylon Jones',
@@ -4003,7 +4146,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Louise Lincoln',
@@ -4041,7 +4185,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'KILLER FROST'
   },
   {
     'name': 'Sandra Wu-San',
@@ -4071,7 +4216,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'LADY SHIVA AND THE LEAGUE OF SHADOWS'
   },
   {
     'name': 'Unknown',
@@ -4093,7 +4239,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'LADY SHIVA AND THE LEAGUE OF SHADOWS'
   },
   {
     'name': 'Unknown',
@@ -4115,7 +4262,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'LADY SHIVA AND THE LEAGUE OF SHADOWS'
   },
   {
     'name': 'Unknown',
@@ -4137,7 +4285,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BANE\'S THUGS SET I'
   },
   {
     'name': 'Howard Brandon',
@@ -4170,7 +4319,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COMMISSIONER LOEB & GOTHAM POLICE'
   },
   {
     'name': 'Unknown',
@@ -4199,7 +4349,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACKGATE PRISONERS SET II'
   },
   {
     'name': 'Unknown',
@@ -4231,7 +4382,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 4,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'LOBO'
   },
   {
     'name': 'Unknown',
@@ -4260,7 +4412,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'LEAGUE OF SHADOWS SET I'
   },
   {
     'name': 'Dr. Jervis Tetch',
@@ -4287,7 +4440,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'None',
@@ -4311,7 +4465,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 3,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER & ROBOTIC DOLLS'
   },
   {
     'name': 'Unknown',
@@ -4339,7 +4494,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS SET III'
   },
   {
     'name': 'Unknown',
@@ -4367,7 +4523,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BANE CREW'
   },
   {
     'name': 'Unknown',
@@ -4388,7 +4545,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Unknown',
@@ -4411,7 +4569,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SCARECROW MILITIA'
   },
   {
     'name': 'Unknown',
@@ -4433,7 +4592,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SCARECROW MILITIA'
   },
   {
     'name': 'Unknown',
@@ -4455,7 +4615,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'MILITIA SET 1'
   },
   {
     'name': 'Unknown',
@@ -4484,7 +4645,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 2,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'MILITIA BRUTE'
   },
   {
     'name': 'Unknown',
@@ -4507,7 +4669,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SCARECROW MILITIA'
   },
   {
     'name': 'Unknown',
@@ -4537,7 +4700,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 2,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'MILITIA GATLING BRUTE'
   },
   {
     'name': 'Unknown',
@@ -4559,7 +4723,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'MILITIA SET 1'
   },
   {
     'name': 'Unknown',
@@ -4587,7 +4752,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'MERC SET1'
   },
   {
     'name': 'Unknown',
@@ -4612,7 +4778,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'TWO-FACE´S GANGS SET I'
   },
   {
     'name': 'Unknown',
@@ -4640,7 +4807,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PROMOTIONAL'
   },
   {
     'name': 'Victor Fries',
@@ -4671,7 +4839,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 6,
-    'spc': 4
+    'spc': 4,
+    'shop': 'MR. FREEZE'
   },
   {
     'name': 'Victor Fries',
@@ -4706,7 +4875,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 7,
-    'spc': 4
+    'spc': 4,
+    'shop': ''
   },
   {
     'name': 'Unknown',
@@ -4732,7 +4902,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Unknown',
@@ -4758,7 +4929,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Abramovici',
@@ -4787,7 +4959,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 3,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER\'S DAUGHTER'
   },
   {
     'name': 'S.B.',
@@ -4818,7 +4991,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Tournament Card ()'
   },
   {
     'name': 'Unknown',
@@ -4841,7 +5015,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 2,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACK MASK\'S THUGS SET 1'
   },
   {
     'name': 'Richard Grayson',
@@ -4871,7 +5046,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'NIGHTWING'
   },
   {
     'name': 'Richard Grayson',
@@ -4907,7 +5083,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'NIGHTWING (ARKHAM KNIGHT)'
   },
   {
     'name': 'Daniel Dreiberg',
@@ -4934,7 +5111,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'NITE OWL'
   },
   {
     'name': 'Nyssa Raatko',
@@ -4965,7 +5143,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'NYSSA AL GHUL'
   },
   {
     'name': 'Brandon O‘Malley',
@@ -4994,7 +5173,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COURT OF OWLS CREW'
   },
   {
     'name': 'James O‘Malley',
@@ -5019,7 +5199,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COURT OF OWLS CREW'
   },
   {
     'name': 'Nathaniel O‘Malley',
@@ -5043,7 +5224,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'COURT OF OWLS CREW'
   },
   {
     'name': 'Adrian Alexander Veidt',
@@ -5069,7 +5251,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 5,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Ozymandias'
   },
   {
     'name': 'Unknown',
@@ -5096,7 +5279,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Unknown',
@@ -5122,7 +5306,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'VICTOR ZSASZ & ARKHAM LUNATICS'
   },
   {
     'name': 'Unknown',
@@ -5149,7 +5334,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'VICTOR ZSASZ & ARKHAM LUNATICS'
   },
   {
     'name': 'Oswald Chesterfield Cobblepot',
@@ -5176,7 +5362,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN\'S CREW'
   },
   {
     'name': 'Oswald Chesterfield Cobblepot',
@@ -5208,7 +5395,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Oswald Chesterfield Cobblepot',
@@ -5249,7 +5437,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE PENGUIN (GOTHAM TV SHOW)'
   },
   {
     'name': 'Unknown',
@@ -5275,7 +5464,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN\'S CREW'
   },
   {
     'name': 'Big A.',
@@ -5300,7 +5490,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Plant',
@@ -5325,7 +5516,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'POISON IVY & PLANTS SLAVES'
   },
   {
     'name': 'Dr. Pamela Lillian Isley',
@@ -5358,7 +5550,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 8,
-    'spc': 4
+    'spc': 4,
+    'shop': 'POISON IVY'
   },
   {
     'name': 'Dr. Pamela Lillian Isley',
@@ -5390,7 +5583,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 7,
-    'spc': 4
+    'spc': 4,
+    'shop': 'POISON IVY & PLANTS SLAVES'
   },
   {
     'name': 'Classified',
@@ -5415,7 +5609,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACKGATE PRISONERS SET I'
   },
   {
     'name': 'Classified',
@@ -5441,7 +5636,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACKGATE PRISONERS SET I'
   },
   {
     'name': 'Unknown',
@@ -5467,7 +5663,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACKGATE PRISONERS SET II'
   },
   {
     'name': 'Unknown',
@@ -5493,7 +5690,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACKGATE PRISONERS SET II'
   },
   {
     'name': 'Unknown',
@@ -5519,7 +5717,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACKGATE PRISONERS SET II'
   },
   {
     'name': 'Lazlo Valentin',
@@ -5553,7 +5752,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Eobard Thawne',
@@ -5588,7 +5788,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 5,
     'end': 8,
-    'spc': 4
+    'spc': 4,
+    'shop': 'PROFESSOR ZOOM'
   },
   {
     'name': 'L. Lawrence',
@@ -5612,7 +5813,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'AARON CASH AND QUICK RESPONSE TEAM'
   },
   {
     'name': 'Salvador',
@@ -5636,7 +5838,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'AARON CASH AND QUICK RESPONSE TEAM'
   },
   {
     'name': 'Jenette Vassili',
@@ -5661,7 +5864,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'AARON CASH AND QUICK RESPONSE TEAM'
   },
   {
     'name': 'Josette',
@@ -5686,7 +5890,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Alexander',
@@ -5708,7 +5913,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Igor',
@@ -5734,7 +5940,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'John Carrie',
@@ -5759,7 +5966,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Unknown',
@@ -5780,7 +5988,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'TWO-FACE´S CREW'
   },
   {
     'name': 'Ra‘s Al Ghul',
@@ -5815,7 +6024,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 5,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'RA\'S AL GHUL ARKHAM CITY'
   },
   {
     'name': 'Ra‘s Al Ghul',
@@ -5850,7 +6060,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 5,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'RA\'S AL GHUL AND THE LEAGUE OF SHADOWS'
   },
   {
     'name': 'Rose Wilson',
@@ -5878,7 +6089,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'RAVAGER'
   },
   {
     'name': 'Benjamin Gruener',
@@ -5910,7 +6122,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Jason Todd',
@@ -5944,7 +6157,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'RED HOOD (ARKHAM KNIGHT)'
   },
   {
     'name': 'Jason Todd',
@@ -5973,7 +6187,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'RED HOOD'
   },
   {
     'name': 'Unknown',
@@ -5999,7 +6214,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Promotional'
   },
   {
     'name': 'Eobard Thawne',
@@ -6038,7 +6254,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 5,
     'end': 7,
-    'spc': 4
+    'spc': 4,
+    'shop': 'REVERSE FLASH TV SHOW'
   },
   {
     'name': 'Richard Rogers Flag',
@@ -6068,7 +6285,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'RICK FLAG'
   },
   {
     'name': 'Edward Nigma',
@@ -6100,7 +6318,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE RIDDLER AND BOT ARMY'
   },
   {
     'name': 'Edward Nigma',
@@ -6132,7 +6351,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'RIDDLER\'S MECH'
   },
   {
     'name': 'Unknown',
@@ -6159,7 +6379,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER CREW'
   },
   {
     'name': 'Tim Drake',
@@ -6187,7 +6408,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ROBIN ARKHAM CITY BMG'
   },
   {
     'name': 'Tim Drake',
@@ -6223,7 +6445,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ROBIN ARKHAM KNIGHT'
   },
   {
     'name': 'Dick Grayson',
@@ -6254,7 +6477,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 5,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BATMAN & ROBIN (THE DYNAMIC DUO)'
   },
   {
     'name': 'Damian Wayne',
@@ -6289,7 +6513,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'ROBIN (DAMIAN WAYNE)'
   },
   {
     'name': 'Carrie Kelley',
@@ -6313,7 +6538,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'CARRIE KELLEY & SONS OF BATMAN'
   },
   {
     'name': 'Unknown',
@@ -6335,7 +6561,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SPICE AND TWO-FACE THUGS'
   },
   {
     'name': 'Walter Joseph Kovacs',
@@ -6361,7 +6588,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'RORSCHACH'
   },
   {
     'name': 'Unknown',
@@ -6384,7 +6612,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'TWO-FACE´S GANGS SET I'
   },
   {
     'name': 'Unknown',
@@ -6406,7 +6635,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN\'S CREW'
   },
   {
     'name': 'Unknown',
@@ -6431,7 +6661,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN\'S THUGS SET II'
   },
   {
     'name': 'Jonathan Crane',
@@ -6458,7 +6689,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SCARECROW'
   },
   {
     'name': 'Jonathan Crane',
@@ -6489,7 +6721,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SCARECROW MILITIA'
   },
   {
     'name': 'Jonathan Crane',
@@ -6513,7 +6746,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SCARECROW (BDKR)'
   },
   {
     'name': 'Ike',
@@ -6539,7 +6773,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Unknown',
@@ -6566,7 +6801,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'LEAGUE OF SHADOWS SET I'
   },
   {
     'name': 'Sgt Winslow',
@@ -6591,7 +6827,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Tournament Card ()'
   },
   {
     'name': 'Unknown',
@@ -6619,7 +6856,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'LADY SHIVA AND THE LEAGUE OF SHADOWS'
   },
   {
     'name': 'T.S.A.',
@@ -6648,7 +6886,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Tournament Card ()'
   },
   {
     'name': 'Abramovici',
@@ -6677,7 +6916,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 3,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SICKLE'
   },
   {
     'name': 'Laurie Juspeczyk',
@@ -6706,7 +6946,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SILK SPECTRE'
   },
   {
     'name': 'Unknown',
@@ -6730,7 +6971,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Tournament Card (Shield Clown)'
   },
   {
     'name': 'Christopher Weiss',
@@ -6759,7 +7001,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Unknown',
@@ -6783,7 +7026,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BANE CREW'
   },
   {
     'name': 'Unknown',
@@ -6804,7 +7048,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS SET II'
   },
   {
     'name': 'Unknown',
@@ -6825,7 +7070,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'MR. FREEZE CREW'
   },
   {
     'name': 'Unknown',
@@ -6846,7 +7092,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'MR. FREEZE CREW'
   },
   {
     'name': 'Unknown',
@@ -6872,7 +7119,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'MR. FREEZE CREW'
   },
   {
     'name': 'Unknown',
@@ -6893,7 +7141,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Unknown',
@@ -6916,7 +7165,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Cyrus Gold',
@@ -6947,7 +7197,8 @@ export const loadedCharacters = [
     'att': 5,
     'def': 3,
     'end': 11,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SOLOMON GRUNDY'
   },
   {
     'name': 'Unknown',
@@ -6969,7 +7220,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'CARRIE KELLEY & SONS OF BATMAN'
   },
   {
     'name': 'Unknown',
@@ -6991,7 +7243,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'CARRIE KELLEY & SONS OF BATMAN'
   },
   {
     'name': 'Unknown',
@@ -7015,7 +7268,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'CARRIE KELLEY & SONS OF BATMAN'
   },
   {
     'name': 'John Diggle',
@@ -7043,7 +7297,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'DIGGLE'
   },
   {
     'name': 'Unknown',
@@ -7078,7 +7333,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SPICE AND TWO-FACE THUGS'
   },
   {
     'name': 'Spore Plant',
@@ -7103,7 +7359,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': 'POISON IVY & PLANTS SLAVES'
   },
   {
     'name': 'Koriand‘r',
@@ -7136,7 +7393,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'STARFIRE'
   },
   {
     'name': 'Grumble',
@@ -7159,7 +7417,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Simmons',
@@ -7182,7 +7441,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Reaver',
@@ -7205,7 +7465,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Mary Turner',
@@ -7231,7 +7492,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE COURT OWLS'
   },
   {
     'name': 'Alec Holland',
@@ -7272,7 +7534,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 3,
     'end': 11,
-    'spc': 4
+    'spc': 4,
+    'shop': 'SWAMP THING'
   },
   {
     'name': 'None',
@@ -7307,7 +7570,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'TALIA AL GHUL'
   },
   {
     'name': 'None',
@@ -7339,7 +7603,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'TALIA AL GHUL (COMIC)'
   },
   {
     'name': 'Unknown',
@@ -7363,7 +7628,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'MERC SET1'
   },
   {
     'name': 'Luigi Lombardo',
@@ -7387,7 +7653,8 @@ export const loadedCharacters = [
     'att': 2,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Stan',
@@ -7414,7 +7681,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'SSqS'
   },
   {
     'name': 'Edward Nigma',
@@ -7443,7 +7711,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE RIDDLER'
   },
   {
     'name': 'Edward Nigma',
@@ -7471,7 +7740,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Unknown',
@@ -7495,7 +7765,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'PENGUIN´S TITAN THUG'
   },
   {
     'name': 'Unknown',
@@ -7519,7 +7790,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 2,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKERS´S TITAN CLOWN'
   },
   {
     'name': 'Unknown',
@@ -7547,7 +7819,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BANE\'S THUGS SET I'
   },
   {
     'name': 'Unknown',
@@ -7568,7 +7841,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'TWO-FACE\'S GANG SET II'
   },
   {
     'name': 'Unknown',
@@ -7590,7 +7864,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS SET I'
   },
   {
     'name': 'Troy Santino',
@@ -7614,7 +7889,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Classified',
@@ -7639,7 +7915,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BLACKGATE PRISONERS SET I'
   },
   {
     'name': 'Deever Tweet',
@@ -7668,7 +7945,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'WONDERLAND GANG'
   },
   {
     'name': 'Dumfree Tweet',
@@ -7700,7 +7978,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'WONDERLAND GANG'
   },
   {
     'name': 'Harvey Dent',
@@ -7730,7 +8009,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 9,
-    'spc': 3
+    'spc': 3,
+    'shop': 'TWO-FACE´S CREW'
   },
   {
     'name': 'Unknown',
@@ -7751,7 +8031,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'TWO-FACE´S CREW'
   },
   {
     'name': 'Unknown',
@@ -7779,7 +8060,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 3,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'BANE\'S THUGS SET I'
   },
   {
     'name': 'Samuel Hill',
@@ -7807,7 +8089,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 4,
-    'spc': 3
+    'spc': 3,
+    'shop': ''
   },
   {
     'name': 'Unknown',
@@ -7837,7 +8120,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'VICTOR ZSASZ & ARKHAM LUNATICS'
   },
   {
     'name': 'Jaina Hudson',
@@ -7863,7 +8147,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'WONDERLAND GANG'
   },
   {
     'name': 'William Cobb',
@@ -7893,7 +8178,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 7,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE COURT OWLS'
   },
   {
     'name': 'Xiao Loong',
@@ -7919,7 +8205,8 @@ export const loadedCharacters = [
     'att': 4,
     'def': 4,
     'end': 6,
-    'spc': 3
+    'spc': 3,
+    'shop': 'THE COURT OWLS'
   },
   {
     'name': 'Unknown',
@@ -7949,7 +8236,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'RA\'S AL GHUL AND THE LEAGUE OF SHADOWS'
   },
   {
     'name': 'Unknown',
@@ -7977,7 +8265,8 @@ export const loadedCharacters = [
     'att': 3,
     'def': 4,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'RA\'S AL GHUL AND THE LEAGUE OF SHADOWS'
   },
   {
     'name': 'Bruce Wayne',
@@ -8003,7 +8292,8 @@ export const loadedCharacters = [
     'att': 6,
     'def': 4,
     'end': 8,
-    'spc': 3
+    'spc': 3,
+    'shop': 'Tournament Card ()'
   },
   {
     'name': 'Unknown',
@@ -8024,6 +8314,7 @@ export const loadedCharacters = [
     'att': 3,
     'def': 2,
     'end': 5,
-    'spc': 3
+    'spc': 3,
+    'shop': 'TWO-FACE´S CREW'
   }
 ]

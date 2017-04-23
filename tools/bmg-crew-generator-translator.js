@@ -34,6 +34,7 @@ let NAME_COL = 2,
   TRAIT_10_COL = 37,
   TRAIT_11_COL = 38,
   TRAIT_12_COL = 39,
+  SHOP_DESC_COL = 40,
   AFFILIATE_1_COL = 42,
   AFFILIATE_2_COL = 43,
   AFFILIATE_3_COL = 44,
@@ -510,7 +511,8 @@ let populateChar = function(charColumns) {
       att: parseInt(charColumns[ATTACK_COL]),
       def: parseInt(charColumns[DEFENSE_COL]),
       end: parseInt(charColumns[ENDURANCE_COL]),
-      spc: parseInt(charColumns[SPECIAL_COL])
+      spc: parseInt(charColumns[SPECIAL_COL]),
+      shop: charColumns[SHOP_DESC_COL]
     }
 }
 
