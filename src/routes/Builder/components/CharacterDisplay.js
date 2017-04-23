@@ -1,11 +1,12 @@
 import React from 'react'
+import RapSheet from './RapSheet'
 import './style/CharacterDisplay.scss'
 
 class CharacterDisplay extends React.Component {
   render () {
     return (
-      <div>
-        <div className='leftPage'>
+      <div className='charPane'>
+        <div className='leftPane'>
           <div className='infoHeader'>
             <div className='charName'>
               <label>Name:</label>
@@ -48,6 +49,10 @@ class CharacterDisplay extends React.Component {
             </div>
           </div>
         </div>
+        <div className='rightPane'>
+          <RapSheet character={this.props.character} ></RapSheet>
+        </div>
+        <div className='clear-right'></div>
       </div>
     )
   }

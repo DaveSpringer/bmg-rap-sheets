@@ -15,21 +15,29 @@
   clear: left;
 }
 
+.clear-right {
+  clear: right;
+}
+
 .whatsthisquestionmark {
+  display: -webkit-flex;
+  display: flex;
   height: 100%;
   width: 100%;
-  martin-top: 30px;
+  margin-top: 30px;
 }
 
 .characters {
-  width: 70%;
+  -webkit-flex: 2;
+  flex: 2;
   margin-right: 0px;
-  float: left;
   height: 100%;
 }
 
 .crewStats {
-  width: 30%;
-  float: right;
-  height: 100%;
+  -webkit-flex: 1;
+  flex: 1;
+  min-width: 108px;
+  background-color: rgb(225, 225, 225);
+  overflow: auto;
 }
