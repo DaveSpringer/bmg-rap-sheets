@@ -1,0 +1,247 @@
+Who	Search Name	Weapon	Blood / Stun	ROF	Ammo	Special1	Special2	Special3	Special4	Special5	Special6	Traits
+	60mm Cannon	60mm Cannon	BBBB	1	2	Firearm	Anti-Tank	CRT: BB	-	-	-	Firearm, Anti-Tank, CRT: BB
+Deadshot (90)	9mm Twin Cannons 2	9mm Twin Cannons	BB	2	2	Firearm	M. Range	Light	-	-	-	Firearm, M. Range, Light
+Deadshot (76)	9mm Twin Cannons 4	9mm Twin Cannons	BB	2	4	Firearm	M. Range	Light	-	-	-	Firearm, M. Range, Light
+-	AP Ammo	AP Ammo	BBB	2	1	Firearm	Aim	Anti-Tank	One Use	-	-	Firearm, Aim, Anti-Tank, One Use
+-	AM Ammo	AM Ammo	BB	2	1	Firearm	M. Range	Enervating 3	One Use	-	-	Firearm, M. Range, Enervating 3, One Use
+-	Acid Boomerang	Acid Boomerang	BB	1	1	Throwing	S. Range	Acid	-	-	-	Throwing, S. Range, Acid
+-	Acid Flower	Acid Flower	BB	-	-	Mechanic	S. Range	Acid	Light	-	-	Mechanic, S. Range, Acid, Light
+-	Altered Limb	Altered Limb	BS	-	-	Reach	-	-	-	-	-	Reach
+-	Assault Rifle	Assault Rifle	BBB	3	2	Firearm	-	-	-	-	-	Firearm
+-	Automatic Gun Light	Light Automatic Gun 	BS	3	2	Firearm	S. Range	Light	-	-	-	Firearm, S. Range, Light
+-	Automatic Gun	Automatic Gun 	BS	3	2	Firearm	S. Range		-	-	-	Firearm, S. Range
+-	Automatic Rifle	Automatic Rifle	BB	3	2	Firearm		-	-	-	-	Firearm
+-	Axe	Axe	BB	-	-	Handy	Heavy	-	-	-	-	Handy, Heavy
+-	Barret	Barret	BBBB	1	3	Firearm	Aim	Anti-Tank	Scope	CRT: BBB	-	Firearm, Aim, Anti-Tank, Scope, CRT: BBB
+-	Baseball Bat	Baseball Bat	S	-	-	Handy	Heavy	-	-	-	-	Handy, Heavy
+-	Batarang	Batarang	SS	2	3	Throwing	M. Range	Remote Control	-	-	-	Throwing, M. Range, Remote Control
+-	Batling	Batling	SS	2	1	Throwing	S. Range	-	-	-	-	Throwing, S. Range
+-	Batlings	Batlings	SS	2	2	Throwing	S. Range	-	-	-	-	Throwing, S. Range
+	Baton Heavy	Baton 	S	-	-	Handy	Heavy	-	-	-	-	Handy, Heavy
+Joker (Leto), Daredevil	Baton	Baton 	SS	-	-	Handy	-	-	-	-	-	Handy
+-	Battering Ram	Battering Ram	B	-	-	Heavy	CRT: Push	-	-	-	-	Heavy, CRT: Push
+-	Big Gun	Big Gun	BB	4	2	Firearm	M. Range	-	-	-	-	Firearm, M. Range
+-	Big Spike	Big Spike	B	-	-	Handy	Reach	CRT: B	-	-	-	Heavy, Reach, CRT: B
+-	BiggaSticka	Bigga Sticka	B	-	-	Heavy	CRT: SSS	-	-	-	-	Heavy, CRT: SSS
+-	Bladed Boomerang	Blade Boomerang	BS	2	2	Throwing	S. Range	Accurate	Sharp	-	-	Throwing, S. Range, Accurate, Sharp
+-	Blastgun	Blastgun	BBB	2	3	Beam	M. Range	Reload	-	-	-	Beam, M. Range, Reload
+-	Bo	Bo	S	-	-	Handy	Reach	-	-	-	-	Handy, Reach
+-	Bow Concusion Arrow	Bow (Concusion Arrow)	BS	1	1	Mechanic	Aim	Flash	-	-	-	Mechanic, Aim, Flash
+-	Bow Kryptonite Arrow	Bow (Kryptonite Arrow)	BBBB	1	1	Mechanic	Aim	Kryptonite	-	-	-	Mechanic, Aim, Kryptonite
+	Bow Punch Arrow	Bow (Punch Arrow)	SS	1	1	Mechanic	Aim	Stunned	-	-	-	Mechanic, Aim, Stunned
+-	Bow Serrated Arrow	Bow (Serrated Arrow)	BB	1	1	Mechanic	Aim	Sharp	-	-	-	Mechanic, Aim, Sharp
+Green Arrow (77 / 117)	Bow Special Arrow	Bow (Special Arrow)	BB	1	1	Mechanic	Aim	Stunned	-	-	-	Mechanic, Aim, Stunned
+Arrow (125)	Bow Standard Arrow 3	Bow (Standard Arrow) 	BB	1	3	Mechanic	Aim	-	-	-	-	Mechanic, Aim
+Green Arrow (75), Arsenal	Bow Standard Arrow 2	Bow (Standard Arrow) 	BB	1	2	Mechanic	Aim	-	-	-	-	Mechanic, Aim
+-	Bow Standard Arrow BBB	Bow (Standard Arrow) 	BBB	1	3	Mechanic	Aim	-	-	-	-	Mechanic, Aim
+-	Brass Knuckles	Brass Knuckles	SS	-	-	-	-	-	-	-	-	-
+											-	
+-	Cal 0,60 Gun	Cal 0,60 Gun	BBB	1	3	Firearm	S. Range	Push	-	-	-	Firearm, S. Range, Push
+-	Cal.50 Gun	Cal.50 Gun	BB	2	2	Firearm	S. Range	-	-	-	-	Firearm, S. Range
+	Cane-Sword	Cane-Sword	BB	-	-	Sharp	-	-	-	-	-	Sharp
+-	Carbine	Carbine	B	5	2	Firearm	M. Range	Assault 3	-	-	-	Firearm, M. Range, Assault 3
+-	Catarangs	Catarangs	BB	2	2	Throwing	M. Range	-	-	-	-	Throwing, M. Range
+-	Chain	Chain	S	-	-	Reach	Heavy	-	-	-	-	Reach, Heavy
+-	Chainsaw	Chainsaw	BBB	-	-	Mechanic	Sharp	-	-	-	-	Mechanic, Sharp
+	Chill Touch	Chill Touch	B	-	-	Unarmed	CRT: Cooled	-	-	-	-	Unarmed, CRT: Cooled
+-	Claws	Claws	BS	-	-	Unarmed	-	-	-	-	-	Unarmed
+	Combat Machete	Combat Machete	BS	-	-	Sharp	-	-	-	-	-	Sharp
+-	Combined Sniper Guns	Combined Sniper Guns	BBB	1	2	Firearm	Aim	Scope	M. Range	-	-	Firearm, Aim, Scope, M. Range
+	Combined Sniper Guns MKII	Combined Sniper Guns MKII	BBB	2	2	Firearm	Aim	Scope	M. Range	-	-	Firearm, Aim, Scope, M. Range
+-	Creeper	Creeper	S	-	-	Handy	CRT: Poison (Paralyze)	-	-	-	-	Handy, CRT: Poison (Paralyze)
+	Crossbow	Crossbow	BBB	1	3	Mechanic	Reload				-	Mechanic, Reload
+-	Custom Carbine	Custom Carbine	S	5	3	Firearm	M. Range	Silencer	Assault 3		-	Firearm, M. Range, Silencer, Assault 3
+-	Custom Gun	Custom Gun	BB	3	2	Firearm	M. Range	-	-	-	-	Firearm, M. Range
+-	Custom Missile	Custom Missile	BB	1	1	Firearm	Explosive	Anti-Tank	-	-	-	Firearm, Explosive, Anti-Tank
+	Custom SMG	Custom SMG	BS	3	1	Firearm	S. Range	Assault 2	-	-	-	Firearm, S. Range, Assault 2
+-	Death Ray	Death Ray	BBB	1	3	Beam	M. Range	Reload	CRT: Casualty	-	-	Beam, M. Range, Reload, CRT: Casualty
+												
+Scarecrow (57)	Drug Spray v1	Drug Spray 	-	1	3	Expansive	Gas	Enervating 2	-	-	-	Expansive, Gas, Enervating 2
+-	Drug Spray v2	Drug Spray 	-	1	2	Expansive	Gas	Poison (Enervating 2)	-	-	-	Expansive, Gas, Poison (Enervating 2)
+-	Dual Blade	Dual Blade	BS	-	-	Sharp	-	-	-	-	-	Sharp
+-	Dual Handguns Melee	Dual Handguns (Melee)	SS	-	-	-	-	-	-	-	-	-
+-	Dual Handguns Ranged	Dual Handguns (Ranged)	BS	4	3	Firearm	S. Range	Light	-	-	-	Firearm, S. Range, Light
+-	Electric Baton	Electric Baton	SS	-	-	Handy	Mechanic	-	-	-	-	Handy, Mechanic
+	Electric Batons	Electric Batons	SS	-	-	Handy	Mechanic	-	-	-	-	Handy, Mechanic
+-	Electric Boomerang	Electric Boomerang	SS	2	1	Throwing	S. Range	Electric	-	-	-	Throwing, S. Range, Electric
+	Electric Hook	Electric Hook	SS	1	2	Mechanic	S. Range	Electric	Devastating	-	-	Mechanic, S. Range, Electric, Devastating
+	EM Smoke Grenades	EM Smoke Grenades	B	1	2	Mechanic	S. Range	Smoke	Electric	Light	-	Mechanic, S. Range, Smoke, Electric, Light
+-	Explosive Arrow	Explosive Arrow	BS	1	1	Firearm	Aim	Explosive	-	-	-	Firearm, Aim, Explosive
+-	Explosive Grenade	Explosive Grenade	BB	1	1	Firearm	S. Range	Explosive	Grenade	-	-	Firearm, S. Range, Explosive, Grenade
+-	Explosive Teeth	Explosive Teeth	BS	1	3	Firearm	M. Range	R. Control	Explosive	-	-	Firearm, M. Range, R. Control, Explosive
+-	Extendable Baton	Extendable Baton	SS	-	-	Reach	Heavy	-	-	-	-	Reach, Heavy
+											-	
+-	Fire Blast	Fire Blast	BBB	2	2	Beam	M. Range	CRT: Fire	-	-	-	Beam, M. Range, CRT: Fire
+	Fire Sword	Fire Sword	B	-	-	Overwhelming	Reach	Fire x2			-	Overwhelming, Reach, Fire x2
+-	Flamethrower 2	Flamethrower	BS / B / S	1	2	Mechanic	Fire	Expansive	-	-	-	Mechanic, Fire, Expansive
+-	Flamethrower 3	Flamethrower	BS / B / S	1	3	Mechanic	Fire	Expansive	-	-	-	Mechanic, Fire, Expansive
+-	Flaming Hands	Flaming Hands	BS / B / S	1	1	Fire	Expansive	One Use	-	-	-	Fire, Expansive, One Use
+-	Flaming Tatoos	Flaming Tatoos	B	2	∞	Throwing	S. Range	Reload	Imprecise	Fire	-	Throwing, S. Range, Reload, Imprecise, Fire
+-	Flash Grenade	Flash Grenade	S	1	2	Mechanic	Explosive	S. Range	Flash	Grenade	-	Mechanic, Explosive, S. Range, Flash, Grenade
+-	Frag Grenade	Frag Grenade	BS	1	1	S. Range	Firearm	Explosive	CRT: B	Grenade	-	S. Range, Firearm, Explosive, CRT: B, Grenade
+-	Freeze Arm Weapon	Freeze Arm Weapon	BB / B / S	1	3	Mechanic	CRT: Freeze	Expansive	Cold	-	-	Mechanic, CRT: Freeze, Expansive, Cold
+-	Freeze Laser	Freeze Laser	BS	2	3	Beam	M. Range	Cold	-	-	-	Beam, M.Range, Cold
+-	Freeze Laser MK II	Freeze Laser MK II	BBS	1	3	Beam	S. Range	Cold	Ice-Template	-	-	Beam, S.Range, Cold, Ice Template
+-	Freeze Laser Expanded Beam	Freeze Laser (Expanded Beam)	B	1	1	Beam	M. Range	Cold	Ice-Template	-	-	Beam, M.Range, Cold, Ice Template
+-	Freezing Grenades	Freezing Grenades	B	1	2	Mechanic	S. Range	Cold	Explosive	CRT: Freeze	Grenade	Mechanic, S. Range, Cold, Explosive, CRT: Freeze, Grenade
+-	Freezing Gun	Freezing Gun	BB	2	3	Mechanic	M. Range	CRT: Freeze	Cold	-	-	Mechanic, M. Range, CRT: Freeze, Cold
+-	Freezing Spray	Freezing Spray	BB / B / S	1	3	Mechanic	Expansive	CRT: Cooled	Cold	-	-	Mechanic, Expansive, CRT: Cooled, Cold
+											-	
+-	Gas Grenade	Gas Grenade	S	1	2	Smoke	S. Range	Explosive	Mechanic	Enervating 1	-	Smoke, S. Range, Explosive, Mechanic, Enervating 1
+-	Gauntlet Thorns	Gauntlet Thorns	B	1	3	Mechanic	M. Range	Sharp	-	-	-	Mechanic, M. Range, Sharp
+-	Goblin Blast	Goblin Blast	BS	1	3	Mechanic	S. Range	Electric	-	-	-	Mechanic, S. Range, Electric
+	Good Night Bat	Good Night Bat	SS	-	-	Handy	Heavy				-	Handy, Heavy
+-	Gravity Boomerang	Gravity Boomerang	B	2	1	Throwing	S. Range	Push	-	-	-	Throwing, S. Range, Push
+-	Great Riddler Baton	Great ?-Baton	SS	-	-	Handy	Heavy	CRT: Stunned	-	-	-	Handy, Heavy, CRT: Stunned
+Asker	Gun Light	Light Gun  	BS	2	2	Firearm	S. Range	Light	-	-	-	Firearm, S. Range, Light
+Mr. Pink	Gun BBS	Gun 	BB / S	2	2	Firearm	S. Range	-	-	-	-	Firearm, S. Range
+Boris	Gun BB	Gun 	BB	2	2	Firearm	S. Range	-	-	-	-	Firearm, S. Range
+Bob	Gun	Gun 	BS	2	2	Firearm	S. Range				-	Firearm, S. Range
+Deadshot (SS)	Guns	Guns	BS	4	1	Firearm	S. Range	-	-	-	-	Firearm, S. Range
+-	Hammer	Hammer	BS	-	-	Heavy	-	-	-	-	-	Heavy
+-	Hand Crossbow	Hand Crossbow	BB	1	2	Mechanic	M. Range	-	-	-	-	Mechanic, M. Range
+-	Handgun	Handgun	BS	2	2	Firearm	S. Range	Light	-	-	-	Firearm, S. Range, Light
+-	Harley's Little Helper	Harley's Little Helper	SS	1	2	Firearm	S. Range	Stunned	-	-	-	Firearm, S. Range, Stunned
+	Hate/Love Gun	Hate/Love Gun	BB	2	2	Firearm	S. Range	Light	CRT: BB	-	-	Firearm, S. Range, Light, CRT: BB
+-	Heavy Electric Baton	Heavy Electric Baton	SS	-	-	Mechanic	Handy	CRT: Stunned	-	-	-	Mechanic, Handy, CRT: Stunned
+-	Hidden Sharp Blade	Hidden Sharp Blade	B	-	-	Handy	Sharp	CRT: B	-	-	-	Handy, Sharp, CRT: B
+	Hidden Weapon	Hidden Weapon	BS	3	3	Firearm	S. Range	Silencer	Assault 2	-	-	Firearm, S. Range, Silencer, Assault 2 
+-	Hockey Stick	Hockey Stick	SS	-	-	Handy	Reach	-	-	-	-	Handy, Reach
+-	Hook	Hook	BS	-	-	Sharp	Reach	-	-	-	-	Sharp, Reach
+-	Hunting Knife	Hunting Knife	BS	-	-	Sharp	-	-	-	-	-	Sharp
+-	Ice Axe	Ice Axe	B	-	-	Handy	Heavy	CRT: B	-	-	-	Handy, Heavy, CRT: B
+-	Ice Daggers	Ice Daggers	BS	2	∞	Throwing	Reload	M.Range	-	-	-	Throwing, Reload, M.Range
+-	Impact Webbing	Impact Webbing	SS	2	2	Mechanic	S. Range	Push	-	-	-	Mechanic, S. Range, Push
+-	Improvised Maul	Improvised Maul	SS	-	-	Handy	Heavy	Reach	-	-	-	Handy, Heavy, Reach
+-	Improvised Weapon	Improvised Weapon	BS	-	-	Handy	CRT: B	-	-	-	-	Handy, CRT: B
+-	Jackhammer	Jackhammer	BB	-	-	Mechanic	CRT: Enervating 2	-	-	-	-	Mechanic, CRT: Enervating 2
+											-	
+-	Kama	Kama	BS	-	-	Sharp	Defensive	-	-	-	-	Sharp, Defensive
+-	Katana	Katana	BB	-	-	Sharp	Handy	-	-	-	-	Sharp, Handy
+-	Katar	Katar	BS	-	-	Sharp	CRT: BB	-	-	-	-	Sharp, CRT: BB
+-	Knife	Knife	B	-	-	Sharp	-	-	-	-	-	Sharp
+	Knuckles Reinforced Gloves	Knuckles (Reinforced Gloves)	-	2	-	-	-	-	-	-	-	Unarmed
+-	Kukri	Kukri	B	-	-	Sharp	Defensive	-	-	-	-	Sharp, Defensive
+-	Laser Beam Cannon	Laser Beam Cannon	BB	1	2	Beam	Aim	Reload	Knocked Down	-	-	Beam, Aim, Reload, Knocked Down
+-	Laughing Gas Weapon	Laughing Gas	B	1	2	Gas	Mechanic	Enervating 2	S.Range	-	-	Gas, Mechanic, Enervating 2, S.Range
+-	Laughing Gas Weapon MKII	Laughing Gas	B / B / S	1	2	Gas	Mechanic	Expansive	Enervating 1	-	-	Gas, Mechanic, Expansive, Enervating 1
+-	LE Boomerang	LE Boomerang	BB	2	1	Firearm	S. Range	-	-	-	-	Firearm, S. Range
+-	Lighter and Cigar	Lighter and Cigar	S	-	-	CRT: Fire	-	-	-	-	-	CRT: Fire
+Harley (75)	Lipstick Gun	Lipstick Gun	BS	2	1	Firearm	S. Range	-	-	-	-	Firearm, S. Range
+	LMG	LMG	BB	2	2	Firearm	M. Range	Explosive			-	Firearm, M. Range, Exposive
+-	Long Electric Baton	Long Electric Baton	BB	-	-	Handy	Mechanic	Reach	-	-	-	Handy, Mechanic, Reach
+-	Long Spiked Heels	Long Spiked Heels	B	-	-	Handy	Heavy	CRT: B	-	-	-	Handy, Heavy, CRT: B
+											-	
+-	M16	M-16	BBB	2	3	Firearm	-	-	-	-	-	Firearm
+-	Mace	Mace	BS	-	-	Fly	Small	-	-	-	-	Fly, Small
+-	Machete	Machete	B	-	-	Sharp	Heavy	-	-	-	-	Sharp, Heavy
+	Magnum	Magnum	BB	2	2	Firear,	M. Range	CRT: B	-	-	-	Firear,, M. Range, CRT: B
+Puooup	Mallet	Mallet	BS	-	-	Heavy	-	-	-	-	-	Heavy
+-	Harleys Mallet	Mallet	SS	-	-	Reach	Heavy	Push	-	-	-	Reach, Heavy, Push
+-	Maul	Maul	BS	-	-	Heavy	Handy	-	-	-	-	Heavy, Handy
+-	Mauser Gun	Mauser Gun	BB	2	2	Firearm	M. Range	-	-	-	-	Firearm, M. Range
+-	Meat Knife	Meat Knife	B	-	-	Sharp	Heavy	-	-	-	-	Sharp, Heavy
+	Mech Claw	Mech Claw	BS	-	-	Mechanic					-	Mechanic
+-	Mechanic Claw	Mechanic Claw	BS	-	-	Mechanic	-	-	-	-	-	Mechanic
+-	Melee Boomerang BS	Melee Boomerang	BS	-	-	Sharp	-	-	-	-	-	Sharp
+-	Melee Boomerang B	Melee Boomerang	B	-	-	Sharp	-	-	-	-	-	Sharp
+-	Metamorphic Weapon	Metamorphic Weapon	BS	-	-	Reach	Handy	-	-	-	-	Reach, Handy
+-	MG Scope	MG 	BB	3	1	Firearm	M. Range	Scope	-	-	-	Firearm, M. Range, Scope
+-	MG 2	MG 	BB	3	2	Firearm	M. Range	-	-	-	-	Firearm, M. Range
+-	Minigun	Minigun	BB	5	2	Firearm	M. Range	Imprecise	-	-	-	Firearm, M. Range, Imprecise
+-	Missile Barrage	Missile Barrage	BB	2	1	Firearm	M. Range	Imprecise	Explosive	-	-	Firearm, M. Range, Imprecise, Explosive
+-	Modified Assault Rifle	Modified Assault Rifle	BBS	3	2	Firearm	Silencer	Red Dot	-	-	-	Firearm, Silencer, Red Dot
+	Modified Automatic Gun Silencer	Modified Automatic Gun (Silencer)	BS	3	2	Firearm	S. Range	Silencer	-	-	-	
+											-	
+-	Nth Metal Mace	Nth Metal Mace	BS	-	-	Handy	Magic	-	-	-	-	Handy, Magic
+-	Owl Knife	Owl Knife	B	-	-	Handy	Sharp	-	-	-	-	Handy, Sharp
+	One Shot Gun	One Shot Gun (2AC+2SC)	BBB	1	-	S. Range	Automatic Hit	Strength 2+	CRT: Casualty	Once per Game		Once per Game, S. Range, Automatic Hit, Strength 2+, CRT: Casualty
+-	Personal Gun	Personal Gun	BB	3	2	Firearm	S. Range	Light	-	-	-	Firearm, S. Range, Light
+-	Petrol Bomb	Petrol Bomb	B	1	1	Mechanic	S. Range	Fire	-	-	-	Mechanic, S. Range, Fire
+	Petrol Bomb 2	Petrol Bomb	B	1	2	Mechanic	S. Range	Fire	-	-	-	Mechanic, S. Range, Fire
+-	Phase Strike v1	Phase Strike	-	-	-	Cost 3	Paradox 6+	CRT: BBB	-	-	-	Cost 3, Paradox 6+, CRT: BBB
+	Phase Strike v2	Phase Strike	-	-	-	Cost 2	Paradox 6+	CRT: BBB			-	Cost 2, Paradox 6+, CRT: BBB
+-	Pink Gun	Pink Gun	BS	3	2	Firearm	S. Range	Accurate	-	-	-	Firearm, S. Range, Accurate
+-	Plasma Cannon	Plasma Cannon	BB	2	2	Beam	M. Range	Handy	-	-	-	Beam, M. Range, Handy
+-	Poison Arrow	Poison Arrow	BB	1	1	Mechanic	Aim	Poison: Paralyze	-	-	-	Mechanic, Aim, Poison: Paralyze
+-	Poisoned Claws	Poisoned Claws	BS	-	-	Sharp	CRT: Poison	Enervating 2	-	-	-	Sharp, CRT: Poison, Enervating 2
+-	Poisoned Knife	Poisoned Knife	B	-	-	Sharp	CRT: Poison (Toxic or Enervating 3)	-	-	-	-	Sharp, CRT: Poison (Toxic or Enervating 3)
+-	Poisoned Thorns	Poisoned Thorns	BS	-	-	Poison: Toxic 1	-	-	-	-	-	Poison: Toxic 1
+-	Precise Knife	Precise Knife	B	-	-	Sharp	Handy	-	-	-	-	Sharp, Handy
+	Precision Gun	Precision Gun	BB	2	2	Firearm	Handy	Accurate	S.Range		-	Firearm, Handy, Accurate, S.Range
+-	Precision Rifle	Precision Rifle	BBS	2	2	Firearm	-	-	-	-	-	Firearm
+-	Pumpkin Bomb	Pumpkin Bomb	B	1	2	Firearm	S. Range	Explosive	-	-	-	Firearm, S. Range, Explosive
+											-	
+-	Rain of Sporns	Rain of Sporns	S	4	1	S. Range	Gas	-	-	-	-	S. Range, Gas
+-	Razor Bats	Razor Bats	SS	2	2	Throwing	S. Range	-	-	-	-	Throwing, S. Range
+-	Reinforced Bat	Reinforced Bat	SS	-	-	Handy	Heavy	-	-	-	-	Handy, Heavy
+-	Reinforced Bo	Reinforced Bo	SS	-	-	Handy	Reach	-	-	-	-	Handy, Reach
+	Reinforced Gloves	Reinforced Gloves	-	2	-	-	-	-	-	-	-	Unarmed
+	Remote Claw	Remote Claw	SS	1	1	Throwing	S. Range	Knock Down	-	-	-	Throwing, S. Range, Knock Down
+	Retractable Claws	Retractable Claws	BS	-	-	Sharp					-	Sharp
+-	Riddler Baton	?-Baton	SS	-	-	Handy	CRT: Shock	-	-	-	-	Handy, CRT: Shock
+	RiddlerKnuckles	?Knuckles	B	-	-	Handy	-	-	-	-	-	Handy
+	Riot Gun SsqS	Riot Gun 	SSS	1	2	M.Range	Mechanic	CRT: Shock	-	-	-	M.Range, Mechanic, CRT: Shock
+QRT1	Riot Gun 3	Riot Gun 	SS	2	3	Mechanic	CRT: SS	-	-	-	-	Mechanic, CRT: SS
+-	Riot Gun 2	Riot Gun 	SS	2	2	Mechanic	CRT: SS	-	-	-	-	Mechanic, CRT: SS
+-	Rocket Launcher	Rocket Launcher	BBB	1	2	Anti-Tank	Explosive	Firearm	M. Range	Aim	-	Anti-Tank, Explosive, Firearm, M. Range, Aim
+-	Root	Root	S	-	-	Handy	-	-	-	-	-	Handy
+-	RPG	RPG	BBB	1	2	Anti-Tank	Firearm	Imprecise	Reload	-	-	Anti-Tank, Firearm, Imprecise, Reload
+											-	
+-	Sawed Off Shotgun	Sawed off shotgun	BB / BS / SS	1	1	Firearm	Expansive	-	-	-	-	Firearm, Expansive
+-	Shark Repellant Bat-Spray	Shark Repellant Bat-Spray	-	1	2	Expansive	Enervating 1	-	-	-	-	Expansive, Enervating 1
+-	Shield	Shield	-	-	-	Protecting	-	-	-	-	-	Protecting
+-	Shielded Bo	Shielded Bo	S	-	-	Handy	Reach	Protective	-	-	-	Handy, Reach, Protective
+	Shiv	Shiv	B	-	-	Handy	-	-	-	-	-	Handy
+-	Shock Gloves	Shock Gloves	SS	-	-	CRT: Shock	-	-	-	-	-	CRT: Shock
+-	Shock Gloves Stun	Shock Gloves	SS	-	-	CRT: Stun	-	-	-	-	-	CRT: Shock
+	Short Sickle	Short Sickle	BS	-	-	Sharp	-	-	-	-	-	Sharp
+-	Shotgun	Shotgun	BBS	1	3	Firearm	M. Range	-	-	-	-	Firearm, M. Range
+-	Shovel	Shovel	SS	-	-	Overwhelming	Reach	Heavy			-	Overwhelming, Reach, Heavy
+-	Shuriken	Shuriken	SS	2	2	Throwing	S. Range	-	-	-	-	Throwing, S. Range
+-	Sickle	Sickle	BS	-	-	Sharp	Reach	-	-	-	-	Sharp, Reach
+-	Slingshot	Slingshot	B	2	3	Handy	S. Range	-	-	-	-	Handy, S. Range
+-	SMG 1	SMG	BB	4	1	Firearm	S. Range	-	-	-	-	Firearm, S. Range
+	SMG 2	SMG 	BB	4	2	Firearm	S. Range	-	-	-	-	Firearm, S. Range
+-	Smoke Grenades 1	Smoke Grenades	-	1	1	Explosive	S. Range	Smoke	Grenade	-	-	Explosive, S. Range, Smoke, Grenade
+-	Smoke Grenades 2	Smoke Grenades	-	1	2	Explosive	S. Range	Smoke	Grenade	-	-	Explosive, S. Range, Smoke, Grenade
+-	Soultaker Katana	Soultaker Katana	BB	-	-	Handy	Sharp	Enervating 1	-	-	-	Handy, Sharp, Enervating 1
+-	Soultaker Sword	Soultaker Sword	BB	-	-	Sharp	Enervating 1	-	-	-	-	Sharp, Enervating 1
+-	Speed Force Bolts	Speed Force Bolts	BSS	-	-	Cost 3	Paradox 6+	within 20cm & LoS	Autohit Str 3+	-	-	Cost 3, Paradox 6+, within 20cm & LoS, Autohit Str 3+
+-	Spiked Shield	Spiked Shield	B	-	-	Protecting	-	-	-	-	-	Protecting
+-	Spikes	Spikes	SS	2	2	Throwing	Reload	S. Range	-	-	-	Throwing, Reload, S. Range
+	Spore Sheath	Spore Sheath	SS	2	2	Mechanic	-	-	-	-	-	Mechanic
+	Sprinkling Spores	Sprinkling Spores	S	∞	-	Poison (Toxic B)	Expansive	Gas	-	-	-	Poison (Toxic B), Expansive, Gas
+-	Stun Cannon	Stun Cannon	SS	2	2	Mechanic	-	-	-	-	-	Mechanic
+-	Surgical Knife	Surgical Knife	B	-	-	Handy	Sharp	-	-	-	-	Handy, Sharp
+-	Sword	Sword	BB	-	-	Sharp	-	-	-	-	-	Sharp
+-	Sword of Sin	Sword of Sin	BB	-	-	Sharp	CRT: Fire	Devastation	-	-	-	Sharp, CRT: Fire, Devastation
+-	Syringe Claw	Syringe Claw	B	-	-	Handy	CRT: Poison	Pinned Down	-	-	-	Handy, CRT: Poison, Pinned Down
+-	Syringe Fear Claw	Syringe Fear Claw	B	-	-	Handy	Scared	-	-	-	-	Handy, Scared
+											-	
+-	Tanto	Tanto	B	-	-	Defensive	Sharp	CRT: BB	-	-	-	Defensive, Sharp, CRT: BB
+-	Taser Shock	Taser	SS	-	-	Reach	Mechanic	CRT: Shock	-	-	-	Reach, Mechanic, CRT: Shock
+-	Taser Stunned	Taser	SS	-	-	Reach	Mechanic	CRT: Shock	-	-	-	Reach, Mechanic, CRT: Shock
+-	The Cold Gun	The Cold Gun	BB	1	1	Beam	S. Range	Cold	Ice Template	Aim	-	Beam, S.Range, Cold, Ice Template, Aim
+-	The Cold Gun Full Power	The Cold Gun (Full Power)	BBS	2	3	Beam	M. Range	Cold	Accurate	-	-	Beam, M.Range, Cold, Accurate
+Harvey Dent	Thompson Dents	Thompson	BS	3	4	Firearm	M. Range	-	-	-	-	Firearm, M. Range
+Dirty Tom	Thompson	Thompson	BS	3	2	Firearm	M. Range	-	-	-	-	Firearm, M. Range
+-	Throwing Baton	Throwing Baton	SS	1	4	Throwing	S. Range	CRT: Enervating 2	-	-	-	Throwing, S. Range, CRT: Enervating 2
+-	Throwing Knife	Throwing Knife	B	2	2	Throwing	S. Range	Sharp	-	-	-	Throwing, S. Range, Sharp
+-	Throwing Meat Knives	Throwing Meat Knives	B	1	2	Sharp	S. Range	Throwing	Heavy	-	-	Sharp, S. Range, Throwing, Heavy
+-	Tonfa	Tonfa	S	-	-	Defensive	Handy	-	-	-	-	Defensive, Handy
+-	Toxic Nails	Toxic Nails	BS	-	-	Handy	CRT: Poison (Paralyze)	-	-	-	-	Handy, CRT: Poison (Paralyze)
+-	Train Wrench	Train Wrench	SS	-	-	Heavy	-	-	-	-	-	Heavy
+-	Tube	Tube	S	-	-	Handy	Heavy	-	-	-	-	Handy, Heavy
+-	Umbrella	Umbrella	S	-	-	Handy	Reach	-	-	-	-	Handy, Reach
+-	Umbrella Blade	Umbrella Blade	BB	-	-	Sharp	-	-	-	-	-	Sharp
+-	Umbrella Cannon	Umbrella Cannon	BBB	1	2	Firearm	S. Range	-	-	-	-	Firearm, S. Range
+	Unarmed	Unarmed	S	-	-	Unarmed	-	-	-	-	-	Unarmed
+-	Vibration Wave	Vibration Wave	-	-	-	Cost 2	Paradox 5+	-	-	-	-	Cost 2, Paradox 5+
+-	Vulcan M61	Vulcan M61	BBB	4	2	Firearm	M. Range	Imprecise	Anti-Tank	-	-	Firearm, M. Range, Imprecise, Anti-Tank
+-	Warhammer	Warhammer	BS	-	-	Reach	Handy	-	-	-	-	Reach, Handy
+-	Webbing	Webbing	S	2	2	Mechanic	M. Range	Enervating 1	-	-	-	Mechanic, M. Range, Enervating 1
+-	Whip	Whip	BS	-	-	Reach	-	-	-	-	-	Reach
+-	White Sound Disruptor	White Sound Disruptor	SS	1	2	Magic	Mechanic	S. Range	Sonic	-	-	Magic, Mechanic, S. Range, Sonic
+-	Wing-Dings	Wing-Dings	SS	2	2	Throwing	S. Range	-	-	-	-	Throwing, S. Range
+-	X-MG	X-MG	BB	3	2	Firearm	M. Range	Assault 2	-	-	-	Firearm, M. Range, Assault 2

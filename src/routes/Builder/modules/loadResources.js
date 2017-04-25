@@ -1,6 +1,7 @@
 import { loadedCharacters } from '../../../resources/characters'
 import { allCrews } from '../../../resources/crews'
 import { allTraits } from '../../../resources/traits'
+import { allWeapons } from '../../../resources/weapons'
 
 const findTrait = (populatedTraits, traitName) => {
   let foundTrait = {
@@ -24,7 +25,6 @@ const findTrait = (populatedTraits, traitName) => {
     }
   } else {
     let keys = Object.keys(traitName)
-    // TODO -coudl this be breaking the tests?
     keys.shift()
     let replaceTrait = allTraits.find((trait) => (trait != null && trait.name === traitName.name))
     let replaceAllInKey = (result, key) => result.replace(new RegExp(`-${key}-`, 'g'), traitName[key])
@@ -40,13 +40,37 @@ const findTrait = (populatedTraits, traitName) => {
   return populatedTraits
 }
 
-const populateTraits = (characters, character) => {
+const findWeapon = (populatedWeapons, weaponKey) => {
+  let foundWeapon = {
+    name: weaponKey,
+    key: weaponKey,
+    damage: 'Unknown',
+    rof: 0,
+    ammo: 0,
+    traits: 'Unknown'
+  }
+
+  let retrievedWeapon = allWeapons.find((weapon) => (weapon !== null && weapon.key === weaponKey))
+
+  if (retrievedWeapon !== undefined) {
+    foundWeapon = retrievedWeapon
+  }
+
+  populatedWeapons.push(retrievedWeapon)
+  return populatedWeapons
+}
+
+const populateCharacter = (characters, character) => {
   if (character === undefined) { return characters }
   if (character.traits !== undefined) {
     let poppedTraits = character.traits.reduce(findTrait, [])
     character.traitText = poppedTraits
   } else {
     console.log('This character lacks traits? ' + JSON.stringify(character))
+  }
+  if (character.weapons !== undefined) {
+    let poppedWeapons = character.weapons.reduce(findWeapon, [])
+    character.weaponText = poppedWeapons
   }
   characters.push(character)
   return characters
@@ -56,11 +80,12 @@ let loadAllResources = (state, action) => {
   // Now... Add all traits to each character... Ooph...
   // TODO: Optimize the %@#$^ out of this in the future.
 
-  let allCharacters = loadedCharacters.reduce(populateTraits, [])
+  let allCharacters = loadedCharacters.reduce(populateCharacter, [])
   return Object.assign({}, state, {
     allTraits : allTraits,
     allCrews : allCrews,
-    allCharacters : allCharacters
+    allCharacters : allCharacters,
+    allWeapons : allWeapons
   })
 }
 

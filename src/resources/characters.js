@@ -16,6 +16,9 @@ export const loadedCharacters = [
       'Criminal',
       'Mobster'
     ],
+    'weapons': [
+      'Baseball Bat'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -42,6 +45,10 @@ export const loadedCharacters = [
       'Searcher',
       'Unstoppable'
     ],
+    'weapons': [
+      'Shotgun',
+      'Claws'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 2,
@@ -66,6 +73,9 @@ export const loadedCharacters = [
     'traits': [
       'Arrest',
       'Veteran'
+    ],
+    'weapons': [
+      'Taser Shock'
     ],
     'wp': 5,
     'str': 5,
@@ -92,6 +102,10 @@ export const loadedCharacters = [
       'Arrest',
       'Street Guy'
     ],
+    'weapons': [
+      'Automatic Gun Light',
+      'Baton Heavy'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -116,6 +130,9 @@ export const loadedCharacters = [
       'Medic',
       'Informer',
       'Veteran'
+    ],
+    'weapons': [
+      'Unarmed'
     ],
     'wp': 5,
     'str': 5,
@@ -147,6 +164,9 @@ export const loadedCharacters = [
         'type': 'S.W.A.T.'
       }
     ],
+    'weapons': [
+      'Automatic Rifle'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -171,6 +191,9 @@ export const loadedCharacters = [
       'Tireless',
       'Veteran',
       'Brutal'
+    ],
+    'weapons': [
+      'Knife'
     ],
     'wp': 6,
     'str': 4,
@@ -205,6 +228,10 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Automatic Gun Light',
+      'Combined Sniper Guns'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 4,
@@ -233,6 +260,10 @@ export const loadedCharacters = [
       'Undercover',
       'Vanish',
       'Fully Equipped'
+    ],
+    'weapons': [
+      'Combined Sniper Guns MKII',
+      'EM Smoke Grenades'
     ],
     'wp': 7,
     'str': 4,
@@ -263,6 +294,11 @@ export const loadedCharacters = [
       'Counter Attack',
       'Stealth'
     ],
+    'weapons': [
+      'Bow Standard Arrow 2',
+      'Bow Serrated Arrow',
+      'Bow Concusion Arrow'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 4,
@@ -289,6 +325,10 @@ export const loadedCharacters = [
       'Undercover',
       'Charge'
     ],
+    'weapons': [
+      'Bow Standard Arrow 2',
+      'Explosive Arrow'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -314,6 +354,10 @@ export const loadedCharacters = [
       'Fast',
       'Psycho'
     ],
+    'weapons': [
+      'Gun Light',
+      'Meat Knife'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 3,
@@ -336,6 +380,9 @@ export const loadedCharacters = [
     'traits': [
       'Psycho',
       'Tireless'
+    ],
+    'weapons': [
+      'Axe'
     ],
     'wp': 5,
     'str': 5,
@@ -364,6 +411,10 @@ export const loadedCharacters = [
       'Kevlar Vest',
       'Night Vision'
     ],
+    'weapons': [
+      'Sword of Sin',
+      'Gauntlet Thorns'
+    ],
     'wp': 6,
     'str': 3,
     'mov': 3,
@@ -391,6 +442,9 @@ export const loadedCharacters = [
       'Handyman',
       'Runaway',
       'Sturdy'
+    ],
+    'weapons': [
+      'BiggaSticka'
     ],
     'wp': 6,
     'str': 4,
@@ -429,6 +483,9 @@ export const loadedCharacters = [
       'Desensitized',
       'Large'
     ],
+    'weapons': [
+      'Reinforced Gloves'
+    ],
     'wp': 8,
     'str': 3,
     'mov': 3,
@@ -461,6 +518,9 @@ export const loadedCharacters = [
         'count': 2
       },
       'Sturdy'
+    ],
+    'weapons': [
+      'Reinforced Gloves'
     ],
     'wp': 7,
     'str': 3,
@@ -506,6 +566,9 @@ export const loadedCharacters = [
         'love': 'Talia'
       }
     ],
+    'weapons': [
+      'Reinforced Gloves'
+    ],
     'wp': 7,
     'str': 3,
     'mov': 2,
@@ -533,6 +596,10 @@ export const loadedCharacters = [
       'Detective',
       'Martial Artist',
       'Sustained Defense'
+    ],
+    'weapons': [
+      'Batlings',
+      'Reinforced Gloves'
     ],
     'wp': 8,
     'str': 3,
@@ -566,6 +633,9 @@ export const loadedCharacters = [
       'Sneak Attack',
       'Martial Artist'
     ],
+    'weapons': [
+      'Batlings'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -595,6 +665,9 @@ export const loadedCharacters = [
       'Distract',
       'Survivor'
     ],
+    'weapons': [
+      'Batlings'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -621,6 +694,11 @@ export const loadedCharacters = [
       'Ka-Pow!!!!!',
       'Detective',
       'Veteran'
+    ],
+    'weapons': [
+      'Batlings',
+      'Shark Repellant Bat-Spray',
+      'Reinforced Gloves'
     ],
     'wp': 6,
     'str': 4,
@@ -651,6 +729,10 @@ export const loadedCharacters = [
       'Counter Attack',
       'Martial Expert',
       'Sneak Attack'
+    ],
+    'weapons': [
+      'Batarang',
+      'Reinforced Gloves'
     ],
     'wp': 8,
     'str': 3,
@@ -688,6 +770,10 @@ export const loadedCharacters = [
       'Sneak Attack',
       'Martial Expert'
     ],
+    'weapons': [
+      'Batarang',
+      'Reinforced Gloves'
+    ],
     'wp': 8,
     'str': 3,
     'mov': 2,
@@ -716,6 +802,11 @@ export const loadedCharacters = [
       'Counter Attack',
       'Sneak Attack',
       'Detective'
+    ],
+    'weapons': [
+      'Remote Claw',
+      'Batarang',
+      'Shock Gloves'
     ],
     'wp': 8,
     'str': 3,
@@ -746,6 +837,10 @@ export const loadedCharacters = [
       'Stealth',
       'The Dynamic Duo',
       'Assistance'
+    ],
+    'weapons': [
+      'Batlings',
+      'Reinforced Gloves'
     ],
     'wp': 7,
     'str': 3,
@@ -780,6 +875,10 @@ export const loadedCharacters = [
       'Sneak Attack',
       'Arrest'
     ],
+    'weapons': [
+      'Batlings',
+      'Reinforced Gloves'
+    ],
     'wp': 8,
     'str': 3,
     'mov': 4,
@@ -805,6 +904,10 @@ export const loadedCharacters = [
       'Batclaw',
       'Detective',
       'Martial Artist'
+    ],
+    'weapons': [
+      'Batlings',
+      'Reinforced Gloves'
     ],
     'wp': 7,
     'str': 3,
@@ -839,6 +942,10 @@ export const loadedCharacters = [
       'Obstinate',
       'Veteran'
     ],
+    'weapons': [
+      'Batlings',
+      'Reinforced Gloves'
+    ],
     'wp': 8,
     'str': 3,
     'mov': 2,
@@ -864,6 +971,11 @@ export const loadedCharacters = [
       'Fast',
       'Detective',
       'ECM'
+    ],
+    'weapons': [
+      'Stun Cannon',
+      'Custom Missile',
+      'Reinforced Gloves'
     ],
     'wp': 8,
     'str': 3,
@@ -895,6 +1007,10 @@ export const loadedCharacters = [
       'Stealth',
       'Technique'
     ],
+    'weapons': [
+      'Batarang',
+      'Shock Gloves'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 3,
@@ -925,6 +1041,9 @@ export const loadedCharacters = [
       },
       'Veteran',
       'Weapon Master'
+    ],
+    'weapons': [
+      'Katana'
     ],
     'wp': 6,
     'str': 5,
@@ -961,6 +1080,10 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Combat Machete',
+      'Smoke Grenades 1'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -987,6 +1110,9 @@ export const loadedCharacters = [
       'Martial Artist',
       'Hidden',
       'Technique'
+    ],
+    'weapons': [
+      'Unarmed'
     ],
     'wp': 6,
     'str': 4,
@@ -1017,6 +1143,9 @@ export const loadedCharacters = [
       },
       'Undercover',
       'Martial Artist'
+    ],
+    'weapons': [
+      'Unarmed'
     ],
     'wp': 5,
     'str': 5,
@@ -1052,6 +1181,10 @@ export const loadedCharacters = [
       'Scientific',
       'Strategist'
     ],
+    'weapons': [
+      'Dual Blade',
+      'Death Ray'
+    ],
     'wp': 8,
     'str': 4,
     'mov': 3,
@@ -1083,6 +1216,10 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Personal Gun',
+      'Explosive Grenade'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 2,
@@ -1104,6 +1241,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Mobster'
+    ],
+    'weapons': [
+      'Shield'
     ],
     'wp': 4,
     'str': 5,
@@ -1127,6 +1267,9 @@ export const loadedCharacters = [
     'traits': [
       'Mobster'
     ],
+    'weapons': [
+      'Machete'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -1148,6 +1291,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Mobster'
+    ],
+    'weapons': [
+      'Automatic Gun Light'
     ],
     'wp': 4,
     'str': 5,
@@ -1171,6 +1317,9 @@ export const loadedCharacters = [
     'traits': [
       'Mobster'
     ],
+    'weapons': [
+      'Axe'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -1192,6 +1341,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Criminal'
+    ],
+    'weapons': [
+      'Gun'
     ],
     'wp': 4,
     'str': 5,
@@ -1218,6 +1370,9 @@ export const loadedCharacters = [
       'Funny Bomb',
       'Safe Hands'
     ],
+    'weapons': [
+      'Laughing Gas Weapon'
+    ],
     'wp': 4,
     'str': 4,
     'mov': 2,
@@ -1243,6 +1398,9 @@ export const loadedCharacters = [
       'Funny Bomb',
       'Safe Hands'
     ],
+    'weapons': [
+      'Laughing Gas Weapon MKII'
+    ],
     'wp': 4,
     'str': 4,
     'mov': 2,
@@ -1267,6 +1425,9 @@ export const loadedCharacters = [
       'Sturdy',
       'Demential Laugh',
       'Criminal'
+    ],
+    'weapons': [
+      'Hammer'
     ],
     'wp': 5,
     'str': 4,
@@ -1298,6 +1459,10 @@ export const loadedCharacters = [
         'type': 'Gangster'
       }
     ],
+    'weapons': [
+      'Gun BB',
+      'Brass Knuckles'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 3,
@@ -1326,6 +1491,10 @@ export const loadedCharacters = [
         'type': 'Plants'
       }
     ],
+    'weapons': [
+      'Poisoned Thorns',
+      'Rain of Spores'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 0,
@@ -1351,6 +1520,9 @@ export const loadedCharacters = [
         'name': 'Can you Solve this?',
         'weapon': 'this'
       }
+    ],
+    'weapons': [
+      'Unarmed'
     ],
     'wp': 4,
     'str': 4,
@@ -1378,6 +1550,9 @@ export const loadedCharacters = [
         'weapon': 'this'
       }
     ],
+    'weapons': [
+      'Unarmed'
+    ],
     'wp': 4,
     'str': 4,
     'mov': 2,
@@ -1403,6 +1578,9 @@ export const loadedCharacters = [
         'name': 'Can you Solve this?',
         'weapon': 'this'
       }
+    ],
+    'weapons': [
+      'Unarmed'
     ],
     'wp': 4,
     'str': 4,
@@ -1432,6 +1610,9 @@ export const loadedCharacters = [
         'name': 'Elite',
         'type': 'S.W.A.T.'
       }
+    ],
+    'weapons': [
+      'Shotgun'
     ],
     'wp': 5,
     'str': 5,
@@ -1471,6 +1652,9 @@ export const loadedCharacters = [
       'Undercover',
       'Undead'
     ],
+    'weapons': [
+      'Shiv'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 1,
@@ -1501,6 +1685,13 @@ export const loadedCharacters = [
       'Ricochet',
       'Dodge',
       'Follow Me!'
+    ],
+    'weapons': [
+      'Melee Boomerang B',
+      'Gravity Boomerang',
+      'Bladed Boomerang',
+      'Electric Boomerang',
+      'Acid Boomerang'
     ],
     'wp': 6,
     'str': 4,
@@ -1536,6 +1727,11 @@ export const loadedCharacters = [
       'Suicide Squad Member',
       'Greed',
       'Monitoring Device'
+    ],
+    'weapons': [
+      'Melee Boomerang BS',
+      'LE Boomerang',
+      'Bladed Boomerang'
     ],
     'wp': 6,
     'str': 4,
@@ -1583,6 +1779,10 @@ export const loadedCharacters = [
         'target': 'Heatwave'
       }
     ],
+    'weapons': [
+      'The Cold Gun Full Power',
+      'The Cold Gun'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -1617,6 +1817,9 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Unarmed'
+    ],
     'wp': 8,
     'str': 5,
     'mov': 2,
@@ -1650,6 +1853,10 @@ export const loadedCharacters = [
       'Sneak Attack',
       'Thief'
     ],
+    'weapons': [
+      'Whip',
+      'Retractable Claws'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 4,
@@ -1680,6 +1887,10 @@ export const loadedCharacters = [
       'Thief',
       'Backpack'
     ],
+    'weapons': [
+      'Whip',
+      'Retractable Claws'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 4,
@@ -1707,6 +1918,9 @@ export const loadedCharacters = [
       'Climbing Shoes',
       'Agile',
       'Pickpocket'
+    ],
+    'weapons': [
+      'Whip'
     ],
     'wp': 5,
     'str': 5,
@@ -1740,6 +1954,9 @@ export const loadedCharacters = [
       'Adaptable',
       'Undercover'
     ],
+    'weapons': [
+      'Metamorphic Weapon'
+    ],
     'wp': 7,
     'str': 3,
     'mov': 3,
@@ -1764,6 +1981,9 @@ export const loadedCharacters = [
       'Rapid Fire',
       'Veteran'
     ],
+    'weapons': [
+      'Automatic Gun Light'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -1785,6 +2005,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Demential Laugh'
+    ],
+    'weapons': [
+      'Tube'
     ],
     'wp': 4,
     'str': 5,
@@ -1808,6 +2031,9 @@ export const loadedCharacters = [
     'traits': [
       'Demential Laugh'
     ],
+    'weapons': [
+      'Knife'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -1829,6 +2055,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Demential Laugh'
+    ],
+    'weapons': [
+      'Shield'
     ],
     'wp': 4,
     'str': 5,
@@ -1857,6 +2086,11 @@ export const loadedCharacters = [
       'Hardened',
       'Veteran',
       'Watchmen'
+    ],
+    'weapons': [
+      'Riot Gun SSqS',
+      'Cal.50 Gun',
+      'Reinforced Gloves'
     ],
     'wp': 7,
     'str': 4,
@@ -1898,6 +2132,9 @@ export const loadedCharacters = [
         'name': 'Elite Boss',
         'type': ''
       }
+    ],
+    'weapons': [
+      'Automatic Gun Light'
     ],
     'wp': 6,
     'str': 5,
@@ -1950,6 +2187,9 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Handgun'
+    ],
     'wp': 7,
     'str': 6,
     'mov': 1,
@@ -1978,6 +2218,10 @@ export const loadedCharacters = [
         'type': 'Penguin'
       }
     ],
+    'weapons': [
+      'Chain',
+      'Frag Grenade'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 2,
@@ -2000,6 +2244,9 @@ export const loadedCharacters = [
     'traits': [
       'Obsessive',
       'Hardened'
+    ],
+    'weapons': [
+      'Baseball Bat'
     ],
     'wp': 5,
     'str': 5,
@@ -2031,6 +2278,9 @@ export const loadedCharacters = [
       'Technique',
       'Undercover'
     ],
+    'weapons': [
+      'Poisoned Claws'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -2057,6 +2307,9 @@ export const loadedCharacters = [
         'type': 'Plants'
       }
     ],
+    'weapons': [
+      'Creeper'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 0,
@@ -2082,6 +2335,9 @@ export const loadedCharacters = [
       'Stealth',
       'Tireless',
       'Veteran'
+    ],
+    'weapons': [
+      'Knife'
     ],
     'wp': 5,
     'str': 5,
@@ -2114,6 +2370,11 @@ export const loadedCharacters = [
         'count': 1
       }
     ],
+    'weapons': [
+      'Plasma Cannon',
+      'White Sound Disruptor',
+      'Reinforced Gloves'
+    ],
     'wp': 8,
     'str': 3,
     'mov': 3,
@@ -2138,6 +2399,9 @@ export const loadedCharacters = [
       'Mercenary',
       'Veteran',
       'Bulletproof Vest'
+    ],
+    'weapons': [
+      'Assault Rifle'
     ],
     'wp': 5,
     'str': 5,
@@ -2168,6 +2432,9 @@ export const loadedCharacters = [
       'Night Vision',
       'Dodge',
       'Shooter'
+    ],
+    'weapons': [
+      '9mm Twin Cannons 4'
     ],
     'wp': 6,
     'str': 4,
@@ -2203,6 +2470,10 @@ export const loadedCharacters = [
         'points': null
       }
     ],
+    'weapons': [
+      'Barret',
+      '9mm Twin Cannons 2'
+    ],
     'wp': 7,
     'str': 5,
     'mov': 3,
@@ -2233,6 +2504,11 @@ export const loadedCharacters = [
       'Shooter',
       'Suicide Squad Member',
       'Bullet Time'
+    ],
+    'weapons': [
+      '9mm Twin Cannons 2',
+      'MG Scope',
+      'Guns'
     ],
     'wp': 8,
     'str': 4,
@@ -2265,6 +2541,10 @@ export const loadedCharacters = [
       'Stealth',
       'Resilient',
       'Martial Artist'
+    ],
+    'weapons': [
+      'SMG 2',
+      'Sword'
     ],
     'wp': 7,
     'str': 3,
@@ -2310,6 +2590,11 @@ export const loadedCharacters = [
       'Martial Artist',
       'Counter Attack'
     ],
+    'weapons': [
+      'Automatic Gun Light',
+      'Reinforced Bo',
+      'Sword'
+    ],
     'wp': 7,
     'str': 3,
     'mov': 3,
@@ -2333,6 +2618,9 @@ export const loadedCharacters = [
       'Gas Mask',
       'Assault',
       'Criminal'
+    ],
+    'weapons': [
+      'Carbine'
     ],
     'wp': 4,
     'str': 5,
@@ -2363,6 +2651,10 @@ export const loadedCharacters = [
         'name': 'Elite',
         'type': 'S.W.A.T.'
       }
+    ],
+    'weapons': [
+      'Shield',
+      'Automatic Gun'
     ],
     'wp': 5,
     'str': 5,
@@ -2398,6 +2690,10 @@ export const loadedCharacters = [
       'Supernatural',
       'Regrets'
     ],
+    'weapons': [
+      'Flaming Hands',
+      'Flaming Tatoos'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 2,
@@ -2428,6 +2724,9 @@ export const loadedCharacters = [
         'type': 'Gangster'
       }
     ],
+    'weapons': [
+      'Thompson'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -2451,6 +2750,9 @@ export const loadedCharacters = [
       'Self-Discipline',
       'Make them perfect',
       'Creations of Perfection'
+    ],
+    'weapons': [
+      'Unarmed'
     ],
     'wp': 4,
     'str': 4,
@@ -2483,6 +2785,9 @@ export const loadedCharacters = [
         'type': 'S.W.A.T.'
       }
     ],
+    'weapons': [
+      'Battering Ram'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -2508,6 +2813,9 @@ export const loadedCharacters = [
       'EMP',
       'Taunt',
       'Electric Storm'
+    ],
+    'weapons': [
+      'Shock Gloves Stun'
     ],
     'wp': 5,
     'str': 4,
@@ -2539,6 +2847,10 @@ export const loadedCharacters = [
       },
       'Tough Skin'
     ],
+    'weapons': [
+      'Chain',
+      'Reinforced Gloves'
+    ],
     'wp': 7,
     'str': 3,
     'mov': 4,
@@ -2567,6 +2879,9 @@ export const loadedCharacters = [
       'Obsessive',
       'Brutal'
     ],
+    'weapons': [
+      'Katar'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -2593,6 +2908,9 @@ export const loadedCharacters = [
     'traits': [
       'Paranoid',
       'Runaway'
+    ],
+    'weapons': [
+      'Big Spike'
     ],
     'wp': 4,
     'str': 5,
@@ -2622,6 +2940,9 @@ export const loadedCharacters = [
       'Bipolar',
       'Hardened'
     ],
+    'weapons': [
+      'Improvised Maul'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -2650,6 +2971,10 @@ export const loadedCharacters = [
       'Bloodthirsty',
       'Mobster'
     ],
+    'weapons': [
+      'Throwing Meat Knives',
+      'Meat Knife'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -2677,6 +3002,10 @@ export const loadedCharacters = [
       'Bloodthirsty',
       'Stealth'
     ],
+    'weapons': [
+      'Knife',
+      'Knife'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -2703,6 +3032,9 @@ export const loadedCharacters = [
     'traits': [
       'Delirium',
       'Aggressive Schizophrenia'
+    ],
+    'weapons': [
+      'Claws'
     ],
     'wp': 4,
     'str': 4,
@@ -2735,6 +3067,10 @@ export const loadedCharacters = [
       'Handyman',
       'Kevlar Vest'
     ],
+    'weapons': [
+      'Flamethrower 2',
+      'Frag Grenade'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 2,
@@ -2765,6 +3101,9 @@ export const loadedCharacters = [
       'Detective',
       'Scientific',
       'Moral Compass'
+    ],
+    'weapons': [
+      'Unarmed'
     ],
     'wp': 8,
     'str': 4,
@@ -2797,6 +3136,9 @@ export const loadedCharacters = [
       'Scientific',
       'Moral Compass'
     ],
+    'weapons': [
+      'Speed Force Bolts'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 4,
@@ -2821,6 +3163,9 @@ export const loadedCharacters = [
       'Hidden',
       'Arrest',
       'Detective'
+    ],
+    'weapons': [
+      'Handgun'
     ],
     'wp': 4,
     'str': 5,
@@ -2849,6 +3194,9 @@ export const loadedCharacters = [
         'type': 'Cosplayers'
       }
     ],
+    'weapons': [
+      'LMG'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -2871,6 +3219,9 @@ export const loadedCharacters = [
     'traits': [
       'Brutal'
     ],
+    'weapons': [
+      'Brass Knuckles'
+    ],
     'wp': 4,
     'str': 4,
     'mov': 2,
@@ -2892,6 +3243,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Brutal'
+    ],
+    'weapons': [
+      'Brass Knuckles'
     ],
     'wp': 4,
     'str': 4,
@@ -2920,6 +3274,9 @@ export const loadedCharacters = [
       'Tough Skin',
       'Brutal'
     ],
+    'weapons': [
+      'Claws'
+    ],
     'wp': 7,
     'str': 3,
     'mov': 3,
@@ -2945,6 +3302,9 @@ export const loadedCharacters = [
       'Arrest',
       'Lantern'
     ],
+    'weapons': [
+      'Baton Heavy'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -2968,6 +3328,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Arrest'
+    ],
+    'weapons': [
+      'Tonfa'
     ],
     'wp': 4,
     'str': 5,
@@ -3000,6 +3363,10 @@ export const loadedCharacters = [
       'Stealth',
       'Adaptable'
     ],
+    'weapons': [
+      'Bow Standard Arrow 3',
+      'Bow Special Arrow'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 4,
@@ -3030,6 +3397,10 @@ export const loadedCharacters = [
       'Sharpshooter',
       'Acrobat'
     ],
+    'weapons': [
+      'Bow Standard Arrow 3',
+      'Bow Punch Arrow'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -3055,6 +3426,10 @@ export const loadedCharacters = [
       'Desensitized',
       'One-Armed',
       'Ranged Master'
+    ],
+    'weapons': [
+      'Bow Standard Arrow BBB',
+      'Bow Kryptonite Arrow'
     ],
     'wp': 7,
     'str': 4,
@@ -3082,6 +3457,9 @@ export const loadedCharacters = [
       'Large',
       'Street Guy',
       'Tireless'
+    ],
+    'weapons': [
+      'Vulcan M61'
     ],
     'wp': 5,
     'str': 4,
@@ -3112,6 +3490,9 @@ export const loadedCharacters = [
         'love': 'Joker'
       }
     ],
+    'weapons': [
+      'Reinforced Bat'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 4,
@@ -3139,6 +3520,10 @@ export const loadedCharacters = [
       'Mobster',
       'Unpredictable',
       'Escape Artist'
+    ],
+    'weapons': [
+      'Reinforced Bat',
+      'SMG 2'
     ],
     'wp': 7,
     'str': 5,
@@ -3172,6 +3557,10 @@ export const loadedCharacters = [
         'love': 'Joker'
       }
     ],
+    'weapons': [
+      'Good Night Bat',
+      'Hate/Love Gun'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 4,
@@ -3201,6 +3590,9 @@ export const loadedCharacters = [
         'name': 'True Love',
         'love': 'Joker'
       }
+    ],
+    'weapons': [
+      'Harleys Mallet'
     ],
     'wp': 6,
     'str': 5,
@@ -3234,6 +3626,10 @@ export const loadedCharacters = [
         'love': 'Joker'
       }
     ],
+    'weapons': [
+      'Good Night Bat',
+      'Hate/Love Gun'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 4,
@@ -3259,6 +3655,9 @@ export const loadedCharacters = [
       'Distract',
       'Follow Me!'
     ],
+    'weapons': [
+      'Harley\'s Little Helper'
+    ],
     'wp': 5,
     'str': 6,
     'mov': 4,
@@ -3283,6 +3682,9 @@ export const loadedCharacters = [
       'Street Guy',
       'Hardened'
     ],
+    'weapons': [
+      'Chainsaw'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -3304,6 +3706,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Street Guy'
+    ],
+    'weapons': [
+      'Sawed Off Shotgun'
     ],
     'wp': 4,
     'str': 5,
@@ -3327,6 +3732,9 @@ export const loadedCharacters = [
     'traits': [
       'Street Guy'
     ],
+    'weapons': [
+      'Jackhammer'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -3349,6 +3757,9 @@ export const loadedCharacters = [
     'traits': [
       'Street Guy'
     ],
+    'weapons': [
+      'Train Wrench'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -3370,6 +3781,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Street Guy'
+    ],
+    'weapons': [
+      'RPG'
     ],
     'wp': 4,
     'str': 5,
@@ -3398,6 +3812,9 @@ export const loadedCharacters = [
       },
       'Adaptable'
     ],
+    'weapons': [
+      'Baseball Bat'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -3419,6 +3836,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Street Guy'
+    ],
+    'weapons': [
+      'Axe'
     ],
     'wp': 4,
     'str': 5,
@@ -3445,6 +3865,9 @@ export const loadedCharacters = [
       'Informer',
       'Luck',
       'Order'
+    ],
+    'weapons': [
+      'Gun'
     ],
     'wp': 6,
     'str': 5,
@@ -3482,6 +3905,9 @@ export const loadedCharacters = [
       'Weapon Master',
       'Unstoppable',
       'Unnatural Flight'
+    ],
+    'weapons': [
+      'Nth Metal Mace'
     ],
     'wp': 7,
     'str': 3,
@@ -3521,6 +3947,9 @@ export const loadedCharacters = [
       'Power Strike',
       'Unnatural Flight'
     ],
+    'weapons': [
+      'Nth Metal Mace'
+    ],
     'wp': 7,
     'str': 3,
     'mov': 2,
@@ -3557,6 +3986,10 @@ export const loadedCharacters = [
       },
       'Sturdy'
     ],
+    'weapons': [
+      'Flamethrower 3',
+      'Reinforced Gloves'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 2,
@@ -3585,6 +4018,9 @@ export const loadedCharacters = [
         'name': 'Scheming',
         'count': 2
       }
+    ],
+    'weapons': [
+      'Gun'
     ],
     'wp': 5,
     'str': 6,
@@ -3618,6 +4054,9 @@ export const loadedCharacters = [
       'Criminal',
       'Psycho'
     ],
+    'weapons': [
+      'Knife'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 2,
@@ -3648,6 +4087,9 @@ export const loadedCharacters = [
       'Hidden',
       'The Holiday Killer'
     ],
+    'weapons': [
+      'Hidden Weapon'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 2,
@@ -3677,6 +4119,9 @@ export const loadedCharacters = [
       'Persuasive',
       'Psychologist'
     ],
+    'weapons': [
+      'Unarmed'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 2,
@@ -3704,6 +4149,10 @@ export const loadedCharacters = [
       'Runaway',
       'Stealth',
       'Martial Artist'
+    ],
+    'weapons': [
+      'Hand Crossbow',
+      'Bo'
     ],
     'wp': 6,
     'str': 4,
@@ -3739,6 +4188,10 @@ export const loadedCharacters = [
         'count': 3
       }
     ],
+    'weapons': [
+      'Automatic Gun Light',
+      'Automatic Gun Light'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -3761,6 +4214,9 @@ export const loadedCharacters = [
     'traits': [
       'Criminal',
       'Mobster'
+    ],
+    'weapons': [
+      'Sawed off Shotgun'
     ],
     'wp': 4,
     'str': 5,
@@ -3786,6 +4242,9 @@ export const loadedCharacters = [
       'Bot',
       'Desensitized',
       'EMP'
+    ],
+    'weapons': [
+      'Hidden Sharp Blade'
     ],
     'wp': 6,
     'str': 4,
@@ -3813,6 +4272,10 @@ export const loadedCharacters = [
       'One Shot Gun',
       'Trickster',
       'Poison Master'
+    ],
+    'weapons': [
+      'Poisoned Knife',
+      'Explosive Teeth'
     ],
     'wp': 8,
     'str': 4,
@@ -3850,6 +4313,10 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Baton',
+      'Pink Gun'
+    ],
     'wp': 8,
     'str': 4,
     'mov': 2,
@@ -3881,6 +4348,11 @@ export const loadedCharacters = [
       },
       'Trickster'
     ],
+    'weapons': [
+      'Acid Flower',
+      'Knife',
+      'Baton Heavy'
+    ],
     'wp': 8,
     'str': 4,
     'mov': 2,
@@ -3911,6 +4383,10 @@ export const loadedCharacters = [
       },
       'Cruel'
     ],
+    'weapons': [
+      'Automatic Gun Light',
+      'Precise Knife'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 2,
@@ -3937,6 +4413,10 @@ export const loadedCharacters = [
       'Undercover',
       'Trickster',
       'Psycho'
+    ],
+    'weapons': [
+      'Custom Gun',
+      'Knife'
     ],
     'wp': 8,
     'str': 4,
@@ -3965,6 +4445,9 @@ export const loadedCharacters = [
       'Tireless',
       'Trickster'
     ],
+    'weapons': [
+      'Claws'
+    ],
     'wp': 8,
     'str': 2,
     'mov': 3,
@@ -3991,6 +4474,10 @@ export const loadedCharacters = [
       'Discourage',
       'Psycho',
       'Detective'
+    ],
+    'weapons': [
+      'Machete',
+      'Lipstick Gun'
     ],
     'wp': 6,
     'str': 5,
@@ -4020,6 +4507,10 @@ export const loadedCharacters = [
       'Martial Artist',
       'Stealth'
     ],
+    'weapons': [
+      'Soultaker Katana',
+      'Shuriken'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 3,
@@ -4046,6 +4537,10 @@ export const loadedCharacters = [
       'Weapon Master',
       'Suicide Squad Member',
       'Volunteer'
+    ],
+    'weapons': [
+      'Soultaker Katana',
+      'Tanto'
     ],
     'wp': 5,
     'str': 5,
@@ -4079,6 +4574,9 @@ export const loadedCharacters = [
       'Dodge',
       'Fast'
     ],
+    'weapons': [
+      'Vibration Wave'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 4,
@@ -4110,6 +4608,9 @@ export const loadedCharacters = [
       'Superior Smell',
       'Tough Skin'
     ],
+    'weapons': [
+      'Claws'
+    ],
     'wp': 7,
     'str': 3,
     'mov': 2,
@@ -4139,6 +4640,9 @@ export const loadedCharacters = [
       'Tough Skin',
       'Raised in the Sewers',
       'Suicide Squad Member'
+    ],
+    'weapons': [
+      'Claws'
     ],
     'wp': 6,
     'str': 4,
@@ -4179,6 +4683,10 @@ export const loadedCharacters = [
       'Runaway',
       'Stop!'
     ],
+    'weapons': [
+      'Ice Daggers',
+      'Chill Touch'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -4210,6 +4718,9 @@ export const loadedCharacters = [
       'Stealth',
       'Tracking'
     ],
+    'weapons': [
+      'Reinforced Gloves'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -4232,6 +4743,9 @@ export const loadedCharacters = [
     'traits': [
       'Sustained Defense',
       'Martial Artist'
+    ],
+    'weapons': [
+      'Kama'
     ],
     'wp': 4,
     'str': 5,
@@ -4256,6 +4770,10 @@ export const loadedCharacters = [
       'Undercover',
       'Martial Artist'
     ],
+    'weapons': [
+      'Knife',
+      'Throwing Knife'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 3,
@@ -4278,6 +4796,9 @@ export const loadedCharacters = [
     'traits': [
       'Fast',
       'Martial Artist'
+    ],
+    'weapons': [
+      'Katana'
     ],
     'wp': 4,
     'str': 5,
@@ -4313,6 +4834,9 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'MG 2'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 2,
@@ -4342,6 +4866,9 @@ export const loadedCharacters = [
       'Handyman',
       'Sturdy',
       'Unpredictable'
+    ],
+    'weapons': [
+      'Heavy Electric Baton'
     ],
     'wp': 5,
     'str': 5,
@@ -4376,6 +4903,11 @@ export const loadedCharacters = [
       'Psycho',
       'The Main Man'
     ],
+    'weapons': [
+      'Hook',
+      'Big Gun',
+      'Reinforced Gloves'
+    ],
     'wp': 8,
     'str': 3,
     'mov': 2,
@@ -4406,6 +4938,10 @@ export const loadedCharacters = [
         'type': 'Ninja'
       }
     ],
+    'weapons': [
+      'Katana',
+      'Shuriken'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 3,
@@ -4434,6 +4970,9 @@ export const loadedCharacters = [
       'Charm',
       'Mind Control Device'
     ],
+    'weapons': [
+      'Cal 0,60 Gun'
+    ],
     'wp': 8,
     'str': 5,
     'mov': 3,
@@ -4458,6 +4997,9 @@ export const loadedCharacters = [
       'Fly',
       'Funny Bomb',
       'Safe Hands'
+    ],
+    'weapons': [
+      'Laughing Gas Weapon'
     ],
     'wp': 4,
     'str': 4,
@@ -4488,6 +5030,9 @@ export const loadedCharacters = [
         'type': 'Circus'
       }
     ],
+    'weapons': [
+      'Axe'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 2,
@@ -4517,6 +5062,9 @@ export const loadedCharacters = [
         'weapon': 'Machete'
       }
     ],
+    'weapons': [
+      'Machete'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -4538,6 +5086,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Brutal'
+    ],
+    'weapons': [
+      'Assault Rifle'
     ],
     'wp': 4,
     'str': 4,
@@ -4563,6 +5114,9 @@ export const loadedCharacters = [
       'Assault',
       'Veteran'
     ],
+    'weapons': [
+      'Carbine'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 2,
@@ -4586,6 +5140,9 @@ export const loadedCharacters = [
       'Veteran',
       'Gas Mask'
     ],
+    'weapons': [
+      'Knife'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -4608,6 +5165,9 @@ export const loadedCharacters = [
     'traits': [
       'Good Aim',
       'Veteran'
+    ],
+    'weapons': [
+      'Rocket Launcher'
     ],
     'wp': 4,
     'str': 5,
@@ -4639,6 +5199,10 @@ export const loadedCharacters = [
         'type': 'Militia Brute'
       }
     ],
+    'weapons': [
+      'Long Electric Baton',
+      'Long Electric Baton'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 1,
@@ -4662,6 +5226,10 @@ export const loadedCharacters = [
       'Expert Marksman',
       'Kill Them!',
       'Veteran'
+    ],
+    'weapons': [
+      'Automatic Gun Light',
+      'Smoke Grenades 2'
     ],
     'wp': 5,
     'str': 5,
@@ -4694,6 +5262,9 @@ export const loadedCharacters = [
         'type': 'Militia Brute'
       }
     ],
+    'weapons': [
+      'Vulcan M61'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 1,
@@ -4716,6 +5287,9 @@ export const loadedCharacters = [
     'traits': [
       'Medic',
       'Veteran'
+    ],
+    'weapons': [
+      'Surgical Knife'
     ],
     'wp': 4,
     'str': 5,
@@ -4746,6 +5320,10 @@ export const loadedCharacters = [
         'weapon': 'Ice Axe'
       }
     ],
+    'weapons': [
+      'Ice Axe',
+      'Ice Axe'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -4771,6 +5349,9 @@ export const loadedCharacters = [
     'traits': [
       'Fast',
       'Criminal'
+    ],
+    'weapons': [
+      'Axe'
     ],
     'wp': 5,
     'str': 5,
@@ -4800,6 +5381,10 @@ export const loadedCharacters = [
       'Disturb',
       'Goad',
       'Mobster'
+    ],
+    'weapons': [
+      'Knife',
+      'Hidden Gun'
     ],
     'wp': 5,
     'str': 4,
@@ -4832,6 +5417,10 @@ export const loadedCharacters = [
         'name': 'Scheming',
         'count': 2
       }
+    ],
+    'weapons': [
+      'Freezing Gun',
+      'Freezing Grenades'
     ],
     'wp': 6,
     'str': 4,
@@ -4869,6 +5458,9 @@ export const loadedCharacters = [
       },
       'Power Armor MKII'
     ],
+    'weapons': [
+      'Freeze Arm weapon'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 2,
@@ -4896,6 +5488,9 @@ export const loadedCharacters = [
         'type': 'Cosplayers'
       }
     ],
+    'weapons': [
+      'Knife'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -4922,6 +5517,9 @@ export const loadedCharacters = [
         'name': 'Elite',
         'type': 'Cosplayers'
       }
+    ],
+    'weapons': [
+      'Brass Knuckles'
     ],
     'wp': 4,
     'str': 5,
@@ -4952,6 +5550,9 @@ export const loadedCharacters = [
         'name': 'Elite Boss',
         'type': ''
       }
+    ],
+    'weapons': [
+      'Warhammer'
     ],
     'wp': 6,
     'str': 3,
@@ -4985,6 +5586,9 @@ export const loadedCharacters = [
       'Criminal',
       'Informer'
     ],
+    'weapons': [
+      'Gun BB'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 2,
@@ -5008,6 +5612,9 @@ export const loadedCharacters = [
       'Brutal',
       'Sturdy',
       'Veteran'
+    ],
+    'weapons': [
+      'Brass Knuckles'
     ],
     'wp': 5,
     'str': 4,
@@ -5039,6 +5646,10 @@ export const loadedCharacters = [
       'Electric Storm',
       'Explosive Gel',
       'Sneak Attack'
+    ],
+    'weapons': [
+      'Wing-dings',
+      'Electric Baton'
     ],
     'wp': 6,
     'str': 4,
@@ -5077,6 +5688,10 @@ export const loadedCharacters = [
       },
       'Heir to the Cowl'
     ],
+    'weapons': [
+      'Electric Batons',
+      'Wing-dings'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 4,
@@ -5104,6 +5719,9 @@ export const loadedCharacters = [
       'Total Vision',
       'Brutal',
       'Watchmen'
+    ],
+    'weapons': [
+      'Shuriken'
     ],
     'wp': 6,
     'str': 4,
@@ -5137,6 +5755,10 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Bow Standard Arrow 3',
+      'Kruki'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -5167,6 +5789,10 @@ export const loadedCharacters = [
       },
       'Brutal'
     ],
+    'weapons': [
+      'Katar',
+      'Owl Knife'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -5193,6 +5819,10 @@ export const loadedCharacters = [
       'Reanimated Owl',
       'Martial Artist'
     ],
+    'weapons': [
+      'Katar',
+      'Owl Knife'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 2,
@@ -5217,6 +5847,10 @@ export const loadedCharacters = [
       'Weakness: Cold',
       'Reanimated Owl',
       'Distract'
+    ],
+    'weapons': [
+      'Katar',
+      'Owl Knife'
     ],
     'wp': 5,
     'str': 4,
@@ -5244,6 +5878,9 @@ export const loadedCharacters = [
       'Great Strategist',
       'Martial Artist',
       'Watchmen'
+    ],
+    'weapons': [
+      'Reinforced Gloves'
     ],
     'wp': 8,
     'str': 3,
@@ -5273,6 +5910,9 @@ export const loadedCharacters = [
         'type': 'Cosplayers'
       }
     ],
+    'weapons': [
+      'Modified Assault Rifle'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -5299,6 +5939,9 @@ export const loadedCharacters = [
     'traits': [
       'Delirium',
       'Unpredictable'
+    ],
+    'weapons': [
+      'Unarmed'
     ],
     'wp': 4,
     'str': 4,
@@ -5328,6 +5971,9 @@ export const loadedCharacters = [
       'Paranoid',
       'Fast'
     ],
+    'weapons': [
+      'Unarmed'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 2,
@@ -5355,6 +6001,10 @@ export const loadedCharacters = [
       'Mob',
       'Persuasive',
       'Small'
+    ],
+    'weapons': [
+      'Umbrella Cannon',
+      'Umbrella Blade'
     ],
     'wp': 7,
     'str': 5,
@@ -5388,6 +6038,10 @@ export const loadedCharacters = [
       },
       'Protect Me!',
       'Small'
+    ],
+    'weapons': [
+      'Lighter and Cigar',
+      'Brass Knuckles'
     ],
     'wp': 8,
     'str': 5,
@@ -5431,6 +6085,10 @@ export const loadedCharacters = [
       },
       'Strategist'
     ],
+    'weapons': [
+      'Knife',
+      'Umbrella'
+    ],
     'wp': 7,
     'str': 5,
     'mov': 1,
@@ -5458,6 +6116,9 @@ export const loadedCharacters = [
         'type': 'Penguin'
       }
     ],
+    'weapons': [
+      'Electric Baton'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 2,
@@ -5484,6 +6145,9 @@ export const loadedCharacters = [
       'Take Cover!!',
       'Taunt'
     ],
+    'weapons': [
+      'Reinforced Gloves'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 2,
@@ -5509,6 +6173,9 @@ export const loadedCharacters = [
         'name': 'Elite',
         'type': 'Plants'
       }
+    ],
+    'weapons': [
+      'Root'
     ],
     'wp': 4,
     'str': 5,
@@ -5544,6 +6211,9 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Sprinkling Spores'
+    ],
     'wp': 8,
     'str': 5,
     'mov': 3,
@@ -5577,6 +6247,9 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Toxic Nails'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 4,
@@ -5602,6 +6275,9 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Pickpocket'
+    ],
+    'weapons': [
+      'Tube'
     ],
     'wp': 4,
     'str': 5,
@@ -5630,6 +6306,9 @@ export const loadedCharacters = [
       'Elusive',
       'Criminal'
     ],
+    'weapons': [
+      'BiggaSticka'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -5656,6 +6335,9 @@ export const loadedCharacters = [
     'traits': [
       'Criminal',
       'Street Guy'
+    ],
+    'weapons': [
+      'Axe'
     ],
     'wp': 4,
     'str': 5,
@@ -5684,6 +6366,9 @@ export const loadedCharacters = [
       'Bodyguard',
       'Criminal'
     ],
+    'weapons': [
+      'Brass Knuckles'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -5710,6 +6395,10 @@ export const loadedCharacters = [
     'traits': [
       'Lantern',
       'Criminal'
+    ],
+    'weapons': [
+      'Automatic Gun Light',
+      'Smoke Grenades 2'
     ],
     'wp': 4,
     'str': 5,
@@ -5745,6 +6434,10 @@ export const loadedCharacters = [
       'Test Subjects',
       'Dollotrons',
       'Surgical Madness'
+    ],
+    'weapons': [
+      'Knife',
+      'Throwing Knife'
     ],
     'wp': 6,
     'str': 5,
@@ -5782,6 +6475,9 @@ export const loadedCharacters = [
       'Scientific',
       'Strategist'
     ],
+    'weapons': [
+      'Phase Strike v1'
+    ],
     'wp': 8,
     'str': 4,
     'mov': 5,
@@ -5807,6 +6503,10 @@ export const loadedCharacters = [
       'Arrest',
       'Bulletproof Vest'
     ],
+    'weapons': [
+      'Riot Gun 3',
+      'Extendable Baton'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -5831,6 +6531,10 @@ export const loadedCharacters = [
     'traits': [
       'Bulletproof Vest',
       'Street Guy'
+    ],
+    'weapons': [
+      'Custom Carbine',
+      'Extendable Baton'
     ],
     'wp': 5,
     'str': 5,
@@ -5858,6 +6562,11 @@ export const loadedCharacters = [
       'Radio',
       'Tracking'
     ],
+    'weapons': [
+      'Precision Rifle',
+      'AP Ammo',
+      'AM Ammo'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -5884,6 +6593,9 @@ export const loadedCharacters = [
       'Undercover',
       'Trickster'
     ],
+    'weapons': [
+      'Precision Gun'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 2,
@@ -5906,6 +6618,10 @@ export const loadedCharacters = [
     'traits': [
       'Hardened',
       'Rapid Fire'
+    ],
+    'weapons': [
+      'Custom SMG',
+      'Custom SMG'
     ],
     'wp': 5,
     'str': 5,
@@ -5934,6 +6650,10 @@ export const loadedCharacters = [
       'Combat Flip',
       'Small'
     ],
+    'weapons': [
+      'RiddlerKnuckles',
+      'Riddler Knuckles'
+    ],
     'wp': 4,
     'str': 4,
     'mov': 2,
@@ -5960,6 +6680,10 @@ export const loadedCharacters = [
       },
       'Distract'
     ],
+    'weapons': [
+      'Short Sickle',
+      'Short Sickle'
+    ],
     'wp': 4,
     'str': 4,
     'mov': 2,
@@ -5981,6 +6705,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Criminal'
+    ],
+    'weapons': [
+      'Mallet'
     ],
     'wp': 4,
     'str': 5,
@@ -6018,6 +6745,9 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Soultaker Sword'
+    ],
     'wp': 8,
     'str': 3,
     'mov': 3,
@@ -6054,6 +6784,9 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Sword'
+    ],
     'wp': 8,
     'str': 3,
     'mov': 3,
@@ -6082,6 +6815,10 @@ export const loadedCharacters = [
       'Stealth',
       'Weapon Master',
       'Martial Artist'
+    ],
+    'weapons': [
+      'Sword',
+      'Sword'
     ],
     'wp': 6,
     'str': 4,
@@ -6115,6 +6852,9 @@ export const loadedCharacters = [
       'Coward‘s Reward',
       'Tireless',
       'Stealth'
+    ],
+    'weapons': [
+      'Sickle'
     ],
     'wp': 6,
     'str': 4,
@@ -6151,6 +6891,10 @@ export const loadedCharacters = [
         'count': 1
       }
     ],
+    'weapons': [
+      'Dual Handguns Ranged',
+      'Dual Handguns Melee'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 4,
@@ -6181,6 +6925,10 @@ export const loadedCharacters = [
       'Searcher',
       'Shooter'
     ],
+    'weapons': [
+      'Automatic Gun',
+      'Automatic Gun'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 4,
@@ -6207,6 +6955,10 @@ export const loadedCharacters = [
       'One Shot Gun',
       'Trickster',
       'Poison Master'
+    ],
+    'weapons': [
+      'Poisoned Knife',
+      'Explosive Teeth'
     ],
     'wp': 8,
     'str': 4,
@@ -6248,6 +7000,9 @@ export const loadedCharacters = [
       },
       'Scientific'
     ],
+    'weapons': [
+      'Phase Strike v2'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 5,
@@ -6278,6 +7033,11 @@ export const loadedCharacters = [
         'name': 'Elite Boss',
         'type': ''
       }
+    ],
+    'weapons': [
+      'MG 2',
+      'Gun',
+      'Knife'
     ],
     'wp': 6,
     'str': 4,
@@ -6312,6 +7072,9 @@ export const loadedCharacters = [
       'Mastermind',
       'Puzzle Master'
     ],
+    'weapons': [
+      'Great Riddler Baton'
+    ],
     'wp': 8,
     'str': 5,
     'mov': 3,
@@ -6345,6 +7108,10 @@ export const loadedCharacters = [
       'Mastermind',
       'Safe Hands'
     ],
+    'weapons': [
+      'Mech Claw',
+      'Laser Beam Cannon'
+    ],
     'wp': 8,
     'str': 4,
     'mov': 2,
@@ -6372,6 +7139,9 @@ export const loadedCharacters = [
         'name': 'Elite',
         'type': 'Circus'
       }
+    ],
+    'weapons': [
+      'Chain'
     ],
     'wp': 5,
     'str': 4,
@@ -6401,6 +7171,10 @@ export const loadedCharacters = [
       'Follow Me!',
       'Searcher',
       'Detective'
+    ],
+    'weapons': [
+      'Bo',
+      'Flash Grenade'
     ],
     'wp': 6,
     'str': 4,
@@ -6439,6 +7213,10 @@ export const loadedCharacters = [
         'love': 'Barbara Gordon'
       }
     ],
+    'weapons': [
+      'Batlings',
+      'Shielded Bo'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -6470,6 +7248,9 @@ export const loadedCharacters = [
       'The Sidekick',
       'Boy Wonder',
       'Teen Titans Founder'
+    ],
+    'weapons': [
+      'Battlings'
     ],
     'wp': 6,
     'str': 5,
@@ -6507,6 +7288,9 @@ export const loadedCharacters = [
         'love': 'Talia Al Ghul'
       }
     ],
+    'weapons': [
+      'Batlings'
+    ],
     'wp': 5,
     'str': 4,
     'mov': 3,
@@ -6532,6 +7316,9 @@ export const loadedCharacters = [
       'Concealment',
       'Handyman'
     ],
+    'weapons': [
+      'Slingshot'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 4,
@@ -6554,6 +7341,9 @@ export const loadedCharacters = [
     'traits': [
       'Criminal',
       'Gas Mask'
+    ],
+    'weapons': [
+      'Rocket Launcher'
     ],
     'wp': 4,
     'str': 5,
@@ -6582,6 +7372,9 @@ export const loadedCharacters = [
       'Brutal',
       'Watchmen'
     ],
+    'weapons': [
+      'Improvised Weapon'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 3,
@@ -6606,6 +7399,9 @@ export const loadedCharacters = [
       'Follow Me!',
       'Criminal'
     ],
+    'weapons': [
+      'Shotgun'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -6628,6 +7424,9 @@ export const loadedCharacters = [
     'traits': [
       'Mobster',
       'Street Guy'
+    ],
+    'weapons': [
+      'Assault Rifle'
     ],
     'wp': 4,
     'str': 4,
@@ -6654,6 +7453,10 @@ export const loadedCharacters = [
     'traits': [
       'Stupid',
       'Mobster'
+    ],
+    'weapons': [
+      'Knife',
+      'SMG'
     ],
     'wp': 5,
     'str': 5,
@@ -6682,6 +7485,10 @@ export const loadedCharacters = [
       'Psychologist',
       'Persuasive',
       'Undercover'
+    ],
+    'weapons': [
+      'Drug Spray v2',
+      'Syringe Claw'
     ],
     'wp': 6,
     'str': 4,
@@ -6715,6 +7522,9 @@ export const loadedCharacters = [
       'Psychologist',
       'Discourage'
     ],
+    'weapons': [
+      'Syringe Fear Claw'
+    ],
     'wp': 8,
     'str': 4,
     'mov': 2,
@@ -6739,6 +7549,9 @@ export const loadedCharacters = [
       'Follow Me!',
       'Hidden',
       'Psychologist'
+    ],
+    'weapons': [
+      'Drug Spray v1'
     ],
     'wp': 6,
     'str': 5,
@@ -6766,6 +7579,9 @@ export const loadedCharacters = [
         'name': 'Elite',
         'type': 'Soldier of Fortune'
       }
+    ],
+    'weapons': [
+      'Rocket Launcher'
     ],
     'wp': 5,
     'str': 5,
@@ -6795,6 +7611,10 @@ export const loadedCharacters = [
         'type': 'Ninja'
       }
     ],
+    'weapons': [
+      'Bow Standard Arrow 3',
+      'Poison Arrow'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 3,
@@ -6820,6 +7640,9 @@ export const loadedCharacters = [
       'Order',
       'Detective',
       'Bulletproof Vest'
+    ],
+    'weapons': [
+      'Tonfa'
     ],
     'wp': 5,
     'str': 4,
@@ -6849,6 +7672,10 @@ export const loadedCharacters = [
         'name': 'Elite',
         'type': 'Ninja'
       }
+    ],
+    'weapons': [
+      'Bo',
+      'Smoke Grenades 2'
     ],
     'wp': 4,
     'str': 5,
@@ -6880,6 +7707,9 @@ export const loadedCharacters = [
         'type': 'Ninja'
       }
     ],
+    'weapons': [
+      'Katana'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -6909,6 +7739,9 @@ export const loadedCharacters = [
         'name': 'Elite Boss',
         'type': ''
       }
+    ],
+    'weapons': [
+      'Sickle'
     ],
     'wp': 6,
     'str': 3,
@@ -6940,6 +7773,9 @@ export const loadedCharacters = [
       'Martial Artist',
       'Watchmen'
     ],
+    'weapons': [
+      'Unarmed'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 3,
@@ -6964,6 +7800,9 @@ export const loadedCharacters = [
       'Brutal',
       'Psycho',
       'Persuasive'
+    ],
+    'weapons': [
+      'Spiked Shield'
     ],
     'wp': 5,
     'str': 4,
@@ -6995,6 +7834,9 @@ export const loadedCharacters = [
       'Bulletproof Vest',
       'Suicide Squad Member'
     ],
+    'weapons': [
+      'Knife'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 4,
@@ -7020,6 +7862,10 @@ export const loadedCharacters = [
       'Veteran',
       'Bulletproof Vest'
     ],
+    'weapons': [
+      'Maul',
+      'Knife'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -7041,6 +7887,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Informer'
+    ],
+    'weapons': [
+      'Automatic Rifle'
     ],
     'wp': 5,
     'str': 5,
@@ -7064,6 +7913,10 @@ export const loadedCharacters = [
     'traits': [
       'Hockey Gear'
     ],
+    'weapons': [
+      'Freeze Laser',
+      'Freeze Laser Expanded Beam'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -7085,6 +7938,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Hockey Gear'
+    ],
+    'weapons': [
+      'Freezing Spray'
     ],
     'wp': 4,
     'str': 5,
@@ -7113,6 +7969,9 @@ export const loadedCharacters = [
       },
       'Radio'
     ],
+    'weapons': [
+      'Hockey Stick'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -7134,6 +7993,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Hockey Gear'
+    ],
+    'weapons': [
+      'Freeze Laser MK II'
     ],
     'wp': 4,
     'str': 5,
@@ -7158,6 +8020,9 @@ export const loadedCharacters = [
       'Hockey Gear',
       'Order',
       'Bluff'
+    ],
+    'weapons': [
+      'Shovel'
     ],
     'wp': 5,
     'str': 5,
@@ -7191,6 +8056,10 @@ export const loadedCharacters = [
       'Brutal',
       'Supernatural'
     ],
+    'weapons': [
+      'Improvised Weapon',
+      'Reinforced Gloves'
+    ],
     'wp': 7,
     'str': 2,
     'mov': 2,
@@ -7214,6 +8083,9 @@ export const loadedCharacters = [
       'Hardened',
       'Brutal'
     ],
+    'weapons': [
+      'Batlings'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -7236,6 +8108,10 @@ export const loadedCharacters = [
     'traits': [
       'Hardened',
       'Street Guy'
+    ],
+    'weapons': [
+      'Sawed Off Shotgun',
+      'Gun'
     ],
     'wp': 4,
     'str': 5,
@@ -7261,6 +8137,9 @@ export const loadedCharacters = [
       'Counter Attack',
       'Follow Me!',
       'Hardened'
+    ],
+    'weapons': [
+      'Reinforced Gloves'
     ],
     'wp': 5,
     'str': 4,
@@ -7290,6 +8169,10 @@ export const loadedCharacters = [
         'count': 2
       },
       'Lantern'
+    ],
+    'weapons': [
+      'Automatic Gun Light',
+      'Taser Stunned'
     ],
     'wp': 6,
     'str': 4,
@@ -7327,6 +8210,9 @@ export const loadedCharacters = [
         'love': 'Dent'
       }
     ],
+    'weapons': [
+      'Whip'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 4,
@@ -7352,6 +8238,9 @@ export const loadedCharacters = [
         'name': 'Elite',
         'type': 'Plants'
       }
+    ],
+    'weapons': [
+      'Spore Sheath'
     ],
     'wp': 4,
     'str': 5,
@@ -7387,6 +8276,10 @@ export const loadedCharacters = [
         'love': 'Dick Grayson'
       }
     ],
+    'weapons': [
+      'Fire Blast',
+      'Reinforced Gloves'
+    ],
     'wp': 7,
     'str': 2,
     'mov': 3,
@@ -7410,6 +8303,10 @@ export const loadedCharacters = [
       'Biker Jacket',
       'Mine',
       'Mobster'
+    ],
+    'weapons': [
+      'Petrol Bomb 2',
+      'Shiv'
     ],
     'wp': 5,
     'str': 5,
@@ -7435,6 +8332,9 @@ export const loadedCharacters = [
       'Shooter',
       'Mobster'
     ],
+    'weapons': [
+      'Crossbow'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 2,
@@ -7458,6 +8358,9 @@ export const loadedCharacters = [
       'Biker Jacket',
       'Tireless',
       'Mobster'
+    ],
+    'weapons': [
+      'Maul'
     ],
     'wp': 4,
     'str': 4,
@@ -7485,6 +8388,10 @@ export const loadedCharacters = [
       'Reanimated Owl',
       'Rapid Fire',
       'Stealth'
+    ],
+    'weapons': [
+      'Katana',
+      'Throwing Knives'
     ],
     'wp': 6,
     'str': 4,
@@ -7528,6 +8435,10 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Spikes',
+      'Altered Limb'
+    ],
     'wp': 8,
     'str': 2,
     'mov': 2,
@@ -7564,6 +8475,9 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Katana'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 3,
@@ -7597,6 +8511,9 @@ export const loadedCharacters = [
         'love': 'Bruce Wayne'
       }
     ],
+    'weapons': [
+      'Mauser Gun'
+    ],
     'wp': 7,
     'str': 5,
     'mov': 3,
@@ -7622,6 +8539,10 @@ export const loadedCharacters = [
       'Veteran',
       'Bulletproof Vest'
     ],
+    'weapons': [
+      'Shotgun',
+      'Knife'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -7646,6 +8567,9 @@ export const loadedCharacters = [
     'traits': [
       'Close Combat Master',
       'Criminal'
+    ],
+    'weapons': [
+      'Reinforced Gloves'
     ],
     'wp': 4,
     'str': 4,
@@ -7674,6 +8598,9 @@ export const loadedCharacters = [
         'name': 'Elite',
         'type': 'Cosplayers'
       }
+    ],
+    'weapons': [
+      'Carbine'
     ],
     'wp': 5,
     'str': 5,
@@ -7705,6 +8632,9 @@ export const loadedCharacters = [
       'Puzzle Master',
       'Trickster'
     ],
+    'weapons': [
+      'Riddler Baton'
+    ],
     'wp': 6,
     'str': 5,
     'mov': 3,
@@ -7734,6 +8664,9 @@ export const loadedCharacters = [
       'Mastermind',
       'Puzzle Master'
     ],
+    'weapons': [
+      'Cane-Sword'
+    ],
     'wp': 8,
     'str': 5,
     'mov': 2,
@@ -7759,6 +8692,9 @@ export const loadedCharacters = [
       'Sturdy',
       'Stupid'
     ],
+    'weapons': [
+      'Reinforced Gloves'
+    ],
     'wp': 6,
     'str': 3,
     'mov': 2,
@@ -7783,6 +8719,9 @@ export const loadedCharacters = [
       'Stupid',
       'Bloodthirsty',
       'Large'
+    ],
+    'weapons': [
+      'Reinforced Gloves'
     ],
     'wp': 6,
     'str': 3,
@@ -7813,6 +8752,9 @@ export const loadedCharacters = [
         'type': 'Soldier of Fortune'
       }
     ],
+    'weapons': [
+      'Assault Rifle'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 3,
@@ -7834,6 +8776,10 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Criminal'
+    ],
+    'weapons': [
+      'Shield',
+      'Petrol Bomb'
     ],
     'wp': 4,
     'str': 5,
@@ -7857,6 +8803,9 @@ export const loadedCharacters = [
     'traits': [
       'Runaway',
       'Dirty Fighter'
+    ],
+    'weapons': [
+      'Shotgun'
     ],
     'wp': 4,
     'str': 5,
@@ -7883,6 +8832,9 @@ export const loadedCharacters = [
       'Criminal',
       'Tireless'
     ],
+    'weapons': [
+      'Baseball Bat'
+    ],
     'wp': 4,
     'str': 4,
     'mov': 2,
@@ -7908,6 +8860,10 @@ export const loadedCharacters = [
     ],
     'traits': [
       'Gunman'
+    ],
+    'weapons': [
+      'Handgun',
+      'Handgun'
     ],
     'wp': 5,
     'str': 5,
@@ -7938,6 +8894,9 @@ export const loadedCharacters = [
         'element': 'Stunned Effect'
       },
       'Lazy Cousins'
+    ],
+    'weapons': [
+      'Blastgun'
     ],
     'wp': 5,
     'str': 5,
@@ -7972,6 +8931,9 @@ export const loadedCharacters = [
       },
       'Lazy Cousins'
     ],
+    'weapons': [
+      'Assault Rifle'
+    ],
     'wp': 5,
     'str': 5,
     'mov': 2,
@@ -8003,6 +8965,10 @@ export const loadedCharacters = [
         'type': ''
       }
     ],
+    'weapons': [
+      'Thompson Dents',
+      'Knuckles Reinforced Gloves'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 2,
@@ -8024,6 +8990,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Criminal'
+    ],
+    'weapons': [
+      'Knife'
     ],
     'wp': 4,
     'str': 5,
@@ -8054,6 +9023,9 @@ export const loadedCharacters = [
         'count': 2
       }
     ],
+    'weapons': [
+      'Reinforced Gloves'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 2,
@@ -8082,6 +9054,9 @@ export const loadedCharacters = [
         'name': 'Elite',
         'type': 'Gangster'
       }
+    ],
+    'weapons': [
+      'Modified Automatic Gun Silencer'
     ],
     'wp': 4,
     'str': 4,
@@ -8114,6 +9089,9 @@ export const loadedCharacters = [
       'Psycho',
       'Unpredictable'
     ],
+    'weapons': [
+      'Hunting Knife'
+    ],
     'wp': 6,
     'str': 4,
     'mov': 4,
@@ -8140,6 +9118,9 @@ export const loadedCharacters = [
       'Fast',
       'Confusion',
       'Escape Artist'
+    ],
+    'weapons': [
+      'Long Spiked Heels'
     ],
     'wp': 6,
     'str': 5,
@@ -8172,6 +9153,10 @@ export const loadedCharacters = [
       'Martial Artist',
       'Undercover'
     ],
+    'weapons': [
+      'Knife',
+      'Owl Knife'
+    ],
     'wp': 7,
     'str': 4,
     'mov': 3,
@@ -8198,6 +9183,10 @@ export const loadedCharacters = [
       'Martial Artist',
       'Sneak Attack',
       'Stealth'
+    ],
+    'weapons': [
+      'Owl Knife',
+      'Tanto'
     ],
     'wp': 6,
     'str': 4,
@@ -8230,6 +9219,9 @@ export const loadedCharacters = [
         'type': 'Ninja'
       }
     ],
+    'weapons': [
+      'Katana'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 3,
@@ -8259,6 +9251,9 @@ export const loadedCharacters = [
         'type': 'Ninja'
       }
     ],
+    'weapons': [
+      'Katana'
+    ],
     'wp': 4,
     'str': 5,
     'mov': 3,
@@ -8286,6 +9281,10 @@ export const loadedCharacters = [
       'Batclaw',
       'Batcape'
     ],
+    'weapons': [
+      'Batlings',
+      'Reinforced Gloves'
+    ],
     'wp': 6,
     'str': 3,
     'mov': 3,
@@ -8307,6 +9306,9 @@ export const loadedCharacters = [
     'hates': [],
     'traits': [
       'Criminal'
+    ],
+    'weapons': [
+      'MG 2'
     ],
     'wp': 4,
     'str': 5,

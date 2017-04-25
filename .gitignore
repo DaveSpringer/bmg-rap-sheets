@@ -14,3 +14,5 @@ tools/src
 tools/targets/*
 tools/trait-cleanup/build
 tools/trait-cleanup/targets
+tools/weapons/build
+tools/weapons/targets

@@ -24,6 +24,14 @@ class CharacterDisplay extends React.Component {
               <label>Available In:</label>
               <label>{this.props.character.shop}</label>
             </div>
+            <div className='reputation'>
+              <label>Rep:</label>
+              <label>{this.props.character.reputation}</label>
+            </div>
+            <div className='funding'>
+              <label>Funding:</label>
+              <label>${this.props.character.funding}</label>
+            </div>
             <div className='stats'>
               <div className='stat'>
                 <label>Willpower: {this.props.character.wp}</label>
@@ -47,6 +55,28 @@ class CharacterDisplay extends React.Component {
                 <label>Special: {this.props.character.spc}</label>
               </div>
             </div>
+            <table className='weaponTable'>
+              <thead className='weaponHeader'>
+                <tr>
+                  <th></th>
+                  <th>Damage</th>
+                  <th>ROF</th>
+                  <th>Ammo</th>
+                  <th>Traits</th>
+                </tr>
+              </thead>
+              <tbody>
+              {this.props.character.weaponText.map(weapon =>
+                <tr className='weaponRow' key={weapon.key}>
+                  <td className='weaponCell'>{weapon.name}</td>
+                  <td className='weaponCell'>{weapon.damage}</td>
+                  <td className='weaponCell'>{weapon.rof}</td>
+                  <td className='weaponCell'>{weapon.ammo}</td>
+                  <td className='weaponCell'>{weapon.traits}</td>
+                </tr>
+              )}
+              </tbody>
+            </table>
           </div>
         </div>
         <div className='rightPane'>

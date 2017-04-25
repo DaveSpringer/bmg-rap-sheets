@@ -476,6 +476,17 @@ let cleanAlias = function(charAlias) {
   return resultAlias
 }
 
+let parseWeapons = function(weapon1, weapon2, weapon3, weapon4, weapon5) {
+  let weaponsArray = [ weapon1, weapon2, weapon3, weapon4, weapon5 ]
+
+  return weaponsArray.reduce(function(resultWeapons, weapon) {
+    if (weapon !== undefined && weapon.length > 0 && weapon !== '-') {
+      resultWeapons.push(weapon)
+    }
+    return resultWeapons
+  }, [])
+}
+
 let populateChar = function(charColumns) {
   let traits = parseTraits(charColumns[TRAIT_1_COL],
                            charColumns[TRAIT_2_COL],
@@ -496,6 +507,12 @@ let populateChar = function(charColumns) {
     traits.push({ name: 'Elite Boss', type: charColumns[ELITE_COL]})
   }
 
+  let weapons = parseWeapons(charColumns[WEAPON_1_COL],
+                             charColumns[WEAPON_2_COL],
+                             charColumns[WEAPON_3_COL],
+                             charColumns[WEAPON_4_COL],
+                             charColumns[WEAPON_5_COL])
+
   return {
       name: cleanName(charColumns[NAME_COL]),
       alias: cleanAlias(charColumns[ALIAS_COL]),
@@ -505,6 +522,7 @@ let populateChar = function(charColumns) {
       crews: parseCrews(charColumns[CREW_COL]),
       hates: parseCrews(charColumns[HATES_COL]),
       traits: traits,
+      weapons: weapons,
       wp: parseInt(charColumns[WILLPOWER_COL]),
       str: parseInt(charColumns[STRENGTH_COL]),
       mov: parseInt(charColumns[MOVEMENT_COL]),

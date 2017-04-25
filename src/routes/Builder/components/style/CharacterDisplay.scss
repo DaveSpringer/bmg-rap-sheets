@@ -16,3 +16,17 @@
   width: 50%;
   min-width: 200px;
 }
+
+.weaponCell, .weaponRow {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 2px;
+}
+
+.weaponTable {
+  width: 100%;
+}
+
+.weaponHeader {
+  text-align: center;
+}
