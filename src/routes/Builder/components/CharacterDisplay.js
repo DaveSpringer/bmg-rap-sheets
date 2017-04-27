@@ -59,10 +59,10 @@ class CharacterDisplay extends React.Component {
               <thead className='weaponHeader'>
                 <tr>
                   <th></th>
-                  <th>Damage</th>
+                  <th>DAM</th>
                   <th>ROF</th>
-                  <th>Ammo</th>
-                  <th>Traits</th>
+                  <th>AMMO</th>
+                  <th>TRAITS</th>
                 </tr>
               </thead>
               <tbody>

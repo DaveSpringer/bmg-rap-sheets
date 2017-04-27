@@ -5,16 +5,29 @@
   overflow-y: scroll;
 }
 
-.leftPane {
-  float: left;
-  width: 50%;
-  min-width: 200px;
-}
+@media screen and (min-width:550px) {
+  .leftPane {
+    float: left;
+    width: 50%;
+    min-width: 200px;
+  }
 
-.rightPane {
-  float: right;
-  width: 50%;
-  min-width: 200px;
+  .rightPane {
+    float: right;
+    width: 50%;
+    min-width: 200px;
+  }
+}
+@media screen and (max-width:549px) {
+  .leftPane {
+    width: 100%;
+    display: inline;
+  }
+
+  .rightPane {
+    width: 100%;
+    display: inline;
+  }
 }
 
 .weaponCell, .weaponRow {
