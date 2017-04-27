@@ -58,7 +58,7 @@ class CharacterDisplay extends React.Component {
             <table className='weaponTable'>
               <thead className='weaponHeader'>
                 <tr>
-                  <th></th>
+                  <th />
                   <th>DAM</th>
                   <th>ROF</th>
                   <th>AMMO</th>
@@ -66,23 +66,23 @@ class CharacterDisplay extends React.Component {
                 </tr>
               </thead>
               <tbody>
-              {this.props.character.weaponText.map(weapon =>
-                <tr className='weaponRow' key={weapon.key}>
-                  <td className='weaponCell'>{weapon.name}</td>
-                  <td className='weaponCell'>{weapon.damage}</td>
-                  <td className='weaponCell'>{weapon.rof}</td>
-                  <td className='weaponCell'>{weapon.ammo}</td>
-                  <td className='weaponCell'>{weapon.traits}</td>
-                </tr>
+                {this.props.character.weaponText.map(weapon =>
+                  <tr className='weaponRow' key={weapon.key}>
+                    <td className='weaponCell'>{weapon.name}</td>
+                    <td className='weaponCell'>{weapon.damage}</td>
+                    <td className='weaponCell'>{weapon.rof}</td>
+                    <td className='weaponCell'>{weapon.ammo}</td>
+                    <td className='weaponCell'>{weapon.traits}</td>
+                  </tr>
               )}
               </tbody>
             </table>
           </div>
         </div>
         <div className='rightPane'>
-          <RapSheet character={this.props.character} ></RapSheet>
+          <RapSheet character={this.props.character} />
         </div>
-        <div className='clear-right'></div>
+        <div className='clear-right' />
       </div>
     )
   }

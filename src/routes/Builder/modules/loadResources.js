@@ -56,7 +56,7 @@ const findWeapon = (populatedWeapons, weaponKey) => {
     foundWeapon = retrievedWeapon
   }
 
-  populatedWeapons.push(retrievedWeapon)
+  populatedWeapons.push(foundWeapon)
   return populatedWeapons
 }
 
