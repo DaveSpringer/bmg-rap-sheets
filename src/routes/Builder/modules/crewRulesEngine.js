@@ -1,9 +1,15 @@
 import { sortCharacters } from './common'
 
+// TODO - I have severe concerns over this method of finding a character.
+// It is effectively using a non-unique key for the find.  This is bad.
 const dumbCharFinder = (charArray, charAlias) => {
+  return charArray[dumbCharIndexer(charArray, charAlias)]
+}
+
+const dumbCharIndexer = (charArray, charAlias) => {
   for (var i = 0; i < charArray.length; i++) {
     if (charArray[i].alias !== undefined && charArray[i].alias === charAlias) {
-      return charArray[i]
+      return i
     }
   }
 }
@@ -15,6 +21,7 @@ const removeCharacter = (state, action, char) => {
   let leaders = state.leaders
   let sidekicks = state.sidekicks
   let freeAgents = state.freeAgents
+  let followRules = true
 
   if (char.rank === 'Leader') {
     leaders = state.leaders - 1
@@ -24,29 +31,54 @@ const removeCharacter = (state, action, char) => {
     freeAgents = state.freeAgents - 1
   }
 
-  let newCharacters = [...state.characters.slice(0, index), ...state.characters.slice(index + 1)]
-  let hiddenCharactersToAdd = state.hiddenCharacters.reduce((repopCharacters, character) => {
-    let sameName = character.name === char.name
-    let repopLeader = char.rank === 'Leader' &&
-      (character.rank === 'Leader' ||
-        (character.rank === 'Sidekick' && sidekicks === 1))
-    let repopSidekick = char.rank === 'Sidekick' &&
-      (character.rank === 'Sidekick' ||
-        (sidekicks === 1 && character.rank === 'Leader'))
-    if (sameName || repopLeader || repopSidekick) {
-      repopCharacters.push(character)
-    }
-    return repopCharacters
-  }, [])
-  let newAvailChars = [...state.availableCharacters, char, ...hiddenCharactersToAdd]
-  let hiddenCharacters = state.hiddenCharacters.reduce((characters, character) => {
-    if (hiddenCharactersToAdd.find((findChar) => character.alias === findChar.alias) === undefined) {
-      return characters.push(character)
-    } else {
-      return characters
-    }
-  }, [])
-  return createFinalState(state, newCharacters, newAvailChars, hiddenCharacters, leaders, sidekicks, freeAgents)
+  let newAvailChars = [...state.availableCharacters, char]
+  let newCharacters = [...state.characters]
+  newCharacters.splice(index, 1)
+  let newHiddenChars = [...state.hiddenCharacters]
+
+  if (followRules) {
+    // Struggling with the implementation of the algorithm here.
+    // Is it best to iterate over every element and so some work to determine
+    // what should happen to the characte, then have additional functions that do
+    // the actual movement?  Or, have a bunch of different iterators?
+    // Going with the first approach.
+
+    // Using a classic, ugly iterator for more control as well. This is less
+    // "functional" than it could be.
+    newHiddenChars = newHiddenChars.reduce((result, curChar) => {
+      if (curChar.name === char.name && curChar.alias === char.alias) {
+        return result
+      }
+      if (curChar.name === char.name && curChar.name !== 'Unknown') {
+        newAvailChars.push(curChar)
+        return result
+      }
+      if (leaders === 0) {
+        if (curChar.rank === 'Leader') {
+          newAvailChars.push(curChar)
+          return result
+        } else if (curChar.rank === 'Sidekick' && sidekicks === 0) {
+          newAvailChars.push(curChar)
+          return result
+        }
+      }
+      if (sidekicks !== 2) {
+        if (curChar.rank === 'Sidekick') {
+          newAvailChars.push(curChar)
+          return result
+        }
+      }
+      result.push(curChar)
+      return result
+    }, [])
+  } else {
+    // Remove the selected from the availableCharacters.
+    let location = dumbCharIndexer(state.availableCharacters, action.characterAlias)
+
+    newAvailChars.pop(location)
+  }
+
+  return createFinalState(state, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents)
 }
 
 const addCharacter = (state, action) => {
@@ -55,6 +87,7 @@ const addCharacter = (state, action) => {
     console.log('Failed to find the provided character: ' + action.characterAlias)
     return state
   }
+  let followRules = true
 
   let leaders = state.leaders
   let sidekicks = state.sidekicks
@@ -69,27 +102,52 @@ const addCharacter = (state, action) => {
   }
 
   let newCharacters = [...state.characters, char]
-  // TODO: Determine if this is changing the state tree...
-  let newAvailChars = state.availableCharacters.reduce((newAvailCharacters, character) => {
-    let sameName = character.name !== 'Unknown' && character.name === char.name && character.alias !== char.alias
-    let leaderHide = char.rank === 'Leader' && (character.rank === 'Leader' || (character.rank === 'Sidekick' && sidekicks === 1))
-    let sidekickHide = char.rank === 'Sidekick' && ((character.rank === 'Sidekick' && leaders + sidekicks === 2 || (character.rank === 'Leader' && sidekicks === 2)))
-    if (character.alias !== char.alias && !sameName && !leaderHide && !sidekickHide) {
-      newAvailCharacters.push(character)
-    }
-    return newAvailCharacters
-  }, [])
-  let charactersToHide = state.availableCharacters.reduce((hidingCharacters, character) => {
-    let sameName = character.name !== 'Unknown' && character.name === char.name && character.alias !== char.alias
-    let leaderHide = char.rank === 'Leader' && (character.rank === 'Leader' || (character.rank === 'Sidekick' && sidekicks === 1))
-    let sidekickHide = char.rank === 'Sidekick' && ((character.rank === 'Sidekick' && leaders + sidekicks === 2) || (character.rank === 'Leader' && sidekicks === 2))
-    if (character.alias !== char.alias && (sameName || leaderHide || sidekickHide)) {
-      hidingCharacters.push(character)
-    }
-    return hidingCharacters
-  }, [])
-  let hiddenCharacters = [...state.hiddenCharacters, ...charactersToHide]
-  return createFinalState(state, newCharacters, newAvailChars, hiddenCharacters, leaders, sidekicks, freeAgents)
+  let newAvailChars = [...state.availableCharacters]
+  let newHiddenChars = [...state.hiddenCharacters]
+
+  if (followRules) {
+    // Struggling with the implementation of the algorithm here.
+    // Is it best to iterate over every element and so some work to determine
+    // what should happen to the characte, then have additional functions that do
+    // the actual movement?  Or, have a bunch of different iterators?
+    // Going with the first approach.
+
+    // Using a classic, ugly iterator for more control as well. This is less
+    // "functional" than it could be.
+    newAvailChars = newAvailChars.reduce((result, curChar) => {
+      if (curChar.name === char.name && char.alias === curChar.alias) {
+        // Just skip this case.
+        return result
+      }
+      if (curChar.name === char.name && curChar.name !== 'Unknown') {
+        newHiddenChars.push(curChar)
+        return result
+      }
+      if (leaders === 1) {
+        if (curChar.rank === 'Leader') {
+          newHiddenChars.push(curChar)
+          return result
+        } else if (curChar.rank === 'Sidekick' && sidekicks > 0) {
+          newHiddenChars.push(curChar)
+          return result
+        }
+      }
+      if (sidekicks === 2) {
+        if (curChar.rank === 'Sidekick') {
+          newHiddenChars.push(curChar)
+          return result
+        }
+      }
+      result.push(curChar)
+      return result
+    }, [])
+  } else {
+    // Remove the selected from the availableCharacters.
+    let location = dumbCharIndexer(state.availableCharacters, action.characterAlias)
+
+    newAvailChars.splice(location, 1)
+  }
+  return createFinalState(state, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents)
 }
 
 const createFinalState = (

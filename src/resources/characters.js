@@ -243,7 +243,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Jason Todd',
-    'alias': 'Arkham Knight',
+    'alias': 'Arkham Knight - Preorder',
     'rank': 'Leader',
     'reputation': 105,
     'funding': 0,
