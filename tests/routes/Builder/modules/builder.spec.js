@@ -3,10 +3,12 @@ import {
   SELECT_CHARACTER,
   LOAD_RESOURCES,
   ADD_ALL_CHARACTERS,
+  FOLLOW_CREW_RULES,
   selectCrew,
   selectCharacter,
   loadResources,
   addAllCharacters,
+  followCrewRules,
   default as builderReducer
 } from 'routes/Builder/modules/builder'
 
@@ -21,7 +23,8 @@ let defaultState = {
   funding: 0,
   leaders: 0,
   sidekicks: 0,
-  freeAgents: 0
+  freeAgents: 0,
+  followRules: true
 }
 
 let filterCharacterAlias = (alias) => (character) => character.alias === alias
@@ -262,6 +265,31 @@ describe('(Redux Module) Builder', () => {
       expect(resultState.characters.length).to.not.equal(0)
       expect(resultState.availableCharacters.length).to.equal(0)
       expect(resultState.crewName).to.equal(suicideSquadCrew.name)
+    })
+  })
+
+  describe('(ActionCreator) followRules', () => {
+    let loadedState = builderReducer(defaultState, loadResources())
+
+    it('Should default to true.', () => {
+      expect(loadedState.followRules).to.equal(true)
+    })
+
+    it('Should be exported as a function.', () => {
+      expect(followCrewRules).to.be.a('function')
+    })
+
+    it('Should return an action with type FOLLOW_CREW_RULES', () => {
+      expect(followCrewRules()).to.have.property('type', FOLLOW_CREW_RULES)
+    })
+
+    it('Should have an action default of true.', () => {
+      expect(followCrewRules()).to.have.property('followRules', true)
+    })
+
+    it('Should remain true when applied multiple times.', () => {
+      let additionalState = builderReducer(loadedState, followCrewRules(true))
+      expect(additionalState.followRules).to.equal(true)
     })
   })
 })

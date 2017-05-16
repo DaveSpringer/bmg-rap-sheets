@@ -2,10 +2,11 @@ import {
   selectCharacter,
   selectCrew,
   loadResources,
+  followCrewRules,
   default as builderReducer
 } from 'routes/Builder/modules/builder'
 
-import { default as characterSelected } from 'routes/Builder/modules/crewRulesEngine'
+import { characterSelected, toggleFollowRules } from 'routes/Builder/modules/crewRulesEngine'
 
 const defaultState = {
   crewName : 'default',
@@ -18,7 +19,8 @@ const defaultState = {
   funding: 0,
   leaders: 0,
   sidekicks: 0,
-  freeAgents: 0
+  freeAgents: 0,
+  followRules: true
 }
 
 const loadedState = builderReducer(defaultState, loadResources())
@@ -48,6 +50,7 @@ const countFreeAgents = (count, character) => {
     return count
   }
 }
+let filterCharacterAlias = (alias) => (character) => character.alias === alias
 
 describe('(Redux Action Sub-Module) crewRulesEngine', () => {
 
@@ -89,7 +92,7 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(selectBatmanAgainResult.availableCharacters.reduce(countLeaders, 0)).to.equal(selectBatmanCrew.availableCharacters.reduce(countLeaders, 0))
         expect(countCharacters(selectBatmanAgainResult)).to.equal(countCharacters(selectBatmanResult))
       })
-        let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('Batgirl'))
+      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('Batgirl'))
 
       it('Should handle adding a Sidekick after a Leader', () => {
         expect(countCharacters(addSidekickResult)).to.equal(countCharacters(selectBatmanResult))
@@ -101,6 +104,14 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(deselectBatmanResult.hiddenCharacters.length).to.equal(0)
       })
 
+      it('Should not be able to add an unavailable character.', () => {
+        expect(selectBatmanResult.availableCharacters.filter(filterCharacterAlias('Batman Adam West')).length).to.equal(0)
+        expect(selectBatmanResult.hiddenCharacters.filter(filterCharacterAlias('Batman Adam West')).length).to.equal(1)
+        let selectAdamWestErr = characterSelected(selectBatmanResult, selectCharacter('Batman Adam West'))
+        expect(selectAdamWestErr.availableCharacters.filter(filterCharacterAlias('Batman Adam West')).length).to.equal(0)
+        expect(selectAdamWestErr.hiddenCharacters.filter(filterCharacterAlias('Batman Adam West')).length).to.equal(1)
+        expect(countCharacters(selectAdamWestErr)).to.equal(countCharacters(selectBatmanResult))
+      })
     })
 
     describe('(Sub-Function) Adding Sidekick', () => {
@@ -164,7 +175,38 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(countCharacters(removeFreeAgentResult)).to.equal(countCharacters(selectBatmanCrew))
       })
     })
+  })
 
+  describe('(Function) Toggle Follow Rules flag.', () => {
+
+    it('Should be able to toggle rules with noone selected.', () => {
+      let toggleWithoutSelection = toggleFollowRules(loadedState, followCrewRules(false))
+      expect(toggleWithoutSelection.followRules).to.equal(false)
+    })
+
+    it('Should add any hidden characters when switching from true to false.', () => {
+      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('Batgirl (Comic)'))
+      let firstSidekickResult = characterSelected(selectBatmanCrew, selectCharacter('Batgirl (Comic)'))
+      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter('Gordon'))
+      let addFreeAgentResult = characterSelected(selectBatmanResult, selectCharacter('Huntress'))
+      let toggleToFalseWithSelection = toggleFollowRules(addFreeAgentResult, followCrewRules(false))
+
+      expect(toggleToFalseWithSelection.hiddenCharacters.length).to.equal(0)
+      expect(countCharacters(toggleToFalseWithSelection)).to.equal(countCharacters(addSidekickResult))
+    })
+
+    it('Should be able to add many leaders when false.', () => {
+      let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
+      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman Adam West'))
+      expect(addAnotherBatman.characters.length).to.equal(2)
+    })
+
+    it('Should be able to remove an extra leader when false.', () => {
+      let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
+      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman Adam West'))
+      let addAnotherBatmanAgain = characterSelected(addAnotherBatman, selectCharacter('Batman Adam West'))
+      expect(addAnotherBatmanAgain.characters.length).to.equal(1)
+    })
   })
 
 })

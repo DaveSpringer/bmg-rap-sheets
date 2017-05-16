@@ -1,4 +1,4 @@
-import characterSelected from './crewRulesEngine'
+import { characterSelected } from './crewRulesEngine'
 import loadAllResources from './loadResources'
 import { sortCharacters } from './common'
 
@@ -8,6 +8,7 @@ export const SELECT_CREW = 'SELECT_CREW'
 export const SELECT_CHARACTER = 'SELECT_CHARACTER'
 export const LOAD_RESOURCES = 'LOAD_RESOURCES'
 export const ADD_ALL_CHARACTERS = 'ADD_ALL_CHARACTERS'
+export const FOLLOW_CREW_RULES = 'FOLLOW_CREW_RULES'
 
 // Actions
 
@@ -40,6 +41,13 @@ export function loadResources () {
 export function addAllCharacters () {
   return {
     type: ADD_ALL_CHARACTERS
+  }
+}
+
+export function followCrewRules (followRules = true) {
+  return {
+    type: FOLLOW_CREW_RULES,
+    followRules: followRules
   }
 }
 
@@ -111,6 +119,12 @@ export const addAllCharactersAction = (state, action) => {
   })
 }
 
+export const followRules = (state, action) => {
+  if (state.followRules === action.followRules) {
+    return state
+  }
+}
+
 // Action Handlers
 const ACTION_HANDLERS = {
   [SELECT_CREW] : (state, action) => {
@@ -124,6 +138,9 @@ const ACTION_HANDLERS = {
   },
   [ADD_ALL_CHARACTERS]: (state, action) => {
     return addAllCharactersAction(state, action)
+  },
+  [FOLLOW_CREW_RULES]: (state, action) => {
+    return followRules(state, action)
   }
 }
 
@@ -139,7 +156,8 @@ const initialState = {
   funding: 0,
   leaders: 0,
   sidekicks: 0,
-  freeAgents: 0
+  freeAgents: 0,
+  followRules: true
 }
 export default function builderReducer (state = initialState, action) {
   let result = state

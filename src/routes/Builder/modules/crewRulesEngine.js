@@ -175,7 +175,24 @@ const createFinalState = (
   })
 }
 
-const characterSelected = (state, action) => {
+export const toggleFollowRules = (state, action) => {
+  let newHiddenChars = state.hiddenCharacters
+  let newAvailChars = state.availableCharacters
+
+  if (action.followRules) {
+
+  } else {
+    newAvailChars = newAvailChars.concat(newHiddenChars)
+    newHiddenChars = []
+  }
+  return Object.assign({}, state, {
+    hiddenCharacters : newHiddenChars,
+    availableCharacters : newAvailChars,
+    followRules: action.followRules
+  })
+}
+
+export const characterSelected = (state, action) => {
   let char = dumbCharFinder(state.characters, action.characterAlias)
 
   if (char !== undefined) {
@@ -185,5 +202,3 @@ const characterSelected = (state, action) => {
     return addCharacter(state, action)
   }
 }
-
-export default characterSelected
