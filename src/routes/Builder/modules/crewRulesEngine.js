@@ -137,6 +137,10 @@ const addCharacter = (state, action) => {
           newHiddenChars.push(curChar)
           return result
         }
+        if (curChar.rank === 'Leader') {
+          newHiddenChars.push(curChar)
+          return result
+        }
       }
       result.push(curChar)
       return result

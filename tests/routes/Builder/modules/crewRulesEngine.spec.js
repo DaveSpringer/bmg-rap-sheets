@@ -148,6 +148,11 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(reduceSidekick).to.equal(0)
       })
 
+      it('Should not be able to add any leaders when two Sidekicks are selected.', () => {
+        let leaderCount = secondSidekickResult.availableCharacters.reduce(countLeaders, 0)
+        expect(leaderCount).to.equal(0)
+      })
+
       it('Should be able to remove first sidekick and get leaders back.', () => {
         expect(removeFirstSidekick.availableCharacters.reduce(countLeaders, 0)).to.equal(selectBatmanCrew.availableCharacters.reduce(countLeaders, 0))
       })
