@@ -209,8 +209,49 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
     it('Should be able to remove an extra leader when false.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
       let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman Adam West'))
-      let addAnotherBatmanAgain = characterSelected(addAnotherBatman, selectCharacter('Batman Adam West'))
-      expect(addAnotherBatmanAgain.characters.length).to.equal(1)
+      let addAnotherBatmanAgain = characterSelected(addAnotherBatman, selectCharacter('Batman AC'))
+      expect(addAnotherBatmanAgain.characters.length).to.equal(3)
+    })
+
+    it('Should be able to add many sidekicks when false.', () => {
+      let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
+      let firstSidekickResult = characterSelected(toggleToFalse, selectCharacter('Batgirl (Comic)'))
+      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter('Gordon'))
+      let thirdSidekickResult = characterSelected(secondSidekickResult, selectCharacter('Cyborg'))
+      expect(thirdSidekickResult.characters.reduce(countSidekicks, 0)).to.equal(3)
+    })
+
+    it('Should be able to flip to true when a valid crew is selected.', () => {
+      let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
+      let firstSidekickResult = characterSelected(toggleToFalse, selectCharacter('Batgirl (Comic)'))
+      let addFreeAgentResult = characterSelected(firstSidekickResult, selectCharacter('Huntress'))
+      let toggleToTrue = toggleFollowRules(addFreeAgentResult, followCrewRules(true))
+
+      expect(toggleToTrue.followRules).to.equal(true)
+      expect(toggleToTrue.availableCharacters.reduce(countLeaders, 0)).to.equal(0)
+      expect(toggleToTrue.availableCharacters.reduce(countSidekicks, 0)).to.equal(0)
+      expect(toggleToTrue.characters.reduce(countLeaders, 0)).to.equal(1)
+      expect(toggleToTrue.leaders).to.equal(1)
+      expect(toggleToTrue.characters.reduce(countSidekicks, 0)).to.equal(1)
+      expect(toggleToTrue.sidekicks).to.equal(1)
+      expect(toggleToTrue.characters.reduce(countFreeAgents, 0)).to.equal(1)
+      expect(toggleToTrue.freeAgents).to.equal(1)
+    })
+
+    it('Should not allow a user to enable when there are too many leaders.', () => {
+      let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
+      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman Adam West'))
+      let toggleToTrue = toggleFollowRules(addAnotherBatman, followCrewRules(true))
+      expect(toggleToTrue.followRules).to.equal(false)
+    })
+
+    it('Should not allow a user to enable when there are too many sidekicks.', () ={
+      let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
+      let firstSidekickResult = characterSelected(toggleToFalse, selectCharacter('Batgirl (Comic)'))
+      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter('Gordon'))
+      let thirdSidekickResult = characterSelected(secondSidekickResult, selectCharacter('Cyborg'))
+      let toggleToTrue = toggleFollowRules(thirdSidekickResult, followCrewRules(true))
+      expect(toggleToTrue.followRules).to.equal(false)
     })
   })
 

@@ -21,7 +21,6 @@ const removeCharacter = (state, action, char) => {
   let leaders = state.leaders
   let sidekicks = state.sidekicks
   let freeAgents = state.freeAgents
-  let followRules = true
 
   if (char.rank === 'Leader') {
     leaders = state.leaders - 1
@@ -36,7 +35,7 @@ const removeCharacter = (state, action, char) => {
   newCharacters.splice(index, 1)
   let newHiddenChars = [...state.hiddenCharacters]
 
-  if (followRules) {
+  if (state.followRules) {
     // Struggling with the implementation of the algorithm here.
     // Is it best to iterate over every element and so some work to determine
     // what should happen to the characte, then have additional functions that do
@@ -87,7 +86,6 @@ const addCharacter = (state, action) => {
     console.log('Failed to find the provided character: ' + action.characterAlias)
     return state
   }
-  let followRules = true
 
   let leaders = state.leaders
   let sidekicks = state.sidekicks
@@ -105,7 +103,7 @@ const addCharacter = (state, action) => {
   let newAvailChars = [...state.availableCharacters]
   let newHiddenChars = [...state.hiddenCharacters]
 
-  if (followRules) {
+  if (state.followRules) {
     // Struggling with the implementation of the algorithm here.
     // Is it best to iterate over every element and so some work to determine
     // what should happen to the characte, then have additional functions that do
@@ -184,7 +182,31 @@ export const toggleFollowRules = (state, action) => {
   let newAvailChars = state.availableCharacters
 
   if (action.followRules) {
+    if (state.leaders > 1 ||
+        (state.leaders === 1 && state.sidekicks > 1) ||
+        state.sidekicks > 2) {
+      console.log('Failed to flip to valid rules.')
+      return state
+    }
 
+    let oldCharacters = [...state.characters]
+
+    let resetState = Object.assign({}, state, {
+      characters : [],
+      availableCharacters : [...state.availableCharacters].concat(characters),
+      reputation : 0,
+      funding : 0,
+      hiddenCharacters : [],
+      leaders : 0,
+      sidekicks : 0,
+      freeAgents : 0
+    })
+
+    let resultState = oldCharacters.reduce((oldState, character) => {
+      return addCharacter(oldState, character)
+    }, resetState)
+
+    return resultState
   } else {
     newAvailChars = newAvailChars.concat(newHiddenChars)
     newHiddenChars = []
