@@ -14,6 +14,7 @@
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix"
   },
+  "postinstall": "npm run build",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DaveSpringer/bmg-rap-sheets.git"
