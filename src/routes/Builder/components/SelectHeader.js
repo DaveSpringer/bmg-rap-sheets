@@ -65,11 +65,9 @@ class SelectHeader extends React.Component {
 
 SelectHeader.propTypes = {
   selectCrew : React.PropTypes.func.isRequired,
-  addAllCharacters : React.PropTypes.func.isRequired,
   allCrews : React.PropTypes.array.isRequired,
   reputation: React.PropTypes.number.isRequired,
-  funding: React.PropTypes.number.isRequired,
-  crewName: React.PropTypes.string.isRequired
+  funding: React.PropTypes.number.isRequired
 }
 
 export default SelectHeader

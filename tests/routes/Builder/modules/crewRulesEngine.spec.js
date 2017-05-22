@@ -245,7 +245,7 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
       expect(toggleToTrue.followRules).to.equal(false)
     })
 
-    it('Should not allow a user to enable when there are too many sidekicks.', () ={
+    it('Should not allow a user to enable when there are too many sidekicks.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
       let firstSidekickResult = characterSelected(toggleToFalse, selectCharacter('Batgirl (Comic)'))
       let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter('Gordon'))

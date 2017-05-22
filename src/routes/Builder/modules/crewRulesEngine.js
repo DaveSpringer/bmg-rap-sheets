@@ -193,17 +193,19 @@ export const toggleFollowRules = (state, action) => {
 
     let resetState = Object.assign({}, state, {
       characters : [],
-      availableCharacters : [...state.availableCharacters].concat(characters),
+      availableCharacters : [...state.availableCharacters].concat(state.characters),
       reputation : 0,
       funding : 0,
       hiddenCharacters : [],
       leaders : 0,
       sidekicks : 0,
-      freeAgents : 0
+      freeAgents : 0,
+      followRules: action.followRules
     })
 
-    let resultState = oldCharacters.reduce((oldState, character) => {
-      return addCharacter(oldState, character)
+    let resultState = oldCharacters.reduce((interimState, character) => {
+      console.log('Current counts. Leaders: ' + interimState.leaders + '. sidekicks: ' + interimState.sidekicks + '. Free Agents: ' + interimState.freeAgents)
+      return addCharacter(interimState, { characterAlias : character.alias })
     }, resetState)
 
     return resultState
