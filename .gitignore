@@ -1,11 +1,9 @@
 .DS_STORE
 *.log
-
 node_modules
-
 coverage
-
 .idea/
+.yarn-cache
 
 tools/characters.js
 tools/lib
