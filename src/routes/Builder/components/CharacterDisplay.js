@@ -9,50 +9,50 @@ class CharacterDisplay extends React.Component {
         <div className='leftPane'>
           <div className='infoHeader'>
             <div className='charName'>
-              <label>Name:</label>
+              <label className='labelField'>Name:</label>
               <label>{this.props.character.name}</label>
             </div>
             <div className='charAlias'>
-              <label>Alias:</label>
+              <label className='labelField'>Alias:</label>
               <label>{this.props.character.alias}</label>
             </div>
             <div className='rank'>
-              <label>Rank:</label>
+              <label className='labelField'>Rank:</label>
               <label>{this.props.character.rank}</label>
             </div>
             <div className='availableIn'>
-              <label>Available In:</label>
+              <label className='labelField'>Available In:</label>
               <label>{this.props.character.shop}</label>
             </div>
             <div className='reputation'>
-              <label>Rep:</label>
+              <label className='labelField'>Rep:</label>
               <label>{this.props.character.reputation}</label>
             </div>
             <div className='funding'>
-              <label>Funding:</label>
+              <label className='labelField'>Funding:</label>
               <label>${this.props.character.funding}</label>
             </div>
             <div className='stats'>
               <div className='stat'>
-                <label>Willpower: {this.props.character.wp}</label>
+                <label className='labelField'>Willpower: {this.props.character.wp}</label>
               </div>
               <div className='stat'>
-                <label>Strength: {this.props.character.str}+</label>
+                <label className='labelField'>Strength: {this.props.character.str}+</label>
               </div>
               <div className='stat'>
-                <label>Movement: {this.props.character.mov}</label>
+                <label className='labelField'>Movement: {this.props.character.mov}</label>
               </div>
               <div className='stat'>
-                <label>Attack: {this.props.character.att}</label>
+                <label className='labelField'>Attack: {this.props.character.att}</label>
               </div>
               <div className='stat'>
-                <label>Defense: {this.props.character.def}</label>
+                <label className='labelField'>Defense: {this.props.character.def}</label>
               </div>
               <div className='stat'>
-                <label>Endurance: {this.props.character.end}</label>
+                <label className='labelField'>Endurance: {this.props.character.end}</label>
               </div>
               <div className='stat'>
-                <label>Special: {this.props.character.spc}</label>
+                <label className='labelField'>Special: {this.props.character.spc}</label>
               </div>
             </div>
             <table className='weaponTable'>

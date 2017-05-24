@@ -772,10 +772,10 @@ export const allTraits = [
   {
     'name': 'Disturb',
     'phase': 'Execute the plan',
-    'cost': '',
-    'rule': 'TBD...',
+    'cost': '1 SC',
+    'rule': 'Choose one [Seen] [Model]. That [Model]\'s [Action Counter]s cannot be reallocated during this [Round].',
     'grants': [],
-    'page': '?'
+    'page': 'AK.61'
   },
   {
     'name': 'Dodge',
@@ -1724,9 +1724,9 @@ export const allTraits = [
     'name': 'Obstinate',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'Other [Character]s may not change the allocation of [Action Counters] on this [Character].',
+    'rule': 'Other [Character]s may not change the allocation of [Action Counters] on this [Model].',
     'grants': [],
-    'page': '?'
+    'page': 'AK.61'
   },
   {
     'name': 'OCD',
@@ -2091,10 +2091,10 @@ export const allTraits = [
   {
     'name': 'Revenge',
     'phase': 'Execute the plan',
-    'cost': '',
-    'rule': 'TBD...',
+    'cost': '2 SC',
+    'rule': 'All [Friendly] [Henchmen] within 20cm gain 1 [AC]. This [AC] may exceed the [Character]\'s normal maximum.',
     'grants': [],
-    'page': '?',
+    'page': 'AK.61',
     'concern': true
   },
   {
@@ -2221,11 +2221,11 @@ export const allTraits = [
   },
   {
     'name': 'Sneaking',
-    'phase': 'Execute the plan',
+    'phase': 'VP and Casualty',
     'cost': '',
-    'rule': 'TBD...',
+    'rule': 'At the start of the [Victory Point and Casualty Recount] [Phase], this [Model] can [Move] up to 5cm, using normal [Movement] rules.',
     'grants': [],
-    'page': '?'
+    'page': 'AK.61'
   },
   {
     'name': 'Soul Armor',
@@ -2576,6 +2576,14 @@ export const allTraits = [
     'rule': 'At the end of the [VP and Casualty] phase, this [Character] can move up to 2D6 cm.',
     'grants': [],
     'page': 'F.44'
+  },
+  {
+    'name': 'Treacherous',
+    'phase': 'Crew Building',
+    'cost': '',
+    'rule': 'This [Model] cannot be the [Boss].',
+    'grants': [],
+    'page': 'AK.61'
   },
   {
     'name': 'Trickster',

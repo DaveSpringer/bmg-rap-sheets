@@ -18,6 +18,7 @@
     min-width: 200px;
   }
 }
+
 @media screen and (max-width:549px) {
   .leftPane {
     width: 100%;
@@ -42,4 +43,9 @@
 
 .weaponHeader {
   text-align: center;
+}
+
+.labelField {
+  font-weight: bold;
+  padding-right: 5px;
 }
