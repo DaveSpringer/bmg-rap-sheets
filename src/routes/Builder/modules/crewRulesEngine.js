@@ -70,11 +70,6 @@ const removeCharacter = (state, action, char) => {
       result.push(curChar)
       return result
     }, [])
-  } else {
-    // Remove the selected from the availableCharacters.
-    let location = dumbCharIndexer(state.availableCharacters, action.characterAlias)
-
-    newAvailChars.pop(location)
   }
 
   return createFinalState(state, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents)
@@ -211,6 +206,7 @@ export const toggleFollowRules = (state, action) => {
     return resultState
   } else {
     newAvailChars = newAvailChars.concat(newHiddenChars)
+    newAvailChars.sort(sortCharacters)
     newHiddenChars = []
   }
   return Object.assign({}, state, {

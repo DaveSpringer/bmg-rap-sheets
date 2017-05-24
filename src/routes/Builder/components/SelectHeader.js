@@ -47,12 +47,12 @@ class SelectHeader extends React.Component {
             <p>Start by selecting your Crew from the drop down in the top-left.
             Then click on characters to add to your list. If you scroll down, you
             will see the Rap Sheets start populating as you select crew members.</p>
-            <p>Once you're satisfied, print it out.</p>
+            <p>Once you are satisfied, print it out.</p>
             <h4>Notes</h4>
             <p>Printing works best on Firefox. Chrome is too smart for its own
             good. Internet Explorer is better than it used to be, but remains
             inconsistent.</p>
-            <p>This site is really and truly in alpha. This is not a modern video
+            <p>This site is really and truly in <b>alpha</b>. This is not a modern video
             game beta-that-is-actually-a-demo or a Google beta-that-is-a-better-product-than-the-rest-of-the-world-can-make.</p>
             <p>It is an <b>alpha</b>. Buggy. All features are not implemented.</p>
             <p>If things stop working, please select a new crew or hit refresh.</p>

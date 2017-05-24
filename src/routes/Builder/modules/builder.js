@@ -1,4 +1,4 @@
-import { characterSelected } from './crewRulesEngine'
+import { characterSelected, toggleFollowRules } from './crewRulesEngine'
 import loadAllResources from './loadResources'
 import { sortCharacters } from './common'
 
@@ -112,10 +112,32 @@ export const addAllCharactersAction = (state, action) => {
     console.log('Received a default crew. Skipping.')
     return state
   }
-  return Object.assign({}, state, {
+  let opState = state
+  if (state.followRules) {
+    opState = followRules(state, { followRules : false })
+  }
+  let newCharacters = [...opState.characters, ...opState.hiddenCharacters, ...opState.availableCharacters]
+  let leaders = 0
+  let sidekicks = 0
+  let freeAgents = 0
+
+  newCharacters.forEach((newChar) => {
+    if (newChar.rank === 'Leader') {
+      ++leaders
+    } else if (newChar.rank === 'Sidekick') {
+      ++sidekicks
+    } else if (newChar.rank === 'Free Agent') {
+      ++freeAgents
+    }
+  })
+
+  return Object.assign({}, opState, {
     availableCharacters : [],
     hiddenCharacters : [],
-    characters: [...state.characters, ...state.hiddenCharacters, ...state.availableCharacters]
+    characters: newCharacters,
+    leaders: leaders,
+    sidekicks: sidekicks,
+    freeAgents: freeAgents
   })
 }
 
@@ -123,6 +145,7 @@ export const followRules = (state, action) => {
   if (state.followRules === action.followRules) {
     return state
   }
+  return toggleFollowRules(state, action)
 }
 
 // Action Handlers

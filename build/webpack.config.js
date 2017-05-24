@@ -134,6 +134,37 @@ config.module.rules.push({
     ],
   })
 })
+
+// Component styles in css (ooph)
+config.module.rules.push({
+  test: /\.css$/,
+  loader: extractStyles.extract({
+    fallback: 'style-loader',
+    use: [
+      {
+        loader: 'css-loader',
+        options: {
+          sourceMap: project.sourcemaps,
+          minimize: {
+            autoprefixer: {
+              add: true,
+              remove: true,
+              browsers: ['last 2 versions'],
+            },
+            discardComments: {
+              removeAll : true,
+            },
+            discardUnused: false,
+            mergeIdents: false,
+            reduceIdents: false,
+            safe: true,
+            sourcemap: project.sourcemaps,
+          },
+        },
+      }
+    ]
+  })
+})
 config.plugins.push(extractStyles)
 
 // Images
