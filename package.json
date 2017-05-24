@@ -9,7 +9,7 @@
     "build": "npm run clean && cross-env NODE_ENV=production npm run compile",
     "start": "cross-env NODE_ENV=development PORT=3000 node build/scripts/start",
     "serve": "cross-env NODE_ENV=production node build/scripts/start",
-    "test": "cross-env NODE_ENV=test PORT=3000 karma start build/karma.config",
+    "test": "cross-env NODE_ENV=test karma start build/karma.config",
     "test:watch": "npm test -- --watch",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix"
