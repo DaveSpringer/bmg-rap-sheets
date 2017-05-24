@@ -62,6 +62,11 @@ if (project.env === 'development') {
   // the web server and not the app server, but this helps to demo the
   // server in production.
   app.use(express.static(path.resolve(project.basePath, project.outDir)))
+
+  // Trying to resolve the "Failed to GET Builder" error...
+  app.use(function(req, res, next) {
+    res.redirect('/')
+  })
 }
 
 module.exports = app
