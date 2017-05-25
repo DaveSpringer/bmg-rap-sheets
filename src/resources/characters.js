@@ -149,6 +149,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 111,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'lc'
     ],
@@ -1690,8 +1691,7 @@ export const loadedCharacters = [
       'Self-Discipline',
       'Mastermind',
       'Psycho',
-      'Undercover',
-      'Undead'
+      'Undercover'
     ],
     'weapons': [
       'Shiv'
@@ -1706,7 +1706,7 @@ export const loadedCharacters = [
     'shop': 'Promotional (Available on Holidays)'
   },
   {
-    'name': 'George „Digger“ Harkness',
+    'name': 'George "Digger" Harkness',
     'alias': 'Captain Boomerang',
     'rank': 'Free Agent',
     'reputation': 82,
@@ -1744,7 +1744,7 @@ export const loadedCharacters = [
     'shop': 'CAPTAIN BOOMERANG'
   },
   {
-    'name': 'George „Digger“ Harkness',
+    'name': 'George "Digger" Harkness',
     'alias': 'Captain Boomerang (Suicide Squad)',
     'rank': 'Free Agent',
     'reputation': 48,
@@ -1980,6 +1980,7 @@ export const loadedCharacters = [
     'rank': 'Free Agent',
     'reputation': 116,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       '*'
     ],
@@ -3419,6 +3420,7 @@ export const loadedCharacters = [
     'rank': 'Free Agent',
     'reputation': 81,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'co'
     ],
@@ -3665,6 +3667,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 80,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'jk'
     ],
@@ -3697,6 +3700,7 @@ export const loadedCharacters = [
     'rank': 'Sidekick',
     'reputation': 90,
     'funding': 300,
+    'cutoff': 5,
     'crews': [
       'jk'
     ],
@@ -3733,6 +3737,7 @@ export const loadedCharacters = [
     'rank': 'Sidekick',
     'reputation': 75,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'jk'
     ],
@@ -3766,6 +3771,7 @@ export const loadedCharacters = [
     'rank': 'Sidekick',
     'reputation': 90,
     'funding': 300,
+    'cutoff': 5,
     'crews': [
       'jk'
     ],
@@ -4420,6 +4426,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 105,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'jk'
     ],
@@ -4491,6 +4498,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 100,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'jk'
     ],
@@ -4592,6 +4600,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 130,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'jk'
     ],
@@ -4751,6 +4760,7 @@ export const loadedCharacters = [
     'rank': 'Free Agent',
     'reputation': 95,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       '*'
     ],
@@ -4861,6 +4871,7 @@ export const loadedCharacters = [
     'rank': 'Sidekick',
     'reputation': 85,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'ls'
     ],
@@ -5044,6 +5055,7 @@ export const loadedCharacters = [
     'rank': 'Free Agent',
     'reputation': 136,
     'funding': 500,
+    'cutoff': 8,
     'crews': [
       '*'
     ],
@@ -7103,6 +7115,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 105,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'jk'
     ],
@@ -7213,6 +7226,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 85,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'rd'
     ],
@@ -7249,6 +7263,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 123,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'rd'
     ],
@@ -7664,6 +7679,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 80,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'sc'
     ],
@@ -8349,6 +8365,7 @@ export const loadedCharacters = [
     'rank': 'Sidekick',
     'reputation': 69,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'tf'
     ],
@@ -8538,6 +8555,7 @@ export const loadedCharacters = [
     'rank': 'Henchman',
     'reputation': 61,
     'funding': 100,
+    'cutoff': 6,
     'crews': [
       'co'
     ],
@@ -8615,6 +8633,7 @@ export const loadedCharacters = [
     'rank': 'Sidekick',
     'reputation': 71,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'ls'
     ],
@@ -8654,6 +8673,7 @@ export const loadedCharacters = [
     'rank': 'Sidekick',
     'reputation': 75,
     'funding': 250,
+    'cutoff': 6,
     'crews': [
       'ls'
     ],
