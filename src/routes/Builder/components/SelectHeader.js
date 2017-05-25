@@ -54,10 +54,17 @@ class SelectHeader extends React.Component {
             inconsistent.</p>
             <p>This site is really and truly in <b>alpha</b>. This is not a modern video
             game beta-that-is-actually-a-demo or a Google beta-that-is-a-better-product-than-the-rest-of-the-world-can-make.</p>
+          <p>Trait descriptions here are not directly copied from the rule book,
+            and the rule book is the final authority. I didn't realize there was
+            a huge difference between Character and Model until probably the last
+            15 traits, so there are many traits that incorrectly reference Character
+            when it could be Model. If you find a trait that needs to be corrected, please&nbsp;
+            <a target='_blank' href='https://github.com/DaveSpringer/bmg-rap-sheets/issues/new'>open an issue on github</a>.</p>
             <p>It is an <b>alpha</b>. Buggy. All features are not implemented.</p>
             <p>If things stop working, please select a new crew or hit refresh.</p>
-            <p>Please be patient as it grows into something more useful.</p></div>
-          <p>For more information, please consult the <a target='_blank' href='https://github.com/DaveSpringer/bmg-rap-sheets/blob/master/README.md'>README.md</a>.</p>
+            <p>Please be patient as it grows into something more useful.</p>
+            <p>For more information, please consult the <a target='_blank' href='https://github.com/DaveSpringer/bmg-rap-sheets/blob/master/README.md'>README.md</a>.</p>
+          </div>
         </Modal>
       </div>
     )
