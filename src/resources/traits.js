@@ -178,7 +178,7 @@ export const allTraits = [
     'name': 'Backpack',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'TBD...',
+    'rule': 'This [Model] can [Move] with a [Loot Objective Marker] without paying the 1 [MC] cost.',
     'grants': [],
     'page': '?',
     'concern': true
@@ -1154,9 +1154,9 @@ export const allTraits = [
     'name': 'Handsome Hunka Hunka',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'TBD...',
+    'rule': 'See this [Character]\'s File.',
     'grants': [],
-    'page': '?'
+    'page': 'See file.'
   },
   {
     'name': 'Handyman',

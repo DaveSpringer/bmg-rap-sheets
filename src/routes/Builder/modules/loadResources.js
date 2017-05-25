@@ -37,6 +37,14 @@ const findTrait = (populatedTraits, traitName) => {
     }
   }
   populatedTraits.push(foundTrait)
+  if (foundTrait.grants !== undefined && foundTrait.grants.length > 0) {
+    foundTrait.grants.forEach((traitKey) => {
+      let retrievedTrait = allTraits.find((trait) => (trait !== null && trait.name === traitKey))
+      if (retrievedTrait !== undefined) {
+        populatedTraits.push(retrievedTrait)
+      }
+    })
+  }
   return populatedTraits
 }
 

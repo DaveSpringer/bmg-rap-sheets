@@ -261,7 +261,7 @@ export const loadedCharacters = [
       'Strategist',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Militia Brute'
       }
     ],
     'weapons': [
@@ -497,6 +497,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 150,
     'funding': 0,
+    'cutoff': 5,
     'crews': [
       'bn'
     ],
@@ -537,6 +538,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 93,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'bn'
     ],
@@ -751,6 +753,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 130,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'bt'
     ],
@@ -825,6 +828,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 144,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'bt'
     ],
@@ -859,6 +863,7 @@ export const loadedCharacters = [
     'rank': 'Leader',
     'reputation': 100,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'bt'
     ],
@@ -1113,7 +1118,7 @@ export const loadedCharacters = [
       'Military Tradition',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Soldure of Fortune'
       }
     ],
     'weapons': [
@@ -1249,7 +1254,7 @@ export const loadedCharacters = [
       'Strategist',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Gangster'
       }
     ],
     'weapons': [
@@ -1850,7 +1855,7 @@ export const loadedCharacters = [
       'The Untouchable',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Gangster'
       }
     ],
     'weapons': [
@@ -1871,6 +1876,7 @@ export const loadedCharacters = [
     'rank': 'Free Agent',
     'reputation': 66,
     'funding': 0,
+    'cutoff': 5,
     'crews': [
       '*'
     ],
@@ -1908,6 +1914,7 @@ export const loadedCharacters = [
     'rank': 'Free Agent',
     'reputation': 69,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       '*'
     ],
@@ -2145,7 +2152,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
-    'alias': 'Clown',
+    'alias': 'Clown (Tube)',
     'rank': 'Henchman',
     'reputation': 14,
     'funding': 0,
@@ -2170,7 +2177,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
-    'alias': 'Clown',
+    'alias': 'Clown (Knife)',
     'rank': 'Henchman',
     'reputation': 15,
     'funding': 0,
@@ -2195,7 +2202,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
-    'alias': 'Clown',
+    'alias': 'Clown (Shield)',
     'rank': 'Henchman',
     'reputation': 16,
     'funding': 0,
@@ -2280,7 +2287,7 @@ export const loadedCharacters = [
       'Take Cover!!',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'S.W.A.T.'
       }
     ],
     'weapons': [
@@ -2334,7 +2341,7 @@ export const loadedCharacters = [
       'Veteran',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'S.W.A.T.'
       }
     ],
     'weapons': [
@@ -4034,6 +4041,7 @@ export const loadedCharacters = [
     'rank': 'Free Agent',
     'reputation': 99,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'bt',
       'ga'
@@ -4074,6 +4082,7 @@ export const loadedCharacters = [
     'rank': 'Free Agent',
     'reputation': 109,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       'bt',
       'ga'
@@ -4460,7 +4469,7 @@ export const loadedCharacters = [
       },
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Cosplayers'
       }
     ],
     'weapons': [
@@ -4981,7 +4990,7 @@ export const loadedCharacters = [
       'Veteran',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'S.W.A.T.'
       }
     ],
     'weapons': [
@@ -5698,7 +5707,7 @@ export const loadedCharacters = [
       'Brutal',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Circus'
       }
     ],
     'weapons': [
@@ -5812,7 +5821,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Richard Grayson',
-    'alias': 'Nightwing',
+    'alias': 'Nightwing (AC)',
     'rank': 'Sidekick',
     'reputation': 95,
     'funding': 0,
@@ -5902,7 +5911,7 @@ export const loadedCharacters = [
       'Martial Artist',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Ninja'
       }
     ],
     'weapons': [
@@ -6358,7 +6367,7 @@ export const loadedCharacters = [
       'Discourage',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Plants'
       }
     ],
     'weapons': [
@@ -6394,7 +6403,7 @@ export const loadedCharacters = [
       'Confusion',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Plants'
       }
     ],
     'weapons': [
@@ -6892,7 +6901,7 @@ export const loadedCharacters = [
       'Grand Strategist',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Ninja'
       }
     ],
     'weapons': [
@@ -6931,7 +6940,7 @@ export const loadedCharacters = [
       'Persuasive',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Ninja'
       }
     ],
     'weapons': [
@@ -7181,7 +7190,7 @@ export const loadedCharacters = [
       'Volunteer',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Special Forces'
       }
     ],
     'weapons': [
@@ -7887,7 +7896,7 @@ export const loadedCharacters = [
       'Large',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Penguins'
       }
     ],
     'weapons': [
@@ -8189,6 +8198,7 @@ export const loadedCharacters = [
     'rank': 'Free Agent',
     'reputation': 128,
     'funding': 0,
+    'cutoff': 6,
     'crews': [
       '*'
     ],
@@ -8410,6 +8420,7 @@ export const loadedCharacters = [
     'crews': [
       'bt'
     ],
+    'cutoff': 6,
     'hates': [],
     'traits': [
       'Fly',
@@ -8582,7 +8593,7 @@ export const loadedCharacters = [
       'Pollution Hate',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Plants'
       }
     ],
     'weapons': [
@@ -8622,7 +8633,7 @@ export const loadedCharacters = [
       },
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Ninja'
       }
     ],
     'weapons': [
@@ -9112,7 +9123,7 @@ export const loadedCharacters = [
       'Sturdy',
       {
         'name': 'Elite Boss',
-        'type': ''
+        'type': 'Gangster'
       }
     ],
     'weapons': [
