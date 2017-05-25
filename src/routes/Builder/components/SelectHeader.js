@@ -57,6 +57,7 @@ class SelectHeader extends React.Component {
             <p>It is an <b>alpha</b>. Buggy. All features are not implemented.</p>
             <p>If things stop working, please select a new crew or hit refresh.</p>
             <p>Please be patient as it grows into something more useful.</p></div>
+          <p>For more information, please consult the <a target='_blank' href='https://github.com/DaveSpringer/bmg-rap-sheets/blob/master/README.md'>README.md</a>.</p>
         </Modal>
       </div>
     )
