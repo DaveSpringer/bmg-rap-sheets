@@ -4,11 +4,13 @@ import {
   LOAD_RESOURCES,
   ADD_ALL_CHARACTERS,
   FOLLOW_CREW_RULES,
+  RESET_CREW,
   selectCrew,
   selectCharacter,
   loadResources,
   addAllCharacters,
   followCrewRules,
+  resetCrew,
   default as builderReducer
 } from 'routes/Builder/modules/builder'
 
@@ -195,7 +197,6 @@ describe('(Redux Module) Builder', () => {
 
     it('Suicide Squad should have Free Agents that are not generically available.', () => {
       expect(suicideSquadPopped).to.be.an('object')
-      console.log('Here it is: ' + JSON.stringify(suicideSquadPopped.availableCharacters.filter(filterCharacterAlias('Harley Quinn'))))
       expect(suicideSquadPopped.availableCharacters.filter(filterCharacterAlias('Katana (Suicide Squad)')).length).to.be.above(0)
     })
 
@@ -205,6 +206,18 @@ describe('(Redux Module) Builder', () => {
       suicideSquadPopped.availableCharacters.forEach((character) => {
         expect(character.rank).to.be.a('string')
       })
+    })
+
+    let watchmenCrew = loadedState.allCrews.find((crew) => crew.id === 'wm')
+    let watchmenCrewPopped = builderReducer(loadedState, selectCrew(watchmenCrew))
+    it('Should be able to select the Watchmen.', () => {
+      expect(watchmenCrewPopped).to.be.an('object')
+      expect(watchmenCrewPopped.crewName).to.equal('Watchmen')
+      expect(watchmenCrewPopped.crewId).to.equal('wm')
+    })
+
+    it('Should only have the 5 Watchmen.', () => {
+      expect(watchmenCrewPopped.availableCharacters.length).to.equal(5)
     })
   })
 
@@ -290,6 +303,40 @@ describe('(Redux Module) Builder', () => {
     it('Should remain true when applied multiple times.', () => {
       let additionalState = builderReducer(loadedState, followCrewRules(true))
       expect(additionalState.followRules).to.equal(true)
+    })
+  })
+
+  describe('(ActionCreator) resetCrew', () => {
+    let loadedState = builderReducer(defaultState, loadResources())
+
+    describe('Suicide-Squad Reset Validator', () => {
+      let suicideSquadCrew = loadedState.allCrews.find((crew) => crew.id === 'ss')
+      let suicideSquadPopped = builderReducer(loadedState, selectCrew(suicideSquadCrew))
+      let allSelected = builderReducer(suicideSquadPopped, addAllCharacters())
+
+      it('Pretest validation', () => {
+        expect(allSelected.characters.length).to.equal(suicideSquadPopped.availableCharacters.length)
+      })
+
+      it('Should be able to reset an all selected crew.', () => {
+        let resetCrewState = builderReducer(allSelected, resetCrew())
+        expect(resetCrewState.availableCharacters.length).to.equal(suicideSquadPopped.availableCharacters.length)
+      })
+    })
+
+    describe('Batman Reset Validator', () => {
+      let batmanCrew = loadedState.allCrews.find((crew) => crew.id === 'bt')
+      let batmanCrewPopped = builderReducer(loadedState, selectCrew(batmanCrew))
+      let allSelected = builderReducer(batmanCrewPopped, addAllCharacters())
+
+      it('Pretest validation', () => {
+        expect(allSelected.characters.length).to.equal(batmanCrewPopped.availableCharacters.length)
+      })
+
+      it('Should be able to reset an all selected crew.', () => {
+        let resetCrewState = builderReducer(allSelected, resetCrew())
+        expect(resetCrewState.availableCharacters.length).to.equal(batmanCrewPopped.availableCharacters.length)
+      })
     })
   })
 })

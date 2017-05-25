@@ -11,6 +11,7 @@ class Builder extends React.Component {
     super()
     this.addAllCharactersClick = this.addAllCharactersClick.bind(this)
     this.handleRulesChange = this.handleRulesChange.bind(this)
+    this.handleResetCrew = this.handleResetCrew.bind(this)
   }
   componentWillMount () {
     // Load up the various files
@@ -25,6 +26,10 @@ class Builder extends React.Component {
 
   handleRulesChange (event) {
     this.props.followCrewRules(event.target.checked)
+  }
+
+  handleResetCrew (event) {
+    this.props.resetCrew()
   }
 
   render () {
@@ -51,6 +56,8 @@ class Builder extends React.Component {
                 onChange={this.handleRulesChange} />
               <span className='spacerSpan' />
               <button className='addAllBtn' onClick={this.addAllCharactersClick}>Add All Models</button>
+              <span className='spacerSpan' />
+              <button className='addAllBtn' onClick={this.handleResetCrew}>Reset</button>
             </div>
             <div id='available-characters' className='character-area'>
               {availableCharacters.map(character =>
@@ -105,7 +112,8 @@ Builder.propTypes = {
   selectCharacter : React.PropTypes.func.isRequired,
   loadResources : React.PropTypes.func.isRequired,
   addAllCharacters : React.PropTypes.func.isRequired,
-  followCrewRules : React.PropTypes.func.isRequired
+  followCrewRules : React.PropTypes.func.isRequired,
+  resetCrew : React.PropTypes.func.isRequired
 }
 
 export default Builder

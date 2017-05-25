@@ -54,7 +54,7 @@ class SelectHeader extends React.Component {
             inconsistent.</p>
             <p>This site is really and truly in <b>alpha</b>. This is not a modern video
             game beta-that-is-actually-a-demo or a Google beta-that-is-a-better-product-than-the-rest-of-the-world-can-make.</p>
-          <p>Trait descriptions here are not directly copied from the rule book,
+            <p>Trait descriptions here are not directly copied from the rule book,
             and the rule book is the final authority. I didn't realize there was
             a huge difference between Character and Model until probably the last
             15 traits, so there are many traits that incorrectly reference Character

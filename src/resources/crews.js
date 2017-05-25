@@ -40,7 +40,23 @@ export const allCrews = [
     id : 'bm'
   }, {
     name : 'Watchmen',
-    id : 'wm'
+    id : 'wm',
+    roster: [{
+      name: 'Rorschach',
+      boss: 'no'
+    }, {
+      name: 'Comedian',
+      boss: 'no'
+    }, {
+      name: 'Ozymandias',
+      boss: 'no'
+    }, {
+      name: 'Niteowl',
+      boss: 'no'
+    }, {
+      name: 'Silk Spectre II',
+      boss: 'no'
+    }]
   }, {
     name : 'Riddler',
     id : 'rd'

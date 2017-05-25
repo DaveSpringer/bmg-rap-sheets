@@ -1,5 +1,12 @@
 import { connect } from 'react-redux'
-import { selectCrew, selectCharacter, loadResources, addAllCharacters, followCrewRules } from '../modules/builder'
+import {
+  selectCrew,
+  selectCharacter,
+  loadResources,
+  addAllCharacters,
+  followCrewRules,
+  resetCrew
+} from '../modules/builder'
 
 import Builder from '../components/Builder'
 
@@ -8,7 +15,8 @@ const mapDispatchToProps = {
   selectCharacter,
   loadResources,
   addAllCharacters,
-  followCrewRules
+  followCrewRules,
+  resetCrew
 }
 
 const mapStateToProps = (state) => ({

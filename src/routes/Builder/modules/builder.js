@@ -9,6 +9,7 @@ export const SELECT_CHARACTER = 'SELECT_CHARACTER'
 export const LOAD_RESOURCES = 'LOAD_RESOURCES'
 export const ADD_ALL_CHARACTERS = 'ADD_ALL_CHARACTERS'
 export const FOLLOW_CREW_RULES = 'FOLLOW_CREW_RULES'
+export const RESET_CREW = 'RESET_CREW'
 
 // Actions
 
@@ -51,10 +52,19 @@ export function followCrewRules (followRules = true) {
   }
 }
 
+export function resetCrew () {
+  return {
+    type: RESET_CREW
+  }
+}
+
 export const actions = {
   selectCrew,
   selectCharacter,
-  loadResources
+  loadResources,
+  addAllCharacters,
+  followCrewRules,
+  resetCrew
 }
 
 export const selectCrewAction = (state, action) => {
@@ -96,6 +106,7 @@ export const selectCrewAction = (state, action) => {
   resultAvail.sort(sortCharacters)
   return Object.assign({}, state, {
     crewName: crewName,
+    crewId: action.crew.id,
     availableCharacters : resultAvail,
     characters : [],
     hiddenCharacters : [],
@@ -148,6 +159,15 @@ export const followRules = (state, action) => {
   return toggleFollowRules(state, action)
 }
 
+export const resetCurrentCrew = (state, action) => {
+  if (state.crewId === 'na' || state.crewName === 'default') {
+    return state
+  }
+  // Find the crew object
+  let crew = state.allCrews.find((crew) => crew.id === state.crewId && crew.name === state.crewName)
+  return selectCrewAction(state, { crew: crew })
+}
+
 // Action Handlers
 const ACTION_HANDLERS = {
   [SELECT_CREW] : (state, action) => {
@@ -164,11 +184,15 @@ const ACTION_HANDLERS = {
   },
   [FOLLOW_CREW_RULES]: (state, action) => {
     return followRules(state, action)
+  },
+  [RESET_CREW]: (state, action) => {
+    return resetCurrentCrew(state, action)
   }
 }
 
 const initialState = {
   crewName : 'default',
+  crewId : 'na',
   characters: [],
   availableCharacters: [],
   allCharacters: [],
