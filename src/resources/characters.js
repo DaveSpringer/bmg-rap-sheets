@@ -144,6 +144,42 @@ export const loadedCharacters = [
     'shop': 'Promotional'
   },
   {
+    'name': 'Alexander Joseph Luthor',
+    'alias': 'Lex Luthor',
+    'rank': 'Leader',
+    'reputation': 111,
+    'funding': 0,
+    'crews': [
+      'lc'
+    ],
+    'hates': [],
+    'traits': [
+      'Exhaustive Planner',
+      'Goad',
+      'Grand Strategist',
+      'Intimidate',
+      'Invaluable',
+      'Kryptonite',
+      'Mastermind',
+      'Leadership',
+      'Lord of Business',
+      'Scientific',
+      'Energy Field',
+      'Absolute Power'
+    ],
+    'weapons': [
+      'Unarmed'
+    ],
+    'wp': 8,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 7,
+    'spc': 3,
+    'shop': 'LEXCORP INDUSTRIES'
+  },
+  {
     'name': 'Michael Sommers',
     'alias': 'Alpha',
     'rank': 'Henchman',
@@ -272,7 +308,7 @@ export const loadedCharacters = [
     'def': 4,
     'end': 7,
     'spc': 3,
-    'shop': ''
+    'shop': 'Promotional'
   },
   {
     'name': 'Oliver Queen',
@@ -1091,7 +1127,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': ''
+    'shop': 'BIRD AND MERCS'
   },
   {
     'name': 'Dinah Drake Lance',
@@ -1662,7 +1698,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': ''
+    'shop': 'Promotional (Available on Holidays)'
   },
   {
     'name': 'George „Digger“ Harkness',
@@ -1827,7 +1863,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': ''
+    'shop': 'FALCONE CRIME FAMILY'
   },
   {
     'name': 'Selina Kyle',
@@ -1967,6 +2003,120 @@ export const loadedCharacters = [
     'shop': 'CLAYFACE'
   },
   {
+    'name': 'Unknown',
+    'alias': 'LexCorp Heavy Trooper',
+    'rank': 'Henchman',
+    'reputation': 55,
+    'funding': 500,
+    'crews': [
+      'lc'
+    ],
+    'hates': [],
+    'traits': [
+      'Cybernetic',
+      'Invaluable',
+      'Large',
+      'Medium Armor'
+    ],
+    'weapons': [
+      'Laser Cannon',
+      'Reinforced Gloves'
+    ],
+    'wp': 5,
+    'str': 4,
+    'mov': 2,
+    'att': 3,
+    'def': 2,
+    'end': 6,
+    'spc': 3,
+    'shop': 'LEXCORP HEAVY TROOPER'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'LexCorp Trooper 1',
+    'rank': 'Henchman',
+    'reputation': 34,
+    'funding': 0,
+    'crews': [
+      'lc'
+    ],
+    'hates': [],
+    'traits': [
+      'Cybernetic',
+      'Close Combat Master',
+      'Reinforced Gloves',
+      'Medium Armor'
+    ],
+    'weapons': [
+      'Reinforced Gloves'
+    ],
+    'wp': 5,
+    'str': 4,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 4,
+    'spc': 3,
+    'shop': 'LEXCORP INDUSTRIES'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'LexCorp Trooper 2',
+    'rank': 'Henchman',
+    'reputation': 38,
+    'funding': 0,
+    'crews': [
+      'lc'
+    ],
+    'hates': [],
+    'traits': [
+      'Cybernetic',
+      'Follow Me!',
+      'Reinforced Gloves',
+      'Medium Armor'
+    ],
+    'weapons': [
+      'Reinforced Gloves',
+      'Electric Blade'
+    ],
+    'wp': 5,
+    'str': 4,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 4,
+    'spc': 3,
+    'shop': 'LEXCORP INDUSTRIES'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'LexCorp Trooper 3',
+    'rank': 'Henchman',
+    'reputation': 37,
+    'funding': 300,
+    'crews': [
+      'lc'
+    ],
+    'hates': [],
+    'traits': [
+      'Cybernetic',
+      'Reinforced Gloves',
+      'Medium Armor'
+    ],
+    'weapons': [
+      'Hand Cannon',
+      'Reinforced Gloves'
+    ],
+    'wp': 5,
+    'str': 4,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 4,
+    'spc': 3,
+    'shop': 'LEXCORP INDUSTRIES'
+  },
+  {
     'name': 'Sullivan',
     'alias': 'Clover',
     'rank': 'Henchman',
@@ -1991,7 +2141,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': ''
+    'shop': 'BIRD AND MERCS'
   },
   {
     'name': 'Unknown',
@@ -2346,7 +2496,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': ''
+    'shop': 'BIRD AND MERCS'
   },
   {
     'name': 'Victor Stone',
@@ -2761,7 +2911,7 @@ export const loadedCharacters = [
     'def': 1,
     'end': 6,
     'spc': 3,
-    'shop': ''
+    'shop': 'PROFESSOR PYG & DOLLOTRONS'
   },
   {
     'name': 'Unknown',
@@ -2824,7 +2974,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': ''
+    'shop': 'ELECTROCUTIONER'
   },
   {
     'name': 'Ignatius Ogilvy',
@@ -2858,7 +3008,7 @@ export const loadedCharacters = [
     'def': 9,
     'end': null,
     'spc': 3,
-    'shop': ''
+    'shop': 'EMPEROR PENGUIN'
   },
   {
     'name': 'Mezz',
@@ -3468,7 +3618,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': ''
+    'shop': 'GATLING BRUTE'
   },
   {
     'name': 'Dr. Harleen Frances Quinzel',
@@ -3822,7 +3972,7 @@ export const loadedCharacters = [
     'def': 2,
     'end': 6,
     'spc': 3,
-    'shop': ''
+    'shop': 'HARLEY QUINNS THUG SET 2'
   },
   {
     'name': 'Lumberjack',
@@ -3847,7 +3997,7 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': ''
+    'shop': 'HARLEY QUINNS THUG SET 2'
   },
   {
     'name': 'Harvey Bullock',
@@ -4097,7 +4247,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': ''
+    'shop': 'ALBERTO FALCONE'
   },
   {
     'name': 'Hugo Strange',
@@ -4980,7 +5130,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': ''
+    'shop': 'WONDERLAND GANG'
   },
   {
     'name': 'None',
@@ -5468,7 +5618,7 @@ export const loadedCharacters = [
     'def': 4,
     'end': 7,
     'spc': 4,
-    'shop': ''
+    'shop': 'MR. FREEZE CREW'
   },
   {
     'name': 'Unknown',
@@ -6050,7 +6200,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': ''
+    'shop': 'PENGUIN AND STREET DEMONZ'
   },
   {
     'name': 'Oswald Chesterfield Cobblepot',
@@ -6155,7 +6305,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': ''
+    'shop': 'PENGUIN LIEUTENANT'
   },
   {
     'name': 'Plant',
@@ -6446,7 +6596,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': ''
+    'shop': 'PROFESSOR PYG & DOLLOTRONS'
   },
   {
     'name': 'Eobard Thawne',
@@ -6603,7 +6753,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': ''
+    'shop': 'QUELLE'
   },
   {
     'name': 'Alexander',
@@ -6630,7 +6780,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': ''
+    'shop': 'THE RIDDLER CREW'
   },
   {
     'name': 'Igor',
@@ -6661,7 +6811,7 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': ''
+    'shop': 'THE RIDDLER CREW'
   },
   {
     'name': 'John Carrie',
@@ -6691,7 +6841,7 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': ''
+    'shop': 'THE RIDDLER CREW'
   },
   {
     'name': 'Unknown',
@@ -6863,7 +7013,7 @@ export const loadedCharacters = [
     'def': 4,
     'end': 7,
     'spc': 3,
-    'shop': ''
+    'shop': 'REAPER'
   },
   {
     'name': 'Jason Todd',
@@ -7590,7 +7740,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': ''
+    'shop': 'BIRD AND MERCS'
   },
   {
     'name': 'Unknown',
@@ -8004,7 +8154,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': ''
+    'shop': 'MR, FREEZE THUG SET I'
   },
   {
     'name': 'Unknown',
@@ -8031,7 +8181,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': ''
+    'shop': 'MR, FREEZE THUG SET I'
   },
   {
     'name': 'Cyrus Gold',
@@ -8315,7 +8465,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': ''
+    'shop': 'PENGUIN AND STREET DEMONZ'
   },
   {
     'name': 'Simmons',
@@ -8342,7 +8492,7 @@ export const loadedCharacters = [
     'def': 2,
     'end': 5,
     'spc': 3,
-    'shop': ''
+    'shop': 'PENGUIN AND STREET DEMONZ'
   },
   {
     'name': 'Reaver',
@@ -8369,7 +8519,7 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': ''
+    'shop': 'PENGUIN AND STREET DEMONZ'
   },
   {
     'name': 'Mary Turner',
@@ -8578,7 +8728,7 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': ''
+    'shop': 'FALCONE CRIME FAMILY'
   },
   {
     'name': 'Stan',
@@ -8674,7 +8824,7 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': ''
+    'shop': 'THE RIDDLER CREW'
   },
   {
     'name': 'Unknown',
@@ -8842,7 +8992,7 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': ''
+    'shop': 'FALCONE CRIME FAMILY'
   },
   {
     'name': 'Classified',
@@ -9065,7 +9215,7 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': ''
+    'shop': 'FALCONE CRIME FAMILY'
   },
   {
     'name': 'Unknown',

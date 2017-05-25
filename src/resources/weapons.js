@@ -496,6 +496,14 @@ export const allWeapons = [
     'traits': 'Handy, Mechanic'
   },
   {
+    'key': 'Electric Blade',
+    'name': 'Electric Blade',
+    'damage': 'BS',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Electric, Mechanic, Crushing'
+  },
+  {
     'key': 'Electric Boomerang',
     'name': 'Electric Boomerang',
     'damage': 'SS',
@@ -776,6 +784,14 @@ export const allWeapons = [
     'traits': 'Mechanic, M. Range'
   },
   {
+    'key': 'Hand Cannon',
+    'name': 'Hand Cannon',
+    'damage': 'BBB',
+    'rof': 1,
+    'ammo': 3,
+    'traits': 'Beam, S. Range, Push'
+  },
+  {
     'key': 'Handgun',
     'name': 'Handgun',
     'damage': 'BS',
@@ -958,6 +974,14 @@ export const allWeapons = [
     'rof': 1,
     'ammo': 2,
     'traits': 'Beam, Aim, Reload, Knocked Down'
+  },
+  {
+    'key': 'Laser Cannon',
+    'name': 'Laser Cannon',
+    'damage': 'BB',
+    'rof': 4,
+    'ammo': 3,
+    'traits': 'Beam, M.Range, Assault/2'
   },
   {
     'key': 'Laughing Gas Weapon',

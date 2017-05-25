@@ -16,6 +16,14 @@ export const allTraits = [
     'page': 'NA'
   },
   {
+    'name': 'Absolute Power',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'See this [Character]\'s File.',
+    'grants': [],
+    'page': 'NA'
+  },
+  {
     'name': 'Acrobat',
     'phase': 'Execute the plan',
     'cost': '',
@@ -1394,6 +1402,14 @@ export const allTraits = [
     'page': 'B.59'
   },
   {
+    'name': 'Kryptonite',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'TBD...',
+    'grants': [],
+    'page': '?'
+  },
+  {
     'name': 'Lantern',
     'phase': 'Execute the plan',
     'cost': '1 SC',
@@ -1557,6 +1573,14 @@ export const allTraits = [
     'rule': 'If this [Character] is in [Contact] with a [Friendly] [Character], remove one [Blood Damage] or 2 [Stun Damage]. This [Character] cannot [Medic] if an [Enemy] [Character] is in [Contact]',
     'grants': [],
     'page': 'F.39'
+  },
+  {
+    'name': 'Medium Armor',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': '[Damage Rolls] against this [Model] suffer a -2 [Penalty].',
+    'grants': [],
+    'page': 'F.40'
   },
   {
     'name': 'Menace',
