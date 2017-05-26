@@ -8675,7 +8675,8 @@ export const loadedCharacters = [
     'funding': 250,
     'cutoff': 6,
     'crews': [
-      'ls'
+      'ls',
+      'lc'
     ],
     'hates': [],
     'traits': [
