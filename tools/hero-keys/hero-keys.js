@@ -47,9 +47,38 @@ jsonData.forEach(function(character) {
     if (nameKey.indexOf(' Classic') !== -1) {
       nameKey = nameKey.split(' Classic')[0] + '(Classic)'
     }
+    if (nameKey.indexOf(' classic') !== -1) {
+      nameKey = nameKey.split(' classic')[0] + '(Classic)'
+    }
+    if (nameKey.indexOf('The Penguin Gotham') !== -1) {
+      nameKey = 'The Penguin (Gotham)'
+    }
+    if (nameKey.indexOf('Connell') !== -1) {
+      nameKey = 'Agent O\'Connell'
+    }
+    if (nameKey.indexOf(' DKR') !== -1) {
+      nameKey = nameKey.split(' DKR')[0] + '(DKR)'
+    }
     if (nameKey.indexOf('Malley') !== -1) {
       console.log('We got one of those Malleys!')
       nameKey = 'O\'Malley\'s' + nameKey.split('Malley\'')[1]
+    }
+    if (nameKey.indexOf('Blue Penguin') !== -1) {
+      let splitNameKey = nameKey.split('lue Penguin')
+      if (splitNameKey[1].indexOf('shield') !== -1) {
+        nameKey = 'Blue Penguin'
+      } else if (splitNameKey[1].indexOf('machette') !== -1) {
+        nameKey = 'Blue Penguin 1'
+      } else {
+        nameKey = 'Blue Penguin 2'
+      }
+      nameKey = 'Robin (Carrie Kelley)'
+    }
+    if (nameKey.indexOf('Carrie Kelly') !== -1) {
+      nameKey = 'Robin (Carrie Kelley)'
+    }
+    if (nameKey.indexOf('Arrow TV') !== -1) {
+      nameKey = 'ARROW'
     }
     nameKey = nameKey.replace(/ /g, '').toUpperCase()
     if (splitKey[0] !== '35') {

@@ -86,7 +86,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'GOTHAM POLICE SET II'
+    'shop': 'GOTHAM POLICE SET II',
+    'key': '021B'
   },
   {
     'name': 'Agent Ron',
@@ -144,7 +145,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': 'Promotional'
+    'shop': 'Promotional',
+    'key': 'P01'
   },
   {
     'name': 'Alexander Joseph Luthor',
@@ -181,7 +183,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': 'LEXCORP INDUSTRIES'
+    'shop': 'LEXCORP INDUSTRIES',
+    'key': '157A'
   },
   {
     'name': 'Michael Sommers',
@@ -315,11 +318,12 @@ export const loadedCharacters = [
     'def': 4,
     'end': 7,
     'spc': 3,
-    'shop': 'Promotional'
+    'shop': 'Promotional',
+    'key': 'P03'
   },
   {
     'name': 'Oliver Queen',
-    'alias': 'Arrow (CW)',
+    'alias': 'Arrow',
     'rank': 'Leader',
     'reputation': 125,
     'funding': 0,
@@ -349,7 +353,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 8,
     'spc': 3,
-    'shop': 'ARROW'
+    'shop': 'ARROW',
+    'key': '078'
   },
   {
     'name': 'Roy Harper',
@@ -500,7 +505,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': 'Tournament Card (Prisoner 02)'
+    'shop': 'Tournament Card (Prisoner 02)',
+    'key': 'T01'
   },
   {
     'name': 'Unknown',
@@ -584,7 +590,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
-    'alias': 'Bane (DKR Movie)',
+    'alias': 'Bane (DKR)',
     'rank': [
       {
         'crew': 'bn',
@@ -627,7 +633,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 8,
     'spc': 3,
-    'shop': 'BANE THE DARK KNIGHT RISES'
+    'shop': 'BANE THE DARK KNIGHT RISES',
+    'key': '045'
   },
   {
     'name': 'Bruce Wayne',
@@ -659,7 +666,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 8,
     'spc': 3,
-    'shop': 'Suicide Squad-Set (Promo)'
+    'shop': 'Suicide Squad-Set (Promo)',
+    'key': 'P04'
   },
   {
     'name': 'Barbara Gordon',
@@ -914,7 +922,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Bruce Wayne',
-    'alias': 'Batman (DKR Movie)',
+    'alias': 'Batman (DKR)',
     'rank': 'Leader',
     'reputation': 120,
     'funding': 0,
@@ -947,7 +955,8 @@ export const loadedCharacters = [
     'def': 5,
     'end': 8,
     'spc': 3,
-    'shop': 'BATMAN THE DARK KNIGHT RISES'
+    'shop': 'BATMAN THE DARK KNIGHT RISES',
+    'key': '044'
   },
   {
     'name': 'Bruce Wayne',
@@ -1323,7 +1332,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': 'PENGUIN\'S CREW'
+    'shop': 'PENGUIN\'S CREW',
+    'key': '007D'
   },
   {
     'name': 'Unknown',
@@ -1348,7 +1358,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': 'PENGUIN\'S THUGS SET I'
+    'shop': 'PENGUIN\'S THUGS SET I',
+    'key': '014A'
   },
   {
     'name': 'Unknown',
@@ -1373,7 +1384,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': 'PENGUIN\'S THUGS SET I'
+    'shop': 'PENGUIN\'S THUGS SET I',
+    'key': '014B'
   },
   {
     'name': 'Unknown',
@@ -1398,7 +1410,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': 'PENGUIN\'S THUGS SET III'
+    'shop': 'PENGUIN\'S THUGS SET III',
+    'key': '023B'
   },
   {
     'name': 'Unknown',
@@ -1578,7 +1591,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 6,
     'spc': 3,
-    'shop': 'Tournament Card (Creeper Plant)'
+    'shop': 'Tournament Card (Creeper Plant)',
+    'key': 'T02'
   },
   {
     'name': 'Bot Mk 1',
@@ -1821,7 +1835,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S07'
   },
   {
     'name': 'Leonard Snart',
@@ -1911,6 +1926,42 @@ export const loadedCharacters = [
     'spc': 3,
     'shop': 'FALCONE CRIME FAMILY',
     'key': '155A'
+  },
+  {
+    'name': 'Thomas Reese Blake',
+    'alias': 'Catman',
+    'rank': 'Free Agent',
+    'reputation': 100,
+    'funding': 100,
+    'cutoff': 5,
+    'crews': [
+      '*'
+    ],
+    'hates': [
+      'lf',
+      'lc',
+      'jk'
+    ],
+    'traits': [
+      'Claws',
+      'Climbing Claws',
+      'Master Fighter',
+      'Order',
+      'Superior Smell',
+      'Tracking'
+    ],
+    'weapons': [
+      'Catarangs'
+    ],
+    'wp': 7,
+    'str': 4,
+    'mov': 3,
+    'att': 5,
+    'def': 5,
+    'end': 8,
+    'spc': 3,
+    'shop': 'CATMAN',
+    'key': '112'
   },
   {
     'name': 'Selina Kyle',
@@ -2083,7 +2134,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 6,
     'spc': 3,
-    'shop': 'LEXCORP HEAVY TROOPER'
+    'shop': 'LEXCORP HEAVY TROOPER',
+    'key': '158'
   },
   {
     'name': 'Unknown',
@@ -2111,7 +2163,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 4,
     'spc': 3,
-    'shop': 'LEXCORP INDUSTRIES'
+    'shop': 'LEXCORP INDUSTRIES',
+    'key': '157B'
   },
   {
     'name': 'Unknown',
@@ -2140,7 +2193,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 4,
     'spc': 3,
-    'shop': 'LEXCORP INDUSTRIES'
+    'shop': 'LEXCORP INDUSTRIES',
+    'key': '157C'
   },
   {
     'name': 'Unknown',
@@ -2168,7 +2222,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 4,
     'spc': 3,
-    'shop': 'LEXCORP INDUSTRIES'
+    'shop': 'LEXCORP INDUSTRIES',
+    'key': '157D'
   },
   {
     'name': 'Sullivan',
@@ -2278,7 +2333,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Edward Blake',
-    'alias': 'Comedian',
+    'alias': 'The Comedian',
     'rank': 'Watchmen',
     'reputation': 75,
     'funding': 0,
@@ -2307,7 +2362,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 9,
     'spc': 3,
-    'shop': 'THE COMEDIAN'
+    'shop': 'THE COMEDIAN',
+    'key': '052'
   },
   {
     'name': 'James W. Gordon',
@@ -2351,7 +2407,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'COMMISSIONER GORDON & SWAT TEAM'
+    'shop': 'COMMISSIONER GORDON & SWAT TEAM',
+    'key': '046A'
   },
   {
     'name': 'Gillian B. Loeb',
@@ -2439,11 +2496,11 @@ export const loadedCharacters = [
     'end': 5,
     'spc': 3,
     'shop': 'PENGUIN\'S THUGS SET III',
-    'key': '103C'
+    'key': '023A'
   },
   {
     'name': 'Unknown',
-    'alias': 'Contre-Auguste',
+    'alias': 'Contra-Auguste',
     'rank': 'Henchman',
     'reputation': 21,
     'funding': 0,
@@ -2465,7 +2522,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': 'JOKER CREW'
+    'shop': 'JOKER CREW',
+    'key': '004A'
   },
   {
     'name': 'Unknown',
@@ -2529,7 +2587,7 @@ export const loadedCharacters = [
     'end': 5,
     'spc': 3,
     'shop': 'POISON IVY & PLANTS SLAVES',
-    'key': '068D2'
+    'key': '068D'
   },
   {
     'name': 'Diaz',
@@ -2734,7 +2792,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 8,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S02'
   },
   {
     'name': 'Slade Wilson',
@@ -2922,7 +2981,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S06'
   },
   {
     'name': 'Unknown',
@@ -3088,7 +3148,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Mezz',
-    'alias': 'EO474',
+    'alias': 'E0474',
     'rank': 'Henchman',
     'reputation': 24,
     'funding': 0,
@@ -3120,7 +3180,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Irwin',
-    'alias': 'EO475',
+    'alias': 'E0475',
     'rank': 'Henchman',
     'reputation': 18,
     'funding': 0,
@@ -3146,11 +3206,12 @@ export const loadedCharacters = [
     'def': 2,
     'end': 5,
     'spc': 3,
-    'shop': 'HUGO STRANGE AND IMMATES'
+    'shop': 'HUGO STRANGE AND IMMATES',
+    'key': '100B'
   },
   {
     'name': 'Milo',
-    'alias': 'EO476',
+    'alias': 'E0476',
     'rank': 'Henchman',
     'reputation': 34,
     'funding': 0,
@@ -3177,11 +3238,12 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': 'HUGO STRANGE AND IMMATES'
+    'shop': 'HUGO STRANGE AND IMMATES',
+    'key': '100C'
   },
   {
     'name': 'Meatman',
-    'alias': 'EO 477',
+    'alias': 'E0477',
     'rank': 'Henchman',
     'reputation': 26,
     'funding': 100,
@@ -3214,7 +3276,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Benton',
-    'alias': 'EO478',
+    'alias': 'E0478',
     'rank': 'Henchman',
     'reputation': 15,
     'funding': 0,
@@ -3241,7 +3303,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 5,
     'spc': 3,
-    'shop': 'HUGO STRANGE AND IMMATES'
+    'shop': 'HUGO STRANGE AND IMMATES',
+    'key': '100D'
   },
   {
     'name': 'Unknown',
@@ -3312,7 +3375,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Barry Allen',
-    'alias': 'Flash (Comic)',
+    'alias': 'Flash (New 52)',
     'rank': 'Sidekick',
     'reputation': 125,
     'funding': 0,
@@ -3342,11 +3405,12 @@ export const loadedCharacters = [
     'def': 5,
     'end': 7,
     'spc': 4,
-    'shop': 'FLASH NEW 52'
+    'shop': 'FLASH NEW 52',
+    'key': '122'
   },
   {
     'name': 'Barry Allen',
-    'alias': 'Flash (CW)',
+    'alias': 'The Flash (TV Show)',
     'rank': 'Sidekick',
     'reputation': 100,
     'funding': 0,
@@ -3376,7 +3440,8 @@ export const loadedCharacters = [
     'def': 5,
     'end': 6,
     'spc': 4,
-    'shop': 'FLASH TV SHOW'
+    'shop': 'FLASH TV SHOW',
+    'key': '132'
   },
   {
     'name': 'Classified',
@@ -3435,7 +3500,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 5,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S10'
   },
   {
     'name': 'Unknown',
@@ -3682,7 +3748,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
-    'alias': 'Harley Gatling Brute',
+    'alias': 'Harley Quinn Gatling Brute',
     'rank': 'Henchman',
     'reputation': 49,
     'funding': 850,
@@ -3708,7 +3774,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': 'GATLING BRUTE'
+    'shop': 'GATLING BRUTE',
+    'key': '104'
   },
   {
     'name': 'Dr. Harleen Frances Quinzel',
@@ -3812,7 +3879,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 7,
     'spc': 3,
-    'shop': 'SSqS (Promo)'
+    'shop': 'SSqS (Promo)',
+    'key': 'P05'
   },
   {
     'name': 'Dr. Harleen Frances Quinzel',
@@ -3884,7 +3952,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 7,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S03'
   },
   {
     'name': 'Dr. Harleen Frances Quinzel',
@@ -4131,7 +4200,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': 'Tournament Card ()'
+    'shop': 'Tournament Card ()',
+    'key': 'T09'
   },
   {
     'name': 'Kendra Saunders',
@@ -4520,11 +4590,12 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'Tournament Card (Jhonny-Six)'
+    'shop': 'Tournament Card (Jhonny-Six)',
+    'key': 'T03'
   },
   {
     'name': 'Unknown',
-    'alias': 'Joker (Arkham City)',
+    'alias': 'Joker (AC)',
     'rank': 'Leader',
     'reputation': 105,
     'funding': 0,
@@ -4552,7 +4623,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 8,
     'spc': 3,
-    'shop': 'Promotional'
+    'shop': 'Promotional',
+    'key': '004D'
   },
   {
     'name': 'Unknown',
@@ -4592,11 +4664,12 @@ export const loadedCharacters = [
     'def': 4,
     'end': 8,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S01'
   },
   {
     'name': 'Unknown',
-    'alias': 'Joker (Killing Joke)',
+    'alias': 'Joker (The Killing Joke)',
     'rank': 'Leader',
     'reputation': 100,
     'funding': 0,
@@ -4629,7 +4702,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 8,
     'spc': 3,
-    'shop': 'JOKER (THE KILLING JOKE)'
+    'shop': 'JOKER (THE KILLING JOKE)',
+    'key': '105'
   },
   {
     'name': 'Unknown',
@@ -4668,7 +4742,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
-    'alias': 'Joker (Ledger)',
+    'alias': 'The Joker (Heath Ledger)',
     'rank': 'Leader',
     'reputation': 90,
     'funding': 0,
@@ -4695,7 +4769,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 8,
     'spc': 3,
-    'shop': 'JOKER (HEATH LEDGER )'
+    'shop': 'JOKER (HEATH LEDGER )',
+    'key': '048'
   },
   {
     'name': 'Unknown',
@@ -4823,7 +4898,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S05'
   },
   {
     'name': 'Bart Allen',
@@ -4928,7 +5004,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S04'
   },
   {
     'name': 'Louise Lincoln',
@@ -5237,7 +5314,7 @@ export const loadedCharacters = [
     'end': 6,
     'spc': 3,
     'shop': 'LEAGUE OF SHADOWS SET I',
-    'key': '047C'
+    'key': '047D'
   },
   {
     'name': 'Dr. Jervis Tetch',
@@ -5695,7 +5772,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'PROMOTIONAL'
+    'shop': 'PROMOTIONAL',
+    'key': 'P06'
   },
   {
     'name': 'Victor Fries',
@@ -5731,7 +5809,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 4,
-    'shop': 'MR. FREEZE'
+    'shop': 'MR. FREEZE',
+    'key': '010'
   },
   {
     'name': 'Victor Fries',
@@ -5801,7 +5880,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 4,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S13'
   },
   {
     'name': 'Unknown',
@@ -5831,7 +5911,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 4,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S12'
   },
   {
     'name': 'Abramovici',
@@ -5900,7 +5981,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 6,
     'spc': 3,
-    'shop': 'Tournament Card ()'
+    'shop': 'Tournament Card ()',
+    'key': 'T04'
   },
   {
     'name': 'Unknown',
@@ -6233,7 +6315,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 5,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S09'
   },
   {
     'name': 'Unknown',
@@ -6328,11 +6411,12 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': 'PENGUIN\'S CREW'
+    'shop': 'PENGUIN\'S CREW',
+    'key': '007A'
   },
   {
     'name': 'Oswald Chesterfield Cobblepot',
-    'alias': 'Penguin (AK)',
+    'alias': 'The Penguin (AK)',
     'rank': 'Leader',
     'reputation': 77,
     'funding': 0,
@@ -6365,11 +6449,12 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': 'PENGUIN AND STREET DEMONZ'
+    'shop': 'PENGUIN AND STREET DEMONZ',
+    'key': '151A'
   },
   {
     'name': 'Oswald Chesterfield Cobblepot',
-    'alias': 'Penguin (Gotham)',
+    'alias': 'The Penguin (Gotham)',
     'rank': [
       {
         'crew': 'pn',
@@ -6411,11 +6496,12 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'THE PENGUIN (GOTHAM TV SHOW)'
+    'shop': 'THE PENGUIN (GOTHAM TV SHOW)',
+    'key': '081'
   },
   {
     'name': 'Unknown',
-    'alias': 'Emperor Penguin',
+    'alias': 'Penguin Emperor',
     'rank': 'Henchman',
     'reputation': 31,
     'funding': 0,
@@ -6441,7 +6527,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 5,
     'spc': 3,
-    'shop': 'PENGUIN\'S CREW'
+    'shop': 'PENGUIN\'S CREW',
+    'key': '007B'
   },
   {
     'name': 'Big A.',
@@ -6500,7 +6587,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 4,
     'spc': 3,
-    'shop': 'POISON IVY & PLANTS SLAVES'
+    'shop': 'POISON IVY & PLANTS SLAVES',
+    'key': '068C'
   },
   {
     'name': 'Dr. Pamela Lillian Isley',
@@ -6574,7 +6662,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 7,
     'spc': 4,
-    'shop': 'POISON IVY & PLANTS SLAVES'
+    'shop': 'POISON IVY & PLANTS SLAVES',
+    'key': '068A'
   },
   {
     'name': 'Classified',
@@ -7127,7 +7216,8 @@ export const loadedCharacters = [
     'def': 5,
     'end': 8,
     'spc': 3,
-    'shop': 'RA\'S AL GHUL AND THE LEAGUE OF SHADOWS'
+    'shop': 'RA\'S AL GHUL AND THE LEAGUE OF SHADOWS',
+    'key': '047A'
   },
   {
     'name': 'Rose Wilson',
@@ -7272,7 +7362,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 7,
     'spc': 3,
-    'shop': 'RED HOOD'
+    'shop': 'RED HOOD',
+    'key': '079'
   },
   {
     'name': 'Unknown',
@@ -7304,7 +7395,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 8,
     'spc': 3,
-    'shop': 'Promotional'
+    'shop': 'Promotional',
+    'key': 'P02'
   },
   {
     'name': 'Eobard Thawne',
@@ -7423,7 +7515,7 @@ export const loadedCharacters = [
     'end': 7,
     'spc': 3,
     'shop': 'THE RIDDLER AND BOT ARMY',
-    'key': '016'
+    'key': '096A'
   },
   {
     'name': 'Edward Nigma',
@@ -7498,7 +7590,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Tim Drake',
-    'alias': 'Robin (AC Drake)',
+    'alias': 'Robin (Tim Drake)',
     'rank': 'Free Agent',
     'reputation': 68,
     'funding': 200,
@@ -7527,11 +7619,12 @@ export const loadedCharacters = [
     'def': 4,
     'end': 6,
     'spc': 3,
-    'shop': 'ROBIN ARKHAM CITY BMG'
+    'shop': 'ROBIN ARKHAM CITY BMG',
+    'key': '015'
   },
   {
     'name': 'Tim Drake',
-    'alias': 'Robin (AK Drake)',
+    'alias': 'Robin (AK)',
     'rank': 'Sidekick',
     'reputation': 78,
     'funding': 0,
@@ -7568,7 +7661,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 7,
     'spc': 3,
-    'shop': 'ROBIN ARKHAM KNIGHT'
+    'shop': 'ROBIN ARKHAM KNIGHT',
+    'key': '093'
   },
   {
     'name': 'Dick Grayson',
@@ -7608,7 +7702,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Damian Wayne',
-    'alias': 'Robin (Comic Damien)',
+    'alias': 'Robin (Damian Wayne)',
     'rank': 'Free Agent',
     'reputation': 50,
     'funding': 0,
@@ -7643,11 +7737,12 @@ export const loadedCharacters = [
     'def': 4,
     'end': 5,
     'spc': 3,
-    'shop': 'ROBIN (DAMIAN WAYNE)'
+    'shop': 'ROBIN (DAMIAN WAYNE)',
+    'key': '064'
   },
   {
     'name': 'Carrie Kelley',
-    'alias': 'Robin (TDKR)',
+    'alias': 'Robin (Carrie Kelley)',
     'rank': 'Sidekick',
     'reputation': 54,
     'funding': 100,
@@ -7671,7 +7766,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 5,
     'spc': 3,
-    'shop': 'CARRIE KELLEY & SONS OF BATMAN'
+    'shop': 'CARRIE KELLEY & SONS OF BATMAN',
+    'key': '128A'
   },
   {
     'name': 'Unknown',
@@ -7697,7 +7793,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 5,
     'spc': 3,
-    'shop': 'SPICE AND TWO-FACE THUGS'
+    'shop': 'SPICE AND TWO-FACE THUGS',
+    'key': '103C'
   },
   {
     'name': 'Walter Joseph Kovacs',
@@ -7783,7 +7880,7 @@ export const loadedCharacters = [
     'end': 5,
     'spc': 3,
     'shop': 'PENGUIN\'S CREW',
-    'key': '007A'
+    'key': '007C'
   },
   {
     'name': 'Unknown',
@@ -7888,7 +7985,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Jonathan Crane',
-    'alias': 'Scarecrow (DK Movie)',
+    'alias': 'Scarecrow (DKR)',
     'rank': 'Free Agent',
     'reputation': 60,
     'funding': 200,
@@ -7912,7 +8009,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'SCARECROW (BDKR)'
+    'shop': 'SCARECROW (BDKR)',
+    'key': '051'
   },
   {
     'name': 'Ike',
@@ -8005,7 +8103,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'Tournament Card ()'
+    'shop': 'Tournament Card ()',
+    'key': 'T05'
   },
   {
     'name': 'Unknown',
@@ -8072,7 +8171,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'Tournament Card ()'
+    'shop': 'Tournament Card ()',
+    'key': 'T06'
   },
   {
     'name': 'Abramovici',
@@ -8168,7 +8268,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': 'Tournament Card (Shield Clown)'
+    'shop': 'Tournament Card (Shield Clown)',
+    'key': 'T07'
   },
   {
     'name': 'Christopher Weiss',
@@ -8201,7 +8302,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 5,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S08'
   },
   {
     'name': 'Unknown',
@@ -8622,7 +8724,7 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'POISON IVY & PLANTS SLAVES',
-    'key': '068C2'
+    'key': '068B'
   },
   {
     'name': 'Koriand‘r',
@@ -8997,7 +9099,8 @@ export const loadedCharacters = [
     'def': 2,
     'end': 5,
     'spc': 3,
-    'shop': 'SSqS'
+    'shop': 'SSqS',
+    'key': 'S11'
   },
   {
     'name': 'Edward Nigma',
@@ -9030,7 +9133,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'THE RIDDLER'
+    'shop': 'THE RIDDLER',
+    'key': '016'
   },
   {
     'name': 'Edward Nigma',
@@ -9096,7 +9200,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
-    'alias': 'Titan Clown',
+    'alias': 'Joker\'s Titan Clown',
     'rank': 'Henchman',
     'reputation': 59,
     'funding': 0,
@@ -9120,11 +9224,12 @@ export const loadedCharacters = [
     'def': 2,
     'end': 8,
     'spc': 3,
-    'shop': 'JOKERS´S TITAN CLOWN'
+    'shop': 'JOKERS´S TITAN CLOWN',
+    'key': '027'
   },
   {
     'name': 'Unknown',
-    'alias': 'TNT',
+    'alias': 'T.N.T.',
     'rank': 'Henchman',
     'reputation': 43,
     'funding': 600,
@@ -9152,7 +9257,8 @@ export const loadedCharacters = [
     'def': 3,
     'end': 6,
     'spc': 3,
-    'shop': 'BANE\'S THUGS SET I'
+    'shop': 'BANE\'S THUGS SET I',
+    'key': '083A'
   },
   {
     'name': 'Unknown',
@@ -9341,7 +9447,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Harvey Dent',
-    'alias': 'Two Face',
+    'alias': 'Two-Face',
     'rank': 'Leader',
     'reputation': 101,
     'funding': 0,
@@ -9372,7 +9478,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 9,
     'spc': 3,
-    'shop': 'TWO-FACE´S CREW'
+    'shop': 'TWO-FACE´S CREW',
+    'key': '025D'
   },
   {
     'name': 'Unknown',
@@ -9666,7 +9773,7 @@ export const loadedCharacters = [
     'end': 5,
     'spc': 3,
     'shop': 'RA\'S AL GHUL AND THE LEAGUE OF SHADOWS',
-    'key': '047A'
+    'key': '047C'
   },
   {
     'name': 'Bruce Wayne',
@@ -9697,7 +9804,8 @@ export const loadedCharacters = [
     'def': 4,
     'end': 8,
     'spc': 3,
-    'shop': 'Tournament Card ()'
+    'shop': 'Tournament Card ()',
+    'key': 'T08'
   },
   {
     'name': 'Unknown',

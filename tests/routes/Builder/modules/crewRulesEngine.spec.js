@@ -105,11 +105,11 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
       })
 
       it('Should not be able to add an unavailable character.', () => {
-        expect(selectBatmanResult.availableCharacters.filter(filterCharacterAlias('Batman Adam West')).length).to.equal(0)
-        expect(selectBatmanResult.hiddenCharacters.filter(filterCharacterAlias('Batman Adam West')).length).to.equal(1)
-        let selectAdamWestErr = characterSelected(selectBatmanResult, selectCharacter('Batman Adam West'))
-        expect(selectAdamWestErr.availableCharacters.filter(filterCharacterAlias('Batman Adam West')).length).to.equal(0)
-        expect(selectAdamWestErr.hiddenCharacters.filter(filterCharacterAlias('Batman Adam West')).length).to.equal(1)
+        expect(selectBatmanResult.availableCharacters.filter(filterCharacterAlias('Batman (Adam West)')).length).to.equal(0)
+        expect(selectBatmanResult.hiddenCharacters.filter(filterCharacterAlias('Batman (Adam West)')).length).to.equal(1)
+        let selectAdamWestErr = characterSelected(selectBatmanResult, selectCharacter('Batman (Adam West)'))
+        expect(selectAdamWestErr.availableCharacters.filter(filterCharacterAlias('Batman (Adam West)')).length).to.equal(0)
+        expect(selectAdamWestErr.hiddenCharacters.filter(filterCharacterAlias('Batman (Adam West)')).length).to.equal(1)
         expect(countCharacters(selectAdamWestErr)).to.equal(countCharacters(selectBatmanResult))
       })
     })
@@ -202,14 +202,14 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
 
     it('Should be able to add many leaders when false.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
-      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman Adam West'))
+      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman (Adam West)'))
       expect(addAnotherBatman.characters.length).to.equal(2)
     })
 
     it('Should be able to remove an extra leader when false.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
-      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman Adam West'))
-      let addAnotherBatmanAgain = characterSelected(addAnotherBatman, selectCharacter('Batman AC'))
+      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman (Adam West)'))
+      let addAnotherBatmanAgain = characterSelected(addAnotherBatman, selectCharacter('Batman (AC)'))
       expect(addAnotherBatmanAgain.characters.length).to.equal(3)
     })
 
@@ -240,7 +240,7 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
 
     it('Should not allow a user to enable when there are too many leaders.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
-      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman Adam West'))
+      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman (Adam West)'))
       let toggleToTrue = toggleFollowRules(addAnotherBatman, followCrewRules(true))
       expect(toggleToTrue.followRules).to.equal(false)
     })

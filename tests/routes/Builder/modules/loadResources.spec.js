@@ -65,5 +65,29 @@ describe('(Redux Action Sub-Module) loadResources', () => {
         })
       })
     })
+
+    it('Should have a key on every character.', () => {
+      let missingKey = false
+      loadedState.allCharacters.forEach((char) => {
+        if (char.key === undefined || char.key.length === 0) {
+          console.log('Character ' + char.name + '-' + char.alias + ' did not have its key populated.')
+          missingKey = true
+        }
+      })
+      expect(missingKey).to.equal(false)
+    })
+
+    it('Should have a unique key for every character.', () => {
+      let nonuniqueKey = false
+      let keyList = []
+      loadedState.allCharacters.forEach((char) => {
+        if (keyList.includes(char.key)) {
+          console.log('Key for character ' + char.name + '-' + char.alias + ' already exists... Key: ' + char.key)
+          nonuniqueKey = true
+        }
+        keyList.push(char.key)
+      })
+      expect(nonuniqueKey).to.equal(false)
+    })
   })
 })
