@@ -156,7 +156,7 @@ const createFinalState = (
   sidekicks,
   freeAgents
 ) => {
-  let crewCode = newCharacters.reduce((curStr, char) => { return curStr + '+' + char.key }, '')
+  let crewCode = newCharacters.reduce((curStr, char) => { return curStr + '+' + char.key }, state.crewId + '-')
   newAvailChars.sort(sortCharacters)
   newCharacters.sort(sortCharacters)
   let newRep = newCharacters.reduce((repSum, character) => repSum + character.reputation, 0)

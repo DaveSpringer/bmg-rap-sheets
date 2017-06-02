@@ -6351,6 +6351,38 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
+    'alias': 'Parademon',
+    'rank': 'Free Agent',
+    'reputation': 70,
+    'funding': 0,
+    'crews': [
+      '*'
+    ],
+    hates: [],
+    'traits': [
+      'Claws',
+      'Fly',
+      'Hardened',
+      'Large',
+      'Medium Armor',
+      'Sturdy',
+      'Self-Destruction'
+    ],
+    'weapons': [
+      'Claws'
+    ],
+    'wp': 5,
+    'str': 4,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'PARADEMON INVASION FORCE',
+    'key': 'DCUN008'
+  },
+  {
+    'name': 'Unknown',
     'alias': 'Pavilion B Subject',
     'rank': 'Henchman',
     'reputation': 13,

@@ -2212,6 +2212,14 @@ export const allTraits = [
     'page': 'F.42'
   },
   {
+    'name': 'Self-Destruction',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'See this [Character]\'s File...',
+    'grants': [],
+    'page': 'N/A'
+  },
+  {
     'name': 'Sharpshooter',
     'phase': 'Execute the plan',
     'cost': '',

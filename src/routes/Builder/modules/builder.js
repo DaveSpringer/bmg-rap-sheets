@@ -115,7 +115,7 @@ export const selectCrewAction = (state, action) => {
     leaders: 0,
     sidekicks: 0,
     freeAgents: 0,
-    crewCode: ''
+    crewCode: '' + action.crew.id + '-'
   })
 }
 
