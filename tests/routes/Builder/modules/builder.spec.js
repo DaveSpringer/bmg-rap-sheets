@@ -26,7 +26,8 @@ let defaultState = {
   leaders: 0,
   sidekicks: 0,
   freeAgents: 0,
-  followRules: true
+  followRules: true,
+  crewCode: ''
 }
 
 let filterCharacterAlias = (alias) => (character) => character.alias === alias

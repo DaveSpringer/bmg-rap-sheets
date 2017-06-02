@@ -6606,7 +6606,7 @@ export const loadedCharacters = [
       'Control Pheromones',
       {
         'name': 'Immune to',
-        'element': 'Immunity'
+        'element': 'Poison'
       },
       'Scientific',
       'Discourage',
@@ -6641,7 +6641,7 @@ export const loadedCharacters = [
     'traits': [
       {
         'name': 'Immune to',
-        'element': 'Immunity'
+        'element': 'Poison'
       },
       'Acrobat',
       'Control Pheromones',

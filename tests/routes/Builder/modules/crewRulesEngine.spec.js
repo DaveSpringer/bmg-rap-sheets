@@ -20,7 +20,8 @@ const defaultState = {
   leaders: 0,
   sidekicks: 0,
   freeAgents: 0,
-  followRules: true
+  followRules: true,
+  crewCode: ''
 }
 
 const loadedState = builderReducer(defaultState, loadResources())
@@ -162,6 +163,7 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
     describe('(Sub-Function) Adding Generic Free Agent', () => {
       let addFreeAgentResult = characterSelected(selectBatmanResult, selectCharacter('Huntress'))
       let startingFreeAgents = selectBatmanResult.characters.reduce(countFreeAgents, 0)
+      let removeFreeAgentResult = characterSelected(addFreeAgentResult, selectCharacter('Huntress'))
 
       it('Should be able to select Huntress.', () => {
         expect(addFreeAgentResult.sidekicks).to.equal(0)
@@ -171,13 +173,20 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(countCharacters(addFreeAgentResult)).to.equal(countCharacters(selectBatmanCrew))
       })
 
+      it('Should update crewCode with Huntress selection.', () => {
+        expect(addFreeAgentResult.crewCode).to.equal(selectBatmanResult.crewCode + '+071')
+      })
+
       it('Should be able to unselect Huntress', () => {
-        let removeFreeAgentResult = characterSelected(addFreeAgentResult, selectCharacter('Huntress'))
         expect(removeFreeAgentResult.sidekicks).to.equal(0)
         expect(removeFreeAgentResult.leaders).to.equal(1)
         expect(removeFreeAgentResult.freeAgents).to.equal(startingFreeAgents)
         expect(removeFreeAgentResult.characters.length).to.equal(1)
         expect(countCharacters(removeFreeAgentResult)).to.equal(countCharacters(selectBatmanCrew))
+      })
+
+      it('Should remove crewCode with Huntress selection.', () => {
+        expect(removeFreeAgentResult.crewCode.indexOf('071')).to.equal(-1)
       })
     })
   })

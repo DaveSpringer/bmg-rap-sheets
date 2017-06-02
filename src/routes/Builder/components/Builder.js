@@ -61,7 +61,7 @@ class Builder extends React.Component {
             </div>
             <div id='available-characters' className='character-area'>
               {availableCharacters.map(character =>
-                <Character key={character.alias + '-' + character.name}
+                <Character key={character.key}
                   character={character}
                   selectCharacter={this.props.selectCharacter} />
           )}
@@ -74,7 +74,7 @@ class Builder extends React.Component {
               &nbsp;- Free Agents: {this.props.crew.freeAgents}</div>
             <div id='selected-characters' className='character-area'>
               {this.props.crew.characters.map(character =>
-                <Character key={character.alias}
+                <Character key={character.key}
                   character={character}
                   selectCharacter={this.props.selectCharacter} />
             )}
@@ -84,7 +84,7 @@ class Builder extends React.Component {
         <div className='rapSheets clear-left'>
           <h2>Rap Sheets</h2>
           {this.props.crew.characters.map(character =>
-            <RapSheet key={character.alias} character={character} />
+            <RapSheet key={character.key} character={character} />
           )}
         </div>
         <div id='rap-sheet-footer' className='hidden-print'>

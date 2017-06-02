@@ -114,7 +114,8 @@ export const selectCrewAction = (state, action) => {
     funding: 0,
     leaders: 0,
     sidekicks: 0,
-    freeAgents: 0
+    freeAgents: 0,
+    crewCode: ''
   })
 }
 
@@ -204,7 +205,8 @@ const initialState = {
   leaders: 0,
   sidekicks: 0,
   freeAgents: 0,
-  followRules: true
+  followRules: true,
+  crewCode: ''
 }
 export default function builderReducer (state = initialState, action) {
   let result = state
