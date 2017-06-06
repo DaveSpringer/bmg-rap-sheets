@@ -2,6 +2,7 @@ import { loadedCharacters } from '../../../resources/characters'
 import { allCrews } from '../../../resources/crews'
 import { allTraits } from '../../../resources/traits'
 import { allWeapons } from '../../../resources/weapons'
+import { allEquipment } from '../../../resources/equipment'
 
 const findTrait = (populatedTraits, traitName) => {
   let foundTrait = {
@@ -93,7 +94,8 @@ let loadAllResources = (state, action) => {
     allTraits : allTraits,
     allCrews : allCrews,
     allCharacters : allCharacters,
-    allWeapons : allWeapons
+    allWeapons : allWeapons,
+    allEquipment : allEquipment
   })
 }
 

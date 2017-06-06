@@ -21,7 +21,10 @@ const defaultState = {
   sidekicks: 0,
   freeAgents: 0,
   followRules: true,
-  crewCode: ''
+  crewCode: '',
+  crewEquipment: [],
+  availableEquipment: [],
+  equipment: []
 }
 
 const loadedState = builderReducer(defaultState, loadResources())

@@ -69,13 +69,14 @@ export const actions = {
 
 export const selectCrewAction = (state, action) => {
   let crewName = action.crew.name
+  let crewId = action.crew.id
   let charFilter = (characters, character) => {
-    if (character.crews.includes(action.crew.id) ||
-    (character.crews.includes('*') && !character.hates.includes(action.crew.id))) {
+    if (character.crews.includes(crewId) ||
+    (character.crews.includes('*') && !character.hates.includes(crewId))) {
       if (typeof (character.rank) === 'object') {
         characters.push(
           Object.assign({}, character, {
-            rank : character.rank.find((rank) => (rank.crew === action.crew.id || rank.crew === '*')).rank
+            rank : character.rank.find((rank) => (rank.crew === crewId || rank.crew === '*')).rank
           })
         )
       } else {
@@ -103,10 +104,22 @@ export const selectCrewAction = (state, action) => {
       }
     }, [])
   }
+  let crewEquipment = state.allEquipment.reduce((equipList, equip) => {
+    if (equip.crew === crewId) {
+      equipList.push(equip)
+    }
+    return equipList
+  }, [])
+  let availableEquipment = crewEquipment.reduce((equipList, equip) => {
+    if (equip.requires === undefined) {
+      equipList.push(equip)
+    }
+    return equipList
+  }, [])
   resultAvail.sort(sortCharacters)
   return Object.assign({}, state, {
     crewName: crewName,
-    crewId: action.crew.id,
+    crewId: crewId,
     availableCharacters : resultAvail,
     characters : [],
     hiddenCharacters : [],
@@ -115,7 +128,10 @@ export const selectCrewAction = (state, action) => {
     leaders: 0,
     sidekicks: 0,
     freeAgents: 0,
-    crewCode: '' + action.crew.id + '-'
+    crewCode: '' + crewId + '-',
+    crewEquipment: crewEquipment,
+    availableEquipment: availableEquipment,
+    equipment: []
   })
 }
 

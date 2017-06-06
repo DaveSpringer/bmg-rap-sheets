@@ -15,7 +15,10 @@ const defaultState = {
   sidekicks: 0,
   freeAgents: 0,
   followRules: true,
-  crewCode: ''
+  crewCode: '',
+  crewEquipment: [],
+  availableEquipment: [],
+  equipment: []
 }
 
 describe('(Redux Action Sub-Module) loadResources', () => {

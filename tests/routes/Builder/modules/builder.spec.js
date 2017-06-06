@@ -27,7 +27,10 @@ let defaultState = {
   sidekicks: 0,
   freeAgents: 0,
   followRules: true,
-  crewCode: ''
+  crewCode: '',
+  crewEquipment: [],
+  availableEquipment: [],
+  equipment: []
 }
 
 let filterCharacterAlias = (alias) => (character) => character.alias === alias
@@ -99,6 +102,8 @@ describe('(Redux Module) Builder', () => {
       expect(populatedState.leaders).to.equal(0)
       expect(populatedState.sidekicks).to.equal(0)
       expect(populatedState.freeAgents).to.equal(0)
+      expect(populatedState.availableEquipment.length).to.be.above(1)
+      expect(populatedState.crewEquipment.length).to.be.above(populatedState.availableEquipment.length)
     })
 
     it('Should reset current numbers when a different crew is selected.', () => {
