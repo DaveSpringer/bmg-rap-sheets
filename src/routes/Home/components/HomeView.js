@@ -13,6 +13,10 @@ export const HomeView = () => (
     <Link to='/builder' activeClassName='route--active'>
       Open the Rap Sheet Builder
     </Link>
+    <p>-</p>
+    <Link to='/strategies' activeClassName='route--active'>
+      Open the Strategy Browser
+    </Link>
   </div>
 )
 
