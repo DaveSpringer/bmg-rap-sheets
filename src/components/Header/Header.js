@@ -12,6 +12,8 @@ class Header extends React.Component {
         <Menu>
           <Link id='home' className='menu-item' to='/'>Home</Link>
           <Link id='builder' className='menu-item' to='/builder'>Rap Sheet Builder</Link>
+          <Link id='traits' className='menu-item' to='/traits'>Traits Browser</Link>
+          <Link id='equipment' className='menu-item' to='/equipment'>Equipment Browser</Link>
           <Link id='strategies' className='menu-item' to='/strategies'>Strategies Browser</Link>
         </Menu>
         <div className='welcome-message'>Bruce's Utility Belt</div>
