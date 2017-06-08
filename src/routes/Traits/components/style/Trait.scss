@@ -1,0 +1,30 @@
+.foundTrait {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid black;
+  background-color: #F0F0F0;
+  font-family: 'CarbonType', monospace;
+  text-align: left;
+}
+
+@font-face {
+  font-family: 'CarbonType';
+  src: url('../../../../resources/fonts/carbontype_regular_macroman/carbontype-webfont.woff')
+}
+
+.traitLabel {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.traitName {
+  font-size: 125%;
+}
+
+.traitPageSpan {
+  float: right;
+}
+
+.traitsContainer {
+  margin-top: 20px;
+}

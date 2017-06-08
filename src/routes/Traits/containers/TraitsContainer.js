@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { loadTraits } from '../modules/traits'
+import { loadTraits, updateFilter } from '../modules/traits'
 
 /*  This is a container component. Notice it does not contain any JSX,
     nor does it import React. This component is **only** responsible for
@@ -13,11 +13,13 @@ import Traits from '../components/Traits'
     implementing our wrapper around increment; the component doesn't care   */
 
 const mapDispatchToProps = {
-  loadTraits
+  loadTraits,
+  updateFilter
 }
 
 const mapStateToProps = (state) => ({
-  traits : state.traits
+  filter : state.traits.filter,
+  visibleTraits : state.traits.visibleTraits
 })
 
 /*  Note: mapStateToProps is where you should use `reselect` to create selectors, ie:
