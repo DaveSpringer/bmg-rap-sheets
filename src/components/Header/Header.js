@@ -1,5 +1,6 @@
 import React from 'react'
 import './style/Header.scss'
+import { Link } from 'react-router'
 import { slide as Menu } from 'react-burger-menu'
 
 /* This will eventually be a hamburgered, dynamic header for various
@@ -9,9 +10,9 @@ class Header extends React.Component {
     return (
       <div className='hidden-print app-header container'>
         <Menu>
-          <a id='home' className='menu-item' href='/'>Home</a>
-          <a id='builder' className='menu-item' href='/builder'>Rap Sheet Builder</a>
-          <a id='strategies' className='menu-item' href='/strategies'>Strategies Browser</a>
+          <Link id='home' className='menu-item' to='/'>Home</Link>
+          <Link id='builder' className='menu-item' to='/builder'>Rap Sheet Builder</Link>
+          <Link id='strategies' className='menu-item' to='/strategies'>Strategies Browser</Link>
         </Menu>
         <div className='welcome-message'>Bruce's Utility Belt</div>
       </div>
