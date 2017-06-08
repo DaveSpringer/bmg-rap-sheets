@@ -10,10 +10,10 @@ describe('(Component) Header', () => {
     _wrapper = shallow(<Header />)
   })
 
-  it('Renders a welcome message', () => {
-    const welcome = _wrapper.find('.welcome-message')
-    expect(welcome).to.exist
-    expect(welcome.text()).to.match(/Batman Miniature Game Rap Sheet Builder/)
-  })
+  // it('Renders a welcome message', () => {
+  //   const welcome = _wrapper.find('.welcome-message')
+  //   expect(welcome).to.exist
+  //   expect(welcome.text()).to.match(/Bruce's Utility Belt/)
+  // })
 
 })
