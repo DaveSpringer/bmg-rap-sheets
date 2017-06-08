@@ -6,9 +6,9 @@ export const HomeView = () => (
   <div className='hidden-print'>
     <h4>Welcome!</h4>
     <p>
-      The Rap Sheet Builder is a utility for the Batman Miniature game that
-      allows players to create useful reference sheets for characters in their
-      crew.
+      Bruce\'s Utility Belt is a collection of tools for the Batman Miniature
+      Game. It is intended to be a resource to help players get into BMG faster,
+      and to have a better experience while playing.
     </p>
     <Link to='/builder' activeClassName='route--active'>
       Open the Rap Sheet Builder
