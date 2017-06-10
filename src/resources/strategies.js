@@ -4,7 +4,7 @@ export const allStrategies = [{
   'text': 'You may choose a specific [Scenario] instead of a random pick. If both players choose this [Strategy], then neither can apply its effect.',
   'cost': 3,
   'phase': 'A',
-  'batmatch': true
+  'batmatch': false
 }, {
   'key': 'S02',
   'name': 'Fast Advance',
@@ -140,14 +140,14 @@ export const allStrategies = [{
   'text': '[Target] [Enemy] [Character] with [Willpower] 5 or less. That [Character] has minus 1 [Willpower] for the entire [Game]. This [Strategy] can be selected once per [Game]. Does not stack with [Duress].',
   'cost': 2,
   'phase': 'E',
-  'batmatch': true
+  'batmatch': false
 }, {
   'key': 'S21',
   'name': 'Duress',
   'text': '[Target] [Enemy] [Character] with [Willpower] 7 or less. That [Character] has minus 1 [Willpower] for the entire [Game]. This [Strategy] can be selected once per [Game]. Does not stack with [Duress].',
   'cost': 3,
   'phase': 'E',
-  'batmatch': true
+  'batmatch': false
 }, {
   'key': 'S22',
   'name': 'Public Resource Upgrade',
@@ -306,4 +306,68 @@ export const allStrategies = [{
   'phase': '?',
   'batmatch': true,
   'crews': [ 'gg' ]
+}, {
+  'key': 'S42',
+  'name': 'Direct Assault',
+  'text': 'You may deploy two [Character]s from the [Suicide Squad] [Crew] up to 15cm outside your [Deployment Zone]\'s limits.  If this [Scenario] does not include a [Deployment Zone], add 2 to both [Character]s rolls to enter the game zone instead.',
+  'cost': 2,
+  'phase': 'C',
+  'batmatch': true,
+  'crews': [ 'ss' ]
+}, {
+  'key': 'S43',
+  'name': 'Suicidal Tendencies',
+  'text': 'The [Suicide Squad] is immune to the [Run Away] rule. (See B.74)',
+  'cost': 1,
+  'phase': 'E',
+  'batmatch': true,
+  'crews': [ 'ss' ]
+}, {
+  'key': 'S44',
+  'name': 'ARGUS Telecommunications Interception',
+  'text': 'Play in any [Pre-Game] [Phase] as a [Reaction] to an [Opponent]. When an [Opponent] declares one of their [Strategies], this [Strategy] will cancel those effects, rendering the [Opponent]\'s [Strategy] useless. This may be used to cancel a [Snitch]. In addition, at the beginning of the game, add an extra [Counter] for determining who [Take the Lead].',
+  'cost': 3,
+  'phase': '?',
+  'batmatch': true,
+  'crews': [ 'ss' ]
+}, {
+  'key': 'S45',
+  'name': 'Fast Response',
+  'text': 'You may [Move] up to two [Characters] from the [Tean Titans] [Crew] 2D6cm before the [Game] starts',
+  'cost': 2,
+  'phase': 'E',
+  'batmatch': true,
+  'crews': [ 'tt' ]
+}, {
+  'key': 'S46',
+  'name': 'Impulsive Team',
+  'text': 'During the first [Raise the Plan] [Phase], you may choose up to two members of the [Teen Titans] [Crew] and add 1 free [AC] to each. This counter cannot increase the [Character]\'s [AC] above their normal maximum.',
+  'cost': 1,
+  'phase': '?',
+  'batmatch': true,
+  'crews': [ 'tt' ]
+}, {
+  'key': 'S47',
+  'name': 'Aerie Two',
+  'text': 'Chose up to two [Character]s in your [Crew]. You may choose not to [Deploy] them at the [Start] of the [Game], but instead keep them in [Reserve]. At the beginning of the second or successive [Round], you may [Place] these [Character]s anywhere on the [Playing Area], as long as the [Character]\'s [Base] fits in the new position.',
+  'cost': 3,
+  'phase': '?',
+  'batmatch': true,
+  'crews': [ 'bp' ]
+}, {
+  'key': 'S48',
+  'name': 'Hunt',
+  'text': 'Your Boss gains the [Assassin 2] [Trait].',
+  'cost': 1,
+  'phase': 'E',
+  'batmatch': true,
+  'crews': [ 'sx' ]
+}, {
+  'key': 'S49',
+  'name': 'Secret Resources',
+  'text': 'You may add 1 [Sewer] or [Lamppost], or remove 1 [Sewer] or [Lamppost] from your [Opponent].',
+  'cost': 1,
+  'phase': 'B',
+  'batmatch': true,
+  'crews': [ 'sx' ]
 }]

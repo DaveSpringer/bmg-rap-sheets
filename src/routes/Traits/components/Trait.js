@@ -8,18 +8,18 @@ class Trait extends React.Component {
     let traitName = (trait.nameFunc ? trait.nameFunc : trait.name)
     return (
       <div className='foundTrait'>
-        <div className='traitName'>
-          <span className='traitLabel'>Name:</span><span>{traitName} {cost}</span>
+        <div className='listedTraitName'>
+          <span className='traitsTraitLabel'>Name:</span><span>{traitName} {cost}</span>
         </div>
-        <div className='traitRule'>
-          <span className='traitLabel'>Rule:</span><span>{trait.rule}</span>
+        <div className='traitsTraitRule'>
+          <span className='traitsTraitLabel'>Rule:</span><span>{trait.rule}</span>
         </div>
         <div>
-          <span className='traitPhaseSpan'>
-            <span className='traitLabel'>Phase:</span><span>{trait.phase}</span>
+          <span className='traitsTraitPhaseSpan'>
+            <span className='traitsTraitLabel'>Phase:</span><span>{trait.phase}</span>
           </span>
-          <span className='traitPageSpan'>
-            <span className='traitLabel'>Page:</span><span>{trait.page}</span>
+          <span className='traitsTraitPageSpan'>
+            <span>{trait.page}</span>
           </span>
         </div>
       </div>

@@ -873,7 +873,7 @@ export const allTraits = [
     'name': 'Enemies of the Court',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'While this [Character] is in [Play], when an [Enemy] [Model] becomes a [Casualty], your [Crew] gains 1 additional [VP].',
+    'rule': 'While this [Character] is in the [Playing Area] (and not [Sewers]), when an [Enemy] [Model] becomes a [Casualty], your [Crew] gains 1 additional [VP].',
     'grants': [],
     'page': 'See File'
   },

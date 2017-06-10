@@ -1,0 +1,17 @@
+.subheader {
+  position: fixed;
+  max-height: 33px;
+  height: 33px;
+  background-color: black;
+  color: white;
+  top: 30px;
+  z-index: 1;
+}
+
+@media (max-width: 749px) {
+  .subheader { width: 100%; }
+}
+
+.subheaderRight {
+  float: right;
+}
