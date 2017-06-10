@@ -53,7 +53,7 @@ export const allTraits = [
     'name': 'Aggressive Schizophrenia',
     'phase': 'Execute the plan',
     'cost': 'Mental Disorder',
-    'rule': 'If this [Character] begins its [Activation] in [Contact], assign 1 [Action Counter] and [Attack] a [Character] in [Contact] or take 1 [Blood Damage] at the end of the [Turn].',
+    'rule': 'If this [Character] begins its [Activation] in [Contact], [Assign] 1 [Action Counter] and [Attack] a [Character] in [Contact] or take 1 [Blood Damage] at the end of the [Turn].',
     'grants': [],
     'page': 'B.55'
   },
@@ -203,7 +203,7 @@ export const allTraits = [
     'name': 'Bat-Armor MK III',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'Each time this [Character] receives a [Hit], after [Block]s, [Ping]s, and [Dodge]s; roll a die. On a result of 5+, discard the [Hit]. If this [Character] makes a Special Attack: Sneak Attack, they may assign Melee [Hit]s to targets up to 3cm away.  All of these [Hit]s are considered Sneak Attacks.',
+    'rule': 'Each time this [Character] receives a [Hit], after [Block]s, [Ping]s, and [Dodge]s; roll a die. On a result of 5+, discard the [Hit]. If this [Character] makes a Special Attack: Sneak Attack, they may [Assign] Melee [Hit]s to targets up to 3cm away.  All of these [Hit]s are considered Sneak Attacks.',
     'grants': [],
     'page': 'F.26'
   },
@@ -748,7 +748,7 @@ export const allTraits = [
     'name': 'Disarray',
     'phase': 'Execute the plan',
     'cost': '1 SC',
-    'rule': 'Once per [Turn], you may reallocate 2 [Action Counter]s of a [Seen] [Enemy] [Character].',
+    'rule': 'Once per [Turn], you may [Reallocate] 2 [Action Counter]s of a [Seen] [Enemy] [Character].',
     'grants': [],
     'page': 'B.59'
   },
@@ -781,7 +781,7 @@ export const allTraits = [
     'name': 'Disturb',
     'phase': 'Execute the plan',
     'cost': '1 SC',
-    'rule': 'Choose one [Seen] [Model]. That [Model]\'s [Action Counter]s cannot be reallocated during this [Round].',
+    'rule': 'Choose one [Seen] [Model]. That [Model]\'s [Action Counter]s cannot be [Reallocate]d during this [Round].',
     'grants': [],
     'page': 'AK.61'
   },
@@ -868,6 +868,14 @@ export const allTraits = [
     'rule': 'This [Character] can reroll [Damage Roll]s against [Character]s with the [Cybernetic], [Bot], and [Robot] [Traits], and against [Models] with the [Vehicle] [Rank].',
     'grants': [],
     'page': 'F.32'
+  },
+  {
+    'name': 'Enemies of the Court',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'While this [Character] is in [Play], when an [Enemy] [Model] becomes a [Casualty], your [Crew] gains 1 additional [VP].',
+    'grants': [],
+    'page': 'See File'
   },
   {
     'name': 'Energy Field',
@@ -1017,7 +1025,7 @@ export const allTraits = [
     'name': 'Follow Me!',
     'phase': 'Execute the plan',
     'cost': '1 SC',
-    'rule': 'Once per [Turn], assign 1 [MC] to [Friendly] [Henchmen] within 10cm.',
+    'rule': 'Once per [Turn], [Assign] 1 [MC] to [Friendly] [Henchmen] within 10cm.',
     'grants': [],
     'page': 'B.59'
   },
@@ -1203,7 +1211,7 @@ export const allTraits = [
     'name': 'Heroic',
     'phase': 'Execute the plan',
     'cost': '1 SC',
-    'rule': 'Once per [Turn], select any [Friendly] [Character] in the [Play Area]. That [Character] may assign 1 additional [Action Counter]. This may take your [Assigned] [Counters] over the [Character]\'s maximum.',
+    'rule': 'Once per [Turn], select any [Friendly] [Character] in the [Play Area]. That [Character] may [Assign] 1 additional [Action Counter]. This may take your [Assigned] [Counters] over the [Character]\'s maximum.',
     'grants': [],
     'page': 'F.36'
   },
@@ -1790,7 +1798,7 @@ export const allTraits = [
     'name': 'Order',
     'phase': 'Execute the plan',
     'cost': '1 SC',
-    'rule': 'Once per [Turn], [Seen] [Friendly] [Character] may reallocate up to 2 [Action Counter]s.',
+    'rule': 'Once per [Turn], [Seen] [Friendly] [Character] may [Reallocate] up to 2 [Action Counter]s.',
     'grants': [],
     'page': 'B.63'
   },
@@ -2183,7 +2191,7 @@ export const allTraits = [
     'name': 'Scientific',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'This [Character] may assign 4 [SC]. This [Character] is worth 1 additional [VP] if removed as a [Casualty].',
+    'rule': 'This [Character] may [Assign] 4 [SC]. This [Character] is worth 1 additional [VP] if removed as a [Casualty].',
     'grants': [],
     'page': 'B.65'
   },
@@ -2403,7 +2411,7 @@ export const allTraits = [
     'name': 'Take Cover!!',
     'phase': 'Execute the plan',
     'cost': '1SC',
-    'rule': 'Once per [Turn], [Henchmen] within 10cm of this [Character] assign 1 [DC].',
+    'rule': 'Once per [Turn], [Henchmen] within 10cm of this [Character] [Assign] 1 [DC].',
     'grants': [],
     'page': 'B.65'
   },
@@ -2621,7 +2629,7 @@ export const allTraits = [
     'name': 'Trickster',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'At the start of this [Character]\'s [Turn], they may reallocate all of their [Action Counters].',
+    'rule': 'At the start of this [Character]\'s [Turn], they may [Reallocate] all of their [Action Counters].',
     'grants': [],
     'page': 'B.66'
   },
@@ -2696,7 +2704,7 @@ export const allTraits = [
     'name': 'Veteran',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'When this [Character] is [Activated], they may reassign 2 [Action Counters].',
+    'rule': 'When this [Character] is [Activated], they may [Reallocate] 2 [Action Counters].',
     'grants': [],
     'page': 'B.66'
   },

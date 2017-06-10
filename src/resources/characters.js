@@ -4331,6 +4331,36 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
+    'alias': 'High Court Lady',
+    'rank': 'Sidekick',
+    'reputation': 30,
+    'funding': 150,
+    'crews': [
+      'co'
+    ],
+    'hates': [],
+    'traits': [
+      'Boss\'s Orders',
+      'Invaluable',
+      'Protect Me!',
+      'Court of Owls Crew',
+      'Enemies of the Court'
+    ],
+    'weapons': [
+      'Hidden Gun'
+    ],
+    'wp': 5,
+    'str': 6,
+    'mov': 1,
+    'att': 2,
+    'def': 3,
+    'end': 7,
+    'spc': 3,
+    'shop': 'COURT OF OWLS CREW',
+    'key': 'UNKNOWN-1'
+  },
+  {
+    'name': 'Unknown',
     'alias': 'High Court Member',
     'rank': 'Leader',
     'reputation': 37,
