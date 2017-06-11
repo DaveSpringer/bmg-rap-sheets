@@ -1490,7 +1490,6 @@ export const allEquipment = [{
   'funding': 250,
   'rep': 3,
   'rule': '[Model] gains the [Claws] [Trait].',
-  'target': 'Henchmen',
   'requires': { 'trait': 'Bot' },
   'target': { 'trait': 'Bot' },
   'trait': 'Claws'
@@ -1500,7 +1499,6 @@ export const allEquipment = [{
   'name': 'Shock Droid',
   'funding': 50,
   'rule': '[Model]\'s [Attacks] gains [CRT: Stunned].',
-  'target': 'Henchmen',
   'target': { 'trait': 'Bot' },
   'requires': { 'trait': 'Bot' }
 }, {
@@ -1815,4 +1813,217 @@ export const allEquipment = [{
   'target': 'Henchmen',
   'requires': 'Slade Wilson',
   'trait': [ 'Martial Artist', 'Master Fighter' ]
+}, {
+  'crew': 'wg',
+  'key': 'WG01A',
+  'name': 'Magazine',
+  'funding': 200,
+  'rule': '+1 to [Ammunition] for 1 [Weapon].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'wg',
+  'key': 'WG01B',
+  'name': 'Magazine',
+  'funding': 200,
+  'rule': '+1 to [Ammunition] for 1 [Weapon].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'wg',
+  'key': 'WG02A',
+  'name': 'Grapple-Gun',
+  'funding': 300,
+  'rule': '[Model] gains the [Batclaw] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Batclaw'
+}, {
+  'crew': 'wg',
+  'key': 'WG02B',
+  'name': 'Grapple-Gun',
+  'funding': 300,
+  'rule': '[Model] gains the [Batclaw] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Batclaw'
+}, {
+  'crew': 'wg',
+  'key': 'WG03A',
+  'name': 'Bulletproof Vest',
+  'funding': 100,
+  'rule': '[Model] gains the [Bulletproof Vest] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Bulletproof Vest'
+}, {
+  'crew': 'wg',
+  'key': 'WG03B',
+  'name': 'Bulletproof Vest',
+  'funding': 100,
+  'rule': '[Model] gains the [Bulletproof Vest] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Bulletproof Vest'
+}, {
+  'crew': 'wg',
+  'key': 'WG04',
+  'name': 'Neurotoxic Drugs',
+  'funding': 250,
+  'rule': '[Model] gains the [Fast] and [Dodge] [Trait]s.',
+  'target': 'Henchmen',
+  'trait': [ 'Fast', 'Dodge' ]
+}, {
+  'crew': 'wg',
+  'key': 'WG05',
+  'name': 'C-4',
+  'funding': 250,
+  'rule': '[Model] gains the [Explosive Gel] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Explosive Gel'
+}, {
+  'crew': 'wg',
+  'key': 'WG06',
+  'name': 'Broken Equipment',
+  'funding': 250,
+  'rule': 'Before [Phase A] of the [Pre-Game Sequence], choose one item of [Equipment] purchased by an [Opponent]. That [Equipment] may not be used during the [Game].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'wg',
+  'key': 'WG07A',
+  'name': 'Weird Device',
+  'funding': 200,
+  'rule': '[Model] gains the [Goad] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Goad'
+}, {
+  'crew': 'wg',
+  'key': 'WG07B',
+  'name': 'Weird Device',
+  'funding': 200,
+  'rule': '[Model] gains the [Goad] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Goad'
+}, {
+  'crew': 'wg',
+  'key': 'WG08A',
+  'name': 'Cup of Special Tea',
+  'funding': 100,
+  'rule': '[Model] gains one [Vertigo Dose].',
+  'target': 'Henchmen',
+  'trait': 'Vertigo Dose'
+}, {
+  'crew': 'wg',
+  'key': 'WG08B',
+  'name': 'Cup of Special Tea',
+  'funding': 100,
+  'rule': '[Model] gains one [Vertigo Dose].',
+  'target': 'Henchmen',
+  'trait': 'Vertigo Dose'
+}, {
+  'crew': 'wg',
+  'key': 'WG09',
+  'name': 'Trained Mind',
+  'funding': 100,
+  'rule': '[Model] gains the [Desensitized] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Desensitized',
+  'requires': 'Dr. Jervish Tetch'
+}, {
+  'crew': 'wg',
+  'key': 'WG10',
+  'name': 'Rhyme with Me',
+  'funding': 200,
+  'rule': '[Model] gains the [Disarray] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Disarray',
+  'requires': 'Dr. Jervish Tetch'
+}, {
+  'crew': 'wg',
+  'key': 'WG11',
+  'name': 'Masks of Wonderland-Queen of Hearts Mask',
+  'funding': 200,
+  'rule': '[Model] gains the [Assassin 1] and [Order] [Trait]s.',
+  'target': 'Henchmen',
+  'trait': [ { 'name': 'Assassin', 'points': '1' }, 'Order' ],
+  'requires': 'Dr. Jervish Tetch'
+}, {
+  'crew': 'wg',
+  'key': 'WG12',
+  'name': 'Masks of Wonderland-White Rabbit Mask',
+  'funding': 200,
+  'rule': '[Model] gains the [Fast] and [Tireless] [Trait]s.',
+  'target': 'Henchmen',
+  'trait': [ 'Fast', 'Tireless' ],
+  'requires': 'Dr. Jervish Tetch'
+}, {
+  'crew': 'wg',
+  'key': 'WG13',
+  'name': 'Masks of Wonderland-Cheshire Cat Mask',
+  'funding': 200,
+  'rule': '[Model] gains the [Stealth] and [Climbing Claws] [Trait]s.',
+  'target': 'Henchmen',
+  'trait': [ 'Stealth', 'Climbing Claws' ],
+  'requires': 'Dr. Jervish Tetch'
+}, {
+  'crew': 'gg',
+  'key': 'GG01A',
+  'name': 'Broken Equipment',
+  'funding': 400,
+  'rule': 'Before [Phase A] of the [Pre-Game Sequence], choose one item of [Equipment] purchased by an [Opponent]. That [Equipment] may not be used during the [Game].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'gg',
+  'key': 'GG01B',
+  'name': 'Broken Equipment',
+  'funding': 400,
+  'rule': 'Before [Phase A] of the [Pre-Game Sequence], choose one item of [Equipment] purchased by an [Opponent]. That [Equipment] may not be used during the [Game].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'gg',
+  'key': 'GG02A',
+  'name': 'Ancient Weapon',
+  'funding': 200,
+  'rule': '[Model]\'s [Close Combat Attacks] gain [CRT]: B.',
+  'target': 'Henchmen'
+}, {
+  'crew': 'gg',
+  'key': 'GG02B',
+  'name': 'Ancient Weapon',
+  'funding': 200,
+  'rule': '[Model]\'s [Close Combat Attacks] gain [CRT]: B.',
+  'target': 'Henchmen'
+}, {
+  'crew': 'gg',
+  'key': 'GG03',
+  'name': 'Antidote',
+  'funding': 100,
+  'rule': '[Model] is immune to [Poison].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'gg',
+  'key': 'GG04',
+  'name': 'Grapple-Gun',
+  'funding': 300,
+  'rule': '[Model] gains the [Batclaw] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Batclaw'
+}, {
+  'crew': 'gg',
+  'key': 'GG05',
+  'name': 'Hunter Training',
+  'funding': 200,
+  'rule': '[Model] gains the [Tracking] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Tracking'
+}, {
+  'crew': 'gg',
+  'key': 'GG06',
+  'name': 'Passage',
+  'funding': 200,
+  'rule': '[Model] gains the [Undercover] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Undercover'
+}, {
+  'crew': 'gg',
+  'key': 'GG07',
+  'name': 'Primal',
+  'funding': 200,
+  'rule': '[Model] gains the [Feral] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Feral'
 }]

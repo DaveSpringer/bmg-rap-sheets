@@ -35,6 +35,23 @@ export function selectCrew (crew = DEFAULT_CREW) {
   }
 }
 
+export const findTrait = (traitName) => {
+  let retrievedTrait = {
+    name : traitName,
+    phase : 'Unknown',
+    rule : 'Unknown',
+    page : 'Unknown',
+    cost : ''
+  }
+  // Coward's Reward is a problematic trait. This is a hack. I wish I had a better solution.
+  if (traitName.indexOf('Coward') !== -1) {
+    retrievedTrait = allTraits.find((trait) => (trait !== null && trait.name === 'Coward\'s Reward'))
+  } else {
+    retrievedTrait = allTraits.find((trait) => (trait !== null && trait.name === traitName))
+  }
+  return retrievedTrait
+}
+
 export const actions = {
   loadTraits,
   updateFilter,
@@ -105,14 +122,14 @@ const ACTION_HANDLERS = {
       }
 
       let sortTraits = (a, b) => {
-        var nameA = a.name.toUpperCase();
-        var nameB = b.name.toUpperCase();
+        var nameA = a.name.toUpperCase()
+        var nameB = b.name.toUpperCase()
         if (nameA < nameB) {
-          return -1;
+          return -1
         } else if (nameA > nameB) {
-          return 1;
+          return 1
         }
-        return 0;
+        return 0
       }
 
       // Trying to be crafty and use the Object.values method to get all of

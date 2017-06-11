@@ -1,0 +1,39 @@
+.foundEquipment {
+  padding: 5px;
+  margin: 5px;
+  border: 2px solid black;
+  background-color: #F0F0F0;
+  font-family: 'CarbonType', monospace;
+  font-size: 80%;
+  text-align: left;
+  page-break-inside: avoid;
+}
+
+.equipEquipLabel {
+  font-weight: 700;
+  margin-right: 10px;
+}
+
+.equipmentHeader {
+  font-size: 125%;
+}
+
+.equipRule {
+  margin: 0px 20px 0px 20px;
+}
+
+.equipCrew {
+  float: right;
+}
+
+.equipContainer {
+  margin-top: 20px;
+}
+
+.equipFunding {
+  float: right;
+}
+
+.equipTraits {
+  margin: 0px 20px 0px 20px;
+}
