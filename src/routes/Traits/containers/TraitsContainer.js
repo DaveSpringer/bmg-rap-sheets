@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { loadTraits, updateFilter } from '../modules/traits'
+import { loadTraits, updateFilter, selectCrew } from '../modules/traits'
 
 /*  This is a container component. Notice it does not contain any JSX,
     nor does it import React. This component is **only** responsible for
@@ -14,12 +14,15 @@ import Traits from '../components/Traits'
 
 const mapDispatchToProps = {
   loadTraits,
-  updateFilter
+  updateFilter,
+  selectCrew
 }
 
 const mapStateToProps = (state) => ({
   filter : state.traits.filter,
-  visibleTraits : state.traits.visibleTraits
+  visibleTraits : state.traits.visibleTraits,
+  allCrews : state.traits.allCrews,
+  crew : state.traits.crew
 })
 
 /*  Note: mapStateToProps is where you should use `reselect` to create selectors, ie:

@@ -12,7 +12,7 @@ class Subheader extends React.Component {
 }
 
 Subheader.propTypes = {
-  children: React.PropTypes.object.isRequired
+  children: React.PropTypes.array.isRequired
 }
 
 export default Subheader

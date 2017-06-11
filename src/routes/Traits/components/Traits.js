@@ -1,11 +1,14 @@
 import React from 'react'
 import './style/Traits.scss'
 import Trait from './Trait'
+import Subheader from '../../../components/Subheader/Subheader'
 
 class Traits extends React.Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.filterChanged = this.filterChanged.bind(this)
+    this.handleChange = this.handleChange.bind(this)
+    this.state = { value: props.crew }
   }
   componentWillMount () {
     // Load up the various files
@@ -16,10 +19,26 @@ class Traits extends React.Component {
     this.props.updateFilter(event.target.value)
   }
 
+  handleChange (event) {
+    let newVal = JSON.parse(event.target.value)
+    this.props.selectCrew(newVal)
+    this.setState({ value: event.target.value })
+  }
+
   render () {
+    let crewName = this.props.crew.name
     return (
       <div style={{ margin: '0 auto' }} >
+        <Subheader>
+          <select id='traitsCrewSelect' value={this.state.value} onChange={this.handleChange}>
+            {this.props.allCrews.map(crew =>
+              <option key={crew.id} value={JSON.stringify(crew)}>{crew.name}</option>
+            )}
+          </select>
+          <span className='subheaderRight' />
+        </Subheader>
         <h2>Batman Miniature Game Traits Browser</h2>
+        <h4>Traits for { crewName }</h4>
         <div className='filterField'>
           <span>
             <label className='inputLabel'>Filter Traits:</label>
@@ -40,7 +59,10 @@ Traits.propTypes = {
   loadTraits : React.PropTypes.func.isRequired,
   updateFilter : React.PropTypes.func.isRequired,
   filter : React.PropTypes.string.isRequired,
-  visibleTraits : React.PropTypes.array.isRequired
+  visibleTraits : React.PropTypes.array.isRequired,
+  allCrews : React.PropTypes.array.isRequired,
+  crew: React.PropTypes.object.isRequired,
+  selectCrew: React.PropTypes.func.isRequired
 }
 
 export default Traits

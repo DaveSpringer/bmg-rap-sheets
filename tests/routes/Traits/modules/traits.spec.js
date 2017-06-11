@@ -1,8 +1,10 @@
 import {
   LOAD_TRAITS,
   UPDATE_FILTER,
+  SELECT_CREW,
   loadTraits,
   updateFilter,
+  selectCrew,
   default as traitsReducer
 } from 'routes/Traits/modules/traits'
 
@@ -13,6 +15,10 @@ describe('(Redux Module) Traits', () => {
 
   it('Should export a constant UPDATE_FILTER', () => {
     expect(UPDATE_FILTER).to.equal('UPDATE_FILTER')
+  })
+
+  it('Should export a constant SELECT_CREW', () => {
+    expect(SELECT_CREW).to.equal('SELECT_CREW')
   })
 
   it('Should return a default state if no state is provided.', () => {
@@ -78,6 +84,17 @@ describe('(Redux Module) Traits', () => {
       it('Should restore all visible traits when reset.', () => {
         expect(revertedState.visibleTraits.length).to.equal(loadedState.allTraits.length)
       })
+    })
+  })
+
+  describe('(ActionCreator) selectCrew', () => {
+    let loadedState = traitsReducer(undefined, loadTraits())
+    it('Should be exported as a function.', () => [
+      expect(selectCrew).to.be.a('function')
+    ])
+
+    it('Should return an action with type SELECT_CREW', () => {
+      expect(selectCrew()).to.have.property('type', SELECT_CREW)
     })
   })
 })
