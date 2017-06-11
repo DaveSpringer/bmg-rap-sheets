@@ -522,7 +522,7 @@ export const allEquipment = [{
   'key': 'PN09',
   'name': 'Ostentatious Clothes',
   'funding': 200,
-  'rep': 2
+  'rep': 2,
   'rule': '[Model] gains the [Goad] [Trait].',
   'requires': 'Oswald Chesterfield Cobblepot',
   'trait': 'Goad'
@@ -648,7 +648,7 @@ export const allEquipment = [{
   'funding': 250,
   'rule': '[Model] gains the [Scheming/2] [Trait].',
   'target': 'Henchmen',
-  'trait': { 'name': 'Scheming', 'count': 2 }
+  'trait': { 'name': 'Scheming', 'count': 2 },
   'requires': 'Oliver Queen'
 }, {
   'crew': 'ga',
@@ -664,7 +664,7 @@ export const allEquipment = [{
   'key': 'GA11',
   'name': 'Hi-Tech Ammo',
   'funding': 150,
-  'rep': 2
+  'rep': 2,
   'rule': 'One of the [Model]\'s [Ranged Weapon]s gains [CRT]: BB.',
   'target': 'Henchmen',
   'requires': 'Roy Harper'
@@ -886,7 +886,7 @@ export const allEquipment = [{
   'funding': 150,
   'rule': '[Model] gains the [Protect Me!] [Trait].',
   'target': 'Black Mask',
-  'requires': 'Roman Sionis'
+  'requires': 'Roman Sionis',
   'trait': 'Protect Me!'
 }, {
   'crew': 'tf',
@@ -1491,8 +1491,8 @@ export const allEquipment = [{
   'rep': 3,
   'rule': '[Model] gains the [Claws] [Trait].',
   'target': 'Henchmen',
-  'requires': { 'trait', 'Bot' },
-  'target': { 'trait', 'Bot' },
+  'requires': { 'trait': 'Bot' },
+  'target': { 'trait': 'Bot' },
   'trait': 'Claws'
 }, {
   'crew': 'rd',
@@ -1501,16 +1501,16 @@ export const allEquipment = [{
   'funding': 50,
   'rule': '[Model]\'s [Attacks] gains [CRT: Stunned].',
   'target': 'Henchmen',
-  'target': { 'trait', 'Bot' },
-  'requires': { 'trait', 'Bot' }
+  'target': { 'trait': 'Bot' },
+  'requires': { 'trait': 'Bot' }
 }, {
   'crew': 'rd',
   'key': 'RD09',
   'name': 'Improved Chassis MK',
   'funding': 50,
   'rule': '[Model] gains the [Tireless] [Trait].',
-  'target': { 'trait', 'Bot' },
-  'requires': { 'trait', 'Bot' },
+  'target': { 'trait': 'Bot' },
+  'requires': { 'trait': 'Bot' },
   'trait': 'Tireless'
 }, {
   'crew': 'rd',
