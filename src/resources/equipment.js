@@ -2026,4 +2026,487 @@ export const allEquipment = [{
   'rule': '[Model] gains the [Feral] [Trait].',
   'target': 'Henchmen',
   'trait': 'Feral'
+}, {
+  'crew': 'ls',
+  'key': 'LS01A',
+  'name': 'Magazine',
+  'funding': 200,
+  'rule': '+1 to [Ammunition] for 1 [Weapon].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'ls',
+  'key': 'LS01B',
+  'name': 'Magazine',
+  'funding': 200,
+  'rule': '+1 to [Ammunition] for 1 [Weapon].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'ls',
+  'key': 'LS02',
+  'name': 'Loyalty Tattoo',
+  'funding': 200,
+  'rule': '[Model] gains the [Bodyguard] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Bodyguard'
+}, {
+  'crew': 'ls',
+  'key': 'LS03',
+  'name': 'Night Vision Goggles',
+  'funding': 200,
+  'rule': '[Model] gains the [Night Vision] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Night Vision'
+}, {
+  'crew': 'ls',
+  'key': 'LS04',
+  'name': 'Climbing Claws',
+  'funding': 100,
+  'rule': '[Model] gains the [Climbing Claws] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Climbing Claws'
+}, {
+  'crew': 'ls',
+  'key': 'LS05',
+  'name': 'Trained in the Shadows',
+  'funding': 200,
+  'rule': '[Model] gains the [Hidden] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Hidden'
+}, {
+  'crew': 'ls',
+  'key': 'LS06',
+  'name': 'Gas Mask',
+  'funding': 150,
+  'rule': '[Model] gains the [Gas Mask] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Gas Mask'
+}, {
+  'crew': 'ls',
+  'key': 'LS07',
+  'name': 'Grapple-Gun',
+  'funding': 400,
+  'rule': '[Model] gains the [Batclaw] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Batclaw'
+}, {
+  'crew': 'ls',
+  'key': 'LS08A',
+  'name': 'Combat Bracers',
+  'funding': 150,
+  'rule': 'This [Model]\'s [Close Combat Weapon] and [Unarmed] [Attacks] gain the [Defensive] [Weapon Trait].',
+  'target': 'Henchmen',
+  'trait': 'Defensive'
+}, {
+  'crew': 'ls',
+  'key': 'LS08B',
+  'name': 'Combat Bracers',
+  'funding': 150,
+  'rule': 'This [Model]\'s [Close Combat Weapon] and [Unarmed] [Attacks] gain the [Defensive] [Weapon Trait].',
+  'target': 'Henchmen',
+  'trait': 'Defensive'
+}, {
+  'crew': 'ls',
+  'key': 'LS09',
+  'name': 'Venom Dose',
+  'funding': 100,
+  'rule': '[Model] gains one [Venom Dose].',
+  'target': 'Henchmen',
+  'trait': 'Venom Dose'
+}, {
+  'crew': 'ls',
+  'key': 'LS10',
+  'name': 'Precise Orders',
+  'funding': 150,
+  'rule': '[Model] gains the [Chain of Command] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Chain of Command'
+}, {
+  'crew': 'ls',
+  'key': 'LS11A',
+  'name': 'Ancient Weapon',
+  'funding': 150,
+  'rep': 1,
+  'rule': '[Model]\'s [Close Combat Attacks] gain [CRT]: B.',
+  'target': 'Henchmen',
+  'requires': 'Ra\'s Al Ghul'
+}, {
+  'crew': 'ls',
+  'key': 'LS11B',
+  'name': 'Ancient Weapon',
+  'funding': 150,
+  'rep': 1,
+  'rule': '[Model]\'s [Close Combat Attacks] gain [CRT]: B.',
+  'target': 'Henchmen',
+  'requires': 'Ra\'s Al Ghul'
+}, {
+  'crew': 'ls',
+  'key': 'LS12',
+  'name': 'Shadow Training',
+  'funding': 200,
+  'rule': '[Model] gains the [Undercover] [Trait]',
+  'target': 'Henchmen',
+  'trait': 'Undercover',
+  'requires': 'Talia Al Ghul'
+}, {
+  'crew': 'ls',
+  'key': 'LS13',
+  'name': 'Bow Training',
+  'funding': 100,
+  'rule': '[Model] gains the [Shooter] [Trait]',
+  'target': 'Henchmen',
+  'trait': 'Shooter',
+  'requires': 'Nyssa Al Ghul'
+}, {
+  'crew': 'ls',
+  'key': 'LS14',
+  'name': 'Unarmed Combat Training',
+  'funding': 150,
+  'rule': '[Model] gains the [Close Combat Master] [Trait]',
+  'target': 'Henchmen',
+  'trait': 'Close Combat Master',
+  'requires': 'Lady Shiva'
+}, {
+  'crew': 'ls',
+  'key': 'LS15',
+  'name': 'Poison Training',
+  'funding': 50,
+  'rule': '[Model] gains the [Poison Master] [Trait]',
+  'target': 'Henchmen',
+  'trait': 'Poison Master',
+  'requires': 'Cheshire'
+}, {
+  'crew': 'ls',
+  'key': 'LS16',
+  'name': 'Traditional Way',
+  'funding': 0,
+  'rule': '(Unbreakable) This [Crew] cannot recruit [Model]s with [Firearm] or [Beam] rules. Instead, [Crew Affiliated Henchmen] may buy [Bow] and [Katana] [Equipment].',
+  'target': 'Henchmen',
+  'trait': 'Poison Master',
+  'requires': 'Nyssa Al Ghul (AK)'
+}, {
+  'crew': 'ls',
+  'key': 'LS17A',
+  'name': 'Bow',
+  'funding': 150,
+  'rule': '[Model] gains a [Bow] [Weapon]',
+  'target': 'Henchmen',
+  'weapon': 'Bow',
+  'requires': 'Nyssa Al Ghul (AK)'
+}, {
+  'crew': 'ls',
+  'key': 'LS17B',
+  'name': 'Bow',
+  'funding': 150,
+  'rule': '[Model] gains a [Bow] [Weapon]',
+  'target': 'Henchmen',
+  'weapon': 'Bow',
+  'requires': 'Nyssa Al Ghul (AK)'
+}, {
+  'crew': 'ls',
+  'key': 'LS18A',
+  'name': 'Katana',
+  'funding': 100,
+  'rep': 5,
+  'rule': '[Model] gains a [Katana] [Weapon]',
+  'target': 'Henchmen',
+  'weapon': 'Katana',
+  'requires': 'Nyssa Al Ghul (AK)'
+}, {
+  'crew': 'ls',
+  'key': 'LS18B',
+  'name': 'Katana',
+  'funding': 100,
+  'rep': 5,
+  'rule': '[Model] gains a [Katana] [Weapon]',
+  'target': 'Henchmen',
+  'weapon': 'Katana',
+  'requires': 'Nyssa Al Ghul (AK)'
+}, {
+  'crew': 'pi',
+  'key': 'PI01A',
+  'name': 'Titanic Mutation',
+  'funding': 150,
+  'rule': '[Model] gains one [Titan Dose].',
+  'target': { 'trait': 'Plant' },
+  'trait': 'Titan Dose'
+}, {
+  'crew': 'pi',
+  'key': 'PI01B',
+  'name': 'Titanic Mutation',
+  'funding': 150,
+  'rule': '[Model] gains one [Titan Dose].',
+  'target': { 'trait': 'Plant' },
+  'trait': 'Titan Dose'
+}, {
+  'crew': 'pi',
+  'key': 'PI02',
+  'name': 'Sense Mutation',
+  'funding': 150,
+  'rule': '[Model] gains the [Night Vision] [Trait]',
+  'target': { 'trait': 'Plant' },
+  'trait': 'Night Vision'
+}, {
+  'crew': 'pi',
+  'key': 'PI03A',
+  'name': 'Extra Spores',
+  'funding': 200,
+  'rule': '[Model] gains one additional [Ammunition] for one [Weapon].',
+  'target': { 'trait': 'Plant' }
+}, {
+  'crew': 'pi',
+  'key': 'PI03B',
+  'name': 'Extra Spores',
+  'funding': 200,
+  'rule': '[Model] gains one additional [Ammunition] for one [Weapon].',
+  'target': { 'trait': 'Plant' }
+}, {
+  'crew': 'pi',
+  'key': 'PI04A',
+  'name': 'Spikes Mutation',
+  'funding': 200,
+  'rule': '[Model] gains the [Claws] [Trait]',
+  'target': { 'trait': 'Plant' },
+  'trait': 'Claws'
+}, {
+  'crew': 'pi',
+  'key': 'PI04B',
+  'name': 'Spikes Mutation',
+  'funding': 200,
+  'rule': '[Model] gains the [Claws] [Trait]',
+  'target': { 'trait': 'Plant' },
+  'trait': 'Claws'
+}, {
+  'crew': 'pi',
+  'key': 'PI05',
+  'name': 'Luminescent Mutation',
+  'funding': 100,
+  'rule': '[Model] gains the [Lantern] [Trait]',
+  'target': { 'trait': 'Plant' },
+  'trait': 'Lantern'
+}, {
+  'crew': 'pi',
+  'key': 'PI06',
+  'name': 'Large Roots',
+  'funding': 200,
+  'rule': '[Model]s moving within 10cm of this [Plant] suffer [Impared Movement]',
+  'target': { 'trait': 'Plant' }
+}, {
+  'crew': 'pi',
+  'key': 'PI07',
+  'name': 'Grapple-Gun',
+  'funding': 300,
+  'rule': '[Model] gains the [Grapple Gun] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Grapple Gun'
+}, {
+  'crew': 'pi',
+  'key': 'PI08',
+  'name': 'Camo Vest',
+  'funding': 300,
+  'rule': '[Model] gains the [Stealth] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Stealth'
+}, {
+  'crew': 'pi',
+  'key': 'PI09',
+  'name': 'Mutation Serum',
+  'funding': 200,
+  'rep': 3,
+  'rule': '[Model] gains the [Tough Skin] and [Desensitized] [Trait]s.',
+  'target': 'Henchmen',
+  'trait': ['Tough Skin', 'Desensitized']
+}, {
+  'crew': 'pi',
+  'key': 'PI10A',
+  'name': 'Mutant Alterations',
+  'funding': 150,
+  'rep': 2,
+  'rule': '[Model] gains the [Adaptable] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Adaptable'
+}, {
+  'crew': 'pi',
+  'key': 'PI10B',
+  'name': 'Mutant Alterations',
+  'funding': 150,
+  'rep': 2,
+  'rule': '[Model] gains the [Adaptable] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Adaptable'
+}, {
+  'crew': 'pi',
+  'key': 'PI11A',
+  'name': 'Corrosive Blood',
+  'funding': 50,
+  'rule': 'When this [Model] becomes a [Casualty], all [Model]s in [Contact] must pass an [Endurance Roll] or receive B [Damage].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'pi',
+  'key': 'PI11B',
+  'name': 'Corrosive Blood',
+  'funding': 50,
+  'rule': 'When this [Model] becomes a [Casualty], all [Model]s in [Contact] must pass an [Endurance Roll] or receive B [Damage].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'pi',
+  'key': 'PI12',
+  'name': 'Modified Pheromones',
+  'funding': 150,
+  'rep': 5,
+  'rule': '(Cannot be [Broken]) All [Model]s in the [Crew] with the [Control Pheromones] rule can choose up to 2 [Enemy] [Model]s instead of 1 when using the [Control Pheromones] [Trait]. This bonus is lost if this [Model] is removed from [Play].',
+  'target': [ 'Leader', 'Sidekick', 'Free Agent' ],
+  'requires': 'Pamela Lillian Isley'
+}, {
+  'crew': 'pi',
+  'key': 'PI13',
+  'name': 'Ancient Plants',
+  'funding': 200,
+  'rep': 40,
+  'rule': '(Cannot be [Broken]) [Model] gains [Large], +1 to all [Basic Skills] except [Endurance], +4 [Endurance], [Tough Skin], and [Millenary Roots].',
+  'target': [ 'Leader', 'Sidekick', 'Free Agent' ],
+  'trait': [ 'Large', 'Tough Skin', 'Millenary Roots' ],
+  'requires': 'Pamela Lillian Isley'
+}, {
+  'crew': 'pi',
+  'key': 'PI14',
+  'name': 'Passage',
+  'funding': 200,
+  'rule': '[Model] gains the [Undercover] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Undercover'
+}, {
+  'crew': 'oc',
+  'key': 'OC01A',
+  'name': 'Magazine',
+  'funding': 150,
+  'rule': '+1 to [Ammunition] for 1 [Weapon].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'oc',
+  'key': 'OC01B',
+  'name': 'Magazine',
+  'funding': 150,
+  'rule': '+1 to [Ammunition] for 1 [Weapon].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'oc',
+  'key': 'OC01C',
+  'name': 'Magazine',
+  'funding': 150,
+  'rule': '+1 to [Ammunition] for 1 [Weapon].',
+  'target': 'Henchmen'
+}, {
+  'crew': 'oc',
+  'key': 'OC02',
+  'name': 'Bribe',
+  'funding': 100,
+  'rule': '[Model] gains the [Informer] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Informer'
+}, {
+  'crew': 'oc',
+  'key': 'OC03A',
+  'name': 'Kevlar Vest',
+  'funding': 300,
+  'rule': '[Model] gains the [Kevlar Vest] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Kevlar Vest'
+}, {
+  'crew': 'oc',
+  'key': 'OC03B',
+  'name': 'Kevlar Vest',
+  'funding': 300,
+  'rule': '[Model] gains the [Kevlar Vest] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Kevlar Vest'
+}, {
+  'crew': 'oc',
+  'key': 'OC04A',
+  'name': 'Grapple-Gun',
+  'funding': 250,
+  'rule': '[Model] gains the [Grapple Gun] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Grapple Gun'
+}, {
+  'crew': 'oc',
+  'key': 'OC04B',
+  'name': 'Grapple-Gun',
+  'funding': 250,
+  'rule': '[Model] gains the [Grapple Gun] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Grapple Gun'
+}, {
+  'crew': 'oc',
+  'key': 'OC05',
+  'name': 'C-4',
+  'funding': 250,
+  'rule': '[Model] gains the [Explosive Gel] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Explosive Gel'
+}, {
+  'crew': 'oc',
+  'key': 'OC06',
+  'name': 'Gas Mask',
+  'funding': 150,
+  'rule': '[Model] gains the [Gas Mask] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Gas Mask'
+}, {
+  'crew': 'oc',
+  'key': 'OC07',
+  'name': 'Silencer',
+  'funding': 200,
+  'rule': 'One of the [Model]\'s [Ranged Weapons] gains the [Silencer] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Silencer'
+}, {
+  'crew': 'oc',
+  'key': 'OC08',
+  'name': 'Backpack',
+  'funding': 100,
+  'rule': '[Model] gains the [Backpack] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Backpack'
+}, {
+  'crew': 'oc',
+  'key': 'OC09',
+  'name': 'Mechanic',
+  'funding': 100,
+  'rule': '[Model] gains the [Repairman] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Repairman'
+}, {
+  'crew': 'oc',
+  'key': 'OC10',
+  'name': 'High Confidence',
+  'funding': 200,
+  'rule': '[Model] gains the [Sturdy] and [Mobster] [Trait]s.',
+  'target': [ 'Henchmen', 'Victor Zsasz' ],
+  'trait': [ 'Sturdy', 'Mobster' ],
+  'requires': 'Falcone'
+}, {
+  'crew': 'oc',
+  'key': 'OC11',
+  'name': 'Mafia',
+  'funding': 100,
+  'rule': '[Model] gains the [Criminal] [Trait].',
+  'target': 'Henchmen',
+  'trait': 'Criminal',
+  'requires': 'Falcone'
+}, {
+  'crew': 'oc',
+  'key': 'OC12',
+  'name': 'Old-School Training',
+  'funding': 50,
+  'rule': '[Model] gains the [Veteran] [Trait].',
+  'target': { 'trait': 'Elite' },
+  'trait': 'Veteran'
+}, {
+  'crew': 'oc',
+  'key': 'OC13',
+  'name': 'Loyalty Tattoo',
+  'funding': 100,
+  'rule': '[Model] gains the [Bodyguard] [Trait].',
+  'target': { 'trait': 'Elite' },
+  'trait': 'Bodyguard'
 }]

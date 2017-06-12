@@ -31,10 +31,10 @@ class EquipmentItem extends React.Component {
       if (equipment.trait !== undefined) {
         if (typeof equipment.trait === 'string') {
           traitList.push(equipment.trait)
-        } else if (typeof equipment.trait === 'object') {
-          traitList.push(equipment.trait.name)
-        } else {
+        } else if (Array.isArray(equipment.trait)) {
           traitList = equipment.trait
+        } else {
+          traitList.push(equipment.trait.name)
         }
       }
       populatedTraits = traitList.reduce((resultTraits, trait) => {
@@ -66,12 +66,61 @@ class EquipmentItem extends React.Component {
           <div className='equipTraits'>
             {populatedTraits.map(trait =>
               <EquipmentTrait key={trait.name} trait={trait} />
-        )}
+            )}
           </div>
         </div>
       )
     } else {
       traitsArea = ''
+    }
+    let repArea = '['
+    if (equipment.rep !== undefined) {
+      repArea = (
+        <span>
+          <span className='equipEquipLabel'>Rep:</span>
+          <span>{equipment.rep}</span>
+        </span>
+      )
+    }
+
+    let prettifyObj = (tar) => {
+      if (tar === undefined) {
+        return ''
+      }
+      if (Array.isArray(tar)) {
+        return tar.reduce((curStr, ele) => {
+          if (curStr.length > 0) {
+            curStr += ', ' + ele
+          } else {
+            curStr += ele
+          }
+          return curStr
+        }, '')
+      } else if (typeof tar === 'string') {
+        return tar
+      } else {
+        return Object.values(tar)[0]
+      }
+    }
+    let requiresArea = ''
+    let requiresText = prettifyObj(equipment.requires)
+    if (equipment.requires !== undefined) {
+      requiresArea = (
+        <div>
+          <span className='equipEquipLabel'>Requires:</span>
+          <span>{requiresText}</span>
+        </div>
+      )
+    }
+    let targetArea = ''
+    let targetText = prettifyObj(equipment.target)
+    if (equipment.target !== undefined) {
+      targetArea = (
+        <div>
+          <span className='equipEquipLabel'>Target:</span>
+          <span>{targetText}</span>
+        </div>
+      )
     }
     return (
       <div className='foundEquipment'>
@@ -86,6 +135,8 @@ class EquipmentItem extends React.Component {
               <span>{crewsString}</span>
             </span>
           </div>
+          {targetArea}
+          {requiresArea}
           <div className='equipRule'>
             <span className='equipEquipLabel'>Rule:</span>
             <span>{equipment.rule}</span>
@@ -93,8 +144,7 @@ class EquipmentItem extends React.Component {
           {traitsArea}
           <div className='equipCost'>
             <span className='equipRep'>
-              <span className='equipEquipLabel'>Rep:</span>
-              <span>{equipment.rep}</span>
+              {repArea}
             </span>
             <span className='equipFunding'>
               <span className='equipEquipLabel'>Funding:</span>

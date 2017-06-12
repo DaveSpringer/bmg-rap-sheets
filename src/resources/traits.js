@@ -1632,6 +1632,14 @@ export const allTraits = [
     'page': '?'
   },
   {
+    'name': 'Millenary Roots',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'The [Action Area] for this [Plant] can be increased to 15cm from 10cm.',
+    'grants': [],
+    'page': 'AK.45'
+  },
+  {
     'name': 'Mind Control',
     'phase': 'Execute the plan',
     'cost': '2 SC',
