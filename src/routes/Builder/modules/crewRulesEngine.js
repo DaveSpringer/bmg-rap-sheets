@@ -112,7 +112,9 @@ const addCharacter = (state, action) => {
         // Just skip this case.
         return result
       }
-      if (curChar.name === char.name && curChar.name !== 'Unknown') {
+      if (curChar.name === char.name
+        && curChar.name !== 'Unknown'
+        && curChar.name !== 'Classified') {
         newHiddenChars.push(curChar)
         return result
       }

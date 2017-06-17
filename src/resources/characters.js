@@ -2587,7 +2587,70 @@ export const loadedCharacters = [
     'end': 5,
     'spc': 3,
     'shop': 'POISON IVY & PLANTS SLAVES',
-    'key': '068D'
+    'key': '068D1',
+    'multiples': true
+  },
+  {
+    'name': 'Creeper Plant',
+    'alias': 'Creeper Plant',
+    'rank': 'Henchman',
+    'reputation': 16,
+    'funding': 0,
+    'crews': [
+      'pi'
+    ],
+    'hates': [],
+    'traits': [
+      'Plant',
+      {
+        'name': 'Elite',
+        'type': 'Plants'
+      }
+    ],
+    'weapons': [
+      'Creeper'
+    ],
+    'wp': 5,
+    'str': 4,
+    'mov': 0,
+    'att': 3,
+    'def': 3,
+    'end': 5,
+    'spc': 3,
+    'shop': 'POISON IVY & PLANTS SLAVES',
+    'key': '068D2',
+    'multiples': true
+  },
+  {
+    'name': 'Creeper Plant',
+    'alias': 'Creeper Plant',
+    'rank': 'Henchman',
+    'reputation': 16,
+    'funding': 0,
+    'crews': [
+      'pi'
+    ],
+    'hates': [],
+    'traits': [
+      'Plant',
+      {
+        'name': 'Elite',
+        'type': 'Plants'
+      }
+    ],
+    'weapons': [
+      'Creeper'
+    ],
+    'wp': 5,
+    'str': 4,
+    'mov': 0,
+    'att': 3,
+    'def': 3,
+    'end': 5,
+    'spc': 3,
+    'shop': 'POISON IVY & PLANTS SLAVES',
+    'key': '068D3',
+    'multiples': true
   },
   {
     'name': 'Diaz',
@@ -3614,7 +3677,68 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'GOTHAM POLICE SET I',
-    'key': '005B'
+    'key': '005B1',
+    'multiples': true
+  },
+  {
+    'name': 'Gotham Policeman',
+    'alias': 'Gotham Policeman',
+    'rank': 'Henchman',
+    'reputation': 16,
+    'funding': 0,
+    'crews': [
+      'bt',
+      'ga',
+      'lf'
+    ],
+    'hates': [],
+    'traits': [
+      'Arrest',
+      'Lantern'
+    ],
+    'weapons': [
+      'Baton Heavy'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 4,
+    'spc': 3,
+    'shop': 'GOTHAM POLICE SET I',
+    'key': '005B2',
+    'multiples': true
+  },
+  {
+    'name': 'Gotham Policeman',
+    'alias': 'Gotham Policeman',
+    'rank': 'Henchman',
+    'reputation': 16,
+    'funding': 0,
+    'crews': [
+      'bt',
+      'ga',
+      'lf'
+    ],
+    'hates': [],
+    'traits': [
+      'Arrest',
+      'Lantern'
+    ],
+    'weapons': [
+      'Baton Heavy'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 4,
+    'spc': 3,
+    'shop': 'GOTHAM POLICE SET I',
+    'key': '005B3',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -3642,7 +3766,66 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'GOTHAM POLICE SET II',
-    'key': '021A'
+    'key': '021A1',
+    'multiples': true
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Gotham Policewoman',
+    'rank': 'Henchman',
+    'reputation': 14,
+    'funding': 0,
+    'crews': [
+      'bt',
+      'ga',
+      'lf'
+    ],
+    'hates': [],
+    'traits': [
+      'Arrest'
+    ],
+    'weapons': [
+      'Tonfa'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 4,
+    'spc': 3,
+    'shop': 'GOTHAM POLICE SET II',
+    'key': '021A2',
+    'multiples': true
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Gotham Policewoman',
+    'rank': 'Henchman',
+    'reputation': 14,
+    'funding': 0,
+    'crews': [
+      'bt',
+      'ga',
+      'lf'
+    ],
+    'hates': [],
+    'traits': [
+      'Arrest'
+    ],
+    'weapons': [
+      'Tonfa'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 4,
+    'spc': 3,
+    'shop': 'GOTHAM POLICE SET II',
+    'key': '021A3',
+    'multiples': true
   },
   {
     'name': 'Oliver Queen',
@@ -6650,7 +6833,70 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'POISON IVY & PLANTS SLAVES',
-    'key': '068C'
+    'key': '068C1',
+    'multiples': true
+  },
+  {
+    'name': 'Plant',
+    'alias': 'Plant',
+    'rank': 'Henchman',
+    'reputation': 10,
+    'funding': 0,
+    'crews': [
+      'pi'
+    ],
+    'hates': [],
+    'traits': [
+      'Plant',
+      {
+        'name': 'Elite',
+        'type': 'Plants'
+      }
+    ],
+    'weapons': [
+      'Root'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 0,
+    'att': 3,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'POISON IVY & PLANTS SLAVES',
+    'key': '068C2',
+    'multiples': true
+  },
+  {
+    'name': 'Plant',
+    'alias': 'Plant',
+    'rank': 'Henchman',
+    'reputation': 10,
+    'funding': 0,
+    'crews': [
+      'pi'
+    ],
+    'hates': [],
+    'traits': [
+      'Plant',
+      {
+        'name': 'Elite',
+        'type': 'Plants'
+      }
+    ],
+    'weapons': [
+      'Root'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 0,
+    'att': 3,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'POISON IVY & PLANTS SLAVES',
+    'key': '068C3',
+    'multiples': true
   },
   {
     'name': 'Dr. Pamela Lillian Isley',
@@ -8786,7 +9032,70 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'POISON IVY & PLANTS SLAVES',
-    'key': '068B'
+    'key': '068B1',
+    'multiples': true
+  },
+  {
+    'name': 'Spore Plant',
+    'alias': 'Spore Plant',
+    'rank': 'Henchman',
+    'reputation': 20,
+    'funding': 150,
+    'crews': [
+      'pi'
+    ],
+    'hates': [],
+    'traits': [
+      'Plant',
+      {
+        'name': 'Elite',
+        'type': 'Plants'
+      }
+    ],
+    'weapons': [
+      'Spore Sheath'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 0,
+    'att': 3,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'POISON IVY & PLANTS SLAVES',
+    'key': '068B2',
+    'multiples': true
+  },
+  {
+    'name': 'Spore Plant',
+    'alias': 'Spore Plant',
+    'rank': 'Henchman',
+    'reputation': 20,
+    'funding': 150,
+    'crews': [
+      'pi'
+    ],
+    'hates': [],
+    'traits': [
+      'Plant',
+      {
+        'name': 'Elite',
+        'type': 'Plants'
+      }
+    ],
+    'weapons': [
+      'Spore Sheath'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 0,
+    'att': 3,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'POISON IVY & PLANTS SLAVES',
+    'key': '068B3',
+    'multiples': true
   },
   {
     'name': 'Koriand‘r',

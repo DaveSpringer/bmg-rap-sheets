@@ -35,7 +35,7 @@ describe('(Redux Action Sub-Module) loadResources', () => {
       let keyIndex = -1
 
       loadedState.allCharacters.forEach((character) => {
-        characterKey = character.name + '-' + character.alias
+        characterKey = character.key
         keyIndex = nameAndAliasArray.indexOf(characterKey)
         if (keyIndex !== -1) {
           console.log('Found unexpected duplicate character: ' + characterKey)

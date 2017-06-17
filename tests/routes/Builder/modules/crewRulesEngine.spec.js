@@ -192,6 +192,30 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(removeFreeAgentResult.crewCode.indexOf('071')).to.equal(-1)
       })
     })
+
+    describe('(Sub-Function) Add henchmen to crew.', () => {
+      let addHenchman = characterSelected(selectBatmanResult, selectCharacter('Delta'))
+      let addFatCopOne = characterSelected(addHenchman, selectCharacter('Gotham Policeman'))
+      let addFatCopTwo = characterSelected(addFatCopOne, selectCharacter('Gotham Policeman'))
+
+      it('Should be able to select a Henchman.', () => {
+        expect(addHenchman.characters.length).to.equal(selectBatmanResult.characters.length + 1)
+      })
+
+      it('Selected henchman should not reduce the other henchmen available.', () => {
+        expect(addHenchman.availableCharacters.length).to.equal(selectBatmanResult.availableCharacters.length - 1)
+      })
+
+      it('Should be able to add a second henchman.', () => {
+        expect(addFatCopOne.characters.length).to.equal(addHenchman.characters.length + 1)
+        expect(addFatCopOne.availableCharacters.length).to.equal(addHenchman.availableCharacters.length - 1)
+      })
+
+      it('Should be able to add a multiple henchman.', () => {
+        expect(addFatCopTwo.characters.length).to.equal(addFatCopOne.characters.length + 1)
+        expect(addFatCopTwo.availableCharacters.length).to.equal(addFatCopOne.availableCharacters.length - 1)
+      })
+    })
   })
 
   describe('(Function) Toggle Follow Rules flag.', () => {
