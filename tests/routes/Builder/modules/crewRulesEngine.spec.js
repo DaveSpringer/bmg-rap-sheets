@@ -28,8 +28,28 @@ const defaultState = {
 }
 
 const loadedState = builderReducer(defaultState, loadResources())
+const allCharacters = loadedState.allCharacters
 const selectBatmanCrew = builderReducer(loadedState, selectCrew({name: 'Batman', id: 'bt'}))
-const selectBatmanResult = characterSelected(selectBatmanCrew, selectCharacter('Batman (Batfleck)'))
+const findKeyFromAlias = (alias) => (character) => {
+  return character.alias === alias
+}
+const selectKeyFromAlias = (alias) => {
+  let aliasFind = findKeyFromAlias(alias)
+  let tempChar = allCharacters.find(aliasFind)
+  if (tempChar !== undefined) {
+    return tempChar.key
+  } else {
+    return undefined
+  }
+}
+const batfleck = selectKeyFromAlias('Batman (Batfleck)')
+const batgirl = selectKeyFromAlias('Batgirl')
+const gordonKey = selectKeyFromAlias('Gordon')
+const huntressKey = selectKeyFromAlias('Huntress')
+const cyborgKey = selectKeyFromAlias('Cyborg')
+const batgirlComicKey = selectKeyFromAlias('Batgirl (Comic)')
+const adamWestKey = selectKeyFromAlias('Batman (Adam West)')
+const selectBatmanResult = characterSelected(selectBatmanCrew, selectCharacter(batfleck))
 const countCharacters = (stateResult) => stateResult.availableCharacters.length + stateResult.characters.length + stateResult.hiddenCharacters.length
 // I couldn't get currying to work here. Still uncertain as to why...
 const countType = (rankType) => { (count, character) => { if (character.rank === rankType) { return count + 1 } else { return count } } }
@@ -54,7 +74,11 @@ const countFreeAgents = (count, character) => {
     return count
   }
 }
-let filterCharacterAlias = (alias) => (character) => character.alias === alias
+const filterCharacterAlias = (alias) => (character) => character.alias === alias
+
+
+
+// characters.find(findKeyFromAlias(alias))
 
 describe('(Redux Action Sub-Module) crewRulesEngine', () => {
 
@@ -86,7 +110,7 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
       })
 
       it('Should handle selecting Batman again.', () => {
-        let selectBatmanAgainResult = characterSelected(selectBatmanResult, selectCharacter('Batman (Batfleck)'))
+        let selectBatmanAgainResult = characterSelected(selectBatmanResult, selectCharacter(batfleck))
         expect(selectBatmanAgainResult.leaders).to.equal(selectBatmanCrew.leaders)
         expect(selectBatmanAgainResult.sidekicks).to.equal(selectBatmanCrew.sidekicks)
         expect(selectBatmanAgainResult.freeAgents).to.equal(selectBatmanCrew.freeAgents)
@@ -96,14 +120,14 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(selectBatmanAgainResult.availableCharacters.reduce(countLeaders, 0)).to.equal(selectBatmanCrew.availableCharacters.reduce(countLeaders, 0))
         expect(countCharacters(selectBatmanAgainResult)).to.equal(countCharacters(selectBatmanResult))
       })
-      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('Batgirl'))
+      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter(batgirl))
 
       it('Should handle adding a Sidekick after a Leader', () => {
         expect(countCharacters(addSidekickResult)).to.equal(countCharacters(selectBatmanResult))
       })
 
       it('Should handle adding Sidekick, then selecting Batman.', () => {
-        let deselectBatmanResult = characterSelected(addSidekickResult, selectCharacter('Batman (Batfleck)'))
+        let deselectBatmanResult = characterSelected(addSidekickResult, selectCharacter(batfleck))
         expect(countCharacters(deselectBatmanResult)).to.equal(countCharacters(addSidekickResult))
         expect(deselectBatmanResult.hiddenCharacters.length).to.equal(0)
       })
@@ -111,7 +135,7 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
       it('Should not be able to add an unavailable character.', () => {
         expect(selectBatmanResult.availableCharacters.filter(filterCharacterAlias('Batman (Adam West)')).length).to.equal(0)
         expect(selectBatmanResult.hiddenCharacters.filter(filterCharacterAlias('Batman (Adam West)')).length).to.equal(1)
-        let selectAdamWestErr = characterSelected(selectBatmanResult, selectCharacter('Batman (Adam West)'))
+        let selectAdamWestErr = characterSelected(selectBatmanResult, selectCharacter(adamWestKey))
         expect(selectAdamWestErr.availableCharacters.filter(filterCharacterAlias('Batman (Adam West)')).length).to.equal(0)
         expect(selectAdamWestErr.hiddenCharacters.filter(filterCharacterAlias('Batman (Adam West)')).length).to.equal(1)
         expect(countCharacters(selectAdamWestErr)).to.equal(countCharacters(selectBatmanResult))
@@ -119,11 +143,11 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
     })
 
     describe('(Sub-Function) Adding Sidekick', () => {
-      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('Batgirl (Comic)'))
-      let firstSidekickResult = characterSelected(selectBatmanCrew, selectCharacter('Batgirl (Comic)'))
-      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter('Gordon'))
-      let removeFirstSidekick = characterSelected(secondSidekickResult, selectCharacter('Batgirl (Comic)'))
-      let removeSecondSidekick = characterSelected(secondSidekickResult, selectCharacter('Batgirl (Comic)'))
+      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter(batgirlComicKey))
+      let firstSidekickResult = characterSelected(selectBatmanCrew, selectCharacter(batgirlComicKey))
+      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter(gordonKey))
+      let removeFirstSidekick = characterSelected(secondSidekickResult, selectCharacter(batgirlComicKey))
+      let removeSecondSidekick = characterSelected(secondSidekickResult, selectCharacter(batgirlComicKey))
       let startingSidekicks = selectBatmanCrew.availableCharacters.reduce(countSidekicks, 0)
 
       it('Should be able to add a Sidekick', () => {
@@ -164,9 +188,9 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
     })
 
     describe('(Sub-Function) Adding Generic Free Agent', () => {
-      let addFreeAgentResult = characterSelected(selectBatmanResult, selectCharacter('Huntress'))
+      let addFreeAgentResult = characterSelected(selectBatmanResult, selectCharacter(huntressKey))
       let startingFreeAgents = selectBatmanResult.characters.reduce(countFreeAgents, 0)
-      let removeFreeAgentResult = characterSelected(addFreeAgentResult, selectCharacter('Huntress'))
+      let removeFreeAgentResult = characterSelected(addFreeAgentResult, selectCharacter(huntressKey))
 
       it('Should be able to select Huntress.', () => {
         expect(addFreeAgentResult.sidekicks).to.equal(0)
@@ -194,9 +218,9 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
     })
 
     describe('(Sub-Function) Add henchmen to crew.', () => {
-      let addHenchman = characterSelected(selectBatmanResult, selectCharacter('Delta'))
-      let addFatCopOne = characterSelected(addHenchman, selectCharacter('Gotham Policeman'))
-      let addFatCopTwo = characterSelected(addFatCopOne, selectCharacter('Gotham Policeman'))
+      let addHenchman = characterSelected(selectBatmanResult, selectCharacter('046B'))
+      let addFatCopOne = characterSelected(addHenchman, selectCharacter('005B1'))
+      let addFatCopTwo = characterSelected(addFatCopOne, selectCharacter('005B2'))
 
       it('Should be able to select a Henchman.', () => {
         expect(addHenchman.characters.length).to.equal(selectBatmanResult.characters.length + 1)
@@ -226,10 +250,10 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
     })
 
     it('Should add any hidden characters when switching from true to false.', () => {
-      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('Batgirl (Comic)'))
-      let firstSidekickResult = characterSelected(selectBatmanCrew, selectCharacter('Batgirl (Comic)'))
-      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter('Gordon'))
-      let addFreeAgentResult = characterSelected(selectBatmanResult, selectCharacter('Huntress'))
+      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter(batgirlComicKey))
+      let firstSidekickResult = characterSelected(selectBatmanCrew, selectCharacter(batgirlComicKey))
+      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter(gordonKey))
+      let addFreeAgentResult = characterSelected(selectBatmanResult, selectCharacter(huntressKey))
       let toggleToFalseWithSelection = toggleFollowRules(addFreeAgentResult, followCrewRules(false))
 
       expect(toggleToFalseWithSelection.hiddenCharacters.length).to.equal(0)
@@ -238,29 +262,29 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
 
     it('Should be able to add many leaders when false.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
-      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman (Adam West)'))
+      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter(adamWestKey))
       expect(addAnotherBatman.characters.length).to.equal(2)
     })
 
     it('Should be able to remove an extra leader when false.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
-      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman (Adam West)'))
-      let addAnotherBatmanAgain = characterSelected(addAnotherBatman, selectCharacter('Batman (AC)'))
+      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter(adamWestKey))
+      let addAnotherBatmanAgain = characterSelected(addAnotherBatman, selectCharacter('001'))
       expect(addAnotherBatmanAgain.characters.length).to.equal(3)
     })
 
     it('Should be able to add many sidekicks when false.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
-      let firstSidekickResult = characterSelected(toggleToFalse, selectCharacter('Batgirl (Comic)'))
-      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter('Gordon'))
-      let thirdSidekickResult = characterSelected(secondSidekickResult, selectCharacter('Cyborg'))
+      let firstSidekickResult = characterSelected(toggleToFalse, selectCharacter(batgirlComicKey))
+      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter(gordonKey))
+      let thirdSidekickResult = characterSelected(secondSidekickResult, selectCharacter(cyborgKey))
       expect(thirdSidekickResult.characters.reduce(countSidekicks, 0)).to.equal(3)
     })
 
     it('Should be able to flip to true when a valid crew is selected.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
-      let firstSidekickResult = characterSelected(toggleToFalse, selectCharacter('Batgirl (Comic)'))
-      let addFreeAgentResult = characterSelected(firstSidekickResult, selectCharacter('Huntress'))
+      let firstSidekickResult = characterSelected(toggleToFalse, selectCharacter(batgirlComicKey))
+      let addFreeAgentResult = characterSelected(firstSidekickResult, selectCharacter(huntressKey))
       let toggleToTrue = toggleFollowRules(addFreeAgentResult, followCrewRules(true))
 
       expect(toggleToTrue.followRules).to.equal(true)
@@ -276,16 +300,16 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
 
     it('Should not allow a user to enable when there are too many leaders.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
-      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter('Batman (Adam West)'))
+      let addAnotherBatman = characterSelected(toggleToFalse, selectCharacter(adamWestKey))
       let toggleToTrue = toggleFollowRules(addAnotherBatman, followCrewRules(true))
       expect(toggleToTrue.followRules).to.equal(false)
     })
 
     it('Should not allow a user to enable when there are too many sidekicks.', () => {
       let toggleToFalse = toggleFollowRules(selectBatmanResult, followCrewRules(false))
-      let firstSidekickResult = characterSelected(toggleToFalse, selectCharacter('Batgirl (Comic)'))
-      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter('Gordon'))
-      let thirdSidekickResult = characterSelected(secondSidekickResult, selectCharacter('Cyborg'))
+      let firstSidekickResult = characterSelected(toggleToFalse, selectCharacter(batgirlComicKey))
+      let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter(gordonKey))
+      let thirdSidekickResult = characterSelected(secondSidekickResult, selectCharacter(cyborgKey))
       let toggleToTrue = toggleFollowRules(thirdSidekickResult, followCrewRules(true))
       expect(toggleToTrue.followRules).to.equal(false)
     })

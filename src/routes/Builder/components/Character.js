@@ -32,7 +32,7 @@ class Character extends React.Component {
   }
 
   _onClick () {
-    this.props.selectCharacter(this.props.character.alias)
+    this.props.selectCharacter(this.props.character.key)
   }
 
   charDisplay () {

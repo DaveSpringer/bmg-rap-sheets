@@ -2,13 +2,13 @@ import { sortCharacters } from './common'
 
 // TODO - I have severe concerns over this method of finding a character.
 // It is effectively using a non-unique key for the find.  This is bad.
-const dumbCharFinder = (charArray, charAlias) => {
-  return charArray[dumbCharIndexer(charArray, charAlias)]
+const dumbCharFinder = (charArray, charKey) => {
+  return charArray[dumbCharIndexer(charArray, charKey)]
 }
 
-const dumbCharIndexer = (charArray, charAlias) => {
+const dumbCharIndexer = (charArray, charKey) => {
   for (var i = 0; i < charArray.length; i++) {
-    if (charArray[i].alias !== undefined && charArray[i].alias === charAlias) {
+    if (charArray[i].key !== undefined && charArray[i].key === charKey) {
       return i
     }
   }
@@ -45,7 +45,7 @@ const removeCharacter = (state, action, char) => {
     // Using a classic, ugly iterator for more control as well. This is less
     // "functional" than it could be.
     newHiddenChars = newHiddenChars.reduce((result, curChar) => {
-      if (curChar.name === char.name && curChar.alias === char.alias) {
+      if (curChar.key === char.key) {
         return result
       }
       if (curChar.name === char.name && curChar.name !== 'Unknown') {
@@ -76,9 +76,9 @@ const removeCharacter = (state, action, char) => {
 }
 
 const addCharacter = (state, action) => {
-  let char = dumbCharFinder(state.availableCharacters, action.characterAlias)
+  let char = dumbCharFinder(state.availableCharacters, action.characterKey)
   if (char === undefined) {
-    console.log('Failed to find the provided character: ' + action.characterAlias)
+    console.log('Failed to find the provided character: ' + action.characterKey)
     return state
   }
 
@@ -108,13 +108,15 @@ const addCharacter = (state, action) => {
     // Using a classic, ugly iterator for more control as well. This is less
     // "functional" than it could be.
     newAvailChars = newAvailChars.reduce((result, curChar) => {
-      if (curChar.name === char.name && char.alias === curChar.alias) {
+      if (char.key === curChar.key) {
         // Just skip this case.
         return result
       }
-      if (curChar.name === char.name
+      if (curChar.alias === char.alias
+        && curChar.name === char.name
         && curChar.name !== 'Unknown'
-        && curChar.name !== 'Classified') {
+        && curChar.name !== 'Classified'
+        && !curChar.multiples) {
         newHiddenChars.push(curChar)
         return result
       }
@@ -142,7 +144,7 @@ const addCharacter = (state, action) => {
     }, [])
   } else {
     // Remove the selected from the availableCharacters.
-    let location = dumbCharIndexer(state.availableCharacters, action.characterAlias)
+    let location = dumbCharIndexer(state.availableCharacters, action.characterKey)
 
     newAvailChars.splice(location, 1)
   }
@@ -204,7 +206,7 @@ export const toggleFollowRules = (state, action) => {
 
     let resultState = oldCharacters.reduce((interimState, character) => {
       console.log('Current counts. Leaders: ' + interimState.leaders + '. sidekicks: ' + interimState.sidekicks + '. Free Agents: ' + interimState.freeAgents)
-      return addCharacter(interimState, { characterAlias : character.alias })
+      return addCharacter(interimState, { characterKey : character.key })
     }, resetState)
 
     return resultState
@@ -221,7 +223,7 @@ export const toggleFollowRules = (state, action) => {
 }
 
 export const characterSelected = (state, action) => {
-  let char = dumbCharFinder(state.characters, action.characterAlias)
+  let char = dumbCharFinder(state.characters, action.characterKey)
 
   if (char !== undefined) {
     return removeCharacter(state, action, char)

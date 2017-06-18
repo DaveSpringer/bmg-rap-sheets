@@ -25,11 +25,11 @@ export function selectCrew (selectedCrew = 'default') {
 
 /* The SELECT_CHARACTER reducer is used to add or remove a character from the
 currently built band. */
-export function selectCharacter (characterAlias = 'default') {
-  console.log('Selected character: ' + characterAlias)
+export function selectCharacter (characterKey = 'default') {
+  console.log('Selected character: ' + characterKey)
   return {
     type: SELECT_CHARACTER,
-    characterAlias: characterAlias
+    characterKey: characterKey
   }
 }
 

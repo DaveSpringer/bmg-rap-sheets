@@ -237,11 +237,11 @@ describe('(Redux Module) Builder', () => {
     })
 
     it('Should return an action with the selected character alias.', () => {
-      expect(selectCharacter('Batman')).to.have.property('characterAlias', 'Batman')
+      expect(selectCharacter('Batman')).to.have.property('characterKey', 'Batman')
     })
 
     it('Should return an action with the default character.', () => {
-      expect(selectCharacter(undefined)).to.have.property('characterAlias', 'default')
+      expect(selectCharacter(undefined)).to.have.property('characterKey', 'default')
     })
   })
 
