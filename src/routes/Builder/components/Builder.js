@@ -5,6 +5,7 @@ import Character from './Character'
 import './style/Builder.scss'
 import Toggle from 'react-toggle'
 import 'react-toggle/style.css'
+import EquipmentBox from '../../../components/EquipmentBox/EquipmentBox'
 
 class Builder extends React.Component {
   constructor () {
@@ -34,6 +35,7 @@ class Builder extends React.Component {
 
   render () {
     let availableCharacters = this.props.crew.availableCharacters
+    let availableEquipment = this.props.crew.availableEquipment
     return (
       <div className='body-builder'>
         <SelectHeader
@@ -64,7 +66,14 @@ class Builder extends React.Component {
                 <Character key={character.key}
                   character={character}
                   selectCharacter={this.props.selectCharacter} />
-          )}
+              )}
+              {availableEquipment.map(equipment =>
+                <EquipmentBox key={equipment.key}
+                  selectEquipment={this.props.selectEquipment}
+                  equipment={equipment}
+                  allTraits={this.props.crew.allTraits}
+                  allCrews={this.props.crew.allCrews} />
+              )}
             </div>
             <div className='clear-left' />
           </div>
@@ -99,7 +108,8 @@ Builder.propTypes = {
   loadResources : React.PropTypes.func.isRequired,
   addAllCharacters : React.PropTypes.func.isRequired,
   followCrewRules : React.PropTypes.func.isRequired,
-  resetCrew : React.PropTypes.func.isRequired
+  resetCrew : React.PropTypes.func.isRequired,
+  selectEquipment : React.PropTypes.func.isRequired
 }
 
 export default Builder

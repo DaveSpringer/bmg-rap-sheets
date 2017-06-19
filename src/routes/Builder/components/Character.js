@@ -1,6 +1,6 @@
 import React from 'react'
 import './style/Character.scss'
-import Modal from './Modal'
+import Modal from '../../../components/Modal/Modal'
 import CharacterDisplay from './CharacterDisplay'
 
 class Character extends React.Component {
