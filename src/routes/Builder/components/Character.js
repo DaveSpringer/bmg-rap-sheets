@@ -32,8 +32,8 @@ class Character extends React.Component {
         </div>
       )
       character.equipment.forEach((equip) => {
-        if (equip.reputation !== undefined) {
-          displayRep += equip.reputation
+        if (equip.rep !== undefined) {
+          displayRep += equip.rep
         }
         if (equip.funding !== undefined) {
           displayFunding += equip.funding

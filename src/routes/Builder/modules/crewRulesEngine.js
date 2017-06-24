@@ -151,6 +151,20 @@ const addCharacter = (state, action) => {
       result.push(curChar)
       return result
     }, [])
+
+    let extraEquip = state.crewEquipment.reduce((resultEquips, equip) => {
+      if (equip.requires !== undefined) {
+        if (typeof equip.requires === 'string') {
+          if (char.name.indexOf(equip.requires) !== -1 || char.alias.indexOf(equip.requires) !== -1) {
+            resultEquips.push(equip)
+          }
+        } else {
+          console.log('TODO!!!!!!!!!!!!!!!!!!!!')
+        }
+      }
+      return resultEquips
+    }, [])
+    newAvailEquip = [...state.availableEquipment, ...extraEquip]
   } else {
     // Remove the selected from the availableCharacters.
     let location = dumbCharIndexer(state.availableCharacters, action.characterKey)

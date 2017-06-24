@@ -31,7 +31,7 @@ export function selectEquipmentAction (state, action) {
       }
     } else if (Array.isArray(equipment.target)) {
       equipment.target.forEach((subTarget) => {
-        if (equipment.subTarget === char.rank ||
+        if (subTarget === char.rank ||
           char.alias.indexOf(subTarget) > -1 ||
           char.name.indexOf(subTarget) > -1) {
           resultChars.push(char)
@@ -40,13 +40,28 @@ export function selectEquipmentAction (state, action) {
       })
     } else {
       let key = Object.keys(equipment.target)[0]
+      let value = equipment.target[key]
       if (key === 'trait') {
-        char.trait.forEach((trait) => {
-          if (trait.name === Object.values(equipment.target)[0]) {
+        char.traits.forEach((trait) => {
+          if (trait === value) {
             resultChars.push(char)
             return resultChars
           }
         })
+      } else if (key === 'notTrait') {
+        if (char.rank !== 'Henchman') {
+          return resultChars
+        }
+        let skipCharacter = false
+        char.traits.forEach((trait) => {
+          if (trait === value) {
+            skipCharacter = true
+          }
+        })
+        if (!skipCharacter) {
+          resultChars.push(char)
+        }
+        return resultChars
       }
     }
     return resultChars

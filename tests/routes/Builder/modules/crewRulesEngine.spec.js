@@ -3,31 +3,13 @@ import {
   selectCrew,
   loadResources,
   followCrewRules,
+  initialState,
   default as builderReducer
 } from 'routes/Builder/modules/builder'
 
 import { characterSelected, toggleFollowRules } from 'routes/Builder/modules/crewRulesEngine'
 
-const defaultState = {
-  crewName : 'default',
-  allCrews : [],
-  allTraits : [],
-  allCharacters: [],
-  availableCharacters: [],
-  characters: [],
-  reputation: 0,
-  funding: 0,
-  leaders: 0,
-  sidekicks: 0,
-  freeAgents: 0,
-  followRules: true,
-  crewCode: '',
-  crewEquipment: [],
-  availableEquipment: [],
-  equipment: []
-}
-
-const loadedState = builderReducer(defaultState, loadResources())
+const loadedState = builderReducer(initialState, loadResources())
 const allCharacters = loadedState.allCharacters
 const selectBatmanCrew = builderReducer(loadedState, selectCrew({name: 'Batman', id: 'bt'}))
 const findKeyFromAlias = (alias) => (character) => {
@@ -139,6 +121,10 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(selectAdamWestErr.availableCharacters.filter(filterCharacterAlias('Batman (Adam West)')).length).to.equal(0)
         expect(selectAdamWestErr.hiddenCharacters.filter(filterCharacterAlias('Batman (Adam West)')).length).to.equal(1)
         expect(countCharacters(selectAdamWestErr)).to.equal(countCharacters(selectBatmanResult))
+      })
+
+      it('Should add additional equipment when a Bruce Wayne is selected.', () => {
+        expect(selectBatmanResult.availableEquipment.length).to.not.equal(selectBatmanCrew.availableEquipment.length)
       })
     })
 

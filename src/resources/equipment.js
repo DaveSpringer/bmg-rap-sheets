@@ -138,7 +138,7 @@ export const allEquipment = [{
   'funding': 400,
   'rep': 3,
   'rule': '[Model] gains the [Bat-Armor MK 2] [Trait].',
-  'target': [ 'Sidekick', 'Free Agents' ],
+  'target': [ 'Sidekick', 'Free Agent' ],
   'requires': 'Bruce Wayne',
   'trait': 'Bat-Armor MK 2'
 }, {
@@ -148,7 +148,7 @@ export const allEquipment = [{
   'funding': 100,
   'rep': 2,
   'rule': '[Model] gains the [Martial Artist] [Trait].',
-  'target': [ 'Sidekick', 'Free Agents' ],
+  'target': [ 'Sidekick', 'Free Agent' ],
   'requires': 'Bruce Wayne',
   'trait': 'Martial Artist'
 }, {
@@ -158,7 +158,7 @@ export const allEquipment = [{
   'funding': 200,
   'rep': 3,
   'rule': '[Model] gains the [Hidden Boss] [Trait].',
-  'target': [ 'Sidekick', 'Free Agents' ],
+  'target': [ 'Sidekick', 'Free Agent' ],
   'requires': 'Bruce Wayne',
   'trait': 'Hidden Boss'
 }, {
@@ -194,7 +194,7 @@ export const allEquipment = [{
   'rep': 5,
   'rule': '[Model] gains the [Acrobat] [Trait].',
   'target': 'Henchman',
-  'requires': 'Dick Grayson',
+  'requires': 'Grayson',
   'trait': 'Acrobat'
 }, {
   'crew': 'bt',
@@ -203,7 +203,7 @@ export const allEquipment = [{
   'funding': 100,
   'rule': '[Model] gains the [Tireless] [Trait].',
   'target': 'Henchman',
-  'requires': 'Dick Grayson',
+  'requires': 'Grayson',
   'trait': 'Tireless'
 }, {
   'crew': 'bt',
@@ -760,7 +760,7 @@ export const allEquipment = [{
   'funding': 100,
   'rep': 5,
   'rule': 'All [Model]s in your [Crew] can use more than 1 [Titan Dose] per [Game]. This bonus remains in play even if this [Model] is removed from play or leaves the [Playing Area]. Also, the cost of [Venom Doses] in the [Equipment List] is reduces to 50.',
-  'target': [ 'Sidekick', 'Free Agents' ],
+  'target': [ 'Sidekick', 'Free Agent' ],
   'requires': 'Bane'
 }, {
   'crew': 'bn',
@@ -769,7 +769,7 @@ export const allEquipment = [{
   'funding': 100,
   'rep': 2,
   'rule': 'This [Model] can use [Titan] and [Venom] [Dose]s on a [Friend] in [Contact].',
-  'target': [ 'Sidekick', 'Free Agents' ],
+  'target': [ 'Sidekick', 'Free Agent' ],
   'requires': 'Bane'
 }, {
   'crew': 'bn',
@@ -2296,7 +2296,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Grapple Gun] [Trait].',
-  'target': 'Henchman',
+  'target': { 'notTrait': 'Plant' },
   'trait': 'Grapple Gun'
 }, {
   'crew': 'pi',
@@ -2304,7 +2304,7 @@ export const allEquipment = [{
   'name': 'Camo Vest',
   'funding': 300,
   'rule': '[Model] gains the [Stealth] [Trait].',
-  'target': 'Henchman',
+  'target': { 'notTrait': 'Plant' },
   'trait': 'Stealth'
 }, {
   'crew': 'pi',
@@ -2313,7 +2313,7 @@ export const allEquipment = [{
   'funding': 200,
   'rep': 3,
   'rule': '[Model] gains the [Tough Skin] and [Desensitized] [Trait]s.',
-  'target': 'Henchman',
+  'target': { 'notTrait': 'Plant' },
   'trait': ['Tough Skin', 'Desensitized']
 }, {
   'crew': 'pi',
@@ -2322,7 +2322,7 @@ export const allEquipment = [{
   'funding': 150,
   'rep': 2,
   'rule': '[Model] gains the [Adaptable] [Trait].',
-  'target': 'Henchman',
+  'target': { 'notTrait': 'Plant' },
   'trait': 'Adaptable'
 }, {
   'crew': 'pi',
@@ -2331,7 +2331,7 @@ export const allEquipment = [{
   'funding': 150,
   'rep': 2,
   'rule': '[Model] gains the [Adaptable] [Trait].',
-  'target': 'Henchman',
+  'target': { 'notTrait': 'Plant' },
   'trait': 'Adaptable'
 }, {
   'crew': 'pi',

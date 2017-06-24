@@ -1344,8 +1344,8 @@ export const allWeapons = [
     'traits': 'Firearm, S. Range, Explosive'
   },
   {
-    'key': 'Rain of Sporns',
-    'name': 'Rain of Sporns',
+    'key': 'Rain of Spores',
+    'name': 'Rain of Spores',
     'damage': 'S',
     'rof': 4,
     'ammo': 1,

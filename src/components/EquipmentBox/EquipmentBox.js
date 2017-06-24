@@ -18,7 +18,7 @@ class EquipmentBox extends React.Component {
           <div className='equipment-box-name' >{this.props.equipment.name}</div>
         </div>
         <div className='equipment-box-cost' onClick={this.selectEquip}>
-          <div className='equipment-box-rep'>{this.props.equipment.reputation} </div>
+          <div className='equipment-box-rep'>{this.props.equipment.rep} </div>
           <div className='equipment-box-funding'>${this.props.equipment.funding}</div>
         </div>
         <div className='info-button' onClick={this.equipmentDisplay}>INFO</div>

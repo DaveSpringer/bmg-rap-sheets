@@ -99,7 +99,11 @@ class EquipmentItem extends React.Component {
       } else if (typeof tar === 'string') {
         return tar
       } else {
-        return Object.values(tar)[0]
+        if (Object.keys(tar)[0] === 'notTrait') {
+          return 'Not a ' + Object.values(tar)[0]
+        } else {
+          return Object.values(tar)[0]
+        }
       }
     }
     let requiresArea = ''
