@@ -2,10 +2,12 @@ import React from 'react'
 import RapSheet from './RapSheet'
 import SelectHeader from './SelectHeader'
 import Character from './Character'
+import EquipToCharSelect from './EquipToCharSelect'
 import './style/Builder.scss'
 import Toggle from 'react-toggle'
 import 'react-toggle/style.css'
 import EquipmentBox from '../../../components/EquipmentBox/EquipmentBox'
+import Modal from '../../../components/Modal/Modal'
 
 class Builder extends React.Component {
   constructor () {
@@ -13,6 +15,11 @@ class Builder extends React.Component {
     this.addAllCharactersClick = this.addAllCharactersClick.bind(this)
     this.handleRulesChange = this.handleRulesChange.bind(this)
     this.handleResetCrew = this.handleResetCrew.bind(this)
+    this.toggleShowSelectEquip = this.toggleShowSelectEquip.bind(this)
+    this.onSelectEquip = this.onSelectEquip.bind(this)
+
+    // State
+    this.state = { showSelectEquip: false }
   }
   componentWillMount () {
     // Load up the various files
@@ -33,6 +40,19 @@ class Builder extends React.Component {
     this.props.resetCrew()
   }
 
+  // Stuff
+  onSelectEquip (event) {
+    this.props.selectEquipment(event)
+    this.toggleShowSelectEquip()
+  }
+
+  // Used to show or hide the EquipToCharSelect screen inside a Modal.
+  toggleShowSelectEquip () {
+    this.setState({
+      showSelectEquip: !this.state.showSelectEquip
+    })
+  }
+
   render () {
     let availableCharacters = this.props.crew.availableCharacters
     let availableEquipment = this.props.crew.availableEquipment
@@ -46,6 +66,13 @@ class Builder extends React.Component {
           funding={this.props.crew.funding}
           crewName={this.props.crew.crewName} />
         <div className='whatsthisquestionmark'>
+        <Modal show={this.state.showSelectEquip} onClose={this.toggleShowSelectEquip}>
+          <EquipToCharSelect validEquipChars={this.props.crew.validEquipChars}
+            equipment={this.props.crew.equipment}
+            allCrews={this.props.crew.allCrews}
+            allTraits={this.props.crew.allTraits}
+            assignEquipment={this.props.assignEquipment} />
+        </Modal>
 
           <div className='characters hidden-print'>
             <h2>Select Characters</h2>
@@ -69,7 +96,7 @@ class Builder extends React.Component {
               )}
               {availableEquipment.map(equipment =>
                 <EquipmentBox key={equipment.key}
-                  selectEquipment={this.props.selectEquipment}
+                  selectEquipment={this.onSelectEquip}
                   equipment={equipment}
                   allTraits={this.props.crew.allTraits}
                   allCrews={this.props.crew.allCrews} />
@@ -109,7 +136,8 @@ Builder.propTypes = {
   addAllCharacters : React.PropTypes.func.isRequired,
   followCrewRules : React.PropTypes.func.isRequired,
   resetCrew : React.PropTypes.func.isRequired,
-  selectEquipment : React.PropTypes.func.isRequired
+  selectEquipment : React.PropTypes.func.isRequired,
+  assignEquipment : React.PropTypes.func.isRequired
 }
 
 export default Builder

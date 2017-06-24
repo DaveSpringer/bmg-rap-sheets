@@ -1,7 +1,8 @@
 import { characterSelected, toggleFollowRules } from './crewRulesEngine'
 import loadAllResources from './loadResources'
 import { sortCharacters } from './common'
-import { selectEquipment, SELECT_EQUIPMENT } from './selectEquipment'
+import { selectEquipment, SELECT_EQUIPMENT, selectEquipmentAction } from './selectEquipment'
+import { assignEquipment, ASSIGN_EQUIPMENT, assignEquipmentAction } from './assignEquipment'
 
 // Constants
 export const SELECT_CREW_UNCONFIRMED = 'SELECT_CREW_UNCONFIRMED'
@@ -208,7 +209,10 @@ const ACTION_HANDLERS = {
     return resetCurrentCrew(state, action)
   },
   [SELECT_EQUIPMENT]: (state, action) => {
-    return state
+    return selectEquipmentAction(state, action)
+  },
+  [ASSIGN_EQUIPMENT]: (state, action) => {
+    return assignEquipmentAction(state, action)
   }
 }
 
@@ -229,7 +233,9 @@ const initialState = {
   followRules: true,
   crewCode: '',
   allEquipment: [],
-  availableEquipment: []
+  availableEquipment: [],
+  validEquipChars: [],
+  equipment: {}
 }
 export default function builderReducer (state = initialState, action) {
   let result = state

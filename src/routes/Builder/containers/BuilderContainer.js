@@ -10,6 +10,9 @@ import {
 import {
   selectEquipment
 } from '../modules/selectEquipment'
+import {
+  assignEquipment
+} from '../modules/assignEquipment'
 
 import Builder from '../components/Builder'
 
@@ -20,7 +23,8 @@ const mapDispatchToProps = {
   addAllCharacters,
   followCrewRules,
   resetCrew,
-  selectEquipment
+  selectEquipment,
+  assignEquipment
 }
 
 const mapStateToProps = (state) => ({

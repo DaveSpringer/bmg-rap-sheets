@@ -32,7 +32,7 @@ class EquipmentBox extends React.Component {
   }
 
   selectEquip () {
-    this.props.selectEquipment(this.props.equipment.key)
+    this.props.selectEquipment(this.props.equipment)
   }
 
   equipmentDisplay () {
