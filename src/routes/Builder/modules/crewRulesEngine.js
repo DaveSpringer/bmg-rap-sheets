@@ -30,6 +30,14 @@ const removeCharacter = (state, action, char) => {
     freeAgents = state.freeAgents - 1
   }
 
+  let newAvailEquip
+  if (char.equipment !== undefined) {
+    newAvailEquip = [...state.availableEquipment, ...char.equipment]
+    char.equipment = undefined
+  } else {
+    newAvailEquip = [...state.availableEquipment]
+  }
+
   let newAvailChars = [...state.availableCharacters, char]
   let newCharacters = [...state.characters]
   newCharacters.splice(index, 1)
@@ -72,7 +80,7 @@ const removeCharacter = (state, action, char) => {
     }, [])
   }
 
-  return createFinalState(state, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents)
+  return createFinalState(state, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents, newAvailEquip)
 }
 
 const addCharacter = (state, action) => {
@@ -97,6 +105,7 @@ const addCharacter = (state, action) => {
   let newCharacters = [...state.characters, char]
   let newAvailChars = [...state.availableCharacters]
   let newHiddenChars = [...state.hiddenCharacters]
+  let newAvailEquip = [...state.availableEquipment]
 
   if (state.followRules) {
     // Struggling with the implementation of the algorithm here.
@@ -148,7 +157,7 @@ const addCharacter = (state, action) => {
 
     newAvailChars.splice(location, 1)
   }
-  return createFinalState(state, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents)
+  return createFinalState(state, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents, newAvailEquip)
 }
 
 const createFinalState = (
@@ -158,7 +167,8 @@ const createFinalState = (
   hiddenCharacters,
   leaders,
   sidekicks,
-  freeAgents
+  freeAgents,
+  newAvailEquip
 ) => {
   let crewCode = newCharacters.reduce((curStr, char) => { return curStr + '+' + char.key }, state.crewId + '-')
   newAvailChars.sort(sortCharacters)
@@ -174,7 +184,8 @@ const createFinalState = (
     leaders : leaders,
     sidekicks : sidekicks,
     freeAgents : freeAgents,
-    crewCode: crewCode
+    crewCode: crewCode,
+    availableEquipment: newAvailEquip
   })
 }
 

@@ -1,24 +1,22 @@
 import React from 'react'
 import './style/EquipToCharSelect.scss'
 import EquipmentItem from '../../../components/EquipmentItem/EquipmentItem'
-import Modal from '../../../components/Modal/Modal'
 import Character from './Character'
 
 class EquipToCharSelect extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     this.handleCharacterSelect = this.handleCharacterSelect.bind(this)
   }
 
   handleCharacterSelect (event) {
-    debugger
     console.log('Selected character key ' + event + ' for equipment ' + this.props.equipment.name)
     this.props.assignEquipment(this.props.equipment, event)
   }
 
   render () {
     return (
-    <div className='equipToCharSelect'>
+      <div className='equipToCharSelect'>
         <h2>Select Character for Equipment</h2>
         <div>
           <EquipmentItem equipment={this.props.equipment}
@@ -32,8 +30,7 @@ class EquipToCharSelect extends React.Component {
               selectCharacter={this.handleCharacterSelect} />
           )}
         </div>
-        <div className='clear-left'>
-        </div>
+        <div className='clear-left' />
       </div>
     )
   }

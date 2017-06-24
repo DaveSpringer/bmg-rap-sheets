@@ -66,13 +66,13 @@ class Builder extends React.Component {
           funding={this.props.crew.funding}
           crewName={this.props.crew.crewName} />
         <div className='whatsthisquestionmark'>
-        <Modal show={this.state.showSelectEquip} onClose={this.toggleShowSelectEquip}>
-          <EquipToCharSelect validEquipChars={this.props.crew.validEquipChars}
-            equipment={this.props.crew.equipment}
-            allCrews={this.props.crew.allCrews}
-            allTraits={this.props.crew.allTraits}
-            assignEquipment={this.props.assignEquipment} />
-        </Modal>
+          <Modal show={this.state.showSelectEquip} onClose={this.toggleShowSelectEquip}>
+            <EquipToCharSelect validEquipChars={this.props.crew.validEquipChars}
+              equipment={this.props.crew.equipment}
+              allCrews={this.props.crew.allCrews}
+              allTraits={this.props.crew.allTraits}
+              assignEquipment={this.props.assignEquipment} />
+          </Modal>
 
           <div className='characters hidden-print'>
             <h2>Select Characters</h2>

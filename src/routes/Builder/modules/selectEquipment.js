@@ -23,21 +23,21 @@ export function selectEquipmentAction (state, action) {
   // should not be added to the state of the application. Yet I am going to.
   let validEquipChars = state.characters.reduce((resultChars, char) => {
     if (typeof equipment.target === 'string') {
-      if (equipment.target === char.rank
-          || char.alias.indexOf(equipment.target) > -1
-          || char.name.indexOf(equipment.target) > -1) {
+      if (equipment.target === char.rank ||
+          char.alias.indexOf(equipment.target) > -1 ||
+          char.name.indexOf(equipment.target) > -1) {
         resultChars.push(char)
         return resultChars
       }
     } else if (Array.isArray(equipment.target)) {
       equipment.target.forEach((subTarget) => {
-        if (equipment.subTarget === char.rank
-          || char.alias.indexOf(subTarget) > -1
-          || char.name.indexOf(subTarget) > -1) {
-            resultChars.push(char)
-            return resultChars
-          }
-        })
+        if (equipment.subTarget === char.rank ||
+          char.alias.indexOf(subTarget) > -1 ||
+          char.name.indexOf(subTarget) > -1) {
+          resultChars.push(char)
+          return resultChars
+        }
+      })
     } else {
       let key = Object.keys(equipment.target)[0]
       if (key === 'trait') {

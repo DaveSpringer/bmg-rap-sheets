@@ -67,7 +67,8 @@ export const actions = {
   addAllCharacters,
   followCrewRules,
   resetCrew,
-  selectEquipment
+  selectEquipment,
+  assignEquipment
 }
 
 export const selectCrewAction = (state, action) => {

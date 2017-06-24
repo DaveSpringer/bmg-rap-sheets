@@ -52,7 +52,7 @@ export function assignEquipmentAction (state, action) {
     return (char.key === characterKey)
   })
 
-  if (foundChar === undefined) {
+  if (selectedChar === undefined) {
     console.log('ERROR: A valid character is no longer in the selected characters.')
     return state
   }
