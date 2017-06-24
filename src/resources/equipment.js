@@ -4,21 +4,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for one [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bt',
   'key': 'BT01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for one [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bt',
   'key': 'BT02A',
   'name': 'Flashlight',
   'funding': 100,
   'rule': '[Model] gains the [Lantern] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Lantern'
 }, {
   'crew': 'bt',
@@ -26,7 +26,7 @@ export const allEquipment = [{
   'name': 'Flashlight',
   'funding': 100,
   'rule': '[Model] gains the [Lantern] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Lantern'
 }, {
   'crew': 'bt',
@@ -34,7 +34,7 @@ export const allEquipment = [{
   'name': 'Handcuffs',
   'funding': 200,
   'rule': '[Model] gains the [Arrest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Arrest'
 }, {
   'crew': 'bt',
@@ -42,7 +42,7 @@ export const allEquipment = [{
   'name': 'Handcuffs',
   'funding': 200,
   'rule': '[Model] gains the [Arrest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Arrest'
 }, {
   'crew': 'bt',
@@ -50,7 +50,7 @@ export const allEquipment = [{
   'name': 'Whistle',
   'funding': 200,
   'rule': '[Model] gains the [Stop!] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stop!'
 }, {
   'crew': 'bt',
@@ -58,7 +58,7 @@ export const allEquipment = [{
   'name': 'Whistle',
   'funding': 200,
   'rule': '[Model] gains the [Stop!] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stop!'
 }, {
   'crew': 'bt',
@@ -67,14 +67,14 @@ export const allEquipment = [{
   'funding': 300,
   'cost': '2 SC',
   'rule': 'Once per [Game], remove 2 [Damage] from a [Model] in [Base-to-Base] [Contact] with this [Model].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bt',
   'key': 'BT06A',
   'name': 'Street Patrol',
   'funding': 50,
   'rule': '[Model] gains the [Street Guy] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Street Guy'
 }, {
   'crew': 'bt',
@@ -82,7 +82,7 @@ export const allEquipment = [{
   'name': 'Street Patrol',
   'funding': 50,
   'rule': '[Model] gains the [Street Guy] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Street Guy'
 }, {
   'crew': 'bt',
@@ -90,7 +90,7 @@ export const allEquipment = [{
   'name': 'Intensive Training',
   'funding': 100,
   'rule': '[Model] gains the [Teamwork / 1] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': { 'name': 'Teamwork', 'counter': 1 }
 }, {
   'crew': 'bt',
@@ -98,14 +98,14 @@ export const allEquipment = [{
   'name': 'Radio',
   'funding': 100,
   'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bt',
   'key': 'BT08B',
   'name': 'Radio',
   'funding': 100,
   'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bt',
   'key': 'BT09',
@@ -128,7 +128,7 @@ export const allEquipment = [{
   'name': 'EMP',
   'funding': 100,
   'rule': '[Model] gains [EMP] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Bruce Wayne',
   'trait': 'EMP'
 }, {
@@ -193,7 +193,7 @@ export const allEquipment = [{
   'funding': 300,
   'rep': 5,
   'rule': '[Model] gains the [Acrobat] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Dick Grayson',
   'trait': 'Acrobat'
 }, {
@@ -202,7 +202,7 @@ export const allEquipment = [{
   'name': 'Runner',
   'funding': 100,
   'rule': '[Model] gains the [Tireless] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Dick Grayson',
   'trait': 'Tireless'
 }, {
@@ -212,7 +212,7 @@ export const allEquipment = [{
   'funding': 100,
   'rep': 2,
   'rule': '[Model] gains the [Follow Me!] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Kathy Kane',
   'trait': 'Follow Me!'
 }, {
@@ -248,15 +248,15 @@ export const allEquipment = [{
   'name': 'Heliport',
   'funding': 150,
   'rule': '(Cannot be Broken)When this [Model] uses the [Air Support] [Special Trait], [Target] an [Effected] [Enemy] [Model]. The [Target] receives a [Ranged Attack] with [ROF] 1, the [Firearm] rule, and [BB] damage which ignores the [Ping!] rule.',
-  'target': 'James Gordon',
-  'requires': 'James Gordon'
+  'target': 'James W. Gordon',
+  'requires': 'James W. Gordon'
 }, {
   'crew': 'bt',
   'key': 'BT25',
   'name': 'Feline Stalk',
   'funding': 200,
   'rule': '[Model] gains the [Tracking] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Selina Kyle'
 }, {
   'crew': 'jk',
@@ -264,21 +264,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'jk',
   'key': 'JK01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'jk',
   'key': 'JK02A',
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'jk',
@@ -286,7 +286,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'jk',
@@ -294,7 +294,7 @@ export const allEquipment = [{
   'name': 'Clown Paint',
   'funding': 150,
   'rule': '[Model] gains the [Distract] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Distract'
 }, {
   'crew': 'jk',
@@ -302,7 +302,7 @@ export const allEquipment = [{
   'name': 'Clown Paint',
   'funding': 150,
   'rule': '[Model] gains the [Distract] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Distract'
 }, {
   'crew': 'jk',
@@ -310,7 +310,7 @@ export const allEquipment = [{
   'name': 'Flare',
   'funding': 300,
   'rule': '[Model] gains the [Flare] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Flare'
 }, {
   'crew': 'jk',
@@ -318,7 +318,7 @@ export const allEquipment = [{
   'name': 'Flare',
   'funding': 300,
   'rule': '[Model] gains the [Flare] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Flare'
 }, {
   'crew': 'jk',
@@ -326,7 +326,7 @@ export const allEquipment = [{
   'name': 'Neurotoxic Drugs',
   'funding': 250,
   'rule': '[Model] gains the [Fast] and [Dodge] [Trait]s.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': [ 'Fast', 'Dodge' ]
 }, {
   'crew': 'jk',
@@ -334,7 +334,7 @@ export const allEquipment = [{
   'name': 'Improvised Armor',
   'funding': 150,
   'rule': '[Model] gains the [Hockey Gear] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Hockey Gear'
 }, {
   'crew': 'jk',
@@ -342,7 +342,7 @@ export const allEquipment = [{
   'name': 'Antidote',
   'funding': 50,
   'rule': '[Model] is immune to [Poison].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'jk',
   'key': 'JK08A',
@@ -350,7 +350,7 @@ export const allEquipment = [{
   'funding': 200,
   'rep': 3,
   'rule': '[Model] gains the [Sturdy] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Joker',
   'trait': 'Sturdy'
 }, {
@@ -360,7 +360,7 @@ export const allEquipment = [{
   'funding': 200,
   'rep': 3,
   'rule': '[Model] gains the [Sturdy] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Joker',
   'trait': 'Sturdy'
 }, {
@@ -370,7 +370,7 @@ export const allEquipment = [{
   'funding': 300,
   'rep': 5,
   'rule': '[Model] gains the [Disarray] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Harley Quinn',
   'trait': 'Disarray'
 }, {
@@ -379,7 +379,7 @@ export const allEquipment = [{
   'name': 'Pole Dancer',
   'funding': 100,
   'rule': '[Model] gains the [Escape Artist] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Harley Quinn',
   'trait': 'Escape Artist'
 }, {
@@ -389,7 +389,7 @@ export const allEquipment = [{
   'funding': 200,
   'rep': 2,
   'rule': '[Model] gains the [Cruel] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Duela Dent',
   'trait': 'Cruel'
 }, {
@@ -398,7 +398,7 @@ export const allEquipment = [{
   'name': 'Brutal Training',
   'funding': 150,
   'rule': '[Model] gains the [Savage Fighter] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Mr. Hammer',
   'trait': 'Savage Fighter'
 }, {
@@ -407,21 +407,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'pn',
   'key': 'PN01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'pn',
   'key': 'PN02A',
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'pn',
@@ -429,7 +429,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'pn',
@@ -437,7 +437,7 @@ export const allEquipment = [{
   'name': 'Laser Sight',
   'funding': 150,
   'rule': '[Model] gains the [Laser Sight] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Laser Sight'
 }, {
   'crew': 'pn',
@@ -445,7 +445,7 @@ export const allEquipment = [{
   'name': 'Laser Sight',
   'funding': 150,
   'rule': '[Model] gains the [Laser Sight] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Laser Sight'
 }, {
   'crew': 'pn',
@@ -453,7 +453,7 @@ export const allEquipment = [{
   'name': 'Camo Vest',
   'funding': 300,
   'rule': '[Model] gains the [Stealth] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stealth'
 }, {
   'crew': 'pn',
@@ -461,7 +461,7 @@ export const allEquipment = [{
   'name': 'Camo Vest',
   'funding': 300,
   'rule': '[Model] gains the [Stealth] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stealth'
 }, {
   'crew': 'pn',
@@ -469,21 +469,21 @@ export const allEquipment = [{
   'name': 'Radio',
   'funding': 100,
   'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'pn',
   'key': 'PN05B',
   'name': 'Radio',
   'funding': 100,
   'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'pn',
   'key': 'PN06',
   'name': 'Backpack',
   'funding': 100,
   'rule': '[Model] gains the [Backpack] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Backpack'
 }, {
   'crew': 'pn',
@@ -491,7 +491,7 @@ export const allEquipment = [{
   'name': 'Improvised Armor',
   'funding': 100,
   'rule': '[Model] gains the [Hockey Gear] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Hockey Gear'
 }, {
   'crew': 'pn',
@@ -499,7 +499,7 @@ export const allEquipment = [{
   'name': 'Improvised Armor',
   'funding': 100,
   'rule': '[Model] gains the [Hockey Gear] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Hockey Gear'
 }, {
   'crew': 'pn',
@@ -507,7 +507,7 @@ export const allEquipment = [{
   'name': 'Improvised Armor',
   'funding': 100,
   'rule': '[Model] gains the [Hockey Gear] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Hockey Gear'
 }, {
   'crew': 'pn',
@@ -515,7 +515,7 @@ export const allEquipment = [{
   'name': 'Helmet',
   'funding': 300,
   'rule': '[Model] gains the [Hardened] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Hardened'
 }, {
   'crew': 'pn',
@@ -548,21 +548,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for one [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'ga',
   'key': 'GA01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for one [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'ga',
   'key': 'GA02A',
   'name': 'Flashlight',
   'funding': 100,
   'rule': '[Model] gains the [Lantern] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Lantern'
 }, {
   'crew': 'ga',
@@ -570,7 +570,7 @@ export const allEquipment = [{
   'name': 'Flashlight',
   'funding': 100,
   'rule': '[Model] gains the [Lantern] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Lantern'
 }, {
   'crew': 'ga',
@@ -578,21 +578,21 @@ export const allEquipment = [{
   'name': 'Radio',
   'funding': 100,
   'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'ga',
   'key': 'GA03B',
   'name': 'Radio',
   'funding': 100,
   'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'ga',
   'key': 'GA04A',
   'name': 'Whistle',
   'funding': 200,
   'rule': '[Model] gains the [Stop!] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stop!'
 }, {
   'crew': 'ga',
@@ -600,7 +600,7 @@ export const allEquipment = [{
   'name': 'Whistle',
   'funding': 200,
   'rule': '[Model] gains the [Stop!] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stop!'
 }, {
   'crew': 'ga',
@@ -608,14 +608,14 @@ export const allEquipment = [{
   'name': 'Antidote',
   'funding': 200,
   'rule': '[Model] is [Immune] to the [Poison] [Effect].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'ga',
   'key': 'GA06',
   'name': 'Grapple-Gun',
   'funding': 200,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'ga',
@@ -623,7 +623,7 @@ export const allEquipment = [{
   'name': 'Riot Gear',
   'funding': 150,
   'rule': '[Model] gains the [Football Gear] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Football Gear'
 }, {
   'crew': 'ga',
@@ -631,7 +631,7 @@ export const allEquipment = [{
   'name': 'Riot Gear',
   'funding': 150,
   'rule': '[Model] gains the [Football Gear] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Football Gear'
 }, {
   'crew': 'ga',
@@ -639,7 +639,7 @@ export const allEquipment = [{
   'name': 'Helmet',
   'funding': 300,
   'rule': '[Model] gains the [Hardened] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Hardened'
 }, {
   'crew': 'ga',
@@ -647,7 +647,7 @@ export const allEquipment = [{
   'name': 'Command Center Support',
   'funding': 250,
   'rule': '[Model] gains the [Scheming/2] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': { 'name': 'Scheming', 'count': 2 },
   'requires': 'Oliver Queen'
 }, {
@@ -656,7 +656,7 @@ export const allEquipment = [{
   'name': 'Tactical Gloves',
   'funding': 50,
   'rule': '[Model] gains the [Reinforced Gloves] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Reinforced Gloves',
   'requires': 'Arrow'
 }, {
@@ -666,7 +666,7 @@ export const allEquipment = [{
   'funding': 150,
   'rep': 2,
   'rule': 'One of the [Model]\'s [Ranged Weapon]s gains [CRT]: BB.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Roy Harper'
 }, {
   'crew': 'bn',
@@ -674,21 +674,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bn',
   'key': 'BN01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bn',
   'key': 'BN02A',
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'bn',
@@ -696,7 +696,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'bn',
@@ -704,7 +704,7 @@ export const allEquipment = [{
   'name': 'Titan Dose',
   'funding': 100,
   'rule': '[Model] gains one [Titan Dose].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Titan Dose'
 }, {
   'crew': 'bn',
@@ -712,7 +712,7 @@ export const allEquipment = [{
   'name': 'Night Vision Goggles',
   'funding': 200,
   'rule': '[Model] gains the [Night Vision] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Night Vision'
 }, {
   'crew': 'bn',
@@ -720,14 +720,14 @@ export const allEquipment = [{
   'name': 'Antidote',
   'funding': 200,
   'rule': '[Model] is immune to [Poison].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bn',
   'key': 'BN06A',
   'name': 'Venom Dose',
   'funding': 100,
   'rule': '[Model] gains one [Venom Dose].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Venom Dose'
 }, {
   'crew': 'bn',
@@ -735,7 +735,7 @@ export const allEquipment = [{
   'name': 'Venom Dose',
   'funding': 100,
   'rule': '[Model] gains one [Venom Dose].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Venom Dose'
 }, {
   'crew': 'bn',
@@ -743,7 +743,7 @@ export const allEquipment = [{
   'name': 'Backpack',
   'funding': 100,
   'rule': '[Model] gains the [Backpack] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Backpack'
 }, {
   'crew': 'bn',
@@ -751,7 +751,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 150,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'bn',
@@ -785,14 +785,14 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bm',
   'key': 'BM01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bm',
   'key': 'BM02A',
@@ -813,7 +813,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'bm',
@@ -821,7 +821,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'bm',
@@ -829,7 +829,7 @@ export const allEquipment = [{
   'name': 'Bribe',
   'funding': 100,
   'rule': '[Model] gains the [Informer] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Informer'
 }, {
   'crew': 'bm',
@@ -837,7 +837,7 @@ export const allEquipment = [{
   'name': 'Lock Picks',
   'funding': 100,
   'rule': '[Model] gains the [Runaway] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Runaway'
 }, {
   'crew': 'bm',
@@ -845,7 +845,7 @@ export const allEquipment = [{
   'name': 'Backpack',
   'funding': 100,
   'rule': '[Model] gains the [Backpack] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Backpack'
 }, {
   'crew': 'bm',
@@ -853,7 +853,7 @@ export const allEquipment = [{
   'name': 'Backpack',
   'funding': 100,
   'rule': '[Model] gains the [Backpack] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Backpack'
 }, {
   'crew': 'bm',
@@ -862,14 +862,14 @@ export const allEquipment = [{
   'funding': 200,
   'rep': 2,
   'rule': '[Free Agent]s in your crew can be affected by the [No Mercy!] rule.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'bm',
   'key': 'BM08',
   'name': 'Silencer',
   'funding': 200,
   'rule': 'One of the [Model]\'s [Ranged Weapons] gains the [Silencer] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Silencer'
 }, {
   'crew': 'bm',
@@ -894,21 +894,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'tf',
   'key': 'TF01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'tf',
   'key': 'TF02',
   'name': 'Bribe',
   'funding': 100,
   'rule': '[Model] gains the [Informer] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Informer'
 }, {
   'crew': 'tf',
@@ -916,7 +916,7 @@ export const allEquipment = [{
   'name': 'Bulletproof Vest',
   'funding': 100,
   'rule': '[Model] gains the [Bulletproof Vest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Bulletproof Vest'
 }, {
   'crew': 'tf',
@@ -924,7 +924,7 @@ export const allEquipment = [{
   'name': 'Bulletproof Vest',
   'funding': 100,
   'rule': '[Model] gains the [Bulletproof Vest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Bulletproof Vest'
 }, {
   'crew': 'tf',
@@ -932,7 +932,7 @@ export const allEquipment = [{
   'name': 'Handcuffs',
   'funding': 200,
   'rule': '[Model] gains the [Arrest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Arrest'
 }, {
   'crew': 'tf',
@@ -940,7 +940,7 @@ export const allEquipment = [{
   'name': 'Handcuffs',
   'funding': 200,
   'rule': '[Model] gains the [Arrest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Arrest'
 }, {
   'crew': 'tf',
@@ -948,7 +948,7 @@ export const allEquipment = [{
   'name': 'C-4',
   'funding': 200,
   'rule': '[Model] gains the [Explosive Gel] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Explosive Gel'
 }, {
   'crew': 'tf',
@@ -956,7 +956,7 @@ export const allEquipment = [{
   'name': 'C-4',
   'funding': 200,
   'rule': '[Model] gains the [Explosive Gel] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Explosive Gel'
 }, {
   'crew': 'tf',
@@ -964,7 +964,7 @@ export const allEquipment = [{
   'name': 'Morphine',
   'funding': 150,
   'rule': '[Model] gains the [Sturdy] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Sturdy'
 }, {
   'crew': 'tf',
@@ -972,7 +972,7 @@ export const allEquipment = [{
   'name': 'Morphine',
   'funding': 150,
   'rule': '[Model] gains the [Sturdy] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Sturdy'
 }, {
   'crew': 'tf',
@@ -981,7 +981,7 @@ export const allEquipment = [{
   'funding': 300,
   'rep': 3,
   'rule': '[Model] gains the [Cruel] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Cruel'
 }, {
   'crew': 'tf',
@@ -989,7 +989,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 150,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'tf',
@@ -997,7 +997,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 150,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'tf',
@@ -1005,7 +1005,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 350,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'tf',
@@ -1013,7 +1013,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 350,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'tf',
@@ -1021,7 +1021,7 @@ export const allEquipment = [{
   'name': 'Silencer',
   'funding': 200,
   'rule': 'One of the [Model]\'s [Ranged Weapons] gains the [Silencer] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Silencer'
 }, {
   'crew': 'tf',
@@ -1029,7 +1029,7 @@ export const allEquipment = [{
   'name': 'Pawn Expert',
   'funding': 200,
   'rule': '[Model] gains the [Distract] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Distract'
 }, {
   'crew': 'tf',
@@ -1037,7 +1037,7 @@ export const allEquipment = [{
   'name': 'Pawn Expert',
   'funding': 200,
   'rule': '[Model] gains the [Distract] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Distract'
 }, {
   'crew': 'tf',
@@ -1046,7 +1046,7 @@ export const allEquipment = [{
   'funding': 350,
   'rep': 5,
   'rule': 'Your [Leader]\'s [Inspire] [Trait] has a 20cm radius instead of 10cm.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Harvey Dent'
 }, {
   'crew': 'tf',
@@ -1054,7 +1054,7 @@ export const allEquipment = [{
   'name': 'Gunslinger',
   'funding': 50,
   'rule': '[Model] gains the [Dirty Fighter] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Harvey Dent',
   'trait': 'Dirty Fighter'
 }, {
@@ -1071,21 +1071,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'co',
   'key': 'CO01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'co',
   'key': 'CO02A',
   'name': 'Climbing Claws',
   'funding': 200,
   'rule': '[Model] gains the [Climbing Claws] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Climbing Claws'
 }, {
   'crew': 'co',
@@ -1093,7 +1093,7 @@ export const allEquipment = [{
   'name': 'Climbing Claws',
   'funding': 200,
   'rule': '[Model] gains the [Climbing Claws] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Climbing Claws'
 }, {
   'crew': 'co',
@@ -1101,14 +1101,14 @@ export const allEquipment = [{
   'name': 'Antidote',
   'funding': 200,
   'rule': '[Model] is immune to [Poison].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'co',
   'key': 'CO04A',
   'name': 'Camo Vest',
   'funding': 100,
   'rule': '[Model] gains the [Stealth] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stealth'
 }, {
   'crew': 'co',
@@ -1116,7 +1116,7 @@ export const allEquipment = [{
   'name': 'Camo Vest',
   'funding': 100,
   'rule': '[Model] gains the [Stealth] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stealth'
 }, {
   'crew': 'co',
@@ -1124,7 +1124,7 @@ export const allEquipment = [{
   'name': 'C-4',
   'funding': 300,
   'rule': '[Model] gains the [Explosive Gel] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Explosive Gel'
 }, {
   'crew': 'co',
@@ -1132,7 +1132,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 150,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'co',
@@ -1140,7 +1140,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 400,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'co',
@@ -1148,14 +1148,14 @@ export const allEquipment = [{
   'name': 'Ancient Weapon',
   'funding': 200,
   'rule': '[Model]\'s [Close Combat Attacks] gain [CRT]: B.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'co',
   'key': 'CO09A',
   'name': 'Genetic Alteration',
   'funding': 50,
   'rule': '[Model] gains the [Tireless] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Tireless'
 }, {
   'crew': 'co',
@@ -1163,7 +1163,7 @@ export const allEquipment = [{
   'name': 'Genetic Alteration',
   'funding': 50,
   'rule': '[Model] gains the [Tireless] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Tireless'
 }, {
   'crew': 'co',
@@ -1171,7 +1171,7 @@ export const allEquipment = [{
   'name': 'Genetic Alteration',
   'funding': 50,
   'rule': '[Model] gains the [Tireless] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Tireless'
 }, {
   'crew': 'co',
@@ -1179,7 +1179,7 @@ export const allEquipment = [{
   'name': 'Hunter Training',
   'funding': 200,
   'rule': '[Model] gains the [Tracking] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Tracking'
 }, {
   'crew': 'co',
@@ -1187,7 +1187,7 @@ export const allEquipment = [{
   'name': 'Hunter Training',
   'funding': 200,
   'rule': '[Model] gains the [Tracking] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Tracking'
 }, {
   'crew': 'co',
@@ -1195,7 +1195,7 @@ export const allEquipment = [{
   'name': 'Ancient Training',
   'funding': 150,
   'rule': '[Model] gains the [Master Fighter] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Master Fighter'
 }, {
   'crew': 'co',
@@ -1203,7 +1203,7 @@ export const allEquipment = [{
   'name': 'Ancient Training',
   'funding': 150,
   'rule': '[Model] gains the [Master Fighter] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Master Fighter'
 }, {
   'crew': 'co',
@@ -1211,7 +1211,7 @@ export const allEquipment = [{
   'name': 'Mixed Martial Arts',
   'funding': 150,
   'rule': '[Model] gains the [Combat Flip] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Combat Flip'
 }, {
   'crew': 'lf',
@@ -1219,21 +1219,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'lf',
   'key': 'LF01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'lf',
   'key': 'LF02',
   'name': 'Patrol Training',
   'funding': 200,
   'rule': '[Model] gains the [Undercover] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Undercover'
 }, {
   'crew': 'lf',
@@ -1241,7 +1241,7 @@ export const allEquipment = [{
   'name': 'Handcuffs',
   'funding': 200,
   'rule': '[Model] gains the [Arrest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Arrest'
 }, {
   'crew': 'lf',
@@ -1249,21 +1249,21 @@ export const allEquipment = [{
   'name': 'Radio',
   'funding': 100,
   'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'lf',
   'key': 'LF04B',
   'name': 'Radio',
   'funding': 100,
   'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'lf',
   'key': 'LF05',
   'name': 'Police Badge',
   'funding': 200,
   'rule': '[Model] gains the [Veteran] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Veteran'
 }, {
   'crew': 'lf',
@@ -1271,7 +1271,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 100,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'lf',
@@ -1279,7 +1279,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 100,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'lf',
@@ -1287,7 +1287,7 @@ export const allEquipment = [{
   'name': 'Whistle',
   'funding': 200,
   'rule': '[Model] gains the [Stop!] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stop!'
 }, {
   'crew': 'lf',
@@ -1295,7 +1295,7 @@ export const allEquipment = [{
   'name': 'Whistle',
   'funding': 200,
   'rule': '[Model] gains the [Stop!] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stop!'
 }, {
   'crew': 'lf',
@@ -1303,7 +1303,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 350,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'lf',
@@ -1311,7 +1311,7 @@ export const allEquipment = [{
   'name': 'Street Patrol',
   'funding': 50,
   'rule': '[Model] gains the [Street Guy] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Street Guy'
 }, {
   'crew': 'lf',
@@ -1319,7 +1319,7 @@ export const allEquipment = [{
   'name': 'Street Patrol',
   'funding': 50,
   'rule': '[Model] gains the [Street Guy] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Street Guy'
 }, {
   'crew': 'lf',
@@ -1327,7 +1327,7 @@ export const allEquipment = [{
   'name': 'Riot Gear',
   'funding': 150,
   'rule': '[Model] gains the [Football Gear] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Football Gear'
 }, {
   'crew': 'lf',
@@ -1335,7 +1335,7 @@ export const allEquipment = [{
   'name': 'Riot Gear',
   'funding': 150,
   'rule': '[Model] gains the [Football Gear] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Football Gear'
 }, {
   'crew': 'lf',
@@ -1343,7 +1343,7 @@ export const allEquipment = [{
   'name': 'Tear Gas',
   'funding': 200,
   'rule': '[Model] gains the [Smoke Grenades] [Weapon].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'weapon': 'Smoke Grenades 1'
 }, {
   'crew': 'lf',
@@ -1351,7 +1351,7 @@ export const allEquipment = [{
   'name': 'Sanitarian',
   'funding': 150,
   'rule': '[Model] gains the [Medic] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Medic'
 }, {
   'crew': 'lf',
@@ -1368,7 +1368,7 @@ export const allEquipment = [{
   'funding': 100,
   'rep': 2,
   'rule': '[Model] gains the [Follow Me!] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Follow Me!',
   'requires': 'Kathy Kane'
 }, {
@@ -1377,33 +1377,33 @@ export const allEquipment = [{
   'name': 'Sergeant Training',
   'funding': 50,
   'rule': '[Model] gains the [Order] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Order',
-  'requires': 'James Gordon'
+  'requires': 'James W. Gordon'
 }, {
   'crew': 'lf',
   'key': 'LF15B',
   'name': 'Sergeant Training',
   'funding': 50,
   'rule': '[Model] gains the [Order] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Order',
-  'requires': 'James Gordon'
+  'requires': 'James W. Gordon'
 }, {
   'crew': 'lf',
   'key': 'LF16',
   'name': 'Heliport',
   'funding': 150,
   'rule': '(Cannot be Broken)When this [Model] uses the [Air Support] [Special Trait], [Target] an [Effected] [Enemy] [Model]. The [Target] receives a [Ranged Attack] with [ROF] 1, the [Firearm] rule, and [BB] damage which ignores the [Ping!] rule.',
-  'target': 'James Gordon',
-  'requires': 'James Gordon'
+  'target': 'James W. Gordon',
+  'requires': 'James W. Gordon'
 }, {
   'crew': 'lf',
   'key': 'LF17',
   'name': 'Bribe',
   'funding': 150,
   'rule': '[Model] gains the [Informer] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Informer',
   'requires': 'Gillian B. Loeb'
 }, {
@@ -1412,21 +1412,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'rd',
   'key': 'RD01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'rd',
   'key': 'RD02A',
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'rd',
@@ -1434,7 +1434,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'rd',
@@ -1442,7 +1442,7 @@ export const allEquipment = [{
   'name': 'Flare',
   'funding': 300,
   'rule': '[Model] gains the [Flare] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Flare'
 }, {
   'crew': 'rd',
@@ -1450,7 +1450,7 @@ export const allEquipment = [{
   'name': 'Flare',
   'funding': 300,
   'rule': '[Model] gains the [Flare] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Flare'
 }, {
   'crew': 'rd',
@@ -1458,7 +1458,7 @@ export const allEquipment = [{
   'name': 'Enigma Data-Pack',
   'funding': 150,
   'rule': '[Model] gains the [Distract] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Distract'
 }, {
   'crew': 'rd',
@@ -1466,7 +1466,7 @@ export const allEquipment = [{
   'name': 'Enigma Data-Pack',
   'funding': 150,
   'rule': '[Model] gains the [Distract] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Distract'
 }, {
   'crew': 'rd',
@@ -1474,14 +1474,14 @@ export const allEquipment = [{
   'name': 'Broken Equipment',
   'funding': 250,
   'rule': 'Before [Phase A] of the [Pre-Game Sequence], choose one item of [Equipment] purchased by an [Opponent]. That [Equipment] may not be used during the [Game].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'rd',
   'key': 'RD06',
   'name': 'Gas Mask',
   'funding': 200,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'rd',
@@ -1543,21 +1543,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'mf',
   'key': 'MF01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'mf',
   'key': 'MF02',
   'name': 'Grapple-Gun',
   'funding': 150,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'mf',
@@ -1565,7 +1565,7 @@ export const allEquipment = [{
   'name': 'Bulletproof Vest',
   'funding': 150,
   'rule': '[Model] gains the [Bulletproof Vest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Bulletproof Vest'
 }, {
   'crew': 'mf',
@@ -1573,7 +1573,7 @@ export const allEquipment = [{
   'name': 'Bulletproof Vest',
   'funding': 150,
   'rule': '[Model] gains the [Bulletproof Vest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Bulletproof Vest'
 }, {
   'crew': 'mf',
@@ -1582,14 +1582,14 @@ export const allEquipment = [{
   'funding': 300,
   'cost': '2 SC',
   'rule': 'Once per [Game], remove 2 [Damage] from a [Model] in [Base-to-Base] [Contact] with this [Model].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'mf',
   'key': 'MF05',
   'name': 'Scope',
   'funding': 300,
   'rule': 'One of the [Model]\'s [Ranged Weapons] gains the [Scope] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Scope'
 }, {
   'crew': 'mf',
@@ -1597,7 +1597,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 150,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'mf',
@@ -1605,7 +1605,7 @@ export const allEquipment = [{
   'name': 'Cool Generator',
   'funding': 150,
   'rule': '[Model] gains the [Stop!] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stop!'
 }, {
   'crew': 'mf',
@@ -1613,7 +1613,7 @@ export const allEquipment = [{
   'name': 'Improvised Armor',
   'funding': 150,
   'rule': '[Model] gains the [Hockey Gear] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Hockey Gear'
 }, {
   'crew': 'mf',
@@ -1621,7 +1621,7 @@ export const allEquipment = [{
   'name': 'Freeze Generator',
   'funding': 150,
   'rule': '[Model] gains the [Shockwave] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Shockwave',
   'requires': 'Victor Fries'
 }, {
@@ -1630,7 +1630,7 @@ export const allEquipment = [{
   'name': 'Engineer Training',
   'funding': 100,
   'rule': '[Model] gains the [Handyman] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Handyman',
   'requires': 'Victor Fries'
 }, {
@@ -1639,7 +1639,7 @@ export const allEquipment = [{
   'name': 'Cryo-Blast',
   'funding': 50,
   'rule': '[Model] gains the [Bluff] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Bluff',
   'requires': 'Victor Fries'
 }, {
@@ -1648,35 +1648,35 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'sc',
   'key': 'SC01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'sc',
   'key': 'SC02A',
   'name': 'Antidote',
   'funding': 150,
   'rule': '[Model] is immune to [Poison].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'sc',
   'key': 'SC02B',
   'name': 'Antidote',
   'funding': 150,
   'rule': '[Model] is immune to [Poison].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'sc',
   'key': 'SC03',
   'name': 'Titan Dose',
   'funding': 100,
   'rule': '[Model] gains one [Titan Dose].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Titan Dose'
 }, {
   'crew': 'sc',
@@ -1684,7 +1684,7 @@ export const allEquipment = [{
   'name': 'Neurotoxic Drugs',
   'funding': 250,
   'rule': '[Model] gains the [Fast] and [Dodge] [Trait]s.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': [ 'Fast', 'Dodge' ]
 }, {
   'crew': 'sc',
@@ -1692,7 +1692,7 @@ export const allEquipment = [{
   'name': 'Camo Vest',
   'funding': 300,
   'rule': '[Model] gains the [Stealth] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stealth'
 }, {
   'crew': 'sc',
@@ -1700,7 +1700,7 @@ export const allEquipment = [{
   'name': 'Camo Vest',
   'funding': 300,
   'rule': '[Model] gains the [Stealth] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stealth'
 }, {
   'crew': 'sc',
@@ -1708,7 +1708,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 150,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'sc',
@@ -1716,7 +1716,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 150,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'sc',
@@ -1724,7 +1724,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 150,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'sc',
@@ -1732,7 +1732,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'sc',
@@ -1740,7 +1740,7 @@ export const allEquipment = [{
   'name': 'Fear Gas Dispenser',
   'funding': 250,
   'rule': '[Model] gains the [Inspire Fear] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Inspire Fear',
   'requires': 'Scarecrow (AK)'
 }, {
@@ -1749,7 +1749,7 @@ export const allEquipment = [{
   'name': 'Secret Laboratory',
   'funding': 100,
   'rep': 2,
-  'rule': '(Cannot be [Broken]) [Scarecrow] gains the [Scientific] [Trait]. At the start of the [Game], choose up to two [Henchmen] in your [Crew]. These [Model]s let you use [Scarecrow]\'s [Inspire Fear] from those [Model]\'s position. The [Willpower] roll cause by any [Inspire Fear] suffers a plus 2 [Penalty] to the [Roll] (not cumulatvive with a [Discourage] [Penalty]). The [Counters] lost due to [Terror] are chosen by the [Scarecrow] [Controller].',
+  'rule': '(Cannot be [Broken]) [Scarecrow] gains the [Scientific] [Trait]. At the start of the [Game], choose up to two [Henchman] in your [Crew]. These [Model]s let you use [Scarecrow]\'s [Inspire Fear] from those [Model]\'s position. The [Willpower] roll cause by any [Inspire Fear] suffers a plus 2 [Penalty] to the [Roll] (not cumulatvive with a [Discourage] [Penalty]). The [Counters] lost due to [Terror] are chosen by the [Scarecrow] [Controller].',
   'target': 'Scarecrow (AK)',
   'trait': [ 'Scientific', 'Inspire Fear' ],
   'requires': 'Scarecrow (AK)'
@@ -1759,7 +1759,7 @@ export const allEquipment = [{
   'name': 'Radio',
   'funding': 50,
   'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Arkham Knight'
 }, {
   'crew': 'sc',
@@ -1767,7 +1767,7 @@ export const allEquipment = [{
   'name': 'Radio',
   'funding': 50,
   'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Arkham Knight'
 }, {
   'crew': 'sc',
@@ -1791,7 +1791,7 @@ export const allEquipment = [{
   'name': 'Arkham Knight Secret Armory',
   'funding': 100,
   'rule': 'One [Ranged Weapon] of this [Model] gains the [Acid] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Arkham Knight',
   'trait': 'Acid'
 }, {
@@ -1810,7 +1810,7 @@ export const allEquipment = [{
   'name': 'Martial Training',
   'funding': 150,
   'rule': '(Only if [Arkham Knight] is the [Boss]) Gain [Batclaw] and the [Electric Hook] [Weapon].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Slade Wilson',
   'trait': [ 'Martial Artist', 'Master Fighter' ]
 }, {
@@ -1819,21 +1819,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'wg',
   'key': 'WG01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'wg',
   'key': 'WG02A',
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'wg',
@@ -1841,7 +1841,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'wg',
@@ -1849,7 +1849,7 @@ export const allEquipment = [{
   'name': 'Bulletproof Vest',
   'funding': 100,
   'rule': '[Model] gains the [Bulletproof Vest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Bulletproof Vest'
 }, {
   'crew': 'wg',
@@ -1857,7 +1857,7 @@ export const allEquipment = [{
   'name': 'Bulletproof Vest',
   'funding': 100,
   'rule': '[Model] gains the [Bulletproof Vest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Bulletproof Vest'
 }, {
   'crew': 'wg',
@@ -1865,7 +1865,7 @@ export const allEquipment = [{
   'name': 'Neurotoxic Drugs',
   'funding': 250,
   'rule': '[Model] gains the [Fast] and [Dodge] [Trait]s.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': [ 'Fast', 'Dodge' ]
 }, {
   'crew': 'wg',
@@ -1873,7 +1873,7 @@ export const allEquipment = [{
   'name': 'C-4',
   'funding': 250,
   'rule': '[Model] gains the [Explosive Gel] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Explosive Gel'
 }, {
   'crew': 'wg',
@@ -1881,14 +1881,14 @@ export const allEquipment = [{
   'name': 'Broken Equipment',
   'funding': 250,
   'rule': 'Before [Phase A] of the [Pre-Game Sequence], choose one item of [Equipment] purchased by an [Opponent]. That [Equipment] may not be used during the [Game].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'wg',
   'key': 'WG07A',
   'name': 'Weird Device',
   'funding': 200,
   'rule': '[Model] gains the [Goad] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Goad'
 }, {
   'crew': 'wg',
@@ -1896,7 +1896,7 @@ export const allEquipment = [{
   'name': 'Weird Device',
   'funding': 200,
   'rule': '[Model] gains the [Goad] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Goad'
 }, {
   'crew': 'wg',
@@ -1904,7 +1904,7 @@ export const allEquipment = [{
   'name': 'Cup of Special Tea',
   'funding': 100,
   'rule': '[Model] gains one [Vertigo Dose].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Vertigo Dose'
 }, {
   'crew': 'wg',
@@ -1912,7 +1912,7 @@ export const allEquipment = [{
   'name': 'Cup of Special Tea',
   'funding': 100,
   'rule': '[Model] gains one [Vertigo Dose].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Vertigo Dose'
 }, {
   'crew': 'wg',
@@ -1920,7 +1920,7 @@ export const allEquipment = [{
   'name': 'Trained Mind',
   'funding': 100,
   'rule': '[Model] gains the [Desensitized] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Desensitized',
   'requires': 'Dr. Jervish Tetch'
 }, {
@@ -1929,7 +1929,7 @@ export const allEquipment = [{
   'name': 'Rhyme with Me',
   'funding': 200,
   'rule': '[Model] gains the [Disarray] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Disarray',
   'requires': 'Dr. Jervish Tetch'
 }, {
@@ -1938,7 +1938,7 @@ export const allEquipment = [{
   'name': 'Masks of Wonderland-Queen of Hearts Mask',
   'funding': 200,
   'rule': '[Model] gains the [Assassin 1] and [Order] [Trait]s.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': [ { 'name': 'Assassin', 'points': '1' }, 'Order' ],
   'requires': 'Dr. Jervish Tetch'
 }, {
@@ -1947,7 +1947,7 @@ export const allEquipment = [{
   'name': 'Masks of Wonderland-White Rabbit Mask',
   'funding': 200,
   'rule': '[Model] gains the [Fast] and [Tireless] [Trait]s.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': [ 'Fast', 'Tireless' ],
   'requires': 'Dr. Jervish Tetch'
 }, {
@@ -1956,7 +1956,7 @@ export const allEquipment = [{
   'name': 'Masks of Wonderland-Cheshire Cat Mask',
   'funding': 200,
   'rule': '[Model] gains the [Stealth] and [Climbing Claws] [Trait]s.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': [ 'Stealth', 'Climbing Claws' ],
   'requires': 'Dr. Jervish Tetch'
 }, {
@@ -1965,42 +1965,42 @@ export const allEquipment = [{
   'name': 'Broken Equipment',
   'funding': 400,
   'rule': 'Before [Phase A] of the [Pre-Game Sequence], choose one item of [Equipment] purchased by an [Opponent]. That [Equipment] may not be used during the [Game].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'gg',
   'key': 'GG01B',
   'name': 'Broken Equipment',
   'funding': 400,
   'rule': 'Before [Phase A] of the [Pre-Game Sequence], choose one item of [Equipment] purchased by an [Opponent]. That [Equipment] may not be used during the [Game].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'gg',
   'key': 'GG02A',
   'name': 'Ancient Weapon',
   'funding': 200,
   'rule': '[Model]\'s [Close Combat Attacks] gain [CRT]: B.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'gg',
   'key': 'GG02B',
   'name': 'Ancient Weapon',
   'funding': 200,
   'rule': '[Model]\'s [Close Combat Attacks] gain [CRT]: B.',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'gg',
   'key': 'GG03',
   'name': 'Antidote',
   'funding': 100,
   'rule': '[Model] is immune to [Poison].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'gg',
   'key': 'GG04',
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'gg',
@@ -2008,7 +2008,7 @@ export const allEquipment = [{
   'name': 'Hunter Training',
   'funding': 200,
   'rule': '[Model] gains the [Tracking] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Tracking'
 }, {
   'crew': 'gg',
@@ -2016,7 +2016,7 @@ export const allEquipment = [{
   'name': 'Passage',
   'funding': 200,
   'rule': '[Model] gains the [Undercover] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Undercover'
 }, {
   'crew': 'gg',
@@ -2024,7 +2024,7 @@ export const allEquipment = [{
   'name': 'Primal',
   'funding': 200,
   'rule': '[Model] gains the [Feral] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Feral'
 }, {
   'crew': 'ls',
@@ -2032,21 +2032,21 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'ls',
   'key': 'LS01B',
   'name': 'Magazine',
   'funding': 200,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'ls',
   'key': 'LS02',
   'name': 'Loyalty Tattoo',
   'funding': 200,
   'rule': '[Model] gains the [Bodyguard] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Bodyguard'
 }, {
   'crew': 'ls',
@@ -2054,7 +2054,7 @@ export const allEquipment = [{
   'name': 'Night Vision Goggles',
   'funding': 200,
   'rule': '[Model] gains the [Night Vision] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Night Vision'
 }, {
   'crew': 'ls',
@@ -2062,7 +2062,7 @@ export const allEquipment = [{
   'name': 'Climbing Claws',
   'funding': 100,
   'rule': '[Model] gains the [Climbing Claws] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Climbing Claws'
 }, {
   'crew': 'ls',
@@ -2070,7 +2070,7 @@ export const allEquipment = [{
   'name': 'Trained in the Shadows',
   'funding': 200,
   'rule': '[Model] gains the [Hidden] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Hidden'
 }, {
   'crew': 'ls',
@@ -2078,7 +2078,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 150,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'ls',
@@ -2086,7 +2086,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 400,
   'rule': '[Model] gains the [Batclaw] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Batclaw'
 }, {
   'crew': 'ls',
@@ -2094,7 +2094,7 @@ export const allEquipment = [{
   'name': 'Combat Bracers',
   'funding': 150,
   'rule': 'This [Model]\'s [Close Combat Weapon] and [Unarmed] [Attacks] gain the [Defensive] [Weapon Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Defensive'
 }, {
   'crew': 'ls',
@@ -2102,7 +2102,7 @@ export const allEquipment = [{
   'name': 'Combat Bracers',
   'funding': 150,
   'rule': 'This [Model]\'s [Close Combat Weapon] and [Unarmed] [Attacks] gain the [Defensive] [Weapon Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Defensive'
 }, {
   'crew': 'ls',
@@ -2110,7 +2110,7 @@ export const allEquipment = [{
   'name': 'Venom Dose',
   'funding': 100,
   'rule': '[Model] gains one [Venom Dose].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Venom Dose'
 }, {
   'crew': 'ls',
@@ -2118,7 +2118,7 @@ export const allEquipment = [{
   'name': 'Precise Orders',
   'funding': 150,
   'rule': '[Model] gains the [Chain of Command] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Chain of Command'
 }, {
   'crew': 'ls',
@@ -2127,7 +2127,7 @@ export const allEquipment = [{
   'funding': 150,
   'rep': 1,
   'rule': '[Model]\'s [Close Combat Attacks] gain [CRT]: B.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Ra\'s Al Ghul'
 }, {
   'crew': 'ls',
@@ -2136,7 +2136,7 @@ export const allEquipment = [{
   'funding': 150,
   'rep': 1,
   'rule': '[Model]\'s [Close Combat Attacks] gain [CRT]: B.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'requires': 'Ra\'s Al Ghul'
 }, {
   'crew': 'ls',
@@ -2144,7 +2144,7 @@ export const allEquipment = [{
   'name': 'Shadow Training',
   'funding': 200,
   'rule': '[Model] gains the [Undercover] [Trait]',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Undercover',
   'requires': 'Talia Al Ghul'
 }, {
@@ -2153,7 +2153,7 @@ export const allEquipment = [{
   'name': 'Bow Training',
   'funding': 100,
   'rule': '[Model] gains the [Shooter] [Trait]',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Shooter',
   'requires': 'Nyssa Al Ghul'
 }, {
@@ -2162,7 +2162,7 @@ export const allEquipment = [{
   'name': 'Unarmed Combat Training',
   'funding': 150,
   'rule': '[Model] gains the [Close Combat Master] [Trait]',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Close Combat Master',
   'requires': 'Lady Shiva'
 }, {
@@ -2171,7 +2171,7 @@ export const allEquipment = [{
   'name': 'Poison Training',
   'funding': 50,
   'rule': '[Model] gains the [Poison Master] [Trait]',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Poison Master',
   'requires': 'Cheshire'
 }, {
@@ -2179,8 +2179,8 @@ export const allEquipment = [{
   'key': 'LS16',
   'name': 'Traditional Way',
   'funding': 0,
-  'rule': '(Unbreakable) This [Crew] cannot recruit [Model]s with [Firearm] or [Beam] rules. Instead, [Crew Affiliated Henchmen] may buy [Bow] and [Katana] [Equipment].',
-  'target': 'Henchmen',
+  'rule': '(Unbreakable) This [Crew] cannot recruit [Model]s with [Firearm] or [Beam] rules. Instead, [Crew Affiliated Henchman] may buy [Bow] and [Katana] [Equipment].',
+  'target': 'Henchman',
   'trait': 'Poison Master',
   'requires': 'Nyssa Al Ghul (AK)'
 }, {
@@ -2189,7 +2189,7 @@ export const allEquipment = [{
   'name': 'Bow',
   'funding': 150,
   'rule': '[Model] gains a [Bow] [Weapon]',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'weapon': 'Bow',
   'requires': 'Nyssa Al Ghul (AK)'
 }, {
@@ -2198,7 +2198,7 @@ export const allEquipment = [{
   'name': 'Bow',
   'funding': 150,
   'rule': '[Model] gains a [Bow] [Weapon]',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'weapon': 'Bow',
   'requires': 'Nyssa Al Ghul (AK)'
 }, {
@@ -2208,7 +2208,7 @@ export const allEquipment = [{
   'funding': 100,
   'rep': 5,
   'rule': '[Model] gains a [Katana] [Weapon]',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'weapon': 'Katana',
   'requires': 'Nyssa Al Ghul (AK)'
 }, {
@@ -2218,7 +2218,7 @@ export const allEquipment = [{
   'funding': 100,
   'rep': 5,
   'rule': '[Model] gains a [Katana] [Weapon]',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'weapon': 'Katana',
   'requires': 'Nyssa Al Ghul (AK)'
 }, {
@@ -2296,7 +2296,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 300,
   'rule': '[Model] gains the [Grapple Gun] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Grapple Gun'
 }, {
   'crew': 'pi',
@@ -2304,7 +2304,7 @@ export const allEquipment = [{
   'name': 'Camo Vest',
   'funding': 300,
   'rule': '[Model] gains the [Stealth] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Stealth'
 }, {
   'crew': 'pi',
@@ -2313,7 +2313,7 @@ export const allEquipment = [{
   'funding': 200,
   'rep': 3,
   'rule': '[Model] gains the [Tough Skin] and [Desensitized] [Trait]s.',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': ['Tough Skin', 'Desensitized']
 }, {
   'crew': 'pi',
@@ -2322,7 +2322,7 @@ export const allEquipment = [{
   'funding': 150,
   'rep': 2,
   'rule': '[Model] gains the [Adaptable] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Adaptable'
 }, {
   'crew': 'pi',
@@ -2331,7 +2331,7 @@ export const allEquipment = [{
   'funding': 150,
   'rep': 2,
   'rule': '[Model] gains the [Adaptable] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Adaptable'
 }, {
   'crew': 'pi',
@@ -2339,14 +2339,14 @@ export const allEquipment = [{
   'name': 'Corrosive Blood',
   'funding': 50,
   'rule': 'When this [Model] becomes a [Casualty], all [Model]s in [Contact] must pass an [Endurance Roll] or receive B [Damage].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'pi',
   'key': 'PI11B',
   'name': 'Corrosive Blood',
   'funding': 50,
   'rule': 'When this [Model] becomes a [Casualty], all [Model]s in [Contact] must pass an [Endurance Roll] or receive B [Damage].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'pi',
   'key': 'PI12',
@@ -2372,7 +2372,7 @@ export const allEquipment = [{
   'name': 'Passage',
   'funding': 200,
   'rule': '[Model] gains the [Undercover] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Undercover'
 }, {
   'crew': 'oc',
@@ -2380,28 +2380,28 @@ export const allEquipment = [{
   'name': 'Magazine',
   'funding': 150,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'oc',
   'key': 'OC01B',
   'name': 'Magazine',
   'funding': 150,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'oc',
   'key': 'OC01C',
   'name': 'Magazine',
   'funding': 150,
   'rule': '+1 to [Ammunition] for 1 [Weapon].',
-  'target': 'Henchmen'
+  'target': 'Henchman'
 }, {
   'crew': 'oc',
   'key': 'OC02',
   'name': 'Bribe',
   'funding': 100,
   'rule': '[Model] gains the [Informer] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Informer'
 }, {
   'crew': 'oc',
@@ -2409,7 +2409,7 @@ export const allEquipment = [{
   'name': 'Kevlar Vest',
   'funding': 300,
   'rule': '[Model] gains the [Kevlar Vest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Kevlar Vest'
 }, {
   'crew': 'oc',
@@ -2417,7 +2417,7 @@ export const allEquipment = [{
   'name': 'Kevlar Vest',
   'funding': 300,
   'rule': '[Model] gains the [Kevlar Vest] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Kevlar Vest'
 }, {
   'crew': 'oc',
@@ -2425,7 +2425,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 250,
   'rule': '[Model] gains the [Grapple Gun] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Grapple Gun'
 }, {
   'crew': 'oc',
@@ -2433,7 +2433,7 @@ export const allEquipment = [{
   'name': 'Grapple-Gun',
   'funding': 250,
   'rule': '[Model] gains the [Grapple Gun] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Grapple Gun'
 }, {
   'crew': 'oc',
@@ -2441,7 +2441,7 @@ export const allEquipment = [{
   'name': 'C-4',
   'funding': 250,
   'rule': '[Model] gains the [Explosive Gel] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Explosive Gel'
 }, {
   'crew': 'oc',
@@ -2449,7 +2449,7 @@ export const allEquipment = [{
   'name': 'Gas Mask',
   'funding': 150,
   'rule': '[Model] gains the [Gas Mask] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Gas Mask'
 }, {
   'crew': 'oc',
@@ -2457,7 +2457,7 @@ export const allEquipment = [{
   'name': 'Silencer',
   'funding': 200,
   'rule': 'One of the [Model]\'s [Ranged Weapons] gains the [Silencer] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Silencer'
 }, {
   'crew': 'oc',
@@ -2465,7 +2465,7 @@ export const allEquipment = [{
   'name': 'Backpack',
   'funding': 100,
   'rule': '[Model] gains the [Backpack] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Backpack'
 }, {
   'crew': 'oc',
@@ -2473,7 +2473,7 @@ export const allEquipment = [{
   'name': 'Mechanic',
   'funding': 100,
   'rule': '[Model] gains the [Repairman] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Repairman'
 }, {
   'crew': 'oc',
@@ -2481,7 +2481,7 @@ export const allEquipment = [{
   'name': 'High Confidence',
   'funding': 200,
   'rule': '[Model] gains the [Sturdy] and [Mobster] [Trait]s.',
-  'target': [ 'Henchmen', 'Victor Zsasz' ],
+  'target': [ 'Henchman', 'Victor Zsasz' ],
   'trait': [ 'Sturdy', 'Mobster' ],
   'requires': 'Falcone'
 }, {
@@ -2490,7 +2490,7 @@ export const allEquipment = [{
   'name': 'Mafia',
   'funding': 100,
   'rule': '[Model] gains the [Criminal] [Trait].',
-  'target': 'Henchmen',
+  'target': 'Henchman',
   'trait': 'Criminal',
   'requires': 'Falcone'
 }, {

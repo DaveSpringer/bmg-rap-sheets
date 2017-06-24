@@ -7,6 +7,12 @@ import {
   followCrewRules,
   resetCrew
 } from '../modules/builder'
+import {
+  selectEquipment
+} from '../modules/selectEquipment'
+import {
+  assignEquipment
+} from '../modules/assignEquipment'
 
 import Builder from '../components/Builder'
 
@@ -16,7 +22,9 @@ const mapDispatchToProps = {
   loadResources,
   addAllCharacters,
   followCrewRules,
-  resetCrew
+  resetCrew,
+  selectEquipment,
+  assignEquipment
 }
 
 const mapStateToProps = (state) => ({

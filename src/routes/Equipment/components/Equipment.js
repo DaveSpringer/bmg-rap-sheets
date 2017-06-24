@@ -1,7 +1,7 @@
 import React from 'react'
 import Subheader from '../../../components/Subheader/Subheader'
+import EquipmentItem from '../../../components/EquipmentItem/EquipmentItem'
 import './style/Equipment.scss'
-import EquipmentItem from './EquipmentItem'
 
 class Equipment extends React.Component {
   constructor (props) {
