@@ -74,9 +74,10 @@ export const actions = {
 export const selectCrewAction = (state, action) => {
   let crewName = action.crew.name
   let crewId = action.crew.id
+  let exclusive = action.crew.exclusive
   let charFilter = (characters, character) => {
-    if (character.crews.includes(crewId) ||
-    (character.crews.includes('*') && !character.hates.includes(crewId))) {
+    if (character.crews.includes(crewId) || (!exclusive &&
+    (character.crews.includes('*') && !character.hates.includes(crewId)))) {
       if (typeof (character.rank) === 'object') {
         characters.push(
           Object.assign({}, character, {

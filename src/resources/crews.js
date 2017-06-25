@@ -25,7 +25,8 @@ export const allCrews = [
     id : 'pi'
   }, {
     name : 'Court of Owls',
-    id : 'co'
+    id : 'co',
+    exclusive: true
   }, {
     name : 'Mr. Freeze',
     id : 'mf'
@@ -296,7 +297,8 @@ export const allCrews = [
     }]
   }, {
     name: 'Amazons of Themyscira',
-    id: 'az'
+    id: 'az',
+    exclusive: true
   }
 ]
 
