@@ -5,13 +5,19 @@ import './style/EquipmentItem.scss'
 class EquipmentItem extends React.Component {
   render () {
     let equipment = this.props.equipment
-    let crewsString
-    if (equipment.crew === undefined) {
-      crewsString = 'Unknown'
-    } else {
-      crewsString = this.props.allCrews.find((compareCrew) => {
+    let crewsArea = ''
+
+    // If allCrews isn't populated, use an empty crew.
+    if (equipment.crew !== undefined && this.props.allCrews !== undefined) {
+      let crewsString = this.props.allCrews.find((compareCrew) => {
         return compareCrew.id === equipment.crew
       }).name
+      crewsArea = (
+        <span className='equipCrew'>
+          <span className='equipEquipLabel'>Crew:</span>
+          <span>{crewsString}</span>
+        </span>
+      )
     }
 
     let findTrait = (traitName) => {
@@ -26,52 +32,54 @@ class EquipmentItem extends React.Component {
     }
 
     let populatedTraits = []
-    if (equipment.trait !== undefined) {
-      let traitList = []
+    let traitsArea
+    if (this.props.allTraits !== undefined) {
       if (equipment.trait !== undefined) {
-        if (typeof equipment.trait === 'string') {
-          traitList.push(equipment.trait)
-        } else if (Array.isArray(equipment.trait)) {
-          traitList = equipment.trait
-        } else {
-          traitList.push(equipment.trait.name)
-        }
-      }
-      populatedTraits = traitList.reduce((resultTraits, trait) => {
-        if (trait !== undefined) {
-          if (typeof trait === 'string') {
-            let foundTrait = findTrait(trait)
-            if (foundTrait !== undefined) {
-              resultTraits.push(foundTrait)
-            } else {
-              console.log('Warning: Trait ' + trait + ' was not found!')
-            }
+        let traitList = []
+        if (equipment.trait !== undefined) {
+          if (typeof equipment.trait === 'string') {
+            traitList.push(equipment.trait)
+          } else if (Array.isArray(equipment.trait)) {
+            traitList = equipment.trait
           } else {
-            let foundTrait = findTrait(trait.name)
-            if (foundTrait !== undefined) {
-              resultTraits.push(foundTrait)
-            } else {
-              console.log('Warning: Trait ' + trait.name + ' was not found!')
-            }
+            traitList.push(equipment.trait.name)
           }
         }
-        return resultTraits
-      }, [])
-    }
-    let traitsArea
-    if (equipment.trait !== undefined) {
-      traitsArea = (
-        <div>
-          <div className='equipEquipLabel'>Traits:</div>
-          <div className='equipTraits'>
-            {populatedTraits.map(trait =>
-              <EquipmentTrait key={trait.name} trait={trait} />
-            )}
+        populatedTraits = traitList.reduce((resultTraits, trait) => {
+          if (trait !== undefined) {
+            if (typeof trait === 'string') {
+              let foundTrait = findTrait(trait)
+              if (foundTrait !== undefined) {
+                resultTraits.push(foundTrait)
+              } else {
+                console.log('Warning: Trait ' + trait + ' was not found!')
+              }
+            } else {
+              let foundTrait = findTrait(trait.name)
+              if (foundTrait !== undefined) {
+                resultTraits.push(foundTrait)
+              } else {
+                console.log('Warning: Trait ' + trait.name + ' was not found!')
+              }
+            }
+          }
+          return resultTraits
+        }, [])
+      }
+      if (equipment.trait !== undefined) {
+        traitsArea = (
+          <div>
+            <div className='equipEquipLabel'>Traits:</div>
+            <div className='equipTraits'>
+              {populatedTraits.map(trait =>
+                <EquipmentTrait key={trait.name} trait={trait} />
+              )}
+            </div>
           </div>
-        </div>
-      )
-    } else {
-      traitsArea = ''
+        )
+      } else {
+        traitsArea = ''
+      }
     }
     let repArea = '['
     if (equipment.rep !== undefined) {
@@ -134,10 +142,7 @@ class EquipmentItem extends React.Component {
               <span className='equipEquipLabel'>Name:</span>
               <span>{equipment.name}</span>
             </span>
-            <span className='equipCrew'>
-              <span className='equipEquipLabel'>Crew:</span>
-              <span>{crewsString}</span>
-            </span>
+            {crewsArea}
           </div>
           {targetArea}
           {requiresArea}
@@ -152,7 +157,7 @@ class EquipmentItem extends React.Component {
             </span>
             <span className='equipFunding'>
               <span className='equipEquipLabel'>Funding:</span>
-              <span>{equipment.funding}</span>
+              <span>${equipment.funding}</span>
             </span>
           </div>
         </div>
@@ -163,8 +168,8 @@ class EquipmentItem extends React.Component {
 
 EquipmentItem.propTypes = {
   equipment : React.PropTypes.object.isRequired,
-  allCrews : React.PropTypes.array.isRequired,
-  allTraits : React.PropTypes.array.isRequired
+  allCrews : React.PropTypes.array,
+  allTraits : React.PropTypes.array
 }
 
 export default EquipmentItem
