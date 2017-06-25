@@ -16,7 +16,7 @@ class EquipToCharSelect extends React.Component {
 
   render () {
     return (
-      <div className='equipToCharSelect'>
+      <div className='equip-to-char-select'>
         <h2>Select Character for Equipment</h2>
         <div>
           <EquipmentItem equipment={this.props.equipment}
