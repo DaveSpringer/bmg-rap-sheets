@@ -121,7 +121,9 @@ export const selectCrewAction = (state, action) => {
     return equipList
   }, [])
   resultAvail.sort(sortCharacters)
-  resultAvail.forEach((char) => char.equipment = undefined)
+  resultAvail.forEach((char) => {
+    char.equipment = undefined
+  })
   return Object.assign({}, state, {
     crewName: crewName,
     crewId: crewId,

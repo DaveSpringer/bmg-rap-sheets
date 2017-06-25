@@ -74,6 +74,22 @@ export const allTraits = [
     'page': 'B.55'
   },
   {
+    'name': 'Amazon',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'This [Model] receives a +1 bonus to its [Hit] and [Block] rolls. [Damage Rolls] against this [Model] suffer a -1 [Penalty].',
+    'grants': [],
+    'page': 'WWBP.4'
+  },
+  {
+    'name': 'Amazon Lineage',
+    'phase': 'Crew Building',
+    'cost': '',
+    'rule': 'If this [Model] is the [Boss], you may only hire models with [Affiliation: Amazons of Themyscira]',
+    'grants': [],
+    'page': 'WWBP.4'
+  },
+  {
     'name': 'Amphibious',
     'phase': 'Execute the plan',
     'cost': '',
@@ -88,6 +104,14 @@ export const allTraits = [
     'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA'
+  },
+  {
+    'name': 'Animal',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'Gain 5cm to [Basic Move Distance]. When this [Model] [Runs], it ignores [Obstacles] up to 4cm high but cannot [Climb] or [Jump]. If this [Model] suffers the [Fire] [Effect], at the beginning of the [Victory Points and Casualty Recount] [Phase], make a [Willpower Roll] (which cannot be rerolled). If failed, the [Model] cannot move in the next [Round].',
+    'grants': [],
+    'page': 'WWBP.4'
   },
   {
     'name': 'Archie',
@@ -318,6 +342,14 @@ export const allTraits = [
     'rule': 'See this [Character]\'s File',
     'grants': [],
     'page': 'NA'
+  },
+  {
+    'name': 'Bracelets of Submission',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'The first time per [Round], if this [Model] is hit by an [Enemy] [Ranged Attack], it may make an [Agility Roll]. If successful, one [Hit] is canceled. This occurs before any [Dodge Roll]s.',
+    'grants': [],
+    'page': 'WWBP.4'
   },
   {
     'name': 'Brutal',
@@ -1086,6 +1118,14 @@ export const allTraits = [
     'page': 'F.35'
   },
   {
+    'name': 'Godkiller',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'This [Model]\'s [Attacks] gain the [Magic Weapon] [Weapon Trait]. This [Model] is [Immune] to the [Poison Effect], and ignores damage infliced by [Electric] [Weapons].',
+    'grants': [],
+    'page': 'WWBP.4'
+  },
+  {
     'name': 'Good Aim',
     'phase': 'Execute the plan',
     'cost': '1SC',
@@ -1254,6 +1294,14 @@ export const allTraits = [
     'rule': 'This [Character] is considered [Hovering] until the end of the [Round]. A [Hovering] [Character] can only be hit in [Melee] on a 6+. If a [Hovering] [Character] becomes [K.O.], [Knocked Down], [Paralyzed], [Pinned Down], or [Stunned]; take 2 additional [Blood Damage] and remove the [Hovering] [Effect]. [Hovering] [Characters] do not benefit from [Ping!].',
     'grants': [],
     'page': 'F.36'
+  },
+  {
+    'name': 'Huge',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'This [Model]\'s [Basic Movement Distance] is 15cm. If it [Falls], [Damage] occurs every 10cm difference between [Jump Capacity]. This [Model] cannot be [Grabbed], [Pushed], or [Knocked Down] in [Close Combat] except by attacks from [Models] that have the [Large] or [Huge] [Trait]. This [Model] suffers a -2 penalty to [Ping! Rolls]. This [Model] gains thte [Charge] [Special Attack] and the [Resilient] [Trait].',
+    'grants': [ 'Charge', 'Resilient' ],
+    'page': 'WWBP.4'
   },
   {
     'name': 'I know what I\'m doing',
@@ -1483,6 +1531,14 @@ export const allTraits = [
     'rule': '[Damage Roll]s against this [Character] suffer a -1 penalty.',
     'grants': [],
     'page': 'F.39'
+  },
+  {
+    'name': 'Living Legend',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'This [Model] can make two [Activation]s each [Round]. Each [Activation] is independent and cannot be made consecutively. At the start of the second [Activation], allocate 2 additional [Action Counter]s immediately. In addition, once per [Round], when a [Trait] specifies this model as a [Target], you may cancel the use of that [Trait]. A [Crew] with a [Living Legend] loses 1 [Pass] each [Round].',
+    'grants': [],
+    'page': 'WFBP.7'
   },
   {
     'name': 'Lord of Business',
@@ -2365,6 +2421,14 @@ export const allTraits = [
     'rule': 'This [Character] may be part of the [Suicide Squad] team. See Flash pg. 68.',
     'grants': [],
     'page': 'F.68'
+  },
+  {
+    'name': 'Super Jump',
+    'phase': 'Execute the plan',
+    'cost': '2MC + 1SC',
+    'rule': 'During this [Character]\'s [Movement, it may [Move] straight up or down up to 20cm with no penalty. This change in elevation does not affect the [Model]\'s [Basic Movement Distance].',
+    'grants': [],
+    'page': 'WWBP.4'
   },
   {
     'name': 'Superior Smell',

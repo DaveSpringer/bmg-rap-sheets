@@ -294,6 +294,9 @@ export const allCrews = [
       name: 'Strix',
       boss: 'no'
     }]
+  }, {
+    name: 'Amazons of Themyscira',
+    id: 'az'
   }
 ]
 

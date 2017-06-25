@@ -272,6 +272,14 @@ export const allWeapons = [
     'traits': 'Mechanic, Aim'
   },
   {
+    'key': 'Bow Standard Arrow 4',
+    'name': 'Bow',
+    'damage': 'BB',
+    'rof': 1,
+    'ammo': 4,
+    'traits': 'Mechanic, Aim'
+  },
+  {
     'key': 'Bow Standard Arrow BBB',
     'name': 'Bow (Standard Arrow) ',
     'damage': 'BBB',
@@ -696,6 +704,14 @@ export const allWeapons = [
     'traits': 'Mechanic, M. Range, Sharp'
   },
   {
+    'key': 'Gladius',
+    'name': 'Gladius',
+    'damage': 'BB',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Sharp, Overwhelming'
+  },
+  {
     'key': 'Goblin Blast',
     'name': 'Goblin Blast',
     'damage': 'BS',
@@ -984,6 +1000,14 @@ export const allWeapons = [
     'traits': 'Beam, M.Range, Assault/2'
   },
   {
+    'key': 'Lasso of Hestia',
+    'name': 'Lasso of Hestia',
+    'damage': 'S',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Stun, Magic, Reach, One Use'
+  },
+  {
     'key': 'Laughing Gas Weapon',
     'name': 'Laughing Gas',
     'damage': 'B',
@@ -1070,6 +1094,14 @@ export const allWeapons = [
     'rof': '-',
     'ammo': '-',
     'traits': 'Sharp, Heavy'
+  },
+  {
+    'key': 'Magic Shield',
+    'name': 'Magic Shield',
+    'damage': 'SS',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Protective, Devastating'
   },
   {
     'key': 'Magnum',
@@ -1472,6 +1504,14 @@ export const allWeapons = [
     'traits': 'Firearm, Expansive'
   },
   {
+    'key': 'Scimitar',
+    'name': 'Scimitar',
+    'damage': 'BB',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Sharp, CRT: B'
+  },
+  {
     'key': 'Search Name',
     'name': 'Weapon',
     'damage': 'Blood / Stun',
@@ -1622,6 +1662,14 @@ export const allWeapons = [
     'rof': '-',
     'ammo': '-',
     'traits': 'Sharp, Enervating 1'
+  },
+  {
+    'key': 'Spear',
+    'name': 'Spear',
+    'damage': 'BS',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Reach, CRT: BB'
   },
   {
     'key': 'Speed Force Bolts',

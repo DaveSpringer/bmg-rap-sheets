@@ -1,6 +1,36 @@
 export const loadedCharacters = [
   {
     'name': 'Unknown',
+    'alias': '1880\'s Talon',
+    'rank': 'Henchman',
+    'reputation': 50,
+    'funding': 0,
+    'crews': [
+      'co'
+    ],
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Fast',
+      'Martial Artist',
+      'Reanimated Owl',
+      'Weakness: Cold'
+    ],
+    'weapons': [
+      'Gladius'
+    ],
+    'wp': 6,
+    'str': 4,
+    'mov': 3,
+    'att': 4,
+    'def': 4,
+    'end': 5,
+    'spc': 3,
+    'shop': 'PARLIMENT OF OWLS CREW',
+    'key': '159D'
+  },
+  {
+    'name': 'Unknown',
     'alias': '404',
     'rank': 'Henchman',
     'reputation': 35,
@@ -185,6 +215,91 @@ export const loadedCharacters = [
     'spc': 3,
     'shop': 'LEXCORP INDUSTRIES',
     'key': '157A'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Amazon Warrior 1',
+    'rank': 'Henchman',
+    'reputation': 54,
+    'funding': 0,
+    'crews': [
+      'az'
+    ],
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Amazon',
+      'Martial Artist'
+    ],
+    'weapons': [
+      'Sword'
+    ],
+    'wp': 5,
+    'str': 3,
+    'mov': 3,
+    'att': 4,
+    'def': 4,
+    'end': 6,
+    'spc': 3,
+    'shop': 'AMAZONS OF THEMYSCRIA',
+    'key': '161B'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Amazon Warrior 2',
+    'rank': 'Henchman',
+    'reputation': 52,
+    'funding': 0,
+    'crews': [
+      'az'
+    ],
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Amazon',
+      'Combat Flip'
+    ],
+    'weapons': [
+      'Spear'
+    ],
+    'wp': 5,
+    'str': 3,
+    'mov': 3,
+    'att': 4,
+    'def': 4,
+    'end': 6,
+    'spc': 3,
+    'shop': 'AMAZONS OF THEMYSCRIA',
+    'key': '161C'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Amazon Warrior 3',
+    'rank': 'Henchman',
+    'reputation': 54,
+    'funding': 300,
+    'crews': [
+      'az'
+    ],
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Amazon',
+      'Good Aim',
+      'Rapid Fire'
+    ],
+    'weapons': [
+      'Bow Standard Arrow 4'
+    ],
+    'wp': 5,
+    'str': 3,
+    'mov': 4,
+    'att': 3,
+    'def': 3,
+    'end': 6,
+    'spc': 3,
+    'shop': 'AMAZONS OF THEMYSCRIA',
+    'key': '161D'
   },
   {
     'name': 'Michael Sommers',
@@ -2366,6 +2481,38 @@ export const loadedCharacters = [
     'key': '052'
   },
   {
+    'name': 'Ephram Newhouse',
+    'alias': 'Unknown',
+    'rank': 'Henchman',
+    'reputation': 62,
+    'funding': 100,
+    'crews': [
+      'co'
+    ],
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Martial Artist',
+      { 'name': 'Primary Target', 'target': 'Loot' },
+      'Weapon Master',
+      'Reanimated Owl',
+      'Weakness: Cold'
+    ],
+    'weapons': [
+      'Scimitar',
+      'Throwing Knife'
+    ],
+    'wp': 6,
+    'str': 4,
+    'mov': 3,
+    'att': 4,
+    'def': 4,
+    'end': 7,
+    'spc': 3,
+    'shop': 'PARLIMENT OF OWLS CREW',
+    'key': '159C'
+  },
+  {
     'name': 'James W. Gordon',
     'alias': 'Gordon',
     'rank': [
@@ -4539,8 +4686,37 @@ export const loadedCharacters = [
     'def': 3,
     'end': 7,
     'spc': 3,
-    'shop': 'COURT OF OWLS CREW',
-    'key': 'UNKNOWN-1'
+    'shop': 'PARLIMENT OF OWLS CREW',
+    'key': '159A'
+  },
+  {
+    'name': 'Henry Ballard',
+    'alias': 'Unknown',
+    'rank': 'Henchman',
+    'reputation': 46,
+    'funding': 0,
+    'crews': [
+      'co'
+    ],
+    'hates': [],
+    'traits': [
+      'Claws',
+      { 'name': 'Invulnerability', 'counter': 1 },
+      'Reanimated Owl',
+      'Weakness: Cold'
+    ],
+    'weapons': [
+      'Owl Knife'
+    ],
+    'wp': 6,
+    'str': 4,
+    'mov': 3,
+    'att': 4,
+    'def': 4,
+    'end': 6,
+    'spc': 3,
+    'shop': 'PARLIMENT OF OWLS CREW',
+    'key': '159B'
   },
   {
     'name': 'Unknown',
@@ -7207,6 +7383,42 @@ export const loadedCharacters = [
     'spc': 4,
     'shop': 'PROFESSOR ZOOM',
     'key': '121'
+  },
+  {
+    'name': 'Hippolyta',
+    'alias': 'Queen Hippolyta',
+    'rank': 'Leader',
+    'legend': true,
+    'reputation': 190,
+    'funding': 0,
+    'crews': [
+      'az'
+    ],
+    'hates': [ ],
+    'traits': [
+      'Amazon',
+      'Amazon Lineage',
+      'Grand Strategist',
+      'Leadership',
+      'Martial Artist',
+      'Reinforced Gloves',
+      'Sturdy',
+      'Super Jump',
+      'Veteran',
+      'Weapon Master'
+    ],
+    'weapons': [
+      'Sword'
+    ],
+    'wp': 9,
+    'str': 2,
+    'mov': 3,
+    'att': 5,
+    'def': 4,
+    'end': 11,
+    'spc': 4,
+    'shop': 'AMAZONS OF THEMYSCRIA',
+    'key': '160A'
   },
   {
     'name': 'L. Lawrence',
@@ -10045,6 +10257,47 @@ export const loadedCharacters = [
     'spc': 3,
     'shop': 'THE COURT OWLS',
     'key': '086C'
+  },
+  {
+    'name': 'Diana Prince',
+    'alias': 'Wonder Woman',
+    'rank': 'Sidekick',
+    'reputation': 240,
+    'funding': 0,
+    'cutoff': 6,
+    'crews': [
+      'bt',
+      'az'
+    ],
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Amazon',
+      'Amazon Lineage',
+      'Bracelets of Submission',
+      'Godkiller',
+      'Living Legend',
+      'Martial Artist',
+      'Regeneration',
+      'Reinforced Gloves',
+      'Sturdy',
+      'Super Jump',
+      'Weapon Master'
+    ],
+    'weapons': [
+      'Sword',
+      'Magic Shield',
+      'Lasso of Hestia'
+    ],
+    'wp': 9,
+    'str': 1,
+    'mov': 4,
+    'att': 5,
+    'def': 4,
+    'end': 10,
+    'spc': 4,
+    'shop': 'WONDER WOMAN ON WARHORSE',
+    'key': '161'
   },
   {
     'name': 'Xiao Loong',
