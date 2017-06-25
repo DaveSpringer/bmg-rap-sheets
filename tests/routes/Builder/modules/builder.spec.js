@@ -11,27 +11,11 @@ import {
   addAllCharacters,
   followCrewRules,
   resetCrew,
+  initialState,
   default as builderReducer
 } from 'routes/Builder/modules/builder'
 
-let defaultState = {
-  crewName : 'default',
-  allCrews : [],
-  allTraits : [],
-  allCharacters: [],
-  availableCharacters: [],
-  characters: [],
-  reputation: 0,
-  funding: 0,
-  leaders: 0,
-  sidekicks: 0,
-  freeAgents: 0,
-  followRules: true,
-  crewCode: '',
-  crewEquipment: [],
-  availableEquipment: [],
-  equipment: []
-}
+let defaultState = initialState
 
 let filterCharacterAlias = (alias) => (character) => character.alias === alias
 
@@ -224,6 +208,14 @@ describe('(Redux Module) Builder', () => {
 
     it('Should only have the 5 Watchmen.', () => {
       expect(watchmenCrewPopped.availableCharacters.length).to.equal(5)
+    })
+
+    it('Should clear all equipment when a new crew is selected.', () => {
+      populatedState.availableCharacters[0].equipment = [ ]
+      populatedState.availableCharacters[0].equipment.push({ name: 'fakeEquip' })
+      let resetState = builderReducer(populatedState, selectCrew({ id: 'bt', name: 'Batman' }))
+
+      expect(resetState.availableCharacters[0].equipment).to.not.exist
     })
   })
 
