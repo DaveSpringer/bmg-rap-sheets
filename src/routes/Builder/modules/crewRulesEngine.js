@@ -190,14 +190,18 @@ const createFinalState = (
   let newRep = newCharacters.reduce((repSum, character) => {
     let equipSum = 0
     if (character.equipment !== undefined) {
-      equipSum = character.equipment.reduce((repSum, equip) => repSum += (equip.rep ? equip.rep : 0), 0)
+      equipSum = character.equipment.reduce((repSum, equip) => {
+        return repSum + (equip.rep ? equip.rep : 0)
+      }, 0)
     }
     return repSum + character.reputation + equipSum
   }, 0)
   let newFunding = newCharacters.reduce((fundSum, character) => {
     let equipSum = 0
     if (character.equipment !== undefined) {
-      equipSum = character.equipment.reduce((fundSum, equip) => fundSum += (equip.funding ? equip.funding: 0), 0)
+      equipSum = character.equipment.reduce((fundSum, equip) => {
+        return fundSum + (equip.funding ? equip.funding : 0)
+      }, 0)
     }
     return fundSum + character.funding + equipSum
   }, 0)
