@@ -1,6 +1,6 @@
 import { characterSelected, toggleFollowRules } from './crewRulesEngine'
 import loadAllResources from './loadResources'
-import { sortCharacters } from './common'
+import { sortCharacters, doStateCalcs } from './common'
 import { selectEquipment, SELECT_EQUIPMENT, selectEquipmentAction } from './selectEquipment'
 import { assignEquipment, ASSIGN_EQUIPMENT, assignEquipmentAction } from './assignEquipment'
 
@@ -140,12 +140,9 @@ export const selectCrewAction = (state, action) => {
     availableCharacters : resultAvail,
     characters : [],
     hiddenCharacters : [],
-    reputation: 0,
-    funding: 0,
     leaders: 0,
     sidekicks: 0,
     freeAgents: 0,
-    crewCode: '' + crewId,
     crewEquipment: crewEquipment,
     availableEquipment: availableEquipment,
     equipment: []
@@ -217,7 +214,29 @@ export function readCrewCodeAction (state, action) {
         return curState
       }
     } else {
-      resState = characterSelected(curState, { characterKey : split })
+      if (split.indexOf('-') !== -1) {
+        let equipChar = split.split('-')
+        let charKey
+        resState = equipChar.reduce((charState, charSplit, charIndex) => {
+          let intermediateState
+          if (charIndex === 0) {
+            charKey = charSplit
+            intermediateState = characterSelected(charState, { characterKey : charSplit })
+          } else {
+            // Find the equipment.
+            let equip = charState.availableEquipment.find((availEquip) => charSplit === availEquip.key)
+
+            // Select the equipment
+            intermediateState = selectEquipmentAction(charState, { equipment: equip })
+
+            // Assign the equipment
+            intermediateState = assignEquipmentAction(intermediateState, { equipment: equip, characterKey: charKey })
+          }
+          return intermediateState
+        }, curState)
+      } else {
+        resState = characterSelected(curState, { characterKey : split })
+      }
     }
     return resState
   }, state)
@@ -280,6 +299,8 @@ const initialState = {
 export default function builderReducer (state = initialState, action) {
   let result = state
   const handler = ACTION_HANDLERS[action.type]
-  result = handler ? handler(state, action) : state
+  if (handler) {
+    result = doStateCalcs(handler(state, action))
+  }
   return result
 }

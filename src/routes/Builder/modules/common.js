@@ -50,3 +50,32 @@ export const sortCharacters = (a, b) => {
       }
   }
 }
+
+/* A helper method that calculates common things
+like reputation, funding, and crew code. It then
+returns that in a wrapper object. */
+export const doStateCalcs = (state) => {
+  let resultObj = {
+    rep: 0,
+    funding: 0,
+    crewCode: state.crewId
+  }
+
+  resultObj = state.characters.reduce((wrapper, char) => {
+    wrapper.rep += char.reputation
+    wrapper.funding += char.funding
+    wrapper.crewCode += '+' + char.key
+    if (char.equipment !== undefined) {
+      wrapper.crewCode += char.equipment.reduce((equipString, equip) => {
+        equipString += '-' + equip.key
+        return equipString
+      }, '')
+    }
+    return wrapper
+  }, resultObj)
+
+  state.reputation = resultObj.rep
+  state.funding = resultObj.funding
+  state.crewCode = resultObj.crewCode
+  return state
+}

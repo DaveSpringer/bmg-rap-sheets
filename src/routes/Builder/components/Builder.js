@@ -19,6 +19,7 @@ class Builder extends React.Component {
     this.toggleShowSelectEquip = this.toggleShowSelectEquip.bind(this)
     this.toggleShowCrewSummary = this.toggleShowCrewSummary.bind(this)
     this.onSelectEquip = this.onSelectEquip.bind(this)
+    this.onReadFromCrewCode = this.onReadFromCrewCode.bind(this)
 
     // State
     this.state = { showSelectEquip: false, showCrewSummary: false }
@@ -62,6 +63,15 @@ class Builder extends React.Component {
     })
   }
 
+  onReadFromCrewCode (event) {
+    let tempCrewCode = event.target.value
+    try {
+      this.props.readCrewCode(tempCrewCode)
+    } catch (e) {
+      console.log('ERROR: Could not read the crew code.')
+    }
+  }
+
   render () {
     let availableCharacters = this.props.crew.availableCharacters
     let availableEquipment = this.props.crew.availableEquipment
@@ -86,6 +96,7 @@ class Builder extends React.Component {
             onClose={this.toggleShowCrewSummary}
             allowClicks>
             <CrewSummary characters={this.props.crew.characters}
+              readFromCrewCode={this.onReadFromCrewCode}
               crewCode={this.props.crew.crewCode}
               crewName={this.props.crew.crewName} />
           </Modal>
@@ -156,7 +167,8 @@ Builder.propTypes = {
   followCrewRules : React.PropTypes.func.isRequired,
   resetCrew : React.PropTypes.func.isRequired,
   selectEquipment : React.PropTypes.func.isRequired,
-  assignEquipment : React.PropTypes.func.isRequired
+  assignEquipment : React.PropTypes.func.isRequired,
+  readCrewCode : React.PropTypes.func.isRequired
 }
 
 export default Builder

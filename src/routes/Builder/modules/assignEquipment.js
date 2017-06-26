@@ -28,15 +28,6 @@ export function assignEquipmentAction (state, action) {
   let newEquipment = [...state.availableEquipment]
   newEquipment.splice(state.availableEquipment.indexOf(equipment), 1)
 
-  let newRep = state.reputation
-  if (equipment.rep !== undefined) {
-    newRep += equipment.rep
-  }
-  let newFunding = state.funding
-  if (equipment.funding !== undefined) {
-    newFunding += equipment.funding
-  }
-
   let foundChar = state.validEquipChars.find((char) => {
     return (char.key === characterKey)
   })
@@ -67,8 +58,6 @@ export function assignEquipmentAction (state, action) {
     validEquipChars: [],
     equipment : [...state.equipment, equipment],
     availableEquipment : newEquipment,
-    reputation: newRep,
-    funding: newFunding,
     characters: newCharacters
   })
 }

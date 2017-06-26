@@ -16,6 +16,12 @@ import {
   readCrewCode,
   default as builderReducer
 } from 'routes/Builder/modules/builder'
+import {
+  assignEquipment
+} from 'routes/Builder/modules/assignEquipment'
+import {
+  selectEquipment
+} from 'routes/Builder/modules/selectEquipment'
 
 let defaultState = initialState
 
@@ -351,6 +357,10 @@ describe('(Redux Module) Builder', () => {
     let selectGordon = builderReducer(selectBatman, selectCharacter('046A'))
     let selectCatwoman = builderReducer(selectGordon, selectCharacter('008'))
     let selectRobin = builderReducer(selectCatwoman, selectCharacter('015'))
+    let selectFatCop = builderReducer(selectRobin, selectCharacter('005B2'))
+    let firstAvailEquip = selectFatCop.availableEquipment[0]
+    let selectEquip = builderReducer(selectFatCop, selectEquipment(firstAvailEquip))
+    let magazineFatCop = builderReducer(selectEquip, assignEquipment(firstAvailEquip, '005B2'))
 
     it('Should be able to reproduce basic crew from crew code with only faction.', () => {
       let testState = builderReducer(loadedState, readCrewCode('bt'))
@@ -378,6 +388,14 @@ describe('(Redux Module) Builder', () => {
       let testState = builderReducer(loadedState, readCrewCode('asgahweman'))
 
       expect(testState).to.equal(loadedState)
+    })
+
+    it('Should handle reading a crew with equipment.', () => {
+      let testState = builderReducer(loadedState, readCrewCode('bt+001+046A+008+015+005B2-BT01A'))
+
+      expect(testState.crewCode).to.equal(magazineFatCop.crewCode)
+      expect(testState.reputation).to.equal(magazineFatCop.reputation)
+      expect(testState.funding).to.equal(magazineFatCop.funding)
     })
   })
 })

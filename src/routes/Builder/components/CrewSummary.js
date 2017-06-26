@@ -30,7 +30,10 @@ class CrewSummary extends React.Component {
         <h2>Crew Summary</h2>
         <textarea className='crew-summary-text' value={crewSummaryString} readOnly='true' onClick={() => console.log('Trying to interrupt closing...')} />
         <h2>Crew Code</h2>
-        <input type='text' className='crew-code-text' value={this.props.crewCode} readOnly='true' />
+        <div className='crew-code-area'>
+          <p>Please copy and paste into this field for now. I promise this will improve as soon as I figure out an elegant solution.</p>
+          <input type='text' className='crew-code-text' value={this.props.crewCode} onChange={this.props.readFromCrewCode} />
+        </div>
       </div>
     )
   }
@@ -39,7 +42,8 @@ class CrewSummary extends React.Component {
 CrewSummary.propTypes = {
   crewName : React.PropTypes.string.isRequired,
   characters : React.PropTypes.array.isRequired,
-  crewCode : React.PropTypes.string.isRequired
+  crewCode : React.PropTypes.string.isRequired,
+  readFromCrewCode : React.PropTypes.func.isRequired
 }
 
 export default CrewSummary
