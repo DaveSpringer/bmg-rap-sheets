@@ -8,8 +8,13 @@ class Modal extends React.Component {
       return null
     }
 
+    let clickFunction = this.props.onClose
+    if (this.props.allowClicks) {
+      clickFunction = () => {}
+    }
+
     return (
-      <div className='backdrop backdropStyle' onClick={this.props.onClose}>
+      <div className='backdrop backdropStyle' onClick={clickFunction}>
         <div className='modalVisible modalStyle'>
           {this.props.children}
           <div className='footer'>
@@ -26,7 +31,8 @@ class Modal extends React.Component {
 Modal.propTypes = {
   onClose: React.PropTypes.func.isRequired,
   show: React.PropTypes.bool,
-  children: React.PropTypes.node
+  children: React.PropTypes.node,
+  allowClicks: React.PropTypes.bool
 }
 
 export default Modal

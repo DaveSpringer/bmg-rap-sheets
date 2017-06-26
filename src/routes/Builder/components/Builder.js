@@ -8,6 +8,7 @@ import Toggle from 'react-toggle'
 import 'react-toggle/style.css'
 import EquipmentBox from '../../../components/EquipmentBox/EquipmentBox'
 import Modal from '../../../components/Modal/Modal'
+import CrewSummary from './CrewSummary'
 
 class Builder extends React.Component {
   constructor () {
@@ -16,10 +17,11 @@ class Builder extends React.Component {
     this.handleRulesChange = this.handleRulesChange.bind(this)
     this.handleResetCrew = this.handleResetCrew.bind(this)
     this.toggleShowSelectEquip = this.toggleShowSelectEquip.bind(this)
+    this.toggleShowCrewSummary = this.toggleShowCrewSummary.bind(this)
     this.onSelectEquip = this.onSelectEquip.bind(this)
 
     // State
-    this.state = { showSelectEquip: false }
+    this.state = { showSelectEquip: false, showCrewSummary: false }
   }
   componentWillMount () {
     // Load up the various files
@@ -53,6 +55,13 @@ class Builder extends React.Component {
     })
   }
 
+  // Shows the crew Summary
+  toggleShowCrewSummary () {
+    this.setState({
+      showCrewSummary: !this.state.showCrewSummary
+    })
+  }
+
   render () {
     let availableCharacters = this.props.crew.availableCharacters
     let availableEquipment = this.props.crew.availableEquipment
@@ -72,6 +81,13 @@ class Builder extends React.Component {
               allCrews={this.props.crew.allCrews}
               allTraits={this.props.crew.allTraits}
               assignEquipment={this.props.assignEquipment} />
+          </Modal>
+          <Modal show={this.state.showCrewSummary}
+            onClose={this.toggleShowCrewSummary}
+            allowClicks>
+            <CrewSummary characters={this.props.crew.characters}
+              crewCode={this.props.crew.crewCode}
+              crewName={this.props.crew.crewName} />
           </Modal>
 
           <div className='characters hidden-print'>
@@ -106,6 +122,9 @@ class Builder extends React.Component {
           </div>
           <div className='crewStats hidden-print'>
             <h2>Current Crew</h2>
+            <div>
+              <button className='crewSummaryButton' onClick={this.toggleShowCrewSummary}>Summary</button>
+            </div>
             <div>Leaders: {this.props.crew.leaders} - Sidekicks: {this.props.crew.sidekicks}
               &nbsp;- Free Agents: {this.props.crew.freeAgents}</div>
             <div id='selected-characters' className='character-area'>

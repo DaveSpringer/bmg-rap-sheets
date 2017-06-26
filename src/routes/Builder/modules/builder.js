@@ -136,7 +136,7 @@ export const selectCrewAction = (state, action) => {
     leaders: 0,
     sidekicks: 0,
     freeAgents: 0,
-    crewCode: '' + crewId + '-',
+    crewCode: '' + crewId,
     crewEquipment: crewEquipment,
     availableEquipment: availableEquipment,
     equipment: []
