@@ -5,6 +5,7 @@ import {
   ADD_ALL_CHARACTERS,
   FOLLOW_CREW_RULES,
   RESET_CREW,
+  READ_CREW_CODE,
   selectCrew,
   selectCharacter,
   loadResources,
@@ -12,6 +13,7 @@ import {
   followCrewRules,
   resetCrew,
   initialState,
+  readCrewCode,
   default as builderReducer
 } from 'routes/Builder/modules/builder'
 
@@ -34,6 +36,10 @@ describe('(Redux Module) Builder', () => {
 
   it('Should export a constant ADD_ALL_CHARACTERS', () => {
     expect(ADD_ALL_CHARACTERS).to.equal('ADD_ALL_CHARACTERS')
+  })
+
+  it('Should export a constant READ_CREW_CODE', () => {
+    expect(READ_CREW_CODE).to.equal('READ_CREW_CODE')
   })
 
   /* I have no idea why this isn't better... */
@@ -335,6 +341,43 @@ describe('(Redux Module) Builder', () => {
         let resetCrewState = builderReducer(allSelected, resetCrew())
         expect(resetCrewState.availableCharacters.length).to.equal(batmanCrewPopped.availableCharacters.length)
       })
+    })
+  })
+
+  describe('(ActionCrewtor) readCrewCode', () => {
+    let loadedState = builderReducer(defaultState, loadResources())
+    let selectBatmanCrew = builderReducer(loadedState, selectCrew({name: 'Batman', id: 'bt'}))
+    let selectBatman = builderReducer(selectBatmanCrew, selectCharacter('001'))
+    let selectGordon = builderReducer(selectBatman, selectCharacter('046A'))
+    let selectCatwoman = builderReducer(selectGordon, selectCharacter('008'))
+    let selectRobin = builderReducer(selectCatwoman, selectCharacter('015'))
+
+    it('Should be able to reproduce basic crew from crew code with only faction.', () => {
+      let testState = builderReducer(loadedState, readCrewCode('bt'))
+
+      expect(testState.crewCode).to.equal(selectBatmanCrew.crewCode)
+      expect(testState.crewName).to.equal(selectBatman.crewName)
+    })
+
+    it('Should be able to read a crew with batman.', () => {
+      let testState = builderReducer(loadedState, readCrewCode('bt+001'))
+
+      expect(testState.crewCode).to.equal(selectBatman.crewCode)
+      expect(testState.reputation).to.equal(selectBatman.reputation)
+    })
+
+    it('Should be able to read a complicated crew.', () => {
+      let testState = builderReducer(loadedState, readCrewCode('bt+001+046A+008+015'))
+
+      expect(testState.crewCode).to.equal(selectRobin.crewCode)
+      expect(testState.reputation).to.equal(selectRobin.reputation)
+      expect(testState.funding).to.equal(selectRobin.funding)
+    })
+
+    it('Should gracefully handle a read failure.', () => {
+      let testState = builderReducer(loadedState, readCrewCode('asgahweman'))
+
+      expect(testState).to.equal(loadedState)
     })
   })
 })

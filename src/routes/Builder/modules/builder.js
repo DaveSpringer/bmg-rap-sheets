@@ -12,6 +12,7 @@ export const LOAD_RESOURCES = 'LOAD_RESOURCES'
 export const ADD_ALL_CHARACTERS = 'ADD_ALL_CHARACTERS'
 export const FOLLOW_CREW_RULES = 'FOLLOW_CREW_RULES'
 export const RESET_CREW = 'RESET_CREW'
+export const READ_CREW_CODE = 'READ_CREW_CODE'
 
 // Actions
 
@@ -60,6 +61,13 @@ export function resetCrew () {
   }
 }
 
+export function readCrewCode (crewCode = '') {
+  return {
+    type: READ_CREW_CODE,
+    crewCode: crewCode
+  }
+}
+
 export const actions = {
   selectCrew,
   selectCharacter,
@@ -68,7 +76,8 @@ export const actions = {
   followCrewRules,
   resetCrew,
   selectEquipment,
-  assignEquipment
+  assignEquipment,
+  readCrewCode
 }
 
 export const selectCrewAction = (state, action) => {
@@ -193,6 +202,29 @@ export const resetCurrentCrew = (state, action) => {
   return selectCrewAction(state, { crew: crew })
 }
 
+export function readCrewCodeAction (state, action) {
+  let crewCode = action.crewCode
+  let splitCode = crewCode.split('+')
+
+  let resultState = splitCode.reduce((curState, split, index) => {
+    let resState
+    if (index === 0) {
+      if (split.length === 2) {
+        let crew = state.allCrews.find((crew) => crew.id === split)
+        resState = selectCrewAction(curState, { crew: crew })
+      } else {
+        console.log('ERROR: Failed to read crew properly from code. Exiting.')
+        return curState
+      }
+    } else {
+      resState = characterSelected(curState, { characterKey : split })
+    }
+    return resState
+  }, state)
+
+  return resultState
+}
+
 // Action Handlers
 const ACTION_HANDLERS = {
   [SELECT_CREW] : (state, action) => {
@@ -218,6 +250,9 @@ const ACTION_HANDLERS = {
   },
   [ASSIGN_EQUIPMENT]: (state, action) => {
     return assignEquipmentAction(state, action)
+  },
+  [READ_CREW_CODE]: (state, action) => {
+    return readCrewCodeAction(state, action)
   }
 }
 
