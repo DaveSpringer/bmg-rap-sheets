@@ -63,10 +63,9 @@ class Builder extends React.Component {
     })
   }
 
-  onReadFromCrewCode (event) {
-    let tempCrewCode = event.target.value
+  onReadFromCrewCode (crewCode) {
     try {
-      this.props.readCrewCode(tempCrewCode)
+      this.props.readCrewCode(crewCode)
     } catch (e) {
       console.log('ERROR: Could not read the crew code.')
     }
