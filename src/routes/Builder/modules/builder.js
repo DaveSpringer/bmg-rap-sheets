@@ -1,5 +1,5 @@
 import { characterSelected, toggleFollowRules } from './crewRulesEngine'
-import loadAllResources from './loadResources'
+import { LOAD_RESOURCES, loadResources, default as loadAllResources } from '../../../modules/loadResources'
 import { sortCharacters, doStateCalcs } from './common'
 import { selectEquipment, SELECT_EQUIPMENT, selectEquipmentAction } from './selectEquipment'
 import { assignEquipment, ASSIGN_EQUIPMENT, assignEquipmentAction } from './assignEquipment'
@@ -8,7 +8,6 @@ import { assignEquipment, ASSIGN_EQUIPMENT, assignEquipmentAction } from './assi
 export const SELECT_CREW_UNCONFIRMED = 'SELECT_CREW_UNCONFIRMED'
 export const SELECT_CREW = 'SELECT_CREW'
 export const SELECT_CHARACTER = 'SELECT_CHARACTER'
-export const LOAD_RESOURCES = 'LOAD_RESOURCES'
 export const ADD_ALL_CHARACTERS = 'ADD_ALL_CHARACTERS'
 export const FOLLOW_CREW_RULES = 'FOLLOW_CREW_RULES'
 export const RESET_CREW = 'RESET_CREW'
@@ -33,12 +32,6 @@ export function selectCharacter (characterKey = 'default') {
   return {
     type: SELECT_CHARACTER,
     characterKey: characterKey
-  }
-}
-
-export function loadResources () {
-  return {
-    type: LOAD_RESOURCES
   }
 }
 

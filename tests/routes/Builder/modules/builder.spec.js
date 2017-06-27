@@ -1,14 +1,12 @@
 import {
   SELECT_CREW,
   SELECT_CHARACTER,
-  LOAD_RESOURCES,
   ADD_ALL_CHARACTERS,
   FOLLOW_CREW_RULES,
   RESET_CREW,
   READ_CREW_CODE,
   selectCrew,
   selectCharacter,
-  loadResources,
   addAllCharacters,
   followCrewRules,
   resetCrew,
@@ -22,6 +20,11 @@ import {
 import {
   selectEquipment
 } from 'routes/Builder/modules/selectEquipment'
+import {
+  LOAD_RESOURCES,
+  loadResources,
+  default as loadAllResources
+} from 'modules/loadResources'
 
 let defaultState = initialState
 

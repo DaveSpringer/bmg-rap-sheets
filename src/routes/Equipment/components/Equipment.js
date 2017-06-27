@@ -36,7 +36,7 @@ class Equipment extends React.Component {
         <h4>Selected Crew: { crewName }</h4>
         <div className='equipmentContainer'>
           {this.props.equipment.map(equipment =>
-            <EquipmentItem key={equipment.key} equipment={equipment} allCrews={this.props.allCrews} allTraits={this.props.allTraits} />
+            <EquipmentItem key={equipment.key} equipment={equipment} />
           )}
         </div>
       </div>
@@ -49,7 +49,6 @@ Equipment.propTypes = {
   allCrews : React.PropTypes.array.isRequired,
   equipment : React.PropTypes.array.isRequired,
   crew : React.PropTypes.object.isRequired,
-  allTraits : React.PropTypes.array.isRequired,
   selectCrew : React.PropTypes.func.isRequired
 }
 

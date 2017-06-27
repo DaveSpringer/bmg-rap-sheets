@@ -19,9 +19,7 @@ class EquipToCharSelect extends React.Component {
       <div className='equip-to-char-select'>
         <h2>Select Character for Equipment</h2>
         <div>
-          <EquipmentItem equipment={this.props.equipment}
-            allCrews={this.props.allCrews}
-            allTraits={this.props.allTraits} />
+          <EquipmentItem equipment={this.props.equipment} />
         </div>
         <div>
           {this.props.validEquipChars.map(character =>
@@ -39,8 +37,6 @@ class EquipToCharSelect extends React.Component {
 EquipToCharSelect.propTypes = {
   validEquipChars : React.PropTypes.array.isRequired,
   equipment : React.PropTypes.object.isRequired,
-  allCrews : React.PropTypes.array.isRequired,
-  allTraits : React.PropTypes.array.isRequired,
   assignEquipment : React.PropTypes.func.isRequired
 }
 

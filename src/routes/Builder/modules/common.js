@@ -67,6 +67,8 @@ export const doStateCalcs = (state) => {
     wrapper.crewCode += '+' + char.key
     if (char.equipment !== undefined) {
       wrapper.crewCode += char.equipment.reduce((equipString, equip) => {
+        wrapper.rep += (equip.rep ? equip.rep : 0)
+        wrapper.funding += (equip.funding ? equip.funding : 0)
         equipString += '-' + equip.key
         return equipString
       }, '')

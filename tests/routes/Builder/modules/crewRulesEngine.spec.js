@@ -1,12 +1,11 @@
 import {
   selectCharacter,
   selectCrew,
-  loadResources,
   followCrewRules,
   initialState,
   default as builderReducer
 } from 'routes/Builder/modules/builder'
-
+import { loadResources } from 'modules/loadResources'
 import { characterSelected, toggleFollowRules } from 'routes/Builder/modules/crewRulesEngine'
 
 const loadedState = builderReducer(initialState, loadResources())

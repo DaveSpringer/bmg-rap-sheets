@@ -1,10 +1,21 @@
-import { loadedCharacters } from '../../../resources/characters'
-import { allCrews } from '../../../resources/crews'
-import { allTraits } from '../../../resources/traits'
-import { allWeapons } from '../../../resources/weapons'
-import { allEquipment } from '../../../resources/equipment'
+import { loadedCharacters } from '../resources/characters'
+import { allCrews } from '../resources/crews'
+import { allTraits } from '../resources/traits'
+import { allWeapons } from '../resources/weapons'
+import { allEquipment } from '../resources/equipment'
 
-const findTrait = (populatedTraits, traitName) => {
+// Constants
+export const LOAD_RESOURCES = 'LOAD_RESOURCES'
+
+// Action populators
+export function loadResources () {
+  return {
+    type: LOAD_RESOURCES
+  }
+}
+
+// Helper methods
+export const findTrait = (populatedTraits, traitName) => {
   let foundTrait = {
     name : traitName,
     phase : 'Unknown',
@@ -49,7 +60,7 @@ const findTrait = (populatedTraits, traitName) => {
   return populatedTraits
 }
 
-const findWeapon = (populatedWeapons, weaponKey) => {
+export const findWeapon = (populatedWeapons, weaponKey) => {
   let foundWeapon = {
     name: weaponKey,
     key: weaponKey,
@@ -69,7 +80,7 @@ const findWeapon = (populatedWeapons, weaponKey) => {
   return populatedWeapons
 }
 
-const populateCharacter = (characters, character) => {
+export const populateCharacter = (characters, character) => {
   if (character === undefined) { return characters }
   if (character.traits !== undefined) {
     let poppedTraits = character.traits.reduce(findTrait, [])
@@ -85,17 +96,37 @@ const populateCharacter = (characters, character) => {
   return characters
 }
 
+export const populateEquipment = (resultEquipment, equipment) => {
+  if (equipment === undefined) { return resultEquipment }
+  if (equipment.trait !== undefined) {
+    if (typeof equipment.trait === 'string') {
+      equipment.traitText = findTrait([], equipment.trait)
+    } else if (Array.isArray(equipment.trait)) {
+      equipment.traitText = equipment.trait.reduce(findTrait, [])
+    } else {
+      equipment.traitText = findTrait([], equipment.trait.name)
+    }
+  }
+  let crewName = allCrews.find((compareCrew) => {
+    return compareCrew.id === equipment.crew
+  }).name
+  equipment.crewName = crewName
+  resultEquipment.push(equipment)
+  return resultEquipment
+}
+
 let loadAllResources = (state, action) => {
   // Now... Add all traits to each character... Ooph...
   // TODO: Optimize the %@#$^ out of this in the future.
 
   let allCharacters = loadedCharacters.reduce(populateCharacter, [])
+  let poppedEquipment = allEquipment.reduce(populateEquipment, [])
   return Object.assign({}, state, {
     allTraits : allTraits,
     allCrews : allCrews,
     allCharacters : allCharacters,
     allWeapons : allWeapons,
-    allEquipment : allEquipment
+    allEquipment : poppedEquipment
   })
 }
 

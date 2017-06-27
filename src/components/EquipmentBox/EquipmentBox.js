@@ -23,9 +23,7 @@ class EquipmentBox extends React.Component {
         </div>
         <div className='info-button' onClick={this.equipmentDisplay}>INFO</div>
         <Modal show={this.state.showEquipmentBox} onClose={this.equipmentDisplay}>
-          <EquipmentBoxDisplay equipment={this.props.equipment}
-            allCrews={this.props.allCrews}
-            allTraits={this.props.allTraits} />
+          <EquipmentBoxDisplay equipment={this.props.equipment} />
         </Modal>
       </div>
     )
@@ -45,9 +43,7 @@ class EquipmentBox extends React.Component {
 
 EquipmentBox.propTypes = {
   equipment : React.PropTypes.object.isRequired,
-  selectEquipment : React.PropTypes.func.isRequired,
-  allCrews : React.PropTypes.array.isRequired,
-  allTraits : React.PropTypes.array.isRequired
+  selectEquipment : React.PropTypes.func.isRequired
 }
 
 export default EquipmentBox

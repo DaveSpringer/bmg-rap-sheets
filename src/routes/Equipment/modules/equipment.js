@@ -1,6 +1,7 @@
 import { allEquipment } from '../../../resources/equipment'
 import { allCrews } from '../../../resources/crews'
 import { allTraits } from '../../../resources/traits'
+import { populateEquipment } from '../../../modules/loadResources'
 
 // ------------------------------------
 // Constants
@@ -37,9 +38,10 @@ export const actions = {
 const ACTION_HANDLERS = {
   [LOAD_EQUIPMENT]    : (state, action) => {
     let fullCrews = [ DEFAULT_CREW, ...allCrews ]
+    let poppedEquipment = allEquipment.reduce(populateEquipment, [])
     return Object.assign({}, state, {
       allEquipment: allEquipment,
-      equipment: allEquipment,
+      equipment: poppedEquipment,
       allCrews: fullCrews,
       crew: fullCrews[0],
       allTraits: allTraits

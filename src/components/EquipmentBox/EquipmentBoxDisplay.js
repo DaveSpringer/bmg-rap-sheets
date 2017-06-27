@@ -8,18 +8,14 @@ class EquipmentBoxDisplay extends React.Component {
       <div className='equipment-box-display-pane'>
         <h2>{this.props.equipment.name}</h2>
         <EquipmentItem
-          equipment={this.props.equipment}
-          allCrews={this.props.allCrews}
-          allTraits={this.props.allTraits} />
+          equipment={this.props.equipment} />
       </div>
     )
   }
 }
 
 EquipmentBoxDisplay.propTypes = {
-  equipment : React.PropTypes.object.isRequired,
-  allCrews : React.PropTypes.array.isRequired,
-  allTraits : React.PropTypes.array.isRequired
+  equipment : React.PropTypes.object.isRequired
 }
 
 export default EquipmentBoxDisplay

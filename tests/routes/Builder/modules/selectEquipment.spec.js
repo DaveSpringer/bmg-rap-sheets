@@ -1,11 +1,10 @@
 import {
-  loadResources,
   selectCrew,
   selectCharacter,
   initialState,
   default as builderReducer
 } from 'routes/Builder/modules/builder'
-
+import { loadResources } from 'modules/loadResources'
 import { selectEquipment } from 'routes/Builder/modules/selectEquipment'
 
 const loadedState = builderReducer(initialState, loadResources())

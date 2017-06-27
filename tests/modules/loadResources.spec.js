@@ -1,6 +1,6 @@
 import {
   default as loadAllResources
-} from 'routes/Builder/modules/loadResources'
+} from 'modules/loadResources'
 
 const defaultState = {
   crewName : 'default',

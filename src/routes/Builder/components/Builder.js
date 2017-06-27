@@ -87,8 +87,6 @@ class Builder extends React.Component {
           <Modal show={this.state.showSelectEquip} onClose={this.toggleShowSelectEquip}>
             <EquipToCharSelect validEquipChars={this.props.crew.validEquipChars}
               equipment={this.props.crew.equipment}
-              allCrews={this.props.crew.allCrews}
-              allTraits={this.props.crew.allTraits}
               assignEquipment={this.props.assignEquipment} />
           </Modal>
           <Modal show={this.state.showCrewSummary}
@@ -123,9 +121,7 @@ class Builder extends React.Component {
               {availableEquipment.map(equipment =>
                 <EquipmentBox key={equipment.key}
                   selectEquipment={this.onSelectEquip}
-                  equipment={equipment}
-                  allTraits={this.props.crew.allTraits}
-                  allCrews={this.props.crew.allCrews} />
+                  equipment={equipment} />
               )}
             </div>
             <div className='clear-left' />
