@@ -21,6 +21,8 @@ const addBorj = builderReducer(addPoisonIvy, selectCharacter('T02'))
 const addSwampThing = builderReducer(addBorj, selectCharacter('077'))
 const addPlant = builderReducer(addSwampThing, selectCharacter('068C1'))
 const addInmate5 = builderReducer(addPlant, selectCharacter('033D'))
+const selectScarecrowCrew = builderReducer(loadedState, selectCrew({name: 'Scarecrow', id: 'sc'}))
+const selectArkhamKnightPreorder = builderReducer(selectScarecrowCrew, selectCharacter('P03'))
 
 describe('(Redux Action Sub-Module) selectEquipment', () => {
 
@@ -72,6 +74,16 @@ describe('(Redux Action Sub-Module) selectEquipment', () => {
         expect(grappleGun).to.be.an('object')
 
         let resultState = builderReducer(addInmate5, selectEquipment(grappleGun))
+        expect(resultState.validEquipChars.length).to.equal(1)
+      })
+    })
+
+    describe('(Crew-Specific) Select Arkham Knight equipment.', () => {
+      it('Should be able to add Hook Pistol to the Arkham Knight.', () => {
+        let hookPistol = selectArkhamKnightPreorder.availableEquipment.find((equip) => equip.name === 'Hook Pistol')
+        expect(hookPistol).to.be.an('object')
+
+        let resultState = builderReducer(selectArkhamKnightPreorder, selectEquipment(hookPistol))
         expect(resultState.validEquipChars.length).to.equal(1)
       })
     })
