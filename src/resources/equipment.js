@@ -656,7 +656,7 @@ export const allEquipment = [{
   'name': 'Tactical Gloves',
   'funding': 50,
   'rule': '[Model] gains the [Reinforced Gloves] [Trait].',
-  'target': 'Henchman',
+  'target': 'Arrow',
   'trait': 'Reinforced Gloves',
   'requires': 'Arrow'
 }, {
