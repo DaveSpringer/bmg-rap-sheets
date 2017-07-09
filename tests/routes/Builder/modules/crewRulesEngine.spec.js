@@ -77,7 +77,6 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
 
     describe('(Sub-Function) Adding Leader', () => {
 
-
       it('Should handle a leader selection', () => {
 
         expect(selectBatmanResult).to.be.an('object')
@@ -134,6 +133,7 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
       let removeFirstSidekick = characterSelected(secondSidekickResult, selectCharacter(batgirlComicKey))
       let removeSecondSidekick = characterSelected(secondSidekickResult, selectCharacter(batgirlComicKey))
       let startingSidekicks = selectBatmanCrew.availableCharacters.reduce(countSidekicks, 0)
+      let addNightwing = characterSelected(selectBatmanCrew, selectCharacter('009'))
 
       it('Should be able to add a Sidekick', () => {
         expect(firstSidekickResult.sidekicks).to.equal(1)
@@ -170,6 +170,10 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(removeFirstSidekick.availableCharacters.reduce(countLeaders, 0)).to.equal(selectBatmanCrew.availableCharacters.reduce(countLeaders, 0))
       })
 
+      it('Should not have other Richard Graysons present after selecting.', () => {
+        let graysonCount = addNightwing.availableCharacters.reduce((count, char) => count += (char.name === 'Richard Grayson' ? 1 : 0), 0)
+        expect(graysonCount).to.equal(0)
+      })
     })
 
     describe('(Sub-Function) Adding Generic Free Agent', () => {

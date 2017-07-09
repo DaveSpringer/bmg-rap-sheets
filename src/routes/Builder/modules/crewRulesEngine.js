@@ -121,8 +121,7 @@ const addCharacter = (state, action) => {
         // Just skip this case.
         return result
       }
-      if (curChar.alias === char.alias &&
-        curChar.name === char.name &&
+      if (curChar.name === char.name &&
         curChar.name !== 'Unknown' &&
         curChar.name !== 'Classified' &&
         !curChar.multiples) {

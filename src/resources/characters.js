@@ -1448,7 +1448,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S CREW',
-    'key': '007D1'
+    'key': '007D1',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -1474,7 +1475,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S CREW',
-    'key': '007D2'
+    'key': '007D2',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -1500,7 +1502,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S CREW',
-    'key': '007D3'
+    'key': '007D3',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -1526,7 +1529,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S THUGS SET I',
-    'key': '014A1'
+    'key': '014A1',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -1552,7 +1556,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S THUGS SET I',
-    'key': '014A2'
+    'key': '014A2',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -1578,7 +1583,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S THUGS SET I',
-    'key': '014A3'
+    'key': '014A3',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -1630,7 +1636,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S THUGS SET III',
-    'key': '023B1'
+    'key': '023B1',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -1656,7 +1663,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S THUGS SET III',
-    'key': '023B2'
+    'key': '023B2',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -1682,7 +1690,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S THUGS SET III',
-    'key': '023B3'
+    'key': '023B3',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -1893,7 +1902,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'THE RIDDLER AND BOT ARMY',
-    'key': '096D1'
+    'key': '096D1',
+    'multiples': true
   },
   {
     'name': 'Bot Mk 1',
@@ -1923,7 +1933,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'THE RIDDLER AND BOT ARMY',
-    'key': '096D2'
+    'key': '096D2',
+    'multiples': true
   },
   {
     'name': 'Bot Mk 1',
@@ -1953,7 +1964,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'THE RIDDLER AND BOT ARMY',
-    'key': '096D3'
+    'key': '096D3',
+    'multiples': true
   },
   {
     'name': 'Bot Mk 2',
@@ -1983,7 +1995,8 @@ export const loadedCharacters = [
     'end': 3,
     'spc': 3,
     'shop': 'THE RIDDLERS BOT ARMY SET 1',
-    'key': '097B1'
+    'key': '097B1',
+    'multiples': true
   },
   {
     'name': 'Bot Mk 2',
@@ -2013,7 +2026,8 @@ export const loadedCharacters = [
     'end': 3,
     'spc': 3,
     'shop': 'THE RIDDLERS BOT ARMY SET 1',
-    'key': '097B2'
+    'key': '097B2',
+    'multiples': true
   },
   {
     'name': 'Bot Mk 2',
@@ -2043,7 +2057,8 @@ export const loadedCharacters = [
     'end': 3,
     'spc': 3,
     'shop': 'THE RIDDLERS BOT ARMY SET 1',
-    'key': '097B3'
+    'key': '097B3',
+    'multiples': true
   },
   {
     'name': 'Bot Mk 3',
@@ -2073,7 +2088,8 @@ export const loadedCharacters = [
     'end': 6,
     'spc': 3,
     'shop': 'THE RIDDLERS BOT ARMY SET 1',
-    'key': '097A1'
+    'key': '097A1',
+    'multiples': true
   },
   {
     'name': 'Bot Mk 3',
@@ -2103,7 +2119,8 @@ export const loadedCharacters = [
     'end': 6,
     'spc': 3,
     'shop': 'THE RIDDLERS BOT ARMY SET 1',
-    'key': '097A2'
+    'key': '097A2',
+    'multiples': true
   },
   {
     'name': 'Bot Mk 3',
@@ -2133,7 +2150,8 @@ export const loadedCharacters = [
     'end': 6,
     'spc': 3,
     'shop': 'THE RIDDLERS BOT ARMY SET 1',
-    'key': '097A3'
+    'key': '097A3',
+    'multiples': true
   },
   {
     'name': 'Classified',
@@ -2728,7 +2746,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER\'S CLOWNS SET III',
-    'key': '022A1'
+    'key': '022A1',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -2754,7 +2773,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER\'S CLOWNS SET III',
-    'key': '022A2'
+    'key': '022A2',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -2780,7 +2800,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER\'S CLOWNS SET III',
-    'key': '022A3'
+    'key': '022A3',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -2806,7 +2827,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER CREW',
-    'key': '004C1'
+    'key': '004C1',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -2832,7 +2854,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER CREW',
-    'key': '004C2'
+    'key': '004C2',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -2858,7 +2881,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER CREW',
-    'key': '004C3'
+    'key': '004C3',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -2884,7 +2908,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER\'S CLOWNS SET II',
-    'key': '018B1'
+    'key': '018B1',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -2910,7 +2935,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER\'S CLOWNS SET II',
-    'key': '018B2'
+    'key': '018B2',
+    'multiples': true
   },
   {
     'name': 'Unknown',
@@ -2936,7 +2962,8 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER\'S CLOWNS SET II',
-    'key': '018B3'
+    'key': '018B3',
+    'multiples': true
   },
   {
     'name': 'Edward Blake',
@@ -8677,7 +8704,7 @@ export const loadedCharacters = [
     'key': '093'
   },
   {
-    'name': 'Dick Grayson',
+    'name': 'Richard Grayson',
     'alias': 'Robin (Boy Wonder)',
     'rank': 'Sidekick',
     'reputation': 65,
@@ -9824,7 +9851,7 @@ export const loadedCharacters = [
       'Safe Hands',
       {
         'name': 'True Love',
-        'love': 'Dick Grayson'
+        'love': 'Richard Grayson'
       }
     ],
     'weapons': [
