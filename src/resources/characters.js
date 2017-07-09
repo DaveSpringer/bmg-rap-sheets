@@ -1448,7 +1448,59 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S CREW',
-    'key': '007D'
+    'key': '007D1'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Blue Penguin',
+    'rank': 'Henchman',
+    'reputation': 13,
+    'funding': 0,
+    'crews': [
+      'pn'
+    ],
+    'hates': [],
+    'traits': [
+      'Mobster'
+    ],
+    'weapons': [
+      'Shield'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'PENGUIN\'S CREW',
+    'key': '007D2'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Blue Penguin',
+    'rank': 'Henchman',
+    'reputation': 13,
+    'funding': 0,
+    'crews': [
+      'pn'
+    ],
+    'hates': [],
+    'traits': [
+      'Mobster'
+    ],
+    'weapons': [
+      'Shield'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'PENGUIN\'S CREW',
+    'key': '007D3'
   },
   {
     'name': 'Unknown',
@@ -1474,7 +1526,59 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S THUGS SET I',
-    'key': '014A'
+    'key': '014A1'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Blue Penguin 1',
+    'rank': 'Henchman',
+    'reputation': 13,
+    'funding': 0,
+    'crews': [
+      'pn'
+    ],
+    'hates': [],
+    'traits': [
+      'Mobster'
+    ],
+    'weapons': [
+      'Machete'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'PENGUIN\'S THUGS SET I',
+    'key': '014A2'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Blue Penguin 1',
+    'rank': 'Henchman',
+    'reputation': 13,
+    'funding': 0,
+    'crews': [
+      'pn'
+    ],
+    'hates': [],
+    'traits': [
+      'Mobster'
+    ],
+    'weapons': [
+      'Machete'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'PENGUIN\'S THUGS SET I',
+    'key': '014A3'
   },
   {
     'name': 'Unknown',
@@ -1504,7 +1608,7 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
-    'alias': 'Blue Penguin 3',
+    'alias': 'Blue Penguin (Axe)',
     'rank': 'Henchman',
     'reputation': 17,
     'funding': 0,
@@ -1526,7 +1630,59 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'PENGUIN\'S THUGS SET III',
-    'key': '023B'
+    'key': '023B1'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Blue Penguin (Axe)',
+    'rank': 'Henchman',
+    'reputation': 17,
+    'funding': 0,
+    'crews': [
+      'pn'
+    ],
+    'hates': [],
+    'traits': [
+      'Mobster'
+    ],
+    'weapons': [
+      'Axe'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'PENGUIN\'S THUGS SET III',
+    'key': '023B2'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Blue Penguin (Axe)',
+    'rank': 'Henchman',
+    'reputation': 17,
+    'funding': 0,
+    'crews': [
+      'pn'
+    ],
+    'hates': [],
+    'traits': [
+      'Mobster'
+    ],
+    'weapons': [
+      'Axe'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'PENGUIN\'S THUGS SET III',
+    'key': '023B3'
   },
   {
     'name': 'Unknown',
@@ -1737,7 +1893,67 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'THE RIDDLER AND BOT ARMY',
-    'key': '096D'
+    'key': '096D1'
+  },
+  {
+    'name': 'Bot Mk 1',
+    'alias': 'Bot Mk 1',
+    'rank': 'Henchman',
+    'reputation': 17,
+    'funding': 0,
+    'crews': [
+      'rd'
+    ],
+    'hates': [],
+    'traits': [
+      'Bot',
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      }
+    ],
+    'weapons': [
+      'Unarmed'
+    ],
+    'wp': 4,
+    'str': 4,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'THE RIDDLER AND BOT ARMY',
+    'key': '096D2'
+  },
+  {
+    'name': 'Bot Mk 1',
+    'alias': 'Bot Mk 1',
+    'rank': 'Henchman',
+    'reputation': 17,
+    'funding': 0,
+    'crews': [
+      'rd'
+    ],
+    'hates': [],
+    'traits': [
+      'Bot',
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      }
+    ],
+    'weapons': [
+      'Unarmed'
+    ],
+    'wp': 4,
+    'str': 4,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'THE RIDDLER AND BOT ARMY',
+    'key': '096D3'
   },
   {
     'name': 'Bot Mk 2',
@@ -1767,7 +1983,67 @@ export const loadedCharacters = [
     'end': 3,
     'spc': 3,
     'shop': 'THE RIDDLERS BOT ARMY SET 1',
-    'key': '097B'
+    'key': '097B1'
+  },
+  {
+    'name': 'Bot Mk 2',
+    'alias': 'Bot Mk 2',
+    'rank': 'Henchman',
+    'reputation': 19,
+    'funding': 0,
+    'crews': [
+      'rd'
+    ],
+    'hates': [],
+    'traits': [
+      'Bot',
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      }
+    ],
+    'weapons': [
+      'Unarmed'
+    ],
+    'wp': 4,
+    'str': 4,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 3,
+    'spc': 3,
+    'shop': 'THE RIDDLERS BOT ARMY SET 1',
+    'key': '097B2'
+  },
+  {
+    'name': 'Bot Mk 2',
+    'alias': 'Bot Mk 2',
+    'rank': 'Henchman',
+    'reputation': 19,
+    'funding': 0,
+    'crews': [
+      'rd'
+    ],
+    'hates': [],
+    'traits': [
+      'Bot',
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      }
+    ],
+    'weapons': [
+      'Unarmed'
+    ],
+    'wp': 4,
+    'str': 4,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 3,
+    'spc': 3,
+    'shop': 'THE RIDDLERS BOT ARMY SET 1',
+    'key': '097B3'
   },
   {
     'name': 'Bot Mk 3',
@@ -1797,7 +2073,67 @@ export const loadedCharacters = [
     'end': 6,
     'spc': 3,
     'shop': 'THE RIDDLERS BOT ARMY SET 1',
-    'key': '097A'
+    'key': '097A1'
+  },
+  {
+    'name': 'Bot Mk 3',
+    'alias': 'Bot Mk 3',
+    'rank': 'Henchman',
+    'reputation': 20,
+    'funding': 0,
+    'crews': [
+      'rd'
+    ],
+    'hates': [],
+    'traits': [
+      'Bot',
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      }
+    ],
+    'weapons': [
+      'Unarmed'
+    ],
+    'wp': 4,
+    'str': 4,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 6,
+    'spc': 3,
+    'shop': 'THE RIDDLERS BOT ARMY SET 1',
+    'key': '097A2'
+  },
+  {
+    'name': 'Bot Mk 3',
+    'alias': 'Bot Mk 3',
+    'rank': 'Henchman',
+    'reputation': 20,
+    'funding': 0,
+    'crews': [
+      'rd'
+    ],
+    'hates': [],
+    'traits': [
+      'Bot',
+      {
+        'name': 'Can you Solve this?',
+        'weapon': 'this'
+      }
+    ],
+    'weapons': [
+      'Unarmed'
+    ],
+    'wp': 4,
+    'str': 4,
+    'mov': 2,
+    'att': 2,
+    'def': 2,
+    'end': 6,
+    'spc': 3,
+    'shop': 'THE RIDDLERS BOT ARMY SET 1',
+    'key': '097A3'
   },
   {
     'name': 'Classified',
@@ -2392,7 +2728,59 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER\'S CLOWNS SET III',
-    'key': '022A'
+    'key': '022A1'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Clown (Tube)',
+    'rank': 'Henchman',
+    'reputation': 14,
+    'funding': 0,
+    'crews': [
+      'jk'
+    ],
+    'hates': [],
+    'traits': [
+      'Demential Laugh'
+    ],
+    'weapons': [
+      'Tube'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS SET III',
+    'key': '022A2'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Clown (Tube)',
+    'rank': 'Henchman',
+    'reputation': 14,
+    'funding': 0,
+    'crews': [
+      'jk'
+    ],
+    'hates': [],
+    'traits': [
+      'Demential Laugh'
+    ],
+    'weapons': [
+      'Tube'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS SET III',
+    'key': '022A3'
   },
   {
     'name': 'Unknown',
@@ -2418,7 +2806,59 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER CREW',
-    'key': '004C'
+    'key': '004C1'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Clown (Knife)',
+    'rank': 'Henchman',
+    'reputation': 15,
+    'funding': 0,
+    'crews': [
+      'jk'
+    ],
+    'hates': [],
+    'traits': [
+      'Demential Laugh'
+    ],
+    'weapons': [
+      'Knife'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'JOKER CREW',
+    'key': '004C2'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Clown (Knife)',
+    'rank': 'Henchman',
+    'reputation': 15,
+    'funding': 0,
+    'crews': [
+      'jk'
+    ],
+    'hates': [],
+    'traits': [
+      'Demential Laugh'
+    ],
+    'weapons': [
+      'Knife'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'JOKER CREW',
+    'key': '004C3'
   },
   {
     'name': 'Unknown',
@@ -2444,7 +2884,59 @@ export const loadedCharacters = [
     'end': 4,
     'spc': 3,
     'shop': 'JOKER\'S CLOWNS SET II',
-    'key': '018B'
+    'key': '018B1'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Clown (Shield)',
+    'rank': 'Henchman',
+    'reputation': 16,
+    'funding': 0,
+    'crews': [
+      'jk'
+    ],
+    'hates': [],
+    'traits': [
+      'Demential Laugh'
+    ],
+    'weapons': [
+      'Shield'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS SET II',
+    'key': '018B2'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Clown (Shield)',
+    'rank': 'Henchman',
+    'reputation': 16,
+    'funding': 0,
+    'crews': [
+      'jk'
+    ],
+    'hates': [],
+    'traits': [
+      'Demential Laugh'
+    ],
+    'weapons': [
+      'Shield'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 2,
+    'end': 4,
+    'spc': 3,
+    'shop': 'JOKER\'S CLOWNS SET II',
+    'key': '018B3'
   },
   {
     'name': 'Edward Blake',

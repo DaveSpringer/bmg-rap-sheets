@@ -1922,7 +1922,7 @@ export const allEquipment = [{
   'rule': '[Model] gains the [Desensitized] [Trait].',
   'target': 'Henchman',
   'trait': 'Desensitized',
-  'requires': 'Dr. Jervish Tetch'
+  'requires': 'Dr. Jervis Tetch'
 }, {
   'crew': 'wg',
   'key': 'WG10',
@@ -1931,7 +1931,7 @@ export const allEquipment = [{
   'rule': '[Model] gains the [Disarray] [Trait].',
   'target': 'Henchman',
   'trait': 'Disarray',
-  'requires': 'Dr. Jervish Tetch'
+  'requires': 'Dr. Jervis Tetch'
 }, {
   'crew': 'wg',
   'key': 'WG11',
@@ -1940,7 +1940,7 @@ export const allEquipment = [{
   'rule': '[Model] gains the [Assassin 1] and [Order] [Trait]s.',
   'target': 'Henchman',
   'trait': [ { 'name': 'Assassin', 'points': '1' }, 'Order' ],
-  'requires': 'Dr. Jervish Tetch'
+  'requires': 'Dr. Jervis Tetch'
 }, {
   'crew': 'wg',
   'key': 'WG12',
@@ -1949,7 +1949,7 @@ export const allEquipment = [{
   'rule': '[Model] gains the [Fast] and [Tireless] [Trait]s.',
   'target': 'Henchman',
   'trait': [ 'Fast', 'Tireless' ],
-  'requires': 'Dr. Jervish Tetch'
+  'requires': 'Dr. Jervis Tetch'
 }, {
   'crew': 'wg',
   'key': 'WG13',
@@ -1958,7 +1958,7 @@ export const allEquipment = [{
   'rule': '[Model] gains the [Stealth] and [Climbing Claws] [Trait]s.',
   'target': 'Henchman',
   'trait': [ 'Stealth', 'Climbing Claws' ],
-  'requires': 'Dr. Jervish Tetch'
+  'requires': 'Dr. Jervis Tetch'
 }, {
   'crew': 'gg',
   'key': 'GG01A',
