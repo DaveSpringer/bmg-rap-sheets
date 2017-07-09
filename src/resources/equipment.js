@@ -2509,4 +2509,109 @@ export const allEquipment = [{
   'rule': '[Model] gains the [Bodyguard] [Trait].',
   'target': { 'trait': 'Elite' },
   'trait': 'Bodyguard'
+}, {
+  'crew': 'lc',
+  'key': 'LC01A',
+  'name': 'Magazine',
+  'funding': 200,
+  'rule': '+1 to [Ammunition] for 1 [Weapon].',
+  'target': 'Henchman'
+}, {
+  'crew': 'lc',
+  'key': 'LC01B',
+  'name': 'Magazine',
+  'funding': 200,
+  'rule': '+1 to [Ammunition] for 1 [Weapon].',
+  'target': 'Henchman'
+}, {
+  'crew': 'lc',
+  'key': 'LC02',
+  'name': 'Grapple-Gun',
+  'funding': 350,
+  'rule': '[Model] gains the [Grapple Gun] [Trait].',
+  'target': 'Henchman',
+  'trait': 'Grapple Gun'
+}, {
+  'crew': 'lc',
+  'key': 'LC03A',
+  'name': 'C-4',
+  'funding': 200,
+  'rule': '[Model] gains the [Explosive Gel] [Trait].',
+  'target': 'Henchman',
+  'trait': 'Explosive Gel'
+}, {
+  'crew': 'lc',
+  'key': 'LC03B',
+  'name': 'C-4',
+  'funding': 200,
+  'rule': '[Model] gains the [Explosive Gel] [Trait].',
+  'target': 'Henchman',
+  'trait': 'Explosive Gel'
+}, {
+  'crew': 'lc',
+  'key': 'LC03B',
+  'name': 'C-4',
+  'funding': 200,
+  'rule': '[Model] gains the [Explosive Gel] [Trait].',
+  'target': 'Henchman',
+  'trait': 'Explosive Gel'
+}, {
+  'crew': 'lc',
+  'key': 'LC04A',
+  'name': 'Radio',
+  'funding': 100,
+  'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
+  'target': 'Henchman'
+}, {
+  'crew': 'lc',
+  'key': 'LC04B',
+  'name': 'Radio',
+  'funding': 100,
+  'rule': '[Model] can reroll failed [Let\'s Go!] rolls.',
+  'target': 'Henchman'
+}, {
+  'crew': 'lc',
+  'key': 'LC05',
+  'name': 'Jump Pack',
+  'funding': 450,
+  'rule': '[Model] gains the [Fly] [Trait].',
+  'target': 'Henchman',
+  'trait': 'Fly'
+}, {
+  'crew': 'lc',
+  'key': 'LC06',
+  'name': 'Med-pack',
+  'funding': 300,
+  'cost': '2 SC',
+  'rule': 'Once per [Game], remove 2 [Damage] from a [Model] in [Base-to-Base] [Contact] with this [Model].',
+  'target': 'Henchman'
+}, {
+  'crew': 'lc',
+  'key': 'LC07',
+  'name': 'Advanced Weaponry Equipment',
+  'funding': 300,
+  'rule': 'TBD...',
+  'target': 'Henchman',
+  'requires': 'Lex Luthor'
+}, {
+  'crew': 'ss',
+  'key': 'SS01',
+  'name': 'Aerial Locator System',
+  'funding': 250,
+  'rule': '(Cannot be Broken)Once per [Game] at the start of the [Round], before determining who [Takes the Lead], [Target] one [Character]. That [Character] is [Illuminated].',
+  'target': [ 'Optional', 'No', 'Boss' ]
+}, {
+  'crew': 'ss',
+  'key': 'SS02A',
+  'name': 'Airborne Deployment',
+  'funding': 300,
+  'rule': '(Cannot be Broken)Before [Phase A], select a [Character]. This [Character] is not [Deployed] at the beginning of the [Game], but is held in [Reserve]. At the beginning of the third [Round], before determining who [Takes the Lead], deploy the [Character] in [Contact] with any [Board Edge]. The [Character] may act normally in the round they arrive.',
+  'target': [ 'Optional', 'No', 'Boss' ]
+}, {
+  'crew': 'ss',
+  'key': 'SS02B',
+  'name': 'Airborne Deployment',
+  'funding': 300,
+  'rule': '(Cannot be Broken)Before [Phase A], select a [Character]. This [Character] is not [Deployed] at the beginning of the [Game], but is held in [Reserve]. At the beginning of the third [Round], before determining who [Takes the Lead], deploy the [Character] in [Contact] with any [Board Edge]. The [Character] may act normally in the round they arrive.',
+  'target': [ 'Optional', 'No', 'Boss' ]
 }]
