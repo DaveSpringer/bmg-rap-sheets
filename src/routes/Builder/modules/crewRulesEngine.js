@@ -60,7 +60,7 @@ const removeCharacter = (state, action, char) => {
         newAvailChars.push(curChar)
         return result
       }
-      if (leaders === 0) {
+      if (leaders === 0 && sidekicks !== 2) {
         if (curChar.rank === 'Leader') {
           newAvailChars.push(curChar)
           return result
@@ -69,7 +69,7 @@ const removeCharacter = (state, action, char) => {
           return result
         }
       }
-      if (sidekicks !== 2) {
+      if (sidekicks !== 2 && leaders !== 1) {
         if (curChar.rank === 'Sidekick') {
           newAvailChars.push(curChar)
           return result

@@ -76,9 +76,11 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
 
 
     describe('(Sub-Function) Adding Leader', () => {
+      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter('046A'))
+      let addHenchmanToBatcrew = characterSelected(addSidekickResult, selectCharacter('021A1'))
+      let removeHenchmanFromBatcrew = characterSelected(addHenchmanToBatcrew, selectCharacter('021A1'))
 
       it('Should handle a leader selection', () => {
-
         expect(selectBatmanResult).to.be.an('object')
         expect(selectBatmanResult.leaders).to.equal(1)
         expect(selectBatmanResult.sidekicks).to.equal(0)
@@ -100,10 +102,11 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(selectBatmanAgainResult.availableCharacters.reduce(countLeaders, 0)).to.equal(selectBatmanCrew.availableCharacters.reduce(countLeaders, 0))
         expect(countCharacters(selectBatmanAgainResult)).to.equal(countCharacters(selectBatmanResult))
       })
-      let addSidekickResult = characterSelected(selectBatmanResult, selectCharacter(batgirl))
 
       it('Should handle adding a Sidekick after a Leader', () => {
         expect(countCharacters(addSidekickResult)).to.equal(countCharacters(selectBatmanResult))
+        expect(addSidekickResult.leaders).to.equal(1)
+        expect(addSidekickResult.sidekicks).to.equal(1)
       })
 
       it('Should handle adding Sidekick, then selecting Batman.', () => {
@@ -124,6 +127,20 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
       it('Should add additional equipment when a Bruce Wayne is selected.', () => {
         expect(selectBatmanResult.availableEquipment.length).to.not.equal(selectBatmanCrew.availableEquipment.length)
       })
+
+      it('Should be able to add a Henchman after adding a sidekick.', () => {
+        expect(addHenchmanToBatcrew.availableCharacters.reduce(countLeaders, 0)).to.equal(0)
+        expect(addHenchmanToBatcrew.availableCharacters.reduce(countSidekicks, 0)).to.equal(0)
+        expect(addHenchmanToBatcrew.characters.reduce(countLeaders, 0)).to.equal(1)
+        expect(addHenchmanToBatcrew.characters.reduce(countSidekicks, 0)).to.equal(1)
+      })
+
+      it('Should be able to remove a Henchman from a Leader+Sidekick.', () => {
+        expect(removeHenchmanFromBatcrew.availableCharacters.reduce(countLeaders, 0)).to.equal(0)
+        expect(removeHenchmanFromBatcrew.availableCharacters.reduce(countSidekicks, 0)).to.equal(0)
+        expect(removeHenchmanFromBatcrew.characters.reduce(countLeaders, 0)).to.equal(1)
+        expect(removeHenchmanFromBatcrew.characters.reduce(countSidekicks, 0)).to.equal(1)
+      })
     })
 
     describe('(Sub-Function) Adding Sidekick', () => {
@@ -132,6 +149,8 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
       let secondSidekickResult = characterSelected(firstSidekickResult, selectCharacter(gordonKey))
       let removeFirstSidekick = characterSelected(secondSidekickResult, selectCharacter(batgirlComicKey))
       let removeSecondSidekick = characterSelected(secondSidekickResult, selectCharacter(batgirlComicKey))
+      let addHenchmanToSidekicks = characterSelected(secondSidekickResult, selectCharacter('021A1'))
+      let removeHenchmanFromSidekicks = characterSelected(addHenchmanToSidekicks, selectCharacter('021A1'))
       let startingSidekicks = selectBatmanCrew.availableCharacters.reduce(countSidekicks, 0)
       let addNightwing = characterSelected(selectBatmanCrew, selectCharacter('009'))
 
@@ -173,6 +192,17 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
       it('Should not have other Richard Graysons present after selecting.', () => {
         let graysonCount = addNightwing.availableCharacters.reduce((count, char) => count += (char.name === 'Richard Grayson' ? 1 : 0), 0)
         expect(graysonCount).to.equal(0)
+      })
+
+      it('Should not have sidekicks after adding a henchman.', () => {
+        expect(addHenchmanToSidekicks.availableCharacters.reduce(countSidekicks, 0)).to.equal(0)
+        expect(addHenchmanToSidekicks.characters.reduce(countSidekicks, 0)).to.equal(2)
+      })
+
+      it('Should not have sidekicks after removing a henchman.', () => {
+        expect(removeHenchmanFromSidekicks.availableCharacters.reduce(countSidekicks, 0)).to.equal(0)
+        expect(removeHenchmanFromSidekicks.characters.reduce(countSidekicks, 0)).to.equal(2)
+        expect(removeHenchmanFromSidekicks.availableCharacters.reduce(countLeaders, 0)).to.equal(0)
       })
     })
 
