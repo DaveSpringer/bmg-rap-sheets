@@ -81,13 +81,17 @@ export const selectCrewAction = (state, action) => {
     if (character.crews.includes(crewId) || (!exclusive &&
     (character.crews.includes('*') && !character.hates.includes(crewId)))) {
       if (typeof (character.rank) === 'object') {
+        let finalRank = character.rank.find((rank) => (rank.crew === crewId || rank.crew === '*')).rank
+        let funding = (finalRank === 'Leader' ? 0 : character.funding)
         characters.push(
           Object.assign({}, character, {
-            rank : character.rank.find((rank) => (rank.crew === crewId || rank.crew === '*')).rank
+            rank : finalRank,
+            funding: funding
           })
         )
       } else {
-        characters.push(character)
+        let funding = (character.rank === 'Leader' ? 0 : character.funding)
+        characters.push(Object.assign({}, character, { funding: funding }))
       }
     }
     return characters
