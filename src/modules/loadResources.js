@@ -14,6 +14,20 @@ export function loadResources () {
   }
 }
 
+export const populateFuncTrait = (funcTrait, allTraits) => {
+  let keys = Object.keys(funcTrait)
+  keys.shift()
+  let replaceTrait = allTraits.find((trait) => (trait != null && trait.name === funcTrait.name))
+  let replaceAllInKey = (result, key) => result.replace(new RegExp(`-${key}-`, 'g'), funcTrait[key])
+  return {
+    name : keys.reduce(replaceAllInKey, replaceTrait.nameFunc),
+    phase : replaceTrait.phase,
+    rule : keys.reduce(replaceAllInKey, replaceTrait.rule),
+    page : replaceTrait.page,
+    cost : replaceTrait.cost
+  }
+}
+
 // Helper methods
 export const findTrait = (populatedTraits, traitName) => {
   let foundTrait = {
@@ -36,24 +50,18 @@ export const findTrait = (populatedTraits, traitName) => {
       foundTrait = retrievedTrait
     }
   } else {
-    let keys = Object.keys(traitName)
-    keys.shift()
-    let replaceTrait = allTraits.find((trait) => (trait != null && trait.name === traitName.name))
-    let replaceAllInKey = (result, key) => result.replace(new RegExp(`-${key}-`, 'g'), traitName[key])
-    foundTrait = {
-      name : keys.reduce(replaceAllInKey, replaceTrait.nameFunc),
-      phase : replaceTrait.phase,
-      rule : keys.reduce(replaceAllInKey, replaceTrait.rule),
-      page : replaceTrait.page,
-      cost : replaceTrait.cost
-    }
+    foundTrait = populateFuncTrait(traitName, allTraits)
   }
   populatedTraits.push(foundTrait)
   if (foundTrait.grants !== undefined && foundTrait.grants.length > 0) {
     foundTrait.grants.forEach((traitKey) => {
-      let retrievedTrait = allTraits.find((trait) => (trait !== null && trait.name === traitKey))
-      if (retrievedTrait !== undefined) {
-        populatedTraits.push(retrievedTrait)
+      if (typeof traitKey === 'string') {
+        let retrievedTrait = allTraits.find((trait) => (trait !== null && trait.name === traitKey))
+        if (retrievedTrait !== undefined) {
+          populatedTraits.push(retrievedTrait)
+        }
+      } else {
+        populatedTraits.push(populateFuncTrait(traitKey, allTraits))
       }
     })
   }

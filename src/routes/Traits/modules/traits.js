@@ -81,8 +81,15 @@ const ACTION_HANDLERS = {
         traits.push(trait)
       } else if (trait.grants.length > 0) {
         trait.grants.forEach((grantTraitName) => {
-          if (grantTraitName.toLowerCase().indexOf(lowerFilter) !== -1) {
-            traits.push(trait)
+          if (typeof grantTraitName === 'string') {
+            if (grantTraitName.toLowerCase().indexOf(lowerFilter) !== -1) {
+              traits.push(trait)
+            }
+          } else {
+            if (grantTraitName.name.toLowerCase().indexOf(lowerFilter) !== -1) {
+              // TODO - This is a hack for now.
+              traits.push(trait)
+            }
           }
         })
       }

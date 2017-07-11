@@ -974,6 +974,14 @@ export const allTraits = [
     'page': 'B.59'
   },
   {
+    'name': 'Extremely Mutated',
+    'phase': 'Crew Building',
+    'cost': '',
+    'rule': 'This [Character] cannot buy more than one [Equipment].',
+    'grants': [],
+    'page': 'FAQ.6-17'
+  },
+  {
     'name': 'Fast',
     'phase': 'Execute the plan',
     'cost': '',
@@ -1477,7 +1485,7 @@ export const allTraits = [
     'name': 'Large',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': '[Base Movement Distance] is 12cm. This [Character] may [Run] over [Small Obstacles], is damaged at 10cm when falling, cannot be [Pushed] or [Grabbed] unless the [Attacker] has the [Large] trait, and suffers -1 on [Ping!] tests.',
+    'rule': '[Base Movement Distance] is 12cm. This [Character] is damaged at 10cm when falling, cannot be [Pushed] or [Grabbed] unless the [Attacker] has the [Large] trait, and suffers -1 on [Ping!] tests. This [Character] gains [Charge] and [Resilient].',
     'grants': [
       'Resilient',
       'Charge'
@@ -1706,7 +1714,7 @@ export const allTraits = [
   {
     'name': 'Mind Control Device',
     'phase': 'Execute the plan',
-    'cost': '3 SC',
+    'cost': '2 SC',
     'rule': 'Once per [Turn], [Target] [Seen] [Enemy] [Character] within 20cm must pass a [Willpower Roll] or suffer the [Hypnotized] [Effect]. If the [Target] becomes [Hypnotized], gain 1 [VP].',
     'grants': [],
     'page': 'F.40'
@@ -2260,14 +2268,6 @@ export const allTraits = [
     'page': 'B.65'
   },
   {
-    'name': 'Stealth',
-    'phase': 'Execute the plan',
-    'cost': '',
-    'rule': 'As long as this [Character] is [Active], you gain 1 additional [Pass].',
-    'grants': [],
-    'page': 'B.65'
-  },
-  {
     'name': 'Searcher',
     'phase': 'A.Scenario Selection',
     'cost': '',
@@ -2369,9 +2369,9 @@ export const allTraits = [
     'name': 'Stop!',
     'phase': 'Execute the plan',
     'cost': '1 SC Passive',
-    'rule': 'When a [Seen] [Enemy] [Character] begins its [Turn], spend 1 [SC]. The [Target] cannot spend [MC] for the remainder of the [Round].',
+    'rule': 'Once per [Round], this [Model] may [Target] a [Seen] [Enemy] [Character] within 20cm. The [Target]\'s [Defense] is reduced by 1, and the [Target] cannot spend [MC] this [Round]. This [Effect] lasts until the end of the [Round] and is not [Cumulative].',
     'grants': [],
-    'page': 'B.65',
+    'page': 'FAQ.6-17',
     'concern': true
   },
   {
@@ -2655,6 +2655,14 @@ export const allTraits = [
     'page': 'B.65'
   },
   {
+    'name': 'Titan Berserk',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'When this [Model] uses a [Titan Dose], he gains [Invulnerability] / 3 [Trait].',
+    'grants': [ { 'name': 'Invulnerability', 'counter': 3 } ],
+    'page': 'FAQ.6-17'
+  },
+  {
     'name': 'Titan Dose',
     'nameFunc': '-count- Titan Dose',
     'phase': 'Execute the plan',
@@ -2771,6 +2779,14 @@ export const allTraits = [
     'rule': 'Once per [Round] during the [Raise the Plan] phase, this [Character] may consume 1 of -count- Venom Dose(s) to gain +1 [Strength] and can reroll [Unarmed Damage Rolls].',
     'grants': [],
     'page': 'F.45'
+  },
+  {
+    'name': 'Venom Enrage',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'When this [Model] uses a [Venom Dose], it gains the [Invulnerability] / 2 [Trait].',
+    'grants': [ { 'name': 'Invulnerability', 'counter': 2 } ],
+    'page': 'FAQ.6-17'
   },
   {
     'name': 'Veteran',

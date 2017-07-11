@@ -61,10 +61,20 @@ describe('(Redux Action Sub-Module) loadResources', () => {
         })
 
         grantedTraits.forEach((gTrait) => {
-          keyIndex = traits.indexOf(gTrait)
-          if (keyIndex === -1) {
-            console.log('Expected ' + gTrait + ' to be added for character: ' + char.name)
-            expect(keyIndex).to.not.equal(-1)
+          if (typeof gTrait === 'string') {
+            keyIndex = traits.indexOf(gTrait)
+            if (keyIndex === -1) {
+              console.log('Expected ' + JSON.stringify(gTrait) + ' to be added for character: ' + char.name + '-' + char.alias + '-' + char.key)
+              expect(keyIndex).to.not.equal(-1)
+            }
+          } else {
+            let found = false
+            traits.forEach((trait) => {
+              if (trait.indexOf(gTrait.name) !== -1) {
+                found = true
+              }
+            })
+            expect(found).to.equal(true)
           }
         })
       })

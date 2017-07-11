@@ -650,7 +650,8 @@ export const loadedCharacters = [
       },
       'Master Fighter',
       'Desensitized',
-      'Large'
+      'Large',
+      'Titan Berserk'
     ],
     'weapons': [
       'Reinforced Gloves'
@@ -688,7 +689,8 @@ export const loadedCharacters = [
         'name': 'Scheming',
         'count': 2
       },
-      'Sturdy'
+      'Sturdy',
+      'Venom Enrage'
     ],
     'weapons': [
       'Reinforced Gloves'
@@ -1858,7 +1860,8 @@ export const loadedCharacters = [
       {
         'name': 'Elite',
         'type': 'Plants'
-      }
+      },
+      'Extremely Mutated'
     ],
     'weapons': [
       'Poisoned Thorns',
@@ -3470,7 +3473,7 @@ export const loadedCharacters = [
       'Outlaw Field Commander',
       {
         'name': 'Assassin',
-        'points': null
+        'points': 3
       }
     ],
     'weapons': [
@@ -3870,7 +3873,7 @@ export const loadedCharacters = [
     'mov': 4,
     'att': 4,
     'def': 9,
-    'end': null,
+    'end': 9,
     'spc': 3,
     'shop': 'EMPEROR PENGUIN',
     'key': '142'
@@ -5319,7 +5322,7 @@ export const loadedCharacters = [
     'traits': [
       {
         'name': 'Assassin',
-        'points': null
+        'points': 3
       },
       'Cruel',
       'Stealth',
@@ -7084,7 +7087,7 @@ export const loadedCharacters = [
       'Reanimated Owl',
       {
         'name': 'Assassin',
-        'points': null
+        'points': 2
       },
       'Brutal'
     ],
@@ -8305,7 +8308,7 @@ export const loadedCharacters = [
     'traits': [
       {
         'name': 'Assassin',
-        'points': null
+        'points': 2
       },
       'Brutal',
       {
@@ -8373,7 +8376,7 @@ export const loadedCharacters = [
     'name': 'Jason Todd',
     'alias': 'Red Hood (Comic)',
     'rank': 'Sidekick',
-    'reputation': 105,
+    'reputation': 84,
     'funding': 400,
     'crews': [
       'bt',
