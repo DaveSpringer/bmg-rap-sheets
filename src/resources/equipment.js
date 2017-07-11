@@ -2288,7 +2288,7 @@ export const allEquipment = [{
   'key': 'PI06',
   'name': 'Large Roots',
   'funding': 200,
-  'rule': '[Model]s moving within 10cm of this [Plant] suffer [Impared Movement]',
+  'rule': '[Model]s moving within 10cm of this [Plant] suffer [Impaired Movement]',
   'target': { 'trait': 'Plant' }
 }, {
   'crew': 'pi',

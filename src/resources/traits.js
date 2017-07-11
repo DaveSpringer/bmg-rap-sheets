@@ -389,7 +389,7 @@ export const allTraits = [
     'nameFunc': 'Can you Solve this? / -target-',
     'phase': 'Execute the plan',
     'cost': '1 SC',
-    'rule': 'Once per [Round], roll a [Die]. Rlace a [Friendly] [Clue Marker] on a -target- or better. See Flash and Arrow pg. 28 for more details.',
+    'rule': 'Once per [Round], roll a [Die]. Place a [Friendly] [Clue Marker] on a -target- or better. See Flash and Arrow pg. 28 for more details.',
     'grants': [],
     'page': 'F.28'
   },
@@ -455,7 +455,7 @@ export const allTraits = [
     'name': 'Chill Touch',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': '[Unarmed Attacks] of this [Character] deail 1 [Blood] and have [CRT]: [Cooled].',
+    'rule': '[Unarmed Attacks] of this [Character] deal 1 [Blood] and have [CRT]: [Cooled].',
     'grants': [],
     'page': 'F.30'
   },
@@ -554,7 +554,7 @@ export const allTraits = [
     'name': 'Confusion',
     'phase': 'Execute the plan',
     'cost': '2 SC',
-    'rule': 'Once per [Turn], [Target] a [Seen] [Enemy Character] within 20cm. Recude the [Target]\'s [Attack] and [Defense] by 1 and they cannot use [SC]. These effects last until the end of the [Round].',
+    'rule': 'Once per [Turn], [Target] a [Seen] [Enemy Character] within 20cm. Reduce the [Target]\'s [Attack] and [Defense] by 1 and they cannot use [SC]. These effects last until the end of the [Round].',
     'grants': [],
     'page': 'B.58'
   },
@@ -772,7 +772,7 @@ export const allTraits = [
     'name': 'Dirty Money',
     'phase': 'Crew Building',
     'cost': '',
-    'rule': 'If this [Character] is the [Boss], hiw [Crew] gains $300 extra [Funding].',
+    'rule': 'If this [Character] is the [Boss], his [Crew] gains $300 extra [Funding].',
     'grants': [],
     'page': 'SS.50'
   },
@@ -1121,7 +1121,7 @@ export const allTraits = [
     'name': 'Godkiller',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'This [Model]\'s [Attacks] gain the [Magic Weapon] [Weapon Trait]. This [Model] is [Immune] to the [Poison Effect], and ignores damage infliced by [Electric] [Weapons].',
+    'rule': 'This [Model]\'s [Attacks] gain the [Magic Weapon] [Weapon Trait]. This [Model] is [Immune] to the [Poison Effect], and ignores damage inflicted by [Electric] [Weapons].',
     'grants': [],
     'page': 'WWBP.4'
   },
@@ -1242,7 +1242,7 @@ export const allTraits = [
     'name': 'Henchman Bomb',
     'phase': 'Execute the plan',
     'cost': '2 SC',
-    'rule': 'Once per [Game], the [Joker] can choose one of his [Henchmen]. Place an [Explosion Tempalte] centered on the [Henchman]. Each [Character] touched by the [Template] take a 2+ [Damage] Roll. Then, the [Henchman] is removed as a [Casualty].',
+    'rule': 'Once per [Game], the [Joker] can choose one of his [Henchmen]. Place an [Explosion Template] centered on the [Henchman]. Each [Character] touched by the [Template] take a 2+ [Damage] Roll. Then, the [Henchman] is removed as a [Casualty].',
     'grants': [],
     'page': '?',
     'concern': true
@@ -1299,7 +1299,7 @@ export const allTraits = [
     'name': 'Huge',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'This [Model]\'s [Basic Movement Distance] is 15cm. If it [Falls], [Damage] occurs every 10cm difference between [Jump Capacity]. This [Model] cannot be [Grabbed], [Pushed], or [Knocked Down] in [Close Combat] except by attacks from [Models] that have the [Large] or [Huge] [Trait]. This [Model] suffers a -2 penalty to [Ping! Rolls]. This [Model] gains thte [Charge] [Special Attack] and the [Resilient] [Trait].',
+    'rule': 'This [Model]\'s [Basic Movement Distance] is 15cm. If it [Falls], [Damage] occurs every 10cm difference between [Jump Capacity]. This [Model] cannot be [Grabbed], [Pushed], or [Knocked Down] in [Close Combat] except by attacks from [Models] that have the [Large] or [Huge] [Trait]. This [Model] suffers a -2 penalty to [Ping! Rolls]. This [Model] gains the [Charge] [Special Attack] and the [Resilient] [Trait].',
     'grants': [ 'Charge', 'Resilient' ],
     'page': 'WWBP.4'
   },
@@ -1429,7 +1429,7 @@ export const allTraits = [
     'name': 'Ka-Pow!!!!!',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'This [Character]\'s unarmed attacks gain: [CRIT]: 3 [Stun]',
+    'rule': 'This [Character]\'s unarmed attacks gain: [CRT]: 3 [Stun]',
     'grants': [],
     'page': 'See File'
   },
@@ -1437,7 +1437,7 @@ export const allTraits = [
     'name': 'Kaos Agent',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'At the beginning of the [Game], remove 1 [Opponent]\'s [Take the Lead] marker. [Game]s may now end before the [Scenario]\'s [Round Limit]. All [Henchmen] reveive the [Trickster] [Trait].',
+    'rule': 'At the beginning of the [Game], remove 1 [Opponent]\'s [Take the Lead] marker. [Game]s may now end before the [Scenario]\'s [Round Limit]. All [Henchmen] receive the [Trickster] [Trait].',
     'grants': [],
     'page': 'B.60'
   },
@@ -1445,7 +1445,7 @@ export const allTraits = [
     'name': 'Kevlar Vest',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'Reduce [Damage Markers] recieved by 1 to a minimum of 1.',
+    'rule': 'Reduce [Damage Markers] received by 1 to a minimum of 1.',
     'grants': [],
     'page': 'B.60'
   },
@@ -1477,7 +1477,7 @@ export const allTraits = [
     'name': 'Large',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': '[Base Movement Distance] is 12cm. This [Character] may [Run] over [Small Obstacles], is damaged at 10cm when falling, cannot be [Pushed] or [Grabbed] unlesss the [Attacker] has the [Large] trait, and suffers -1 on [Ping!] tests.',
+    'rule': '[Base Movement Distance] is 12cm. This [Character] may [Run] over [Small Obstacles], is damaged at 10cm when falling, cannot be [Pushed] or [Grabbed] unless the [Attacker] has the [Large] trait, and suffers -1 on [Ping!] tests.',
     'grants': [
       'Resilient',
       'Charge'
@@ -1577,7 +1577,7 @@ export const allTraits = [
     'name': 'Magic Tattoos',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'This [Character] is immunte to [Steal] and [Fire] effects.',
+    'rule': 'This [Character] is immune to [Steal] and [Fire] effects.',
     'grants': [],
     'page': 'F.39'
   },
@@ -1650,7 +1650,7 @@ export const allTraits = [
     'name': 'Menace',
     'phase': 'Execute the plan',
     'cost': '2 SC',
-    'rule': 'Until the end of the [Round], [Enemy] [Character]s must spend an additional [Action Counter] to perform anyt [Attack] against this [Character].',
+    'rule': 'Until the end of the [Round], [Enemy] [Character]s must spend an additional [Action Counter] to perform any [Attack] against this [Character].',
     'grants': [],
     'page': 'F.40'
   },
@@ -2082,7 +2082,7 @@ export const allTraits = [
     'name': 'Pyromania',
     'phase': 'Execute the plan',
     'cost': 'Mental Disorder',
-    'rule': 'At the beginning of this [Character]\'s [Turn], if this [Character] can [See] a [Character] with a [Fire Marker], this [Character] must move its full available [Movement] straight towards the [Target]. Spend 1 [Action Counter] to resist the urge.',
+    'rule': 'At the beginning of this [Character]\'s [Turn], if this [Character] can [See] a [Character] with a [Fire Marker], this [Character] must move its full available [Movement] straight toward the [Target]. Spend 1 [Action Counter] to resist the urge.',
     'grants': [],
     'page': 'F.42'
   },
@@ -2132,7 +2132,7 @@ export const allTraits = [
     'name': 'Reanimated Owl',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'This [Character] can reroll [K.O.] recovery. When this [Character] becomes a [Casualty], the opponent recieves 1 additional [VP].',
+    'rule': 'This [Character] can reroll [K.O.] recovery. When this [Character] becomes a [Casualty], the opponent receives 1 additional [VP].',
     'grants': [],
     'page': 'F.42'
   },
@@ -2214,7 +2214,7 @@ export const allTraits = [
     'name': 'Roots',
     'phase': 'Execute the plan',
     'cost': '2 SC',
-    'rule': 'Once per [Round], aftger this [Character] [Hits] with a [Ranged Attack], they may make an additional [Ranged Attack] with the same weapon. The new [Target] must be [Seen] and be within 5cm of the original [Target].',
+    'rule': 'Once per [Round], after this [Character] [Hits] with a [Ranged Attack], they may make an additional [Ranged Attack] with the same weapon. The new [Target] must be [Seen] and be within 5cm of the original [Target].',
     'grants': [],
     'page': 'F.42'
   },
@@ -2260,7 +2260,7 @@ export const allTraits = [
     'page': 'B.65'
   },
   {
-    'name': 'Sealth',
+    'name': 'Stealth',
     'phase': 'Execute the plan',
     'cost': '',
     'rule': 'As long as this [Character] is [Active], you gain 1 additional [Pass].',
@@ -2718,7 +2718,7 @@ export const allTraits = [
     'name': 'Undead',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'This [Character] is [Immune] to [Effects] execpt [Knock Down] and [Smoke].',
+    'rule': 'This [Character] is [Immune] to [Effects] except [Knock Down] and [Smoke].',
     'grants': [],
     'page': 'F.44'
   },
@@ -2734,7 +2734,7 @@ export const allTraits = [
     'name': 'Unnatural Flight',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'During the [Round] in which this [Character] retuns to the [Play Area] due to the [Flying High] [Trait], its [Base Movement Distance] becomes 0 and cannot use the [Fly] [Trait].',
+    'rule': 'During the [Round] in which this [Character] returns to the [Play Area] due to the [Flying High] [Trait], its [Base Movement Distance] becomes 0 and cannot use the [Fly] [Trait].',
     'grants': [],
     'page': '?'
   },

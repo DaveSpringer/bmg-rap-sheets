@@ -116,14 +116,14 @@ export const allStrategies = [{
 }, {
   'key': 'S17',
   'name': 'Objective Trap',
-  'text': 'Choose and mark one [Objective]. The first mdoel that comes into contact with the marked [Objective] muss pass an [Agaility Roll] or suffer BS [Damage]. Once triggered, the trap does not work again. This [Strategy] can be selected once epr game.',
+  'text': 'Choose and mark one [Objective]. The first model that comes into contact with the marked [Objective] muss pass an [Agility Roll] or suffer BS [Damage]. Once triggered, the trap does not work again. This [Strategy] can be selected once per game.',
   'cost': 1,
   'phase': 'D',
   'batmatch': true
 }, {
   'key': 'S18',
   'name': 'Objective Trap',
-  'text': 'Choose and mark one [Objective]. The first mdoel that comes into contact with the marked [Objective] muss pass an [Agaility Roll] or suffer BS [Damage]. Once triggered, the trap does not work again. This [Strategy] can be selected once epr game.',
+  'text': 'Choose and mark one [Objective]. The first model that comes into contact with the marked [Objective] muss pass an [Agility Roll] or suffer BS [Damage]. Once triggered, the trap does not work again. This [Strategy] can be selected once per game.',
   'cost': 1,
   'phase': 'D',
   'batmatch': true
@@ -159,7 +159,7 @@ export const allStrategies = [{
 }, {
   'key': 'S23',
   'name': 'Sewer Maps',
-  'text': 'The maximum number of [Character]s you may have inside the [Sewers] at the same time is incrased by 1.',
+  'text': 'The maximum number of [Character]s you may have inside the [Sewers] at the same time is increased by 1.',
   'cost': 1,
   'phase': 'E',
   'batmatch': true
@@ -253,7 +253,7 @@ export const allStrategies = [{
 }, {
   'key': 'S35',
   'name': 'Frozen Area',
-  'text': 'Place an [Ice Template] [Explosive Tempalte] in the neutral zone. Roll a [Die] at the end of each [Victory Point and Casualty Recount] phase. On a 5 or greater, remove the [Ice Template].',
+  'text': 'Place an [Ice Template] [Explosive Template] in the neutral zone. Roll a [Die] at the end of each [Victory Point and Casualty Recount] phase. On a 5 or greater, remove the [Ice Template].',
   'cost': 1,
   'phase': 'E',
   'batmatch': true,
@@ -269,7 +269,7 @@ export const allStrategies = [{
 }, {
   'key': 'S37',
   'name': 'Weird Crew',
-  'text': 'One [Free Agent] in your crew is teadted as a [Henchman] for the rest of the [Game] (not [Crew Building]).',
+  'text': 'One [Free Agent] in your crew is treated as a [Henchman] for the rest of the [Game] (not [Crew Building]).',
   'cost': 1,
   'phase': 'E',
   'batmatch': true,
@@ -333,7 +333,7 @@ export const allStrategies = [{
 }, {
   'key': 'S45',
   'name': 'Fast Response',
-  'text': 'You may [Move] up to two [Characters] from the [Tean Titans] [Crew] 2D6cm before the [Game] starts',
+  'text': 'You may [Move] up to two [Characters] from the [Teen Titans] [Crew] 2D6cm before the [Game] starts',
   'cost': 2,
   'phase': 'E',
   'batmatch': true,
