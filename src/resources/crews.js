@@ -262,7 +262,7 @@ export const allCrews = [
       name: 'Catman',
       boss: 'always'
     }, {
-      name: 'Bane Origin',
+      name: 'Bane (AO)',
       boss: 'yes'
     }, {
       name: 'Black Alice',

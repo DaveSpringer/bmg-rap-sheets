@@ -26,9 +26,25 @@ body {
   padding: 0px;
 }
 
+
+/* The CarbonType font is from fontsquirrel here:
+
+  1. Go here and download the Webfont Kit:
+  https://www.fontsquirrel.com/fonts/CarbonType
+  2. Unzip the file into:
+  src/resources/fonts
+
+  CarbonType font Copyright 2009 Vic Fieger
+  */
 @font-face {
   font-family: 'CarbonType';
   src: url('../resources/fonts/carbontype_regular_macroman/carbontype-webfont.woff')
+}
+
+/* SpecialElite font Copyright 2011 Astigmatic */
+@font-face {
+  font-family: 'SpecialElite';
+  src: url('../resources/fonts/specialelite_regular_macroman/SpecialElite-webfont.woff')
 }
 
 h2, h4 {

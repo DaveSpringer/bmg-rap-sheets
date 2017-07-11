@@ -12,20 +12,6 @@
   page-break-inside: avoid;
 }
 
-/* I want to properly attribute the CarbonType font, so it is not included
-  in the CM for the project. To properly configure the font, do the following:
-
-  1. Go here and download the Webfont Kit:
-  https://www.fontsquirrel.com/fonts/CarbonType
-  2. Unzip the file into:
-  src/resources/fonts
-
-  That should be all to get it rolling.*/
-@font-face {
-  font-family: 'CarbonType';
-  src: url('../../../../resources/fonts/carbontype_regular_macroman/carbontype-webfont.woff')
-}
-
 .nameDiv {
   font-weight: bold;
   font-size: 110%;
