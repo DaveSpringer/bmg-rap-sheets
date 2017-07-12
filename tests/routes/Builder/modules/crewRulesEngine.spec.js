@@ -87,8 +87,6 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(selectBatmanResult.freeAgents).to.equal(0)
         expect(selectBatmanResult.characters.length).to.equal(1)
         expect(selectBatmanResult.characters[0].name).to.equal('Bruce Wayne')
-        expect(countCharacters(selectBatmanResult)).to.equal(countCharacters(selectBatmanCrew))
-        expect(selectBatmanResult.availableCharacters.length).to.be.below(selectBatmanCrew.availableCharacters.length)
       })
 
       it('Should handle selecting Batman again.', () => {
@@ -100,18 +98,16 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(selectBatmanAgainResult.availableCharacters.length).to.equal(selectBatmanCrew.availableCharacters.length)
         expect(selectBatmanAgainResult.hiddenCharacters.length).to.equal(selectBatmanCrew.hiddenCharacters.length)
         expect(selectBatmanAgainResult.availableCharacters.reduce(countLeaders, 0)).to.equal(selectBatmanCrew.availableCharacters.reduce(countLeaders, 0))
-        expect(countCharacters(selectBatmanAgainResult)).to.equal(countCharacters(selectBatmanResult))
+        expect(countCharacters(selectBatmanAgainResult)).to.equal(countCharacters(selectBatmanCrew))
       })
 
       it('Should handle adding a Sidekick after a Leader', () => {
-        expect(countCharacters(addSidekickResult)).to.equal(countCharacters(selectBatmanResult))
         expect(addSidekickResult.leaders).to.equal(1)
         expect(addSidekickResult.sidekicks).to.equal(1)
       })
 
       it('Should handle adding Sidekick, then selecting Batman.', () => {
         let deselectBatmanResult = characterSelected(addSidekickResult, selectCharacter(batfleck))
-        expect(countCharacters(deselectBatmanResult)).to.equal(countCharacters(addSidekickResult))
         expect(deselectBatmanResult.hiddenCharacters.length).to.equal(0)
       })
 
@@ -216,7 +212,6 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(addFreeAgentResult.leaders).to.equal(1)
         expect(addFreeAgentResult.freeAgents).to.equal(startingFreeAgents + 1)
         expect(addFreeAgentResult.characters.length).to.equal(2)
-        expect(countCharacters(addFreeAgentResult)).to.equal(countCharacters(selectBatmanCrew))
       })
 
       it('Should update crewCode with Huntress selection.', () => {
@@ -228,7 +223,6 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(removeFreeAgentResult.leaders).to.equal(1)
         expect(removeFreeAgentResult.freeAgents).to.equal(startingFreeAgents)
         expect(removeFreeAgentResult.characters.length).to.equal(1)
-        expect(countCharacters(removeFreeAgentResult)).to.equal(countCharacters(selectBatmanCrew))
       })
 
       it('Should remove crewCode with Huntress selection.', () => {

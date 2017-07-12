@@ -3,6 +3,7 @@ import { allCrews } from '../resources/crews'
 import { allTraits } from '../resources/traits'
 import { allWeapons } from '../resources/weapons'
 import { allEquipment } from '../resources/equipment'
+import { allCharacterActions } from '../resources/characterActions'
 
 // Constants
 export const LOAD_RESOURCES = 'LOAD_RESOURCES'
@@ -123,12 +124,22 @@ export const populateEquipment = (resultEquipment, equipment) => {
   return resultEquipment
 }
 
+// Stick the character actions directly on the related characters.
+const populateAllCharacterActions = (allCharacters) => {
+  let charActionKeys = Object.keys(allCharacterActions)
+  charActionKeys.forEach((key) => {
+    let char = allCharacters.find((char) => key === char.key)
+    Object.assign(char, allCharacterActions[key])
+  })
+}
+
 let loadAllResources = (state, action) => {
   // Now... Add all traits to each character... Ooph...
   // TODO: Optimize the %@#$^ out of this in the future.
 
   let allCharacters = loadedCharacters.reduce(populateCharacter, [])
   let poppedEquipment = allEquipment.reduce(populateEquipment, [])
+  populateAllCharacterActions(allCharacters)
   return Object.assign({}, state, {
     allTraits : allTraits,
     allCrews : allCrews,

@@ -8769,9 +8769,7 @@ export const loadedCharacters = [
     'rank': 'Sidekick',
     'reputation': 65,
     'funding': 100,
-    'crews': [
-      'bt'
-    ],
+    'crews': [],
     'hates': [],
     'traits': [
       'Acrobat',

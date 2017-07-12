@@ -1,4 +1,5 @@
 import { sortCharacters } from './common'
+import { default as characterRulesReducer } from './characterRules'
 
 // TODO - I have severe concerns over this method of finding a character.
 // It is effectively using a non-unique key for the find.  This is bad.
@@ -42,6 +43,7 @@ const removeCharacter = (state, action, char) => {
   let newCharacters = [...state.characters]
   newCharacters.splice(index, 1)
   let newHiddenChars = [...state.hiddenCharacters]
+  let intermediateState = state
 
   if (state.followRules) {
     // Struggling with the implementation of the algorithm here.
@@ -49,6 +51,17 @@ const removeCharacter = (state, action, char) => {
     // what should happen to the characte, then have additional functions that do
     // the actual movement?  Or, have a bunch of different iterators?
     // Going with the first approach.
+
+    // First, invoke the character rules.
+    if (char.onRemove !== undefined) {
+      intermediateState = Object.assign({}, state, {
+        availableCharacters: newAvailChars,
+        characters: newCharacters
+      })
+      intermediateState = characterRulesReducer(intermediateState, char.onRemove)
+      newAvailChars = intermediateState.availableCharacters
+      newCharacters = intermediateState.characters
+    }
 
     // Using a classic, ugly iterator for more control as well. This is less
     // "functional" than it could be.
@@ -80,7 +93,7 @@ const removeCharacter = (state, action, char) => {
     }, [])
   }
 
-  return createFinalState(state, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents, newAvailEquip)
+  return createFinalState(intermediateState, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents, newAvailEquip)
 }
 
 const addCharacter = (state, action) => {
@@ -106,6 +119,7 @@ const addCharacter = (state, action) => {
   let newAvailChars = [...state.availableCharacters]
   let newHiddenChars = [...state.hiddenCharacters]
   let newAvailEquip = [...state.availableEquipment]
+  let intermediateState = state
 
   if (state.followRules) {
     // Struggling with the implementation of the algorithm here.
@@ -113,6 +127,16 @@ const addCharacter = (state, action) => {
     // what should happen to the characte, then have additional functions that do
     // the actual movement?  Or, have a bunch of different iterators?
     // Going with the first approach.
+
+    // Perform anything that needs to be done on add.
+    if (char.onAdd !== undefined) {
+      intermediateState = Object.assign({}, state, {
+        characters: newCharacters
+      })
+      intermediateState = characterRulesReducer(intermediateState, char.onAdd)
+      newAvailChars = intermediateState.availableCharacters
+      newCharacters = intermediateState.characters
+    }
 
     // Using a classic, ugly iterator for more control as well. This is less
     // "functional" than it could be.
@@ -170,7 +194,7 @@ const addCharacter = (state, action) => {
 
     newAvailChars.splice(location, 1)
   }
-  return createFinalState(state, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents, newAvailEquip)
+  return createFinalState(intermediateState, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents, newAvailEquip)
 }
 
 const createFinalState = (
