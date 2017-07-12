@@ -140,10 +140,10 @@ export const allCharacterActions = {
     onAdd: {
       type: 'ADD_AVAILABLE_CHARACTER',
       actions: [{
-        filter: (char) => char.crews.indexOf('lf') !== -1 && char.rank === 'Henchman',
+        filter: (char) => char.crews.indexOf('lf') !== -1 && char.rank === 'Henchman' && !(char.multiples && !char.key.endsWith('1')),
         props: { rank : 'Henchman' }
       }, {
-        filter: (char) => char.crews.indexOf('oc') !== -1 && char.rank === 'Henchman',
+        filter: (char) => char.crews.indexOf('oc') !== -1 && char.rank === 'Henchman' && !(char.multiples && !char.key.endsWith('1')),
         props: { rank : 'Henchman' }
       }]
     },
@@ -264,6 +264,38 @@ export const allCharacterActions = {
     onRemove : {
       type: 'REMOVE_AVAILABLE_CHARACTER',
       actions: [{ key: '125' }]
+    }
+  },
+  // Lt. Brandon
+  '080B': {
+    onAdd: {
+      type: 'ADD_AVAILABLE_CHARACTER',
+      actions: [{
+        filter: (char) => char.crews.indexOf('lf') !== -1 && char.rank === 'Henchman',
+        props: { rank : 'Henchman' }
+      }]
+    },
+    onRemove: {
+      type: 'REMOVE_AVAILABLE_CHARACTER',
+      actions: [{
+        filter: (char) => char.crews.indexOf('lf') !== -1 && char.rank === 'Henchman'
+      }]
+    }
+  },
+  // Commissioner Loeb
+  '080A': {
+    onAdd: {
+      type: 'ADD_AVAILABLE_CHARACTER',
+      actions: [{
+        filter: (char) => char.crews.indexOf('lf') !== -1 && char.rank === 'Henchman',
+        props: { rank : 'Henchman' }
+      }]
+    },
+    onRemove: {
+      type: 'REMOVE_AVAILABLE_CHARACTER',
+      actions: [{
+        filter: (char) => char.crews.indexOf('lf') !== -1 && char.rank === 'Henchman'
+      }]
     }
   }
 }

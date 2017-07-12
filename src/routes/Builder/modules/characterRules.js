@@ -9,7 +9,7 @@ export const addCharacterAction = (state, action) => {
   let resultState = state
   if (action.actions !== undefined && action.actions.length > 0) {
     let newCharacters = action.actions.reduce((poppedChars, charAction) => {
-      let resultChars = populateChar(charAction, state.allCharacters)
+      let resultChars = populateChar(charAction, state)
       let finalChars = poppedChars
       if (resultChars !== undefined) {
         finalChars = poppedChars.concat(resultChars)
@@ -31,7 +31,7 @@ export const addAvailableCharacterAction = (state, action) => {
   let resultState = state
   if (action.actions !== undefined && action.actions.length > 0) {
     let newCharacters = action.actions.reduce((poppedChars, charAction) => {
-      let resultChars = populateChar(charAction, state.allCharacters)
+      let resultChars = populateChar(charAction, state)
       let finalChars = poppedChars
       if (resultChars !== undefined) {
         finalChars = poppedChars.concat(resultChars)
@@ -55,8 +55,8 @@ export const removeCharacterAction = (state, action) => {
     let newAvailChars = [...state.availableCharacters]
     let newChars = [...state.characters]
     action.actions.forEach((charAction) => {
-      newAvailChars = removeCharFromArray(charAction, newAvailChars)
-      newChars = removeCharFromArray(charAction, newChars)
+      newAvailChars = removeCharFromArray(charAction, newAvailChars, state)
+      newChars = removeCharFromArray(charAction, newChars, state)
     })
 
     resultState = Object.assign({}, state, {
@@ -73,8 +73,8 @@ export const removeAvailableCharacterAction = (state, action) => {
     let newAvailChars = [...state.availableCharacters]
     let newChars = [...state.characters]
     action.actions.forEach((charAction) => {
-      newAvailChars = removeCharFromArray(charAction, newAvailChars)
-      newChars = removeCharFromArray(charAction, newChars)
+      newAvailChars = removeCharFromArray(charAction, newAvailChars, state)
+      newChars = removeCharFromArray(charAction, newChars, state)
     })
 
     resultState = Object.assign({}, state, {
@@ -86,7 +86,8 @@ export const removeAvailableCharacterAction = (state, action) => {
 }
 
 // Common functions
-const populateChar = (charAction, allCharacters) => {
+const populateChar = (charAction, state) => {
+  let allCharacters = state.allCharacters
   if (charAction.key !== undefined) {
     // Find the character to add.
     let foundChar = allCharacters.find(findCharByKey(charAction.key))
@@ -106,6 +107,13 @@ const populateChar = (charAction, allCharacters) => {
   } else if (charAction.filter !== undefined) {
     let foundChars = allCharacters.filter(charAction.filter)
 
+    foundChars = foundChars.reduce((resultChars, char) => {
+      if (char.crews.indexOf(state.crewId) === -1) {
+        resultChars.push(char)
+      }
+      return resultChars
+    }, [])
+
     if (charAction.props !== undefined) {
       foundChars = foundChars.map((char) => Object.assign({}, char, charAction.props))
     } else {
@@ -115,7 +123,7 @@ const populateChar = (charAction, allCharacters) => {
   }
 }
 
-const removeCharFromArray = (charAction, charArray) => {
+const removeCharFromArray = (charAction, charArray, state) => {
   let resultArray = charArray
 
   if (charAction.key !== undefined) {
@@ -124,7 +132,8 @@ const removeCharFromArray = (charAction, charArray) => {
       resultArray.splice(foundIndex, 1)
     }
   } else if (charAction.filter !== undefined) {
-    resultArray = resultArray.filter((char) => !charAction.filter(char))
+    // The characters that match the filter but do not share the same crew
+    resultArray = resultArray.filter((char) => !(charAction.filter(char) && char.crews.indexOf(state.crewId) === -1))
   }
   return resultArray
 }
