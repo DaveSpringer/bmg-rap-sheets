@@ -3371,7 +3371,8 @@ export const loadedCharacters = [
       {
         'name': 'Scheming',
         'count': 1
-      }
+      },
+      'Safe Hands'
     ],
     'weapons': [
       'Plasma Cannon',
@@ -3777,6 +3778,62 @@ export const loadedCharacters = [
     'spc': 3,
     'shop': 'PROFESSOR PYG & DOLLOTRONS',
     'key': '154B'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Dollotron 2',
+    'rank': 'Henchman',
+    'reputation': 0,
+    'funding': 0,
+    'crews': [],
+    'hates': [],
+    'traits': [
+      'Desensitized',
+      'Stupid',
+      'Self-Discipline',
+      'Make them perfect',
+      'Creations of Perfection'
+    ],
+    'weapons': [
+      'Unarmed'
+    ],
+    'wp': 4,
+    'str': 4,
+    'mov': 2,
+    'att': 2,
+    'def': 1,
+    'end': 6,
+    'spc': 3,
+    'shop': 'PROFESSOR PYG & DOLLOTRONS',
+    'key': '154C'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Dollotron 3',
+    'rank': 'Henchman',
+    'reputation': 0,
+    'funding': 0,
+    'crews': [],
+    'hates': [],
+    'traits': [
+      'Desensitized',
+      'Stupid',
+      'Self-Discipline',
+      'Make them perfect',
+      'Creations of Perfection'
+    ],
+    'weapons': [
+      'Unarmed'
+    ],
+    'wp': 4,
+    'str': 4,
+    'mov': 2,
+    'att': 2,
+    'def': 1,
+    'end': 6,
+    'spc': 3,
+    'shop': 'PROFESSOR PYG & DOLLOTRONS',
+    'key': '154D'
   },
   {
     'name': 'Unknown',

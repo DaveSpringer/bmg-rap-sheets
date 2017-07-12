@@ -1582,6 +1582,14 @@ export const allTraits = [
     'page': '?'
   },
   {
+    'name': 'Magic',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'This [Weapon] ignores [Invulnerability], [Incorporeal], and [Tough Skin].',
+    'grants': [],
+    'page': '?'
+  },
+  {
     'name': 'Magic Tattoos',
     'phase': 'Execute the plan',
     'cost': '',
@@ -2330,6 +2338,14 @@ export const allTraits = [
     'rule': 'At the start of the [Victory Point and Casualty Recount] [Phase], this [Model] can [Move] up to 5cm, using normal [Movement] rules.',
     'grants': [],
     'page': 'AK.61'
+  },
+  {
+    'name': 'Sonic',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'When this [Weapon] inflicts [Damage], the [Target] loses 1 [SC].',
+    'grants': [],
+    'page': '?'
   },
   {
     'name': 'Soul Armor',

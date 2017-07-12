@@ -1410,8 +1410,8 @@ export const allWeapons = [
   {
     'key': 'Reinforced Gloves',
     'name': 'Reinforced Gloves',
-    'damage': '-',
-    'rof': 2,
+    'damage': 'SS',
+    'rof': '-',
     'ammo': '-',
     'traits': 'Unarmed'
   },
