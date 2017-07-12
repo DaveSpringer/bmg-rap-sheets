@@ -22,7 +22,12 @@ export function selectEquipmentAction (state, action) {
   // NOTE: I wish I understood React/Redux better. I think that temporal elements
   // should not be added to the state of the application. Yet I am going to.
   let validEquipChars = state.characters.reduce((resultChars, char) => {
-    if (typeof equipment.target === 'string') {
+    if (equipment.targetFunc !== undefined) {
+      if (equipment.targetFunc(char)) {
+        resultChars.push(char)
+        return resultChars
+      }
+    } else if (typeof equipment.target === 'string') {
       if (equipment.target === char.rank ||
           char.alias.indexOf(equipment.target) > -1 ||
           char.name.indexOf(equipment.target) > -1) {

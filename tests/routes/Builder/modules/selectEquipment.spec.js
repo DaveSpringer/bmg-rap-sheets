@@ -23,6 +23,8 @@ const addPlant = builderReducer(addSwampThing, selectCharacter('068C1'))
 const addInmate5 = builderReducer(addPlant, selectCharacter('033D'))
 const selectScarecrowCrew = builderReducer(loadedState, selectCrew({name: 'Scarecrow', id: 'sc'}))
 const selectArkhamKnightPreorder = builderReducer(selectScarecrowCrew, selectCharacter('P03'))
+const selectOrganizedCrimeCrew = builderReducer(loadedState, selectCrew({name: 'Organized Crime', id: 'oc'}))
+const selectBoris = builderReducer(selectOrganizedCrimeCrew, selectCharacter('069A'))
 
 describe('(Redux Action Sub-Module) selectEquipment', () => {
 
@@ -85,6 +87,16 @@ describe('(Redux Action Sub-Module) selectEquipment', () => {
 
         let resultState = builderReducer(selectArkhamKnightPreorder, selectEquipment(hookPistol))
         expect(resultState.validEquipChars.length).to.equal(1)
+      })
+    })
+
+    describe('(Crew-Specific) Select an elite-specific piece of equipment.', () => {
+      it('Should have Boris in equipment list when selecting the Loyalty Tattoo.', () => {
+        let loyaltyTattoo = selectBoris.availableEquipment.find((equip) => equip.name === 'Loyalty Tattoo')
+        expect(loyaltyTattoo).to.be.an('object')
+
+        let resultState = builderReducer(selectBoris, selectEquipment(loyaltyTattoo))
+        expect(resultState.validEquipChars).to.have.lengthOf(1)
       })
     })
   })

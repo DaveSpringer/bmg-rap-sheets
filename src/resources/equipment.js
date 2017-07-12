@@ -877,7 +877,12 @@ export const allEquipment = [{
   'name': 'Old-School Training',
   'funding': 50,
   'rule': '[Model] gains the [Veteran] [Trait].',
-  'target': { 'trait': 'Elite' },
+  'target': 'Elite Gangster',
+  'targetFunc': (char) => {
+    return char.traits.reduce((traitResult, trait) => {
+      return traitResult || (typeof trait === 'object' && trait.name === 'Elite' && trait.type === 'Gangster')
+    }, false)
+  },
   'trait': 'Veteran'
 }, {
   'crew': 'bm',
@@ -1063,7 +1068,12 @@ export const allEquipment = [{
   'name': 'Old-School Training',
   'funding': 50,
   'rule': '[Model] gains the [Veteran] [Trait].',
-  'target': { 'trait': 'Elite' },
+  'target': 'Elite Gangster',
+  'targetFunc': (char) => {
+    return char.traits.reduce((traitResult, trait) => {
+      return traitResult || (typeof trait === 'object' && trait.name === 'Elite' && trait.type === 'Gangster')
+    }, false)
+  },
   'trait': 'Veteran'
 }, {
   'crew': 'co',
@@ -1359,7 +1369,12 @@ export const allEquipment = [{
   'name': 'S.W.A.T. Special Training',
   'funding': 100,
   'rule': '[Model] gains one of these [Traits]: [Tracking], [Precise Aim].',
-  'target': { 'trait': 'Elite' },
+  'target': 'Elite S.W.A.T.',
+  'targetFunc': (char) => {
+    return char.traits.reduce((traitResult, trait) => {
+      return traitResult || (typeof trait === 'object' && trait.name === 'Elite' && trait.type === 'S.W.A.T.')
+    }, false)
+  },
   'trait': [ 'Tracking', 'Precise Aim' ]
 }, {
   'crew': 'lf',
@@ -2499,7 +2514,12 @@ export const allEquipment = [{
   'name': 'Old-School Training',
   'funding': 50,
   'rule': '[Model] gains the [Veteran] [Trait].',
-  'target': { 'trait': 'Elite' },
+  'target': 'Elite Gangster',
+  'targetFunc': (char) => {
+    return char.traits.reduce((traitResult, trait) => {
+      return traitResult || (typeof trait === 'object' && trait.name === 'Elite' && trait.type === 'Gangster')
+    }, false)
+  },
   'trait': 'Veteran'
 }, {
   'crew': 'oc',
@@ -2507,7 +2527,12 @@ export const allEquipment = [{
   'name': 'Loyalty Tattoo',
   'funding': 100,
   'rule': '[Model] gains the [Bodyguard] [Trait].',
-  'target': { 'trait': 'Elite' },
+  'target': 'Elite Gangster',
+  'targetFunc': (char) => {
+    return char.traits.reduce((traitResult, trait) => {
+      return traitResult || (typeof trait === 'object' && trait.name === 'Elite' && trait.type === 'Gangster')
+    }, false)
+  },
   'trait': 'Bodyguard'
 }, {
   'crew': 'lc',
