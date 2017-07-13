@@ -93,7 +93,7 @@ const removeCharacter = (state, action, char) => {
     }, [])
   }
 
-  return createFinalState(intermediateState, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents, newAvailEquip)
+  return createFinalState(intermediateState, newCharacters, newAvailChars, newHiddenChars, newAvailEquip)
 }
 
 const addCharacter = (state, action) => {
@@ -194,7 +194,7 @@ const addCharacter = (state, action) => {
 
     newAvailChars.splice(location, 1)
   }
-  return createFinalState(intermediateState, newCharacters, newAvailChars, newHiddenChars, leaders, sidekicks, freeAgents, newAvailEquip)
+  return createFinalState(intermediateState, newCharacters, newAvailChars, newHiddenChars, newAvailEquip)
 }
 
 const createFinalState = (
@@ -202,9 +202,6 @@ const createFinalState = (
   newCharacters,
   newAvailChars,
   hiddenCharacters,
-  leaders,
-  sidekicks,
-  freeAgents,
   newAvailEquip
 ) => {
   let crewCode = newCharacters.reduce((curStr, char) => { return curStr + '+' + char.key }, state.crewId)
@@ -228,15 +225,21 @@ const createFinalState = (
     }
     return fundSum + character.funding + equipSum
   }, 0)
+  let countRank = (rank) => (rankCount, char) => {
+    if (rank === char.rank) {
+      return rankCount + 1
+    }
+    return rankCount
+  }
   return Object.assign({}, state, {
     characters : newCharacters,
     availableCharacters : newAvailChars,
     reputation : newRep,
     funding : newFunding,
     hiddenCharacters : hiddenCharacters,
-    leaders : leaders,
-    sidekicks : sidekicks,
-    freeAgents : freeAgents,
+    leaders : newCharacters.reduce(countRank('Leader'), 0),
+    sidekicks : newCharacters.reduce(countRank('Sidekick'), 0),
+    freeAgents : newCharacters.reduce(countRank('Free Agent'), 0),
     crewCode: crewCode,
     availableEquipment: newAvailEquip
   })
