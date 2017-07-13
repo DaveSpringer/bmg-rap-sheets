@@ -950,6 +950,14 @@ export const allTraits = [
     'page': 'F.32'
   },
   {
+    'name': 'Expendable (to Henchmen)',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'If this [Henchman]\'s [Leader] has [The Boss] [Trait], this [Character] does not give out [VP]s when [K.O.], but does award [VP] for becoming a [Casualty].',
+    'grants': [],
+    'page': 'F.32'
+  },
+  {
     'name': 'Experimental Ammo',
     'phase': 'Execute the plan',
     'cost': '',
@@ -1280,6 +1288,14 @@ export const allTraits = [
     'page': 'F.36'
   },
   {
+    'name': 'Hidden Sniper',
+    'phase': 'Execute the plan',
+    'cost': '2 AC',
+    'rule': '[Target] [Seen] [Enemy] [Character] that has [Line of Sight] to any point on any [Board Edge]. Make a [Ranged Attack] from that point with [RoF] 2, [BB] [Damage], and the [Firearm] [Weapon Trait].',
+    'grants': [],
+    'page': 'F.36'
+  },
+  {
     'name': 'Hockey Gear',
     'phase': 'Execute the plan',
     'cost': '',
@@ -1549,6 +1565,14 @@ export const allTraits = [
     'page': 'WFBP.7'
   },
   {
+    'name': 'Long Guns',
+    'phase': 'B.Urban Furnature',
+    'cost': '',
+    'rule': 'See [Sal Maroni]\'s File.',
+    'grants': [],
+    'page': 'NA'
+  },
+  {
     'name': 'Lord of Business',
     'phase': 'Crew Building/D.Objectives',
     'cost': '',
@@ -1631,6 +1655,14 @@ export const allTraits = [
     'page': 'B.62'
   },
   {
+    'name': 'Master of Stealth',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'See [Batman (Rebirth)]\'s File.',
+    'grants': [],
+    'page': 'NA'
+  },
+  {
     'name': 'Mastermind',
     'phase': 'E, Execute the plan',
     'cost': '',
@@ -1710,6 +1742,14 @@ export const allTraits = [
     'rule': 'The [Action Area] for this [Plant] can be increased to 15cm from 10cm.',
     'grants': [],
     'page': 'AK.45'
+  },
+  {
+    'name': 'Mind Blast',
+    'phase': 'Execute the plan',
+    'cost': '2 SC',
+    'rule': 'Once per [Round], [Target] [Enemy] [Character] within 20cm. The [Target] must pass a [Willpower Roll] or suffter [BB] damage.',
+    'grants': [],
+    'page': 'F.40'
   },
   {
     'name': 'Mind Control',
@@ -2185,6 +2225,14 @@ export const allTraits = [
     'page': 'B.65'
   },
   {
+    'name': 'Repairman',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'Remove 1 [Damage] from a [Vehicle] in [Contact].',
+    'grants': [],
+    'page': 'AK.61'
+  },
+  {
     'name': 'Resilient',
     'phase': 'Execute the plan',
     'cost': '',
@@ -2580,6 +2628,14 @@ export const allTraits = [
     'concern': true
   },
   {
+    'name': 'The Boss',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'See [Sal Maroni]\'s File.',
+    'grants': [ 'Expendable (to Henchmen)' ],
+    'page': 'NA'
+  },
+  {
     'name': 'The Dynamic Duo',
     'phase': 'Execute the plan',
     'cost': '',
@@ -2644,6 +2700,14 @@ export const allTraits = [
     'grants': [],
     'page': '?',
     'concern': true
+  },
+  {
+    'name': 'The World\'s Greatest Detective',
+    'phase': 'Raise the plan',
+    'cost': '',
+    'rule': 'See [Batman (Rebirth)]\'s File',
+    'grants': [],
+    'page': 'NA'
   },
   {
     'name': 'Thief',

@@ -109,6 +109,17 @@ export const allCharacterActions = {
       actions: [{ key: '077' }, { key: '144A' }, { key: '006' }, { key: '129' }, { key: '011' }]
     }
   },
+  // Batman Rebirth
+  '164': {
+    onAdd : {
+      type: 'ADD_AVAILABLE_CHARACTER',
+      actions: [{ key: '077' }, { key: '144A' }, { key: '006' }, { key: '129' }, { key: '011' }]
+    },
+    onRemove : {
+      type: 'REMOVE_AVAILABLE_CHARACTER',
+      actions: [{ key: '077' }, { key: '144A' }, { key: '006' }, { key: '129' }, { key: '011' }]
+    }
+  },
   // Professor Pyg
   '154A': {
     onAdd : {

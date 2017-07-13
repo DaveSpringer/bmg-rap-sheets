@@ -1077,6 +1077,44 @@ export const loadedCharacters = [
   },
   {
     'name': 'Bruce Wayne',
+    'alias': 'Batman (Rebirth)',
+    'rank': 'Leader',
+    'reputation': 150,
+    'funding': 0,
+    'crews': [
+      'bt'
+    ],
+    'hates': [],
+    'traits': [
+      'Bat-Armor MK 1',
+      'Batcape',
+      'Batclaw',
+      'Detective',
+      'Informer',
+      'Martial Artist',
+      'Reinforced Gloves',
+      'Self-Discipline',
+      'Sneak Attack',
+      'Sneaking',
+      'The World\'s Greatest Detective',
+      'Master of Stealth'
+    ],
+    'weapons': [
+      'Batlings 3',
+      'Reinforced Gloves'
+    ],
+    'wp': 9,
+    'str': 3,
+    'mov': 3,
+    'att': 5,
+    'def': 5,
+    'end': 8,
+    'spc': 3,
+    'shop': 'BATMAN REBIRTH',
+    'key': '164'
+  },
+  {
+    'name': 'Bruce Wayne',
     'alias': 'Batman (TAS)',
     'rank': 'Leader',
     'reputation': 80,
@@ -1175,6 +1213,32 @@ export const loadedCharacters = [
     'spc': 3,
     'shop': 'BATMAN ON BAT-POD',
     'key': '050'
+  },
+  {
+    'name': 'Andrea D\'Amico',
+    'alias': 'Battista',
+    'rank': 'Henchman',
+    'reputation': 29,
+    'funding': 250,
+    'crews': [ 'oc', 'bm', 'tf' ],
+    'hates': [],
+    'traits': [
+      'Criminal',
+      { 'name': 'Elite', 'type': 'Gangster' },
+      'Take Cover!!'
+    ],
+    'weapons': [
+      'Shotgun'
+    ],
+    'wp': 5,
+    'str': 4,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 5,
+    'spc': 3,
+    'shop': 'MARONI CRIME FAMILY',
+    'key': '165B'
   },
   {
     'name': 'Kathy Kane',
@@ -4096,6 +4160,33 @@ export const loadedCharacters = [
     'key': '100D'
   },
   {
+    'name': 'John D\'Amico',
+    'alias': 'Fat Johnny',
+    'rank': 'Henchman',
+    'reputation': 22,
+    'funding': 150,
+    'crews': [ 'oc', 'bm', 'tf' ],
+    'hates': [],
+    'traits': [
+      'Criminal',
+      'Sturdy',
+      'Repairman'
+    ],
+    'weapons': [
+      'Crobar',
+      'Gun'
+    ],
+    'wp': 4,
+    'str': 4,
+    'mov': 2,
+    'att': 4,
+    'def': 2,
+    'end': 5,
+    'spc': 3,
+    'shop': 'MARONI CRIME FAMILY',
+    'key': '165C'
+  },
+  {
     'name': 'Unknown',
     'alias': 'File No 08923',
     'rank': 'Henchman',
@@ -4343,6 +4434,104 @@ export const loadedCharacters = [
     'spc': 3,
     'shop': 'BLACK MASK\'S THUGS SET 1',
     'key': '043A'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Gorilla Soldier 1',
+    'rank': 'Henchman',
+    'reputation': 40,
+    'funding': 100,
+    'crews': [
+      'gg'
+    ],
+    'cutoff': 5,
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Large',
+      'Reinforced Gloves',
+      'Undercover'
+    ],
+    'weapons': [
+      'Reinforced Gloves',
+      'Spear Melee',
+      'Spear Range'
+    ],
+    'wp': 5,
+    'str': 4,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 6,
+    'spc': 3,
+    'shop': 'GORILLA GRODD CREW',
+    'key': '131B'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Gorilla Soldier 2',
+    'rank': 'Henchman',
+    'reputation': 30,
+    'funding': 0,
+    'cutoff': 5,
+    'crews': [
+      'gg'
+    ],
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Brutal',
+      'Large',
+      'Reinforced Gloves',
+      'Undercover'
+    ],
+    'weapons': [
+      'Reinforced Gloves',
+      'Spear Melee',
+      'Spear Range'
+    ],
+    'wp': 5,
+    'str': 4,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 6,
+    'spc': 3,
+    'shop': 'GORILLA GRODD CREW',
+    'key': '131C'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Gorilla Shaman',
+    'rank': 'Henchman',
+    'reputation': 50,
+    'funding': 0,
+    'cutoff': 5,
+    'crews': [
+      'gg'
+    ],
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Feral',
+      'Large',
+      'Medic',
+      'Persuasive',
+      'Reinforced Gloves'
+    ],
+    'weapons': [
+      'Reinforced Gloves',
+      'Ritual Staff'
+    ],
+    'wp': 6,
+    'str': 4,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 8,
+    'spc': 3,
+    'shop': 'GORILLA SHAMAN',
+    'key': '163'
   },
   {
     'name': 'Felix Harmon',
@@ -6317,6 +6506,33 @@ export const loadedCharacters = [
     'key': '066A'
   },
   {
+    'name': 'Hugo Testa',
+    'alias': 'Malatesta',
+    'rank': 'Henchman',
+    'reputation': 24,
+    'funding': 0,
+    'crews': [ 'oc', 'bm', 'tf' ],
+    'hates': [],
+    'traits': [
+      'Criminal',
+      'Ferocious',
+      'Fast'
+    ],
+    'weapons': [
+      'Broken Glass',
+      'Brass Knuckles'
+    ],
+    'wp': 4,
+    'str': 4,
+    'mov': 3,
+    'att': 3,
+    'def': 3,
+    'end': 4,
+    'spc': 3,
+    'shop': 'MARONI CRIME FAMILY',
+    'key': '165D'
+  },
+  {
     'name': 'None',
     'alias': 'Mary',
     'rank': 'Henchman',
@@ -6494,6 +6710,34 @@ export const loadedCharacters = [
   },
   {
     'name': 'Unknown',
+    'alias': 'Militia 3',
+    'rank': 'Henchman',
+    'reputation': 20,
+    'funding': 0,
+    'crews': [
+      'sc'
+    ],
+    'hates': [],
+    'traits': [
+      'Veteran',
+      'Gas Mask'
+    ],
+    'weapons': [
+      'Shield',
+      'Extendable Baton'
+    ],
+    'wp': 4,
+    'str': 5,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 4,
+    'spc': 3,
+    'shop': 'MILITIA SET II',
+    'key': '162B'
+  },
+  {
+    'name': 'Unknown',
     'alias': 'Militia 4',
     'rank': 'Henchman',
     'reputation': 29,
@@ -6617,6 +6861,36 @@ export const loadedCharacters = [
     'spc': 3,
     'shop': 'MILITIA GATLING BRUTE',
     'key': '108'
+  },
+  {
+    'name': 'Unknown',
+    'alias': 'Militia Lieutenant 2',
+    'rank': 'Henchman',
+    'reputation': 35,
+    'funding': 100,
+    'crews': [
+      'sc'
+    ],
+    'hates': [],
+    'traits': [
+      'Follow Me!',
+      'Lantern',
+      'Radio',
+      'Veteran'
+    ],
+    'weapons': [
+      'Frag Grenade',
+      'Electric Baton'
+    ],
+    'wp': 5,
+    'str': 5,
+    'mov': 2,
+    'att': 4,
+    'def': 3,
+    'end': 6,
+    'spc': 3,
+    'shop': 'MILITIA SET II',
+    'key': '162A'
   },
   {
     'name': 'Unknown',
@@ -8980,6 +9254,41 @@ export const loadedCharacters = [
     'key': '007C'
   },
   {
+    'name': 'Salvatore Maroni',
+    'alias': 'Sal Maroni',
+    'rank': 'Leader',
+    'reputation': 73,
+    'funding': 0,
+    'crews': [
+      'oc'
+    ],
+    'hates': [],
+    'traits': [
+      'Dirty Money',
+      {
+        'name': 'Elite Boss',
+        'type': 'Gangster'
+      },
+      'Hidden Sniper',
+      'Intimidate',
+      'Menace',
+      'The Boss',
+      'Long Guns'
+    ],
+    'weapons': [
+      'Acid Bottle'
+    ],
+    'wp': 7,
+    'str': 4,
+    'mov': 2,
+    'att': 3,
+    'def': 3,
+    'end': 7,
+    'spc': 3,
+    'shop': 'MARONI CRIME FAMILY',
+    'key': '165A'
+  },
+  {
     'name': 'Unknown',
     'alias': 'Savage Penguin',
     'rank': 'Henchman',
@@ -9925,6 +10234,40 @@ export const loadedCharacters = [
     'spc': 3,
     'shop': 'STARFIRE',
     'key': '125'
+  },
+  {
+    'name': 'Grodd',
+    'alias': 'Grodd',
+    'rank': 'Leader',
+    'reputation': 130,
+    'funding': 0,
+    'crews': [
+      'gg'
+    ],
+    'cutoff': 5,
+    'hates': [],
+    'traits': [
+      'Acrobat',
+      'Brutal',
+      'Feral',
+      'Inspire Fear',
+      'Large',
+      'Mind Blast',
+      'Mind Control',
+      'Reinforced Gloves'
+    ],
+    'weapons': [
+      'Reinforced Gloves'
+    ],
+    'wp': 8,
+    'str': 2,
+    'mov': 3,
+    'att': 4,
+    'def': 4,
+    'end': 10,
+    'spc': 3,
+    'shop': 'GORILLA GRODD CREW',
+    'key': '131A'
   },
   {
     'name': 'Grumble',

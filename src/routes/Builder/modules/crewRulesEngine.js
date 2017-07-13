@@ -21,14 +21,11 @@ const removeCharacter = (state, action, char) => {
   let index = state.characters.indexOf(char)
   let leaders = state.leaders
   let sidekicks = state.sidekicks
-  let freeAgents = state.freeAgents
 
   if (char.rank === 'Leader') {
     leaders = state.leaders - 1
   } else if (char.rank === 'Sidekick') {
     sidekicks = state.sidekicks - 1
-  } else if (char.rank === 'Free Agent') {
-    freeAgents = state.freeAgents - 1
   }
 
   let newAvailEquip
@@ -105,14 +102,11 @@ const addCharacter = (state, action) => {
 
   let leaders = state.leaders
   let sidekicks = state.sidekicks
-  let freeAgents = state.freeAgents
 
   if (char.rank === 'Leader') {
     leaders = state.leaders + 1
   } else if (char.rank === 'Sidekick') {
     sidekicks = state.sidekicks + 1
-  } else if (char.rank === 'Free Agent') {
-    freeAgents = state.freeAgents + 1
   }
 
   let newCharacters = [...state.characters, char]

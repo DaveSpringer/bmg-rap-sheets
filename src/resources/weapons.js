@@ -32,6 +32,14 @@ export const allWeapons = [
     'traits': 'Throwing, S. Range, Acid'
   },
   {
+    'key': 'Acid Bottle',
+    'name': 'Acid Bottle',
+    'damage': 'B',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Acid, Caustic, Reach'
+  },
+  {
     'key': 'Acid Flower',
     'name': 'Acid Flower',
     'damage': 'BB',
@@ -141,6 +149,14 @@ export const allWeapons = [
     'damage': 'SS',
     'rof': 2,
     'ammo': 2,
+    'traits': 'Throwing, S. Range'
+  },
+  {
+    'key': 'Batlings 3',
+    'name': 'Batlings',
+    'damage': 'SS',
+    'rof': 2,
+    'ammo': 3,
     'traits': 'Throwing, S. Range'
   },
   {
@@ -296,6 +312,14 @@ export const allWeapons = [
     'traits': '-'
   },
   {
+    'key': 'Broken Glass',
+    'name': 'Broken Glass',
+    'damage': 'BB',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Sharp, One-use'
+  },
+  {
     'key': 'Cal 0,60 Gun',
     'name': 'Cal 0,60 Gun',
     'damage': 'BBB',
@@ -406,6 +430,14 @@ export const allWeapons = [
     'rof': 1,
     'ammo': 3,
     'traits': 'Mechanic, Reload'
+  },
+  {
+    'key': 'Crowbar',
+    'name': 'Crowbar',
+    'damage': 'S',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Heavy, Handy'
   },
   {
     'key': 'Custom Carbine',
@@ -1448,6 +1480,14 @@ export const allWeapons = [
     'traits': 'Handy'
   },
   {
+    'key': 'Ritual Staff',
+    'name': 'Ritual Staff',
+    'damage': 'BS',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Reach, Magic'
+  },
+  {
     'key': 'Riot Gun 2',
     'name': 'Riot Gun ',
     'damage': 'SS',
@@ -1670,6 +1710,22 @@ export const allWeapons = [
     'rof': '-',
     'ammo': '-',
     'traits': 'Reach, CRT: BB'
+  },
+  {
+    'key': 'Spear Melee',
+    'name': 'Spear (Melee)',
+    'damage': 'BS',
+    'rof': '-',
+    'ammo': '-',
+    'traits': 'Reach, CRT: BB'
+  },
+  {
+    'key': 'Spear Range',
+    'name': 'Spear (Range)',
+    'damage': 'BB',
+    'rof': '1',
+    'ammo': '1',
+    'traits': 'S. Range, Throwing, CRT: BB'
   },
   {
     'key': 'Speed Force Bolts',
