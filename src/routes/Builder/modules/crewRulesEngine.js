@@ -35,12 +35,40 @@ const removeCharacter = (state, action, char) => {
   } else {
     newAvailEquip = [...state.availableEquipment]
   }
+  newAvailEquip = newAvailEquip.reduce((equipList, equip) => {
+      if (equip.requires !== undefined) {
+        if (typeof equip.requires === 'string') {
+          if (char.name.indexOf(equip.requires) !== -1 || char.alias.indexOf(equip.requires) !== -1) {
+            return equipList
+          }
+        } else {
+          console.log('TODO!!!!!!!!!!!!!!!!!!!!')
+        }
+      }
+      equipList.push(equip)
+      return equipList
+  }, [])
 
   let newAvailChars = [...state.availableCharacters, char]
   let newCharacters = [...state.characters]
   newCharacters.splice(index, 1)
   let newHiddenChars = [...state.hiddenCharacters]
   let intermediateState = state
+
+  newCharacters.forEach((newChar) => {
+    if (newChar.equipment !== undefined) {
+      newChar.equipment = newChar.equipment.reduce((equipList, equip) => {
+        debugger
+        if (char.name.indexOf(equip.requires) === -1 && char.alias.indexOf(equip.requires) === -1) {
+          equipList.push(equip)
+        }
+        return equipList
+      }, [])
+    }
+    if (newChar.equipment !== undefined && newChar.equipment.length === 0) {
+      newChar.equipment = undefined
+    }
+  })
 
   if (state.followRules) {
     // Struggling with the implementation of the algorithm here.

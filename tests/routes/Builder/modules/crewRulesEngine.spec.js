@@ -7,6 +7,8 @@ import {
 } from 'routes/Builder/modules/builder'
 import { loadResources } from 'modules/loadResources'
 import { characterSelected, toggleFollowRules } from 'routes/Builder/modules/crewRulesEngine'
+import { selectEquipment } from 'routes/Builder/modules/selectEquipment'
+import { assignEquipment } from 'routes/Builder/modules/assignEquipment'
 
 const loadedState = builderReducer(initialState, loadResources())
 const allCharacters = loadedState.allCharacters
@@ -122,6 +124,23 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
 
       it('Should add additional equipment when a Bruce Wayne is selected.', () => {
         expect(selectBatmanResult.availableEquipment.length).to.not.equal(selectBatmanCrew.availableEquipment.length)
+      })
+
+      it('Should remove equipment when a Bruce Wayne is selected again.', () => {
+        let selectBatmanAgainResult = characterSelected(selectBatmanResult, selectCharacter(batfleck))
+        expect(selectBatmanAgainResult.availableEquipment).to.not.have.lengthOf(selectBatmanResult.availableEquipment)
+        expect(selectBatmanAgainResult.availableEquipment.length).to.equal(selectBatmanCrew.availableEquipment.length)
+      })
+
+      it('Should remove equipment a assigned to a character when the required character is removed.', () => {
+        let selectAlfredState = characterSelected(selectBatmanResult, selectCharacter('P01'))
+        let empEquip = selectAlfredState.availableEquipment.find((equip) => equip.name === 'EMP')
+        let selectEmpEquipState = builderReducer(selectAlfredState, selectEquipment(empEquip))
+        let assignEmpEquip = builderReducer(selectEmpEquipState, assignEquipment(empEquip, 'P01'))
+        expect(assignEmpEquip).to.be.an('object')
+        expect(assignEmpEquip.characters[1].equipment).to.be.an('array')
+        let selectBatmanAgainState = characterSelected(assignEmpEquip, selectCharacter(batfleck))
+        expect(selectBatmanAgainState.characters[0].equipment).to.equal(undefined)
       })
 
       it('Should be able to add a Henchman after adding a sidekick.', () => {
