@@ -63,10 +63,8 @@ if (project.env === 'development') {
   // server in production.
   app.use(express.static(path.resolve(project.basePath, project.outDir)))
 
-  // Trying to resolve the "Failed to GET Builder" error...
-  app.use(function(req, res, next) {
-    res.redirect('/')
-  })
+  // Pure dumb luck found this. I could never explain how it works...
+  app.use('/*', express.static(path.resolve(project.basePath, project.outDir)))
 }
 
 module.exports = app
