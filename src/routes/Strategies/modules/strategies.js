@@ -6,6 +6,7 @@ import { allCrews } from '../../../resources/crews'
 // ------------------------------------
 export const LOAD_STRATEGIES = 'LOAD_STRATEGIES'
 export const SELECT_CREW = 'SELECT_CREW'
+export const UPDATE_FILTER = 'UPDATE_FILTER'
 
 export const DEFAULT_CREW = { id: 'al', name: 'All' }
 
@@ -25,9 +26,17 @@ export function selectCrew (crew = DEFAULT_CREW) {
   }
 }
 
+export function updateFilter (filter = '') {
+  return {
+    type: UPDATE_FILTER,
+    filter: filter
+  }
+}
+
 export const actions = {
   loadStrategies,
-  selectCrew
+  selectCrew,
+  updateFilter
 }
 
 // ------------------------------------
@@ -80,6 +89,26 @@ const ACTION_HANDLERS = {
     return Object.assign({}, state, {
       crew: crew,
       strategies: resultStrategies
+    })
+  },
+  [UPDATE_FILTER]: (state, action) => {
+    let filter = action.filter
+    let lowerFilter = filter.toLowerCase()
+
+    let newStrategies = state.allStrategies.reduce((resultStrategies, strategy) => {
+      if (strategy.name.toLowerCase().indexOf(lowerFilter) !== -1 || strategy.text.toLowerCase().indexOf(lowerFilter) !== -1) {
+        resultStrategies.push(strategy)
+      }
+      return resultStrategies
+    }, [])
+
+    let searchParams = new URLSearchParams()
+    searchParams.append('filter', filter)
+    history.pushState({}, '', location.origin + location.pathname + '?' + searchParams)
+
+    return Object.assign({}, state, {
+      strategies: newStrategies,
+      crew: DEFAULT_CREW
     })
   }
 }

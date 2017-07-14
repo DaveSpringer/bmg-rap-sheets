@@ -8,6 +8,7 @@ class Strategies extends React.Component {
     super(props)
     this.state = { value: props.crew }
     this.handleChange = this.handleChange.bind(this)
+    this.filterChanged = this.filterChanged.bind(this)
   }
 
   componentWillMount () {
@@ -15,10 +16,21 @@ class Strategies extends React.Component {
     this.props.loadStrategies()
   }
 
+  componentDidMount () {
+    let filter = this.props.location.query.filter
+    if (filter !== undefined) {
+      this.props.updateFilter(filter)
+    }
+  }
+
   handleChange (event) {
     let newVal = JSON.parse(event.target.value)
     this.props.selectCrew(newVal)
     this.setState({ value: event.target.value })
+  }
+
+  filterChanged(event) {
+    this.props.updateFilter(event.target.value)
   }
 
   render () {
@@ -35,6 +47,12 @@ class Strategies extends React.Component {
         </Subheader>
         <h2>Batman Miniature Game Strategies</h2>
         <h4>Selected Crew: { crewName }</h4>
+        <div className='filterField'>
+          <span>
+            <label className='inputLabel'>Filter Strategies:</label>
+            <input type='text' value={this.props.filter} onChange={this.filterChanged} />
+          </span>
+        </div>
         <div className='strategiesContainer'>
           {this.props.strategies.map(strategy =>
             <Strategy key={strategy.key} strategy={strategy} allCrews={this.props.allCrews} />
@@ -50,7 +68,8 @@ Strategies.propTypes = {
   strategies : React.PropTypes.array.isRequired,
   selectCrew : React.PropTypes.func.isRequired,
   allCrews : React.PropTypes.array.isRequired,
-  crew : React.PropTypes.object.isRequired
+  crew : React.PropTypes.object.isRequired,
+  updateFilter : React.PropTypes.func.isRequired
 }
 
 export default Strategies

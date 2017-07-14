@@ -8,6 +8,7 @@ import { populateEquipment } from '../../../modules/loadResources'
 // ------------------------------------
 export const LOAD_EQUIPMENT = 'LOAD_EQUIPMENT'
 export const SELECT_CREW = 'SELECT_CREW'
+export const UPDATE_FILTER = 'UPDATE_FILTER'
 
 export const DEFAULT_CREW = { id: 'al', name: 'All' }
 
@@ -27,9 +28,17 @@ export function selectCrew (crew = DEFAULT_CREW) {
   }
 }
 
+export function updateFilter (filter = '') {
+  return {
+    type: UPDATE_FILTER,
+    filter: filter
+  }
+}
+
 export const actions = {
   loadEquipment,
-  selectCrew
+  selectCrew,
+  updateFilter
 }
 
 // ------------------------------------
@@ -62,6 +71,26 @@ const ACTION_HANDLERS = {
     return Object.assign({}, state, {
       equipment: resultEquipment,
       crew: action.crew
+    })
+  },
+  [UPDATE_FILTER]: (state, action) => {
+    let filter = action.filter
+    let lowerFilter = filter.toLowerCase()
+
+    let newEquipment = state.allEquipment.reduce((resultEquipment, equip) => {
+      if (equip.name.toLowerCase().indexOf(lowerFilter) !== -1 || equip.rule.toLowerCase().indexOf(lowerFilter) !== -1) {
+        resultEquipment.push(equip)
+      }
+      return resultEquipment
+    }, [])
+
+    let searchParams = new URLSearchParams()
+    searchParams.append('filter', filter)
+    history.pushState({}, '', location.origin + location.pathname + '?' + searchParams)
+
+    return Object.assign({}, state, {
+      equipment: newEquipment,
+      crew: DEFAULT_CREW
     })
   }
 }

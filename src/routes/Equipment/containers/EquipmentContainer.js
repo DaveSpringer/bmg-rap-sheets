@@ -1,11 +1,12 @@
 import { connect } from 'react-redux'
-import { loadEquipment, selectCrew } from '../modules/equipment'
+import { loadEquipment, selectCrew, updateFilter } from '../modules/equipment'
 
 import Equipment from '../components/Equipment'
 
 const mapDispatchToProps = {
   loadEquipment,
-  selectCrew
+  selectCrew,
+  updateFilter
 }
 
 const mapStateToProps = (state) => ({

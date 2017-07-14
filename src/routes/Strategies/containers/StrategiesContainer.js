@@ -1,11 +1,12 @@
 import { connect } from 'react-redux'
-import { loadStrategies, selectCrew } from '../modules/strategies'
+import { loadStrategies, selectCrew, updateFilter } from '../modules/strategies'
 
 import Strategies from '../components/Strategies'
 
 const mapDispatchToProps = {
   loadStrategies,
-  selectCrew
+  selectCrew,
+  updateFilter
 }
 
 const mapStateToProps = (state) => ({

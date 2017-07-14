@@ -8,16 +8,28 @@ class Equipment extends React.Component {
     super(props)
     this.state = { value: props.crew }
     this.handleChange = this.handleChange.bind(this)
+    this.filterChanged = this.filterChanged.bind(this)
   }
   componentWillMount () {
     // Load up the various files
     this.props.loadEquipment()
   }
 
+  componentDidMount () {
+    let filter = this.props.location.query.filter
+    if (filter !== undefined) {
+      this.props.updateFilter(filter)
+    }
+  }
+
   handleChange (event) {
     let newVal = JSON.parse(event.target.value)
     this.props.selectCrew(newVal)
     this.setState({ value: event.target.value })
+  }
+
+  filterChanged(event) {
+    this.props.updateFilter(event.target.value)
   }
 
   render () {
@@ -34,6 +46,12 @@ class Equipment extends React.Component {
         </Subheader>
         <h2>Equipment:</h2>
         <h4>Selected Crew: { crewName }</h4>
+        <div className='filterField'>
+          <span>
+            <label className='inputLabel'>Filter Equipment:</label>
+            <input type='text' value={this.props.filter} onChange={this.filterChanged} />
+          </span>
+        </div>
         <div className='equipmentContainer'>
           {this.props.equipment.map(equipment =>
             <EquipmentItem key={equipment.key} equipment={equipment} />
@@ -49,7 +67,8 @@ Equipment.propTypes = {
   allCrews : React.PropTypes.array.isRequired,
   equipment : React.PropTypes.array.isRequired,
   crew : React.PropTypes.object.isRequired,
-  selectCrew : React.PropTypes.func.isRequired
+  selectCrew : React.PropTypes.func.isRequired,
+  updateFilter : React.PropTypes.func.isRequired
 }
 
 export default Equipment
