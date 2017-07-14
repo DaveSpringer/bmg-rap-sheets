@@ -2574,7 +2574,7 @@ export const allEquipment = [{
   'trait': 'Explosive Gel'
 }, {
   'crew': 'lc',
-  'key': 'LC03B',
+  'key': 'LC03C',
   'name': 'C-4',
   'funding': 200,
   'rule': '[Model] gains the [Explosive Gel] [Trait].',

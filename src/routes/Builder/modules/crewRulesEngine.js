@@ -36,17 +36,17 @@ const removeCharacter = (state, action, char) => {
     newAvailEquip = [...state.availableEquipment]
   }
   newAvailEquip = newAvailEquip.reduce((equipList, equip) => {
-      if (equip.requires !== undefined) {
-        if (typeof equip.requires === 'string') {
-          if (char.name.indexOf(equip.requires) !== -1 || char.alias.indexOf(equip.requires) !== -1) {
-            return equipList
-          }
-        } else {
-          console.log('TODO!!!!!!!!!!!!!!!!!!!!')
+    if (equip.requires !== undefined) {
+      if (typeof equip.requires === 'string') {
+        if (char.name.indexOf(equip.requires) !== -1 || char.alias.indexOf(equip.requires) !== -1) {
+          return equipList
         }
+      } else {
+        console.log('TODO!!!!!!!!!!!!!!!!!!!!')
       }
-      equipList.push(equip)
-      return equipList
+    }
+    equipList.push(equip)
+    return equipList
   }, [])
 
   let newAvailChars = [...state.availableCharacters, char]
@@ -58,7 +58,6 @@ const removeCharacter = (state, action, char) => {
   newCharacters.forEach((newChar) => {
     if (newChar.equipment !== undefined) {
       newChar.equipment = newChar.equipment.reduce((equipList, equip) => {
-        debugger
         if (char.name.indexOf(equip.requires) === -1 && char.alias.indexOf(equip.requires) === -1) {
           equipList.push(equip)
         }
@@ -226,7 +225,6 @@ const createFinalState = (
   hiddenCharacters,
   newAvailEquip
 ) => {
-  let crewCode = newCharacters.reduce((curStr, char) => { return curStr + '+' + char.key }, state.crewId)
   newAvailChars.sort(sortCharacters)
   newCharacters.sort(sortCharacters)
   let newRep = newCharacters.reduce((repSum, character) => {
@@ -262,7 +260,6 @@ const createFinalState = (
     leaders : newCharacters.reduce(countRank('Leader'), 0),
     sidekicks : newCharacters.reduce(countRank('Sidekick'), 0),
     freeAgents : newCharacters.reduce(countRank('Free Agent'), 0),
-    crewCode: crewCode,
     availableEquipment: newAvailEquip
   })
 }

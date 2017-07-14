@@ -79,5 +79,9 @@ export const doStateCalcs = (state) => {
   state.reputation = resultObj.rep
   state.funding = resultObj.funding
   state.crewCode = resultObj.crewCode
+  // Update the current URI so the user can link back to it.
+  let searchParams = new URLSearchParams()
+  searchParams.append('crewCode', resultObj.crewCode)
+  history.pushState({}, '', location.origin + location.pathname + '?' + searchParams)
   return state
 }

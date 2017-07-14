@@ -11,8 +11,8 @@ import Modal from '../../../components/Modal/Modal'
 import CrewSummary from './CrewSummary'
 
 class Builder extends React.Component {
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.addAllCharactersClick = this.addAllCharactersClick.bind(this)
     this.handleRulesChange = this.handleRulesChange.bind(this)
     this.handleResetCrew = this.handleResetCrew.bind(this)
@@ -28,7 +28,16 @@ class Builder extends React.Component {
     // Load up the various files
     this.props.loadResources()
   }
+
   componentDidMount () {
+    let crewCode = this.props.location.query.crewCode
+    if (crewCode !== undefined) {
+      try {
+        this.props.readCrewCode(crewCode)
+      } catch (e) {
+        console.log('ERROR: Could not read the crew code.')
+      }
+    }
   }
 
   addAllCharactersClick (event) {
@@ -163,7 +172,8 @@ Builder.propTypes = {
   resetCrew : React.PropTypes.func.isRequired,
   selectEquipment : React.PropTypes.func.isRequired,
   assignEquipment : React.PropTypes.func.isRequired,
-  readCrewCode : React.PropTypes.func.isRequired
+  readCrewCode : React.PropTypes.func.isRequired,
+  location : React.PropTypes.object.isRequired
 }
 
 export default Builder

@@ -233,10 +233,6 @@ describe('(Redux Action Sub-Module) crewRulesEngine', () => {
         expect(addFreeAgentResult.characters.length).to.equal(2)
       })
 
-      it('Should update crewCode with Huntress selection.', () => {
-        expect(addFreeAgentResult.crewCode).to.equal(selectBatmanResult.crewCode + '+071')
-      })
-
       it('Should be able to unselect Huntress', () => {
         expect(removeFreeAgentResult.sidekicks).to.equal(0)
         expect(removeFreeAgentResult.leaders).to.equal(1)

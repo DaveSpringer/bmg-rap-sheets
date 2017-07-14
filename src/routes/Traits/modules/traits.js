@@ -96,6 +96,10 @@ const ACTION_HANDLERS = {
       return traits
     }, [])
 
+    let searchParams = new URLSearchParams()
+    searchParams.append('filter', filter)
+    history.pushState({}, '', location.origin + location.pathname + '?' + searchParams)
+
     return Object.assign({}, state, {
       visibleTraits: newTraits,
       filter: filter

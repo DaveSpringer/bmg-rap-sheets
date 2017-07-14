@@ -15,6 +15,13 @@ class Traits extends React.Component {
     this.props.loadTraits()
   }
 
+  componentDidMount () {
+    let filter = this.props.location.query.filter
+    if (filter !== undefined) {
+      this.props.updateFilter(filter)
+    }
+  }
+
   filterChanged (event) {
     this.props.updateFilter(event.target.value)
   }
@@ -62,7 +69,8 @@ Traits.propTypes = {
   visibleTraits : React.PropTypes.array.isRequired,
   allCrews : React.PropTypes.array.isRequired,
   crew: React.PropTypes.object.isRequired,
-  selectCrew: React.PropTypes.func.isRequired
+  selectCrew: React.PropTypes.func.isRequired,
+  location : React.PropTypes.object.isRequired
 }
 
 export default Traits
