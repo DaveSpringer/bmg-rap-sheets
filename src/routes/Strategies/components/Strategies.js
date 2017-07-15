@@ -29,7 +29,7 @@ class Strategies extends React.Component {
     this.setState({ value: event.target.value })
   }
 
-  filterChanged(event) {
+  filterChanged (event) {
     this.props.updateFilter(event.target.value)
   }
 
@@ -69,7 +69,9 @@ Strategies.propTypes = {
   selectCrew : React.PropTypes.func.isRequired,
   allCrews : React.PropTypes.array.isRequired,
   crew : React.PropTypes.object.isRequired,
-  updateFilter : React.PropTypes.func.isRequired
+  updateFilter : React.PropTypes.func.isRequired,
+  filter: React.PropTypes.string.isRequired,
+  location: React.PropTypes.object.isRequired
 }
 
 export default Strategies
