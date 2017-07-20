@@ -428,6 +428,14 @@ export const allTraits = [
     'page': 'F.30'
   },
   {
+    'name': 'Chaotic Planner',
+    'phase': 'Anytime',
+    'cost': '',
+    'rule': 'Each time you use a [Strategy], roll 1D6. On a result of 1, the [Strategy] is cancelled.',
+    'grants': [],
+    'page': 'WF.6'
+  },
+  {
     'name': 'Charge',
     'phase': 'Execute the plan',
     'cost': '1 MC + 1 SC',
@@ -862,7 +870,7 @@ export const allTraits = [
     'name': 'Electric Storm',
     'phase': 'Execute the plan',
     'cost': '3 SC + 1 AC',
-    'rule': 'See this [Character]\'s File',
+    'rule': 'Before or after a standard [Attack], center an [Explosion Template] on this [Model]. All [Other] [Model]s in contact with the [Explosion Template] receive one [Hit] with a [Strength] of 4+ and [SS] [Damage].',
     'grants': [],
     'page': 'NA'
   },
@@ -1482,12 +1490,21 @@ export const allTraits = [
     'page': 'B.59'
   },
   {
+    'name': 'Kryptonian',
+    'nameFunc': 'Kryptonian/-level-',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'This [Model] gains a number of rules determined by the level -level- listed on WF.6. This [Model] can [Push], [Grab], and [Knock Down] a [Model] with the [Large] [Trait].',
+    'grants': [ 'Fast', 'Invulnerability', 'Natural Immunities' ],
+    'page': 'WF.6'
+  },
+  {
     'name': 'Kryptonite',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'TBD...',
+    'rule': 'If a [Model] has this [Trait], any [Model]s with the [Kryptonian] [Trait] lose [Invulnerability] and [Regeneration]. If a [Weapon] has this [Trait] and [Hits] a [Kryptonian], the [Target] loses [Invulnerability] and [Regeneration] until the end of the [Round].',
     'grants': [],
-    'page': '?'
+    'page': 'WF.7'
   },
   {
     'name': 'Lantern',
@@ -2430,6 +2447,14 @@ export const allTraits = [
     'page': 'B.65'
   },
   {
+    'name': 'Steel Hands',
+    'phase': 'Execute the plan',
+    'cost': '',
+    'rule': 'This [Model]\'s [Unarmed Attacks] inflict SSS [Damage] and can cause the [Push] [Effect].',
+    'grants': [],
+    'page': 'WF.7'
+  },
+  {
     'name': 'Stop!',
     'phase': 'Execute the plan',
     'cost': '1 SC Passive',
@@ -2626,6 +2651,14 @@ export const allTraits = [
     'grants': [],
     'page': '?',
     'concern': true
+  },
+  {
+    'name': 'The Big Blue Boy Scout',
+    'phase': 'Execute the plan',
+    'cost': '1SC PASSIVE',
+    'rule': 'If an allied [Bruce Wayne] within 10cm receives any number of [Hits], this [Model] may receive the [Hits] instead.',
+    'grants': [],
+    'page': 'WF.6'
   },
   {
     'name': 'The Boss',
@@ -2837,7 +2870,7 @@ export const allTraits = [
   },
   {
     'name': 'Unstoppable',
-    'phase': 'C.Crew Deployment',
+    'phase': 'Execute the plan',
     'cost': '1 SC',
     'rule': 'Each [Strike] this [Character] makes this [Turn] requires 2 successful [Blocks] to [Defend].',
     'grants': [],
@@ -2880,7 +2913,7 @@ export const allTraits = [
     'name': 'Volunteer',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'TBD...',
+    'rule': 'This [Model] cannot be removed from [Play] due to the [Suicide Mission] rule.',
     'grants': [],
     'page': 'SS.63',
     'concern': true
@@ -2906,7 +2939,7 @@ export const allTraits = [
     'name': 'Weak',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'This  [Character] loses 1 [Action Counter] for each [Damage Marker] accumulated',
+    'rule': 'This  [Character] loses 1 [Action Counter] for each [Damage Marker] accumulated.',
     'grants': [],
     'page': 'B.66'
   },
