@@ -1502,7 +1502,7 @@ export const allTraits = [
     'name': 'Kryptonite',
     'phase': 'Execute the plan',
     'cost': '',
-    'rule': 'If a [Model] has this [Trait], any [Model]s with the [Kryptonian] [Trait] lose [Invulnerability] and [Regeneration]. If a [Weapon] has this [Trait] and [Hits] a [Kryptonian], the [Target] loses [Invulnerability] and [Regeneration] until the end of the [Round].',
+    'rule': 'If a [Model] has this [Trait], any [Model]s with the [Kryptonian] [Trait] within 10cm lose [Invulnerability] and [Regeneration]. If a [Weapon] has this [Trait] and [Hits] a [Kryptonian], the [Target] loses [Invulnerability] and [Regeneration] until the end of the [Round].',
     'grants': [],
     'page': 'WF.7'
   },
